@@ -42,6 +42,7 @@ Refresh generated data: `node scripts/fetch-sources.mjs` (Node 18+, no dependenc
 - **Default image source is Spotify** (`DEFAULT_SOURCE` in app.js). The dev panel can switch to the others for comparison.
 - **Spotify oEmbed** (`open.spotify.com/oembed`) needs no key but returns a 320px image. Swapping the size code in the URL to `ab6761610000e5eb` gives 640px.
 - Keep the established look: blue top bar, dark sticky nav, white main, light-blue Top Artists band, peach/blue chips, Nunito. Plain HTML/CSS/JS until there's a real reason for a framework.
+- **Git: no AI attribution.** Never add `Co-Authored-By: Claude` (or any Claude/AI attribution) to commit messages or PR descriptions. Commits are authored by Julian only.
 - Escape all data before putting it in HTML (`esc()` in app.js). Data will eventually come from users.
 
 ## Data model (data/artists.json)
