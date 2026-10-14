@@ -1,0 +1,145 @@
+{
+  "_note": "Hand-curated source of truth. Edit this file by hand. Generated data lives in sources.json (run scripts/fetch-sources.mjs). Fields under `demo` are placeholder values until Milestone 1 wires in real data.",
+  "artists": [
+    {
+      "id": "travis-scott",
+      "name": "Travis Scott",
+      "genre": "Hip-Hop",
+      "hometown": "Houston, TX",
+      "ids": { "wikidata": "Q13605596", "spotify": "0Y5tJX1MQlPlqiwlOH1tJY", "musicbrainz": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6", "lastfm": "Travis Scott" },
+      "original": "travis.png",
+      "demo": { "cosignedBy": ["Kanye West", "Kid Cudi", "J. Cole"] }
+    },
+    {
+      "id": "tame-impala",
+      "name": "Tame Impala",
+      "genre": "Psychedelic Rock",
+      "hometown": "Perth, Australia",
+      "ids": { "wikidata": "Q9619", "spotify": "5INjqkS1o8h1imAzPqGZBb", "musicbrainz": "63aa26c3-d59b-4da4-84ac-716b54f1ef4d", "lastfm": "Tame Impala" },
+      "original": "impala.png",
+      "focus": { "wikimedia": "center 85%" },
+      "demo": { "cosignedBy": ["The Flaming Lips", "Mark Ronson"] }
+    },
+    {
+      "id": "rezz",
+      "name": "Rezz",
+      "genre": "Electronic",
+      "hometown": "Niagara Falls, Canada",
+      "ids": { "wikidata": "Q35487701", "spotify": "4aKdmOXdUKX07HVd3sGgzw", "musicbrainz": "2eaf4267-4dd6-412a-9bb0-596afb90215b", "lastfm": "Rezz" },
+      "original": "rezz.png",
+      "demo": { "cosignedBy": ["deadmau5", "Skrillex"] }
+    },
+    {
+      "id": "g-jones",
+      "name": "G Jones",
+      "genre": "Electronic",
+      "hometown": null,
+      "ids": { "wikidata": null, "spotify": "0gXx2aQ2mfovDfqCw10MQC", "musicbrainz": "20bb2a85-e6ab-42e2-bfa8-ec048b60bbdb", "lastfm": "G Jones" },
+      "original": "gjones.png",
+      "demo": {
+        "cosignedBy": ["Porter Robinson", "Flume", "Bassnectar", "Rezz"],
+        "trending": { "now": 77310, "week": 412000, "month": 1610000, "year": 14200000 },
+        "prevRank": { "now": 3, "week": 1, "month": 2, "year": 2 }
+      }
+    },
+    {
+      "id": "the-drums",
+      "name": "The Drums",
+      "genre": "Indie Pop",
+      "hometown": "Brooklyn, NY",
+      "ids": { "wikidata": "Q1419255", "spotify": "0p5axeJsbtTCXBrRVoKjwu", "musicbrainz": "c3ecef5d-84f3-4942-8c24-0a626343c3f4", "lastfm": "The Drums" },
+      "original": "drums.png",
+      "demo": {
+        "cosignedBy": ["The Strokes", "Tame Impala"],
+        "trending": { "now": 63500, "week": 455000, "month": 1880000, "year": 16900000 },
+        "prevRank": { "now": 1, "week": 2, "month": 1, "year": 1 }
+      }
+    },
+    {
+      "id": "jaws",
+      "name": "Jaws",
+      "genre": "Indie Pop",
+      "hometown": "Birmingham, UK",
+      "ids": { "wikidata": "Q16240102", "spotify": "3E3NOIlw2s1ZPU9GRB9jaq", "musicbrainz": "5a9f7e66-3708-45a9-8478-c10bedaafb09", "lastfm": "Jaws" },
+      "original": "jaws.png",
+      "demo": {
+        "cosignedBy": ["The 1975", "The xx", "Wolf Alice"],
+        "trending": { "now": 52500, "week": 301000, "month": 1240000, "year": 9100000 },
+        "prevRank": { "now": 2, "week": 4, "month": 3, "year": 4 }
+      }
+    },
+    {
+      "id": "saba",
+      "name": "Saba",
+      "genre": "Hip-Hop",
+      "hometown": "Chicago, IL",
+      "ids": { "wikidata": "Q25210913", "spotify": "7Hjbimq43OgxaBRpFXic4x", "musicbrainz": "057d211a-fba8-42d7-ad14-41f41d6f762f", "lastfm": "Saba" },
+      "original": "saba.png",
+      "demo": {
+        "cosignedBy": ["Chance the Rapper", "Noname", "Travis Scott"],
+        "trending": { "now": 40500, "week": 338000, "month": 1520000, "year": 12700000 },
+        "prevRank": { "now": 4, "week": 3, "month": 4, "year": 3 }
+      }
+    },
+    {
+      "id": "jackal",
+      "name": "Jackal",
+      "genre": "Electronic",
+      "hometown": null,
+      "ids": { "wikidata": null, "spotify": "5pTAtfO5NRMgj3zsT721WO", "musicbrainz": "cba76057-c7d0-4ab9-a104-eb2ba4a6ecca", "lastfm": "Jackal" },
+      "original": "jackal.png",
+      "demo": {
+        "cosignedBy": ["Rezz", "Porter Robinson"],
+        "trending": { "now": 10300, "week": 96000, "month": 512000, "year": 3400000 },
+        "prevRank": { "now": 7, "week": 5, "month": 6, "year": 6 }
+      }
+    },
+    {
+      "id": "ski-mask",
+      "name": "Ski Mask The Slump God",
+      "genre": "Hip-Hop",
+      "hometown": "Fort Lauderdale, FL",
+      "ids": { "wikidata": "Q42224353", "spotify": "2rhFzFmezpnW82MNqEKVry", "musicbrainz": "faf916e0-ffc5-4345-a10b-b79ed8c9b8f6", "lastfm": "Ski Mask the Slump God" },
+      "original": "ski.png",
+      "demo": {
+        "cosignedBy": ["Travis Scott", "Drake", "Kanye West"],
+        "trending": { "now": 5500, "week": 88000, "month": 690000, "year": 7800000 },
+        "prevRank": { "now": 6, "week": 6, "month": 5, "year": 5 }
+      }
+    },
+    {
+      "id": "the-xx",
+      "name": "The xx",
+      "genre": "Indie Pop",
+      "hometown": "London, UK",
+      "ids": { "wikidata": "Q869367", "spotify": "3iOvXCl6edW5Um0fXEBRXy", "musicbrainz": "c5c2ea1c-4bde-4f4d-bd0b-47b200bf99d6", "lastfm": "The xx" },
+      "original": "xx.png",
+      "demo": { "cosignedBy": ["Rihanna", "Drake"] }
+    },
+    {
+      "id": "porter-robinson",
+      "name": "Porter Robinson",
+      "genre": "Electronic",
+      "hometown": "Chapel Hill, NC",
+      "ids": { "wikidata": "Q21084", "spotify": "3dz0NnIZhtKKeXZxLOxCam", "musicbrainz": "4ae36ade-1798-48c4-b06b-cc68b7d3d83f", "lastfm": "Porter Robinson" },
+      "original": "porter.png",
+      "demo": { "cosignedBy": ["Skrillex", "Madeon"] }
+    },
+    {
+      "id": "drake",
+      "name": "Drake",
+      "genre": "Hip-Hop",
+      "hometown": "Toronto, Canada",
+      "ids": { "wikidata": "Q33240", "spotify": "3TVXtAsR1Inumwj472S9r4", "musicbrainz": "9fff2f8a-21e6-47de-a2b8-7f449929d43f", "lastfm": "Drake" },
+      "original": "drake.png",
+      "demo": { "cosignedBy": ["Lil Wayne", "Kanye West"] }
+    }
+  ],
+  "featured": [
+    { "artist": "travis-scott", "label": "Artist of the Week" },
+    { "artist": "tame-impala", "label": "Rising" },
+    { "artist": "rezz", "label": "New Release" }
+  ],
+  "trending": ["g-jones", "the-drums", "jaws", "saba", "jackal", "ski-mask"],
+  "top": ["the-xx", "porter-robinson", "drake"]
+}

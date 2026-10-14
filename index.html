@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Font --><link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,800|Roboto&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS --><link rel="stylesheet" href="home.css">
+    <link rel="icon" href="images/favicon.png">
+    <title>Cosignr</title>
+  </head>
+  <body>
+
+    <!-- SVG icons -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></symbol>
+      <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </svg>
+
+<!-------------------------------------- COSIGNR ------------------------------------------------------------------------------->
+    <header class="topbar">
+      <form class="search" id="searchForm" role="search">
+        <svg class="icon"><use href="#i-search"/></svg>
+        <input id="search" type="search" placeholder="Search artists, genres, cosigns…" aria-label="Search artists" autocomplete="off">
+        <button type="submit">Search</button>
+      </form>
+
+      <a href="#" class="logo" aria-label="Cosignr home">
+        <span class="logo-mark"><svg class="icon"><use href="#i-check"/></svg></span>
+        Cosignr
+      </a>
+
+      <div class="auth">
+        <button class="btn-login" type="button" data-modal="login">Login</button>
+        <button class="btn-signup" type="button" data-modal="signup">Sign Up</button>
+      </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+      <ul>
+        <li><a class="active" href="#" data-target="search">Find Artist</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#trending">Trending</a></li>
+      </ul>
+    </nav>
+
+    <!------------------------------------------- MAIN ---------------------------------------------------------------------------------->
+    <main class="main">
+      <div class="section-head" id="featured">
+        <div>
+          <h2>Featured Artists</h2>
+          <p>Hand-picked this week by the Cosignr community.</p>
+        </div>
+      </div>
+
+      <div class="gallery" id="gallery"></div>
+
+      <!------------ TRENDING ARTISTS ------------>
+      <div class="section-head" id="trending">
+        <div>
+          <h2>Trending Artists</h2>
+          <p id="trendingSub">Who the artists you love are cosigning right now. <span class="demo-tag" title="Placeholder numbers until real stats are connected (Milestone 1)">Demo data</span></p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Sort trending artists">
+          <span>Sort by</span>
+          <button class="active" type="button" role="tab" aria-selected="true" data-period="now">Now</button>
+          <button type="button" role="tab" aria-selected="false" data-period="week">This Week</button>
+          <button type="button" role="tab" aria-selected="false" data-period="month">This Month</button>
+          <button type="button" role="tab" aria-selected="false" data-period="year">This Year</button>
+        </div>
+      </div>
+
+      <ol class="trending" id="trendingList"></ol>
+      <!----------- /TRENDING ARTISTS ------------------>
+
+      <button class="showmore" id="showMore" type="button">
+        <span>Show More</span> <svg class="icon"><use href="#i-down"/></svg>
+      </button>
+    </main>
+    <!--------------------------------------------------------- /MAIN --------------------------------------------------------------->
+
+    <!------------- TOP ARTISTS ----------------->
+    <section class="bottom" id="top">
+      <h3>Top Artists</h3>
+      <p class="sub">The most cosigned artists on Cosignr of all time.</p>
+      <div class="top-grid" id="topGrid"></div>
+    </section>
+
+    <footer>
+      <a href="#" class="logo">
+        <span class="logo-mark"><svg class="icon"><use href="#i-check"/></svg></span>
+        Cosignr
+      </a>
+      <div class="links">
+        <a href="#">About</a>
+        <a href="#">For Artists</a>
+        <a href="#">How Cosigns Work</a>
+        <a href="#">Privacy</a>
+      </div>
+      <span>© 2026 Cosignr · Discover music through the artists you trust.</span>
+      <details class="credits" id="credits" hidden>
+        <summary>Photo credits</summary>
+        <ul id="creditsList"></ul>
+      </details>
+    </footer>
+
+    <!-- AUTH MODAL -->
+    <div class="modal" id="modal" aria-hidden="true">
+      <form class="modal-card" id="authForm" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="close" type="button" aria-label="Close">&times;</button>
+        <h4 id="modalTitle">Create your account</h4>
+        <p id="modalText">Follow artists and see who they cosign.</p>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.com" required>
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="••••••••" required>
+        <button class="primary" id="modalSubmit" type="submit">Sign Up</button>
+        <p class="switch" id="modalSwitch"></p>
+      </form>
+    </div>
+
+    <div class="toast" id="toast" role="status"></div>
+
+    <!-- DEVELOPER PANEL (Shift+D or ?dev) -->
+    <aside class="dev-panel" id="devPanel" hidden aria-label="Developer panel">
+      <div class="dev-head">
+        <b>Dev · Image source</b>
+        <button id="devClose" type="button" aria-label="Close developer panel">&times;</button>
+      </div>
+      <div class="dev-options"></div>
+      <p class="dev-meta"></p>
+    </aside>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

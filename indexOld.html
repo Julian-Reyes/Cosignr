@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+    <!-- Google Font --><link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <!-- Bootstrap CSS --><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <script src="https://kit.fontawesome.com/7529a9a100.js"></script> -->
+
+    <!-- Custom CSS --><link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon/favicon-dev-32.png">
+    <title>Cosignr</title>
+    <style>
+    body {
+     
+
+    @media (max-width: 426px) {
+      .bottom {
+        margin-left: -90px;
+      }
+    }
+  </style>
+  </head>
+  <body>
+<!-------------------------------------- COSIGNR ------------------------------------------------------------------------------->
+<!--
+   <div class="topbar">
+
+
+      <div class="topleft">
+        <div class="row1">
+
+        <input type="text" name="" value="">
+        <button type="button" name="button"></button>
+      </div>
+      </div>
+
+      <div class="topright">
+        <div class="row2">
+
+        <button style="height: 30px;" type="button" name="button">Login</button>
+        <button style="height: 30px;" type="button" name="button">Sign Up</button>
+      </div>
+    </div>
+
+    </div> -->
+
+
+    <div class="row topbar" style="overflow: hidden;">
+
+
+      <div class="col-xs-6 col-md-5 col-lg-3 pl-4 col-xl-3">
+        <div class="row">
+          <input  type="text" name="" value="">
+          <button style="background-color: #FEC39B;font-size: .7em;" type="button" name="button">Search</button>
+        </div>
+      </div>
+      <div class="col-xs-1 col-md-3 col-lg-6 col-xl-7 text-center">
+      </div>
+      <div class="col-xs-5 col-md-4 col-lg-3 col-xl-2 t">
+        <div class="row">
+          <button style="background-color: white;font-size: .7em;border: none; height: 30px;width: 30%;" type="submit" name="button">Login</button>
+          <button style="background-color: #FEC39B;font-size: .7em;margin-left: 30px;; height: 30px;width: 30%;" type="submit" name="button">Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav style="width: 100%;">
+      <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active text-white" href="#">Find Artist</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Featured</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Top</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">Trending</a>
+      </li>
+    </ul>
+    </nav>
+
+    <!------------------------------------------- MAIN ---------------------------------------------------------------------------------->
+    <div class="main">
+      <h2>Featured Artists</h2>
+
+      <div class="gallery row">
+        <div class="left col-7 text-center fill">
+          <img style="height: 100px;" src="travis.png" alt="">
+        </div>
+
+        <div class="right col-5 text-center">
+          <div style="height:247px;" class="fill">
+            <img style="height: 100px;" src="impala.png" alt="">
+          </div>
+          <div style="height:247px;" class="fill">
+            <img style="height: 100px;" src="rezz.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!------------ TRENDING ARTISTS ------------>
+      <div  class="newthing">
+        <div class="row">
+          <div class="col-4">
+            <h2 style="padding-bottom: 30px;">Trending Artists</h2>
+          </div>
+          <div class="col-8 text-right">
+            <button style="background-color: Transparent;background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;width: 100px;" type="button" 
+            name="button">Sort By</button>
+            <button style="background-color: #4BD6FF;width: 130px;" type="button" name="button">Now</button>
+            <button style="width: 130px;border:none;background-color:lightgrey" type="button" name="button">This Week</button>
+            <button style="width: 130px;border:none;background-color:lightgrey" type="button" name="button">This Month</button>
+            <button style="width: 130px;border:none;background-color:lightgrey" type="button" name="button">This Year</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="trendingArtists column">
+
+
+        <div class="row artistcol">
+          <div class="col-11 col-lg-10">
+            <div class="row">
+
+              <img  style="height: 128px;" src="gjones.png" alt="">
+              <div style="margin-left: 20px;justify-content:center;align-items:center;" class="column">
+                <h2>G. Jones</h2>
+                <div class="row">
+                  <h5 style="padding-left: 40px;padding-right:20px;">Cosigns: </h5>
+                  <button style="background-color: #FEC29B" class="d-sm-none d-lg-inline mybuttons" type="button" name="button">Porter Robinson</button>
+
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">Flume</button>
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">Bassnectar</button>
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">What's Hot</button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="d-sm-none d-xl-inline col-1 col-lg-2 text-right">
+            <p>77.31k Streams</p>
+          </div>
+        </div>
+
+
+        <div class="row artistcol">
+          <div class="col-9 col-lg-10">
+            <div class="row">
+
+              <img style="height: 140px;" src="drums.png" alt="">
+              <div style="margin-left: 20px;justify-content:center;align-items:center;" class="column">
+                <h2>The Drums</h2>
+                <div class="row">
+                  <h5 style="padding-left: 40px;padding-right:20px;">Cosigns: </h5>
+                  <button style="background-color: #FEC29B" class="mybuttons" type="button" name="button">The Strokes</button>
+
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">Tame Impala</button>
+                  <!-- <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">Bassnectar</button>
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">What's Hot</button> -->
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-2 text-right">
+            <p>63.5k Streams</p>
+
+          </div>
+
+        </div>
+
+        <div class="row artistcol">
+          <div class="col-9 col-lg-10">
+            <div class="row">
+
+              <img style="height: 140px;" src="jaws.png" alt="">
+              <div style="margin-left: 20px;justify-content:center;align-items:center;" class="column">
+                <h2>Jaws</h2>
+                <div class="row">
+                  <h5 style="padding-left: 40px;padding-right:20px;">Cosigns: </h5>
+                  <button style="background-color: #FEC29B" class="d-sm-none d-lg-inline mybuttons" type="button" name="button">Porter Robinson</button>
+
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">Flume</button>
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">Bassnectar</button>
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">What's Hot</button>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-2 text-right">
+            <p>52.5k Streams</p>
+          </div>
+        </div>
+
+        <div class="row artistcol">
+          <div class="col-9 col-lg-10">
+            <div class="row">
+
+              <img style="height: 140px;" src="saba.png" alt="">
+              <div style="margin-left: 20px;justify-content:center;align-items:center;" class="column">
+                <h2>Saba</h2>
+                <div class="row">
+                  <h5 style="padding-left: 40px;padding-right:20px;">Cosigns: </h5>
+                  <button style="background-color: #FEC29B" class="mybuttons" type="button" name="button">Porter Robinson</button>
+
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">Flume</button>
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">Bassnectar</button>
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">What's Hot</button>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-2 text-right">
+            <p>40.5k Streams</p>
+          </div>
+        </div>
+
+        <div class="row artistcol">
+          <div class="col-9 col-lg-10">
+            <div class="row">
+              <img style="height: 140px;" src="jackal.png" alt="">
+              <div style="margin-left: 20px;justify-content:center;align-items:center;" class="column">
+                <h2>Jackal</h2>
+                <div class="row">
+                  <h5 style="padding-left: 40px;padding-right:20px;">Cosigns: </h5>
+                  <button style="background-color: #FEC29B" class="mybuttons" type="button" name="button">Porter Robinson</button>
+
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">Flume</button>
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">Bassnectar</button>
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">What's Hot</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 text-right">
+            <p>10.3k Streams</p>
+          </div>
+        </div>
+
+        <div class="row artistcol">
+          <div class="col-11 col-lg-11">
+            <div class="row">
+              <img style="height: 140px;" src="ski.png" alt="">
+              <div style="margin-left: 20px;justify-content:center;align-items:center;" class="column">
+                <h2>Ski Mask The Slump God</h2>
+                <div class="row">
+                  <h5 style="padding-left: 40px;padding-right:20px;">Cosigns: </h5>
+                  <button style="background-color: #FEC29B" class="mybuttons" type="button" name="button">Porter Robinson</button>
+
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">Flume</button>
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">Bassnectar</button>
+                  <button style="background-color: #4BD6FF" class="mybuttons" type="button" name="button">What's Hot</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1 text-right">
+            <p>5.5k Streams</p>
+          </div>
+        </div>
+
+
+      </div>
+      <!----------- /TRENDING ARTISTS ------------------>
+
+
+      <a href="#"> <p class="text-center showmore">Show More <i class="fas fa-sort-down"></i></p></a>
+
+
+    </div>
+    <!--------------------------------------------------------- /MAIN --------------------------------------------------------------->
+
+    <!------------- TOP ARTISTS FOOTER ----------------->
+    <div class="bottom" style="overflow: hidden;margin-left: -40px; margin-right: 20px;">
+      <div class="main2" style="margin: auto !important;">
+        <h3 class="text-center">Top Artists</h3>
+        <div style="margin: auto !important;" class="text-center row y" >
+          <div class="col-4">
+            <img class="mybottomrows" src="xx.png" alt="">
+          </div>
+          <div class="col-4">
+            <img class="mybottomrows" src="porter.png" alt="">
+          </div>
+          <div class="col-4">
+            <img style="height: auto;"class="mybottomrows" src="drake.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------- TOP ARTISTS FOOTER ---------------->
+
+
+    <div style="background-color: lightblue" class="">
+      <a href="#"> <p style="background-color: lightblue;" class="showmore text-center">Show More <i class="fas fa-sort-down"></i></p></a>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/aa1b833c65.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
