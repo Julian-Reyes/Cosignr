@@ -1,0 +1,354 @@
+{
+  "generatedAt": "2026-10-14T20:13:18.155Z",
+  "scale": {
+    "deezerFans": [
+      3,
+      8
+    ],
+    "lastfmListeners": [
+      3,
+      7.5
+    ],
+    "lastfmPlays": [
+      4,
+      9.5
+    ]
+  },
+  "sources": {
+    "deezer": true,
+    "lastfm": true
+  },
+  "artists": {
+    "travis-scott": {
+      "deezer": {
+        "fans": 3149496,
+        "albums": 63,
+        "url": "https://www.deezer.com/artist/4495513"
+      },
+      "lastfm": {
+        "listeners": 3491681,
+        "plays": 711047692,
+        "tags": [],
+        "url": "https://www.last.fm/music/+noredirect/Travis+Scott"
+      },
+      "excluded": [],
+      "score": {
+        "value": 79,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "tame-impala": {
+      "deezer": {
+        "fans": 1151112,
+        "albums": 41,
+        "url": "https://www.deezer.com/artist/134790"
+      },
+      "lastfm": {
+        "listeners": 4669892,
+        "plays": 453108410,
+        "tags": [
+          "Psychedelic Rock",
+          "psychedelic",
+          "indie rock",
+          "australian",
+          "rock"
+        ],
+        "url": "https://www.last.fm/music/Tame+Impala"
+      },
+      "excluded": [],
+      "score": {
+        "value": 76,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "rezz": {
+      "deezer": {
+        "fans": 32377,
+        "albums": 72,
+        "url": "https://www.deezer.com/artist/5879522"
+      },
+      "lastfm": {
+        "listeners": 429580,
+        "plays": 10248687,
+        "tags": [
+          "midtempo bass",
+          "dubstep",
+          "electro house",
+          "electronic",
+          "halftime"
+        ],
+        "url": "https://www.last.fm/music/Rezz"
+      },
+      "excluded": [],
+      "score": {
+        "value": 48,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "g-jones": {
+      "deezer": {
+        "fans": 1811,
+        "albums": 35,
+        "url": "https://www.deezer.com/artist/4520160"
+      },
+      "lastfm": {
+        "listeners": 126684,
+        "plays": 2436931,
+        "tags": [
+          "slimepunk",
+          "trap",
+          "bass",
+          "acid trap",
+          "electronic"
+        ],
+        "url": "https://www.last.fm/music/G+Jones"
+      },
+      "excluded": [],
+      "score": {
+        "value": 32,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "the-drums": {
+      "deezer": {
+        "fans": 162591,
+        "albums": 41,
+        "url": "https://www.deezer.com/artist/308867"
+      },
+      "lastfm": {
+        "listeners": 2231306,
+        "plays": 52760310,
+        "tags": [
+          "indie",
+          "indie rock",
+          "indie pop",
+          "surf rock",
+          "pop"
+        ],
+        "url": "https://www.last.fm/music/The+Drums"
+      },
+      "excluded": [],
+      "score": {
+        "value": 62,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "jaws": {
+      "deezer": {
+        "fans": 2381,
+        "albums": 29,
+        "url": "https://www.deezer.com/artist/5566102"
+      },
+      "lastfm": {
+        "listeners": 130151,
+        "plays": 1608772,
+        "tags": [
+          "indie",
+          "hardcore",
+          "indie rock",
+          "indie pop",
+          "Lo-Fi"
+        ],
+        "url": "https://www.last.fm/music/Jaws"
+      },
+      "excluded": [],
+      "score": {
+        "value": 32,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "saba": {
+      "deezer": {
+        "fans": 29336,
+        "albums": 37,
+        "url": "https://www.deezer.com/artist/253278"
+      },
+      "lastfm": {
+        "listeners": 832920,
+        "plays": 36810630,
+        "tags": [
+          "hip hop",
+          "rap",
+          "chicago",
+          "Hip-Hop",
+          "jazz rap"
+        ],
+        "url": "https://www.last.fm/music/Saba"
+      },
+      "excluded": [],
+      "score": {
+        "value": 53,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "jackal": {
+      "deezer": {
+        "fans": 6308,
+        "albums": 100,
+        "url": "https://www.deezer.com/artist/310086"
+      },
+      "lastfm": {
+        "listeners": 62893,
+        "plays": 400935,
+        "tags": [
+          "heavy metal",
+          "trap",
+          "Power metal",
+          "Traditional Metal",
+          "electronic"
+        ],
+        "url": "https://www.last.fm/music/Jackal"
+      },
+      "excluded": [
+        "deezerFans"
+      ],
+      "score": {
+        "value": 35,
+        "inputs": [
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "ski-mask": {
+      "deezer": {
+        "fans": 325354,
+        "albums": 43,
+        "url": "https://www.deezer.com/artist/11347866"
+      },
+      "lastfm": {
+        "listeners": 1346922,
+        "plays": 75599133,
+        "tags": [
+          "trap",
+          "Hip-Hop",
+          "rap",
+          "hip hop",
+          "florida"
+        ],
+        "url": "https://www.last.fm/music/Ski+Mask+the+Slump+God"
+      },
+      "excluded": [],
+      "score": {
+        "value": 63,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "the-xx": {
+      "deezer": {
+        "fans": 1104569,
+        "albums": 21,
+        "url": "https://www.deezer.com/artist/261212"
+      },
+      "lastfm": {
+        "listeners": 2802267,
+        "plays": 189784220,
+        "tags": [
+          "indie",
+          "electronic",
+          "post-punk",
+          "british",
+          "dance"
+        ],
+        "url": "https://www.last.fm/music/The+xx"
+      },
+      "excluded": [],
+      "score": {
+        "value": 72,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "porter-robinson": {
+      "deezer": {
+        "fans": 170144,
+        "albums": 31,
+        "url": "https://www.deezer.com/artist/864274"
+      },
+      "lastfm": {
+        "listeners": 1395738,
+        "plays": 71211424,
+        "tags": [
+          "electro house",
+          "electronic",
+          "dubstep",
+          "House",
+          "electro"
+        ],
+        "url": "https://www.last.fm/music/Porter+Robinson"
+      },
+      "excluded": [],
+      "score": {
+        "value": 62,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "drake": {
+      "deezer": {
+        "fans": 24107559,
+        "albums": 94,
+        "url": "https://www.deezer.com/artist/246791"
+      },
+      "lastfm": {
+        "listeners": 6942605,
+        "plays": 1277494552,
+        "tags": [
+          "Hip-Hop",
+          "rap",
+          "rnb",
+          "hip hop",
+          "Canadian"
+        ],
+        "url": "https://www.last.fm/music/Drake"
+      },
+      "excluded": [],
+      "score": {
+        "value": 89,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    }
+  }
+}

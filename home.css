@@ -376,9 +376,9 @@ nav a.active{ opacity: 1; border-bottom-color: var(--blue); }
 .chip:hover{ transform: translateY(-1px); box-shadow: 0 3px 8px rgba(0,0,0,.1); }
 .chip.top{ background: var(--peach); }
 
-.streams{ text-align: right; min-width: 130px; }
-.streams b{ display: block; font-size: 1.15em; font-weight: 800; }
-.streams small{ color: var(--muted); }
+.stat{ text-align: right; min-width: 130px; }
+.stat b{ display: block; font-size: 1.15em; font-weight: 800; }
+.stat small{ color: var(--muted); }
 .bar{
   height: 5px;
   background: #eef2f4;
@@ -563,7 +563,7 @@ footer .credits a:hover{ color: #fff; }
 .dev-options input{ accent-color: var(--blue); margin: 0; }
 .dev-options span{ flex: 1; }
 .dev-options small{ color: #9aa6b1; font-variant-numeric: tabular-nums; }
-.dev-meta{ margin: 8px 0 0; color: #7f8b96; font-size: .9em; }
+.dev-meta{ margin: 8px 0 0; color: #7f8b96; font-size: .9em; white-space: pre-line; }
 body.dev .credit{ opacity: 1; }
 
 /* ---------------- MODAL ---------------- */
@@ -650,7 +650,7 @@ body.dev .credit{ opacity: 1; }
   footer{ padding-left: 40px; padding-right: 40px; }
   .artist{ grid-template-columns: 40px 100px minmax(0,1fr) auto; }
   .avatar{ width: 100px; height: 100px; }
-  .streams{ display: none; }
+  .stat{ display: none; }
 }
 
 @media (max-width: 760px){

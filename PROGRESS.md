@@ -28,18 +28,38 @@ Goal: every section renders from one data file, no text is baked into images, an
 - ⬜ Request press photos for G Jones and Jackal (no Wikimedia photo exists)
 - ⬜ Review Wikimedia crops per artist and add `focus` overrides where faces get cut off
 
-## Milestone 1: real data and infrastructure ⬜
+## Milestone 1: real data and infrastructure 🟡
+
+### Research findings (2026-10-14)
+- **Spotify popularity is not available to new apps.** Since Feb 11, 2026, new Development Mode apps no longer get artist `popularity` or `followers`, the app owner needs Spotify Premium, and apps are capped at 5 users. Extended quota (which keeps them) is for established businesses. Sources: [migration guide](https://developer.spotify.com/documentation/web-api/tutorials/february-2026-migration-guide), [TechCrunch](https://techcrunch.com/2026/02/06/spotify-changes-developer-mode-api-to-require-premium-accounts-limits-test-users/), [July 2026 changelog](https://developer.spotify.com/documentation/web-api/references/changes/july-2026) (no restoration).
+- **Replacement (approved):** a computed **Cosignr score (0–100)** from Last.fm listeners/plays + Deezer fans.
+- **Deezer works with no key** (`api.deezer.com/artist/{id}`): `nb_fan`, 1000px `picture_xl`, top tracks with 30s previews.
+- **Deezer IDs:** MusicBrainz URL relations give 10/12, but two point at near-empty duplicates. Verified IDs to use:
+  - travis-scott 4495513 (3.1M fans), tame-impala 134790, rezz 5879522, g-jones 4520160, the-drums 308867, ski-mask 11347866, the-xx 261212, drake 246791 (24.1M)
+  - saba **253278** (29k fans). MusicBrainz says 130363052, which has 6 fans
+  - porter-robinson **864274** (170k). MusicBrainz says 332244311, which has 96 fans
+  - jaws **5566102** "JAWS" (2.4k): has the band's albums Be Slowly / Simplicity / The Ceiling. 610520 is a different "Jaws"
+  - jackal **310086** (MusicBrainz agrees, has Empathy / Netflix N Kill / Animal Style) but the page is shared with other "Jackal"s, so fans are excluded via `caveats`
+- **Deezer skews European.** G Jones has 1.8k Deezer fans and Jaws 2.4k, so Deezer-only scores understate US/underground artists. Last.fm should balance it.
+- **MusicBrainz extras** (no key): area (e.g. G Jones = Santa Cruz), begin dates, type Person/Group. Could fill the `null` hometowns.
 
 ### 3. Real stats and more free data
-- ⬜ Register a Spotify app; confirm which endpoints are still available (popularity 0–100, followers, genres)
-- ⬜ Last.fm API key; pull listeners + playcount + tags per artist
-- ⬜ Replace "streams" UI with popularity score + Last.fm listeners/plays; decide what the Now/Week/Month/Year tabs mean with real data (Last.fm charts? our own snapshots over time?)
+- ✅ **Decided 2026-10-14:** show Last.fm **listeners and plays** as raw numbers (replacing the fake "streams") **and** a computed **Cosignr score (0–100)** from Last.fm + Deezer as the headline/ranking number. Spotify popularity dropped.
+- ✅ Last.fm API key in `.env` (git-ignored). Still to do: add it as the `LASTFM_API_KEY` repo secret for the nightly job
+- ✅ Add `ids.deezer` to artists.json (12/12), Jaws + Jackal resolved; per-artist `caveats` exclude known-bad metrics
+- ✅ `scripts/fetch-stats.mjs` → `data/stats.json` + daily `data/snapshots/<date>.json`. Deezer now; Last.fm when key exists; keeps previous values for skipped sources
+- ✅ Cosignr score: log10 of each metric scaled between fixed bounds (`SCALE` in the script) to 0–100, averaged
+- ✅ Last.fm: listeners + playcount + tags for 12/12. Checked each page is the right artist: 8 match our MusicBrainz ID; Rezz and Saba use a different ID but tags fit; Jaws top tracks are the Birmingham band's; Jackal's page is shared with a metal band (metal tags) but his tracks dominate, so his numbers are kept and are slightly high
+- ✅ Score bounds checked with Last.fm included: range is 32 (G Jones, Jaws) to 89 (Drake), no tuning needed
+- ✅ Replaced fake "streams" UI: Trending ranks by Cosignr score; Now/Week/Month/Year tabs replaced by "Sort by" Score / Listeners / Plays / Fans (only metrics with data show). Removed demo `trending`/`prevRank` numbers. Badge now says "Demo cosigns"
+- ⬜ Bring back rank changes (▲/▼) and "rising this week" from snapshots once there are ~7 days of them
+- ⬜ Show the stat on narrow screens (the stat column is still hidden below 1100px, as before)
 - ⬜ Evaluate extra free sources: Deezer (fans, 1000px images, previews), MusicBrainz (relationships, area), Wikidata (hometown, socials), Wikipedia (bio), ListenBrainz, TheAudioDB
 - ⬜ Define the cosign evidence model (from, to, type, date, source URL) and seed it from MusicBrainz + Setlist.fm
 
 ### 4. Infrastructure
-- ⬜ GitHub Action: nightly fetch with API keys from repo secrets, commit updated `data/*.json`
-- ⬜ Store daily snapshots so we can compute real "trending" and rank changes
+- 🟡 GitHub Action `.github/workflows/refresh-data.yml`: nightly 06:17 UTC + manual run, commits `data/`. Needs to be pushed and run once; add `LASTFM_API_KEY` secret
+- ✅ Store daily snapshots (`data/snapshots/`)
 - ⬜ Accounts + user cosigns (Supabase or Firebase)
 - ⬜ Artist detail page
 - ⬜ "Who cosigned who" graph view
@@ -47,3 +67,6 @@ Goal: every section renders from one data file, no text is baked into images, an
 ## Log
 
 - **2026-10-14:** UI polish pass on the original mockup (layout kept, interactions added). Started Milestone 0: moved data to `artists.json`, added fetch script, Wikimedia + Spotify + press sources, dev panel, credits. Found Commons rejects 400px thumbnails (now 500px) and Spotify oEmbed returns only 320px (upgraded to 640px via URL size code). Created CLAUDE.md, PROGRESS.md, WALKTHROUGH.md. Julian picked Spotify as the default image source. Moved the project out of the portfolio repo (`Julian-Reyes.github.io/CoSign`) into its own folder, `cosignr/`.
+- **2026-10-14 (later):** Pushed to GitHub (needed `http.postBuffer` raised for the first push). Started Milestone 1 research: Spotify no longer gives popularity/followers to new apps; Deezer works keyless; verified Deezer IDs for 10 artists (see Research findings).
+- **2026-10-14 (evening):** Resolved Deezer IDs for Jaws (5566102) and Jackal (310086, shared page, excluded via new `caveats` field). Added `scripts/fetch-stats.mjs` (Deezer + Last.fm-when-keyed, Cosignr score, daily snapshots), switched Trending to real scores with metric tabs, removed fake trending numbers, added nightly refresh workflow. Waiting on Last.fm key.
+- **2026-10-14 (night):** Last.fm key added and first full run done. Scores now 32–89 with Last.fm + Deezer. Verified Last.fm pages per artist (see Milestone 1 §3).

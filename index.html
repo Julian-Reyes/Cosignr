@@ -65,15 +65,9 @@
       <div class="section-head" id="trending">
         <div>
           <h2>Trending Artists</h2>
-          <p id="trendingSub">Who the artists you love are cosigning right now. <span class="demo-tag" title="Placeholder numbers until real stats are connected (Milestone 1)">Demo data</span></p>
+          <p id="trendingSub">Who the artists you love are cosigning right now. <span class="demo-tag" title="Cosigns are placeholders until real cosign data is connected (Milestone 1). Stats are real.">Demo cosigns</span></p>
         </div>
-        <div class="tabs" role="tablist" aria-label="Sort trending artists">
-          <span>Sort by</span>
-          <button class="active" type="button" role="tab" aria-selected="true" data-period="now">Now</button>
-          <button type="button" role="tab" aria-selected="false" data-period="week">This Week</button>
-          <button type="button" role="tab" aria-selected="false" data-period="month">This Month</button>
-          <button type="button" role="tab" aria-selected="false" data-period="year">This Year</button>
-        </div>
+        <div class="tabs" id="metricTabs" role="tablist" aria-label="Sort trending artists"></div>
       </div>
 
       <ol class="trending" id="trendingList"></ol>
