@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-10-15T18:33:35.495Z",
+  "source": "Ticketmaster Discovery API (live listings, rebuilt nightly)",
+  "artists": {
+    "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
+      "name": "Tame Impala",
+      "id": "tame-impala"
+    },
+    "90744b3e-363a-458e-8da1-e3e392a489c4": {
+      "name": "Wet Leg"
+    }
+  },
+  "cosigns": [
+    {
+      "from": "63aa26c3-d59b-4da4-84ac-716b54f1ef4d",
+      "to": "90744b3e-363a-458e-8da1-e3e392a489c4",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 8,
+      "first": "2027-05-28",
+      "last": "2027-06-09",
+      "next": {
+        "tour": "Tame Impala - Deadbeat EU/UK Tour 2027",
+        "date": "2027-05-28",
+        "city": "Manchester",
+        "url": "https://www.ticketmaster.co.uk/tame-impala-deadbeat-euuk-tour-2027-manchester-28-05-2027/event/37006515B7C2A40D"
+      }
+    }
+  ]
+}

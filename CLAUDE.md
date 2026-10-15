@@ -20,7 +20,8 @@ cosignr/
   scripts/fetch-sources.mjs  Pulls image URLs + credits from free sources
   scripts/fetch-stats.mjs    Pulls stats; Last.fm only if LASTFM_API_KEY is in .env or the env
   scripts/fetch-cosigns.mjs  Pulls cosigns from MusicBrainz credits (~7 min, 1 req/s; first run longer)
-  scripts/fetch-tours.mjs    Pulls tour cosigns (headliner -> opener) from Wikipedia + MusicBrainz events -> data/tours.json
+  scripts/fetch-tours.mjs    Pulls tour (headliner -> opener) and touring-band cosigns from Wikipedia + MusicBrainz -> data/tours.json
+  scripts/fetch-upcoming.mjs Upcoming shows with openers from Ticketmaster (TICKETMASTER_API_KEY) -> data/upcoming.json, rebuilt nightly
   data/cache/             GENERATED caches that make nightly runs faster (e.g. cosigners' death/split dates)
   scripts/fetch-profiles.mjs Pulls hometowns from MusicBrainz (~1 min) and prints differences from artists.json
   scripts/lib/musicbrainz.mjs  Shared MusicBrainz client (rate limit + retry). Use it for any new MusicBrainz calls
@@ -41,7 +42,7 @@ python3 -m http.server 8000   (from the project root)
 # http://localhost:8000/?src=spotify   force an image source
 ```
 
-Refresh generated data, in this order: `node scripts/fetch-sources.mjs`, `node scripts/fetch-cosigns.mjs`, `node scripts/fetch-tours.mjs`, `node scripts/fetch-profiles.mjs`, `node scripts/fetch-stats.mjs` (stats reads cosigns.json + tours.json to rank cosigners) (Node 18+, no dependencies; Last.fm needs `LASTFM_API_KEY` in `.env`).
+Refresh generated data, in this order: `node scripts/fetch-sources.mjs`, `node scripts/fetch-cosigns.mjs`, `node scripts/fetch-tours.mjs`, `node scripts/fetch-upcoming.mjs`, `node scripts/fetch-profiles.mjs`, `node scripts/fetch-stats.mjs` (stats reads cosigns, tours and upcoming to rank cosigners) (Node 18+, no dependencies; Last.fm needs `LASTFM_API_KEY` in `.env`).
 
 ## Rules
 
@@ -64,6 +65,7 @@ Refresh generated data, in this order: `node scripts/fetch-sources.mjs`, `node s
 - **Git: no AI attribution.** Never add `Co-Authored-By: Claude` (or any Claude/AI attribution) to commit messages or PR descriptions. Commits are authored by Julian only.
 - **Wikipedia tour infoboxes** have a `support_acts` field; trust only linked names, resolved to MusicBrainz via Wikidata P434. A redirect into a section (`tofragment`, "LA Priest" → "Late of the Pier#…") is a different act: skip it. Wikidata can hold two MusicBrainz IDs for one artist (Drake): prefer the roster one. Tour items often lack a performer on Wikidata, so also read the "<Artist> concert tours" category.
 - **MusicBrainz events:** festivals label the whole line-up "support act"; read only Concert (or untyped) events with ≤3 main performers. A solo project's touring band shows up as "instrumental/vocal supporting musician" (Tame Impala ↔ Nick Allbrook), not "member of band". Those still count as cosigns (Julian, 2026-10-15: Tame Impala is one person, so a touring musician was chosen by him); only "member of band" and "is person" are excluded.
+- **Ticketmaster:** never match by name ("Saba" → Sabaton, "Drake" → Drake White). Match roster artists by MusicBrainz or Spotify ID from `externalLinks`; its MusicBrainz IDs can be stale (Rezz, Saba) and some pages have no links at all (The xx). It also tags tribute/DJ nights with the real artist ("Drake vs Bad Bunny Dance Night").
 - Escape all data before putting it in HTML (`esc()` in app.js). Data will eventually come from users.
 
 ## Data model (data/artists.json)
@@ -91,7 +93,7 @@ Rules: "A feat. B" → A cosigns B. "A & B" → both ways. B remixed A → A cos
 
 Ranking of "Cosigned by" chips (Julian, 2026-10-15: fame counts most): cosigner's Last.fm listeners (`stats.json` → `cosigners`), then `vouches` (feature + remix songs), then `songs`, then `last`. Unknown fame ranks last.
 
-**Tours (data/tours.json)**, same shape with `types: ["tour"]`, `tours` (count) and evidence `{title|null, date, source: Wikipedia|MusicBrainz, url, shows?}`. Headliner cosigns the opener; one tour counts once (Julian, 2026-10-15). The page merges a pair's songs and tours into one chip and counts tours as vouches. Ticketmaster (upcoming shows) is live data: cache briefly, drop after the show, no revenue from it. Setlist.fm's terms forbid storing its data.
+**Tours (data/tours.json)**, same shape with `types: [tour|band]`, `tours` (count) and evidence `{type, title|null, date, source: Wikipedia|MusicBrainz, url, shows?}`. Headliner cosigns the opener; one tour counts once. `band`: hiring someone for your touring band is a cosign (Julian, 2026-10-15). **Upcoming (data/upcoming.json)** from Ticketmaster: `{from, to, types: ["upcoming"], shows, first, last, next: {tour, date, city, url}}`. The page merges songs, tours, band and upcoming for a pair into one chip; each tour, a band spot and an upcoming run count as vouches. Ticketmaster is live data: rebuilt nightly, hidden once past, no revenue from it. Setlist.fm's terms forbid storing its data.
 
 Wikidata is the hub for finding IDs: P1902 Spotify, P434 MusicBrainz, P3192 Last.fm, P18 Commons image. Small artists often aren't on Wikidata; MusicBrainz URL relations usually have their Spotify link.
 

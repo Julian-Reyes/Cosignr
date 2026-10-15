@@ -1,8 +1,8 @@
 # Refreshes data/ nightly and publishes the site to GitHub Pages.
 #   - Nightly (schedule) or "Run workflow" button: refresh data, commit it, then deploy
 #   - Push to main: deploy only
-# Needs: Settings → Pages → Source: "GitHub Actions", and the LASTFM_API_KEY repository secret
-# (without it, Last.fm is skipped and everything else still updates).
+# Needs: Settings → Pages → Source: "GitHub Actions", and the LASTFM_API_KEY and TICKETMASTER_API_KEY
+# repository secrets (without one, that source is skipped and everything else still updates).
 name: Refresh data and deploy
 
 on:
@@ -33,6 +33,9 @@ jobs:
       - run: node scripts/fetch-sources.mjs
       - run: node scripts/fetch-cosigns.mjs   # ~7 min: MusicBrainz allows 1 request/second
       - run: node scripts/fetch-tours.mjs     # ~3 min first run, then cached
+      - run: node scripts/fetch-upcoming.mjs  # Ticketmaster; skipped (keeps old file) without the key
+        env:
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
       - run: node scripts/fetch-profiles.mjs  # ~1 min
       - run: node scripts/fetch-stats.mjs     # after cosigns + tours: ranks cosigners by Last.fm listeners
         env:

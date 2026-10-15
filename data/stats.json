@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T17:56:40.060Z",
+  "generatedAt": "2026-10-15T18:35:37.412Z",
   "scale": {
     "deezerFans": [
       3,
@@ -21,13 +21,13 @@
   "artists": {
     "travis-scott": {
       "deezer": {
-        "fans": 3149795,
+        "fans": 3149821,
         "albums": 63,
         "url": "https://www.deezer.com/artist/4495513"
       },
       "lastfm": {
-        "listeners": 3493252,
-        "plays": 711212582,
+        "listeners": 3492475,
+        "plays": 711129911,
         "tags": [],
         "url": "https://www.last.fm/music/+noredirect/Travis+Scott"
       },
@@ -43,7 +43,7 @@
     },
     "tame-impala": {
       "deezer": {
-        "fans": 1151528,
+        "fans": 1151552,
         "albums": 42,
         "url": "https://www.deezer.com/artist/134790"
       },
@@ -71,7 +71,7 @@
     },
     "rezz": {
       "deezer": {
-        "fans": 32385,
+        "fans": 32386,
         "albums": 72,
         "url": "https://www.deezer.com/artist/5879522"
       },
@@ -245,8 +245,8 @@
         "url": "https://www.deezer.com/artist/11347866"
       },
       "lastfm": {
-        "listeners": 1347097,
-        "plays": 75605122,
+        "listeners": 1346922,
+        "plays": 75599133,
         "tags": [
           "trap",
           "Hip-Hop",
@@ -268,7 +268,7 @@
     },
     "the-xx": {
       "deezer": {
-        "fans": 1104627,
+        "fans": 1104628,
         "albums": 21,
         "url": "https://www.deezer.com/artist/261212"
       },
@@ -324,7 +324,7 @@
     },
     "drake": {
       "deezer": {
-        "fans": 24108310,
+        "fans": 24108351,
         "albums": 94,
         "url": "https://www.deezer.com/artist/246791"
       },
@@ -693,7 +693,7 @@
       "fetchedAt": "2026-10-15T15:24:45.855Z"
     },
     "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6": {
-      "listeners": 3493252,
+      "listeners": 3492475,
       "via": "roster"
     },
     "d768a82a-07c2-4854-ae03-d3fa4f33a30b": {
@@ -3489,6 +3489,12 @@
       "lastfmName": "Wifisfuneral",
       "via": "mbid",
       "fetchedAt": "2026-10-15T17:56:47.191Z"
+    },
+    "97b8d224-5660-419c-8dff-4b3bf0c33983": {
+      "listeners": 4177729,
+      "lastfmName": "The Neighbourhood",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T18:35:44.464Z"
     }
   }
 }

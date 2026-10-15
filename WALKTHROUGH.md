@@ -26,14 +26,16 @@ data/artists.json  ──┐
 data/sources.json  ──┼──>  js/app.js  ──>  index.html (Featured, Trending, Top)
 data/stats.json    ──┤
 data/cosigns.json  ──┤
-data/tours.json    ──┘
+data/tours.json    ──┤
+data/upcoming.json ──┘
 ```
 
 - **`data/artists.json`** is written by hand. It lists each artist, their IDs on other services, and which artists go in Featured, Trending and Top. Anything fake is kept under a `demo` key so it's easy to find and replace later.
 - **`data/sources.json`** is generated, so don't edit it by hand. It holds image links and photo credits for each artist.
 - **`data/stats.json`** is generated too. It holds each artist's real numbers (Deezer fans, Last.fm listeners and plays) and their Cosignr score. Each run also saves a copy of the day's numbers in `data/snapshots/`, so later we can show who is actually rising.
 - **`data/cosigns.json`** is generated from MusicBrainz and lists who has vouched for whom, with the songs as evidence (see "Cosigns" below).
-- **`data/tours.json`** is generated from Wikipedia and MusicBrainz and lists who took whom on tour (see "Tours" below).
+- **`data/tours.json`** is generated from Wikipedia and MusicBrainz and lists who took whom on tour, or into their touring band (see "Tours" below).
+- **`data/upcoming.json`** is generated from Ticketmaster and lists announced shows with an opener. It's rebuilt nightly.
 - **`js/app.js`** reads all of these and builds the page. `index.html` is just the frame.
 
 Names and details are drawn on top of the photos as text. The 2019 images had text baked into them, which is why their numbers couldn't be fixed.
@@ -96,11 +98,14 @@ Fame comes from Last.fm and is looked up by `fetch-stats.mjs`, so run that after
 Taking an artist on tour as your opener is a cosign too: the headliner chose them. `node scripts/fetch-tours.mjs` finds these in two places:
 
 - **Wikipedia tour articles.** The info box on a tour's article lists its support acts (Travis Scott's Circus Maximus Tour: Teezo Touchdown, Don Toliver, Yung Lean…). Only names that link to their own article count, and each is matched to MusicBrainz through Wikidata, so a different artist with the same name can't sneak in. Every tour links back to its article, as Wikipedia's license asks.
+- **Tours where our artists opened.** These live on the headliner's article (Kanye West's Yeezus Tour lists Travis Scott), so the script also reads every Wikipedia article with "tour" in its title that links to one of our artists.
 - **MusicBrainz concerts.** Some shows list a "support act" (Porter Robinson's Smile! :D World Tour: ericdoa, underscores). Festivals are skipped, because there everyone on the bill gets labelled "support".
 
 One tour counts as one cosign, however many nights the opener played. Co-headliners and band members don't count. Touring musicians of a solo project do: Tame Impala is really one person, Kevin Parker, so someone he picks to play in his live band, or to open, is someone he vouches for. Hover a chip to see the tour. Results are saved in `data/tours.json`, and the page merges them with the song cosigns, so a pair with both a tour and songs is one chip.
 
-Upcoming shows will come from Ticketmaster once its key is added. Those are shown only until the show has happened.
+**Touring bands** count too: if an artist hires someone to play in their live band (Tame Impala → Jay Watson), that's a vouch. These come from MusicBrainz.
+
+**Upcoming shows** come from Ticketmaster (`node scripts/fetch-upcoming.mjs`, needs `TICKETMASTER_API_KEY`). Hover text reads "Opening for Tame Impala: Deadbeat Tour, next show…". Ticketmaster only lets us keep its data for a short time, so the file is rebuilt every night and a show disappears once it has happened. Artists are matched by their MusicBrainz or Spotify ID, never by name, because a name search for "Saba" returns Sabaton. Festivals and tribute nights ("Drake vs Bad Bunny Dance Night") are skipped.
 
 Not covered yet: shout-outs and label signings, which will come from a hand-curated file.
 
@@ -115,7 +120,7 @@ The script also prints any artist whose typed hometown differs from MusicBrainz,
 **Add an artist**
 1. Find their IDs. Search Wikidata (it lists Spotify, MusicBrainz and Last.fm IDs). If they aren't there, search MusicBrainz, which usually links to their Spotify page.
 2. Add an entry to `artists` in `data/artists.json`, and add their `id` to `featured`, `trending` or `top`.
-3. Run `node scripts/fetch-sources.mjs` to fetch their images, `node scripts/fetch-stats.mjs` to fetch their numbers, `node scripts/fetch-cosigns.mjs` to fetch their cosigns, `node scripts/fetch-tours.mjs` to fetch their tours and `node scripts/fetch-profiles.mjs` to fill their hometown. Also add their Deezer ID: search `https://api.deezer.com/search/artist?q=<name>` and check the albums match. MusicBrainz sometimes links to an empty duplicate page.
+3. Run `node scripts/fetch-sources.mjs` to fetch their images, `node scripts/fetch-stats.mjs` to fetch their numbers, `node scripts/fetch-cosigns.mjs` to fetch their cosigns, `node scripts/fetch-tours.mjs` and `node scripts/fetch-upcoming.mjs` to fetch their tours and `node scripts/fetch-profiles.mjs` to fill their hometown. Also add their Deezer ID: search `https://api.deezer.com/search/artist?q=<name>` and check the albums match. MusicBrainz sometimes links to an empty duplicate page.
 
 **Add a press photo:** once you have permission, save it as `images/press/<artist-id>.jpg` (e.g. `images/press/g-jones.jpg`) and run the fetch script.
 
@@ -129,4 +134,4 @@ The script also prints any artist whose typed hometown differs from MusicBrainz,
 
 ## What's next
 
-The rest of Milestone 1: upcoming tours from Ticketmaster, hand-curated cosigns, real "rising" rankings from the daily snapshots, publishing the site, then accounts, artist pages and the "who cosigned who" graph. See `PROGRESS.md`.
+The rest of Milestone 1: hand-curated cosigns, real "rising" rankings from the daily snapshots, publishing the site, then accounts, artist pages and the "who cosigned who" graph. See `PROGRESS.md`.

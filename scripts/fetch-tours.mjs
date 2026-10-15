@@ -1,8 +1,13 @@
 #!/usr/bin/env node
-// Builds data/tours.json: tour cosigns. A headliner who takes an artist on tour as their opener
-// (support act) cosigns that artist. One tour counts once, however many shows it had.
+// Builds data/tours.json: live cosigns, two types.
+//   tour  A headliner who takes an artist on tour as their opener (support act) cosigns that artist.
+//         One tour counts once, however many shows it had.
+//   band  An artist who hires a musician for their touring/live band cosigns that musician
+//         (MusicBrainz "instrumental/vocal supporting musician", Julian 2026-10-15).
+// Tour sources:
 //   Wikipedia  tour articles' infobox "support_acts". Tours are found through Wikidata (tours whose
-//              performer is a roster artist) and the "<Artist> concert tours" category. Only linked
+//              performer is a roster artist), the "<Artist> concert tours" category, and articles
+//              with "tour" in the title that link to a roster artist (tours where they opened). Only linked
 //              names count, matched to MusicBrainz through Wikidata (P434), so namesakes can't slip in.
 //              Text is CC BY-SA: every tour links back to its article.
 //   MusicBrainz  concerts with a "support act" relation (CC0), for roster artists as headliner or as
@@ -29,6 +34,7 @@ const MAX_HEADLINERS = 3; // more "main performers" than this is a festival-styl
 // as cosigns of each other. Touring/session musicians do count (Julian, 2026-10-15): a solo project
 // choosing them is a vouch.
 const MEMBER_TYPES = new Set(["member of band", "is person"]);
+const BAND_TYPES = new Set(["instrumental supporting musician", "vocal supporting musician"]);
 const CONCERT_TYPES = new Set(["Concert", undefined, null]); // MusicBrainz event types to read
 
 const getJson = async url => {
@@ -71,6 +77,7 @@ let eventCache = {};
 try { eventCache = JSON.parse(await readFile(EVENT_CACHE, "utf8")); } catch {}
 const fresh = e => e && Date.now() - Date.parse(e.fetchedAt) < EVENT_MAX_AGE_DAYS * 864e5;
 const events = new Map(); // event id -> cached event
+const band = [];          // [hirer, musician, relation] from supporting-musician relations
 let looked = 0;
 
 for (const a of artists) {
@@ -79,6 +86,10 @@ for (const a of artists) {
   const rels = (await mb(`artist/${mbid}?inc=artist-rels+event-rels`)).relations || [];
   for (const r of rels) {
     if (MEMBER_TYPES.has(r.type) && r.artist) { members.add(`${mbid}|${r.artist.id}`); members.add(`${r.artist.id}|${mbid}`); }
+    if (BAND_TYPES.has(r.type) && r.artist) {
+      const me = { mbid, name: a.name }, other = { mbid: r.artist.id, name: r.artist.name };
+      band.push(r.direction === "backward" ? [me, other, r] : [other, me, r]);
+    }
     if (r.event && (r.type === "main performer" || r.type === "support act") && CONCERT_TYPES.has(r.event.type) && !events.has(r.event.id)) {
       if (!fresh(eventCache[r.event.id])) {
         try {
@@ -114,6 +125,11 @@ for (const [id, ev] of events) {
     mbShows++;
   }
 }
+for (const [hirer, musician, r] of band) {
+  add(hirer, musician, { title: null, key: "band", date: r.begin || null, type: "band", source: "MusicBrainz",
+    url: `https://musicbrainz.org/artist/${musician.mbid}` });
+}
+console.log(`MusicBrainz: ${band.length} touring-band credits`);
 console.log(`MusicBrainz: ${events.size} concerts (${looked} looked up, rest cached), ${mbShows} support slots`);
 
 // ---- 2. Wikipedia: tour articles of roster artists ----
@@ -141,6 +157,17 @@ for (const title of Object.values(enTitle)) {
     for (const m of d.query.categorymembers) tourTitles.add(m.title);
   }
 }
+// Tours where a roster artist opened live on the headliner's article, which links to the opener.
+let backlinked = 0;
+for (const title of Object.values(enTitle)) {
+  let cont = {};
+  do {
+    const d = await wiki({ action: "query", list: "backlinks", bltitle: title, blnamespace: "0", bllimit: "500", blredirect: "1", ...cont });
+    const found = [...d.query.backlinks, ...d.query.backlinks.flatMap(b => b.redirlinks || [])];
+    for (const b of found) if (/\btour\b/i.test(b.title) && !tourTitles.has(b.title)) { tourTitles.add(b.title); backlinked++; }
+    cont = d.continue || null;
+  } while (cont);
+}
 
 // Infobox field value: from "| field =" up to the next "| other =" (strips refs and comments first).
 function field(text, name) {
@@ -150,16 +177,19 @@ function field(text, name) {
 const links = text => [...text.matchAll(/\[\[([^\]|#]+)(?:\|[^\]]*)?\]\]/g)].map(m => m[1].trim());
 
 const tours = []; // { title, url, date, headliners: [link titles], support: [link titles] }
-for (const title of tourTitles) {
-  const d = await wiki({ action: "parse", page: title, prop: "wikitext", redirects: "1" });
-  if (!d.parse) continue;
-  const text = d.parse.wikitext.replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>|<!--[\s\S]*?-->/g, "");
+const pages = [];
+for (const batch of chunks([...tourTitles], 50)) {
+  const d = await wiki({ action: "query", prop: "revisions", rvprop: "content", rvslots: "main", redirects: "1", titles: batch.join("|") });
+  for (const p of d.query.pages) if (p.revisions && !pages.some(x => x.title === p.title)) pages.push({ title: p.title, wikitext: p.revisions[0].slots.main.content });
+}
+for (const page of pages) {
+  const text = page.wikitext.replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>|<!--[\s\S]*?-->/g, "");
   const support = links(field(text, "support_acts?"));
   if (!support.length) continue;
   const start = field(text, "start_date").match(/(\d{4})\|(\d{1,2})(?:\|(\d{1,2}))?/);
   tours.push({
-    title: d.parse.title,
-    url: `https://en.wikipedia.org/wiki/${encodeURIComponent(d.parse.title.replace(/ /g, "_"))}`,
+    title: page.title,
+    url: `https://en.wikipedia.org/wiki/${encodeURIComponent(page.title.replace(/ /g, "_"))}`,
     date: start ? [start[1], start[2].padStart(2, "0"), start[3]?.padStart(2, "0")].filter(Boolean).join("-") : null,
     headliners: links(field(text, "artist")),
     support,
@@ -196,9 +226,9 @@ const artistOf = t => mbOf[qidOf[t]] && { mbid: mbOf[qidOf[t]].mbid, name: mbOf[
 
 let wpSlots = 0, unmatched = 0;
 for (const t of tours) {
-  // The roster artist must be credited as the tour's artist, not just have it in their category.
+  // Headliners come from the infobox "artist" field; add() drops pairs with no roster artist.
   const heads = t.headliners.map(artistOf).filter(Boolean);
-  if (!heads.some(h => roster[h.mbid])) { console.log(`  skip ${t.title}: no roster headliner`); continue; }
+  if (!heads.length) continue;
   for (const s of t.support) {
     const sup = artistOf(s);
     if (!sup) { unmatched++; continue; }
@@ -206,7 +236,7 @@ for (const t of tours) {
     for (const h of heads) { add(h, sup, { title: t.title, url: t.url, date: t.date, type: "tour", source: "Wikipedia" }); wpSlots++; }
   }
 }
-console.log(`Wikipedia: ${tourTitles.size} tour articles, ${tours.length} with support acts, ${wpSlots} support slots (${unmatched} names with no MusicBrainz match skipped)`);
+console.log(`Wikipedia: ${tourTitles.size} tour articles (${backlinked} via links to roster artists), ${tours.length} with support acts, ${wpSlots} support slots (${unmatched} names with no MusicBrainz match skipped)`);
 
 // ---- 3. Write ----
 const cosigns = [...pairs.values()].map(p => {
@@ -218,19 +248,19 @@ const cosigns = [...pairs.values()].map(p => {
   const list = [...p.tours.values()].sort((x, y) => (y.date || "").localeCompare(x.date || ""));
   const dates = list.map(t => t.date).filter(Boolean).sort();
   return {
-    from: p.from, to: p.to, types: ["tour"],
-    tours: list.length,
+    from: p.from, to: p.to, types: [...new Set(list.map(t => t.type))].sort(),
+    tours: list.filter(t => t.type === "tour").length,
     first: dates[0] || null, last: dates.at(-1) || null,
     evidence: list.slice(0, EVIDENCE_PER_COSIGN),
   };
-}).sort((x, y) => y.tours - x.tours || (y.last || "").localeCompare(x.last || ""));
+}).sort((x, y) => y.evidence.length - x.evidence.length || y.tours - x.tours || (y.last || "").localeCompare(x.last || ""));
 
 const out = {
   generatedAt: new Date().toISOString(),
-  source: "Wikipedia tour articles (CC BY-SA, linked per tour) and MusicBrainz events (CC0)",
+  source: "Wikipedia tour articles (CC BY-SA, linked per tour) and MusicBrainz events and artist relations (CC0)",
   artists: Object.fromEntries(Object.entries(names).map(([mbid, name]) => [mbid, roster[mbid] ? { name, id: roster[mbid] } : { name }])),
   cosigns,
 };
 await writeFile(path.join(ROOT, "data/tours.json"), JSON.stringify(out) + "\n");
 console.log(`\nWrote data/tours.json: ${cosigns.length} tour cosigns`);
-for (const c of cosigns) console.log(`  ${names[c.from]} → ${names[c.to]}: ${c.evidence.map(e => `${e.title || "shows " + e.date?.slice(0, 4)}${e.shows ? ` (${e.shows} shows)` : ""} [${e.source}]`).join("; ")}`);
+for (const c of cosigns) console.log(`  ${names[c.from]} → ${names[c.to]}: ${c.evidence.map(e => `${e.type === "band" ? "touring band" : e.title || "shows " + e.date?.slice(0, 4)}${e.shows ? ` (${e.shows} shows)` : ""} [${e.source}]`).join("; ")}`);
