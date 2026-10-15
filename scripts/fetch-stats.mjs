@@ -7,7 +7,7 @@
 // A metric listed under an artist's `caveats` is fetched but left out of the score.
 //
 // Also fetches Last.fm listeners for everyone who has cosigned a roster artist (from
-// data/cosigns.json, so run fetch-cosigns.mjs first), used to rank "Cosigned by" chips by fame.
+// data/cosigns.json and data/tours.json, so run fetch-cosigns.mjs and fetch-tours.mjs first), used to rank "Cosigned by" chips by fame.
 // Lookup order: MusicBrainz ID, then name, then the artist's other names on MusicBrainz
 // ("Ye" -> "Kanye West"). A name match whose Last.fm page carries a different MusicBrainz ID is
 // accepted only if MusicBrainz redirects that ID to ours (merged duplicates); otherwise it's
@@ -156,6 +156,11 @@ try { prevFame = JSON.parse(await readFile(path.join(ROOT, "data/stats.json"), "
 out.cosigners = {};
 try {
   const cosigns = JSON.parse(await readFile(path.join(ROOT, "data/cosigns.json"), "utf8"));
+  try { // tour cosigns: add their pairs and names
+    const tours = JSON.parse(await readFile(path.join(ROOT, "data/tours.json"), "utf8"));
+    cosigns.cosigns.push(...tours.cosigns);
+    for (const [mbid, a] of Object.entries(tours.artists)) cosigns.artists[mbid] ??= a;
+  } catch {}
   const rosterMbids = new Map(artists.map(a => [a.ids.musicbrainz, a.id]));
   const cosigners = [...new Set(cosigns.cosigns.filter(c => rosterMbids.has(c.to)).map(c => c.from))];
   const fresh = e => e && Date.now() - Date.parse(e.fetchedAt) < FAME_MAX_AGE_DAYS * 864e5;

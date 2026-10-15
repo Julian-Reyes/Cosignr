@@ -32,8 +32,9 @@ jobs:
           node-version: 20
       - run: node scripts/fetch-sources.mjs
       - run: node scripts/fetch-cosigns.mjs   # ~7 min: MusicBrainz allows 1 request/second
+      - run: node scripts/fetch-tours.mjs     # ~3 min first run, then cached
       - run: node scripts/fetch-profiles.mjs  # ~1 min
-      - run: node scripts/fetch-stats.mjs     # after cosigns: ranks cosigners by Last.fm listeners
+      - run: node scripts/fetch-stats.mjs     # after cosigns + tours: ranks cosigners by Last.fm listeners
         env:
           LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
       - name: Commit changes

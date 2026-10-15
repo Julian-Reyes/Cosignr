@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T15:24:19.540Z",
+  "generatedAt": "2026-10-15T17:56:40.060Z",
   "scale": {
     "deezerFans": [
       3,
@@ -21,13 +21,13 @@
   "artists": {
     "travis-scott": {
       "deezer": {
-        "fans": 3149746,
+        "fans": 3149795,
         "albums": 63,
         "url": "https://www.deezer.com/artist/4495513"
       },
       "lastfm": {
-        "listeners": 3492475,
-        "plays": 711129911,
+        "listeners": 3493252,
+        "plays": 711212582,
         "tags": [],
         "url": "https://www.last.fm/music/+noredirect/Travis+Scott"
       },
@@ -43,7 +43,7 @@
     },
     "tame-impala": {
       "deezer": {
-        "fans": 1151451,
+        "fans": 1151528,
         "albums": 42,
         "url": "https://www.deezer.com/artist/134790"
       },
@@ -71,7 +71,7 @@
     },
     "rezz": {
       "deezer": {
-        "fans": 32383,
+        "fans": 32385,
         "albums": 72,
         "url": "https://www.deezer.com/artist/5879522"
       },
@@ -104,8 +104,8 @@
         "url": "https://www.deezer.com/artist/4520160"
       },
       "lastfm": {
-        "listeners": 126684,
-        "plays": 2436931,
+        "listeners": 126700,
+        "plays": 2437281,
         "tags": [
           "slimepunk",
           "trap",
@@ -127,7 +127,7 @@
     },
     "the-drums": {
       "deezer": {
-        "fans": 162603,
+        "fans": 162604,
         "albums": 41,
         "url": "https://www.deezer.com/artist/308867"
       },
@@ -188,8 +188,8 @@
         "url": "https://www.deezer.com/artist/253278"
       },
       "lastfm": {
-        "listeners": 832920,
-        "plays": 36810630,
+        "listeners": 832971,
+        "plays": 36813230,
         "tags": [
           "hip hop",
           "rap",
@@ -240,13 +240,13 @@
     },
     "ski-mask": {
       "deezer": {
-        "fans": 325364,
+        "fans": 325366,
         "albums": 43,
         "url": "https://www.deezer.com/artist/11347866"
       },
       "lastfm": {
-        "listeners": 1346922,
-        "plays": 75599133,
+        "listeners": 1347097,
+        "plays": 75605122,
         "tags": [
           "trap",
           "Hip-Hop",
@@ -268,7 +268,7 @@
     },
     "the-xx": {
       "deezer": {
-        "fans": 1104619,
+        "fans": 1104627,
         "albums": 21,
         "url": "https://www.deezer.com/artist/261212"
       },
@@ -296,13 +296,13 @@
     },
     "porter-robinson": {
       "deezer": {
-        "fans": 170153,
-        "albums": 31,
+        "fans": 170156,
+        "albums": 28,
         "url": "https://www.deezer.com/artist/864274"
       },
       "lastfm": {
-        "listeners": 1395738,
-        "plays": 71211424,
+        "listeners": 1396091,
+        "plays": 71231776,
         "tags": [
           "electro house",
           "electronic",
@@ -324,13 +324,13 @@
     },
     "drake": {
       "deezer": {
-        "fans": 24108180,
+        "fans": 24108310,
         "albums": 94,
         "url": "https://www.deezer.com/artist/246791"
       },
       "lastfm": {
-        "listeners": 6942605,
-        "plays": 1277494552,
+        "listeners": 6943594,
+        "plays": 1277734125,
         "tags": [
           "Hip-Hop",
           "rap",
@@ -425,7 +425,7 @@
       "fetchedAt": "2026-10-15T15:24:29.986Z"
     },
     "9fff2f8a-21e6-47de-a2b8-7f449929d43f": {
-      "listeners": 6942605,
+      "listeners": 6943594,
       "via": "roster"
     },
     "e9e5d410-aaad-4b36-a466-32780da25e8b": {
@@ -693,7 +693,7 @@
       "fetchedAt": "2026-10-15T15:24:45.855Z"
     },
     "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6": {
-      "listeners": 3492475,
+      "listeners": 3493252,
       "via": "roster"
     },
     "d768a82a-07c2-4854-ae03-d3fa4f33a30b": {
@@ -715,7 +715,7 @@
       "fetchedAt": "2026-10-15T15:24:46.827Z"
     },
     "4ae36ade-1798-48c4-b06b-cc68b7d3d83f": {
-      "listeners": 1395738,
+      "listeners": 1396091,
       "via": "roster"
     },
     "e0140a67-e4d1-4f13-8a01-364355bee46e": {
@@ -3477,6 +3477,18 @@
       "lastfmName": "LucidPP",
       "via": "name",
       "fetchedAt": "2026-10-15T14:42:35.015Z"
+    },
+    "ea6fb7f3-5f4c-4090-a006-3f5fc387d0eb": {
+      "listeners": 108820,
+      "lastfmName": "Da$H",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T17:56:46.849Z"
+    },
+    "317606b4-e0c2-48fe-bcfc-a7e7547d968e": {
+      "listeners": 332547,
+      "lastfmName": "Wifisfuneral",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T17:56:47.191Z"
     }
   }
 }

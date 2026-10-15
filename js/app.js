@@ -117,13 +117,33 @@ function renderTabs() {
 // ---------- cosigns ----------
 
 // For each roster artist: everyone who cosigned them, most famous first (Last.fm listeners),
-// then most features/remixes, most songs, most recent. Cosigners with unknown fame go last.
-function buildCosignedBy(data) {
+// then most vouches (features, remixes and tours), most songs, most recent. Cosigners with unknown
+// fame go last. Song cosigns (cosigns.json) and tour cosigns (tours.json) of one pair become one chip.
+function buildCosignedBy(data, tours) {
   const byMbid = Object.fromEntries(DATA.artists.map(a => [a.ids.musicbrainz, a.id]));
   const out = Object.fromEntries(DATA.artists.map(a => [a.id, []]));
+  const pairs = new Map();
   for (const c of data.cosigns) {
     const id = byMbid[c.to];
-    if (id) out[id].push({ ...c, name: data.artists[c.from].name, fame: STATS.cosigners?.[c.from]?.listeners ?? -1 });
+    if (!id) continue;
+    const entry = { ...c, tours: 0, tourEvidence: [], name: data.artists[c.from].name, fame: STATS.cosigners?.[c.from]?.listeners ?? -1 };
+    pairs.set(`${c.from}|${c.to}`, entry);
+    out[id].push(entry);
+  }
+  for (const t of tours.cosigns) {
+    const id = byMbid[t.to];
+    if (!id) continue;
+    let entry = pairs.get(`${t.from}|${t.to}`);
+    if (!entry) {
+      entry = { from: t.from, to: t.to, types: [], songs: 0, vouches: 0, tours: 0, first: t.first, last: t.last, evidence: [], tourEvidence: [],
+                name: tours.artists[t.from].name, fame: STATS.cosigners?.[t.from]?.listeners ?? -1 };
+      out[id].push(entry);
+    }
+    entry.types = [...new Set([...entry.types, "tour"])];
+    entry.tours = t.tours;
+    entry.vouches += t.tours;
+    entry.tourEvidence = t.evidence;
+    if (t.last && (!entry.last || t.last > entry.last)) entry.last = t.last;
   }
   for (const list of Object.values(out)) {
     list.sort((x, y) => y.fame - x.fame || y.vouches - x.vouches || y.songs - x.songs || (y.last || "").localeCompare(x.last || ""));
@@ -131,13 +151,21 @@ function buildCosignedBy(data) {
   return out;
 }
 
+// Hover text. A tour leads when there is one (the strongest vouch), with songs as a follow-up.
 function cosignTitle(c, artist) {
+  const year = e => (e.date ? ` (${e.date.slice(0, 4)})` : "");
+  if (c.tours) {
+    const t = c.tourEvidence[0];
+    const how = t.title ? `${c.name} took ${artist.name} on tour: ${t.title}${year(t)}` : `${artist.name} opened for ${c.name}${year(t)}`;
+    const more = [c.tours > 1 ? `${c.tours} tours` : "", c.songs ? `${c.songs} song${c.songs > 1 ? "s" : ""} together` : ""].filter(Boolean);
+    const sources = [...new Set([...c.tourEvidence.map(x => x.source), ...(c.songs ? ["MusicBrainz"] : [])])];
+    return [how, ...more].join(" · ") + ` · Source: ${sources.join(", ")}`;
+  }
   const e = c.evidence[0];
-  const year = e.date ? ` (${e.date.slice(0, 4)})` : "";
   const how = e.type === "feature" ? `${c.name} featured ${artist.name} on “${e.title}”`
             : e.type === "remix"   ? `${artist.name} remixed ${c.name}: “${e.title}”`
             : `${c.name} and ${artist.name}: “${e.title}”`;
-  return how + year + (c.songs > 1 ? ` · ${c.songs} songs together` : "") + " · Source: MusicBrainz";
+  return how + year(e) + (c.songs > 1 ? ` · ${c.songs} songs together` : "") + " · Source: MusicBrainz";
 }
 
 function chipsHtml(artist, { count = CHIP_COUNT, button = true } = {}) {
@@ -408,17 +436,18 @@ function bindModal() {
 
 async function init() {
   try {
-    const [artists, sources, stats, cosigns, profiles] = await Promise.all([
+    const [artists, sources, stats, cosigns, tours, profiles] = await Promise.all([
       fetch("data/artists.json").then(r => r.json()),
       fetch("data/sources.json").then(r => r.json()),
       fetch("data/stats.json").then(r => r.json()),
       fetch("data/cosigns.json").then(r => r.json()),
+      fetch("data/tours.json").then(r => r.json()),
       fetch("data/profiles.json").then(r => r.json()),
     ]);
     DATA = artists;
     SRC = sources;
     STATS = stats;
-    COSIGNS = buildCosignedBy(cosigns);
+    COSIGNS = buildCosignedBy(cosigns, tours);
     PROFILES = profiles;
     BY_ID = Object.fromEntries(DATA.artists.map(a => [a.id, a]));
   } catch (err) {
