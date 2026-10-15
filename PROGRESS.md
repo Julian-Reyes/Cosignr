@@ -55,10 +55,18 @@ Goal: every section renders from one data file, no text is baked into images, an
 - ⬜ Bring back rank changes (▲/▼) and "rising this week" from snapshots once there are ~7 days of them
 - ⬜ Show the stat on narrow screens (the stat column is still hidden below 1100px, as before)
 - ⬜ Evaluate extra free sources: Deezer (fans, 1000px images, previews), MusicBrainz (relationships, area), Wikidata (hometown, socials), Wikipedia (bio), ListenBrainz, TheAudioDB
-- ⬜ Define the cosign evidence model (from, to, type, date, source URL) and seed it from MusicBrainz + Setlist.fm
+- ✅ Cosign evidence model (see CLAUDE.md "Cosigns"): per (from, to) pair, types, song counts, first/last date, evidence songs linked to MusicBrainz
+- ✅ `scripts/fetch-cosigns.mjs` seeds it from MusicBrainz credits + remixer relations: 1,616 cosigns, 11/12 roster artists have at least one (Jaws has none in MusicBrainz)
+- ✅ Filters: DJ mixes/mashups/medleys, band ↔ member, non-roster pairs. Ranking puts features/remixes above collab-only pairs (fixed Travis Scott's top cosigner being his early duo partner Jason Eric)
+- ✅ "Cosigned by" chips are real (top 4, hover shows the song and year); search matches every cosigner; demo `cosignedBy` removed
+- ⬜ Curated cosigns (`data/cosigns-curated.json`) for things MusicBrainz misses: shout-outs, tour support, label signings. Each needs a source URL
+- ⬜ Setlist.fm tour support (needs a free API key)
+- ⬜ Rank cosigners by their own prominence too (needs Last.fm listeners for non-roster artists)
+- ⬜ `data/cosigns.json` is 790KB (160KB gzipped). Split per artist once artist pages exist
 
 ### 4. Infrastructure
-- 🟡 GitHub Action `.github/workflows/refresh-data.yml`: nightly 06:17 UTC + manual run, commits `data/`. Needs to be pushed and run once; add `LASTFM_API_KEY` secret
+- 🟡 GitHub Action `.github/workflows/refresh-data.yml`: nightly 06:17 UTC + manual run, runs all three fetch scripts, commits `data/`. `LASTFM_API_KEY` secret added; not yet run on GitHub
+- ⬜ Pages deploy: currently not live. Plan: Pages source "GitHub Actions" with the nightly job deploying, so data commits always publish (deferred by Julian 2026-10-14)
 - ✅ Store daily snapshots (`data/snapshots/`)
 - ⬜ Accounts + user cosigns (Supabase or Firebase)
 - ⬜ Artist detail page
@@ -70,3 +78,4 @@ Goal: every section renders from one data file, no text is baked into images, an
 - **2026-10-14 (later):** Pushed to GitHub (needed `http.postBuffer` raised for the first push). Started Milestone 1 research: Spotify no longer gives popularity/followers to new apps; Deezer works keyless; verified Deezer IDs for 10 artists (see Research findings).
 - **2026-10-14 (evening):** Resolved Deezer IDs for Jaws (5566102) and Jackal (310086, shared page, excluded via new `caveats` field). Added `scripts/fetch-stats.mjs` (Deezer + Last.fm-when-keyed, Cosignr score, daily snapshots), switched Trending to real scores with metric tabs, removed fake trending numbers, added nightly refresh workflow. Waiting on Last.fm key.
 - **2026-10-14 (night):** Last.fm key added and first full run done. Scores now 32–89 with Last.fm + Deezer. Verified Last.fm pages per artist (see Milestone 1 §3).
+- **2026-10-15:** Real cosigns from MusicBrainz (`fetch-cosigns.mjs`, 1,616 cosigns). Chips and search now use them; demo cosigns removed. Added mashup, band-member and ranking fixes after reviewing each artist's top cosigners. Nightly job runs it too.

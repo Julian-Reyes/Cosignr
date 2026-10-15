@@ -375,6 +375,7 @@ nav a.active{ opacity: 1; border-bottom-color: var(--blue); }
 }
 .chip:hover{ transform: translateY(-1px); box-shadow: 0 3px 8px rgba(0,0,0,.1); }
 .chip.top{ background: var(--peach); }
+.no-cosigns{ color: var(--muted); font-size: .85em; font-style: italic; }
 
 .stat{ text-align: right; min-width: 130px; }
 .stat b{ display: block; font-size: 1.15em; font-weight: 800; }

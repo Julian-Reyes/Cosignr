@@ -1,5 +1,5 @@
 {
-  "_note": "Hand-curated source of truth. Edit this file by hand. Generated data lives in sources.json (run scripts/fetch-sources.mjs). Fields under `demo` are placeholder values until Milestone 1 wires in real data.",
+  "_note": "Hand-curated source of truth. Edit this file by hand. Generated data lives in sources.json, stats.json and cosigns.json (run scripts/fetch-*.mjs). Put any placeholder values under an artist's `demo` key so they're easy to find.",
   "artists": [
     {
       "id": "travis-scott",
@@ -7,8 +7,7 @@
       "genre": "Hip-Hop",
       "hometown": "Houston, TX",
       "ids": { "wikidata": "Q13605596", "spotify": "0Y5tJX1MQlPlqiwlOH1tJY", "musicbrainz": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6", "lastfm": "Travis Scott", "deezer": "4495513" },
-      "original": "travis.png",
-      "demo": { "cosignedBy": ["Kanye West", "Kid Cudi", "J. Cole"] }
+      "original": "travis.png"
     },
     {
       "id": "tame-impala",
@@ -17,8 +16,7 @@
       "hometown": "Perth, Australia",
       "ids": { "wikidata": "Q9619", "spotify": "5INjqkS1o8h1imAzPqGZBb", "musicbrainz": "63aa26c3-d59b-4da4-84ac-716b54f1ef4d", "lastfm": "Tame Impala", "deezer": "134790" },
       "original": "impala.png",
-      "focus": { "wikimedia": "center 85%" },
-      "demo": { "cosignedBy": ["The Flaming Lips", "Mark Ronson"] }
+      "focus": { "wikimedia": "center 85%" }
     },
     {
       "id": "rezz",
@@ -26,8 +24,7 @@
       "genre": "Electronic",
       "hometown": "Niagara Falls, Canada",
       "ids": { "wikidata": "Q35487701", "spotify": "4aKdmOXdUKX07HVd3sGgzw", "musicbrainz": "2eaf4267-4dd6-412a-9bb0-596afb90215b", "lastfm": "Rezz", "deezer": "5879522" },
-      "original": "rezz.png",
-      "demo": { "cosignedBy": ["deadmau5", "Skrillex"] }
+      "original": "rezz.png"
     },
     {
       "id": "g-jones",
@@ -35,8 +32,7 @@
       "genre": "Electronic",
       "hometown": null,
       "ids": { "wikidata": null, "spotify": "0gXx2aQ2mfovDfqCw10MQC", "musicbrainz": "20bb2a85-e6ab-42e2-bfa8-ec048b60bbdb", "lastfm": "G Jones", "deezer": "4520160" },
-      "original": "gjones.png",
-      "demo": { "cosignedBy": ["Porter Robinson", "Flume", "Bassnectar", "Rezz"] }
+      "original": "gjones.png"
     },
     {
       "id": "the-drums",
@@ -44,8 +40,7 @@
       "genre": "Indie Pop",
       "hometown": "Brooklyn, NY",
       "ids": { "wikidata": "Q1419255", "spotify": "0p5axeJsbtTCXBrRVoKjwu", "musicbrainz": "c3ecef5d-84f3-4942-8c24-0a626343c3f4", "lastfm": "The Drums", "deezer": "308867" },
-      "original": "drums.png",
-      "demo": { "cosignedBy": ["The Strokes", "Tame Impala"] }
+      "original": "drums.png"
     },
     {
       "id": "jaws",
@@ -53,8 +48,7 @@
       "genre": "Indie Pop",
       "hometown": "Birmingham, UK",
       "ids": { "wikidata": "Q16240102", "spotify": "3E3NOIlw2s1ZPU9GRB9jaq", "musicbrainz": "5a9f7e66-3708-45a9-8478-c10bedaafb09", "lastfm": "Jaws", "deezer": "5566102" },
-      "original": "jaws.png",
-      "demo": { "cosignedBy": ["The 1975", "The xx", "Wolf Alice"] }
+      "original": "jaws.png"
     },
     {
       "id": "saba",
@@ -62,8 +56,7 @@
       "genre": "Hip-Hop",
       "hometown": "Chicago, IL",
       "ids": { "wikidata": "Q25210913", "spotify": "7Hjbimq43OgxaBRpFXic4x", "musicbrainz": "057d211a-fba8-42d7-ad14-41f41d6f762f", "lastfm": "Saba", "deezer": "253278" },
-      "original": "saba.png",
-      "demo": { "cosignedBy": ["Chance the Rapper", "Noname", "Travis Scott"] }
+      "original": "saba.png"
     },
     {
       "id": "jackal",
@@ -72,8 +65,7 @@
       "hometown": null,
       "ids": { "wikidata": null, "spotify": "5pTAtfO5NRMgj3zsT721WO", "musicbrainz": "cba76057-c7d0-4ab9-a104-eb2ba4a6ecca", "lastfm": "Jackal", "deezer": "310086" },
       "original": "jackal.png",
-      "caveats": { "deezer": "Deezer page is shared with other artists named Jackal, so its fan count is not his alone. Excluded from stats." },
-      "demo": { "cosignedBy": ["Rezz", "Porter Robinson"] }
+      "caveats": { "deezer": "Deezer page is shared with other artists named Jackal, so its fan count is not his alone. Excluded from stats." }
     },
     {
       "id": "ski-mask",
@@ -81,8 +73,7 @@
       "genre": "Hip-Hop",
       "hometown": "Fort Lauderdale, FL",
       "ids": { "wikidata": "Q42224353", "spotify": "2rhFzFmezpnW82MNqEKVry", "musicbrainz": "faf916e0-ffc5-4345-a10b-b79ed8c9b8f6", "lastfm": "Ski Mask the Slump God", "deezer": "11347866" },
-      "original": "ski.png",
-      "demo": { "cosignedBy": ["Travis Scott", "Drake", "Kanye West"] }
+      "original": "ski.png"
     },
     {
       "id": "the-xx",
@@ -90,8 +81,7 @@
       "genre": "Indie Pop",
       "hometown": "London, UK",
       "ids": { "wikidata": "Q869367", "spotify": "3iOvXCl6edW5Um0fXEBRXy", "musicbrainz": "c5c2ea1c-4bde-4f4d-bd0b-47b200bf99d6", "lastfm": "The xx", "deezer": "261212" },
-      "original": "xx.png",
-      "demo": { "cosignedBy": ["Rihanna", "Drake"] }
+      "original": "xx.png"
     },
     {
       "id": "porter-robinson",
@@ -99,8 +89,7 @@
       "genre": "Electronic",
       "hometown": "Chapel Hill, NC",
       "ids": { "wikidata": "Q21084", "spotify": "3dz0NnIZhtKKeXZxLOxCam", "musicbrainz": "4ae36ade-1798-48c4-b06b-cc68b7d3d83f", "lastfm": "Porter Robinson", "deezer": "864274" },
-      "original": "porter.png",
-      "demo": { "cosignedBy": ["Skrillex", "Madeon"] }
+      "original": "porter.png"
     },
     {
       "id": "drake",
@@ -108,8 +97,7 @@
       "genre": "Hip-Hop",
       "hometown": "Toronto, Canada",
       "ids": { "wikidata": "Q33240", "spotify": "3TVXtAsR1Inumwj472S9r4", "musicbrainz": "9fff2f8a-21e6-47de-a2b8-7f449929d43f", "lastfm": "Drake", "deezer": "246791" },
-      "original": "drake.png",
-      "demo": { "cosignedBy": ["Lil Wayne", "Kanye West"] }
+      "original": "drake.png"
     }
   ],
   "featured": [
