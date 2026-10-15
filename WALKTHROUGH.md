@@ -83,12 +83,18 @@ Some things are filtered out because MusicBrainz credits them in ways that aren'
 
 Not covered yet: shout-outs, tour support and label signings. These will come from a hand-curated file and Setlist.fm.
 
+## Hometowns
+
+"Hometown" means where an artist was born, or where a band formed. Hometowns typed into `artists.json` are used first. For anyone left blank, `node scripts/fetch-profiles.mjs` fills it from MusicBrainz: birthplace or formation place first, then where they're based. A country on its own is fine. On the page, both kinds look the same.
+
+The script also prints any artist whose typed hometown differs from MusicBrainz, so you can decide which is right.
+
 ## Common tasks
 
 **Add an artist**
 1. Find their IDs. Search Wikidata (it lists Spotify, MusicBrainz and Last.fm IDs). If they aren't there, search MusicBrainz, which usually links to their Spotify page.
 2. Add an entry to `artists` in `data/artists.json`, and add their `id` to `featured`, `trending` or `top`.
-3. Run `node scripts/fetch-sources.mjs` to fetch their images, `node scripts/fetch-stats.mjs` to fetch their numbers and `node scripts/fetch-cosigns.mjs` to fetch their cosigns. Also add their Deezer ID: search `https://api.deezer.com/search/artist?q=<name>` and check the albums match. MusicBrainz sometimes links to an empty duplicate page.
+3. Run `node scripts/fetch-sources.mjs` to fetch their images, `node scripts/fetch-stats.mjs` to fetch their numbers, `node scripts/fetch-cosigns.mjs` to fetch their cosigns and `node scripts/fetch-profiles.mjs` to fill their hometown. Also add their Deezer ID: search `https://api.deezer.com/search/artist?q=<name>` and check the albums match. MusicBrainz sometimes links to an empty duplicate page.
 
 **Add a press photo:** once you have permission, save it as `images/press/<artist-id>.jpg` (e.g. `images/press/g-jones.jpg`) and run the fetch script.
 

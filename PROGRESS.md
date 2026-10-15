@@ -54,6 +54,8 @@ Goal: every section renders from one data file, no text is baked into images, an
 - ✅ Replaced fake "streams" UI: Trending ranks by Cosignr score; Now/Week/Month/Year tabs replaced by "Sort by" Score / Listeners / Plays / Fans (only metrics with data show). Removed demo `trending`/`prevRank` numbers. Badge now says "Demo cosigns"
 - ⬜ Bring back rank changes (▲/▼) and "rising this week" from snapshots once there are ~7 days of them
 - ⬜ Show the stat on narrow screens (the stat column is still hidden below 1100px, as before)
+- ✅ Hometowns: `scripts/fetch-profiles.mjs` → `data/profiles.json` (MusicBrainz born/formed, else based). Filled G Jones (Santa Cruz, CA) and Jackal (United Kingdom). Hand-written values win
+- ✅ Reviewed differences (Julian, 2026-10-15): keep Rezz = Niagara Falls (MusicBrainz: born in Ukraine), Tame Impala = Perth (formed there; MusicBrainz says Sydney), The xx = London (MusicBrainz: Wandsworth). The script will keep listing these; that's expected
 - ⬜ Evaluate extra free sources: Deezer (fans, 1000px images, previews), MusicBrainz (relationships, area), Wikidata (hometown, socials), Wikipedia (bio), ListenBrainz, TheAudioDB
 - ✅ Cosign evidence model (see CLAUDE.md "Cosigns"): per (from, to) pair, types, song counts, first/last date, evidence songs linked to MusicBrainz
 - ✅ `scripts/fetch-cosigns.mjs` seeds it from MusicBrainz credits + remixer relations: 1,616 cosigns, 11/12 roster artists have at least one (Jaws has none in MusicBrainz)
@@ -68,7 +70,7 @@ Goal: every section renders from one data file, no text is baked into images, an
 - ✅ Nightly data refresh: first scheduled run 2026-10-15 worked (Last.fm secret used, data committed by github-actions[bot])
 - 🟡 Pages deploy: `.github/workflows/site.yml` (replaces refresh-data.yml) refreshes nightly then deploys; pushes to main deploy only. Julian sets Settings → Pages → Source: GitHub Actions. URL: https://julian-reyes.github.io/Cosignr/
 - ✅ Demo notes: login/sign-up modal and Cosign button say accounts aren't live yet
-- ⬜ Architecture decision before artist pages: Astro (+ React islands) vs Next.js static export. Leaning Astro; Julian usually uses React/Vite. Both deploy to Pages the same way
+- ✅ **Decided 2026-10-15:** move to **Astro with React** for interactive parts, starting with artist pages. Static build, deployed to Pages by the same workflow. Lighter than Next.js because only interactive components ship JS
 - ✅ Store daily snapshots (`data/snapshots/`)
 - ⬜ Accounts + user cosigns (Supabase or Firebase)
 - ⬜ Artist detail page
@@ -81,3 +83,4 @@ Goal: every section renders from one data file, no text is baked into images, an
 - **2026-10-14 (evening):** Resolved Deezer IDs for Jaws (5566102) and Jackal (310086, shared page, excluded via new `caveats` field). Added `scripts/fetch-stats.mjs` (Deezer + Last.fm-when-keyed, Cosignr score, daily snapshots), switched Trending to real scores with metric tabs, removed fake trending numbers, added nightly refresh workflow. Waiting on Last.fm key.
 - **2026-10-14 (night):** Last.fm key added and first full run done. Scores now 32–89 with Last.fm + Deezer. Verified Last.fm pages per artist (see Milestone 1 §3).
 - **2026-10-15:** Real cosigns from MusicBrainz (`fetch-cosigns.mjs`, 1,616 cosigns). Chips and search now use them; demo cosigns removed. Added mashup, band-member and ranking fixes after reviewing each artist's top cosigners. Nightly job runs it too.
+- **2026-10-15 (later):** Pages deploy workflow + demo notes. Decided Astro + React for the next phase. Hometowns from MusicBrainz (`fetch-profiles.mjs`); shared MusicBrainz client in `scripts/lib/`.

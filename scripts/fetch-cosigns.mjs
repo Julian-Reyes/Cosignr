@@ -17,10 +17,9 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { mb } from "./lib/musicbrainz.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const UA = { "User-Agent": "Cosignr/0.1 (music discovery demo; https://github.com/Julian-Reyes/Cosignr)", Accept: "application/json" };
-const MB = "https://musicbrainz.org/ws/2";
 const EVIDENCE_PER_COSIGN = 3;
 const MAX_REMIX_LOOKUPS = 60; // per artist; each is one request
 // Special-purpose MusicBrainz artists that aren't real people or groups.
@@ -33,20 +32,6 @@ const SKIP = new Set([
 const FEAT = /\b(feat|ft|featuring|with)\b\.?/i;
 const isMashup = rec => / \/ |\bmedley\b|\bmash-?up\b|\bmegamix\b/i.test(rec.title)
   || /dj-?mix|mash-?up/i.test(rec.disambiguation || "");
-
-const sleep = ms => new Promise(r => setTimeout(r, ms));
-let last = 0;
-async function mb(pathAndQuery) {
-  for (let attempt = 0; ; attempt++) {
-    const wait = last + 1100 - Date.now();
-    if (wait > 0) await sleep(wait);
-    last = Date.now();
-    const res = await fetch(`${MB}/${pathAndQuery}${pathAndQuery.includes("?") ? "&" : "?"}fmt=json`, { headers: UA });
-    if (res.ok) return res.json();
-    if ((res.status === 503 || res.status === 429) && attempt < 4) { await sleep(2000 * (attempt + 1)); continue; }
-    throw new Error(`${res.status} ${pathAndQuery}`);
-  }
-}
 
 const songKey = title => title.toLowerCase().replace(/\s*[([].*?[)\]]/g, "").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
 
