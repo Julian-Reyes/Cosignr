@@ -18,6 +18,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { loadArtists } from "./lib/artists.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const UA = { "User-Agent": "Cosignr/0.1 (music discovery demo; https://github.com/Julian-Reyes/Cosignr)" };
@@ -52,7 +53,7 @@ if (!process.env.TICKETMASTER_API_KEY) {
   process.exit(0);
 }
 
-const { artists } = JSON.parse(await readFile(path.join(ROOT, "data/artists.json"), "utf8"));
+const artists = await loadArtists(); // roster + extended: everyone with a page
 const roster = Object.fromEntries(artists.filter(a => a.ids.musicbrainz).map(a => [a.ids.musicbrainz, a.id]));
 const bySpotify = Object.fromEntries(artists.filter(a => a.ids.spotify && a.ids.musicbrainz).map(a => [a.ids.spotify, a.ids.musicbrainz]));
 const today = new Date().toISOString().slice(0, 10);

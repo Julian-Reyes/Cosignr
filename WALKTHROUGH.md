@@ -118,6 +118,20 @@ Not covered yet: shout-outs and label signings, which will come from a hand-cura
 
 The script also prints any artist whose typed hometown differs from MusicBrainz, so you can decide which is right.
 
+## Who gets an artist page
+
+Artist pages are coming (phase C in `ASTRO.md`). For now that's our 12 hand-picked artists plus the **top 5 cosigners of each**: 49 more, like Rihanna, Ye, Gorillaz, Skrillex and Florence + the Machine. Later it could be hundreds or thousands.
+
+`node scripts/fetch-extended.mjs` picks them every night. It uses the same ranking as the "Cosigned by" chips, so the list can change as new cosigns appear, and it saves the list to `data/extended.json`. It also finds each artist's Wikidata, Spotify and Deezer pages through MusicBrainz, so the other scripts can fetch their photo, numbers, hometown and genre like they do for our 12.
+
+These are **light pages**. They show what we know about the artist plus the cosigns they share with our 12 (Rihanna → Travis Scott, Drake). We don't download their whole catalogue, because superstar catalogues would make the nightly job hours long.
+
+Some safety checks:
+- **Duplicate pages.** Spotify and Deezer have empty leftover pages for some artists (Beyoncé, Daft Punk), so the script tries each link and keeps the one with a photo or albums.
+- **Suspicious Deezer counts.** If a Deezer page has fewer than 1 fan per 100 Last.fm listeners (Skrillex shows 0), it's probably a leftover page, so it's left out of the score.
+- **Last.fm names.** Last.fm pages are matched the careful way: "Ye" must land on Kanye West's page, not a smaller artist called Ye.
+- **Genre.** For these artists, genre is MusicBrainz's most-voted genre tag, so it can be quirky (Skrillex: "Brostep"). Our 12 keep their hand-written genres.
+
 ## Common tasks
 
 **Add an artist**

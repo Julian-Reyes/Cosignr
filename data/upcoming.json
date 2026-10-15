@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T18:33:35.495Z",
+  "generatedAt": "2026-10-15T19:38:16.865Z",
   "source": "Ticketmaster Discovery API (live listings, rebuilt nightly)",
   "artists": {
     "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
@@ -8,9 +8,166 @@
     },
     "90744b3e-363a-458e-8da1-e3e392a489c4": {
       "name": "Wet Leg"
+    },
+    "e21857d5-3256-4547-afb3-4b6ded592596": {
+      "name": "Gorillaz",
+      "id": "gorillaz"
+    },
+    "3cdb40fe-a63e-4bb9-b40d-17cda5f50979": {
+      "name": "Little Simz"
+    },
+    "d89de379-665d-425c-b2e9-41b95d1edb36": {
+      "name": "Silverstein",
+      "id": "silverstein"
+    },
+    "2e8ca124-e38a-4dab-93dd-c9f3d415902b": {
+      "name": "Stand Atlantic"
+    },
+    "af063224-5624-46d9-a2cd-d0374b55382e": {
+      "name": "Point North"
+    },
+    "31445b1e-96f3-4c7f-84ec-dd02e647e690": {
+      "name": "DJ Snake"
+    },
+    "1c294418-722f-45a3-a24d-910f9b6f1502": {
+      "name": "Dillon Francis",
+      "id": "dillon-francis"
+    },
+    "e0e1a584-dd0a-4bd1-88d1-c4c62895039d": {
+      "name": "Foster the People",
+      "id": "foster-the-people"
+    },
+    "3482e723-ee80-4dfc-b6e9-5a47732fd6b6": {
+      "name": "Goth Babe"
+    },
+    "9ca10859-49e2-44e3-b3d6-04c535207bc2": {
+      "name": "Knocked Loose"
+    },
+    "5f95440d-7737-4a36-9bcf-c05337f7129b": {
+      "name": "Denzel Curry",
+      "id": "denzel-curry"
+    },
+    "fa1de503-aba7-41fa-a1ed-371b3e87a717": {
+      "name": "Madeon",
+      "id": "madeon"
+    },
+    "e4d7cfe5-0bed-46cf-acad-ab9a4dcb7aa6": {
+      "name": "Anamanaguchi"
     }
   },
   "cosigns": [
+    {
+      "from": "e21857d5-3256-4547-afb3-4b6ded592596",
+      "to": "3cdb40fe-a63e-4bb9-b40d-17cda5f50979",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 11,
+      "first": "2026-10-15",
+      "last": "2026-10-31",
+      "next": {
+        "tour": "Gorillaz - The Mountain Tour",
+        "date": "2026-10-15",
+        "city": "Austin",
+        "url": "https://www.ticketmaster.com/gorillaz-the-mountain-tour-austin-texas-10-15-2026/event/3A00645BCFD7447F"
+      }
+    },
+    {
+      "from": "e0e1a584-dd0a-4bd1-88d1-c4c62895039d",
+      "to": "3482e723-ee80-4dfc-b6e9-5a47732fd6b6",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 5,
+      "first": "2026-10-16",
+      "last": "2026-10-23",
+      "next": {
+        "tour": "Foster The People - Good Mourning Sunshine",
+        "date": "2026-10-16",
+        "city": "Austin",
+        "url": "https://www.ticketmaster.com/foster-the-people-good-mourning-sunshine-austin-texas-10-16-2026/event/3A00649CBDB12FBE"
+      }
+    },
+    {
+      "from": "9ca10859-49e2-44e3-b3d6-04c535207bc2",
+      "to": "5f95440d-7737-4a36-9bcf-c05337f7129b",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 12,
+      "first": "2026-10-16",
+      "last": "2026-11-05",
+      "next": {
+        "tour": "Knocked Loose w/ Denzel Curry",
+        "date": "2026-10-16",
+        "city": "Orlando",
+        "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7P8e6"
+      }
+    },
+    {
+      "from": "fa1de503-aba7-41fa-a1ed-371b3e87a717",
+      "to": "e4d7cfe5-0bed-46cf-acad-ab9a4dcb7aa6",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 4,
+      "first": "2026-11-06",
+      "last": "2026-11-19",
+      "next": {
+        "tour": "Madeon presents Victory Live",
+        "date": "2026-11-06",
+        "city": "Raleigh",
+        "url": "https://www.ticketmaster.com/madeon-presents-victory-live-raleigh-north-carolina-11-06-2026/event/2D0064A5A31C2EA7"
+      }
+    },
+    {
+      "from": "31445b1e-96f3-4c7f-84ec-dd02e647e690",
+      "to": "1c294418-722f-45a3-a24d-910f9b6f1502",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2026-11-13",
+      "last": "2026-11-13",
+      "next": {
+        "tour": "DJ Snake",
+        "date": "2026-11-13",
+        "city": "Laval",
+        "url": "https://www.ticketmaster.ca/dj-snake-laval-quebec-11-13-2026/event/310064A7BA8BB54F"
+      }
+    },
+    {
+      "from": "d89de379-665d-425c-b2e9-41b95d1edb36",
+      "to": "2e8ca124-e38a-4dab-93dd-c9f3d415902b",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 6,
+      "first": "2026-11-17",
+      "last": "2026-12-13",
+      "next": {
+        "tour": "Silverstein & Story Of The Year: CAMP SCREAMO TOUR",
+        "date": "2026-11-17",
+        "city": "Spokane",
+        "url": "https://www.ticketmaster.com/silverstein-story-of-the-year-camp-spokane-washington-11-17-2026/event/1E0064F7B18DCB4E"
+      }
+    },
+    {
+      "from": "d89de379-665d-425c-b2e9-41b95d1edb36",
+      "to": "af063224-5624-46d9-a2cd-d0374b55382e",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2027-02-12",
+      "last": "2027-02-12",
+      "next": {
+        "tour": "Silverstein + Story Of The Year Camp Screamo Australia",
+        "date": "2027-02-12",
+        "city": "Brisbane",
+        "url": "https://www.ticketmaster.com.au/silverstein-story-of-the-year-camp-brisbane-12-02-2027/event/13006547DF5CB31A"
+      }
+    },
     {
       "from": "63aa26c3-d59b-4da4-84ac-716b54f1ef4d",
       "to": "90744b3e-363a-458e-8da1-e3e392a489c4",

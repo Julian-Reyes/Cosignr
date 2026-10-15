@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Builds data/sources.json from the IDs in data/artists.json.
+// Builds data/sources.json from the IDs in data/artists.json and data/extended.json (everyone with a page).
 // Free, key-less sources only:
 //   - Wikimedia Commons: lead photo from Wikidata (P18) + license/author for attribution
 //   - Spotify oEmbed:    artist thumbnail (no API key needed)
@@ -10,6 +10,7 @@
 import { readFile, writeFile, readdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { loadArtists } from "./lib/artists.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const UA = { "User-Agent": "Cosignr/0.1 (music discovery demo; https://github.com/Julian-Reyes)" };
@@ -73,7 +74,7 @@ async function pressFiles() {
   }
 }
 
-const { artists } = JSON.parse(await readFile(path.join(ROOT, "data/artists.json"), "utf8"));
+const artists = await loadArtists();
 const press = await pressFiles();
 const out = { generatedAt: new Date().toISOString(), artists: {} };
 

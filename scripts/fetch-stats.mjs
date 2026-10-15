@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 // Builds data/stats.json (latest numbers) and data/snapshots/<date>.json (daily history)
-// from the IDs in data/artists.json.
+// for everyone with a page: data/artists.json (roster) + data/extended.json (top cosigners).
 //   - Deezer:  fan count (no key needed)
 //   - Last.fm: listeners, playcount, tags (needs LASTFM_API_KEY in .env or the environment)
 // Sources without a key are skipped, and their previous values in stats.json are kept.
 // A metric listed under an artist's `caveats` is fetched but left out of the score.
 //
-// Also fetches Last.fm listeners for everyone who has cosigned a roster artist (from
-// data/cosigns.json, tours.json and upcoming.json, so run the cosigns, tours and upcoming scripts first), used to rank "Cosigned by" chips by fame.
+// Also fetches Last.fm listeners ("fame", stored under `cosigners`) for everyone linked to a page
+// artist: their cosigners (to rank "Cosigned by" chips) and the artists our roster cosigned (for the
+// "Famous" sort on artist pages). Reads data/cosigns.json, tours.json and upcoming.json, so run
+// those scripts first.
 // Lookup order: MusicBrainz ID, then name, then the artist's other names on MusicBrainz
 // ("Ye" -> "Kanye West"). A name match whose Last.fm page carries a different MusicBrainz ID is
 // accepted only if MusicBrainz redirects that ID to ours (merged duplicates); otherwise it's
@@ -20,6 +22,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { mb } from "./lib/musicbrainz.mjs";
+import { loadArtists } from "./lib/artists.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const UA = { "User-Agent": "Cosignr/0.1 (music discovery demo; https://github.com/Julian-Reyes)" };
@@ -58,14 +61,13 @@ async function deezer(id) {
 
 async function lastfm(name, key) {
   if (!name) return null;
-  const d = await getJson("https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&format=json&autocorrect=0"
-    + `&artist=${encodeURIComponent(name)}&api_key=${key}`);
-  if (d.error) throw new Error(d.message);
+  const a = await lastfmInfo({ artist: name }, key);
+  if (!a) throw new Error(`no Last.fm page for "${name}"`);
   return {
-    listeners: Number(d.artist.stats.listeners),
-    plays: Number(d.artist.stats.playcount),
-    tags: (d.artist.tags?.tag || []).map(t => t.name),
-    url: d.artist.url,
+    listeners: Number(a.stats.listeners),
+    plays: Number(a.stats.playcount),
+    tags: (a.tags?.tag || []).map(t => t.name),
+    url: a.url,
   };
 }
 
@@ -122,7 +124,7 @@ function score(metrics, excluded) {
 
 await loadEnv();
 const LASTFM_KEY = process.env.LASTFM_API_KEY;
-const { artists } = JSON.parse(await readFile(path.join(ROOT, "data/artists.json"), "utf8"));
+const artists = await loadArtists();
 let prev = {};
 try { prev = JSON.parse(await readFile(path.join(ROOT, "data/stats.json"), "utf8")).artists; } catch {}
 
@@ -132,12 +134,28 @@ const snapshot = { date: today, artists: {} };
 
 if (!LASTFM_KEY) console.log("No LASTFM_API_KEY: skipping Last.fm (keeping previous values)\n");
 
+// Extended artists' Last.fm page is found with the same checks as cosigner fame (MusicBrainz ID, then
+// name, then aliases: "Ye" must land on Kanye West's page, not the smaller "Ye" page). The verified
+// page name is kept in stats.json for FAME_MAX_AGE_DAYS. Roster artists use their hand-checked ids.lastfm.
+const isFresh = e => e?.fetchedAt && Date.now() - Date.parse(e.fetchedAt) < FAME_MAX_AGE_DAYS * 864e5;
+async function lastfmName(a) {
+  if (!a.extended) return { name: a.ids.lastfm };
+  const cached = prev[a.id]?.lastfmVerified;
+  if (isFresh(cached)) return cached;
+  const f = await fame(a.ids.musicbrainz, a.name, LASTFM_KEY);
+  return { name: f?.name ?? null, via: f?.via ?? "unknown", fetchedAt: new Date().toISOString() };
+}
+
 for (const a of artists) {
   const entry = { deezer: null, lastfm: prev[a.id]?.lastfm || null };
   try { entry.deezer = await deezer(a.ids.deezer); } catch (err) { console.warn(`  ! ${a.id} deezer: ${err.message}`); entry.deezer = prev[a.id]?.deezer || null; }
   if (LASTFM_KEY) {
-    try { entry.lastfm = await lastfm(a.ids.lastfm, LASTFM_KEY); } catch (err) { console.warn(`  ! ${a.id} lastfm: ${err.message}`); }
-  }
+    try {
+      const verified = await lastfmName(a);
+      if (a.extended) entry.lastfmVerified = verified;
+      entry.lastfm = verified.name ? await lastfm(verified.name, LASTFM_KEY) : null;
+    } catch (err) { console.warn(`  ! ${a.id} lastfm: ${err.message}`); }
+  } else if (prev[a.id]?.lastfmVerified) entry.lastfmVerified = prev[a.id].lastfmVerified;
 
   const metrics = { deezerFans: entry.deezer?.fans, lastfmListeners: entry.lastfm?.listeners, lastfmPlays: entry.lastfm?.plays };
   const excluded = Object.keys(a.caveats || {}).flatMap(src => CAVEAT_METRICS[src] || []);
@@ -150,7 +168,7 @@ for (const a of artists) {
   console.log(`${a.id.padEnd(16)} score ${String(entry.score?.value ?? "·").padStart(3)}  fans ${n(metrics.deezerFans).padStart(11)}  listeners ${n(metrics.lastfmListeners).padStart(10)}${excluded.length ? "  (excluded: " + excluded.join(", ") + ")" : ""}`);
 }
 
-// ---- Fame of cosigners (for ranking "Cosigned by") ----
+// ---- Fame of linked artists (ranking "Cosigned by", "Famous" sort) ----
 let prevFame = {};
 try { prevFame = JSON.parse(await readFile(path.join(ROOT, "data/stats.json"), "utf8")).cosigners || {}; } catch {}
 out.cosigners = {};
@@ -163,15 +181,20 @@ try {
       for (const [mbid, a] of Object.entries(more.artists)) cosigns.artists[mbid] ??= a;
     } catch {}
   }
-  const rosterMbids = new Map(artists.map(a => [a.ids.musicbrainz, a.id]));
-  const cosigners = [...new Set(cosigns.cosigns.filter(c => rosterMbids.has(c.to)).map(c => c.from))];
+  const rosterMbids = new Map(artists.map(a => [a.ids.musicbrainz, a.id])); // everyone with a page
+  const roster = new Set(artists.filter(a => !a.extended).map(a => a.ids.musicbrainz));
+  const cosigners = [...new Set(cosigns.cosigns.flatMap(c => [
+    ...(rosterMbids.has(c.to) ? [c.from] : []), // who vouched for someone with a page
+    ...(roster.has(c.from) ? [c.to] : []),       // who our roster vouched for ("Famous" sort)
+  ]))].filter(m => cosigns.artists[m]);
   const fresh = e => e && Date.now() - Date.parse(e.fetchedAt) < FAME_MAX_AGE_DAYS * 864e5;
   let fetched = 0, unknown = 0;
   for (const mbid of cosigners) {
     const rosterId = rosterMbids.get(mbid);
-    if (rosterId) { // roster artists already have Last.fm numbers above
-      const l = out.artists[rosterId].lastfm;
-      out.cosigners[mbid] = { listeners: l?.listeners ?? null, via: "roster" };
+    if (rosterId) { // artists with a page already have Last.fm numbers above
+      const s = out.artists[rosterId];
+      const name = s.lastfmVerified?.name ?? artists.find(x => x.id === rosterId).ids.lastfm;
+      out.cosigners[mbid] = { listeners: s.lastfm?.listeners ?? null, lastfmName: name ?? null, via: "page" };
       continue;
     }
     if (fresh(prevFame[mbid]) || !LASTFM_KEY) { if (prevFame[mbid]) out.cosigners[mbid] = prevFame[mbid]; continue; }

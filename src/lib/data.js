@@ -7,6 +7,7 @@ import cosignsJson from "../../data/cosigns.json";
 import tours from "../../data/tours.json";
 import upcoming from "../../data/upcoming.json";
 import profiles from "../../data/profiles.json";
+import { mergeCosigns, byCosignerFame } from "./cosigns.js";
 
 export const BASE = import.meta.env.BASE_URL.replace(/\/?$/, "/");
 export const DATA = artistsJson;
@@ -44,51 +45,15 @@ export function metricValue(artist, metric) {
 
 // ---------- cosigns ----------
 
-// For each roster artist: everyone who cosigned them, most famous first (Last.fm listeners),
-// then most vouches (features, remixes, tours, touring-band spots, upcoming shows), most songs, most
-// recent. Cosigners with unknown fame go last. Songs (cosigns.json), past tours and touring bands
-// (tours.json) and upcoming shows (upcoming.json) for the same pair become one entry.
+// For each roster artist: everyone who cosigned them, ranked by byCosignerFame (src/lib/cosigns.js).
 function buildCosignedBy() {
   const byMbid = Object.fromEntries(DATA.artists.map(a => [a.ids.musicbrainz, a.id]));
   const out = Object.fromEntries(DATA.artists.map(a => [a.id, []]));
-  const pairs = new Map();
-  const entry = (c, names) => {
-    const id = byMbid[c.to];
-    if (!id) return null;
-    let e = pairs.get(`${c.from}|${c.to}`);
-    if (!e) {
-      e = { from: c.from, to: c.to, types: [], songs: 0, vouches: 0, tours: 0, first: null, last: null, evidence: [],
-            liveEvidence: [], next: null, name: names[c.from].name, fame: STATS.cosigners?.[c.from]?.listeners ?? -1 };
-      pairs.set(`${c.from}|${c.to}`, e);
-      out[id].push(e);
-    }
-    return e;
-  };
-  for (const c of cosignsJson.cosigns) {
-    const e = entry(c, cosignsJson.artists);
-    if (e) Object.assign(e, c);
+  for (const e of mergeCosigns({ cosigns: cosignsJson, tours, upcoming, fame: STATS.cosigners })) {
+    const id = byMbid[e.to];
+    if (id) out[id].push({ ...e, name: e.fromName, fame: e.fromFame });
   }
-  for (const t of tours.cosigns) {
-    const e = entry(t, tours.artists);
-    if (!e) continue;
-    e.types = [...new Set([...e.types, ...t.types])];
-    e.tours = t.tours;
-    e.vouches += t.tours + (t.types.includes("band") ? 1 : 0);
-    e.liveEvidence = t.evidence;
-    if (t.last && (!e.last || t.last > e.last)) e.last = t.last;
-  }
-  const today = new Date().toISOString().slice(0, 10);
-  for (const u of upcoming.cosigns) {
-    if (u.last < today) continue; // Ticketmaster data is only kept until the show has happened
-    const e = entry(u, upcoming.artists);
-    if (!e) continue;
-    e.types = [...new Set([...e.types, "upcoming"])];
-    e.vouches += 1;
-    e.next = { ...u.next, shows: u.shows };
-  }
-  for (const list of Object.values(out)) {
-    list.sort((x, y) => y.fame - x.fame || y.vouches - x.vouches || y.songs - x.songs || (y.last || "").localeCompare(x.last || ""));
-  }
+  for (const list of Object.values(out)) list.sort(byCosignerFame);
   return out;
 }
 export const COSIGNS = buildCosignedBy();

@@ -30,9 +30,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node scripts/fetch-sources.mjs
       - run: node scripts/fetch-cosigns.mjs   # ~7 min: MusicBrainz allows 1 request/second
       - run: node scripts/fetch-tours.mjs     # ~3 min first run, then cached
+      - run: node scripts/fetch-extended.mjs  # ~1 min: who else gets a page (top cosigners)
+      - run: node scripts/fetch-sources.mjs   # photos for roster + extended
       - run: node scripts/fetch-upcoming.mjs  # Ticketmaster; skipped (keeps old file) without the key
         env:
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}

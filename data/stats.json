@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T18:35:37.412Z",
+  "generatedAt": "2026-10-15T19:51:01.879Z",
   "scale": {
     "deezerFans": [
       3,
@@ -21,13 +21,13 @@
   "artists": {
     "travis-scott": {
       "deezer": {
-        "fans": 3149821,
+        "fans": 3149861,
         "albums": 63,
         "url": "https://www.deezer.com/artist/4495513"
       },
       "lastfm": {
-        "listeners": 3492475,
-        "plays": 711129911,
+        "listeners": 3493252,
+        "plays": 711212582,
         "tags": [],
         "url": "https://www.last.fm/music/+noredirect/Travis+Scott"
       },
@@ -43,13 +43,13 @@
     },
     "tame-impala": {
       "deezer": {
-        "fans": 1151552,
+        "fans": 1151588,
         "albums": 42,
         "url": "https://www.deezer.com/artist/134790"
       },
       "lastfm": {
-        "listeners": 4669892,
-        "plays": 453108410,
+        "listeners": 4671113,
+        "plays": 453217336,
         "tags": [
           "Psychedelic Rock",
           "psychedelic",
@@ -240,13 +240,13 @@
     },
     "ski-mask": {
       "deezer": {
-        "fans": 325366,
+        "fans": 325367,
         "albums": 43,
         "url": "https://www.deezer.com/artist/11347866"
       },
       "lastfm": {
-        "listeners": 1346922,
-        "plays": 75599133,
+        "listeners": 1347097,
+        "plays": 75605122,
         "tags": [
           "trap",
           "Hip-Hop",
@@ -268,7 +268,7 @@
     },
     "the-xx": {
       "deezer": {
-        "fans": 1104628,
+        "fans": 1104633,
         "albums": 21,
         "url": "https://www.deezer.com/artist/261212"
       },
@@ -296,13 +296,13 @@
     },
     "porter-robinson": {
       "deezer": {
-        "fans": 170156,
-        "albums": 28,
+        "fans": 170157,
+        "albums": 31,
         "url": "https://www.deezer.com/artist/864274"
       },
       "lastfm": {
-        "listeners": 1396091,
-        "plays": 71231776,
+        "listeners": 1395738,
+        "plays": 71211424,
         "tags": [
           "electro house",
           "electronic",
@@ -324,7 +324,7 @@
     },
     "drake": {
       "deezer": {
-        "fans": 24108351,
+        "fans": 24108421,
         "albums": 94,
         "url": "https://www.deezer.com/artist/246791"
       },
@@ -349,6 +349,1621 @@
           "lastfmPlays"
         ]
       }
+    },
+    "rihanna": {
+      "deezer": {
+        "fans": 18107159,
+        "albums": 103,
+        "url": "https://www.deezer.com/artist/564"
+      },
+      "lastfm": {
+        "listeners": 8543326,
+        "plays": 632316727,
+        "tags": [
+          "pop",
+          "rnb",
+          "female vocalists",
+          "dance",
+          "Hip-Hop"
+        ],
+        "url": "https://www.last.fm/music/Rihanna"
+      },
+      "lastfmVerified": {
+        "name": "Rihanna",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:48:52.906Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 87,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "ye": {
+      "deezer": {
+        "fans": 4553637,
+        "albums": 75,
+        "url": "https://www.deezer.com/artist/230"
+      },
+      "lastfm": {
+        "listeners": 8156543,
+        "plays": 1614519245,
+        "tags": [
+          "Hip-Hop",
+          "rap",
+          "hip hop",
+          "rnb",
+          "Kanye West"
+        ],
+        "url": "https://www.last.fm/music/Kanye+West"
+      },
+      "lastfmVerified": {
+        "name": "Kanye West",
+        "via": "alias",
+        "fetchedAt": "2026-10-15T19:48:57.384Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 85,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "the-weeknd": {
+      "deezer": {
+        "fans": 14739998,
+        "albums": 86,
+        "url": "https://www.deezer.com/artist/4050205"
+      },
+      "lastfm": {
+        "listeners": 5557496,
+        "plays": 1180237795,
+        "tags": [
+          "rnb",
+          "electronic",
+          "dubstep",
+          "Canadian",
+          "prog-rnb"
+        ],
+        "url": "https://www.last.fm/music/The+Weeknd"
+      },
+      "lastfmVerified": {
+        "name": "The Weeknd",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:48:58.089Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 86,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "kendrick-lamar": {
+      "deezer": {
+        "fans": 6186387,
+        "albums": 37,
+        "url": "https://www.deezer.com/artist/525046"
+      },
+      "lastfm": {
+        "listeners": 5301858,
+        "plays": 1070320878,
+        "tags": [
+          "Hip-Hop",
+          "rap",
+          "west coast",
+          "hip hop",
+          "compton"
+        ],
+        "url": "https://www.last.fm/music/Kendrick+Lamar"
+      },
+      "lastfmVerified": {
+        "name": "Kendrick Lamar",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:48:58.807Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 83,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "calvin-harris": {
+      "deezer": {
+        "fans": 12334157,
+        "albums": 175,
+        "url": "https://www.deezer.com/artist/12178"
+      },
+      "lastfm": {
+        "listeners": 5222581,
+        "plays": 220910736,
+        "tags": [
+          "electronic",
+          "dance",
+          "electro",
+          "Disco",
+          "electronica"
+        ],
+        "url": "https://www.last.fm/music/Calvin+Harris"
+      },
+      "lastfmVerified": {
+        "name": "Calvin Harris",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:48:59.660Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 81,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "gorillaz": {
+      "deezer": {
+        "fans": 3027338,
+        "albums": 93,
+        "url": "https://www.deezer.com/artist/14"
+      },
+      "lastfm": {
+        "listeners": 7053928,
+        "plays": 540888375,
+        "tags": [
+          "electronic",
+          "alternative",
+          "Hip-Hop",
+          "rock",
+          "indie"
+        ],
+        "url": "https://www.last.fm/music/Gorillaz"
+      },
+      "lastfmVerified": {
+        "name": "Gorillaz",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:00.382Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 80,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "daft-punk": {
+      "deezer": {
+        "fans": 5221602,
+        "albums": 36,
+        "url": "https://www.deezer.com/artist/27"
+      },
+      "lastfm": {
+        "listeners": 6479430,
+        "plays": 420831106,
+        "tags": [
+          "electronic",
+          "House",
+          "dance",
+          "techno",
+          "electronica"
+        ],
+        "url": "https://www.last.fm/music/Daft+Punk"
+      },
+      "lastfmVerified": {
+        "name": "Daft Punk",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:01.345Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 81,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "sza": {
+      "deezer": {
+        "fans": 1337572,
+        "albums": 43,
+        "url": "https://www.deezer.com/artist/5531258"
+      },
+      "lastfm": {
+        "listeners": 3661466,
+        "plays": 611427611,
+        "tags": [
+          "rnb",
+          "soul",
+          "alternative rnb",
+          "electronic",
+          "Neo-Soul"
+        ],
+        "url": "https://www.last.fm/music/SZA"
+      },
+      "lastfmVerified": {
+        "name": "SZA",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:02.056Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 76,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "justice": {
+      "deezer": {
+        "fans": 811292,
+        "albums": 44,
+        "url": "https://www.deezer.com/artist/6404"
+      },
+      "lastfm": {
+        "listeners": 2892821,
+        "plays": 106275749,
+        "tags": [
+          "electronic",
+          "french",
+          "electro",
+          "dance",
+          "electronica"
+        ],
+        "url": "https://www.last.fm/music/Justice"
+      },
+      "lastfmVerified": {
+        "name": "Justice",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:02.810Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 69,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "metric": {
+      "deezer": {
+        "fans": 623,
+        "albums": 3,
+        "url": "https://www.deezer.com/artist/10275486"
+      },
+      "lastfm": {
+        "listeners": 3007406,
+        "plays": 116920822,
+        "tags": [
+          "indie",
+          "indie rock",
+          "female vocalists",
+          "Canadian",
+          "alternative"
+        ],
+        "url": "https://www.last.fm/music/Metric"
+      },
+      "lastfmVerified": {
+        "name": "Metric",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:03.725Z"
+      },
+      "excluded": [
+        "deezerFans"
+      ],
+      "score": {
+        "value": 76,
+        "inputs": [
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "grimes": {
+      "deezer": {
+        "fans": 286872,
+        "albums": 31,
+        "url": "https://www.deezer.com/artist/807493"
+      },
+      "lastfm": {
+        "listeners": 2788536,
+        "plays": 202711645,
+        "tags": [
+          "electronic",
+          "dream pop",
+          "experimental",
+          "psychedelic",
+          "Canadian"
+        ],
+        "url": "https://www.last.fm/music/Grimes"
+      },
+      "lastfmVerified": {
+        "name": "Grimes",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:04.438Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 68,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "deadmau5": {
+      "deezer": {
+        "fans": 1120603,
+        "albums": 163,
+        "url": "https://www.deezer.com/artist/142381"
+      },
+      "lastfm": {
+        "listeners": 2188475,
+        "plays": 82190596,
+        "tags": [
+          "Progressive House",
+          "House",
+          "electronic",
+          "electro house",
+          "electro"
+        ],
+        "url": "https://www.last.fm/music/deadmau5"
+      },
+      "lastfmVerified": {
+        "name": "deadmau5",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:05.199Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 69,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "silverstein": {
+      "deezer": {
+        "fans": 119308,
+        "albums": 58,
+        "url": "https://www.deezer.com/artist/5721"
+      },
+      "lastfm": {
+        "listeners": 1228403,
+        "plays": 62323316,
+        "tags": [
+          "post-hardcore",
+          "screamo",
+          "emo",
+          "emocore",
+          "hardcore"
+        ],
+        "url": "https://www.last.fm/music/Silverstein"
+      },
+      "lastfmVerified": {
+        "name": "Silverstein",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:05.946Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 60,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "dillon-francis": {
+      "deezer": {
+        "fans": 626681,
+        "albums": 162,
+        "url": "https://www.deezer.com/artist/666244"
+      },
+      "lastfm": {
+        "listeners": 790278,
+        "plays": 9552486,
+        "tags": [
+          "moombahton",
+          "dubstep",
+          "electro house",
+          "electronic",
+          "electro"
+        ],
+        "url": "https://www.last.fm/music/Dillon+Francis"
+      },
+      "lastfmVerified": {
+        "name": "Dillon Francis",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:07.315Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 58,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "skrillex": {
+      "deezer": {
+        "fans": 0,
+        "albums": 3,
+        "url": "https://www.deezer.com/artist/420895262"
+      },
+      "lastfm": {
+        "listeners": 3075345,
+        "plays": 114359172,
+        "tags": [
+          "dubstep",
+          "electronic",
+          "breakcore",
+          "electro",
+          "electronica"
+        ],
+        "url": "https://www.last.fm/music/Skrillex"
+      },
+      "lastfmVerified": {
+        "name": "Skrillex",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:08.387Z"
+      },
+      "excluded": [
+        "deezerFans"
+      ],
+      "score": {
+        "value": 76,
+        "inputs": [
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "dj-shadow": {
+      "deezer": {
+        "fans": 178609,
+        "albums": 56,
+        "url": "https://www.deezer.com/artist/1214"
+      },
+      "lastfm": {
+        "listeners": 2115018,
+        "plays": 60394344,
+        "tags": [
+          "trip-hop",
+          "electronic",
+          "Hip-Hop",
+          "turntablism",
+          "electronica"
+        ],
+        "url": "https://www.last.fm/music/DJ+Shadow"
+      },
+      "lastfmVerified": {
+        "name": "DJ Shadow",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:09.089Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 63,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "bassnectar": {
+      "deezer": {
+        "fans": 130632,
+        "albums": 9,
+        "url": "https://www.deezer.com/artist/260817"
+      },
+      "lastfm": {
+        "listeners": 770398,
+        "plays": 14428257,
+        "tags": [
+          "dubstep",
+          "electronic",
+          "breakbeat",
+          "glitch",
+          "breaks"
+        ],
+        "url": "https://www.last.fm/music/Bassnectar"
+      },
+      "lastfmVerified": {
+        "name": "Bassnectar",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:09.721Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 55,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "rl-grime": {
+      "deezer": {
+        "fans": 31327,
+        "albums": 39,
+        "url": "https://www.deezer.com/artist/4406350"
+      },
+      "lastfm": {
+        "listeners": 479402,
+        "plays": 7831597,
+        "tags": [
+          "trap",
+          "electronic",
+          "beats",
+          "experimental",
+          "wonky"
+        ],
+        "url": "https://www.last.fm/music/RL+Grime"
+      },
+      "lastfmVerified": {
+        "name": "RL Grime",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:10.389Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 47,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "ekali": {
+      "deezer": {
+        "fans": 4550,
+        "albums": 40,
+        "url": "https://www.deezer.com/artist/7552428"
+      },
+      "lastfm": {
+        "listeners": 202748,
+        "plays": 2336871,
+        "tags": [
+          "trap",
+          "pop",
+          "electronic",
+          "Canadian",
+          "chill trap"
+        ],
+        "url": "https://www.last.fm/music/Ekali"
+      },
+      "lastfmVerified": {
+        "name": "Ekali",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:11.168Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 36,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "florence-the-machine": {
+      "deezer": {
+        "fans": 1696139,
+        "albums": 64,
+        "url": "https://www.deezer.com/artist/183716"
+      },
+      "lastfm": {
+        "listeners": 4007565,
+        "plays": 290819216,
+        "tags": [
+          "indie",
+          "female vocalists",
+          "british",
+          "alternative",
+          "indie pop"
+        ],
+        "url": "https://www.last.fm/music/Florence+%252B+the+Machine"
+      },
+      "lastfmVerified": {
+        "name": "Florence + the Machine",
+        "via": "name+mbid",
+        "fetchedAt": "2026-10-15T19:49:12.216Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 75,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "eyedress": {
+      "deezer": {
+        "fans": 124276,
+        "albums": 69,
+        "url": "https://www.deezer.com/artist/5272195"
+      },
+      "lastfm": {
+        "listeners": 2356168,
+        "plays": 79755723,
+        "tags": [
+          "electronic",
+          "psychedelic",
+          "indie",
+          "experimental",
+          "Lo-Fi"
+        ],
+        "url": "https://www.last.fm/music/Eyedress"
+      },
+      "lastfmVerified": {
+        "name": "Eyedress",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:12.862Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 63,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "mareux": {
+      "deezer": {
+        "fans": 36599,
+        "albums": 15,
+        "url": "https://www.deezer.com/artist/103605302"
+      },
+      "lastfm": {
+        "listeners": 1217657,
+        "plays": 25919958,
+        "tags": [
+          "darkwave",
+          "synthpop",
+          "coldwave",
+          "electronic",
+          "chillwave"
+        ],
+        "url": "https://www.last.fm/music/Mareux"
+      },
+      "lastfmVerified": {
+        "name": "Mareux",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:13.542Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 54,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "kyle": {
+      "deezer": {
+        "fans": 32931,
+        "albums": 85,
+        "url": "https://www.deezer.com/artist/560932"
+      },
+      "lastfm": {
+        "listeners": 1189421,
+        "plays": 19003499,
+        "tags": [
+          "Hip-Hop",
+          "rap",
+          "rnb",
+          "acoustic",
+          "trap"
+        ],
+        "url": "https://www.last.fm/music/KYLE"
+      },
+      "lastfmVerified": {
+        "name": "KYLE",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:14.469Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 53,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "ekkstacy": {
+      "deezer": {
+        "fans": 10652,
+        "albums": 34,
+        "url": "https://www.deezer.com/artist/73361492"
+      },
+      "lastfm": {
+        "listeners": 1023318,
+        "plays": 20596253,
+        "tags": [
+          "emo",
+          "indie",
+          "post-punk",
+          "indie rock",
+          "bedroom pop"
+        ],
+        "url": "https://www.last.fm/music/EKKSTACY"
+      },
+      "lastfmVerified": {
+        "name": "EKKSTACY",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:16.019Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 49,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "j-cole": {
+      "deezer": {
+        "fans": 2747561,
+        "albums": 43,
+        "url": "https://www.deezer.com/artist/339209"
+      },
+      "lastfm": {
+        "listeners": 3992497,
+        "plays": 325058787,
+        "tags": [
+          "Hip-Hop",
+          "rap",
+          "hip hop",
+          "North Carolina",
+          "underground hip-hop"
+        ],
+        "url": "https://www.last.fm/music/J.+Cole"
+      },
+      "lastfmVerified": {
+        "name": "J. Cole",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:16.691Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 77,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "foster-the-people": {
+      "deezer": {
+        "fans": 1114817,
+        "albums": 38,
+        "url": "https://www.deezer.com/artist/417037"
+      },
+      "lastfm": {
+        "listeners": 3859989,
+        "plays": 122406607,
+        "tags": [
+          "indie",
+          "indie pop",
+          "alternative",
+          "american",
+          "indie rock"
+        ],
+        "url": "https://www.last.fm/music/Foster+the+People"
+      },
+      "lastfmVerified": {
+        "name": "Foster the People",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:17.372Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 72,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "future": {
+      "deezer": {
+        "fans": 3992171,
+        "albums": 127,
+        "url": "https://www.deezer.com/artist/165930"
+      },
+      "lastfm": {
+        "listeners": 3373145,
+        "plays": 489873036,
+        "tags": [
+          "Hip-Hop",
+          "rap",
+          "trap",
+          "hip hop",
+          "atlanta"
+        ],
+        "url": "https://www.last.fm/music/Future"
+      },
+      "lastfmVerified": {
+        "name": "Future",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:18.169Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 79,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "amine": {
+      "deezer": {
+        "fans": 102927,
+        "albums": 36,
+        "url": "https://www.deezer.com/artist/10792606"
+      },
+      "lastfm": {
+        "listeners": 1522755,
+        "plays": 64573383,
+        "tags": [
+          "rap",
+          "Hip-Hop",
+          "trap",
+          "hip hop",
+          "american"
+        ],
+        "url": "https://www.last.fm/music/Amin%C3%A9"
+      },
+      "lastfmVerified": {
+        "name": "Aminé",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:18.858Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 60,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "jid": {
+      "deezer": {
+        "fans": 3670,
+        "albums": 2,
+        "url": "https://www.deezer.com/artist/8395892"
+      },
+      "lastfm": {
+        "listeners": 1444611,
+        "plays": 110607789,
+        "tags": [
+          "rap",
+          "Hip-Hop",
+          "trap",
+          "hip hop",
+          "rnb"
+        ],
+        "url": "https://www.last.fm/music/JID"
+      },
+      "lastfmVerified": {
+        "name": "JID",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:19.993Z"
+      },
+      "excluded": [
+        "deezerFans"
+      ],
+      "score": {
+        "value": 72,
+        "inputs": [
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "diplo": {
+      "deezer": {
+        "fans": 1302404,
+        "albums": 188,
+        "url": "https://www.deezer.com/artist/1846"
+      },
+      "lastfm": {
+        "listeners": 2199325,
+        "plays": 38238080,
+        "tags": [
+          "electronic",
+          "Hip-Hop",
+          "trip-hop",
+          "ninja tune",
+          "electronica"
+        ],
+        "url": "https://www.last.fm/music/Diplo"
+      },
+      "lastfmVerified": {
+        "name": "Diplo",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:20.659Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 67,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "cash-cash": {
+      "deezer": {
+        "fans": 392188,
+        "albums": 81,
+        "url": "https://www.deezer.com/artist/167498"
+      },
+      "lastfm": {
+        "listeners": 893530,
+        "plays": 12448937,
+        "tags": [
+          "powerpop",
+          "electronic",
+          "pop",
+          "electronica",
+          "new wave"
+        ],
+        "url": "https://www.last.fm/music/Cash+Cash"
+      },
+      "lastfmVerified": {
+        "name": "Cash Cash",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:21.330Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 58,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "boombox-cartel": {
+      "deezer": {
+        "fans": 13104,
+        "albums": 47,
+        "url": "https://www.deezer.com/artist/4658041"
+      },
+      "lastfm": {
+        "listeners": 188870,
+        "plays": 1946482,
+        "tags": [
+          "trap",
+          "electronic",
+          "future bass",
+          "EDM",
+          "USA"
+        ],
+        "url": "https://www.last.fm/music/Boombox+Cartel"
+      },
+      "lastfmVerified": {
+        "name": "Boombox Cartel",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:22.232Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 38,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "digital-farm-animals": {
+      "deezer": {
+        "fans": 39319,
+        "albums": 56,
+        "url": "https://www.deezer.com/artist/7988742"
+      },
+      "lastfm": {
+        "listeners": 167740,
+        "plays": 1187304,
+        "tags": [
+          "dubstep",
+          "dub",
+          "british",
+          "electro",
+          "electronic"
+        ],
+        "url": "https://www.last.fm/music/Digital+Farm+Animals"
+      },
+      "lastfmVerified": {
+        "name": "Digital Farm Animals",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:22.942Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 40,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "dr-fresch": {
+      "deezer": {
+        "fans": 5993,
+        "albums": 64,
+        "url": "https://www.deezer.com/artist/4841654"
+      },
+      "lastfm": {
+        "listeners": 151901,
+        "plays": 1498916,
+        "tags": [
+          "House",
+          "electronic",
+          "american",
+          "electro house",
+          "United States"
+        ],
+        "url": "https://www.last.fm/music/Dr.+Fresch"
+      },
+      "lastfmVerified": {
+        "name": "Dr. Fresch",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:23.777Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 35,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "xxxtentacion": {
+      "deezer": {
+        "fans": 4704176,
+        "albums": 33,
+        "url": "https://www.deezer.com/artist/9822974"
+      },
+      "lastfm": {
+        "listeners": 2956227,
+        "plays": 356446456,
+        "tags": [
+          "Hip-Hop",
+          "rap",
+          "cloud rap",
+          "trap",
+          "emo rap"
+        ],
+        "url": "https://www.last.fm/music/XXXTENTACION"
+      },
+      "lastfmVerified": {
+        "name": "XXXTENTACION",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:24.456Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 78,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "missy-elliott": {
+      "deezer": {
+        "fans": 845878,
+        "albums": 26,
+        "url": "https://www.deezer.com/artist/91"
+      },
+      "lastfm": {
+        "listeners": 2036558,
+        "plays": 25711117,
+        "tags": [
+          "Hip-Hop",
+          "rap",
+          "rnb",
+          "female vocalists",
+          "hip hop"
+        ],
+        "url": "https://www.last.fm/music/Missy+Elliott"
+      },
+      "lastfmVerified": {
+        "name": "Missy Elliott",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:25.162Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 65,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "trippie-redd": {
+      "deezer": {
+        "fans": 729552,
+        "albums": 124,
+        "url": "https://www.deezer.com/artist/11934257"
+      },
+      "lastfm": {
+        "listeners": 2012118,
+        "plays": 196788015,
+        "tags": [
+          "trap",
+          "Hip-Hop",
+          "rap",
+          "emo rap",
+          "cloud rap"
+        ],
+        "url": "https://www.last.fm/music/Trippie+Redd"
+      },
+      "lastfmVerified": {
+        "name": "Trippie Redd",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:25.803Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 70,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "denzel-curry": {
+      "deezer": {
+        "fans": 190730,
+        "albums": 86,
+        "url": "https://www.deezer.com/artist/5131091"
+      },
+      "lastfm": {
+        "listeners": 1700606,
+        "plays": 162429026,
+        "tags": [
+          "Hip-Hop",
+          "rap",
+          "hip hop",
+          "trap",
+          "Southern Hip Hop"
+        ],
+        "url": "https://www.last.fm/music/Denzel+Curry"
+      },
+      "lastfmVerified": {
+        "name": "Denzel Curry",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:26.531Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 65,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "ferg": {
+      "deezer": {
+        "fans": 331362,
+        "albums": 80,
+        "url": "https://www.deezer.com/artist/4341930"
+      },
+      "lastfm": {
+        "listeners": 1699122,
+        "plays": 43774685,
+        "tags": [
+          "Hip-Hop",
+          "trap",
+          "rap",
+          "hip hop",
+          "swag"
+        ],
+        "url": "https://www.last.fm/music/A$AP+Ferg"
+      },
+      "lastfmVerified": {
+        "name": "A$AP Ferg",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:27.453Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 63,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "kygo": {
+      "deezer": {
+        "fans": 2396402,
+        "albums": 102,
+        "url": "https://www.deezer.com/artist/4768753"
+      },
+      "lastfm": {
+        "listeners": 2081181,
+        "plays": 61262524,
+        "tags": [
+          "electronic",
+          "House",
+          "tropical house",
+          "chillout",
+          "downtempo"
+        ],
+        "url": "https://www.last.fm/music/Kygo"
+      },
+      "lastfmVerified": {
+        "name": "Kygo",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:31.961Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 70,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "craig-armstrong": {
+      "deezer": {
+        "fans": 123822,
+        "albums": 65,
+        "url": "https://www.deezer.com/artist/628"
+      },
+      "lastfm": {
+        "listeners": 781715,
+        "plays": 10528609,
+        "tags": [
+          "Soundtrack",
+          "instrumental",
+          "ambient",
+          "chillout",
+          "electronic"
+        ],
+        "url": "https://www.last.fm/music/Craig+Armstrong"
+      },
+      "lastfmVerified": {
+        "name": "Craig Armstrong",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:32.597Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 54,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "yacht": {
+      "deezer": {
+        "fans": 10412,
+        "albums": 49,
+        "url": "https://www.deezer.com/artist/13569"
+      },
+      "lastfm": {
+        "listeners": 28495,
+        "plays": 356264,
+        "tags": [],
+        "url": "https://www.last.fm/music/+noredirect/Y.A.C.H.T."
+      },
+      "lastfmVerified": {
+        "name": "Y.A.C.H.T.",
+        "via": "alias",
+        "fetchedAt": "2026-10-15T19:49:35.071Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 27,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "lady-gaga": {
+      "deezer": {
+        "fans": 9313917,
+        "albums": 95,
+        "url": "https://www.deezer.com/artist/75491"
+      },
+      "lastfm": {
+        "listeners": 7959463,
+        "plays": 1072934016,
+        "tags": [
+          "pop",
+          "dance",
+          "electronic",
+          "female vocalists",
+          "female vocalist"
+        ],
+        "url": "https://www.last.fm/music/Lady+Gaga"
+      },
+      "lastfmVerified": {
+        "name": "Lady Gaga",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:35.880Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 86,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "madeon": {
+      "deezer": {
+        "fans": 422818,
+        "albums": 29,
+        "url": "https://www.deezer.com/artist/1517560"
+      },
+      "lastfm": {
+        "listeners": 813642,
+        "plays": 23364340,
+        "tags": [
+          "electronic",
+          "dance",
+          "french",
+          "House",
+          "DIsco House"
+        ],
+        "url": "https://www.last.fm/music/Madeon"
+      },
+      "lastfmVerified": {
+        "name": "Madeon",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:36.506Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 59,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "ninajirachi": {
+      "deezer": {
+        "fans": 6880,
+        "albums": 73,
+        "url": "https://www.deezer.com/artist/12053242"
+      },
+      "lastfm": {
+        "listeners": 525842,
+        "plays": 27891949,
+        "tags": [
+          "hyperpop",
+          "electro house",
+          "electropop",
+          "electronic",
+          "bubblegum bass"
+        ],
+        "url": "https://www.last.fm/music/Ninajirachi"
+      },
+      "lastfmVerified": {
+        "name": "Ninajirachi",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:37.199Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 47,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "teed": {
+      "deezer": {
+        "fans": 6,
+        "albums": 4,
+        "url": "https://www.deezer.com/artist/333248871"
+      },
+      "lastfm": {
+        "listeners": 457734,
+        "plays": 7395714,
+        "tags": [
+          "electronic",
+          "indie",
+          "House",
+          "electro",
+          "electronica"
+        ],
+        "url": "https://www.last.fm/music/Totally+Enormous+Extinct+Dinosaurs"
+      },
+      "lastfmVerified": {
+        "name": "Totally Enormous Extinct Dinosaurs",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:39.215Z"
+      },
+      "excluded": [
+        "deezerFans"
+      ],
+      "score": {
+        "value": 56,
+        "inputs": [
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "eminem": {
+      "deezer": {
+        "fans": 19143852,
+        "albums": 68,
+        "url": "https://www.deezer.com/artist/13"
+      },
+      "lastfm": {
+        "listeners": 7971681,
+        "plays": 584199800,
+        "tags": [
+          "rap",
+          "Hip-Hop",
+          "hip hop",
+          "Eminem",
+          "pop"
+        ],
+        "url": "https://www.last.fm/music/Eminem"
+      },
+      "lastfmVerified": {
+        "name": "Eminem",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:39.881Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 86,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "beyonce": {
+      "deezer": {
+        "fans": 12854402,
+        "albums": 115,
+        "url": "https://www.deezer.com/artist/145"
+      },
+      "lastfm": {
+        "listeners": 6575022,
+        "plays": 728031304,
+        "tags": [
+          "rnb",
+          "pop",
+          "female vocalists",
+          "soul",
+          "Hip-Hop"
+        ],
+        "url": "https://www.last.fm/music/+noredirect/Beyonc%C3%A9"
+      },
+      "lastfmVerified": {
+        "name": "Beyoncé",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:40.592Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 85,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
+    },
+    "justin-timberlake": {
+      "deezer": {
+        "fans": 6714821,
+        "albums": 41,
+        "url": "https://www.deezer.com/artist/1147"
+      },
+      "lastfm": {
+        "listeners": 5776747,
+        "plays": 174370382,
+        "tags": [
+          "pop",
+          "rnb",
+          "dance",
+          "male vocalists",
+          "Hip-Hop"
+        ],
+        "url": "https://www.last.fm/music/Justin+Timberlake"
+      },
+      "lastfmVerified": {
+        "name": "Justin Timberlake",
+        "via": "mbid",
+        "fetchedAt": "2026-10-15T19:49:41.293Z"
+      },
+      "excluded": [],
+      "score": {
+        "value": 79,
+        "inputs": [
+          "deezerFans",
+          "lastfmListeners",
+          "lastfmPlays"
+        ]
+      }
     }
   },
   "cosigners": {
@@ -357,6 +1972,18 @@
       "lastfmName": "Lil Wayne",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:26.402Z"
+    },
+    "cb15675b-24a4-4092-8554-61f03b6017d8": {
+      "listeners": 383,
+      "lastfmName": "Cookin’ Soul",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:00.380Z"
+    },
+    "800760de-bdf8-43a2-8fe0-44a2401a5515": {
+      "listeners": 1974173,
+      "lastfmName": "Young Thug",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:24:27.519Z"
     },
     "59db3d82-86ea-451f-881f-dffc8ec387c9": {
       "listeners": 2615036,
@@ -371,10 +1998,9 @@
       "fetchedAt": "2026-10-15T15:24:26.847Z"
     },
     "48262e82-db9f-4a92-b650-dfef979b73ec": {
-      "listeners": 3372497,
+      "listeners": 3373145,
       "lastfmName": "Future",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:27.064Z"
+      "via": "page"
     },
     "13bcb2bb-db37-4397-baf5-e0f085be2d64": {
       "listeners": 2541907,
@@ -382,17 +2008,27 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:27.288Z"
     },
-    "800760de-bdf8-43a2-8fe0-44a2401a5515": {
-      "listeners": 1974173,
-      "lastfmName": "Young Thug",
+    "f23ef341-33bd-47c1-b83c-846a78581f05": {
+      "listeners": 2089425,
+      "lastfmName": "PARTYNEXTDOOR",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:27.519Z"
+      "fetchedAt": "2026-10-15T15:24:29.986Z"
+    },
+    "4d7304f6-7fe3-4959-9d98-01a5af84afe6": {
+      "listeners": 2318530,
+      "lastfmName": "Trey Songz",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:24:44.366Z"
+    },
+    "faf916e0-ffc5-4345-a10b-b79ed8c9b8f6": {
+      "listeners": 1347097,
+      "lastfmName": "Ski Mask the Slump God",
+      "via": "page"
     },
     "61af87f4-16ee-4431-8504-cc06187079fb": {
-      "listeners": 2956924,
+      "listeners": 2956227,
       "lastfmName": "XXXTENTACION",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:27.738Z"
+      "via": "page"
     },
     "1036b808-f58c-4a3e-b461-a2c4492ecf1b": {
       "listeners": 4882415,
@@ -412,21 +2048,67 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:28.451Z"
     },
-    "164f0d73-1234-4e2c-8743-d77bf2191051": {
-      "listeners": 8155550,
-      "lastfmName": "Kanye West",
-      "via": "alias",
-      "fetchedAt": "2026-10-15T14:43:25.908Z"
-    },
-    "f23ef341-33bd-47c1-b83c-846a78581f05": {
-      "listeners": 2089425,
-      "lastfmName": "PARTYNEXTDOOR",
+    "6cec09a9-e284-415b-a670-326db915140f": {
+      "listeners": 47110,
+      "lastfmName": "Canyons",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:29.986Z"
+      "fetchedAt": "2026-10-15T19:41:11.560Z"
+    },
+    "37b2cb82-ef79-4d46-a184-a549450aa231": {
+      "listeners": 2409454,
+      "lastfmName": "21 Savage",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:24:40.417Z"
     },
     "9fff2f8a-21e6-47de-a2b8-7f449929d43f": {
       "listeners": 6943594,
-      "via": "roster"
+      "lastfmName": "Drake",
+      "via": "page"
+    },
+    "164f0d73-1234-4e2c-8743-d77bf2191051": {
+      "listeners": 8156543,
+      "lastfmName": "Kanye West",
+      "via": "page"
+    },
+    "f82bcf78-5b69-4622-a5ef-73800768d9ac": {
+      "listeners": 1260471,
+      "lastfmName": "JAŸ-Z",
+      "via": "name",
+      "fetchedAt": "2026-10-15T14:38:23.080Z"
+    },
+    "8c94a5be-2932-477f-80f8-0a07c850cd78": {
+      "listeners": 64774,
+      "lastfmName": "Eryn Allen Kane",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:11.910Z"
+    },
+    "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6": {
+      "listeners": 3493252,
+      "lastfmName": "Travis Scott",
+      "via": "page"
+    },
+    "6143403a-df6c-429e-8ee6-ef869896b0da": {
+      "listeners": 1340132,
+      "lastfmName": "Quavo",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:24:57.308Z"
+    },
+    "c8b03190-306c-4120-bb0b-6f2ebfc06ea9": {
+      "listeners": 5557496,
+      "lastfmName": "The Weeknd",
+      "via": "page"
+    },
+    "4cb4ebd9-3a15-406b-aadd-b5401754ba40": {
+      "listeners": 6562,
+      "lastfmName": "skeler.",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:12.130Z"
+    },
+    "af6c3d0d-e438-486c-bbd2-b2396e503216": {
+      "listeners": 108813,
+      "lastfmName": "Ogi",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:12.416Z"
     },
     "e9e5d410-aaad-4b36-a466-32780da25e8b": {
       "listeners": 35559,
@@ -449,14 +2131,31 @@
     "8f7bf43e-2a13-431a-a274-19e28965fe07": {
       "listeners": 781715,
       "lastfmName": "Craig Armstrong",
+      "via": "page"
+    },
+    "ceb0daa8-b469-4fdb-bccf-ee54053eecff": {
+      "listeners": 61095,
+      "lastfmName": "Nickelus F",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:30.617Z"
+      "fetchedAt": "2026-10-15T19:41:13.037Z"
+    },
+    "2baf3276-ed6a-4349-8d2e-f4601e7b2167": {
+      "listeners": 2604376,
+      "lastfmName": "Playboi Carti",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:24:56.905Z"
     },
     "ed4d26b2-41c1-40b3-9cfe-bf5a298ff810": {
       "listeners": 13464,
       "lastfmName": "Bleep Bloop",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:30.890Z"
+    },
+    "d42a5768-ada1-4fb6-85fd-f61aba6264e0": {
+      "listeners": 1714393,
+      "lastfmName": "Lil Baby",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:24:58.401Z"
     },
     "100b8734-f4f0-4536-9960-47f7c59d1b4c": {
       "listeners": 1915323,
@@ -476,6 +2175,12 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:31.606Z"
     },
+    "96800e05-9924-4321-859a-76e0d4750f2f": {
+      "listeners": 877257,
+      "lastfmName": "Smino",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:25:23.184Z"
+    },
     "92631c53-91ed-48f5-a09d-a104ba69cdc7": {
       "listeners": 1548194,
       "lastfmName": "Offset",
@@ -493,6 +2198,12 @@
       "lastfmName": "Jeezy",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:32.444Z"
+    },
+    "0221734a-35a8-40f7-b5c5-2f61a200bc7c": {
+      "listeners": 1971287,
+      "lastfmName": "Migos",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:24:33.896Z"
     },
     "a299c603-ea12-4cb1-a539-6dec7d75b4ef": {
       "listeners": 39849,
@@ -512,23 +2223,39 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:33.238Z"
     },
-    "8032cf05-d916-4b2a-9c53-6e75d4a24bd8": {
-      "listeners": 2011581,
-      "lastfmName": "Trippie Redd",
+    "0953d634-b964-4f2a-b862-8de475aeaf47": {
+      "listeners": 1050329,
+      "lastfmName": "Sexyy Red",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:33.457Z"
+      "fetchedAt": "2026-10-15T15:25:00.343Z"
+    },
+    "cb5885bb-2daf-4f10-adbe-b3c8e03adda3": {
+      "listeners": 26387,
+      "lastfmName": "Joseph Chilliams",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:24:48.300Z"
+    },
+    "4e33f1ad-e676-4501-9973-71785427ae38": {
+      "listeners": 239142,
+      "lastfmName": "Jean Deaux",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:25:24.528Z"
+    },
+    "875203e1-8e58-4b86-8dcb-7190faf411c5": {
+      "listeners": 3992497,
+      "lastfmName": "J. Cole",
+      "via": "page"
+    },
+    "8032cf05-d916-4b2a-9c53-6e75d4a24bd8": {
+      "listeners": 2012118,
+      "lastfmName": "Trippie Redd",
+      "via": "page"
     },
     "25b7b584-d952-4662-a8b9-dd8cdfbfeb64": {
       "listeners": 3616871,
       "lastfmName": "A$AP Rocky",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:33.676Z"
-    },
-    "0221734a-35a8-40f7-b5c5-2f61a200bc7c": {
-      "listeners": 1971287,
-      "lastfmName": "Migos",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:33.896Z"
     },
     "45dc5f07-6609-4760-a933-8c9e0f858d05": {
       "listeners": 2108477,
@@ -543,16 +2270,27 @@
       "fetchedAt": "2026-10-15T15:24:34.333Z"
     },
     "73e5e69d-3554-40d8-8516-00cb38737a1c": {
-      "listeners": 8542115,
+      "listeners": 8543326,
       "lastfmName": "Rihanna",
+      "via": "page"
+    },
+    "579b5d79-a704-4814-b570-917ad02e8101": {
+      "listeners": 905,
+      "lastfmName": "Edu Imbernón",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:34.896Z"
+      "fetchedAt": "2026-10-15T19:41:14.118Z"
     },
     "64c4dfcc-ba2b-4036-ac01-1636ae15ebb8": {
       "listeners": 546865,
       "lastfmName": "Mick Jenkins",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:35.106Z"
+    },
+    "3bcff06f-675a-451f-9075-99e8657047e8": {
+      "listeners": 1337257,
+      "lastfmName": "Four Tet",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:30.457Z"
     },
     "bec5d16d-63f3-4bfe-92c6-1c4e3ac502ad": {
       "listeners": 224293,
@@ -566,17 +2304,35 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:36.925Z"
     },
+    "d0c3826c-327a-4381-9258-9f1275424a69": {
+      "listeners": 495,
+      "lastfmName": "Andreena Mill",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:14.371Z"
+    },
+    "4b55483b-12ab-4e7e-af17-1d4c8fd7d704": {
+      "listeners": 5830,
+      "lastfmName": "fknsyd",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:00.573Z"
+    },
     "2833c498-bc1c-4f2b-8417-00636f600479": {
       "listeners": 478626,
       "lastfmName": "Gudda Gudda",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:37.178Z"
     },
-    "37b2cb82-ef79-4d46-a184-a549450aa231": {
-      "listeners": 2409454,
-      "lastfmName": "21 Savage",
+    "8837b875-3689-4646-b3fd-d8b53815c7a8": {
+      "listeners": 2899536,
+      "lastfmName": "Lil Uzi Vert",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:40.417Z"
+      "fetchedAt": "2026-10-15T15:24:58.843Z"
+    },
+    "f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62": {
+      "listeners": 3488742,
+      "lastfmName": "T.I.",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:24:54.845Z"
     },
     "9e6a6a2f-f696-4cc0-87f1-e4f712e46802": {
       "listeners": 1777753,
@@ -603,10 +2359,9 @@
       "fetchedAt": "2026-10-15T15:24:41.273Z"
     },
     "272989c8-5535-492d-a25c-9f58803e027f": {
-      "listeners": 3660561,
+      "listeners": 3661466,
       "lastfmName": "SZA",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:41.635Z"
+      "via": "page"
     },
     "418fe547-4bec-48fe-8df0-ed25e27f4570": {
       "listeners": 1168761,
@@ -626,6 +2381,12 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:42.911Z"
     },
+    "c0fe9d3b-526c-491e-9814-a81571ebf2e5": {
+      "listeners": 332439,
+      "lastfmName": "Mat Zo",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:53.177Z"
+    },
     "a92d78e8-1d1c-4f2b-b638-fa0406daaf40": {
       "listeners": 95415,
       "lastfmName": "Chris Crack",
@@ -638,23 +2399,17 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:43.684Z"
     },
-    "c8b03190-306c-4120-bb0b-6f2ebfc06ea9": {
-      "listeners": 5556371,
-      "lastfmName": "The Weeknd",
+    "f8fb9acf-9e00-4c37-acce-1fd06abd8c0a": {
+      "listeners": 52646,
+      "lastfmName": "Lazy Rich",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:43.907Z"
+      "fetchedAt": "2026-10-15T15:26:56.805Z"
     },
     "ce09ea31-3d4a-4487-a797-e315175457a0": {
       "listeners": 2808588,
       "lastfmName": "Tyga",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:44.090Z"
-    },
-    "4d7304f6-7fe3-4959-9d98-01a5af84afe6": {
-      "listeners": 2318530,
-      "lastfmName": "Trey Songz",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:44.366Z"
     },
     "c1f5d7c6-1bce-45f1-bb80-f9c74bb9c740": {
       "listeners": 566263,
@@ -686,15 +2441,41 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:45.643Z"
     },
+    "f40fb1a6-f1ff-4819-b9f1-8629fb4f36f6": {
+      "listeners": 184437,
+      "lastfmName": "Amy Millan",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:14.560Z"
+    },
     "5e021328-1502-48b3-aec4-bf6eb5f20eaa": {
       "listeners": 172004,
       "lastfmName": "Sauce Walka",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:45.855Z"
     },
-    "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6": {
-      "listeners": 3492475,
-      "via": "roster"
+    "d488b83e-fac1-4464-8d1e-524d25915af7": {
+      "listeners": 593,
+      "lastfmName": "Nolanimations",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:16.167Z"
+    },
+    "47cc8846-d93f-4639-a466-f15b00a445df": {
+      "listeners": 24639,
+      "lastfmName": "Noc.V",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:16.460Z"
+    },
+    "44c329e4-b6eb-4bf4-81f1-8e2b0dd37500": {
+      "listeners": null,
+      "lastfmName": null,
+      "via": "unknown",
+      "fetchedAt": "2026-10-15T19:41:18.726Z"
+    },
+    "a17ce9c3-8f6f-4dcc-a1b7-2a04ab9e31f0": {
+      "listeners": 455784,
+      "lastfmName": "Swae Lee",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:25:26.325Z"
     },
     "d768a82a-07c2-4854-ae03-d3fa4f33a30b": {
       "listeners": 176532,
@@ -703,10 +2484,21 @@
       "fetchedAt": "2026-10-15T15:24:46.122Z"
     },
     "0b619a94-481c-40ac-abae-85f33f2b1588": {
-      "listeners": 2355464,
+      "listeners": 2356168,
       "lastfmName": "Eyedress",
+      "via": "page"
+    },
+    "25b0ad6c-b977-43aa-8a7b-ab1a367f5d68": {
+      "listeners": 9238,
+      "lastfmName": "Palo",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:41:19.238Z"
+    },
+    "a52be19e-117a-4c54-b202-669f54e5ea4f": {
+      "listeners": 19337,
+      "lastfmName": "Daoud",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:46.395Z"
+      "fetchedAt": "2026-10-15T19:41:19.518Z"
     },
     "abaa7001-0d80-4e58-be5d-d2d246fd9d87": {
       "listeners": 631254,
@@ -714,9 +2506,51 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:46.827Z"
     },
+    "6a84105c-af0a-4367-8d54-e7dd6ceb19af": {
+      "listeners": 144611,
+      "lastfmName": "Vylet Pony",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:19.723Z"
+    },
+    "ad322b8b-31b2-437d-8fd8-1af13c1d7b91": {
+      "listeners": 831187,
+      "lastfmName": "Givēon",
+      "via": "name",
+      "fetchedAt": "2026-10-15T14:41:39.558Z"
+    },
+    "c9cd225b-4883-428e-82c2-73e0b6282fb6": {
+      "listeners": 1127891,
+      "lastfmName": "Lil Durk",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:27.356Z"
+    },
     "4ae36ade-1798-48c4-b06b-cc68b7d3d83f": {
-      "listeners": 1396091,
-      "via": "roster"
+      "listeners": 1395738,
+      "lastfmName": "Porter Robinson",
+      "via": "page"
+    },
+    "2eaf4267-4dd6-412a-9bb0-596afb90215b": {
+      "listeners": 429615,
+      "lastfmName": "Rezz",
+      "via": "page"
+    },
+    "decccdd9-2cb7-4047-b015-6600fe2d8290": {
+      "listeners": 4669,
+      "lastfmName": "R O C K Y",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:19.984Z"
+    },
+    "674a7e8c-9682-419a-8e05-2358e28b5359": {
+      "listeners": 1118478,
+      "lastfmName": "Underoath",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:20.185Z"
+    },
+    "e4d7cfe5-0bed-46cf-acad-ab9a4dcb7aa6": {
+      "listeners": 793485,
+      "lastfmName": "Anamanaguchi",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:20.402Z"
     },
     "e0140a67-e4d1-4f13-8a01-364355bee46e": {
       "listeners": 5074799,
@@ -742,17 +2576,17 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:47.983Z"
     },
-    "cb5885bb-2daf-4f10-adbe-b3c8e03adda3": {
-      "listeners": 26387,
-      "lastfmName": "Joseph Chilliams",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:48.300Z"
-    },
     "7eed0e98-9bc7-4702-8bc5-92dad58d9b4d": {
       "listeners": 202062,
       "lastfmName": "Kid Trunks",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:50.392Z"
+    },
+    "6d063567-dbf9-4b2a-bd11-1a4450cd93ca": {
+      "listeners": 844791,
+      "lastfmName": "Rich the Kid",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:20.671Z"
     },
     "93c1cee4-2604-4cd2-8d72-8bc59aa9f6c2": {
       "listeners": 166985,
@@ -767,16 +2601,33 @@
       "fetchedAt": "2026-10-15T15:24:50.846Z"
     },
     "8dd98bdc-80ec-4e93-8509-2f46bafc09a7": {
-      "listeners": 5221914,
+      "listeners": 5222581,
       "lastfmName": "Calvin Harris",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:51.981Z"
+      "via": "page"
     },
     "75be165a-ad83-4d12-bd28-f589a15c479f": {
       "listeners": 3137786,
       "lastfmName": "Major Lazer",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:52.195Z"
+    },
+    "130c2184-14f2-4180-a216-04b5a333be57": {
+      "listeners": 752802,
+      "lastfmName": "Sampha",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:20.913Z"
+    },
+    "bb7dd5d7-95e6-46a0-9692-cb99134995b6": {
+      "listeners": 367730,
+      "lastfmName": "Giggs",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:21.119Z"
+    },
+    "c9a8ee10-c27e-4b78-90a9-0b5a230e7941": {
+      "listeners": 23760,
+      "lastfmName": "Phoelix",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:25:37.888Z"
     },
     "7e302507-6b78-4f3b-9c4c-e3b85580fad0": {
       "listeners": 739534,
@@ -790,6 +2641,12 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:52.657Z"
     },
+    "7e5f002a-1c73-4069-8d3c-e24276ba5b98": {
+      "listeners": 5245,
+      "lastfmName": "Legit",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:41:21.593Z"
+    },
     "886a6cf7-3d1c-4a13-9b83-b121c0b9e9a8": {
       "listeners": 5564,
       "lastfmName": "Defcee",
@@ -802,11 +2659,23 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:53.269Z"
     },
+    "3a6d6481-142d-423f-91d4-55bbfff318ed": {
+      "listeners": 1269936,
+      "lastfmName": "Toro y Moi",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:21.788Z"
+    },
     "659e79d6-5f03-42c2-a4d7-d42c754ad6b3": {
       "listeners": 4102,
       "lastfmName": "Hurt Everybody",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:53.485Z"
+    },
+    "7bc012a7-c5cc-4e7a-9ca6-15db02bbcde4": {
+      "listeners": 403170,
+      "lastfmName": "Lemaitre",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:22.006Z"
     },
     "daa09819-5da5-4c7a-8bef-eb372bb27ff1": {
       "listeners": 3708076,
@@ -814,11 +2683,23 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:53.766Z"
     },
+    "9a2da736-57bd-4b0a-9d61-28712bbb7968": {
+      "listeners": 260469,
+      "lastfmName": "John Talabot",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:22.720Z"
+    },
     "de23d637-20df-4b15-ae63-263dd5a34f10": {
       "listeners": 531672,
       "lastfmName": "DJ Drama",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:53.951Z"
+    },
+    "e7a073bb-f439-41ad-8a5c-5a03dd58aeec": {
+      "listeners": 23098,
+      "lastfmName": "Dirtyloud",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:22.996Z"
     },
     "3d4f8e81-1ccf-4a9a-afb5-03abe6ec604f": {
       "listeners": 196,
@@ -832,11 +2713,23 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:54.396Z"
     },
-    "f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62": {
-      "listeners": 3488742,
-      "lastfmName": "T.I.",
+    "cc7d4686-ea02-45fd-956e-94c1a322558c": {
+      "listeners": 3286240,
+      "lastfmName": "Lykke Li",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:54.845Z"
+      "fetchedAt": "2026-10-15T19:41:23.273Z"
+    },
+    "679aab1f-26e9-45bb-af95-ccb90a09c33a": {
+      "listeners": null,
+      "lastfmName": null,
+      "via": "unknown",
+      "fetchedAt": "2026-10-15T19:41:24.039Z"
+    },
+    "1d4d3e84-70d1-4814-af0b-b309a2f4cd7f": {
+      "listeners": 9670,
+      "lastfmName": "Voyce",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:24.298Z"
     },
     "afff372b-53cc-4ffb-a792-a072da56b5ad": {
       "listeners": null,
@@ -844,23 +2737,17 @@
       "via": "unknown",
       "fetchedAt": "2026-10-15T14:43:29.182Z"
     },
-    "2baf3276-ed6a-4349-8d2e-f4601e7b2167": {
-      "listeners": 2604376,
-      "lastfmName": "Playboi Carti",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:56.905Z"
-    },
     "1c0eb1aa-515d-4dc8-a468-2ac87d4ad4ff": {
       "listeners": 94812,
       "lastfmName": "Minnesota",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:57.099Z"
     },
-    "6143403a-df6c-429e-8ee6-ef869896b0da": {
-      "listeners": 1340132,
-      "lastfmName": "Quavo",
+    "c861c73c-eab6-48c0-bdb8-92ac2c9faf3d": {
+      "listeners": 3276,
+      "lastfmName": "X1-Y2",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:57.308Z"
+      "fetchedAt": "2026-10-15T15:26:00.892Z"
     },
     "3ba54400-4c97-450f-b108-bcd90b9b2b76": {
       "listeners": 618221,
@@ -868,11 +2755,32 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:57.529Z"
     },
+    "5f95440d-7737-4a36-9bcf-c05337f7129b": {
+      "listeners": 1700606,
+      "lastfmName": "Denzel Curry",
+      "via": "page"
+    },
     "5d7c4cfc-29e7-4c83-8893-ae02679fc9f4": {
-      "listeners": 770373,
+      "listeners": 770398,
       "lastfmName": "Bassnectar",
+      "via": "page"
+    },
+    "0aeea1ef-8d96-4556-8c4a-84b88ae271bb": {
+      "listeners": 714911,
+      "lastfmName": "Yebba",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:57.757Z"
+      "fetchedAt": "2026-10-15T15:26:04.696Z"
+    },
+    "6897b46a-9236-4480-9ed7-300f6b85d62f": {
+      "listeners": 525842,
+      "lastfmName": "Ninajirachi",
+      "via": "page"
+    },
+    "07ab04d4-bdbc-4c93-bfb2-457693a4ff94": {
+      "listeners": 1012621,
+      "lastfmName": "Sheck Wes",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:25:00.813Z"
     },
     "69754799-6872-4156-a88c-2f7caf5e7a6d": {
       "listeners": 205646,
@@ -880,23 +2788,17 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:58.201Z"
     },
-    "d42a5768-ada1-4fb6-85fd-f61aba6264e0": {
-      "listeners": 1714393,
-      "lastfmName": "Lil Baby",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:58.401Z"
-    },
     "0612bcce-e351-40be-b3d7-2bb5e1c23479": {
       "listeners": 1227331,
       "lastfmName": "Mustard",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:24:58.609Z"
     },
-    "8837b875-3689-4646-b3fd-d8b53815c7a8": {
-      "listeners": 2899536,
-      "lastfmName": "Lil Uzi Vert",
+    "316dfa47-ead3-4265-92d5-aaa9792b4069": {
+      "listeners": 104579,
+      "lastfmName": "Blanke",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:24:58.843Z"
+      "fetchedAt": "2026-10-15T15:26:06.676Z"
     },
     "c234fa42-e6a6-443e-937e-2f4b073538a3": {
       "listeners": 4912392,
@@ -928,29 +2830,46 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:00.131Z"
     },
-    "0953d634-b964-4f2a-b862-8de475aeaf47": {
-      "listeners": 1050329,
-      "lastfmName": "Sexyy Red",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:00.343Z"
-    },
     "ac6a425c-35c3-4fd3-bcb6-39075bf2845a": {
       "listeners": 419747,
       "lastfmName": "Lil Gnar",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:00.634Z"
     },
-    "07ab04d4-bdbc-4c93-bfb2-457693a4ff94": {
-      "listeners": 1012621,
-      "lastfmName": "Sheck Wes",
+    "81d12ca7-5b89-4d21-8736-860b7400b4eb": {
+      "listeners": 2147168,
+      "lastfmName": "Baby Keem",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:00.813Z"
+      "fetchedAt": "2026-10-15T15:26:27.624Z"
+    },
+    "4e4ebde4-0c56-4dec-844b-6c73adcdd92d": {
+      "listeners": 2627524,
+      "lastfmName": "Juice WRLD",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:24.488Z"
+    },
+    "ed9b7937-f78d-4ee3-b62b-f31021fe5881": {
+      "listeners": 38206,
+      "lastfmName": "KAVARI",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:18.656Z"
     },
     "d616b606-cf6a-4b6e-ab0f-e253b8db6610": {
-      "listeners": 1444388,
+      "listeners": 1444611,
       "lastfmName": "JID",
+      "via": "page"
+    },
+    "a668565b-41b8-44a8-9d5c-8e609dbf69fc": {
+      "listeners": 1888904,
+      "lastfmName": "Lil Yachty",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:01.089Z"
+      "fetchedAt": "2026-10-15T15:25:24.930Z"
+    },
+    "89aa5ecb-59ad-46f5-b3eb-2d424e941f19": {
+      "listeners": 2751917,
+      "lastfmName": "Bad Bunny",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:25:28.333Z"
     },
     "016570b6-d2cf-47d5-ad35-1096496d465a": {
       "listeners": 2466,
@@ -964,11 +2883,47 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:02.494Z"
     },
+    "b929c0c9-5de0-4d87-8eb9-365ad1725629": {
+      "listeners": 438041,
+      "lastfmName": "Little Brother",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:24.715Z"
+    },
+    "808c1fbb-ccfb-4b15-a541-72bec155e696": {
+      "listeners": 340983,
+      "lastfmName": "Dwele",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:24.144Z"
+    },
+    "c37cb509-b7fd-4212-a6fb-163535eba4c1": {
+      "listeners": 153654,
+      "lastfmName": "Peekaboo",
+      "via": "name",
+      "fetchedAt": "2026-10-15T14:41:27.502Z"
+    },
     "8451cfa0-b39c-4ad1-8aba-a19d47598a67": {
       "listeners": 525125,
       "lastfmName": "Cautious Clay",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:02.822Z"
+    },
+    "a0d47559-6ffc-464a-a4d6-30777e5c76f7": {
+      "listeners": 128661,
+      "lastfmName": "Malaa",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:33.978Z"
+    },
+    "25f3abd9-63b5-471a-bd25-feb9672dfa11": {
+      "listeners": 1951336,
+      "lastfmName": "ROSALÍA",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:31.085Z"
+    },
+    "87ae83df-6173-40cc-a0f2-bad543faa6aa": {
+      "listeners": 1614986,
+      "lastfmName": "DaBaby",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:31.948Z"
     },
     "60ef301c-bcd9-44b0-8450-20bc6852daf0": {
       "listeners": 281022,
@@ -976,11 +2931,22 @@
       "via": "name",
       "fetchedAt": "2026-10-15T14:38:29.598Z"
     },
+    "bce6d667-cde8-485e-b078-c0a05adea36d": {
+      "listeners": 2060121,
+      "lastfmName": "ScHoolboy Q",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:25:27.458Z"
+    },
     "a62e2b14-812a-41a1-884d-5a138705ad2d": {
       "listeners": 579976,
       "lastfmName": "BlocBoy JB",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:02.999Z"
+    },
+    "381086ea-f511-4aba-bdf9-71c753dc5077": {
+      "listeners": 5301858,
+      "lastfmName": "Kendrick Lamar",
+      "via": "page"
     },
     "6a9e461c-e3c5-4794-a203-98a15daea2df": {
       "listeners": 47962,
@@ -993,6 +2959,12 @@
       "lastfmName": "DJ Esco",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:03.229Z"
+    },
+    "03f77665-e514-49c1-b398-067c3e3e51e0": {
+      "listeners": 227468,
+      "lastfmName": "Pimp C",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:24.956Z"
     },
     "7b5c9a78-5b21-4d58-9484-77d16619c96b": {
       "listeners": 154699,
@@ -1012,11 +2984,77 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:04.189Z"
     },
+    "a66145e9-2391-4e0f-93f8-357ddac7f3b6": {
+      "listeners": 86821,
+      "lastfmName": "The Widdler",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:50.541Z"
+    },
     "80c69d16-ccfe-4ee9-b02a-1aaba5db26d1": {
       "listeners": 417623,
       "lastfmName": "Chip tha Ripper",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:04.484Z"
+    },
+    "4e481ad9-aa5d-4a1a-b2fc-444c0ad48b7e": {
+      "listeners": 20021,
+      "lastfmName": "James Fauntleroy",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:58.313Z"
+    },
+    "ab1a3f85-e0ea-470a-af5c-175447ae774c": {
+      "listeners": 685059,
+      "lastfmName": "underscores",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:25.152Z"
+    },
+    "9802d73a-2569-4ba4-b8be-d2b9ca2fc7b8": {
+      "listeners": 7208,
+      "lastfmName": "XotiX",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:41:25.689Z"
+    },
+    "193f7eb6-0ae0-40db-b3e5-c8e92f0ee2d6": {
+      "listeners": 2903,
+      "lastfmName": "chasing luma",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:26.304Z"
+    },
+    "ed411d15-00f4-4e56-b264-94e0d2f64ffe": {
+      "listeners": 322648,
+      "lastfmName": "Loe Shimmy",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:10.873Z"
+    },
+    "f8fbdd1b-2d25-4d16-9b4a-d0ee2efeb98b": {
+      "listeners": 92205,
+      "lastfmName": "Stunna Sandy",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:41:26.751Z"
+    },
+    "7c2fd839-62ca-4787-b687-8a4067c48e24": {
+      "listeners": 218319,
+      "lastfmName": "Molly Santana",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:26.936Z"
+    },
+    "56a210e8-5482-4b52-a8c4-eaf785cbcb59": {
+      "listeners": 277682,
+      "lastfmName": "Qendresa",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:27.816Z"
+    },
+    "73b41db5-bc46-4c95-b189-9e7c532014ec": {
+      "listeners": 7175,
+      "lastfmName": "Iconic Savvy",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:41:28.557Z"
+    },
+    "d2f4a968-1f6e-4a4a-9376-ee2b2a50c87a": {
+      "listeners": 882911,
+      "lastfmName": "Boys Noize",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:28.748Z"
     },
     "681aefe6-c611-4c43-ae2d-726ea058fb96": {
       "listeners": 226698,
@@ -1024,17 +3062,77 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:04.694Z"
     },
+    "db989525-ef9f-463a-a130-da16452413b4": {
+      "listeners": 55,
+      "lastfmName": "Makobo",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:41:29.827Z"
+    },
+    "779351de-0da5-4943-928b-495a3c40e8c0": {
+      "listeners": 25,
+      "lastfmName": "Jennie Of BLACKPINK",
+      "via": "alias",
+      "fetchedAt": "2026-10-15T14:43:56.258Z"
+    },
     "5c2ece0c-880b-42bb-b696-df3e417c811c": {
       "listeners": 86115,
       "lastfmName": "Space Laces",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:04.890Z"
     },
+    "ac0d913b-cdd7-44d8-b1d9-a2c03ce3fb74": {
+      "listeners": null,
+      "lastfmName": null,
+      "via": "unknown",
+      "fetchedAt": "2026-10-15T14:43:51.384Z"
+    },
+    "e849bea3-3c87-4655-8f27-84a0f83e61cb": {
+      "listeners": 10221,
+      "lastfmName": "Quackson",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:22.868Z"
+    },
+    "65bf77c4-f33a-44ea-87fd-d16957fb9f26": {
+      "listeners": 784,
+      "lastfmName": "Maxx Moor",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:41:30.401Z"
+    },
+    "5240b95b-950b-4013-9f54-e7c42f0b89a0": {
+      "listeners": 7026,
+      "lastfmName": "Senite",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:31.014Z"
+    },
+    "b5301fcd-aad8-442a-874c-579d9617fedc": {
+      "listeners": null,
+      "lastfmName": null,
+      "via": "unknown",
+      "fetchedAt": "2026-10-15T19:41:32.897Z"
+    },
+    "2590b6d4-648a-4092-9850-f614d6df51ca": {
+      "listeners": 64980,
+      "lastfmName": "ALLEYCVT",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:33.575Z"
+    },
+    "204407c3-26ab-469a-b487-40ae6b067c1b": {
+      "listeners": 95248,
+      "lastfmName": "Levity",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:34.146Z"
+    },
     "01587437-bcc8-44cf-b8f0-80286cfa8187": {
       "listeners": 10780,
       "lastfmName": "Kelly Moonstone",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:05.210Z"
+    },
+    "05246c79-6133-4cbe-9ff8-9122ba618bb4": {
+      "listeners": 3086,
+      "lastfmName": "Isqa",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:04.067Z"
     },
     "e814cf71-c45c-4595-bea2-d9b40887e961": {
       "listeners": 96155,
@@ -1047,6 +3145,12 @@
       "lastfmName": "ovrkast.",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:05.629Z"
+    },
+    "acc12019-10e3-40aa-b4bf-66fbb4a692af": {
+      "listeners": 757,
+      "lastfmName": "Ab‐Soul",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:34.408Z"
     },
     "49d67664-6962-4f69-adc4-f52208c78dd2": {
       "listeners": 765673,
@@ -1066,17 +3170,88 @@
       "via": "name",
       "fetchedAt": "2026-10-15T14:38:36.096Z"
     },
+    "d7763bd4-6ff0-4b79-9e95-929753eb299a": {
+      "listeners": 13540,
+      "lastfmName": "RD",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:34.710Z"
+    },
     "ae002c5d-aac6-490b-a39a-30aa9e2edf2b": {
       "listeners": 3075345,
       "lastfmName": "Skrillex",
+      "via": "page"
+    },
+    "a2eb319d-a45e-43c3-bb14-d0ffb577222c": {
+      "listeners": 619115,
+      "lastfmName": "Raphael Saadiq",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:06.928Z"
+      "fetchedAt": "2026-10-15T19:41:34.940Z"
+    },
+    "31bea673-d23a-4889-8da1-7cb040863268": {
+      "listeners": 1610456,
+      "lastfmName": "Kelly Rowland",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:35.145Z"
+    },
+    "112beffb-1adc-488b-8d61-7b2ab3475d52": {
+      "listeners": 398751,
+      "lastfmName": "BJ The Chicago Kid",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:41:35.608Z"
+    },
+    "e9095e39-db03-4158-aa5e-1e6d35f43d8b": {
+      "listeners": 25934,
+      "lastfmName": "Love Mansuy",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:36.031Z"
+    },
+    "90e1f54f-f319-4dd1-b3d1-f1626f25183d": {
+      "listeners": 1546,
+      "lastfmName": "Frsh Waters",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:36.892Z"
+    },
+    "86957f67-4172-4736-871e-a3bf3aaef1ca": {
+      "listeners": null,
+      "lastfmName": null,
+      "via": "unknown",
+      "fetchedAt": "2026-10-15T19:41:39.069Z"
+    },
+    "a4e3e7ca-87d7-4d5d-8a36-72e5f043e378": {
+      "listeners": 286208,
+      "lastfmName": "Ibeyi",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:39.514Z"
+    },
+    "bec40233-eebf-4ac4-b8ae-f6274c5af7e8": {
+      "listeners": 138318,
+      "lastfmName": "TRU",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:39.763Z"
+    },
+    "83cf37af-722d-47c4-9339-450d2350d69a": {
+      "listeners": 325,
+      "lastfmName": "DKC2",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:41:40.224Z"
     },
     "b299e6fc-a7cb-4c7d-a798-0692b60b9e48": {
       "listeners": 302551,
       "lastfmName": "EST Gee",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:07.190Z"
+    },
+    "91a81925-92f9-4fc9-b897-93cf01226282": {
+      "listeners": 2979964,
+      "lastfmName": "The Chainsmokers",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:40.538Z"
+    },
+    "2ae0479c-a72a-488d-b183-c24eb606d474": {
+      "listeners": null,
+      "lastfmName": null,
+      "via": "unknown",
+      "fetchedAt": "2026-10-15T19:41:49.246Z"
     },
     "d1785218-d8f4-4a83-a33d-8cf737eef918": {
       "listeners": 479010,
@@ -1090,6 +3265,24 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:11.496Z"
     },
+    "e56aee57-d90e-40cf-a70d-beb70f6f3c69": {
+      "listeners": 1647756,
+      "lastfmName": "KAYTRANADA",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:49.533Z"
+    },
+    "8a0a4b30-a611-42a9-8716-f530f99cb869": {
+      "listeners": 246762,
+      "lastfmName": "Rampa",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:49.747Z"
+    },
+    "9814ea3e-0755-463c-afe2-624c1f6c604f": {
+      "listeners": 124812,
+      "lastfmName": "One True God",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:50.471Z"
+    },
     "b5ef6218-5756-48fe-9d18-feb5ed00cf40": {
       "listeners": 121820,
       "lastfmName": "Strick",
@@ -1102,11 +3295,35 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:12.044Z"
     },
+    "355cc194-b8db-4af2-8678-c7ad54213f4b": {
+      "listeners": 994370,
+      "lastfmName": "Latto",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:50.657Z"
+    },
+    "59e6d016-1b24-4f95-a8d6-ab9191463faa": {
+      "listeners": 60549,
+      "lastfmName": "xaev",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:50.981Z"
+    },
+    "3f1ed758-50e4-401f-8dc6-e0066e546e7c": {
+      "listeners": 393333,
+      "lastfmName": "Frost Children",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:51.155Z"
+    },
     "01b8b5bf-06cb-45da-85fb-61ada72fcd69": {
       "listeners": 2549424,
       "lastfmName": "Camila Cabello",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:12.252Z"
+    },
+    "2f639ba8-11ee-4128-9915-2303afd30078": {
+      "listeners": 83646,
+      "lastfmName": "Skillibeng",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:51.801Z"
     },
     "82e9999d-6b9d-44f6-bd33-5b733670c7fd": {
       "listeners": 20476,
@@ -1114,11 +3331,53 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:13.463Z"
     },
+    "cb5171f5-506a-4032-b99e-295e085bde19": {
+      "listeners": 177306,
+      "lastfmName": "Madison McFerrin",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:52.063Z"
+    },
+    "1592ba81-f73b-4b13-b456-885630a1cfb2": {
+      "listeners": 506568,
+      "lastfmName": "Jordan Ward",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:52.416Z"
+    },
+    "dfe78af2-779e-4137-826a-3073a16e3278": {
+      "listeners": 2096847,
+      "lastfmName": "Phantogram",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:52.600Z"
+    },
+    "06196448-a090-497f-af55-e9e581e4ff5f": {
+      "listeners": 87106,
+      "lastfmName": "Westend",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:53.422Z"
+    },
+    "fb7f0892-2ce6-4c5a-a3a5-21ff8dce0527": {
+      "listeners": 879,
+      "lastfmName": "Kagi",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:53.747Z"
+    },
     "f6d88fde-afb3-4716-be43-17b2e69cc408": {
       "listeners": 700597,
       "lastfmName": "4batz",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:14.084Z"
+    },
+    "8ebb4b8d-3113-4326-a248-91908f993bd1": {
+      "listeners": 999,
+      "lastfmName": "Kizer",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:54.009Z"
+    },
+    "37a98031-1c99-4630-bb28-2abdba654aae": {
+      "listeners": 85,
+      "lastfmName": "M0vie",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:41:54.447Z"
     },
     "6670e0d0-75b5-4696-a1d4-a8daaa45282d": {
       "listeners": 180,
@@ -1126,11 +3385,23 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:14.403Z"
     },
+    "61929ea8-e65b-4f69-8d61-7910b4576fec": {
+      "listeners": 5355,
+      "lastfmName": "Dvwnpour",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:41:54.976Z"
+    },
     "45425c84-9092-4e2c-b732-e1d0280b580a": {
       "listeners": 1602184,
       "lastfmName": "Tyla",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:15.186Z"
+    },
+    "79afaf00-a4d9-4457-a4ff-a126bc31bdaf": {
+      "listeners": 234479,
+      "lastfmName": "DeathbyRomy",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:55.386Z"
     },
     "dd67b3f1-45e9-4985-880d-ae341465e005": {
       "listeners": 28520,
@@ -1138,11 +3409,58 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:15.381Z"
     },
+    "f1660eaa-929f-48d4-9926-9aaa61afa52f": {
+      "listeners": 349634,
+      "lastfmName": "Teezo Touchdown",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:55.686Z"
+    },
+    "9118f524-be76-4eaf-875c-ccf15e2a2ad6": {
+      "listeners": 1869833,
+      "lastfmName": "Chief Keef",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:55.871Z"
+    },
     "f3a1c19e-9b14-4f6d-8520-04a29f8e6bb4": {
       "listeners": 80067,
       "lastfmName": "Kuttem Reese",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:15.938Z"
+    },
+    "859d0860-d480-4efd-970c-c05d5f1776b8": {
+      "listeners": 6575022,
+      "lastfmName": "Beyoncé",
+      "via": "page"
+    },
+    "9f42ba3d-3cfc-499c-ba16-7226f56b622f": {
+      "listeners": 1093802,
+      "lastfmName": "Westside Gunn",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:56.123Z"
+    },
+    "757ed661-fbad-4e45-b1cd-a6b09f06f54a": {
+      "listeners": 1405585,
+      "lastfmName": "Yung Lean",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:25:44.275Z"
+    },
+    "7e37a1bf-3442-4c60-9dda-06989b869eab": {
+      "listeners": 46608,
+      "lastfmName": "Dave Chappelle",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:56.418Z"
+    },
+    "70ee11b6-edf4-4cb1-80bc-7bba3b719b14": {
+      "listeners": 286250,
+      "lastfmName": "Rob49",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:41:56.659Z"
+    },
+    "3c24b8dd-87f2-4bf4-be87-d4d0edef32cb": {
+      "listeners": null,
+      "lastfmName": null,
+      "via": "unknown",
+      "fetchedAt": "2026-10-15T19:42:01.102Z"
     },
     "a6c0fa04-c917-40db-aef3-d241703947f8": {
       "listeners": 177478,
@@ -1177,8 +3495,7 @@
     "a0b8cb9e-7532-45fe-a74c-30e7c4009a39": {
       "listeners": 2036558,
       "lastfmName": "Missy Elliott",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:16.801Z"
+      "via": "page"
     },
     "044fd265-79dd-43eb-afc4-8b20becf7e17": {
       "listeners": 2149781,
@@ -1192,6 +3509,12 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:17.233Z"
     },
+    "2410da2b-5eb6-4d89-ae29-8f79d1c24fcf": {
+      "listeners": 4127,
+      "lastfmName": "Gaszia",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:01.377Z"
+    },
     "9fab430a-f1af-4a69-bf68-6857a7a50a68": {
       "listeners": 281243,
       "lastfmName": "Confidence Man",
@@ -1204,11 +3527,16 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:17.678Z"
     },
-    "e21857d5-3256-4547-afb3-4b6ded592596": {
-      "listeners": 7052923,
-      "lastfmName": "Gorillaz",
+    "661b8a13-8c45-450d-b377-a572e70f523a": {
+      "listeners": 1233,
+      "lastfmName": "Jair",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:17.913Z"
+      "fetchedAt": "2026-10-15T19:42:01.780Z"
+    },
+    "e21857d5-3256-4547-afb3-4b6ded592596": {
+      "listeners": 7053928,
+      "lastfmName": "Gorillaz",
+      "via": "page"
     },
     "25c777c9-fc89-4b13-8a20-5b37ddeae079": {
       "listeners": 7,
@@ -1221,6 +3549,18 @@
       "lastfmName": "bLAck pARty",
       "via": "name",
       "fetchedAt": "2026-10-15T14:38:44.696Z"
+    },
+    "00090a6f-96cd-4e23-9316-78dae08ed009": {
+      "listeners": 5127,
+      "lastfmName": "Rocket Start",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:02.144Z"
+    },
+    "b04df404-eefa-4ae4-9f3e-ba220d9dce16": {
+      "listeners": 706909,
+      "lastfmName": "PNAU",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:02.657Z"
     },
     "60d41417-feda-4734-bbbf-7dcc30e08a83": {
       "listeners": 1934243,
@@ -1252,6 +3592,60 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:19.414Z"
     },
+    "3f0f6d2b-c06c-4175-8acf-252a1902d2eb": {
+      "listeners": 16440,
+      "lastfmName": "RamonPang",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:02.916Z"
+    },
+    "5f39d33c-a167-4a63-9c44-71d27618b712": {
+      "listeners": 125667,
+      "lastfmName": "Black Thought",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:03.120Z"
+    },
+    "e46758a5-28e4-41c0-9893-2f5720d712f3": {
+      "listeners": 403969,
+      "lastfmName": "Day Wave",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:03.386Z"
+    },
+    "0fecb093-c996-4f0f-b18f-dd883df06bb4": {
+      "listeners": 415,
+      "lastfmName": "Cheflee",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:03.680Z"
+    },
+    "233f6da8-ad25-42e1-ad6a-81a3a4bfc194": {
+      "listeners": 317102,
+      "lastfmName": "Mereba",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:03.865Z"
+    },
+    "07832b42-8826-4ab1-acd3-c49a2f595ffe": {
+      "listeners": 1063402,
+      "lastfmName": "6LACK",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:04.083Z"
+    },
+    "a298565e-d43e-46c4-b35c-bfe131258815": {
+      "listeners": 453349,
+      "lastfmName": "Fousheé",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:04.533Z"
+    },
+    "1b1f50d1-4746-468b-a6a2-7db7200d3dfc": {
+      "listeners": 590002,
+      "lastfmName": "G Herbo",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:04.725Z"
+    },
+    "74425677-ddef-4e74-a201-7602316a718e": {
+      "listeners": 171293,
+      "lastfmName": "Krayzie Bone",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:04.927Z"
+    },
     "ead690f7-68ce-43ed-ae8b-46818b9bc384": {
       "listeners": 66151,
       "lastfmName": "AGUSFORTNITE2008",
@@ -1270,6 +3664,24 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:19.933Z"
     },
+    "5b2a8faa-ffee-4706-a1a8-58f109bc8ca2": {
+      "listeners": 803993,
+      "lastfmName": "Tems",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:05.319Z"
+    },
+    "8b8985eb-f71f-4229-9f11-171a7aac98c1": {
+      "listeners": 668701,
+      "lastfmName": "Project Pat",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:05.564Z"
+    },
+    "4eff7daf-40b0-44a3-9734-ef8aa29bcb72": {
+      "listeners": 1371,
+      "lastfmName": "HYPERLOCK",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:05.850Z"
+    },
     "25e524bb-7a2e-4a21-a701-df3c2ef0a6e3": {
       "listeners": 256,
       "lastfmName": "HOOD GUY",
@@ -1281,6 +3693,24 @@
       "lastfmName": "Brent Faiyaz",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:20.108Z"
+    },
+    "0157095e-4b2f-40d5-b7cf-dd997ef00383": {
+      "listeners": 618,
+      "lastfmName": "DOVVE",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:06.098Z"
+    },
+    "64c5c9b9-f789-43e7-8c17-fd518db5bd48": {
+      "listeners": 189,
+      "lastfmName": "Key Archive",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:06.445Z"
+    },
+    "831dcf03-b745-436b-922f-6a2baaf45e57": {
+      "listeners": 1357180,
+      "lastfmName": "Dove Cameron",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:06.642Z"
     },
     "28773a0a-af12-430f-abe1-7376e76b9f21": {
       "listeners": 73591,
@@ -1306,11 +3736,77 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:21.160Z"
     },
+    "90eec91b-0b7c-44ea-9f86-a73791198ffa": {
+      "listeners": 100,
+      "lastfmName": "Zrmpa",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:06.968Z"
+    },
     "9854d99f-d954-4c0f-9ae5-58a0cdd885f5": {
       "listeners": 2151738,
       "lastfmName": "Crowded House",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:21.540Z"
+    },
+    "8a723345-c62c-45ec-a45e-c1007f2981b4": {
+      "listeners": 98175,
+      "lastfmName": "Add N To (X)",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:07.406Z"
+    },
+    "3f446338-cb5f-4c4c-9ea4-1b12794cf48f": {
+      "listeners": 221393,
+      "lastfmName": "Summer Camp",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:07.879Z"
+    },
+    "95e9aba6-f85c-48a0-9ec9-395d4f0e3875": {
+      "listeners": 700059,
+      "lastfmName": "Trentemøller",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:08.129Z"
+    },
+    "fcd954c7-f327-446f-87a3-2c4b242c6f38": {
+      "listeners": 906227,
+      "lastfmName": "Hurts",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:08.392Z"
+    },
+    "8d831383-b22b-4237-8059-12bee111e4b6": {
+      "listeners": 771165,
+      "lastfmName": "Twin Shadow",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:08.600Z"
+    },
+    "a1fc7a42-4a51-45aa-bdec-b83d6924724b": {
+      "listeners": 181246,
+      "lastfmName": "Beat Connection",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:08.840Z"
+    },
+    "c61d8d72-a150-4b92-b322-66fd758961b0": {
+      "listeners": 4027,
+      "lastfmName": "Knight School",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:09.098Z"
+    },
+    "ee4d500f-326d-4a3b-b462-1ec97c80b952": {
+      "listeners": 38,
+      "lastfmName": "Mithic",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:09.619Z"
+    },
+    "e6ba7995-2620-472f-b4ee-ca92f087999f": {
+      "listeners": 52219,
+      "lastfmName": "Synthion",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:09.927Z"
+    },
+    "5870fbd7-a9b9-4ef4-ba6e-634e5297d660": {
+      "listeners": 8670,
+      "lastfmName": "telemist",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:10.240Z"
     },
     "5fa717ad-be80-4ff1-999c-fec061deac59": {
       "listeners": 264182,
@@ -1325,10 +3821,9 @@
       "fetchedAt": "2026-10-15T15:25:21.762Z"
     },
     "7e5a2a59-6d9f-4a17-b7c2-e1eedb7bd222": {
-      "listeners": 2787767,
+      "listeners": 2788536,
       "lastfmName": "Grimes",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:21.959Z"
+      "via": "page"
     },
     "324e3ea3-b9be-4e32-aeb6-eb25e7ea1fcb": {
       "listeners": 607,
@@ -1339,8 +3834,13 @@
     "12398bf3-1b99-47b7-930c-f3956773f35a": {
       "listeners": 1522755,
       "lastfmName": "Aminé",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:22.175Z"
+      "via": "page"
+    },
+    "a298f4c7-eb90-41e1-b5dc-0895b55e0278": {
+      "listeners": 87381,
+      "lastfmName": "DJ Sabrina The Teenage DJ",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:10.746Z"
     },
     "ae5f4156-fda2-4cdc-9da7-ef9e34120fe2": {
       "listeners": 70414,
@@ -1366,11 +3866,16 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:22.958Z"
     },
-    "96800e05-9924-4321-859a-76e0d4750f2f": {
-      "listeners": 877257,
-      "lastfmName": "Smino",
+    "7cf0ea9d-86b9-4dad-ba9e-2355a64899ea": {
+      "listeners": 3467049,
+      "lastfmName": "M.I.A.",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:23.184Z"
+      "fetchedAt": "2026-10-15T19:42:11.005Z"
+    },
+    "057d211a-fba8-42d7-ad14-41f41d6f762f": {
+      "listeners": 832971,
+      "lastfmName": "Saba",
+      "via": "page"
     },
     "5b29ebd7-5a24-4f6f-abf3-8d451423ac33": {
       "listeners": 27,
@@ -1396,11 +3901,40 @@
       "via": "name",
       "fetchedAt": "2026-10-15T14:39:09.219Z"
     },
+    "0e692500-8445-4304-8b1d-c388751b549b": {
+      "listeners": 7710,
+      "lastfmName": "Makina",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:11.668Z"
+    },
     "95373e26-9262-4449-bcfe-7e753226ddf4": {
       "listeners": 1189421,
       "lastfmName": "KYLE",
+      "via": "page"
+    },
+    "484d9ccf-5235-4a41-afe0-f214f6c98b87": {
+      "listeners": 5,
+      "lastfmName": "Konoyo",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:12.195Z"
+    },
+    "3c02704e-e0ed-4331-801d-f3209d66e8c3": {
+      "listeners": 74800,
+      "lastfmName": "Bjarki",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:24.029Z"
+      "fetchedAt": "2026-10-15T19:42:12.407Z"
+    },
+    "2b4d4837-37d1-4a1b-b670-324d9a094112": {
+      "listeners": 570933,
+      "lastfmName": "Fivio Foreign",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:12.794Z"
+    },
+    "d01eff4e-e65e-40d2-9a17-1fe7ace96462": {
+      "listeners": 2286,
+      "lastfmName": "Sosa Geek",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:13.262Z"
     },
     "6f607087-9c46-4bb2-a884-e4efc764554c": {
       "listeners": 1324316,
@@ -1408,11 +3942,11 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:24.204Z"
     },
-    "4e33f1ad-e676-4501-9973-71785427ae38": {
-      "listeners": 239142,
-      "lastfmName": "Jean Deaux",
+    "01947c88-acf0-405b-82cd-0a6d7688aa3c": {
+      "listeners": 142986,
+      "lastfmName": "camoufly",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:24.528Z"
+      "fetchedAt": "2026-10-15T19:42:13.716Z"
     },
     "8bf283b9-b1e2-4632-a953-eacd212a543e": {
       "listeners": 545826,
@@ -1420,17 +3954,35 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:24.703Z"
     },
-    "a668565b-41b8-44a8-9d5c-8e609dbf69fc": {
-      "listeners": 1888904,
-      "lastfmName": "Lil Yachty",
+    "93f6d21f-148d-470b-ba03-a014e2ab0317": {
+      "listeners": 1015,
+      "lastfmName": "oxygenetiX",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:24.930Z"
+      "fetchedAt": "2026-10-15T19:42:14.021Z"
+    },
+    "33b1695b-0b35-4e22-b1d4-be4971fb71ba": {
+      "listeners": 563121,
+      "lastfmName": "Sewerslvt",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:14.196Z"
+    },
+    "18833f03-bafc-49b4-9771-5187145358bf": {
+      "listeners": 19952,
+      "lastfmName": "P.SUS",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:15.100Z"
     },
     "0fe2791d-1c45-4821-9445-9af2524eb427": {
       "listeners": 132747,
       "lastfmName": "VanJess",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:25.707Z"
+    },
+    "92e92a5f-4361-4f1c-853a-bfd6f68b09e7": {
+      "listeners": 262,
+      "lastfmName": "Noizekik",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:15.456Z"
     },
     "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19": {
       "listeners": 3721326,
@@ -1444,17 +3996,29 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:26.103Z"
     },
-    "a17ce9c3-8f6f-4dcc-a1b7-2a04ab9e31f0": {
-      "listeners": 455784,
-      "lastfmName": "Swae Lee",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:26.325Z"
-    },
     "22192191-5e78-4339-8406-62d2d9590b39": {
       "listeners": 45236,
       "lastfmName": "Danny Wolf",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:26.546Z"
+    },
+    "2ea8cbd8-f8d3-4d5e-ab62-f2f74a5b27db": {
+      "listeners": 196867,
+      "lastfmName": "Ghost Data",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:15.968Z"
+    },
+    "f52a31f6-50e8-4325-8695-ad93a277c8cf": {
+      "listeners": 62523,
+      "lastfmName": "The Rigs",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:16.378Z"
+    },
+    "676dbcbf-d450-4356-836b-8048ba0b0120": {
+      "listeners": 94128,
+      "lastfmName": "Termanology",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:16.651Z"
     },
     "ffa12b9b-3842-443c-8da2-3e06dace2970": {
       "listeners": 480496,
@@ -1468,11 +4032,15 @@
       "via": "name",
       "fetchedAt": "2026-10-15T14:39:13.379Z"
     },
-    "875203e1-8e58-4b86-8dcb-7190faf411c5": {
-      "listeners": 3991872,
-      "lastfmName": "J. Cole",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:27.017Z"
+    "20bb2a85-e6ab-42e2-bfa8-ec048b60bbdb": {
+      "listeners": 126700,
+      "lastfmName": "G Jones",
+      "via": "page"
+    },
+    "c046b587-5e98-4631-a5c0-e5d8e18d6b13": {
+      "listeners": 479402,
+      "lastfmName": "RL Grime",
+      "via": "page"
     },
     "7fb57fba-a6ef-44c2-abab-2fa3bdee607e": {
       "listeners": 4012385,
@@ -1492,11 +4060,11 @@
       "via": "name",
       "fetchedAt": "2026-10-15T14:39:15.603Z"
     },
-    "bce6d667-cde8-485e-b078-c0a05adea36d": {
-      "listeners": 2060121,
-      "lastfmName": "ScHoolboy Q",
+    "562df666-6a31-4bb4-9eec-ce1f3db91c80": {
+      "listeners": 15603,
+      "lastfmName": "Guy Arthur",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:27.458Z"
+      "fetchedAt": "2026-10-15T19:42:16.993Z"
     },
     "12d5646a-b9e3-4510-ad37-5682c02a66ef": {
       "listeners": 170795,
@@ -1504,23 +4072,59 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:27.691Z"
     },
+    "e1115c6a-6705-4d17-bbf2-0efd2ef1bbb2": {
+      "listeners": 810273,
+      "lastfmName": "Coi Leray",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:17.181Z"
+    },
+    "3ed2de40-a223-47dd-96bc-1ae5b841d76d": {
+      "listeners": 31859,
+      "lastfmName": "LouGotCash",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:17.728Z"
+    },
+    "7db6753a-598c-4448-857b-8d9c56363152": {
+      "listeners": 7081,
+      "lastfmName": "Austin Lam",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:18.064Z"
+    },
+    "02fa2b63-016b-4cb3-bf01-2f8f43973876": {
+      "listeners": 805722,
+      "lastfmName": "IDK",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:25:36.394Z"
+    },
+    "81e5c59b-b87e-4f30-99e4-d6b86cbf6b29": {
+      "listeners": 228355,
+      "lastfmName": "Xavier Omär",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:18.411Z"
+    },
+    "95f47d69-1711-4ab2-86a5-317706983850": {
+      "listeners": 2182,
+      "lastfmName": "AT4G",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:18.790Z"
+    },
     "2e62daef-dc0d-40ad-b430-fd6872e992aa": {
       "listeners": 733787,
       "lastfmName": "The Glitch Mob",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:27.901Z"
     },
+    "4654c22b-43a2-4e52-af08-e2f74991000b": {
+      "listeners": 200,
+      "lastfmName": "YUNG EARLE",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:19.287Z"
+    },
     "5ec1ecc6-4535-4911-a27a-e26343f4a189": {
       "listeners": 1939308,
       "lastfmName": "Kodak Black",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:28.112Z"
-    },
-    "89aa5ecb-59ad-46f5-b3eb-2d424e941f19": {
-      "listeners": 2751917,
-      "lastfmName": "Bad Bunny",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:28.333Z"
     },
     "145723e7-64ec-49f1-970e-c5d1fa4e7e42": {
       "listeners": 159248,
@@ -1534,11 +4138,47 @@
       "via": "name",
       "fetchedAt": "2026-10-15T14:39:18.480Z"
     },
+    "cc394caa-2235-479f-8094-50014e0cd64e": {
+      "listeners": 102355,
+      "lastfmName": "CHXPO",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:19.552Z"
+    },
+    "69866ffc-221a-4638-aabb-c3cee1f4b3bc": {
+      "listeners": 377518,
+      "lastfmName": "Tyla Yaweh",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:19.733Z"
+    },
+    "191e4db2-96f2-4056-a177-941b5039d19d": {
+      "listeners": 44756,
+      "lastfmName": "Xeuphoria",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:20.022Z"
+    },
     "687138e3-bd83-4f61-b28e-04089e3c02ab": {
       "listeners": 88646,
       "lastfmName": "K$upreme",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:29.403Z"
+    },
+    "a3c5e7b0-fde0-4b65-a89c-bab42c366c43": {
+      "listeners": 5210,
+      "lastfmName": "Static Major",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:20.238Z"
+    },
+    "f27ec8db-af05-4f36-916e-3d57f91ecf5e": {
+      "listeners": 7232279,
+      "lastfmName": "Michael Jackson",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:20.437Z"
+    },
+    "0d8a7db8-efe5-47c0-b68e-06ce10e8285c": {
+      "listeners": null,
+      "lastfmName": null,
+      "via": "unknown",
+      "fetchedAt": "2026-10-15T19:42:25.858Z"
     },
     "ced1b7d4-c711-46c0-9649-65bdcc7650e1": {
       "listeners": 523514,
@@ -1546,11 +4186,23 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:29.574Z"
     },
+    "5e934be9-8295-4215-a60f-f5f2386179a3": {
+      "listeners": 430073,
+      "lastfmName": "SahBabii",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:26.209Z"
+    },
     "c78c3026-426b-4580-ab23-08490bb8b515": {
       "listeners": 2079877,
       "lastfmName": "Rae Sremmurd",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:29.808Z"
+    },
+    "07f895b1-2dbb-4320-8395-d44301122c30": {
+      "listeners": 58593,
+      "lastfmName": "Kaina",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:26.763Z"
     },
     "b6b69092-8032-4777-a7d7-48e299d4fa61": {
       "listeners": 4805,
@@ -1600,11 +4252,23 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:32.431Z"
     },
+    "7f0c7205-a897-4446-ae4a-b77363ab05fc": {
+      "listeners": null,
+      "lastfmName": null,
+      "via": "unknown",
+      "fetchedAt": "2026-10-15T19:42:29.152Z"
+    },
     "78cba6d7-4d7a-4c02-854f-d2ff4689f409": {
       "listeners": 136207,
       "lastfmName": "Pell",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:32.953Z"
+    },
+    "e70fa82b-1080-42a9-b4d0-bae7f02e66d0": {
+      "listeners": 191627,
+      "lastfmName": "GUM",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:29.572Z"
     },
     "640846d2-5ed6-488c-b507-ed3a6ab8651f": {
       "listeners": 26660,
@@ -1642,6 +4306,12 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:34.615Z"
     },
+    "01667dde-e5fd-4748-9986-ac623e4e9d65": {
+      "listeners": 742704,
+      "lastfmName": "MadeinTYO",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:25:36.588Z"
+    },
     "decaf88d-365d-4441-bfef-f3fc8a7eac21": {
       "listeners": 159258,
       "lastfmName": "Robb Bank$",
@@ -1666,11 +4336,59 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:35.318Z"
     },
+    "7fa03932-cd68-498f-aa4f-d4a6a2ce6071": {
+      "listeners": 212800,
+      "lastfmName": "Black Coffee",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:29.758Z"
+    },
+    "d62614aa-ef2c-44cd-8a7b-91292755a1d0": {
+      "listeners": 1393898,
+      "lastfmName": "Jorja Smith",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:29.976Z"
+    },
+    "835ee36d-202d-4fd8-b0b4-d3a32e563918": {
+      "listeners": 2174,
+      "lastfmName": "Sghenny Madattak",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:30.305Z"
+    },
+    "e788b847-e20c-4f4d-b61e-79d87e17a09b": {
+      "listeners": 580,
+      "lastfmName": "DIRTYFACESMOOK",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:30.788Z"
+    },
     "04c39c66-d3b0-4537-a920-e46406a94a72": {
       "listeners": 59791,
       "lastfmName": "Supa Bwe",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:35.500Z"
+    },
+    "89b3d6cf-0d50-4652-995f-4fb6e5cfaa70": {
+      "listeners": null,
+      "lastfmName": null,
+      "via": "unknown",
+      "fetchedAt": "2026-10-15T19:42:32.693Z"
+    },
+    "4b067dd6-1d92-4c65-8d62-7705e63274a8": {
+      "listeners": 35128,
+      "lastfmName": "Kontinuum",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:32.977Z"
+    },
+    "2b996e5c-7941-4619-9840-9021c6756954": {
+      "listeners": 242994,
+      "lastfmName": "Jauz",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:33.264Z"
+    },
+    "c0b33710-195f-402b-ac50-71efeae1e5e9": {
+      "listeners": 116593,
+      "lastfmName": "k?d",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:03.343Z"
     },
     "f93bac9e-b20a-403e-abc9-06a2fc151df1": {
       "listeners": 1456253,
@@ -1678,35 +4396,106 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:35.726Z"
     },
+    "dfc6e55b-a31e-4dd7-aa38-784ca1415e84": {
+      "listeners": 9590,
+      "lastfmName": "Matthew Santos",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:33.506Z"
+    },
+    "0bc858a1-3573-4216-9423-c96dd8c72919": {
+      "listeners": 1633578,
+      "lastfmName": "Twista",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:33.702Z"
+    },
+    "94c64122-dbd4-4927-b2fa-f204b0b4b0c2": {
+      "listeners": 1942681,
+      "lastfmName": "Ravyn Lenae",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:33.909Z"
+    },
+    "49fa1aec-c7ce-493a-8789-95ebf8d92c64": {
+      "listeners": 15795,
+      "lastfmName": "akEnya",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:34.502Z"
+    },
+    "7083439f-3108-4890-ba92-3b158c270e22": {
+      "listeners": 1,
+      "lastfmName": "Bjrknc",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:35.294Z"
+    },
     "e34e41f2-f480-45d3-8190-a3ce5ab34fab": {
       "listeners": 2364584,
       "lastfmName": "Wale",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:36.167Z"
     },
-    "02fa2b63-016b-4cb3-bf01-2f8f43973876": {
-      "listeners": 805722,
-      "lastfmName": "IDK",
+    "8c0b35f5-facb-4688-9c2b-a24c174e5882": {
+      "listeners": 43637,
+      "lastfmName": "Laura Brehm",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:36.394Z"
+      "fetchedAt": "2026-10-15T19:42:35.629Z"
     },
-    "01667dde-e5fd-4748-9986-ac623e4e9d65": {
-      "listeners": 742704,
-      "lastfmName": "MadeinTYO",
+    "00b21266-918d-434c-b31e-3f1a3e96cad5": {
+      "listeners": 148538,
+      "lastfmName": "Crankdat",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:36.588Z"
+      "fetchedAt": "2026-10-15T19:42:35.876Z"
+    },
+    "ce019954-4e3d-4dd2-adc7-3c9308589d2b": {
+      "listeners": 145019,
+      "lastfmName": "Gammer",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:36.449Z"
+    },
+    "e57634b1-01f3-4dc9-bd6b-0672c8e0665c": {
+      "listeners": 265773,
+      "lastfmName": "Kayzo",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:36.664Z"
+    },
+    "ab5d2dd3-5b5b-4128-a07c-0204f1594014": {
+      "listeners": 58808,
+      "lastfmName": "K. Forest",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:36.951Z"
+    },
+    "f563a1a9-069b-41ed-8b3b-e1b1a6f5b34b": {
+      "listeners": 292219,
+      "lastfmName": "André 3000",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:37.161Z"
+    },
+    "0cee3755-1384-47d7-8e72-6dc0b7726afb": {
+      "listeners": 34,
+      "lastfmName": "Mister Blonde",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:37.533Z"
     },
     "efa2c11a-1a35-4b60-bc1b-66d37de88511": {
-      "listeners": 2114798,
+      "listeners": 2115018,
       "lastfmName": "DJ Shadow",
+      "via": "page"
+    },
+    "d85fcdb3-7578-4dab-af9e-b496c8bdaf8f": {
+      "listeners": 16689,
+      "lastfmName": "Lafa Taylor",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:36.801Z"
+      "fetchedAt": "2026-10-15T19:42:37.756Z"
     },
     "a9930a14-8fbb-435a-ad25-f4b6cae71523": {
       "listeners": 387348,
       "lastfmName": "Kill the Noise",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:37.043Z"
+    },
+    "65a01fd2-35fb-4817-90d5-ab5506b21161": {
+      "listeners": 768024,
+      "lastfmName": "Lil Pump",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:37.953Z"
     },
     "4fb6cf2d-9524-4580-b351-73d0f1d6c559": {
       "listeners": 260746,
@@ -1720,11 +4509,23 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:37.648Z"
     },
-    "c9a8ee10-c27e-4b78-90a9-0b5a230e7941": {
-      "listeners": 23760,
-      "lastfmName": "Phoelix",
+    "6ed2d612-2e1d-4b59-823a-4ba0399e9741": {
+      "listeners": 588,
+      "lastfmName": "Ted$zn",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:37.888Z"
+      "fetchedAt": "2026-10-15T19:42:38.274Z"
+    },
+    "6c4ee7ef-36b6-4bae-b396-51bb96148986": {
+      "listeners": 521979,
+      "lastfmName": "dvsn",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:38.492Z"
+    },
+    "b1cfbd77-bda6-4de8-a344-eb2f26c4f1ef": {
+      "listeners": 183701,
+      "lastfmName": "Kyla",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:38.770Z"
     },
     "727db425-8492-4d62-8937-58537a4f56c8": {
       "listeners": 879,
@@ -1732,17 +4533,76 @@
       "via": "name",
       "fetchedAt": "2026-10-15T14:39:35.366Z"
     },
+    "5c3c8a55-d470-43eb-935d-91790632ed2c": {
+      "listeners": 55207,
+      "lastfmName": "Delaney Jane",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:39.111Z"
+    },
     "f5dfa020-ad69-41cd-b3d4-fd7af0414e94": {
       "listeners": 4036115,
       "lastfmName": "Wiz Khalifa",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:38.538Z"
     },
-    "a56bd8f9-8ef8-4d63-89a4-794ed1360dd2": {
-      "listeners": 2198999,
-      "lastfmName": "Diplo",
+    "b087aa3e-7e3e-46f1-8ace-0e6e10d8d13f": {
+      "listeners": 2319,
+      "lastfmName": "μ’s",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:38.719Z"
+      "fetchedAt": "2026-10-15T19:42:39.825Z"
+    },
+    "92edf02b-0ce5-4b6b-b0b6-9689ce2d02da": {
+      "listeners": 1203,
+      "lastfmName": "Rarirama",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:40.302Z"
+    },
+    "70a264d6-6b78-4fd1-976f-d6a18d3c2e0b": {
+      "listeners": 33625,
+      "lastfmName": "DREZO",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:40.697Z"
+    },
+    "d35358b6-ea22-44f1-94fe-67961f379b01": {
+      "listeners": 4,
+      "lastfmName": "Bentley Montes",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:40.989Z"
+    },
+    "0746e079-8b43-4f75-8eaf-3f8ca871f7db": {
+      "listeners": 6,
+      "lastfmName": "Trayfee",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:41.241Z"
+    },
+    "bd5d5a75-444e-48d4-8eb4-724067b02d67": {
+      "listeners": 95626,
+      "lastfmName": "Bishu",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:41.825Z"
+    },
+    "a7aadddd-1ea2-4e58-8082-c278c6d89c52": {
+      "listeners": 1383,
+      "lastfmName": "Tucker Kreway",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:42.597Z"
+    },
+    "1f35049a-ca31-461b-abf1-2df4b5b69930": {
+      "listeners": 137982,
+      "lastfmName": "Ray Volpe",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:42.804Z"
+    },
+    "8a05c7bb-7413-4ae0-a30e-b75e17c9e6da": {
+      "listeners": 322981,
+      "lastfmName": "Getter",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:43.207Z"
+    },
+    "a56bd8f9-8ef8-4d63-89a4-794ed1360dd2": {
+      "listeners": 2199325,
+      "lastfmName": "Diplo",
+      "via": "page"
     },
     "3e9af2f7-5cdd-4025-966d-e3c3957acb98": {
       "listeners": 30991,
@@ -1762,11 +4622,113 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:40.363Z"
     },
+    "6fb9bcd1-7ac8-40cc-9c4a-cba4c91e9c23": {
+      "listeners": 99065,
+      "lastfmName": "Lunice",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:43.424Z"
+    },
+    "68ec1b08-3c2e-40b3-b0af-8f323743fdff": {
+      "listeners": 689177,
+      "lastfmName": "Soulwax",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:43.707Z"
+    },
+    "68266429-5ff9-4484-8c70-4feff536f2d1": {
+      "listeners": 21013,
+      "lastfmName": "Last Island",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:44.025Z"
+    },
+    "17cf6265-7c39-4f2d-9fcc-8425431e4c34": {
+      "listeners": 120184,
+      "lastfmName": "SLUMBERJACK",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:44.320Z"
+    },
+    "138a2979-8c8a-4de5-8bfd-76f6227bd457": {
+      "listeners": 431290,
+      "lastfmName": "Chrome Sparks",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:44.515Z"
+    },
+    "d7748594-363a-4b47-b3ab-c7102f1caa65": {
+      "listeners": 76301,
+      "lastfmName": "Electric Mantis",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:45.650Z"
+    },
+    "aacea334-1ea4-42d6-a700-514a4d02658e": {
+      "listeners": 136448,
+      "lastfmName": "Point Point",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:46.460Z"
+    },
+    "23101701-cecf-4c9b-9b4c-d6a249eac118": {
+      "listeners": 498810,
+      "lastfmName": "San Holo",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:46.646Z"
+    },
+    "b819f12e-796c-40f3-baee-1657df0d6469": {
+      "listeners": 37885,
+      "lastfmName": "Deon Custom",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:46.995Z"
+    },
+    "69f2d0f8-c7ed-4545-8bad-0f9d79462f8d": {
+      "listeners": 205652,
+      "lastfmName": "Sleepy Tom",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:47.214Z"
+    },
+    "c33d2ad4-9d0d-4101-9653-669501573bd4": {
+      "listeners": 88963,
+      "lastfmName": "Rob Mayth",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:47.507Z"
+    },
+    "40b67159-4303-4d9f-99c7-db32378ca24c": {
+      "listeners": 3,
+      "lastfmName": "Boyang",
+      "via": "alias",
+      "fetchedAt": "2026-10-15T19:42:49.158Z"
+    },
     "606919df-48ec-4bbb-b875-c6a7c7e4ffaf": {
       "listeners": 6226,
       "lastfmName": "John River",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:40.582Z"
+    },
+    "aef06569-098f-4218-a577-b413944d9493": {
+      "listeners": 1553062,
+      "lastfmName": "HAIM",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:50.097Z"
+    },
+    "449816d5-28b9-4406-b71b-984cdd249ba4": {
+      "listeners": 224484,
+      "lastfmName": "Galimatias",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:50.299Z"
+    },
+    "f33e8fd2-8536-42e8-9169-fae50f850dd9": {
+      "listeners": 280575,
+      "lastfmName": "Kacy Hill",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:50.580Z"
+    },
+    "0595a4ae-356d-46eb-bb12-a5596d94281e": {
+      "listeners": 132415,
+      "lastfmName": "Nitro Fun",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:50.754Z"
+    },
+    "95af6db1-49fa-4aff-8bdd-7f5a7afb842d": {
+      "listeners": 57517,
+      "lastfmName": "ramriddlz",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:51.246Z"
     },
     "6934e720-b6f6-4499-9a11-4377048a87be": {
       "listeners": 85954,
@@ -1780,23 +4742,45 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:41.040Z"
     },
+    "03a0c292-3569-46cf-9876-d3c79af048eb": {
+      "listeners": 284496,
+      "lastfmName": "Tink",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:51.502Z"
+    },
+    "c00f7c51-106a-4f85-b7f8-8c6237fc6274": {
+      "listeners": 1002,
+      "lastfmName": "Dexter Dukarus",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:51.749Z"
+    },
     "8fc4ce76-5b0c-4b2c-b642-08fd07911dc0": {
       "listeners": 47812,
       "lastfmName": "Verse Simmonds",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:41.257Z"
     },
-    "dda162b4-f871-4e89-b081-b7b3470782f0": {
-      "listeners": 893441,
-      "lastfmName": "Cash Cash",
+    "1ddfb1c9-bb8d-40f7-b26d-b49ddf33e39d": {
+      "listeners": 7379,
+      "lastfmName": "Ninth Parallel",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:41.578Z"
+      "fetchedAt": "2026-10-15T19:42:52.014Z"
+    },
+    "b3e4a6c7-8b2d-4f80-a403-21e8da340c2d": {
+      "listeners": null,
+      "lastfmName": null,
+      "via": "unknown",
+      "fetchedAt": "2026-10-15T19:42:53.825Z"
+    },
+    "dda162b4-f871-4e89-b081-b7b3470782f0": {
+      "listeners": 893530,
+      "lastfmName": "Cash Cash",
+      "via": "page"
     },
     "e60fd99e-e615-4fee-b6f7-08fee9a911f7": {
       "listeners": 167740,
       "lastfmName": "Digital Farm Animals",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:42.052Z"
+      "via": "page"
     },
     "0805f934-4170-4292-b74f-901bdb316374": {
       "listeners": 153588,
@@ -1809,6 +4793,12 @@
       "lastfmName": null,
       "via": "unknown",
       "fetchedAt": "2026-10-15T14:43:46.000Z"
+    },
+    "aa22a18f-3b41-4e33-a181-630350bf7915": {
+      "listeners": 54781,
+      "lastfmName": "ill.Gates",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:54.154Z"
     },
     "b74f92c0-1c19-4edc-9805-9dbb21d1894a": {
       "listeners": 11603,
@@ -1825,8 +4815,7 @@
     "16d90c52-1ac0-4ba7-9ab7-66efed0594fb": {
       "listeners": 188870,
       "lastfmName": "Boombox Cartel",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:42.766Z"
+      "via": "page"
     },
     "4d14247b-3de4-4bcc-9fa2-c8be8472eebd": {
       "listeners": 26724,
@@ -1846,17 +4835,53 @@
       "via": "name",
       "fetchedAt": "2026-10-15T14:39:46.642Z"
     },
+    "2791dab4-7b6c-467d-bbf6-64db4f2926b2": {
+      "listeners": 74,
+      "lastfmName": "Disco’s Over",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:54.675Z"
+    },
     "e3492ea0-5997-4241-a7bf-2fd7fb1bfad1": {
       "listeners": 1835212,
       "lastfmName": "Fetty Wap",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:43.171Z"
     },
+    "33db34de-5419-4d4c-a45b-3dfd6b7d8a72": {
+      "listeners": 236970,
+      "lastfmName": "Virtual Riot",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:17.471Z"
+    },
+    "f6ef0b53-54e9-4fdd-9bad-eb94e7ddc69b": {
+      "listeners": 285121,
+      "lastfmName": "Filous",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:55.110Z"
+    },
+    "9ccaca30-60aa-4890-ae6c-ab55225ee274": {
+      "listeners": 1233928,
+      "lastfmName": "Lucki",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:55.561Z"
+    },
     "b4e0aa57-e3bf-4140-8ebb-7ef4f5c4e44f": {
       "listeners": 52217,
       "lastfmName": "OB OBrien",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:43.392Z"
+    },
+    "8e1a7a8f-7fbf-4487-b717-393936954104": {
+      "listeners": 93880,
+      "lastfmName": "McClenney",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:55.877Z"
+    },
+    "06fd30f0-e496-45b5-b67a-42b8fbb22cb0": {
+      "listeners": null,
+      "lastfmName": null,
+      "via": "unknown",
+      "fetchedAt": "2026-10-15T19:42:56.793Z"
     },
     "ceb3f5b7-9f1a-430f-afbe-976fdcf30482": {
       "listeners": 1490718,
@@ -1876,17 +4901,137 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:44.055Z"
     },
-    "757ed661-fbad-4e45-b1cd-a6b09f06f54a": {
-      "listeners": 1405585,
-      "lastfmName": "Yung Lean",
+    "015e6ab5-3c07-4d11-8a75-4071e30ef4b9": {
+      "listeners": 31840,
+      "lastfmName": "In the blue shirt",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:57.281Z"
+    },
+    "36e2eeab-28c1-44e4-867e-1eb346cebd96": {
+      "listeners": 54543,
+      "lastfmName": "Tomggg",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:44.275Z"
+      "fetchedAt": "2026-10-15T19:42:57.544Z"
+    },
+    "ef31e431-bed3-4ff9-844b-feba174cbe2c": {
+      "listeners": 80213,
+      "lastfmName": "Qrion",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:57.870Z"
+    },
+    "a7c20faf-90dc-4c6d-a8a4-6bbf5816b2be": {
+      "listeners": 5000,
+      "lastfmName": "fu_mou",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:58.087Z"
+    },
+    "f4b124f0-fccf-4add-a144-011735edbd68": {
+      "listeners": 16028,
+      "lastfmName": "Carpainter",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:58.430Z"
+    },
+    "2e222fce-02ae-4221-b1c6-3c3242b423b6": {
+      "listeners": 1103180,
+      "lastfmName": "ODESZA",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:42:59.223Z"
+    },
+    "d9547d08-4c2e-47fc-9451-b8e3f889716e": {
+      "listeners": 453733,
+      "lastfmName": "Rich Homie Quan",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:26:50.362Z"
+    },
+    "022a76e2-429b-4c88-8736-005003ee0f26": {
+      "listeners": 78758,
+      "lastfmName": "PeeWee Longway",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:42:59.636Z"
+    },
+    "770133fc-c50a-4baf-8050-1f748e34babc": {
+      "listeners": 3,
+      "lastfmName": "Native stranger",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:43:00.990Z"
+    },
+    "47d46f2b-7398-41d1-937e-55f16ffd4d31": {
+      "listeners": 34144,
+      "lastfmName": "Imaginary Cities",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:01.191Z"
+    },
+    "d8df27e9-03a9-41d6-9e81-f9f5dd3abe9a": {
+      "listeners": 7480,
+      "lastfmName": "Breanne Düren",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:02.132Z"
+    },
+    "6286d3ea-b940-4fa7-bff4-cded782f94dc": {
+      "listeners": 11,
+      "lastfmName": "Sean Caskey",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:43:02.562Z"
+    },
+    "4b922b01-8c05-48df-ba5c-ab5bfb76ea73": {
+      "listeners": 43322,
+      "lastfmName": "Tree",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:25:46.556Z"
+    },
+    "7909bb8d-653d-4360-b8ea-f17c2d899b4f": {
+      "listeners": 96,
+      "lastfmName": "Chandlar",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:03.072Z"
+    },
+    "3bd925c6-fed8-479d-a568-0520dcebc62d": {
+      "listeners": 2451,
+      "lastfmName": "Ken Ross",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:03.332Z"
+    },
+    "75860fb1-12cc-4807-b2a3-c2ac54641b71": {
+      "listeners": 4181,
+      "lastfmName": "The Alexanders",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:03.688Z"
+    },
+    "52491cf4-55df-4d0f-b4d4-c3652f7e122d": {
+      "listeners": 1,
+      "lastfmName": "Ar T",
+      "via": "alias",
+      "fetchedAt": "2026-10-15T19:43:08.847Z"
+    },
+    "15d60916-47e0-4f09-83f4-9e466a284830": {
+      "listeners": 331882,
+      "lastfmName": "Giraffage",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:09.032Z"
+    },
+    "5b6ebfe0-f72b-4902-bba9-74c8af0f1af0": {
+      "listeners": 2764190,
+      "lastfmName": "The 1975",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:09.269Z"
+    },
+    "a9d7d1ef-4235-44b3-b157-ee8b91daa39f": {
+      "listeners": 37153,
+      "lastfmName": "Nedarb",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:09.500Z"
     },
     "6f9513c9-1e92-4a36-a14f-af4bcab266e3": {
       "listeners": 18853,
       "lastfmName": "Closed Sessions",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:44.714Z"
+    },
+    "74a036b2-956e-4f5d-a53a-7a57f4142ec3": {
+      "listeners": 274865,
+      "lastfmName": "Urban Cone",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:09.822Z"
     },
     "8f72bab8-9237-4f7b-8188-4b2df43d105d": {
       "listeners": 2975,
@@ -1900,11 +5045,23 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:45.327Z"
     },
+    "d0638c22-d3b7-4fee-b8b2-99e1134034c1": {
+      "listeners": null,
+      "lastfmName": null,
+      "via": "unknown",
+      "fetchedAt": "2026-10-15T19:43:11.817Z"
+    },
     "bef9483d-b3a8-47fd-9574-45a723711e79": {
       "listeners": 28707,
       "lastfmName": "Trav",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:45.977Z"
+    },
+    "d131b749-6c45-4427-bc00-89bc889d3005": {
+      "listeners": 117074,
+      "lastfmName": "Tut Tut Child",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:12.085Z"
     },
     "b4cb1fe1-7de8-47de-ae76-d20179636fdf": {
       "listeners": 9001,
@@ -1918,11 +5075,11 @@
       "via": "name",
       "fetchedAt": "2026-10-15T14:39:50.585Z"
     },
-    "4b922b01-8c05-48df-ba5c-ab5bfb76ea73": {
-      "listeners": 43322,
-      "lastfmName": "Tree",
+    "7cd4c933-411f-4fea-80e9-9cc8ed85ba64": {
+      "listeners": 56454,
+      "lastfmName": "Romeo",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:46.556Z"
+      "fetchedAt": "2026-10-15T19:43:12.597Z"
     },
     "35f343df-3b87-4475-b0e4-d2ba5cc26eea": {
       "listeners": 901434,
@@ -1930,17 +5087,29 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:46.770Z"
     },
+    "4b75fd73-dddf-4220-96bb-0e595cc03297": {
+      "listeners": 607795,
+      "lastfmName": "RAC",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:12.772Z"
+    },
     "04f7e156-23e1-4337-83f5-abfbb93c243c": {
       "listeners": 71478,
       "lastfmName": "Kap Slap",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:46.955Z"
     },
-    "859d0860-d480-4efd-970c-c05d5f1776b8": {
-      "listeners": 6574241,
-      "lastfmName": "Beyoncé",
+    "29eead4d-3793-4625-8727-c03edbb38b8b": {
+      "listeners": 2620645,
+      "lastfmName": "Soulja Boy",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:47.273Z"
+      "fetchedAt": "2026-10-15T19:43:13.013Z"
+    },
+    "1215a654-6054-4656-af43-07bff6b7f8cc": {
+      "listeners": 7,
+      "lastfmName": "RareMix",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:43:13.467Z"
     },
     "396a9525-0994-4542-b480-c4587feeb476": {
       "listeners": 1756646,
@@ -1948,11 +5117,41 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:47.463Z"
     },
+    "07de9cdf-a489-4b4b-afc5-22bfe1aa4ee3": {
+      "listeners": 3804,
+      "lastfmName": "Marc Piñol",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:13.737Z"
+    },
+    "78e6b472-0d13-49bd-9149-1d1cf7c42df8": {
+      "listeners": 9184,
+      "lastfmName": "Mistakes Are Ok",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:43:14.231Z"
+    },
+    "015acbe5-6fc6-435c-b0fe-1b728e6f68ce": {
+      "listeners": 41419,
+      "lastfmName": "Round",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:14.542Z"
+    },
+    "b15131ad-5e0b-45f7-8653-8c6d25aa3ac9": {
+      "listeners": 48333,
+      "lastfmName": "New Jackson",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:14.883Z"
+    },
     "ac4faeb2-19bc-4d34-9e8c-b99c9daba908": {
       "listeners": 29117,
       "lastfmName": "The Palmer Squares",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:47.738Z"
+    },
+    "9787f0a2-f657-4210-a630-131efd6f2a9d": {
+      "listeners": 18597,
+      "lastfmName": "Detail",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:15.259Z"
     },
     "410bbb19-8309-4a0b-9f87-3d65bde4a826": {
       "listeners": 733352,
@@ -1961,16 +5160,27 @@
       "fetchedAt": "2026-10-15T15:25:47.920Z"
     },
     "596ffa74-3d08-44ef-b113-765d43d12738": {
-      "listeners": 5775879,
+      "listeners": 5776747,
       "lastfmName": "Justin Timberlake",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:48.147Z"
+      "via": "page"
     },
     "211d08f1-91ff-48a4-9c19-845eb7341e01": {
       "listeners": 10171,
       "lastfmName": "Boeboe",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:48.423Z"
+    },
+    "56263187-608d-43dc-8782-a417b492d418": {
+      "listeners": 105119,
+      "lastfmName": "Pearson Sound",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:15.484Z"
+    },
+    "9a6d2343-6595-4bf2-b3d0-efbbd7a8dfd0": {
+      "listeners": 284014,
+      "lastfmName": "Maya Jane Coles",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:15.736Z"
     },
     "aec279b2-b9cc-488c-b892-f2271605fa11": {
       "listeners": 52267,
@@ -1984,11 +5194,76 @@
       "via": "name",
       "fetchedAt": "2026-10-15T14:39:53.123Z"
     },
+    "5a2cda42-e4c1-4bff-824b-bd1b0a2fb6cf": {
+      "listeners": 35735,
+      "lastfmName": "Marcus Worgull",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:16.078Z"
+    },
+    "3bbdd45f-5654-47f3-b6c0-d806752b9fcf": {
+      "listeners": 91191,
+      "lastfmName": "âme",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:16.487Z"
+    },
+    "f912d0c6-52c6-4b0b-8aaa-975a9afdfee3": {
+      "listeners": 23725,
+      "lastfmName": "Dixon",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:16.670Z"
+    },
     "7cbc26a8-06f5-4064-b7db-cb9c6a81aaf2": {
       "listeners": 53759,
       "lastfmName": "Chuck Inglish",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:48.912Z"
+    },
+    "505cc7ac-b92c-46dd-94f2-e22b18fdcf57": {
+      "listeners": 633042,
+      "lastfmName": "Paul Wall",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:17.512Z"
+    },
+    "21dce87c-0f36-4c81-abbf-e7d2c152d65f": {
+      "listeners": 152709,
+      "lastfmName": "Anna Wise",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:17.710Z"
+    },
+    "437a0e49-c6ae-42f6-a6c1-84f25ed366bc": {
+      "listeners": 3639220,
+      "lastfmName": "Bon Iver",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:17.966Z"
+    },
+    "8ab5d936-49d1-415e-92c8-151e0e7dd912": {
+      "listeners": 1699122,
+      "lastfmName": "A$AP Ferg",
+      "via": "page"
+    },
+    "2de5c744-20e7-4a4a-a5a0-f42ac8af229f": {
+      "listeners": 148552,
+      "lastfmName": "Groundislava",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:18.349Z"
+    },
+    "4a85f475-b6c0-44c5-b3a3-f228b66af7af": {
+      "listeners": 9632,
+      "lastfmName": "Modek",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:19.150Z"
+    },
+    "ec853694-30a1-4c7e-84e6-4ca87ee3c314": {
+      "listeners": 182024,
+      "lastfmName": "Andy C",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:19.457Z"
+    },
+    "7035b671-4a26-44f6-bfbb-a93d9c917b89": {
+      "listeners": 70856,
+      "lastfmName": "Botnek",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:19.651Z"
     },
     "960db060-0ba8-4f6c-9770-49b81dc6e5ea": {
       "listeners": 205313,
@@ -1996,11 +5271,23 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:49.090Z"
     },
+    "06f4a88c-72d1-480b-a786-fd41e534a876": {
+      "listeners": 274908,
+      "lastfmName": "Jamie Jones",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:19.970Z"
+    },
     "4f5932a8-3fde-4572-8ae9-744c57b15d89": {
       "listeners": 1013,
       "lastfmName": "Dally Auston",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:49.426Z"
+    },
+    "863dc933-f013-4022-823f-a2aa5c5765c1": {
+      "listeners": 26508,
+      "lastfmName": "Moth Equals",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:20.268Z"
     },
     "1a4ce777-29ad-41ea-b33e-7186aebd7e90": {
       "listeners": 15774,
@@ -2008,11 +5295,70 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:49.731Z"
     },
-    "381086ea-f511-4aba-bdf9-71c753dc5077": {
-      "listeners": 5300764,
-      "lastfmName": "Kendrick Lamar",
+    "334f3782-ae66-4485-8ae2-a90874455319": {
+      "listeners": 18724,
+      "lastfmName": "Kim Ann Foxman",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:50.466Z"
+      "fetchedAt": "2026-10-15T19:43:20.520Z"
+    },
+    "7db4af7c-99bd-4d86-9315-5daa053ca0a5": {
+      "listeners": 148283,
+      "lastfmName": "Pional",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:21.099Z"
+    },
+    "b72daa1a-0cf8-4b3d-8a3f-b5540884fa09": {
+      "listeners": 3252,
+      "lastfmName": "Trapmasters",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:21.426Z"
+    },
+    "a2e76e5a-8c84-4847-a250-585ec9bbf027": {
+      "listeners": 7109,
+      "lastfmName": "Subp Yao",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:22.120Z"
+    },
+    "08d46ab9-9286-4152-8604-61bf9318e9c3": {
+      "listeners": 29147,
+      "lastfmName": "Taso",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:22.529Z"
+    },
+    "cf242de7-2f9e-4928-ab63-236448d6a5dc": {
+      "listeners": 403,
+      "lastfmName": "Profresher Blacklight",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:22.817Z"
+    },
+    "318a90f7-15a4-4b7e-9637-0aacef100138": {
+      "listeners": 23007,
+      "lastfmName": "Gladkill",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:23.144Z"
+    },
+    "1a9a8ca0-ea8e-4e9e-96aa-288155bb2c5d": {
+      "listeners": 912208,
+      "lastfmName": "Todd Rundgren",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:23.335Z"
+    },
+    "e4bb662e-3f96-4aaf-b9e3-1d3f34d541c1": {
+      "listeners": 449,
+      "lastfmName": "Björn Åkesson",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:24.270Z"
+    },
+    "4a00ec9d-c635-463a-8cd4-eb61725f0c60": {
+      "listeners": 2188475,
+      "lastfmName": "deadmau5",
+      "via": "page"
+    },
+    "fc3f7bc9-8ced-48e3-8d6d-66384e9e01dc": {
+      "listeners": 503641,
+      "lastfmName": "Wolfgang Gartner",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:24.582Z"
     },
     "96602274-5812-4626-8a9c-f540bd7799e4": {
       "listeners": 15360,
@@ -2020,11 +5366,35 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:50.638Z"
     },
+    "d3bd3454-0a6b-4751-b6c4-fa45f3a21c7d": {
+      "listeners": 2786,
+      "lastfmName": "Ryan Enzed",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:24.839Z"
+    },
     "1f43d76f-8edf-44f6-aaf1-b65f05ad9402": {
       "listeners": 2411104,
       "lastfmName": "The Flaming Lips",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:50.959Z"
+    },
+    "d113f6b4-f01f-4632-9cd3-743cc299574e": {
+      "listeners": 163865,
+      "lastfmName": "12th Planet",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:25.029Z"
+    },
+    "a4b02b00-791e-408c-adcb-e491673cb9d9": {
+      "listeners": 14562,
+      "lastfmName": "Eric Dingus",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:25.397Z"
+    },
+    "09887aa7-226e-4ecc-9a0c-02d2ae5777e1": {
+      "listeners": 3180683,
+      "lastfmName": "Carly Rae Jepsen",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:25.585Z"
     },
     "463a3f96-371b-4152-afdd-7ea3cae6cf2e": {
       "listeners": 68,
@@ -2032,11 +5402,89 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:51.196Z"
     },
+    "34010312-43a7-4b87-a250-14ec1d704e36": {
+      "listeners": 28487,
+      "lastfmName": "Dilemn",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:26.216Z"
+    },
+    "fff07198-7806-4193-b3d7-e3c67459c4bb": {
+      "listeners": 13084,
+      "lastfmName": "Chrizz Luvly",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:27.138Z"
+    },
+    "be10b739-b500-457f-a51a-cffc6b98aed2": {
+      "listeners": 2997,
+      "lastfmName": "Rocket Pimp",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:27.445Z"
+    },
+    "4fbc55bb-61be-4eb7-b4b4-c08c68b4e060": {
+      "listeners": 1182441,
+      "lastfmName": "Chamillionaire",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:27.639Z"
+    },
+    "1ee18fb3-18a6-4c7f-8ba0-bc41cdd0462e": {
+      "listeners": 4105342,
+      "lastfmName": "Stevie Wonder",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:28.082Z"
+    },
     "59eda569-b380-4958-b98c-051d1667b3e1": {
       "listeners": 1956164,
       "lastfmName": "Waka Flocka Flame",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:51.413Z"
+    },
+    "c2e49f7a-cd6f-48ca-8596-b03614ea4fe8": {
+      "listeners": 633584,
+      "lastfmName": "Consequence",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:28.268Z"
+    },
+    "53f85430-adc1-4efc-9e49-4ce10676054d": {
+      "listeners": 156370,
+      "lastfmName": "Downlink",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:28.496Z"
+    },
+    "5dc6e316-eef1-4883-86cd-c2872e009706": {
+      "listeners": 4976,
+      "lastfmName": "Jano",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:28.866Z"
+    },
+    "e5fa0264-504b-4c56-bfb3-127e7bc0a276": {
+      "listeners": 180045,
+      "lastfmName": "SKisM",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:29.074Z"
+    },
+    "82a8aee6-0772-4399-9238-b5903eab413f": {
+      "listeners": 673702,
+      "lastfmName": "Knife Party",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:29.267Z"
+    },
+    "6875d5ba-d700-4e2e-8a9f-ec049dbea6c3": {
+      "listeners": 21689,
+      "lastfmName": "Amba Shepherd",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:29.507Z"
+    },
+    "4662d26d-5f02-41c2-97bc-c5c720d80268": {
+      "listeners": 3751,
+      "lastfmName": "Mikkas",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:29.740Z"
+    },
+    "dab9de0a-3517-44a9-b8a6-048f51b53490": {
+      "listeners": 176651,
+      "lastfmName": "Chad Valley",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:30.032Z"
     },
     "d2299099-e617-46dd-b013-ba0b4c72bc63": {
       "listeners": 1928448,
@@ -2051,10 +5499,9 @@
       "fetchedAt": "2026-10-15T15:25:51.850Z"
     },
     "650e7db6-b795-4eb5-a702-5ea2fc46c848": {
-      "listeners": 7958369,
+      "listeners": 7959463,
       "lastfmName": "Lady Gaga",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:52.049Z"
+      "via": "page"
     },
     "daa54f30-120c-4edc-9a61-5f740397dd2f": {
       "listeners": 54,
@@ -2067,6 +5514,12 @@
       "lastfmName": "DJ Hard Hitta",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:52.584Z"
+    },
+    "9af4d718-8ac3-469c-9634-b2cc54e0398d": {
+      "listeners": 1,
+      "lastfmName": "Matt Sav",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:30.391Z"
     },
     "7f2aa196-cfd4-4a3d-ace3-28b7b6a79af7": {
       "listeners": 913993,
@@ -2081,10 +5534,51 @@
       "fetchedAt": "2026-10-15T15:25:53.376Z"
     },
     "056e4f3e-d505-4dad-8ec1-d04f521cbb56": {
-      "listeners": 6478783,
+      "listeners": 6479430,
       "lastfmName": "Daft Punk",
+      "via": "page"
+    },
+    "64838c91-a7a5-4a93-b068-b76194a3ba75": {
+      "listeners": 410,
+      "lastfmName": "Jeff T",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:53.557Z"
+      "fetchedAt": "2026-10-15T19:43:31.028Z"
+    },
+    "f9a7ed2b-475c-4c74-b45a-e241be815776": {
+      "listeners": 21537,
+      "lastfmName": "Sharooz",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:31.335Z"
+    },
+    "dde58a78-70c2-4efc-9380-17d57b6032cc": {
+      "listeners": 39522,
+      "lastfmName": "Schoolboy",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:31.661Z"
+    },
+    "4712408c-59ce-413b-be25-2c8202033ca1": {
+      "listeners": 15050,
+      "lastfmName": "Digital Freq",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:32.053Z"
+    },
+    "18234037-c0e5-4be3-82c9-c68923397ba0": {
+      "listeners": 114860,
+      "lastfmName": "Bachelors of Science",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:32.295Z"
+    },
+    "84ca8fa4-7cca-4948-a90a-cb44db29853d": {
+      "listeners": 383194,
+      "lastfmName": "clipping.",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:32.489Z"
+    },
+    "80cb9f52-04b5-4084-a2eb-6098c91cb48a": {
+      "listeners": 93708,
+      "lastfmName": "Erol Alkan",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:32.784Z"
     },
     "3dfb71a2-2e06-4a69-8839-3e1fc07e92ea": {
       "listeners": 531,
@@ -2110,6 +5604,48 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:54.559Z"
     },
+    "0161213b-0461-4d0d-990a-3331c51ffcf6": {
+      "listeners": 104294,
+      "lastfmName": "Clock Opera",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:33.076Z"
+    },
+    "ae014ab2-00e3-4e2d-8fc8-ea242e28c536": {
+      "listeners": 12315,
+      "lastfmName": "Moonlight Matters",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:33.383Z"
+    },
+    "3d191c12-be64-4f90-94d8-ac324b2b3544": {
+      "listeners": 416058,
+      "lastfmName": "Matthew Dear",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:33.656Z"
+    },
+    "d230bcfb-c1b2-4f00-805b-b79e4d6a866e": {
+      "listeners": 4470,
+      "lastfmName": "Sue Cho",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:33.911Z"
+    },
+    "4b0a0ccc-4123-4b85-9723-7b030b28548a": {
+      "listeners": 12055,
+      "lastfmName": "Pilooski",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:34.203Z"
+    },
+    "7bcb6e89-79bb-4ffd-8981-d538bcb09291": {
+      "listeners": 4244,
+      "lastfmName": "Rory Phillips",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:34.579Z"
+    },
+    "459ca12b-ed72-4b14-8eb3-1c224663a700": {
+      "listeners": 3490,
+      "lastfmName": "The Neon Lights",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:34.838Z"
+    },
     "441cc2e9-f07c-4c31-a6dc-749d993012cc": {
       "listeners": 170970,
       "lastfmName": "Sean Garrett",
@@ -2128,17 +5664,53 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:55.176Z"
     },
+    "382f1005-e9ab-4684-afd4-0bdae4ee37f2": {
+      "listeners": 4315964,
+      "lastfmName": "2Pac",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:35.228Z"
+    },
+    "d5d97b2b-b83b-4976-814a-056d9076c8c3": {
+      "listeners": 3267626,
+      "lastfmName": "The Notorious B.I.G.",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:35.419Z"
+    },
+    "0638ba22-040f-438d-83a5-9b670c4adaf5": {
+      "listeners": 2648244,
+      "lastfmName": "Ludacris",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:35.651Z"
+    },
+    "698ff525-ff51-4206-8f08-60a7458aab24": {
+      "listeners": 256829,
+      "lastfmName": "Swizz Beatz",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:35.853Z"
+    },
     "8ef1df30-ae4f-4dbd-9351-1a32b208a01e": {
       "listeners": 4347693,
       "lastfmName": "Alicia Keys",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:55.427Z"
     },
+    "66a4b9d2-d5a6-40b8-93d5-0bdd1dbb4b43": {
+      "listeners": 693,
+      "lastfmName": "The‐Dream",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:36.158Z"
+    },
     "88d1360a-bc2d-47df-90d1-d2de285560aa": {
       "listeners": 2353593,
       "lastfmName": "La Roux",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:55.629Z"
+    },
+    "85196917-8606-4996-a54b-f3e5ae0b070a": {
+      "listeners": 180772,
+      "lastfmName": "Dark Sky",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:36.496Z"
     },
     "09a6c10b-c32c-4f5e-a3b8-c8af4cfa0517": {
       "listeners": 140832,
@@ -2152,6 +5724,12 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:56.074Z"
     },
+    "c89febf2-8bd2-4dbe-89ca-06f4713fd12e": {
+      "listeners": 6290,
+      "lastfmName": "The Bangerz",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:36.809Z"
+    },
     "05f3bb75-fbc1-410c-8f60-d34564f69334": {
       "listeners": 33457,
       "lastfmName": "Hitmaka",
@@ -2164,6 +5742,12 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:56.643Z"
     },
+    "b7b6125c-1e77-4738-8e81-36affa0adc18": {
+      "listeners": 17672,
+      "lastfmName": "Greg Wilson",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:37.877Z"
+    },
     "480cdd78-e54e-4518-9ec9-572a62d7e1e1": {
       "listeners": 1054,
       "lastfmName": "Diddy – Dirty Money",
@@ -2173,8 +5757,7 @@
     "f6a0a03f-3b2f-4d3a-b4b4-34ca4ce7f3cb": {
       "listeners": 28495,
       "lastfmName": "Y.A.C.H.T.",
-      "via": "alias",
-      "fetchedAt": "2026-10-15T14:43:49.433Z"
+      "via": "page"
     },
     "f7199fbd-7d84-4992-bc42-371f2bb61980": {
       "listeners": 555,
@@ -2182,23 +5765,81 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:57.119Z"
     },
+    "dbf7ed93-caae-4961-b7ff-97faed5a45b3": {
+      "listeners": 130767,
+      "lastfmName": "Short Dawg",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:38.620Z"
+    },
     "ded95009-eec9-483e-b0fd-1b290aa5a358": {
       "listeners": 20994,
       "lastfmName": "Kevin Cossom",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:57.411Z"
     },
+    "094825f4-824e-4ab9-9739-75b3d2328509": {
+      "listeners": 187675,
+      "lastfmName": "FaltyDL",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:38.894Z"
+    },
+    "b476bc5e-19ca-4e5a-82c8-1a068d601a7d": {
+      "listeners": 610461,
+      "lastfmName": "Nosaj Thing",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:39.131Z"
+    },
+    "13453b40-1d9c-4281-b73f-b7c1b45c7ebd": {
+      "listeners": 322554,
+      "lastfmName": "The Blue Nile",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:39.328Z"
+    },
     "5fee3020-513b-48c2-b1f7-4681b01db0c6": {
       "listeners": 4007565,
       "lastfmName": "Florence + the Machine",
-      "via": "name+mbid",
-      "fetchedAt": "2026-10-15T15:25:58.332Z"
+      "via": "page"
+    },
+    "b95ce3ff-3d05-4e87-9e01-c97b66af13d4": {
+      "listeners": 7971681,
+      "lastfmName": "Eminem",
+      "via": "page"
+    },
+    "c8d77fb8-7bb5-463a-a07d-06a59aa4edb7": {
+      "listeners": 50503,
+      "lastfmName": "diskJokke",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:39.733Z"
+    },
+    "3ca09fae-fdee-4771-bab9-244708515a98": {
+      "listeners": 1231835,
+      "lastfmName": "Omarion",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:39.928Z"
+    },
+    "32a83250-7e26-422d-b9ac-f4564343e9ce": {
+      "listeners": 2048462,
+      "lastfmName": "Peter Bjorn and John",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:40.134Z"
+    },
+    "9c306413-56b6-4ff6-982a-7e4b87d01340": {
+      "listeners": 365542,
+      "lastfmName": "Chilly Gonzales",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:40.357Z"
     },
     "10a9ff92-9637-4498-afea-7044b2ab0dc0": {
       "listeners": 2235318,
       "lastfmName": "Busta Rhymes",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:58.531Z"
+    },
+    "97b20fe3-0924-4a5f-9955-d0b5c5f9587f": {
+      "listeners": 1558285,
+      "lastfmName": "Santigold",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:40.593Z"
     },
     "ac190bb8-60cd-4b71-96af-0314391acc36": {
       "listeners": 59876,
@@ -2212,17 +5853,59 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:59.106Z"
     },
-    "0c77d34a-34e4-4247-b1cb-117820bd7ff2": {
-      "listeners": 1739,
-      "lastfmName": "JDiggz",
+    "8225a23e-4284-4722-a684-d0c840137c24": {
+      "listeners": 9953,
+      "lastfmName": "Kyoko",
       "via": "mbid",
-      "fetchedAt": "2026-10-15T15:25:59.287Z"
+      "fetchedAt": "2026-10-15T19:43:40.859Z"
+    },
+    "ddfd9b2f-186e-4b2c-ad09-01aa5380c225": {
+      "listeners": 1922773,
+      "lastfmName": "Robin Thicke",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:41.084Z"
+    },
+    "51e800e1-d646-48a4-a75f-69ddce0a375d": {
+      "listeners": 4608,
+      "lastfmName": "Richie Sosa",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:42.111Z"
     },
     "e6424fa5-08d3-41c6-96f3-8549f733708c": {
       "listeners": 1233550,
       "lastfmName": "Clipse",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:25:59.558Z"
+    },
+    "2b9c3601-17ca-420a-ab30-10db51e474b6": {
+      "listeners": 453773,
+      "lastfmName": "Rich Boy",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:42.366Z"
+    },
+    "03647192-f55b-42b2-9a74-db28fcae8fd1": {
+      "listeners": 931990,
+      "lastfmName": "Kardinal Offishall",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:42.557Z"
+    },
+    "0c77d34a-34e4-4247-b1cb-117820bd7ff2": {
+      "listeners": 1739,
+      "lastfmName": "JDiggz",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T15:25:59.287Z"
+    },
+    "cf15719f-51f9-4db8-a15d-5eed9664ce69": {
+      "listeners": 3070763,
+      "lastfmName": "Lupe Fiasco",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:43.215Z"
+    },
+    "1fecfb57-1420-4233-aad4-f213e584e801": {
+      "listeners": 3535,
+      "lastfmName": "Sean G",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:43.726Z"
     },
     "7f1d04a2-61da-4091-80df-eea6eb80959a": {
       "listeners": 2381,
@@ -2242,53 +5925,26 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:00.075Z"
     },
-    "cb15675b-24a4-4092-8554-61f03b6017d8": {
-      "listeners": 383,
-      "lastfmName": "Cookin’ Soul",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:00.380Z"
-    },
-    "4b55483b-12ab-4e7e-af17-1d4c8fd7d704": {
-      "listeners": 5830,
-      "lastfmName": "fknsyd",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:00.573Z"
-    },
-    "ac0d913b-cdd7-44d8-b1d9-a2c03ce3fb74": {
-      "listeners": null,
-      "lastfmName": null,
-      "via": "unknown",
-      "fetchedAt": "2026-10-15T14:43:51.384Z"
-    },
-    "c861c73c-eab6-48c0-bdb8-92ac2c9faf3d": {
-      "listeners": 3276,
-      "lastfmName": "X1-Y2",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:00.892Z"
-    },
     "860b2707-6153-4e3a-aa57-74d2b42c55b5": {
-      "listeners": 2892515,
+      "listeners": 2892821,
       "lastfmName": "Justice",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:01.073Z"
+      "via": "page"
+    },
+    "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
+      "listeners": 4671113,
+      "lastfmName": "Tame Impala",
+      "via": "page"
     },
     "fa1de503-aba7-41fa-a1ed-371b3e87a717": {
       "listeners": 813642,
       "lastfmName": "Madeon",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:01.309Z"
+      "via": "page"
     },
     "ce5662ec-63b2-4693-8bbc-1e9c373b6ecd": {
       "listeners": 68773,
       "lastfmName": "The Hics",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:01.609Z"
-    },
-    "5f95440d-7737-4a36-9bcf-c05337f7129b": {
-      "listeners": 1700606,
-      "lastfmName": "Denzel Curry",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:01.807Z"
     },
     "e931a3e9-483f-4b65-a277-fbf4153d884a": {
       "listeners": 81669,
@@ -2314,41 +5970,17 @@
       "via": "name",
       "fetchedAt": "2026-10-15T14:40:25.776Z"
     },
-    "6897b46a-9236-4480-9ed7-300f6b85d62f": {
-      "listeners": 525842,
-      "lastfmName": "Ninajirachi",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:02.755Z"
-    },
     "270bf8e5-6254-46e5-ac7e-20391c93ef38": {
       "listeners": 49198,
       "lastfmName": "Babylon",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:02.969Z"
     },
-    "c0b33710-195f-402b-ac50-71efeae1e5e9": {
-      "listeners": 116593,
-      "lastfmName": "k?d",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:03.343Z"
-    },
-    "05246c79-6133-4cbe-9ff8-9122ba618bb4": {
-      "listeners": 3086,
-      "lastfmName": "Isqa",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:04.067Z"
-    },
     "b0337af1-8d93-4671-b6c9-ba306bf942bf": {
       "listeners": 1386645,
       "lastfmName": "Central Cee",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:04.249Z"
-    },
-    "0aeea1ef-8d96-4556-8c4a-84b88ae271bb": {
-      "listeners": 714911,
-      "lastfmName": "Yebba",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:04.696Z"
     },
     "d4065b73-145c-4b82-a474-b622474dd5a1": {
       "listeners": 238120,
@@ -2380,23 +6012,11 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:06.475Z"
     },
-    "316dfa47-ead3-4265-92d5-aaa9792b4069": {
-      "listeners": 104579,
-      "lastfmName": "Blanke",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:06.676Z"
-    },
     "f576b153-85ea-4538-b28d-51c9552b50dd": {
       "listeners": 188646,
       "lastfmName": "Subtronics",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:07.161Z"
-    },
-    "4a00ec9d-c635-463a-8cd4-eb61725f0c60": {
-      "listeners": 2188475,
-      "lastfmName": "deadmau5",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:07.384Z"
     },
     "c63a05f5-25b8-42da-8ac5-1786549c2c13": {
       "listeners": 45971,
@@ -2458,11 +6078,15 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:09.752Z"
     },
+    "c3ecef5d-84f3-4942-8c24-0a626343c3f4": {
+      "listeners": 2231643,
+      "lastfmName": "The Drums",
+      "via": "page"
+    },
     "09095919-c549-4f33-9555-70df9dd941e1": {
       "listeners": 1217657,
       "lastfmName": "Mareux",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:10.456Z"
+      "via": "page"
     },
     "78471616-3cb4-4139-a148-aeac3c7d0f79": {
       "listeners": 679769,
@@ -2475,18 +6099,6 @@
       "lastfmName": "Colleen D’agostino",
       "via": "name",
       "fetchedAt": "2026-10-15T14:40:43.337Z"
-    },
-    "ed411d15-00f4-4e56-b264-94e0d2f64ffe": {
-      "listeners": 322648,
-      "lastfmName": "Loe Shimmy",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:10.873Z"
-    },
-    "779351de-0da5-4943-928b-495a3c40e8c0": {
-      "listeners": 25,
-      "lastfmName": "Jennie Of BLACKPINK",
-      "via": "alias",
-      "fetchedAt": "2026-10-15T14:43:56.258Z"
     },
     "7f4e8866-a462-4785-ae83-5c35adef2db3": {
       "listeners": 385837,
@@ -2513,10 +6125,9 @@
       "fetchedAt": "2026-10-15T14:40:49.794Z"
     },
     "1c294418-722f-45a3-a24d-910f9b6f1502": {
-      "listeners": 790218,
+      "listeners": 790278,
       "lastfmName": "Dillon Francis",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:12.647Z"
+      "via": "page"
     },
     "b5ec792e-bfb4-4e82-8a17-1a5a2ac37e53": {
       "listeners": 11530,
@@ -2590,23 +6201,11 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:16.764Z"
     },
-    "c046b587-5e98-4631-a5c0-e5d8e18d6b13": {
-      "listeners": 479359,
-      "lastfmName": "RL Grime",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:16.956Z"
-    },
     "e665ce26-6ce9-4c42-8f6a-7a361a0ba328": {
       "listeners": 662160,
       "lastfmName": "Fuerza Regida",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:17.297Z"
-    },
-    "33db34de-5419-4d4c-a45b-3dfd6b7d8a72": {
-      "listeners": 236970,
-      "lastfmName": "Virtual Riot",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:17.471Z"
     },
     "2b37ba5e-2162-46ca-bbad-f076f6a333bd": {
       "listeners": 359620,
@@ -2643,12 +6242,6 @@
       "lastfmName": "DUCKWRTH",
       "via": "name",
       "fetchedAt": "2026-10-15T14:41:06.004Z"
-    },
-    "ed9b7937-f78d-4ee3-b62b-f31021fe5881": {
-      "listeners": 38206,
-      "lastfmName": "KAVARI",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:18.656Z"
     },
     "a9ce7991-1972-448d-b7e2-e55d9778161b": {
       "listeners": 7235,
@@ -2725,8 +6318,7 @@
     "d89de379-665d-425c-b2e9-41b95d1edb36": {
       "listeners": 1228403,
       "lastfmName": "Silverstein",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:20.964Z"
+      "via": "page"
     },
     "4b2d0bc6-7c8a-4815-8269-49cff0c5ff60": {
       "listeners": 272664,
@@ -2764,12 +6356,6 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:22.578Z"
     },
-    "e849bea3-3c87-4655-8f27-84a0f83e61cb": {
-      "listeners": 10221,
-      "lastfmName": "Quackson",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:22.868Z"
-    },
     "f8b31706-94da-4216-b96d-34b35d0775cf": {
       "listeners": 16820,
       "lastfmName": "wreckno",
@@ -2806,12 +6392,6 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:23.879Z"
     },
-    "808c1fbb-ccfb-4b15-a541-72bec155e696": {
-      "listeners": 340983,
-      "lastfmName": "Dwele",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:24.144Z"
-    },
     "87777653-831f-4fea-ae48-ead81214ff33": {
       "listeners": 36069,
       "lastfmName": "FS Green",
@@ -2823,6 +6403,12 @@
       "lastfmName": "Don Mayor",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:24.751Z"
+    },
+    "01809552-4f87-45b0-afff-2c6f0730a3be": {
+      "listeners": 4613910,
+      "lastfmName": "Elvis Presley",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:43.914Z"
     },
     "4b62f375-7bff-49c2-ae7e-24b8de579ba8": {
       "listeners": 483074,
@@ -2863,14 +6449,7 @@
     "4449ccf6-c948-4d33-aa97-b6ad98ce4b5b": {
       "listeners": 3007406,
       "lastfmName": "Metric",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:26.427Z"
-    },
-    "c37cb509-b7fd-4212-a6fb-163535eba4c1": {
-      "listeners": 153654,
-      "lastfmName": "Peekaboo",
-      "via": "name",
-      "fetchedAt": "2026-10-15T14:41:27.502Z"
+      "via": "page"
     },
     "d0f61299-9caa-4e6b-8b10-2839de120b27": {
       "listeners": 705456,
@@ -2881,20 +6460,7 @@
     "e897ca8f-03ff-4405-9cf2-c71ab2950ddb": {
       "listeners": 1023318,
       "lastfmName": "EKKSTACY",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:27.172Z"
-    },
-    "c9cd225b-4883-428e-82c2-73e0b6282fb6": {
-      "listeners": 1127891,
-      "lastfmName": "Lil Durk",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:27.356Z"
-    },
-    "81d12ca7-5b89-4d21-8736-860b7400b4eb": {
-      "listeners": 2147168,
-      "lastfmName": "Baby Keem",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:27.624Z"
+      "via": "page"
     },
     "f9f9f6a1-693b-43da-bbeb-70395bb0a66a": {
       "listeners": 19730,
@@ -2903,10 +6469,9 @@
       "fetchedAt": "2026-10-15T15:26:27.807Z"
     },
     "bd075a82-b196-4752-a1bb-3d87be3236a0": {
-      "listeners": 457732,
+      "listeners": 457734,
       "lastfmName": "Totally Enormous Extinct Dinosaurs",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:28.285Z"
+      "via": "page"
     },
     "af2f7a27-c8ab-4960-abab-64b37bbbabd5": {
       "listeners": 1,
@@ -2968,41 +6533,17 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:30.233Z"
     },
-    "3bcff06f-675a-451f-9075-99e8657047e8": {
-      "listeners": 1337257,
-      "lastfmName": "Four Tet",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:30.457Z"
-    },
     "2e2c71a6-1ac8-4442-ba00-c4dea71abd64": {
       "listeners": 521882,
       "lastfmName": "Headie One",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:30.793Z"
     },
-    "25f3abd9-63b5-471a-bd25-feb9672dfa11": {
-      "listeners": 1951336,
-      "lastfmName": "ROSALÍA",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:31.085Z"
-    },
     "89d21333-d040-4602-9dac-b565651f5a92": {
       "listeners": 166398,
       "lastfmName": "Two Fingers",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:31.271Z"
-    },
-    "ad322b8b-31b2-437d-8fd8-1af13c1d7b91": {
-      "listeners": 831187,
-      "lastfmName": "Givēon",
-      "via": "name",
-      "fetchedAt": "2026-10-15T14:41:39.558Z"
-    },
-    "87ae83df-6173-40cc-a0f2-bad543faa6aa": {
-      "listeners": 1614986,
-      "lastfmName": "DaBaby",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:31.948Z"
     },
     "f9fdca15-1bef-43a0-8213-758b6ee0aa91": {
       "listeners": 648067,
@@ -3033,12 +6574,6 @@
       "lastfmName": "Kevin o Chris",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:33.794Z"
-    },
-    "a0d47559-6ffc-464a-a4d6-30777e5c76f7": {
-      "listeners": 128661,
-      "lastfmName": "Malaa",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:33.978Z"
     },
     "69cd6b76-fda3-48bf-8511-c654d49c3fae": {
       "listeners": 2860,
@@ -3131,22 +6666,15 @@
       "fetchedAt": "2026-10-15T15:26:40.458Z"
     },
     "e0e1a584-dd0a-4bd1-88d1-c4c62895039d": {
-      "listeners": 3859565,
+      "listeners": 3859989,
       "lastfmName": "Foster the People",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:41.028Z"
+      "via": "page"
     },
     "9a6ace62-1407-4a38-822b-ef26d527a76f": {
       "listeners": 912882,
       "lastfmName": "Quality Control",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:41.342Z"
-    },
-    "8ab5d936-49d1-415e-92c8-151e0e7dd912": {
-      "listeners": 1698831,
-      "lastfmName": "A$AP Ferg",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:42.467Z"
     },
     "d2b3524f-67e8-45ef-bfc1-693cac525135": {
       "listeners": 868208,
@@ -3239,16 +6767,19 @@
       "fetchedAt": "2026-10-15T14:41:59.925Z"
     },
     "f62a6ac4-664b-4035-9ab1-0b3ab8e1773e": {
-      "listeners": 202740,
+      "listeners": 202748,
       "lastfmName": "Ekali",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:47.597Z"
+      "via": "page"
+    },
+    "cba76057-c7d0-4ab9-a104-eb2ba4a6ecca": {
+      "listeners": 62895,
+      "lastfmName": "Jackal",
+      "via": "page"
     },
     "6bc0fa87-4d85-4387-94f0-f99094c32ea6": {
-      "listeners": 151891,
+      "listeners": 151901,
       "lastfmName": "Dr. Fresch",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:47.840Z"
+      "via": "page"
     },
     "2208428f-59d5-41d2-9537-5e47ce63562e": {
       "listeners": 189,
@@ -3291,18 +6822,6 @@
       "lastfmName": "やなぎなぎ",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:50.046Z"
-    },
-    "d9547d08-4c2e-47fc-9451-b8e3f889716e": {
-      "listeners": 453733,
-      "lastfmName": "Rich Homie Quan",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:50.362Z"
-    },
-    "a66145e9-2391-4e0f-93f8-357ddac7f3b6": {
-      "listeners": 86821,
-      "lastfmName": "The Widdler",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:50.541Z"
     },
     "d6a5d145-7bec-4c54-b2f9-80c5d41e9906": {
       "listeners": 16009,
@@ -3359,22 +6878,20 @@
       "fetchedAt": "2026-10-15T15:26:52.639Z"
     },
     "ba0e7638-0cd6-4ff4-8987-c3e224d22c23": {
-      "listeners": 2080935,
+      "listeners": 2081181,
       "lastfmName": "Kygo",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:52.816Z"
+      "via": "page"
+    },
+    "c5c2ea1c-4bde-4f4d-bd0b-47b200bf99d6": {
+      "listeners": 2802267,
+      "lastfmName": "The xx",
+      "via": "page"
     },
     "e38ae8a7-aeed-48ef-b74c-8f3489cdbba4": {
       "listeners": null,
       "lastfmName": null,
       "via": "unknown",
       "fetchedAt": "2026-10-15T14:43:59.527Z"
-    },
-    "c0fe9d3b-526c-491e-9814-a81571ebf2e5": {
-      "listeners": 332439,
-      "lastfmName": "Mat Zo",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:53.177Z"
     },
     "75a72702-a5ef-4513-bca5-c5b944903546": {
       "listeners": 3263635,
@@ -3424,12 +6941,6 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:56.479Z"
     },
-    "f8fb9acf-9e00-4c37-acce-1fd06abd8c0a": {
-      "listeners": 52646,
-      "lastfmName": "Lazy Rich",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:56.805Z"
-    },
     "f5e17326-eb32-457f-a986-1e0532507f32": {
       "listeners": 11802,
       "lastfmName": "Mack Maine",
@@ -3448,35 +6959,59 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:57.624Z"
     },
-    "b95ce3ff-3d05-4e87-9e01-c97b66af13d4": {
-      "listeners": 7970724,
-      "lastfmName": "Eminem",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:57.813Z"
-    },
-    "f82bcf78-5b69-4622-a5ef-73800768d9ac": {
-      "listeners": 1260471,
-      "lastfmName": "JAŸ-Z",
-      "via": "name",
-      "fetchedAt": "2026-10-15T14:38:23.080Z"
-    },
     "95220cb8-29a5-471e-93fa-4129b02bf94a": {
       "listeners": 10441,
       "lastfmName": "Cheshire",
       "via": "mbid",
       "fetchedAt": "2026-10-15T15:26:58.125Z"
     },
-    "4e481ad9-aa5d-4a1a-b2fc-444c0ad48b7e": {
-      "listeners": 20021,
-      "lastfmName": "James Fauntleroy",
-      "via": "mbid",
-      "fetchedAt": "2026-10-15T15:26:58.313Z"
-    },
     "d0fdef2f-9546-4d4d-9047-27c401490962": {
       "listeners": 154,
       "lastfmName": "LucidPP",
       "via": "name",
       "fetchedAt": "2026-10-15T14:42:35.015Z"
+    },
+    "65298e42-8d3c-4c02-be12-c6a55a91e308": {
+      "listeners": 11152,
+      "lastfmName": "Nicholas Allbrook",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:44.239Z"
+    },
+    "e6e63b7f-3819-4c48-a3f5-90e439bdea13": {
+      "listeners": 427824,
+      "lastfmName": "ericdoa",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:44.439Z"
+    },
+    "a98813f5-9b93-44c3-b479-b826c778f165": {
+      "listeners": 277675,
+      "lastfmName": "Veeze",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:45.409Z"
+    },
+    "d82481ab-4f2e-4fd7-af2f-9dbaa38704da": {
+      "listeners": 393974,
+      "lastfmName": "Babyface Ray",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:45.672Z"
+    },
+    "d1b04ab5-94e9-4130-96f0-e59dfa66555e": {
+      "listeners": 10596,
+      "lastfmName": "Virgil Abloh",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:45.979Z"
+    },
+    "187bbdde-343a-4978-9cb4-08df62e18986": {
+      "listeners": 355641,
+      "lastfmName": "Octavian",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:46.180Z"
+    },
+    "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97": {
+      "listeners": 588923,
+      "lastfmName": "Floating Points",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:46.381Z"
     },
     "ea6fb7f3-5f4c-4090-a006-3f5fc387d0eb": {
       "listeners": 108820,
@@ -3490,11 +7025,389 @@
       "via": "mbid",
       "fetchedAt": "2026-10-15T17:56:47.191Z"
     },
+    "99d40e84-b385-4185-a309-7c5d29b9c612": {
+      "listeners": 198,
+      "lastfmName": "Boi-1da",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:43:47.002Z"
+    },
+    "be0d7749-0974-48ba-93bb-6e974ec193a2": {
+      "listeners": 725626,
+      "lastfmName": "Pi’erre Bourne",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:47.579Z"
+    },
     "97b8d224-5660-419c-8dff-4b3bf0c33983": {
       "listeners": 4177729,
       "lastfmName": "The Neighbourhood",
       "via": "mbid",
       "fetchedAt": "2026-10-15T18:35:44.464Z"
+    },
+    "6a1b3002-c2c1-45c3-ab2a-95c493fa46c7": {
+      "listeners": 95533,
+      "lastfmName": "2:54",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:47.820Z"
+    },
+    "884491e6-9303-48bb-95d6-2549081c4705": {
+      "listeners": 74812,
+      "lastfmName": "Jonathan Boulet",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:48.303Z"
+    },
+    "13108baf-5129-47b5-a174-5f720012155a": {
+      "listeners": 943849,
+      "lastfmName": "Sleepy Hallow",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:48.481Z"
+    },
+    "c66efab7-0615-4387-b6d3-7bfe549d5017": {
+      "listeners": 83041,
+      "lastfmName": "Zack Bia",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:49.052Z"
+    },
+    "5b8ec72b-9e39-4a06-a2bf-964166b92a71": {
+      "listeners": 2100970,
+      "lastfmName": "Tory Lanez",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:49.247Z"
+    },
+    "7cc385f3-333c-48de-b341-3d728de74973": {
+      "listeners": 389341,
+      "lastfmName": "Vybz Kartel",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:49.479Z"
+    },
+    "5e23e428-d9f5-4679-bd7c-8254d6f0a437": {
+      "listeners": 424813,
+      "lastfmName": "Fcukers",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:49.762Z"
+    },
+    "90744b3e-363a-458e-8da1-e3e392a489c4": {
+      "listeners": 972947,
+      "lastfmName": "Wet Leg",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:49.949Z"
+    },
+    "d786f59b-1836-4ddb-8393-ab753edbe984": {
+      "listeners": 3110866,
+      "lastfmName": "Clairo",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:50.160Z"
+    },
+    "6ce5eca0-4ad6-49e0-a5ab-e11482d85324": {
+      "listeners": 397930,
+      "lastfmName": "Sudan Archives",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:50.465Z"
+    },
+    "85f40e9b-c639-4783-b621-80d873615e04": {
+      "listeners": 158601,
+      "lastfmName": "JUNGLEPUSSY",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:43:50.997Z"
+    },
+    "0ff4cd5b-3153-45ad-b965-79196c0b165b": {
+      "listeners": 198590,
+      "lastfmName": "Nu Genea",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:51.190Z"
+    },
+    "632258cb-4ab5-4f2d-be29-bcc641a275eb": {
+      "listeners": 354602,
+      "lastfmName": "Genesis Owusu",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:51.402Z"
+    },
+    "8411e087-f3a0-40ee-a2df-4ccd22ce742e": {
+      "listeners": 111786,
+      "lastfmName": "Sycco",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:51.912Z"
+    },
+    "ff1cafa3-7ed4-4ed2-afbb-d1f263d607a8": {
+      "listeners": 1291619,
+      "lastfmName": "Cuco",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:52.100Z"
+    },
+    "0b81bf13-c8f4-4852-95f0-86257b24d97b": {
+      "listeners": 51105,
+      "lastfmName": "Haiku Hands",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:52.431Z"
+    },
+    "d85defaf-b82e-48be-beb5-2672099e392e": {
+      "listeners": 157091,
+      "lastfmName": "Mdou Moctar",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:52.706Z"
+    },
+    "3feba7fa-3837-424a-b4f1-0077d217f569": {
+      "listeners": 1034564,
+      "lastfmName": "Yeasayer",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:52.926Z"
+    },
+    "b5a31e9b-1fa2-45f9-91f5-b3a25fb38038": {
+      "listeners": 433477,
+      "lastfmName": "Municipal Waste",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:53.141Z"
+    },
+    "cd5799f6-e6cf-4322-a659-96f5de4a2f6c": {
+      "listeners": 196682,
+      "lastfmName": "Altin Gün",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:43:53.557Z"
+    },
+    "8e4a41a5-6ec6-4042-b064-acd1cb51cf1b": {
+      "listeners": 393216,
+      "lastfmName": "Broncho",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:54.054Z"
+    },
+    "fa25f7cf-a3db-4809-8686-3a7d9c043b52": {
+      "listeners": 1018,
+      "lastfmName": "Hank Sullivant",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:54.376Z"
+    },
+    "5ff254a2-e2cd-428c-9a2b-d18881f028f6": {
+      "listeners": 292084,
+      "lastfmName": "Mini Mansions",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:54.559Z"
+    },
+    "425d627d-c005-421c-bab7-d9af398354c6": {
+      "listeners": 57412,
+      "lastfmName": "Koi Child",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:54.817Z"
+    },
+    "a3614a52-01f3-4f9d-999d-4bc650e2f2b1": {
+      "listeners": 103714,
+      "lastfmName": "Kirin J Callinan",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:55.400Z"
+    },
+    "5b933654-f58b-438c-8652-90567e5495a1": {
+      "listeners": 258534,
+      "lastfmName": "Jagwar Ma",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:55.602Z"
+    },
+    "99450990-b24e-4132-bb68-235f8c3e2564": {
+      "listeners": 1250086,
+      "lastfmName": "Alvvays",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:55.810Z"
+    },
+    "51b13502-903f-4c6c-b0a2-9cccfbfea9b1": {
+      "listeners": 186814,
+      "lastfmName": "Benjamin Booker",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:56.220Z"
+    },
+    "6d7b7cd4-254b-4c25-83f6-dd20f98ceacd": {
+      "listeners": 3637634,
+      "lastfmName": "M83",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:56.409Z"
+    },
+    "f2492c31-54a8-4347-a1fc-f81f72873bbf": {
+      "listeners": 3445747,
+      "lastfmName": "Mac DeMarco",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:56.791Z"
+    },
+    "e2305342-0bde-4a2c-aed0-4b88694834de": {
+      "listeners": 1160862,
+      "lastfmName": "Unknown Mortal Orchestra",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:56.980Z"
+    },
+    "ac80ca5c-8919-4e43-807c-28748c325287": {
+      "listeners": 122100,
+      "lastfmName": "Young Magic",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:57.346Z"
+    },
+    "3940a6c3-a334-4fc8-a5d5-1706f59118fe": {
+      "listeners": 76718,
+      "lastfmName": "Föllakzoid",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:57.653Z"
+    },
+    "5291a280-2205-405c-8ee4-ffc0f02f3d44": {
+      "listeners": 112712,
+      "lastfmName": "The Amazing",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:57.916Z"
+    },
+    "e7ea66e3-0b2c-4707-833b-920fe75451d1": {
+      "listeners": 10856,
+      "lastfmName": "The Growl",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:58.193Z"
+    },
+    "1f8e4ffd-b81b-4d10-91f4-461585bf9d16": {
+      "listeners": 498108,
+      "lastfmName": "Midnight Juggernauts",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:59.139Z"
+    },
+    "2f17f9f7-2df1-49d6-ab2b-7bb4ba580746": {
+      "listeners": 219244,
+      "lastfmName": "Jonathan Wilson",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:59.495Z"
+    },
+    "a1bcf3fd-dcf9-4437-b4f4-d8a6ab837396": {
+      "listeners": 4922,
+      "lastfmName": "Melody’s Echo Chamber",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:43:59.929Z"
+    },
+    "913e6848-6865-4717-ac5e-3bd9c22826be": {
+      "listeners": 621105,
+      "lastfmName": "Foxygen",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:00.329Z"
+    },
+    "1916fc94-bf9c-4ba2-90b0-22ebb5444d57": {
+      "listeners": 468088,
+      "lastfmName": "Temples",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:00.598Z"
+    },
+    "ecedc002-b517-4547-9362-b9e9b3ed4fbd": {
+      "listeners": 44759,
+      "lastfmName": "The Ghost of a Saber Tooth Tiger",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:01.032Z"
+    },
+    "42e49814-6058-431c-80e2-a3aab424060d": {
+      "listeners": 417071,
+      "lastfmName": "White Denim",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:01.441Z"
+    },
+    "664c3e0e-42d8-48c1-b209-1efca19c0325": {
+      "listeners": 2551077,
+      "lastfmName": "The National",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:01.621Z"
+    },
+    "46713d05-4143-4704-a9c3-71b482a13944": {
+      "listeners": 203579,
+      "lastfmName": "Boogarins",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:01.859Z"
+    },
+    "74de569e-d133-4ca5-9771-3fc237b57dbb": {
+      "listeners": 984,
+      "lastfmName": "Rey Fresco",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:02.134Z"
+    },
+    "729e57d9-6ea6-48bc-a973-dfd67480fa95": {
+      "listeners": 85773,
+      "lastfmName": "D.D Dumbo",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:02.412Z"
+    },
+    "e066d235-6af3-4b78-9b1e-bcf7ed360193": {
+      "listeners": 197976,
+      "lastfmName": "Delicate Steve",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:02.807Z"
+    },
+    "2d5b19d2-2e63-4416-a99e-044ab302811c": {
+      "listeners": 536192,
+      "lastfmName": "Never Shout Never",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:03.071Z"
+    },
+    "f84eb9cd-5685-45e6-a46c-0e0ac7ea4764": {
+      "listeners": 6,
+      "lastfmName": "Loren Humphrey",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:03.321Z"
+    },
+    "21ace711-b665-4094-9b3d-247a8838084d": {
+      "listeners": 87803,
+      "lastfmName": "Cameron Avery",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:03.577Z"
+    },
+    "5631df85-aa66-474f-b51c-46e2c647f5fc": {
+      "listeners": 48141,
+      "lastfmName": "Barbagallo",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:03.913Z"
+    },
+    "a6a4ca2a-40c8-4b96-80e7-d48b6c3d3ef1": {
+      "listeners": 4,
+      "lastfmName": "Dominic Simper",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:04.776Z"
+    },
+    "d275d916-efe9-4475-ac00-2eed2cb9bbbf": {
+      "listeners": 61,
+      "lastfmName": "Jay Watson",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:05.231Z"
+    },
+    "b9d953e7-e447-4ca6-9983-45ffa9cca628": {
+      "listeners": 322,
+      "lastfmName": "Adrian X",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:05.640Z"
+    },
+    "7bc625e3-1340-4f2c-8919-5dccf04be6b7": {
+      "listeners": 28,
+      "lastfmName": "Adrian Bent",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:06.152Z"
+    },
+    "f99b8427-69bd-41a5-b169-600ee1cf7475": {
+      "listeners": 25062,
+      "lastfmName": "Adam Blackstone",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:06.468Z"
+    },
+    "f52c8c93-1fa9-48c6-89e9-c1a1c0fcd857": {
+      "listeners": 394,
+      "lastfmName": "Nicole Garcia",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:06.807Z"
+    },
+    "f7a15fb6-058a-4dc6-95b0-c86142bf9050": {
+      "listeners": null,
+      "lastfmName": null,
+      "via": "unknown",
+      "fetchedAt": "2026-10-15T19:44:08.529Z"
+    },
+    "1eef7be5-e044-453e-9c26-0e7edf3b80c2": {
+      "listeners": 423,
+      "lastfmName": "DJ Spade",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:08.901Z"
+    },
+    "b26c1451-9b61-4b3f-9e61-4627de343acf": {
+      "listeners": 817,
+      "lastfmName": "denosh",
+      "via": "name",
+      "fetchedAt": "2026-10-15T19:44:09.466Z"
+    },
+    "9ca10859-49e2-44e3-b3d6-04c535207bc2": {
+      "listeners": 495899,
+      "lastfmName": "Knocked Loose",
+      "via": "mbid",
+      "fetchedAt": "2026-10-15T19:44:09.737Z"
     }
   }
 }

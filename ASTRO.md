@@ -49,6 +49,28 @@ data/, scripts/             stay where they are; scripts unchanged
 
 ## Phase B: data for the 49 extra artists
 
+**Status:** Phase A done and live (582b3cc, 2026-10-15). Phase B built 2026-10-15 (results in PROGRESS.md).
+
+**What happened when it ran** (problems found and fixed):
+- Spotify and Deezer both have empty duplicate pages. Beyoncé's first Spotify link had no photo; Daft Punk, Kygo and FERG's Deezer links had no albums. The script now tries every link from MusicBrainz and Wikidata and keeps the first real one.
+- Some Deezer pages still had implausible counts (Skrillex 0 fans, Metric 623, TEED 6, JID 3,670), probably leftover pages. Rule: under 1 Deezer fan per 100 Last.fm listeners → automatic caveat, Deezer left out of the score (Last.fm only).
+- Last.fm by plain name can hit the wrong artist ("Ye" is a smaller artist; Kanye West's page has 8.2M listeners). Extended artists now use the same verified lookup as cosigner fame (MusicBrainz ID, name, aliases), cached a week.
+- Genre comes from MusicBrainz's most-voted tag, so it can be quirky (Skrillex: "Brostep"); Rihanna: Pop, Gorillaz: Electronic.
+- Julian reviewed: Gorillaz = Essex, UK is fine; quirky genres stay for now.
+
+
+**In plain words:** artist pages will cover our 12 plus the top 5 cosigners of each (Rihanna, Ye, The Weeknd, Kendrick, Gorillaz, Daft Punk, Skrillex, J. Cole, Lady Gaga, Eminem, Beyoncé…). Today we only have photos, stats and hometowns for our 12. Phase B fetches those for the 49 too, so their pages aren't empty. Nothing new shows on the site yet; that's Phase C.
+
+1. **A new script makes the list.** `fetch-extended.mjs` works out each roster artist's top 5 cosigners nightly (same ranking as the chips) and saves them to `data/extended.json`. Generated, not hand-edited, because the list can change as data changes.
+2. **It finds their IDs on other services** (Wikidata, Spotify, Deezer) from MusicBrainz, the same way we found IDs for our 12. About 50 requests, ~1 minute.
+3. **The existing scripts include them:** photos (Spotify + Wikimedia, same licensing rules), hometown (MusicBrainz), genre (MusicBrainz genre tags; blank if none, never guessed), stats and score (Last.fm; Deezer fans only if the Deezer page checks out by having albums, otherwise the score uses Last.fm alone), upcoming shows (Ticketmaster, ID matching only).
+4. **Fame for the "Famous" sort:** Last.fm numbers for ~380 more artists (everyone our 12 cosigned), one-time few minutes, then cached a week.
+5. **Not done:** no crawl of their own song/tour history. Light pages only show cosigns we already have (links with our 12), as Julian chose.
+
+Spot-check before showing Julian: Rihanna, Ye, Gorillaz, Skrillex, Florence + the Machine (photo, hometown, numbers).
+
+**Technical details:**
+
 - **New `scripts/fetch-extended.mjs` → `data/extended.json`** (generated, rebuilt nightly): take each roster artist's top 5 cosigners (same ranking as the chips: fame, vouches, songs, last; from cosigns.json + tours.json + stats.json fame), dedupe, give each a slug id (collision with roster → suffix). Resolve IDs from MusicBrainz `url-rels` (Wikidata, Spotify, Deezer links) via `scripts/lib/musicbrainz.mjs`; Last.fm name from the existing fame lookup. ~50 MusicBrainz requests (~1 min).
 - **Existing scripts read roster + extended** (one helper, e.g. `scripts/lib/artists.mjs` → `loadArtists({ extended: true })`):
   - `fetch-sources.mjs`: Spotify + Wikimedia images (licensing rules unchanged).
