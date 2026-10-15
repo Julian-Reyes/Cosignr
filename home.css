@@ -375,6 +375,15 @@ nav a.active{ opacity: 1; border-bottom-color: var(--blue); }
 }
 .chip:hover{ transform: translateY(-1px); box-shadow: 0 3px 8px rgba(0,0,0,.1); }
 .chip.top{ background: var(--peach); }
+.demo-note{
+  margin: -4px 0 14px;
+  padding: 8px 12px;
+  font-size: .8em;
+  color: #9a5a2c;
+  background: #fff1e6;
+  border: 1px dashed var(--peach-dark);
+  border-radius: 8px;
+}
 .no-cosigns{ color: var(--muted); font-size: .85em; font-style: italic; }
 
 .stat{ text-align: right; min-width: 130px; }

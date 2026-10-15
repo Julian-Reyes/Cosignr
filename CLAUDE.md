@@ -19,7 +19,7 @@ cosignr/
   scripts/fetch-sources.mjs  Pulls image URLs + credits from free sources
   scripts/fetch-stats.mjs    Pulls stats; Last.fm only if LASTFM_API_KEY is in .env or the env
   scripts/fetch-cosigns.mjs  Pulls cosigns from MusicBrainz credits (~3 min, 1 req/s)
-  .github/workflows/refresh-data.yml  Nightly run of both scripts, commits data/
+  .github/workflows/site.yml  Nightly: run fetch scripts + commit data/. Every run and push: deploy to Pages
   images/press/           Press-kit photos, named <artist-id>.jpg. Only with permission
   *.png (root)            Original 2019 mockup images ("Original" source). Some have text baked in
   indexOld.html           Untouched copy of the original page. Don't edit

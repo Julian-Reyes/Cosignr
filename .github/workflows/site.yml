@@ -1,0 +1,69 @@
+# Refreshes data/ nightly and publishes the site to GitHub Pages.
+#   - Nightly (schedule) or "Run workflow" button: refresh data, commit it, then deploy
+#   - Push to main: deploy only
+# Needs: Settings → Pages → Source: "GitHub Actions", and the LASTFM_API_KEY repository secret
+# (without it, Last.fm is skipped and everything else still updates).
+name: Refresh data and deploy
+
+on:
+  schedule:
+    - cron: "17 6 * * *"   # daily, 06:17 UTC (GitHub often starts scheduled runs late)
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write   # commit refreshed data
+  pages: write      # deploy to Pages
+  id-token: write   # required by deploy-pages
+
+concurrency:
+  group: site
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/fetch-sources.mjs
+      - run: node scripts/fetch-stats.mjs
+        env:
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+      - run: node scripts/fetch-cosigns.mjs   # ~3 min: MusicBrainz allows 1 request/second
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "Refresh data $(date -u +%F)"
+          git push
+
+  deploy:
+    needs: refresh
+    # Run after a successful refresh, or on its own for pushes (when refresh is skipped).
+    if: always() && needs.refresh.result != 'failure' && needs.refresh.result != 'cancelled'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # includes the data commit the refresh job just pushed
+      - name: Collect site files
+        # Only what the browser needs; scripts, docs and indexOld.html stay out.
+        run: |
+          mkdir _site
+          cp -r index.html home.css js data images *.png _site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

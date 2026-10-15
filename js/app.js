@@ -325,8 +325,8 @@ function bindEvents() {
     if (btn) {
       const id = btn.dataset.cosign;
       const name = BY_ID[id].name;
-      if (state.cosigned.delete(id)) toast(`Removed your cosign from ${name}`);
-      else { state.cosigned.add(id); toast(`You cosigned ${name}`); }
+      if (state.cosigned.delete(id)) toast(`Removed your cosign from ${name} (demo, not saved yet)`);
+      else { state.cosigned.add(id); toast(`You cosigned ${name} (demo, not saved yet)`); }
       renderTrending();
     }
   });

@@ -98,7 +98,7 @@ Not covered yet: shout-outs, tour support and label signings. These will come fr
 
 **Refresh stats:** `node scripts/fetch-stats.mjs`. Works without keys (Deezer only). For Last.fm, create a free API account at https://www.last.fm/api/account/create and put the key in a `.env` file in the project root: `LASTFM_API_KEY=...`. `.env` is git-ignored, so it is never committed.
 
-**Nightly refresh:** `.github/workflows/refresh-data.yml` runs all three scripts every day at 06:17 UTC and commits any changes to `data/`. To include Last.fm, add the key as a repository secret called `LASTFM_API_KEY` (GitHub → Settings → Secrets and variables → Actions). You can also start it by hand from the Actions tab ("Run workflow").
+**Nightly refresh and deploy:** `.github/workflows/site.yml` runs all three scripts every day around 06:17 UTC (GitHub often starts it late), commits any changes to `data/`, then publishes the site to https://julian-reyes.github.io/Cosignr/. Every push to `main` also republishes (without refreshing data). Because the bot commits to GitHub every night, run `git pull` before you start editing. To include Last.fm, add the key as a repository secret called `LASTFM_API_KEY` (GitHub → Settings → Secrets and variables → Actions). You can also start it by hand from the Actions tab ("Run workflow").
 
 ## What's next
 

@@ -65,8 +65,10 @@ Goal: every section renders from one data file, no text is baked into images, an
 - ⬜ `data/cosigns.json` is 790KB (160KB gzipped). Split per artist once artist pages exist
 
 ### 4. Infrastructure
-- 🟡 GitHub Action `.github/workflows/refresh-data.yml`: nightly 06:17 UTC + manual run, runs all three fetch scripts, commits `data/`. `LASTFM_API_KEY` secret added; not yet run on GitHub
-- ⬜ Pages deploy: currently not live. Plan: Pages source "GitHub Actions" with the nightly job deploying, so data commits always publish (deferred by Julian 2026-10-14)
+- ✅ Nightly data refresh: first scheduled run 2026-10-15 worked (Last.fm secret used, data committed by github-actions[bot])
+- 🟡 Pages deploy: `.github/workflows/site.yml` (replaces refresh-data.yml) refreshes nightly then deploys; pushes to main deploy only. Julian sets Settings → Pages → Source: GitHub Actions. URL: https://julian-reyes.github.io/Cosignr/
+- ✅ Demo notes: login/sign-up modal and Cosign button say accounts aren't live yet
+- ⬜ Architecture decision before artist pages: Astro (+ React islands) vs Next.js static export. Leaning Astro; Julian usually uses React/Vite. Both deploy to Pages the same way
 - ✅ Store daily snapshots (`data/snapshots/`)
 - ⬜ Accounts + user cosigns (Supabase or Firebase)
 - ⬜ Artist detail page
