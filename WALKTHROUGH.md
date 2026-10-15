@@ -77,9 +77,17 @@ A cosign is one artist publicly vouching for another. They come from MusicBrainz
 - **Remix:** if Jackal remixed a Diplo song, Diplo cosigned Jackal (official remixes are approved by the original artist).
 - **Collab:** "Saba & No I.D." counts both ways.
 
-All songs between the same two artists are grouped into one cosign. The "Cosigned by" chips show each artist's strongest four. Features and remixes rank above plain collabs, because collabs are often old duo partners or joint albums rather than vouching. Hover a chip to see the song behind it.
+All songs between the same two artists are grouped into one cosign. The "Cosigned by" chips show each artist's top four, **most famous cosigner first**, using Last.fm listener counts. A feature from Ye counts for more than ten songs with an unknown local act. Ties go to whoever has more features and remixes together. Hover a chip to see the song behind it.
 
-Some things are filtered out because MusicBrainz credits them in ways that aren't cosigns: DJ mixes and mashups (which list everyone sampled), and band members "cosigning" their own band. Run it with `node scripts/fetch-cosigns.mjs`. It takes about 3 minutes, because MusicBrainz only allows one request per second.
+Some things are filtered out because they aren't real cosigns:
+- **Bootlegs and fan-made songs.** Only songs on an official release count, so a 2010 fan mashup tape doesn't make Coldplay a Drake cosigner.
+- **Posthumous releases.** A song released after the cosigner died (or after a band split up) doesn't count. A cosign means the artist vouched personally, not their estate.
+- **DJ mixes and mashups**, which list everyone sampled.
+- **Band members** "cosigning" their own band.
+
+Run it with `node scripts/fetch-cosigns.mjs`. It takes about 7 minutes, because MusicBrainz only allows one request per second. Death and breakup dates are saved in `data/cache/`, so only the first run is slower.
+
+Fame comes from Last.fm and is looked up by `fetch-stats.mjs`, so run that after the cosigns script. If Last.fm's page might belong to a different artist with the same name, that cosigner is treated as unknown and ranks lower, which is better than ranking them wrongly.
 
 Not covered yet: shout-outs, tour support and label signings. These will come from a hand-curated file and Setlist.fm.
 

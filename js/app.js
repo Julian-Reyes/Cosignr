@@ -116,13 +116,17 @@ function renderTabs() {
 
 // ---------- cosigns ----------
 
-// For each roster artist: everyone who cosigned them, strongest first (most songs, then most recent).
+// For each roster artist: everyone who cosigned them, most famous first (Last.fm listeners),
+// then most features/remixes, most songs, most recent. Cosigners with unknown fame go last.
 function buildCosignedBy(data) {
   const byMbid = Object.fromEntries(DATA.artists.map(a => [a.ids.musicbrainz, a.id]));
   const out = Object.fromEntries(DATA.artists.map(a => [a.id, []]));
   for (const c of data.cosigns) {
     const id = byMbid[c.to];
-    if (id) out[id].push({ ...c, name: data.artists[c.from].name });
+    if (id) out[id].push({ ...c, name: data.artists[c.from].name, fame: STATS.cosigners?.[c.from]?.listeners ?? -1 });
+  }
+  for (const list of Object.values(out)) {
+    list.sort((x, y) => y.fame - x.fame || y.vouches - x.vouches || y.songs - x.songs || (y.last || "").localeCompare(x.last || ""));
   }
   return out;
 }

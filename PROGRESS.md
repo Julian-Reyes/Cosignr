@@ -63,7 +63,11 @@ Goal: every section renders from one data file, no text is baked into images, an
 - ✅ "Cosigned by" chips are real (top 4, hover shows the song and year); search matches every cosigner; demo `cosignedBy` removed
 - ⬜ Curated cosigns (`data/cosigns-curated.json`) for things MusicBrainz misses: shout-outs, tour support, label signings. Each needs a source URL
 - ⬜ Setlist.fm tour support (needs a free API key)
-- ⬜ Rank cosigners by their own prominence too (needs Last.fm listeners for non-roster artists)
+- ✅ Rank cosigners by fame (Julian: fame counts most): Last.fm listeners for ~620 cosigners in `stats.json` → `cosigners`, cached 7 days. Lookup by MusicBrainz ID, then name, then MusicBrainz aliases (Ye → Kanye West); name matches carrying a different ID are rejected
+- ✅ Official releases only (drops bootlegs, fan mashup tapes, DJ edits; found via Coldplay → Drake, Oasis → Porter Robinson), plus "bootleg" in the title. Uses both `artist=` and `track_artist=` release lists (track_artist alone missed releases credited to the artist)
+- ✅ No posthumous cosigns (song released after the cosigner died or split up), dates cached in `data/cache/mb-lifespans.json`
+- ⬜ Known gap: 7 cosigners share a Last.fm page with a namesake (NERO, EPROM, JENNIE, EDDIE…) so have unknown fame. Possible fix later: Wikidata or Deezer as a second fame source
+- ⬜ **Before scaling the roster:** a full MusicBrainz run is ~450 requests (~8 min at 1 req/s), and Drake is half of it. Time grows with each artist's catalog, so hundreds of artists means hours. Plan, in order: (1) incremental runs that only fetch what changed since last time, plus a weekly full refresh; (2) refresh a slice of the roster each night; (3) at hundreds+ artists, download the free MusicBrainz database dumps and query our own copy (no rate limit). Cosigns and stats then live in a real database (Supabase) instead of JSON files
 - ⬜ `data/cosigns.json` is 790KB (160KB gzipped). Split per artist once artist pages exist
 
 ### 4. Infrastructure
@@ -84,3 +88,4 @@ Goal: every section renders from one data file, no text is baked into images, an
 - **2026-10-14 (night):** Last.fm key added and first full run done. Scores now 32–89 with Last.fm + Deezer. Verified Last.fm pages per artist (see Milestone 1 §3).
 - **2026-10-15:** Real cosigns from MusicBrainz (`fetch-cosigns.mjs`, 1,616 cosigns). Chips and search now use them; demo cosigns removed. Added mashup, band-member and ranking fixes after reviewing each artist's top cosigners. Nightly job runs it too.
 - **2026-10-15 (later):** Pages deploy workflow + demo notes. Decided Astro + React for the next phase. Hometowns from MusicBrainz (`fetch-profiles.mjs`); shared MusicBrainz client in `scripts/lib/`.
+- **2026-10-15 (evening):** Step 7: cosigners ranked by Last.fm fame; official-release and posthumous filters; fixed Last.fm "+" encoding (Florence + the Machine). 1,279 cosigns. Reviewed every roster artist's top 4. Added scaling plan for hundreds of artists.
