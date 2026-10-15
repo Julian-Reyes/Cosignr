@@ -2,6 +2,18 @@
 
 Status key: ✅ done · 🟡 in progress · ⬜ not started
 
+## Next up (as of 2026-10-15)
+
+Remaining items, in rough order. Julian wants a check-in before each one starts (propose a plan, wait for OK). Details are in the sections below.
+
+1. **Rising rankings (step 4):** rank changes (▲/▼) and "rising this week" from `data/snapshots/`. Wait until ~2026-10-21 (a week of snapshots), then agree the formula with Julian before building.
+2. **Stats on phones (step 3):** the Trending stat column is hidden below 1100px. Waiting for Julian to check on his phone and say what he wants.
+3. **"Who cosigned who" graph (step 10):** a visual graph of cosigns. Not designed yet.
+4. **Accounts and real user cosigns (step 11):** Supabase. The login modal and Cosign button are demo-only for now.
+5. **Maybe: hand-curated cosigns (step 5):** shout-outs and label signings with a source URL. Julian said "possibly"; don't build until decided.
+6. **Small:** set `site` in `astro.config.mjs` to `https://julianreyes.dev` (the Pages URL redirects there; only affects full URLs like share previews).
+7. **Later:** scaling plan for hundreds of artists (see Milestone 1 §3), and full catalogs for the extended artists (they're light pages today).
+
 ## Milestone 0: data-driven page and image sources 🟡
 
 Goal: every section renders from one data file, no text is baked into images, and the three image sources can be compared side by side.
