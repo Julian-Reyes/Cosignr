@@ -118,9 +118,21 @@ Not covered yet: shout-outs and label signings, which will come from a hand-cura
 
 The script also prints any artist whose typed hometown differs from MusicBrainz, so you can decide which is right.
 
+## Artist pages
+
+Every artist with a page lives at `/Cosignr/artist/<id>/`, for example `/Cosignr/artist/travis-scott/`. A page shows:
+- **Photo and numbers:** genre, hometown, Cosignr score, Last.fm listeners and plays, Deezer fans. A faded number is left out of the score; hover it to see why. Plus a Spotify button.
+- **Upcoming shows** from Ticketmaster, when there are any. Shows disappear once they've happened.
+- **Cosigned by:** everyone who vouched for this artist, most famous first. Each row says what happened ("Took Travis Scott on tour: Anti World Tour (2016)") and links to where we found it.
+- **Cosigns:** everyone this artist vouched for, sorted by **Strongest** (most vouches), **Recent** or **Famous**.
+
+Each list shows 10 at first. "Show more" adds 10 at a time. The full list is a separate small file that only downloads when you ask for more, so pages stay quick even for Drake (about 200 cosigns each way).
+
+Names link to that artist's Cosignr page if they have one. Otherwise they link to MusicBrainz (dotted underline). On the home page, clicking a Featured tile, an artist's name or a cosigner chip opens that artist's page.
+
 ## Who gets an artist page
 
-Artist pages are coming (phase C in `ASTRO.md`). For now that's our 12 hand-picked artists plus the **top 5 cosigners of each**: 49 more, like Rihanna, Ye, Gorillaz, Skrillex and Florence + the Machine. Later it could be hundreds or thousands.
+That's our 12 hand-picked artists plus the **top 5 cosigners of each**: 49 more, like Rihanna, Ye, Gorillaz, Skrillex and Florence + the Machine. Later it could be hundreds or thousands.
 
 `node scripts/fetch-extended.mjs` picks them every night. It uses the same ranking as the "Cosigned by" chips, so the list can change as new cosigns appear, and it saves the list to `data/extended.json`. It also finds each artist's Wikidata, Spotify and Deezer pages through MusicBrainz, so the other scripts can fetch their photo, numbers, hometown and genre like they do for our 12.
 

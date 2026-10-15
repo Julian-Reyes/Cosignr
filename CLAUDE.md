@@ -16,7 +16,9 @@ cosignr/
   src/lib/cosigns.js      mergeCosigns() + byCosignerFame: one merge/ranking for the site AND the scripts
   src/lib/data.js         BUILD TIME ONLY: loads data/*.json, merges cosigns + tours + upcoming, hover text
   src/lib/shared.js       Used in both build and browser: metrics, image picking, esc/fmt, toast, view state
-  src/components/*.jsx    React islands: TrendingList, AuthModal, DevPanel
+  src/pages/artist/[id].astro  Artist page for every roster + extended artist (/Cosignr/artist/<id>/)
+  src/pages/artist/[id].json.js  That artist's full Cosigned by + Cosigns lists, fetched only on "Show more"/sort
+  src/components/*.jsx    React islands: TrendingList, CosignList (artist page lists), AuthModal, DevPanel
   src/scripts/site.js     Browser script on every page: image-source switching, header search, nav, Shift+D
   src/styles/home.css     All styles. Color tokens on :root (blue #4BD6FF, peach #FEC39B, nav #333)
   data/artists.json       HAND-CURATED source of truth (names, IDs, featured/trending/top lists)
@@ -60,6 +62,7 @@ Refresh generated data, in this order: `node scripts/fetch-cosigns.mjs`, `node s
 ## Rules
 
 - **Never invent real-world facts presented as real.** Anything placeholder lives under an artist's `demo` key in artists.json and should be labelled as demo in the UI once real data exists. Unknown facts are `null`, not guesses.
+- **Artist page lists show 10 rows, then "Show more" adds 10** (Julian, 2026-10-15); the rest comes from the per-artist JSON. "Cosigns" sort tabs: Strongest (default) / Recent / Famous. Islands with buttons use `client:load`: `client:visible` lost the first click.
 - **Who gets an artist page (Julian, 2026-10-15):** the 12 roster artists plus the top 5 cosigners of each (`data/extended.json`, ~49). Extended artists are **light pages**: photo, stats, hometown, genre, upcoming shows, and only the cosigns we already have with the roster. Their own catalogs are not crawled. Hundreds or thousands of pages come later (see the scaling plan in PROGRESS.md).
 - **Genre:** hand-written in artists.json wins; otherwise the most-voted MusicBrainz genre (`profiles.json`), title-cased; null if none.
 - **Hometown = where the artist was born (person) or formed (group)** (Julian, 2026-10-15). Hand-written `hometown` in artists.json wins; otherwise MusicBrainz begin-area, then area. Never blank if MusicBrainz has anything; country-only ("United Kingdom") is fine. Generated hometowns look the same as hand-written ones on the page.

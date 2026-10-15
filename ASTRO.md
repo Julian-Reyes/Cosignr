@@ -86,6 +86,18 @@ Spot-check before showing Julian: Rihanna, Ye, Gorillaz, Skrillex, Florence + th
 
 ## Phase C: artist pages
 
+**Status:** done 2026-10-15. Julian: "looks great", plus whole Featured tiles should open the artist page (added).
+
+**What was built:**
+- 61 pages at `/Cosignr/artist/<id>/` (12 roster + 49 extended), plus one `/Cosignr/artist/<id>.json` each with the full lists (Drake's is the biggest: 172 KB, about 25 KB compressed, loaded only on "Show more" or a sort tab).
+- Each page: photo + credit, genre · hometown, Cosignr score and Last.fm/Deezer numbers (numbers left out of the score are faded with the reason on hover), Listen on Spotify, MusicBrainz link, Upcoming shows (Ticketmaster), **Cosigned by** (most famous first) and **Cosigns** (tabs Strongest / Recent / Famous). Every list row shows the evidence in words, each linked to its source.
+- Names in the lists link to the artist's Cosignr page if they have one, otherwise to MusicBrainz (dotted underline).
+- Home page: clicking anywhere on a Featured tile opens that artist's page (Julian's request; play button, chips and photo credit stay separate links). Artist names in Trending and Top link to their pages; cosigner chips link to the cosigner's page. Because the chips show each artist's top 4 cosigners and the top 5 all get pages, every chip on the home page is now a link, so "click a chip to filter Trending by that cosigner" no longer happens there (search still does it).
+- Footer gets a "Data:" line crediting MusicBrainz (CC0), Wikipedia (CC BY-SA), Last.fm, Deezer and Ticketmaster. Photo credits list only the photos on that page.
+- Found while testing: lists that started working only once scrolled into view lost the first "Show more" click; they now start right away. The cosigner chips on the big Featured tile were never clickable (the photo sat on top of them); fixed with the tile link.
+
+**Original plan:**
+
 - **Route `src/pages/artist/[id].astro`** with `getStaticPaths()` over roster + extended → `/Cosignr/artist/travis-scott/`. Also **`src/pages/artist/[id].json.js`** emitting that artist's full Cosigned-by and Cosigns lists, fetched only on "Show more" or a non-default sort (this also does the PROGRESS item "split cosigns.json per artist").
 - **Page sections** (existing look: blue top bar, dark nav, peach/blue chips, Nunito):
   1. **Header:** photo + credit, name, genre · hometown, Cosignr score + Last.fm listeners/plays + Deezer fans (same caveat handling as Trending), "Listen on Spotify".

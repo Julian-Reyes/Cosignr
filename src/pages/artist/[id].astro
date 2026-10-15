@@ -1,0 +1,87 @@
+---
+// Artist page: photo, stats, upcoming shows, who cosigned them and who they cosign.
+// Built for the roster and the extended artists (data/extended.json); see ASTRO.md phase C.
+import Base from "../../layouts/Base.astro";
+import CosignList from "../../components/CosignList.jsx";
+import { PAGES, IMAGES, BASE, hometown, genre, artistLists, upcomingFor, statsFor } from "../../lib/data.js";
+import { DEFAULT_SOURCE, imageHtml, creditHtml, fmt } from "../../lib/shared.js";
+
+export function getStaticPaths() {
+  return PAGES.map(a => ({ params: { id: a.id }, props: { artist: a } }));
+}
+
+const PAGE_SIZE = 10;
+const { artist: a } = Astro.props;
+const img = IMAGES[a.id];
+const { cosignedBy, cosigns } = artistLists(a);
+const shows = upcomingFor(a);
+const stats = statsFor(a);
+const meta = [genre(a), hometown(a)].filter(Boolean).join(" · ");
+const jsonUrl = `${BASE}artist/${a.id}.json`;
+const credit = creditHtml(img, DEFAULT_SOURCE);
+---
+<Base title={`${a.name} · Cosignr`} images={{ [a.id]: img }}>
+  <main class="main artist-page">
+    <section class="artist-hero">
+      <div class="hero-photo" data-img={a.id} data-focus="center 25%">
+        <Fragment set:html={imageHtml(img, a.name, DEFAULT_SOURCE, { focus: "center 25%" })} />
+        <Fragment set:html={credit.replace(/^<(a|span) /, `<$1 data-credit="${a.id}" `) || `<span hidden data-credit="${a.id}"></span>`} />
+      </div>
+      <div class="hero-info">
+        <h1>{a.name}</h1>
+        {meta && <p class="meta">{meta}</p>}
+        <div class="hero-stats">
+          <div class="score" title="0–100, from Deezer fans and Last.fm listeners/plays on a log scale">
+            <b>{stats.score ?? "–"}</b><small>Cosignr score</small>
+          </div>
+          {stats.rows.map(r => (
+            <div class={`hero-stat${r.note ? " excluded" : ""}`} title={r.note || undefined}>
+              <b>{fmt(r.raw)}</b>
+              <small>{r.label}{r.note ? " *" : ""}</small>
+            </div>
+          ))}
+        </div>
+        <div class="hero-actions">
+          {a.ids.spotify && <a class="btn-spotify" href={`https://open.spotify.com/artist/${a.ids.spotify}`} target="_blank" rel="noopener"><svg class="icon"><use href="#i-play"/></svg>Listen on Spotify</a>}
+          <a class="btn-source" href={`https://musicbrainz.org/artist/${a.ids.musicbrainz}`} target="_blank" rel="noopener">MusicBrainz</a>
+        </div>
+        {stats.rows.some(r => r.note) && <p class="hero-note">* Left out of the score: hover it to see why.</p>}
+        {a.extended && <p class="hero-note">Only cosigns involving artists Cosignr tracks so far are shown for {a.name}.</p>}
+      </div>
+    </section>
+
+    {shows.length > 0 && (
+      <section class="upcoming" id="upcoming">
+        <div class="section-head"><div><h2>Upcoming shows</h2><p>Announced on Ticketmaster. Shows disappear once they've happened.</p></div></div>
+        <ul class="show-list">
+          {shows.map(s => (
+            <li data-until={s.until}>
+              <b>{s.headliner ? <><a href={s.href}>{s.name}</a> opens for {a.name}</> : <>{a.name} opens for <a href={s.href}>{s.name}</a></>}</b>
+              <span>{s.tour} · next show {s.next}{s.city ? ` in ${s.city}` : ""}{s.shows > 1 ? ` · ${s.shows} shows` : ""}</span>
+              <a class="tickets" href={s.url} target="_blank" rel="noopener">Ticketmaster</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <CosignList client:load id="cosigned-by" list="cosignedBy" title="Cosigned by"
+      sub={`Artists who vouched for ${a.name}: featured them, remixed them, took them on tour. Most famous first.`}
+      initial={cosignedBy.slice(0, PAGE_SIZE)} total={cosignedBy.length} jsonUrl={jsonUrl}
+      empty={`No cosigns found for ${a.name} yet.`} />
+
+    <CosignList client:load id="cosigns" list="cosigns" title="Cosigns"
+      sub={`Artists ${a.name} vouched for: features, remixes, tour openers, touring band.`}
+      initial={cosigns.slice(0, PAGE_SIZE)} total={cosigns.length} jsonUrl={jsonUrl}
+      sorts={["strongest", "recent", "famous"]}
+      empty={`${a.name} hasn't cosigned anyone we know of yet.`} />
+  </main>
+
+  <script>
+    // Hide shows that have happened since the last build (Ticketmaster data is live, not a record).
+    const today = new Date().toISOString().slice(0, 10);
+    document.querySelectorAll("[data-until]").forEach(li => { if (li.dataset.until < today) li.remove(); });
+    const list = document.querySelector(".show-list");
+    if (list && !list.children.length) list.closest("section").remove();
+  </script>
+</Base>

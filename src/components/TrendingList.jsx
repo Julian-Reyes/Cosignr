@@ -71,14 +71,16 @@ export default function TrendingList({ rows, metrics, images }) {
               <div className="rank"><b>{v == null ? "–" : rank}</b></div>
               <div className="avatar" dangerouslySetInnerHTML={{ __html: imageHtml(images[r.id], r.name, view.source, { size: "thumb", focus: "center 25%", dev: view.dev }) }} />
               <div>
-                <h3>{r.name}</h3>
+                <h3><a className="artist-link" href={r.href}>{r.name}</a></h3>
                 <div className="meta">{[r.genre, r.hometown].filter(Boolean).join(" · ")}</div>
                 <div className="cosigns">
                   <h5>Cosigned by</h5>
                   {r.chips.length
-                    ? r.chips.map((c, j) => (
-                        <button key={c.name} className={`chip${j === 0 ? " top" : ""}`} title={c.title} type="button" onClick={() => searchFor(c.name)}>{c.name}</button>
-                      ))
+                    ? r.chips.map((c, j) => c.href
+                        // Cosigners with an artist page link to it; others filter the list by that cosigner.
+                        ? <a key={c.name} className={`chip${j === 0 ? " top" : ""}`} title={c.title} href={c.href}>{c.name}</a>
+                        : <button key={c.name} className={`chip${j === 0 ? " top" : ""}`} title={c.title} type="button" onClick={() => searchFor(c.name)}>{c.name}</button>
+                      )
                     : <span className="no-cosigns">No cosigns found yet</span>}
                 </div>
               </div>

@@ -73,7 +73,7 @@ Goal: every section renders from one data file, no text is baked into images, an
 - ✅ No posthumous cosigns (song released after the cosigner died or split up), dates cached in `data/cache/mb-lifespans.json`
 - ⬜ Known gap: 7 cosigners share a Last.fm page with a namesake (NERO, EPROM, JENNIE, EDDIE…) so have unknown fame. Possible fix later: Wikidata or Deezer as a second fame source
 - ⬜ **Before scaling the roster:** a full MusicBrainz run is ~450 requests (~8 min at 1 req/s), and Drake is half of it. Time grows with each artist's catalog, so hundreds of artists means hours. Plan, in order: (1) incremental runs that only fetch what changed since last time, plus a weekly full refresh; (2) refresh a slice of the roster each night; (3) at hundreds+ artists, download the free MusicBrainz database dumps and query our own copy (no rate limit). Cosigns and stats then live in a real database (Supabase) instead of JSON files
-- ⬜ `data/cosigns.json` is 790KB (160KB gzipped). Split per artist once artist pages exist
+- ✅ Split cosigns per artist: pages carry 10 rows per list, the rest is in `/artist/<id>.json` (data files themselves aren't published)
 
 ### 4. Infrastructure
 - ✅ Nightly data refresh: first scheduled run 2026-10-15 worked (Last.fm secret used, data committed by github-actions[bot])
@@ -83,10 +83,10 @@ Goal: every section renders from one data file, no text is baked into images, an
 - ✅ Phase A (2026-10-15): home page ported to Astro 7.3.5 + React 19.2.8 with an identical look (before/after screenshots matched; tabs, search, chips, Show More, modal, dev panel and image switching click-tested). Data is read at build time, so the browser no longer downloads cosigns.json (624 KB). Deploy job builds with `npm ci && npm run build` on Node 22
 - ✅ Phase B (2026-10-15): `scripts/fetch-extended.mjs` → `data/extended.json` (49 artists: top 5 cosigners of each roster artist). Sources, profiles (now also genre), stats and upcoming cover all 61. Fame now also covers artists our roster cosigned (917 linked artists). Fixes found on the way: Spotify/Deezer duplicate pages (Beyoncé, Daft Punk, Kygo, FERG), implausible Deezer counts get an automatic caveat (Skrillex, Metric, TEED, JID), Last.fm pages for extended artists verified like cosigner fame (Ye → Kanye West). Shared `src/lib/cosigns.js` merge used by site and scripts. Upcoming now finds 8 runs (Gorillaz → Little Simz, Knocked Loose → Denzel Curry…)
 - ✅ Reviewed (Julian): Gorillaz = Essex is fine; quirky MusicBrainz genres (Skrillex: "Brostep") left as they are for now
-- ⬜ Phase C: artist pages (61), Cosigned by / Cosigns lists, 10 at a time
+- ✅ Phase C (2026-10-15): 61 artist pages (`src/pages/artist/[id].astro`) + per-artist JSON for "Show more". Cosigned by (fame), Cosigns (Strongest / Recent / Famous), upcoming shows, stats with caveats, evidence linked to sources. Home names and chips link to pages; whole Featured tiles open the artist page (Julian), which also fixed the Featured chips being unclickable. Footer data credits. Click-tested desktop + phone
 - ✅ Store daily snapshots (`data/snapshots/`)
 - ⬜ Accounts + user cosigns (Supabase or Firebase)
-- ⬜ Artist detail page
+- ✅ Artist detail page (phase C)
 - ⬜ "Who cosigned who" graph view
 
 ## Log
@@ -97,6 +97,7 @@ Goal: every section renders from one data file, no text is baked into images, an
 - **2026-10-14 (night):** Last.fm key added and first full run done. Scores now 32–89 with Last.fm + Deezer. Verified Last.fm pages per artist (see Milestone 1 §3).
 - **2026-10-15:** Real cosigns from MusicBrainz (`fetch-cosigns.mjs`, 1,616 cosigns). Chips and search now use them; demo cosigns removed. Added mashup, band-member and ranking fixes after reviewing each artist's top cosigners. Nightly job runs it too.
 - **2026-10-15 (later):** Pages deploy workflow + demo notes. Decided Astro + React for the next phase. Hometowns from MusicBrainz (`fetch-profiles.mjs`); shared MusicBrainz client in `scripts/lib/`.
+- **2026-10-15 (phase C):** Artist pages for the roster + 49 extended artists (ASTRO.md phase C). Tour cosigns are finally visible (Travis → Teezo Touchdown, Tame Impala → Wet Leg).
 - **2026-10-15 (phase B):** Data for 49 extended artists (ASTRO.md phase B). Nothing new on the site yet.
 - **2026-10-15 (Astro):** Phase A of ASTRO.md: home page moved to Astro + React islands, same look. Old `index.html`/`js/app.js` removed; images and mockups moved to `public/`, styles to `src/styles/`.
 - **2026-10-15 (late night):** Step 6 continued: Ticketmaster upcoming shows, openings found via Wikipedia backlinks, touring-band cosign type. Touring musicians of a solo project count as cosigns (Julian).
