@@ -1,0 +1,92 @@
+---
+// Home page: Featured, Trending and Top Artists, built from data/*.json at build time.
+import Base from "../layouts/Base.astro";
+import TrendingList from "../components/TrendingList.jsx";
+import { DATA, BY_ID, IMAGES, COSIGNS, hometown, metricValue, chips } from "../lib/data.js";
+import { METRICS, CHIP_COUNT, DEFAULT_SOURCE, imageHtml, creditHtml } from "../lib/shared.js";
+
+const img = (a, opts) => imageHtml(IMAGES[a.id], a.name, DEFAULT_SOURCE, opts);
+const credit = a => creditHtml(IMAGES[a.id], DEFAULT_SOURCE);
+const usedSource = a => (IMAGES[a.id][DEFAULT_SOURCE] ? DEFAULT_SOURCE : "none");
+
+const [main, ...rest] = DATA.featured.map(f => ({ ...f, a: BY_ID[f.artist] }));
+
+// Trending rows: only what the list shows (plus search terms), not the raw data files.
+const trending = DATA.trending.map(id => BY_ID[id]);
+const rows = trending.map(a => ({
+  id: a.id, name: a.name, genre: a.genre, hometown: hometown(a),
+  caveat: Object.values(a.caveats || {})[0] || null,
+  metrics: Object.fromEntries(Object.keys(METRICS).map(m => [m, metricValue(a, m)])),
+  chips: chips(a, CHIP_COUNT),
+  search: [a.name, a.genre, hometown(a), ...COSIGNS[a.id].map(c => c.name)].filter(Boolean),
+}));
+const metrics = Object.keys(METRICS).filter(m => trending.some(a => metricValue(a, m) != null));
+const trendingImages = Object.fromEntries(trending.map(a => [a.id, IMAGES[a.id]]));
+---
+<Base home>
+  <main class="main">
+    <div class="section-head" id="featured">
+      <div>
+        <h2>Featured Artists</h2>
+        <p>Hand-picked this week by the Cosignr community.</p>
+      </div>
+    </div>
+
+    <div class="gallery" id="gallery">
+      {[main].map(f => (
+        <article class="tile left" data-src={usedSource(f.a)} data-img={f.a.id} data-focus="center 25%">
+          <Fragment set:html={img(f.a, { focus: "center 25%" })} />
+          <span class="badge">{f.label}</span>
+          <div class="overlay">
+            <h3>{f.a.name}</h3>
+            <p>{[f.a.genre, hometown(f.a)].filter(Boolean).join(" · ")}</p>
+            <div class="mini-chips">
+              {chips(f.a, 3).length
+                ? chips(f.a, 3).map((c, i) => <span class={`chip${i === 0 ? " top" : ""}`} title={c.title}>{c.name}</span>)
+                : <span class="no-cosigns">No cosigns found yet</span>}
+            </div>
+          </div>
+          <a class="play" href={`https://open.spotify.com/artist/${f.a.ids.spotify}`} target="_blank" rel="noopener" aria-label={`Listen to ${f.a.name} on Spotify`}><svg class="icon"><use href="#i-play"/></svg></a>
+          <Fragment set:html={credit(f.a).replace(/^<(a|span) /, `<$1 data-credit="${f.a.id}" `) || `<span hidden data-credit="${f.a.id}"></span>`} />
+        </article>
+      ))}
+      <div class="right">
+        {rest.map(f => (
+          <article class="tile" data-src={usedSource(f.a)} data-img={f.a.id} data-focus="center 25%">
+            <Fragment set:html={img(f.a, { focus: "center 25%" })} />
+            <span class="badge">{f.label}</span>
+            <div class="overlay">
+              <h3>{f.a.name}</h3>
+              <p>{[f.a.genre, hometown(f.a)].filter(Boolean).join(" · ")}</p>
+            </div>
+            <a class="play" href={`https://open.spotify.com/artist/${f.a.ids.spotify}`} target="_blank" rel="noopener" aria-label={`Listen to ${f.a.name} on Spotify`}><svg class="icon"><use href="#i-play"/></svg></a>
+            <Fragment set:html={credit(f.a).replace(/^<(a|span) /, `<$1 data-credit="${f.a.id}" `) || `<span hidden data-credit="${f.a.id}"></span>`} />
+          </article>
+        ))}
+      </div>
+    </div>
+
+    <TrendingList client:load rows={rows} metrics={metrics} images={trendingImages} />
+  </main>
+
+  <section class="bottom" id="top">
+    <h3>Top Artists</h3>
+    <p class="sub">The most cosigned artists on Cosignr of all time.</p>
+    <div class="top-grid" id="topGrid">
+      {DATA.top.map((id, i) => {
+        const a = BY_ID[id];
+        return (
+          <article class="top-card" data-src={usedSource(a)} data-img={a.id}>
+            <Fragment set:html={img(a)} />
+            <span class="num">{i + 1}</span>
+            <div class="overlay">
+              <h3>{a.name}</h3>
+              <p>{a.genre}</p>
+            </div>
+            <Fragment set:html={credit(a).replace(/^<(a|span) /, `<$1 data-credit="${a.id}" `) || `<span hidden data-credit="${a.id}"></span>`} />
+          </article>
+        );
+      })}
+    </div>
+  </section>
+</Base>

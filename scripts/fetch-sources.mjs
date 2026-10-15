@@ -3,7 +3,7 @@
 // Free, key-less sources only:
 //   - Wikimedia Commons: lead photo from Wikidata (P18) + license/author for attribution
 //   - Spotify oEmbed:    artist thumbnail (no API key needed)
-//   - Press kit:         local files in images/press/<id>.(jpg|png|webp), added by hand with permission
+//   - Press kit:         local files in public/images/press/<id>.(jpg|png|webp), added by hand with permission
 //
 // Usage (from the project root):  node scripts/fetch-sources.mjs
 
@@ -67,7 +67,7 @@ async function spotify(id) {
 
 async function pressFiles() {
   try {
-    return await readdir(path.join(ROOT, "images/press"));
+    return await readdir(path.join(ROOT, "public/images/press"));
   } catch {
     return [];
   }

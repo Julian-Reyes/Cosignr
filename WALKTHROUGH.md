@@ -6,29 +6,32 @@ A plain-language guide to how Cosignr works and how it's being built. For status
 
 Cosignr helps you find new music through artists you already like. When an artist **cosigns** another, they publicly vouch for them: they feature them on a track, remix them, bring them on tour, sign them to their label, or shout them out. Cosignr collects those cosigns so that on any artist's page you can see who vouches for them and who they vouch for.
 
-Today the cosigns on the page are placeholders. Making them real (with a link to the evidence for each one) is part of Milestone 1.
+The cosigns on the page are real: each one comes with evidence (a song, a tour, a touring-band spot) and a link to where it was found.
 
 ## Running it locally
 
-The page loads its data with `fetch()`, which browsers block when you double-click an HTML file. Run a tiny local server instead:
+The site is built with **Astro**, a tool that turns page templates plus our data files into plain HTML. You need Node 22 or newer:
 
 ```
 cd cosignr
-python3 -m http.server 8000
+npm install        # once, downloads Astro and React into node_modules/
+npm run dev        # open http://localhost:4321/Cosignr/
 ```
 
-Then open http://localhost:8000. On GitHub Pages it just works.
+`npm run dev` updates the page as you edit. `npm run build` writes the finished site to `dist/`, which is exactly what GitHub Pages serves.
 
 ## How the page is put together
 
 ```
 data/artists.json  ──┐
-data/sources.json  ──┼──>  js/app.js  ──>  index.html (Featured, Trending, Top)
-data/stats.json    ──┤
-data/cosigns.json  ──┤
+data/sources.json  ──┤
+data/stats.json    ──┼──>  src/lib/data.js  ──>  src/pages/*.astro  ──>  dist/ (plain HTML)
+data/cosigns.json  ──┤        (at build time)
 data/tours.json    ──┤
 data/upcoming.json ──┘
 ```
+
+The data files are read **when the site is built**, not in your browser. Visitors download finished HTML, not the 600 KB of cosign data behind it. The nightly job refreshes the data and then rebuilds the site.
 
 - **`data/artists.json`** is written by hand. It lists each artist, their IDs on other services, and which artists go in Featured, Trending and Top. Anything fake is kept under a `demo` key so it's easy to find and replace later.
 - **`data/sources.json`** is generated, so don't edit it by hand. It holds image links and photo credits for each artist.
@@ -36,7 +39,7 @@ data/upcoming.json ──┘
 - **`data/cosigns.json`** is generated from MusicBrainz and lists who has vouched for whom, with the songs as evidence (see "Cosigns" below).
 - **`data/tours.json`** is generated from Wikipedia and MusicBrainz and lists who took whom on tour, or into their touring band (see "Tours" below).
 - **`data/upcoming.json`** is generated from Ticketmaster and lists announced shows with an opener. It's rebuilt nightly.
-- **`js/app.js`** reads all of these and builds the page. `index.html` is just the frame.
+- **`src/`** holds the site itself. `src/layouts/Base.astro` is the frame every page shares (top bar, nav, footer). `src/pages/index.astro` is the home page. The parts you can click (Trending's sort tabs and search, the login window, the developer panel) are small **React** components in `src/components/`, which Astro calls "islands": the rest of the page is plain HTML with no JavaScript.
 
 Names and details are drawn on top of the photos as text. The 2019 images had text baked into them, which is why their numbers couldn't be fixed.
 
