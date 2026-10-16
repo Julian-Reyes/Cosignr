@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Saves today's charts to data/charts/<date>.json, for real-world "rising" and "trending" lists later
-// (Julian, 2026-10-16). Collection only: nothing on the site reads it yet. None of these sources keep
-// chart history, so a day that isn't saved is lost for good.
+// (Julian, 2026-10-16). The home page's "Hot Right Now" reads the newest file's Apple charts.
+// None of these sources keep chart history, so a day that isn't saved is lost for good.
 //   lastfmGlobal  Last.fm chart.getTopArtists, top 1000. Numbers: all-time listeners and plays.
 //   lastfmUs      Last.fm geo.getTopArtists (United States), top 1000. Number: US listeners this week.
 //   appleUsSongs  Apple Music most-played songs, US, top 100 (no key). Mainstream listening. With genre tags.
@@ -61,8 +61,9 @@ const apple = async kind =>
   (await getJson(`https://rss.marketingtools.apple.com/api/v2/us/music/most-played/${APPLE_LIMIT}/${kind}.json`, 5)).feed.results;
 
 // Apple tags every item with genres plus a catch-all "Music"; keep the real ones (Julian: genres come to the site later).
+// Artwork and link are for the home page's "Hot Right Now" list (cover art approved by Julian, 2026-10-16).
 const appleRow = s => [s.name, s.artistName, s.artistId || null, s.releaseDate || null, s.id,
-  (s.genres || []).map(g => g.name).filter(g => g && g !== "Music")];
+  (s.genres || []).map(g => g.name).filter(g => g && g !== "Music"), s.artworkUrl100 || null, s.url || null];
 
 await loadEnv();
 const KEY = process.env.LASTFM_API_KEY;
@@ -82,11 +83,11 @@ const CHARTS = {
       .map(a => [a.name, a.mbid || null, Number(a.listeners)]),
   },
   appleUsSongs: {
-    fields: ["song", "artist (as credited)", "apple artist id (first artist)", "release date", "apple song id", "genres"],
+    fields: ["song", "artist (as credited)", "apple artist id (first artist)", "release date", "apple song id", "genres", "artwork (100px)", "apple music url"],
     get: async () => (await apple("songs")).map(appleRow),
   },
   appleUsAlbums: {
-    fields: ["album", "artist (as credited)", "apple artist id (first artist)", "release date", "apple album id", "genres"],
+    fields: ["album", "artist (as credited)", "apple artist id (first artist)", "release date", "apple album id", "genres", "artwork (100px)", "apple music url"],
     get: async () => (await apple("albums")).map(appleRow),
   },
 };

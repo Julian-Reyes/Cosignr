@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T11:36:07.537Z",
+  "generatedAt": "2026-10-16T17:53:50.246Z",
   "source": "MusicBrainz (https://musicbrainz.org), CC0",
   "artists": {
     "travis-scott": {
@@ -10,7 +10,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/c920948b-83e3-40b7-8fe9-9ab5abaac55b"
       },
-      "genre": "Hip Hop"
+      "genre": "Hip Hop",
+      "apple": [
+        "549236696"
+      ],
+      "youtube": [
+        "UClRx3MMyYUyqOxyEqA5F2nQ",
+        "UCtxdfwb9wfkoGocVUAJ-Bmg"
+      ]
     },
     "tame-impala": {
       "type": "Person",
@@ -20,7 +27,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/3f179da4-83c6-4a28-a627-e46b4a8ff1ed"
       },
-      "genre": "Psychedelic Rock"
+      "genre": "Psychedelic Rock",
+      "apple": [
+        "290242959"
+      ],
+      "youtube": [
+        "UCdI8MAC5HoPJSJ4zrgDDI-Q",
+        "UCGz-eguN8tcic5kUG4s1ZgA"
+      ]
     },
     "rezz": {
       "type": "Person",
@@ -30,7 +44,13 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/904768d0-61ca-3c40-93ac-93adc36fef4b"
       },
-      "genre": "Electronic"
+      "genre": "Electronic",
+      "apple": [
+        "1046759940"
+      ],
+      "youtube": [
+        "UCMcWPM9eOz9Dsn7YwAlpOoQ"
+      ]
     },
     "g-jones": {
       "type": "Person",
@@ -40,7 +60,11 @@
         "kind": "area",
         "area": "https://musicbrainz.org/area/5c7576b7-b0aa-4216-862a-c3237a999bf2"
       },
-      "genre": "Breakbeat"
+      "genre": "Breakbeat",
+      "apple": [
+        "526152"
+      ],
+      "youtube": []
     },
     "the-drums": {
       "type": "Group",
@@ -50,7 +74,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/a71b0d32-7752-49e9-8594-2247ad6ac12c"
       },
-      "genre": "Indie Pop"
+      "genre": "Indie Pop",
+      "apple": [
+        "313290516"
+      ],
+      "youtube": [
+        "UC_nOXOQxFMjACqgr_w5nx-A",
+        "UCrp0s31p_rArZRodHzjB1TQ"
+      ]
     },
     "jaws": {
       "type": "Group",
@@ -60,7 +91,9 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/226c4dca-ef2a-4d4b-ba25-4118d116557a"
       },
-      "genre": "Alternative Rock"
+      "genre": "Alternative Rock",
+      "apple": [],
+      "youtube": []
     },
     "saba": {
       "type": "Person",
@@ -70,7 +103,13 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/29a709d8-0320-493e-8d0c-f2c386662b7f"
       },
-      "genre": "Hip Hop"
+      "genre": "Hip Hop",
+      "apple": [
+        "1140260329"
+      ],
+      "youtube": [
+        "UCSpnyV4h2tmp7G_mwyjrUMg"
+      ]
     },
     "jackal": {
       "type": "Person",
@@ -80,7 +119,11 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/8a754a16-0027-3a29-b6d7-2b40ea0481ed"
       },
-      "genre": null
+      "genre": null,
+      "apple": [
+        "71339656"
+      ],
+      "youtube": []
     },
     "ski-mask": {
       "type": "Person",
@@ -90,7 +133,13 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/a2993fdb-6cc6-49da-abe6-831142053fd1"
       },
-      "genre": "Hip Hop"
+      "genre": "Hip Hop",
+      "apple": [
+        "1174308445"
+      ],
+      "youtube": [
+        "UCdARoxad2UaIQPDy6fbz4Nw"
+      ]
     },
     "the-xx": {
       "type": "Group",
@@ -100,7 +149,15 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/54181a4b-9f77-4919-b8c5-f7af03fbbe17"
       },
-      "genre": "Indie Pop"
+      "genre": "Indie Pop",
+      "apple": [
+        "315473044"
+      ],
+      "youtube": [
+        "UCD53U3HUF8CJW2cRdLzQexQ",
+        "UCftZj65kxs8hUxnVZITT-EA",
+        "UCQ1Xqlk89CLZ9aAFyo-1THg"
+      ]
     },
     "porter-robinson": {
       "type": "Person",
@@ -110,7 +167,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/ca61a254-6d4e-45c1-89d2-a22f5cc158f8"
       },
-      "genre": "Electronic"
+      "genre": "Electronic",
+      "apple": [
+        "282330711"
+      ],
+      "youtube": [
+        "UCKKKYE55BVswHgKihx5YXew",
+        "UCUt2uP6O_UBJp4aBx5KjQjA"
+      ]
     },
     "drake": {
       "type": "Person",
@@ -120,7 +184,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/74b24e62-d2fe-42d2-9d96-31f2da756c77"
       },
-      "genre": "Hip Hop"
+      "genre": "Hip Hop",
+      "apple": [
+        "271256"
+      ],
+      "youtube": [
+        "UCByOQJjav0CUDwxCk-jVNRQ",
+        "UCQznUf1SjfDqx65hX3zRDiA"
+      ]
     },
     "rihanna": {
       "type": "Person",
@@ -130,7 +201,15 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/9c9f7376-5b09-4947-8741-e106e947472c"
       },
-      "genre": "Pop"
+      "genre": "Pop",
+      "apple": [
+        "63346553"
+      ],
+      "youtube": [
+        "UC2xskkQVFEpLcGFnNSLQY0A",
+        "UCcgqSM4YEo5vVQpqwN-MaNw",
+        "UCvWtix2TtWGe9kffqnwdaMw"
+      ]
     },
     "ye": {
       "type": "Person",
@@ -140,7 +219,18 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/26e0e534-19ea-4645-bfb3-1aa4e83a4046"
       },
-      "genre": "Hip Hop"
+      "genre": "Hip Hop",
+      "apple": [
+        "2715720",
+        "1714710847",
+        "1804611389",
+        "1811565584"
+      ],
+      "youtube": [
+        "UChpJbg7zMbi5jx9Gdjaxa9g",
+        "UCRY5dYsbIN5TylSbd7gVnZg",
+        "UCs6eXM7s8Vl5WcECcRHc2qQ"
+      ]
     },
     "the-weeknd": {
       "type": "Person",
@@ -150,7 +240,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/7c68161e-e9fc-4766-b636-7da86aafc5ce"
       },
-      "genre": "R&B"
+      "genre": "R&B",
+      "apple": [
+        "479756766"
+      ],
+      "youtube": [
+        "UC0WP5P-ufpRfjbNrmOWwLBQ",
+        "UClYV6hHlupm_S_ObS1W-DYw"
+      ]
     },
     "kendrick-lamar": {
       "type": "Person",
@@ -160,7 +257,15 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/be9261e4-c8d1-49e6-acb2-3096c47ad4f8"
       },
-      "genre": "Hip Hop"
+      "genre": "Hip Hop",
+      "apple": [
+        "368183298"
+      ],
+      "youtube": [
+        "UC3lBXcrKFnFAFkfVk5WuKcQ",
+        "UCoYfzC2zMlc9M-Odgaf6OSg",
+        "UCprAFmT0C6O4X0ToEXpeFTQ"
+      ]
     },
     "calvin-harris": {
       "type": "Person",
@@ -170,7 +275,19 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/8e7708ce-f3fc-4e70-aae5-e8d47741389c"
       },
-      "genre": "Dance-Pop"
+      "genre": "Dance-Pop",
+      "apple": [
+        "201955086",
+        "1494525356"
+      ],
+      "youtube": [
+        "UC7gBGvPJsQHkO7ByuY5uaMw",
+        "UCaHNFIob5Ixv74f5on3lvIw",
+        "UCIjYyZxkFucP_W-tmXg_9Ow",
+        "UCNN2-BjzbBg9aet-HU91l8w",
+        "UC4A1vQ2jzHYURufXEZP9AdA",
+        "UCZ0Aezmtk-S2l8A9Ln-2lKw"
+      ]
     },
     "gorillaz": {
       "type": "Group",
@@ -180,7 +297,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/c58e25fa-9d99-4ff3-b4b8-a7e7b2cf452c"
       },
-      "genre": "Electronic"
+      "genre": "Electronic",
+      "apple": [
+        "567072"
+      ],
+      "youtube": [
+        "UCfIXdjDQH9Fau7y99_Orpjw",
+        "UCNIV5B_aJnLrKDSnW_MOmcQ"
+      ]
     },
     "daft-punk": {
       "type": "Group",
@@ -190,7 +314,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/dc10c22b-e510-4006-8b7f-fecb4f36436e"
       },
-      "genre": "Electronic"
+      "genre": "Electronic",
+      "apple": [
+        "5468295"
+      ],
+      "youtube": [
+        "UC_kRDKYrUlrbtrSiyu5Tflg",
+        "UCRr1xG_2WIDs18a6cIiCxeA"
+      ]
     },
     "justice": {
       "type": "Group",
@@ -200,7 +331,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/dc10c22b-e510-4006-8b7f-fecb4f36436e"
       },
-      "genre": "Electro House"
+      "genre": "Electro House",
+      "apple": [
+        "145072812"
+      ],
+      "youtube": [
+        "UCQ5Ssrs48yJBfOesfDqXUeA",
+        "UCcJLC91v0A0iD-CMUWdZkig"
+      ]
     },
     "the-flaming-lips": {
       "type": "Group",
@@ -210,7 +348,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/ca61e235-0f31-4c0e-8963-8232222ef6a8"
       },
-      "genre": "Alternative Rock"
+      "genre": "Alternative Rock",
+      "apple": [
+        "156604"
+      ],
+      "youtube": [
+        "UCLx8uTY2GZaYIv-cUAcNzwQ",
+        "UCPxZkX90JURVTyWW0caNnGg"
+      ]
     },
     "metric": {
       "type": "Group",
@@ -220,7 +365,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/74b24e62-d2fe-42d2-9d96-31f2da756c77"
       },
-      "genre": "Indie Rock"
+      "genre": "Indie Rock",
+      "apple": [
+        "4125821"
+      ],
+      "youtube": [
+        "UCwodgWLBaJ11UYpcWezh2Ng",
+        "UCEDAqx7QPrOUV3Bx9aqUjsw"
+      ]
     },
     "grimes": {
       "type": "Person",
@@ -230,7 +382,15 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/6ccc62d1-bdd8-4f08-8fae-bfaa5310e5ef"
       },
-      "genre": "Art Pop"
+      "genre": "Art Pop",
+      "apple": [
+        "2756920"
+      ],
+      "youtube": [
+        "UCj2Oon8A9kybzZrwPJJJ1pg",
+        "UCRXaOr2-9CJTMqQH5A5GYZQ",
+        "UCzVh-F-RZdTHGV3S1o4KBWQ"
+      ]
     },
     "deadmau5": {
       "type": "Person",
@@ -240,7 +400,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/660ded59-1760-43c4-a60d-d96becb05c0e"
       },
-      "genre": "Progressive House"
+      "genre": "Progressive House",
+      "apple": [
+        "78011850"
+      ],
+      "youtube": [
+        "UCYEK6xds6eo-3tr4xRdflmQ",
+        "UCL44WZGVf-BU5N0ymCXrpBg"
+      ]
     },
     "silverstein": {
       "type": "Group",
@@ -250,7 +417,13 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/53dd4bd4-6667-47cf-9640-8510a510c878"
       },
-      "genre": "Emo"
+      "genre": "Emo",
+      "apple": [
+        "2621140"
+      ],
+      "youtube": [
+        "UChQidgcBzCuN2IOQ6s1wRFw"
+      ]
     },
     "dillon-francis": {
       "type": "Person",
@@ -260,7 +433,15 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/1f40c6e1-47ba-4e35-996f-fe6ee5840e62"
       },
-      "genre": "Dubstep"
+      "genre": "Dubstep",
+      "apple": [
+        "366828522"
+      ],
+      "youtube": [
+        "UCHKsIBnhOfusZtsjFyKpX8w",
+        "UCO8lgagfl3hp_Q1x9HPdfqw",
+        "UCKm78y6KGUHBtvne8iWyHvg"
+      ]
     },
     "skrillex": {
       "type": "Person",
@@ -270,7 +451,15 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/1f40c6e1-47ba-4e35-996f-fe6ee5840e62"
       },
-      "genre": "Brostep"
+      "genre": "Brostep",
+      "apple": [
+        "356545647"
+      ],
+      "youtube": [
+        "UCMYbLgav7tU6jjl8gMi1C2Q",
+        "UC_TVqp_SyG6j5hG-xVRy95A",
+        "UCibXKvuw5PoJVmyZJ4qhDIw"
+      ]
     },
     "dj-shadow": {
       "type": "Person",
@@ -280,7 +469,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/f95f42b0-59a6-410d-a08e-3db77f4aea8a"
       },
-      "genre": "Electronic"
+      "genre": "Electronic",
+      "apple": [
+        "133086"
+      ],
+      "youtube": [
+        "UCZnQDARLMuOJ1bi9oE6eJ0g",
+        "UCtTuSKgCdeTyxBGPCD3TgxQ"
+      ]
     },
     "bassnectar": {
       "type": "Person",
@@ -290,7 +486,13 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/83f22bb6-4631-443c-bace-9fae8540362a"
       },
-      "genre": "Dubstep"
+      "genre": "Dubstep",
+      "apple": [
+        "2900657"
+      ],
+      "youtube": [
+        "UCIfFb3X4vy_hYCMpCBFffsw"
+      ]
     },
     "rl-grime": {
       "type": "Person",
@@ -300,7 +502,14 @@
         "kind": "area",
         "area": "https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98"
       },
-      "genre": "Future Bass"
+      "genre": "Future Bass",
+      "apple": [
+        "583453223"
+      ],
+      "youtube": [
+        "UCQ8LkvxhyXjDxbPWMU3TdbQ",
+        "UCsOyfEYlII4FXNv2C3kmsrw"
+      ]
     },
     "ekali": {
       "type": "Person",
@@ -310,7 +519,11 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/6ccc62d1-bdd8-4f08-8fae-bfaa5310e5ef"
       },
-      "genre": "Electronic"
+      "genre": "Electronic",
+      "apple": [
+        "863405923"
+      ],
+      "youtube": []
     },
     "florence-the-machine": {
       "type": "Group",
@@ -320,7 +533,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
       },
-      "genre": "Indie Rock"
+      "genre": "Indie Rock",
+      "apple": [
+        "281070699"
+      ],
+      "youtube": [
+        "UC5MujsH-hrVWHBBfSSmv18A",
+        "UCDYfiBTEPexujA5wDWvxUnA"
+      ]
     },
     "eyedress": {
       "type": "Person",
@@ -330,7 +550,13 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/dcdf2469-1d20-4378-a2a2-f5f462fcc873"
       },
-      "genre": "Indie Rock"
+      "genre": "Indie Rock",
+      "apple": [
+        "723490430"
+      ],
+      "youtube": [
+        "UCUey8i1E-v0610gRpbN2PJw"
+      ]
     },
     "mareux": {
       "type": "Person",
@@ -340,7 +566,13 @@
         "kind": "area",
         "area": "https://musicbrainz.org/area/1f40c6e1-47ba-4e35-996f-fe6ee5840e62"
       },
-      "genre": null
+      "genre": null,
+      "apple": [
+        "1471309866"
+      ],
+      "youtube": [
+        "UCbfIHiQtE7dx3jekxGwv4bw"
+      ]
     },
     "kyle": {
       "type": "Person",
@@ -350,7 +582,13 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/e2f8e5a8-99bf-4d64-b32c-dd3c5370badd"
       },
-      "genre": "Hip Hop"
+      "genre": "Hip Hop",
+      "apple": [
+        "1200931684"
+      ],
+      "youtube": [
+        "UCzh_pC-GdOzUDMK2gBBfoZA"
+      ]
     },
     "ekkstacy": {
       "type": "Person",
@@ -360,7 +598,13 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/6ccc62d1-bdd8-4f08-8fae-bfaa5310e5ef"
       },
-      "genre": "Indie Pop"
+      "genre": "Indie Pop",
+      "apple": [
+        "1504423866"
+      ],
+      "youtube": [
+        "UCrqojOYPaZ4v08TdZOMO8CA"
+      ]
     },
     "j-cole": {
       "type": "Person",
@@ -370,7 +614,13 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/16560d3e-358b-4869-8a6d-727db2ee7b69"
       },
-      "genre": "Hip Hop"
+      "genre": "Hip Hop",
+      "apple": [
+        "73705833"
+      ],
+      "youtube": [
+        "UCnc6db-y3IU7CkT_yeVXdVg"
+      ]
     },
     "foster-the-people": {
       "type": "Group",
@@ -380,7 +630,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/1f40c6e1-47ba-4e35-996f-fe6ee5840e62"
       },
-      "genre": "Indie Pop"
+      "genre": "Indie Pop",
+      "apple": [
+        "414023649"
+      ],
+      "youtube": [
+        "UC6R1juCB5ArnJGMmUlEE_fg",
+        "UC-lkm1huv9jCUH28E7cKmew"
+      ]
     },
     "future": {
       "type": "Person",
@@ -390,7 +647,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/26e0e534-19ea-4645-bfb3-1aa4e83a4046"
       },
-      "genre": "Hip Hop"
+      "genre": "Hip Hop",
+      "apple": [
+        "128050210"
+      ],
+      "youtube": [
+        "UCFNosi99Sp0_eLilBiXmmXA",
+        "UCSDvKdIQOwTfcyOimSi9oYA"
+      ]
     },
     "amine": {
       "type": "Person",
@@ -400,7 +664,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/2b748d6e-bc1c-4434-9f7b-ecd6332bc557"
       },
-      "genre": "Hip Hop"
+      "genre": "Hip Hop",
+      "apple": [
+        "1097595072"
+      ],
+      "youtube": [
+        "UCaRVejD1K6HvPINeK2PGfEQ",
+        "UCwkYvTKKpAV5532Tuu9BLGw"
+      ]
     },
     "jid": {
       "type": "Person",
@@ -410,7 +681,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/26e0e534-19ea-4645-bfb3-1aa4e83a4046"
       },
-      "genre": "Hip Hop"
+      "genre": "Hip Hop",
+      "apple": [
+        "282841404"
+      ],
+      "youtube": [
+        "UC3WIRbOw46MsbycRc1N5x4g",
+        "UCRlGNubLJBgW9VRCuiUnuYw"
+      ]
     },
     "diplo": {
       "type": "Person",
@@ -420,7 +698,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/157e3c0e-1b68-403d-a515-6e37cb67947b"
       },
-      "genre": "Electronic"
+      "genre": "Electronic",
+      "apple": [
+        "1468290871",
+        "4527097"
+      ],
+      "youtube": [
+        "UCKp7UVaoVuiW1qtyPLPVFMQ"
+      ]
     },
     "cash-cash": {
       "type": "Group",
@@ -430,7 +715,13 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/d89380de-2288-44d3-a837-7d9f049fd68c"
       },
-      "genre": "Pop"
+      "genre": "Pop",
+      "apple": [
+        "292362693"
+      ],
+      "youtube": [
+        "UCE4Qz27gKHV8_RrKn5xL8Pw"
+      ]
     },
     "boombox-cartel": {
       "type": "Group",
@@ -440,7 +731,13 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/cfd1e529-4ca0-4377-bb35-c1762b653d50"
       },
-      "genre": "Dubstep"
+      "genre": "Dubstep",
+      "apple": [
+        "636952262"
+      ],
+      "youtube": [
+        "UC1C0Q3WUdv6t6ieM3a1vfyg"
+      ]
     },
     "digital-farm-animals": {
       "type": "Person",
@@ -450,7 +747,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/5e611c84-e912-456d-b396-a6d1e715c0c4"
       },
-      "genre": null
+      "genre": null,
+      "apple": [
+        "600073218"
+      ],
+      "youtube": [
+        "UCtVMOsUqCp53yAjeWrVL4VA",
+        "UCNmKoNBkKCpJptNf6c0sjPA"
+      ]
     },
     "dr-fresch": {
       "type": "Person",
@@ -460,7 +764,11 @@
         "kind": "area",
         "area": "https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98"
       },
-      "genre": null
+      "genre": null,
+      "apple": [
+        "514066709"
+      ],
+      "youtube": []
     },
     "xxxtentacion": {
       "type": "Person",
@@ -470,7 +778,13 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/99c3c77d-9ea0-4550-95f4-2aca18c022db"
       },
-      "genre": "Trap"
+      "genre": "Trap",
+      "apple": [
+        "1082533559"
+      ],
+      "youtube": [
+        "UCM9r1xn6s30OnlJWb-jc3Sw"
+      ]
     },
     "missy-elliott": {
       "type": "Person",
@@ -480,7 +794,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/a79f5154-31b7-4070-82e4-657ed0695c52"
       },
-      "genre": "Hip Hop"
+      "genre": "Hip Hop",
+      "apple": [
+        "162802"
+      ],
+      "youtube": [
+        "UC_u0CLjE2CglTTAS_WX-zCg",
+        "UCKqVP7_535ELJu2OeEd3zzQ"
+      ]
     },
     "trippie-redd": {
       "type": "Person",
@@ -490,7 +811,13 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/e794c48d-2e18-4e1a-830c-cdf24a4ba07c"
       },
-      "genre": "Emo Rap"
+      "genre": "Emo Rap",
+      "apple": [
+        "1203172438"
+      ],
+      "youtube": [
+        "UCstw-41J8syXgdJ8xWvaizA"
+      ]
     },
     "denzel-curry": {
       "type": "Person",
@@ -500,7 +827,13 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/bf0f2274-a68a-49ce-ab54-379cb1ee15d0"
       },
-      "genre": "Hip Hop"
+      "genre": "Hip Hop",
+      "apple": [
+        "631440154"
+      ],
+      "youtube": [
+        "UCiKxNv_MHAShqT2lATxG_Wg"
+      ]
     },
     "ferg": {
       "type": "Person",
@@ -510,7 +843,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/7e037c94-d999-4611-a8fd-56e8770f2e3c"
       },
-      "genre": "Hip Hop"
+      "genre": "Hip Hop",
+      "apple": [
+        "582346993"
+      ],
+      "youtube": [
+        "UCsjrSi7xMkKPk4gcLSjFKbA",
+        "UCU4dAZZU0iXC3U-EZ2v5ePg"
+      ]
     },
     "kygo": {
       "type": "Person",
@@ -520,7 +860,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/aa344640-fd57-3960-afb4-84d0d3b69d3d"
       },
-      "genre": "Tropical House"
+      "genre": "Tropical House",
+      "apple": [
+        "635806094"
+      ],
+      "youtube": [
+        "UCCFJeI-2sT_cWgz-QJRgbCw",
+        "UCYpVqLSvfseUqb2URAkexlw"
+      ]
     },
     "craig-armstrong": {
       "type": "Person",
@@ -530,7 +877,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/c279f805-01f8-46f5-99cf-51f165a1adad"
       },
-      "genre": "Classical"
+      "genre": "Classical",
+      "apple": [
+        "14738507"
+      ],
+      "youtube": [
+        "UCkMeyZRdUvxXOBOGzu1Dcjw",
+        "UCVeya5ynTAnqfGZx1yY6hrQ"
+      ]
     },
     "yacht": {
       "type": "Group",
@@ -540,7 +894,11 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/2b748d6e-bc1c-4434-9f7b-ecd6332bc557"
       },
-      "genre": "Alternative Dance"
+      "genre": "Alternative Dance",
+      "apple": [
+        "51277889"
+      ],
+      "youtube": []
     },
     "lady-gaga": {
       "type": "Person",
@@ -550,7 +908,15 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/7e4475a3-56a0-4a79-9e0d-c19881e14631"
       },
-      "genre": "Pop"
+      "genre": "Pop",
+      "apple": [
+        "277293880"
+      ],
+      "youtube": [
+        "UC07Kxew-cMIaykMOkzqHtBQ",
+        "UCNL1ZadSjHpjm4q9j2sVtOA",
+        "UCGKXb1syicud01CJOOFRykg"
+      ]
     },
     "madeon": {
       "type": "Person",
@@ -560,7 +926,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/eedd8c4c-2d89-4cc1-bc3f-07b316c0ea59"
       },
-      "genre": "Electronic"
+      "genre": "Electronic",
+      "apple": [
+        "371199302"
+      ],
+      "youtube": [
+        "UCqMDNf3Pn5L7pcNkuSEeO3w",
+        "UCSml1Arkj2u3w2-u7xbzLlA"
+      ]
     },
     "ninajirachi": {
       "type": "Person",
@@ -570,7 +943,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/ee8fe1ca-7455-485d-afbc-064844f5ee43"
       },
-      "genre": "EDM"
+      "genre": "EDM",
+      "apple": [
+        "1210938233"
+      ],
+      "youtube": [
+        "UCcwCiUrlKs8dThVvGDcXkKg",
+        "UCoxWoc3csKuKKr5E5qH1tKA"
+      ]
     },
     "teed": {
       "type": "Person",
@@ -580,7 +960,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
       },
-      "genre": "Alternative Dance"
+      "genre": "Alternative Dance",
+      "apple": [
+        "315730588",
+        "1809828003"
+      ],
+      "youtube": [
+        "UCA0takueW0dTTJpCbeP66mA"
+      ]
     },
     "eminem": {
       "type": "Person",
@@ -590,7 +977,15 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/bfae8151-2ba2-4f8f-bf2e-8fc16ce352c6"
       },
-      "genre": "Hip Hop"
+      "genre": "Hip Hop",
+      "apple": [
+        "111051"
+      ],
+      "youtube": [
+        "UC20vb-R_px4CguHzzBPhoyQ",
+        "UCfM3zsQsOnfWNUppiycmBuw",
+        "UCedvOgsKFzcK3hA5taf3KoQ"
+      ]
     },
     "beyonce": {
       "type": "Person",
@@ -600,7 +995,15 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/c920948b-83e3-40b7-8fe9-9ab5abaac55b"
       },
-      "genre": "Pop"
+      "genre": "Pop",
+      "apple": [
+        "1419227"
+      ],
+      "youtube": [
+        "UC9zX2xZIJ4cnwRsgBpHGvMg",
+        "UCuHzBCaKmtaLcRAOoazhCPA",
+        "UCoPQ_TWm8JZ5nJv4a5BzSWA"
+      ]
     },
     "justin-timberlake": {
       "type": "Person",
@@ -610,7 +1013,14 @@
         "kind": "begin-area",
         "area": "https://musicbrainz.org/area/c2d96f61-75a4-4375-aed5-6aacb0b6326a"
       },
-      "genre": "Pop"
+      "genre": "Pop",
+      "apple": [
+        "398128"
+      ],
+      "youtube": [
+        "UC6VwktUsQQDCkHG1h6YftAQ",
+        "UC-y8ci7xfsu4L3zkSuHae0A"
+      ]
     }
   }
 }

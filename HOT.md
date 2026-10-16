@@ -1,6 +1,6 @@
 # "What's hot right now" section: plan (draft, 2026-10-16)
 
-Status: **plan only, not built.** Julian asked for this section on 2026-10-16 and suggested putting it under Trending Artists. The open decisions at the bottom need Julian's answers before building. Check in before starting (see CLAUDE.md / memory).
+Status: **built 2026-10-16** with Julian's answers below (`src/components/HotList.jsx`, `hotLists()`/`hotFor()` in `src/lib/data.js`, `scripts/fetch-youtube.mjs`). Differences from the draft: top 5 then 10 more at a time, 25 per tab (not 10 of 50/50/30); name "Hot Right Now"; the nav link is "Hot".
 
 ## Where it goes
 
@@ -48,7 +48,14 @@ Apple goes up to 100, but stopping at 50 keeps the page light. Ten at a time, th
 - **Apple credits** put several artists in one string ("Drake & Don Toliver", "KAROL G, Judeline & rusowsky"); Brazilian duos are one act ("Jorge & Mateus"). Apple gives an artist ID for the first artist only.
 - **Scope:** USA only for now (Julian, 2026-10-16); later versions can load by country.
 
-## Decisions for Julian (open)
+## Decisions (answered by Julian, 2026-10-16)
+
+1. Images: **Apple cover art and YouTube thumbnails approved**, each linking back.
+2. Counts: **10 + Show more, up to 25 / 25 / 25.** Changed later the same night: **top 5, then Show More adds 10**, still up to 25.
+3. Name: **"Hot Right Now"** (title case, Julian 2026-10-16).
+4. Apple chart rank badge on artist pages: **yes.**
+
+## Original questions
 
 1. **Images.** The image rule in CLAUDE.md only allows Wikimedia, Spotify and press kits. Showing Apple cover art and YouTube thumbnails means adding both as approved sources. Both allow showing them as long as each links back (ours would). Alternatives: text-only rows, or the artist's existing Spotify photo where they have a Cosignr page.
 2. **Counts:** 10 + Show more up to 50 / 50 / 30, or fewer?

@@ -3,7 +3,7 @@
 // Built for the roster and the extended artists (data/extended.json); see ASTRO.md phase C.
 import Base from "../../layouts/Base.astro";
 import CosignList from "../../components/CosignList.jsx";
-import { PAGES, IMAGES, BASE, hometown, genre, artistLists, upcomingFor, statsFor } from "../../lib/data.js";
+import { PAGES, IMAGES, BASE, hometown, genre, artistLists, upcomingFor, statsFor, hotFor } from "../../lib/data.js";
 import { DEFAULT_SOURCE, imageHtml, creditHtml, fmt } from "../../lib/shared.js";
 
 export function getStaticPaths() {
@@ -19,6 +19,7 @@ const stats = statsFor(a);
 const meta = [genre(a), hometown(a)].filter(Boolean).join(" · ");
 const jsonUrl = `${BASE}artist/${a.id}.json`;
 const credit = creditHtml(img, DEFAULT_SOURCE);
+const hot = hotFor(a);
 ---
 <Base title={`${a.name} · Cosignr`} images={{ [a.id]: img }}>
   <main class="main artist-page">
@@ -30,6 +31,12 @@ const credit = creditHtml(img, DEFAULT_SOURCE);
       <div class="hero-info">
         <h1>{a.name}</h1>
         {meta && <p class="meta">{meta}</p>}
+        {(hot.apple || hot.video) && (
+          <div class="hot-badges">
+            {hot.apple && <a class="hot-badge" href={hot.apple.url} target="_blank" rel="noopener" title={`“${hot.apple.title}”, Apple Music most played (US), ${hot.apple.date}`}><b>#{hot.apple.rank}</b> on Apple Music US today: {hot.apple.title}</a>}
+            {hot.video && <a class="hot-badge video" href={hot.video.url} target="_blank" rel="noopener" title="In YouTube's US music chart today"><b>Trending video</b> {hot.video.title}</a>}
+          </div>
+        )}
         <div class="hero-stats">
           <div class="score" title="0–100, from Deezer fans and Last.fm listeners/plays on a log scale">
             <b>{stats.score ?? "–"}</b><small>Cosignr score</small>

@@ -146,6 +146,16 @@ Some safety checks:
 - **Last.fm names.** Last.fm pages are matched the careful way: "Ye" must land on Kanye West's page, not a smaller artist called Ye.
 - **Genre.** For these artists, genre is MusicBrainz's most-voted genre tag, so it can be quirky (Skrillex: "Brostep"). Our 12 keep their hand-written genres.
 
+## Hot Right Now
+
+The home section under Trending shows what the US is playing today, in three tabs: **Songs** and **Albums** (Apple Music's most played, from the newest `data/charts/` file) and **Videos** (YouTube's US music chart). The top 5 show first; "Show More" adds 10 at a time, up to 25. Each row has the cover art or thumbnail, a genre tag (Apple), a "New" tag for anything released in the last week, and a link back to Apple Music or YouTube. Their terms allow showing the images only with that link. Rows and cover art are the same size as the Trending rows above; video thumbnails keep their wide shape.
+
+**Matching chart entries to our artists.** Names alone aren't safe, because many artists share a name. So `fetch-profiles.mjs` saves each page artist's Apple Music artist ID and YouTube channel IDs (from MusicBrainz links and Wikidata), and a chart entry links to an artist page only when the ID matches. Apple gives an ID only for the first credited artist, and YouTube only for the channel. Anyone else in the credit or title counts only if they're someone that artist already has a cosign with. That's also when the row gets a cosign marker, like "Drake × Don Toliver: cosign".
+
+**Why YouTube is different.** YouTube's rules forbid keeping its data longer than 30 days, and git keeps everything forever. So `scripts/fetch-youtube.mjs` runs inside the deploy job just before the build, writes `data/live/youtube.json` (git-ignored), and the data only ever exists in the published page. Without the `YOUTUBE_API_KEY` secret, the Videos tab is simply hidden.
+
+**Artist page badges.** When an artist has a song in Apple Music's US top 100, their page says "#4 on Apple Music US today: <song>". When they're in YouTube's chart, it shows "Trending video" with the video's title.
+
 ## Common tasks
 
 **Add an artist**
@@ -161,9 +171,9 @@ Some safety checks:
 
 **Refresh stats:** `node scripts/fetch-stats.mjs`. Works without keys (Deezer only). For Last.fm, create a free API account at https://www.last.fm/api/account/create and put the key in a `.env` file in the project root: `LASTFM_API_KEY=...`. `.env` is git-ignored, so it is never committed.
 
-**Real-world charts:** `node scripts/fetch-charts.mjs` saves the day's Last.fm top 1,000 artists (worldwide and in the US) and Apple Music's top 100 songs and albums in the US to `data/charts/<date>.json`. Last.fm leans toward indie and alternative listeners; Apple Music shows what the mainstream is playing. Nothing on the site uses it yet. It's there so that later we can spot artists climbing the charts in the real world, not just among the artists we already track. Neither source keeps old charts, so the only way to have history is to save it every day. If one chart fails on a given night, the others are still saved.
+**Real-world charts:** `node scripts/fetch-charts.mjs` saves the day's Last.fm top 1,000 artists (worldwide and in the US) and Apple Music's top 100 songs and albums in the US to `data/charts/<date>.json`. Last.fm leans toward indie and alternative listeners; Apple Music shows what the mainstream is playing. The "Hot Right Now" section reads the newest file's Apple charts. The rest is there so that later we can spot artists climbing the charts in the real world, not just among the artists we already track. Neither source keeps old charts, so the only way to have history is to save it every day. If one chart fails on a given night, the others are still saved.
 
-**Nightly refresh and deploy:** `.github/workflows/site.yml` runs all the fetch scripts every day around 06:17 UTC (GitHub often starts it late), commits any changes to `data/`, then publishes the site to https://julianreyes.dev/Cosignr/ (the github.io address redirects there). Every push to `main` also republishes (without refreshing data). Because the bot commits to GitHub every night, run `git pull` before you start editing. To include Last.fm, add the key as a repository secret called `LASTFM_API_KEY` (GitHub → Settings → Secrets and variables → Actions). You can also start it by hand from the Actions tab ("Run workflow").
+**Nightly refresh and deploy:** `.github/workflows/site.yml` runs all the fetch scripts every day around 06:17 UTC (except YouTube: the publish step fetches its chart just before building, and needs the `YOUTUBE_API_KEY` repository secret; see "Hot Right Now") (GitHub often starts it late), commits any changes to `data/`, then publishes the site to https://julianreyes.dev/Cosignr/ (the github.io address redirects there). Every push to `main` also republishes (without refreshing data). Because the bot commits to GitHub every night, run `git pull` before you start editing. To include Last.fm, add the key as a repository secret called `LASTFM_API_KEY` (GitHub → Settings → Secrets and variables → Actions). You can also start it by hand from the Actions tab ("Run workflow").
 
 ## What's next
 

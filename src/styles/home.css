@@ -777,6 +777,45 @@ footer .data-sources a:hover{ color: #fff; }
 .m-listeners b{ display: block; font-size: .95em; font-weight: 800; }
 .m-listeners small{ display: block; font-size: .62em; color: var(--muted); }
 
+/* Hot Right Now (HOT.md): Songs | Albums | Videos from Apple Music and YouTube */
+.hot{ margin-top: 40px; }
+.hot-list{ list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+/* Rows and cover art sized like the Trending rows (Julian, 2026-10-16); videos keep 16:9 at the same height */
+.hot-row{
+  display: grid;
+  grid-template-columns: 44px 120px minmax(0,1fr) auto;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 12px;
+  border-bottom: 1px solid var(--line);
+  border-radius: var(--radius);
+  animation: fadeIn .35s ease both;
+}
+.hot-row:hover{ background: #f6fbfd; }
+.hot-row.wide{ grid-template-columns: 44px 213px minmax(0,1fr) auto; }
+.hot-art{ display: block; width: 120px; height: 120px; border-radius: 7px; overflow: hidden; background: #eef2f4; box-shadow: 0 3px 10px rgba(0,0,0,.12); }
+.hot-row.wide .hot-art{ width: 213px; }
+.hot-art img{ width: 100%; height: 100%; object-fit: cover; border-radius: 0; }
+.hot-info h3{ margin: 0 0 4px; font-size: 1.3em; font-weight: 800; }
+.hot-info h3 > a:hover{ text-decoration: underline; }
+.hot-new{
+  display: inline-block; margin-left: 8px; vertical-align: middle;
+  font-size: .62em; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+  background: var(--peach); padding: 1px 8px; border-radius: 99px;
+}
+.hot-artists{ color: var(--muted); font-size: .95em; }
+.hot-artists a{ color: var(--ink); font-weight: 700; text-decoration-color: var(--blue); }
+.hot-tags{ display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.hot-tags .chip{ font-size: .72em; padding: 3px 10px; }
+.hot-out{ font-weight: 700; font-size: .82em; padding: 8px 14px; border-radius: 6px; border: 2px solid var(--line); white-space: nowrap; }
+.hot-out:hover{ border-color: var(--blue); }
+
+/* artist page: chart badges under the genre/hometown line */
+.hot-badges{ display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+.hot-badge{ font-size: .85em; padding: 5px 12px; border-radius: 6px; background: var(--blue); }
+.hot-badge.video{ background: var(--peach); }
+.hot-badge:hover{ box-shadow: 0 3px 8px rgba(0,0,0,.1); }
+
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 1100px){
   .main, .bottom{ padding-left: 40px; padding-right: 40px; }
@@ -785,6 +824,10 @@ footer .data-sources a:hover{ color: #fff; }
   .avatar{ width: 100px; height: 100px; }
   .stat{ display: none; }
   .m-score{ display: block; }
+  .hot-row{ grid-template-columns: 40px 100px minmax(0,1fr) auto; }
+  .hot-row.wide{ grid-template-columns: 40px 178px minmax(0,1fr) auto; }
+  .hot-art{ width: 100px; height: 100px; }
+  .hot-row.wide .hot-art{ width: 178px; }
 }
 
 @media (max-width: 760px){
@@ -830,6 +873,10 @@ footer .data-sources a:hover{ color: #fff; }
   .cosigns h5{ width: 100%; }
   .chip{ font-size: .72em; padding: 5px 10px; }
   .cosign-btn{ grid-column: 2 / -1; justify-self: start; }
+  .hot-row, .hot-row.wide{ grid-template-columns: 28px 72px minmax(0,1fr); gap: 14px; padding: 16px 4px; }
+  .hot-art, .hot-row.wide .hot-art{ width: 72px; height: 72px; }
+  .hot-info h3{ font-size: 1.1em; }
+  .hot-out{ grid-column: 3; justify-self: start; margin-top: -8px; padding: 0; border: 0; font-size: .75em; color: var(--muted); text-decoration: underline; }
   .m-listeners{ display: block; }
   .meta-listeners{ display: none; }
 

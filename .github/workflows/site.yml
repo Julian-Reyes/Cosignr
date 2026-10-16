@@ -1,8 +1,8 @@
 # Refreshes data/ nightly and publishes the site to GitHub Pages.
 #   - Nightly (schedule) or "Run workflow" button: refresh data, commit it, then deploy
 #   - Push to main: deploy only
-# Needs: Settings → Pages → Source: "GitHub Actions", and the LASTFM_API_KEY and TICKETMASTER_API_KEY
-# repository secrets (without one, that source is skipped and everything else still updates).
+# Needs: Settings → Pages → Source: "GitHub Actions", and the LASTFM_API_KEY, TICKETMASTER_API_KEY and
+# YOUTUBE_API_KEY repository secrets (without one, that source is skipped and everything else still updates).
 name: Refresh data and deploy
 
 on:
@@ -70,6 +70,12 @@ jobs:
         with:
           node-version: 22   # Astro 7 needs Node 22.12+
           cache: npm
+      - name: Fetch the YouTube chart
+        # Live only: YouTube data may not be stored over 30 days, so it is fetched for this build and
+        # never committed (data/live/ is gitignored). Without the key, the Videos tab is hidden.
+        run: node scripts/fetch-youtube.mjs
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
       - name: Build the site
         # Astro reads data/*.json at build time and writes static pages to dist/.
         # Scripts, docs, raw data files and indexOld.html are not published.

@@ -9,6 +9,7 @@ import upcoming from "../../data/upcoming.json";
 import profiles from "../../data/profiles.json";
 import extendedJson from "../../data/extended.json";
 import { mergeCosigns, byCosignerFame } from "./cosigns.js";
+import { readFileSync, readdirSync } from "node:fs";
 
 export const BASE = import.meta.env.BASE_URL.replace(/\/?$/, "/");
 export const DATA = artistsJson;
@@ -162,6 +163,150 @@ export function upcomingFor(a) {
     return { headliner, name: upcoming.artists[otherMbid].name, href: linkFor(otherMbid), tour: u.next.tour,
              next: showDate(u.next.date), city: u.next.city, shows: u.shows, url: u.next.url, until: u.last };
   }).sort((x, y) => x.until.localeCompare(y.until));
+}
+
+// ---------- Hot Right Now (HOT.md) ----------
+// Apple Music US songs + albums from the newest data/charts/<date>.json, and the YouTube US music chart
+// from data/live/youtube.json (fetched by the deploy job, never committed: YouTube's 30-day rule).
+// Paths are relative to the project root, where `astro build` / `astro dev` run.
+
+const readJson = f => { try { return JSON.parse(readFileSync(f, "utf8")); } catch { return null; } };
+const CHART = (() => {
+  let files = [];
+  try { files = readdirSync("data/charts").filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().reverse(); } catch {}
+  for (const f of files) { // newest day whose Apple chart didn't fail
+    const c = readJson(`data/charts/${f}`);
+    if (c?.appleUsSongs) return c;
+  }
+  return null;
+})();
+const YOUTUBE = readJson("data/live/youtube.json");
+
+export const HOT_COUNT = 25; // Julian, 2026-10-16: top 5 shown, Show More adds 10, up to 25 per tab
+const NEW_DAYS = 7;
+
+// Chart entries match artists by Apple artist ID / YouTube channel ID (profiles.json), never by name alone.
+const BY_APPLE = {}, BY_YOUTUBE = {};
+for (const a of PAGES) {
+  const p = profiles.artists[a.id] || {};
+  for (const id of p.apple || []) BY_APPLE[id] ??= a;
+  for (const id of p.youtube || []) BY_YOUTUBE[id] ??= a;
+}
+
+const norm = s => s.toLowerCase().normalize("NFKD").replace(/[̀-ͯ]/g, "");
+const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const hasName = (text, name) => new RegExp(`(^|[^\\p{L}\\p{N}])${escRe(norm(name))}($|[^\\p{L}\\p{N}])`, "u").test(norm(text));
+
+// Everyone credited on a chart entry that we can vouch for: the ID-matched artists, plus their known cosign
+// partners whose exact name appears in the credit/title (Apple only gives the first artist's ID; a name
+// counts only when it's someone that artist already has a cosign with). Returns the cosigns between them too.
+function creditsFor(text, matched) {
+  const people = new Map(matched.map(a => [a.ids.musicbrainz, { mbid: a.ids.musicbrainz, name: a.name, idMatch: true }]));
+  for (const a of matched) {
+    for (const e of MERGED) {
+      const [mbid, name] = e.from === a.ids.musicbrainz ? [e.to, e.toName] : e.to === a.ids.musicbrainz ? [e.from, e.fromName] : [];
+      if (mbid && !people.has(mbid) && hasName(text, name)) people.set(mbid, { mbid, name, idMatch: false });
+    }
+  }
+  const ids = new Set(people.keys());
+  const pairs = new Map(); // one marker per pair; when both cosigned each other, the hover text has both
+  for (const e of MERGED.filter(e => ids.has(e.from) && ids.has(e.to))) {
+    const key = [e.from, e.to].sort().join(), title = cosignTitle({ ...e, name: e.fromName }, { name: e.toName });
+    if (pairs.has(key)) pairs.get(key).title += `\n${title}`;
+    else pairs.set(key, { label: `${e.fromName} × ${e.toName}`, title,
+      href: hasPage(e.from) ? `${linkFor(e.from)}#cosigns` : `${linkFor(e.to)}#cosigned-by` });
+  }
+  const cosigns = [...pairs.values()];
+  return { people: [...people.values()].map(p => ({ ...p, href: hasPage(p.mbid) ? linkFor(p.mbid) : null })), cosigns };
+}
+
+// Splits Apple's credit string ("Drake & Don Toliver") into text and link segments for artists with a page.
+// If the ID-matched first artist goes by another name on Apple, the first credited name is linked instead.
+function creditSegments(credit, people) {
+  const marks = [];
+  for (const p of people.filter(p => p.href)) {
+    const at = norm(credit).search(new RegExp(`(?<=^|[^\\p{L}\\p{N}])${escRe(norm(p.name))}(?=$|[^\\p{L}\\p{N}])`, "u"));
+    if (at >= 0) marks.push([at, at + p.name.length, p.href]);
+    else if (p.idMatch && !marks.some(m => m[0] === 0)) marks.push([0, credit.split(/,\s|\s&\s|\s[xX]\s|\s(?:feat\.?|ft\.?|with)\s/)[0].length, p.href]);
+  }
+  marks.sort((x, y) => x[0] - y[0]);
+  const out = [];
+  let pos = 0;
+  for (const [s, e, href] of marks) {
+    if (s < pos) continue;
+    if (s > pos) out.push({ text: credit.slice(pos, s) });
+    out.push({ text: credit.slice(s, e), href });
+    pos = e;
+  }
+  if (pos < credit.length) out.push({ text: credit.slice(pos) });
+  return out;
+}
+
+const daysBefore = (date, n) => new Date(Date.parse(date) - n * 864e5).toISOString().slice(0, 10);
+const shortDate = d => new Date(d.slice(0, 10) + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
+
+function appleRows(list) {
+  const newSince = daysBefore(CHART.date, NEW_DAYS);
+  return (list || []).map(([title, credit, artistId, released, id, genres, art, url], i) => {
+    // Titles carry features too: "WAIT FOR U (feat. Drake & Tems)" is credited to Future alone.
+    const { people, cosigns } = creditsFor(`${credit} | ${title}`, BY_APPLE[artistId] ? [BY_APPLE[artistId]] : []);
+    return {
+      key: id, rank: i + 1, title, url, service: "Apple Music",
+      art: art ? art.replace(/\/\d+x\d+bb\.(jpg|png)$/, "/240x240bb.$1") : null, // 240px for retina at 120px
+      artists: creditSegments(credit, people), genre: genres?.[0] || null,
+      isNew: !!released && released >= newSince, cosigns, pages: people.filter(p => p.href).map(p => p.mbid),
+    };
+  });
+}
+
+// "OliviaRodrigoVEVO" -> "Olivia Rodrigo", "PARTYNEXTDOOR - Topic" -> "PARTYNEXTDOOR". Display only.
+const channelName = c => / - Topic$/.test(c) ? c.replace(/ - Topic$/, "")
+  : /VEVO$/.test(c) ? c.replace(/VEVO$/, "").replace(/([a-z])([A-Z])/g, "$1 $2").replace(/ Music$/, "") : c;
+
+function videoRows() {
+  const newSince = daysBefore(YOUTUBE.fetchedAt, NEW_DAYS);
+  return YOUTUBE.videos.map((v, i) => {
+    const owner = BY_YOUTUBE[v.channelId];
+    // Channels linked in the description count only if that artist's name is also in the title.
+    const featured = v.linkedChannels.map(id => BY_YOUTUBE[id]).filter(a => a && a !== owner && hasName(v.title, a.name));
+    const { people, cosigns } = creditsFor(v.title, [owner, ...featured].filter(Boolean));
+    const linked = people.filter(p => p.href);
+    const artists = [];
+    if (!owner) artists.push({ text: channelName(v.channelTitle) });
+    linked.forEach(p => artists.push(...(artists.length ? [{ text: " · " }] : []), { text: p.name, href: p.href }));
+    return {
+      key: v.id, rank: i + 1, title: v.title, url: `https://www.youtube.com/watch?v=${v.id}`, service: "YouTube",
+      art: v.thumb, artists, genre: null, isNew: v.published >= newSince, cosigns, pages: linked.map(p => p.mbid), wide: true,
+    };
+  });
+}
+
+const SONGS = CHART ? appleRows(CHART.appleUsSongs) : [];
+const VIDEOS = YOUTUBE?.videos?.length ? videoRows() : [];
+
+// Props for the home page's HotList island: only the rows it shows.
+export function hotLists() {
+  const strip = ({ pages, ...r }) => r;
+  return {
+    tabs: {
+      songs: SONGS.slice(0, HOT_COUNT).map(strip),
+      albums: CHART ? appleRows(CHART.appleUsAlbums).slice(0, HOT_COUNT).map(strip) : [],
+      videos: VIDEOS.slice(0, HOT_COUNT).map(strip),
+    },
+    appleDate: CHART ? shortDate(CHART.date) : null,
+    youtubeDate: YOUTUBE ? shortDate(YOUTUBE.fetchedAt) : null,
+  };
+}
+
+// Artist page badges: best Apple Music US song rank (top 100) and a video in YouTube's US top chart.
+export function hotFor(a) {
+  const mbid = a.ids.musicbrainz;
+  const song = SONGS.find(r => r.pages.includes(mbid));
+  const video = VIDEOS.find(r => r.pages.includes(mbid));
+  return {
+    apple: song ? { rank: song.rank, title: song.title, url: song.url, date: shortDate(CHART.date) } : null,
+    video: video ? { title: video.title, url: video.url } : null,
+  };
 }
 
 // Stats shown on an artist page: [{ label, value, raw, note }], excluded metrics carry their caveat.

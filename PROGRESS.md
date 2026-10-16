@@ -12,10 +12,10 @@ Remaining items, grouped. Julian wants a check-in before each one starts (propos
 
 **Decided, needs a plan (propose before building)**
 
-3. **"What's hot right now" section: plan in `HOT.md`** (Julian, 2026-10-16: under Trending Artists; Songs / Albums / Videos tabs; 4 open decisions listed there). Covers items 3–5 below.
-   **YouTube "Trending now" (Julian, 2026-10-16):** the current YouTube US Music chart (30 videos) shown live, linking to YouTube, refreshed nightly, nothing stored past 30 days. Open: where (home page section?), how many, thumbnails (YouTube's own, with link).
-4. **"Trending video" badge on artist pages (Julian, 2026-10-16):** when an artist has a video in today's YouTube chart (e.g. Justice ft. Tame Impala on 2026-10-16). Needs channel/title → artist matching (strip "VEVO", " - Topic"; featured artists in titles).
-5. **Top songs / albums section (Julian's idea, 2026-10-16):** a songs + albums chart on the home page, e.g. from today's Apple Music US top 100 (allowed for promotion with links back to Apple Music). Open: which source(s), how many, whether to mark cosigns ("Drake & Don Toliver" = a cosign we track).
+3. ✅ **"Hot Right Now" section (built 2026-10-16, plan in `HOT.md`):** under Trending; Songs / Albums (Apple Music US) and Videos (YouTube US, live only) tabs, top 5 + Show More (10 at a time) up to 25 each, cover art/thumbnails linking back (sized like the Trending photos, Julian 2026-10-16), genre chip, "New" tag, cosign markers ("Drake × Don Toliver: cosign").
+4. ✅ **Artist page badges (built 2026-10-16):** "Trending video" (YouTube US chart) and "#N on Apple Music US today" (top 100 songs). On 2026-10-16: Drake #1 + video, Tame Impala video (Justice ft. Tame Impala), Future, J. Cole, Kendrick, The Weeknd, Travis Scott on Apple.
+   - **Needs Julian:** add the `YOUTUBE_API_KEY` secret to the deploy job's environment if it isn't there yet (the deploy job now reads it; without it the Videos tab and badge are just hidden).
+5. *(merged into 3)*
 
 **Designed, on hold (Julian: wait for now)**
 
@@ -138,6 +138,11 @@ Goal: every section renders from one data file, no text is baked into images, an
 - 🟡 "Who cosigned who" graph view (mockup C picked, on hold)
 
 ## Log
+
+- **2026-10-16 (late night, Hot Right Now, title):** Heading in title case: "Hot Right Now" (Julian).
+- **2026-10-16 (late night, Hot Right Now, shorter):** Hot Right Now shows the top 5, then Show More adds 10 (up to 25), like Trending (Julian).
+- **2026-10-16 (late night, Hot Right Now, cont.):** Cover art enlarged to match the Trending photos (120 / 100 / 72px; videos 16:9 at the same height), Apple artwork fetched at 240px. Docs: fetch-youtube added to the refresh order and the nightly-deploy notes.
+- **2026-10-16 (late night, Hot Right Now):** Built HOT.md with Julian's answers (Apple + YouTube images approved, 10 + more up to 25, name "Hot Right Now", Apple rank badge yes). Collector saves Apple artwork + link; fetch-profiles saves Apple artist IDs and YouTube channel IDs (MusicBrainz links + Wikidata P2850/P2397); new `fetch-youtube.mjs` writes gitignored `data/live/youtube.json` in the deploy job only. Chart entries match artists by ID; a second name counts only if it's a known cosign partner of the ID-matched artist.
 
 - **2026-10-16 (late night, YouTube):** YouTube key works (US Music chart = 30 videos), but its developer policies forbid storing data over 30 days and building derived metrics, so it can't feed rising. Julian: use it live only, as "Trending now" and a "Trending video" badge on artist pages. New idea: a top songs/albums section. Next up regrouped.
 - **2026-10-16 (late night, cont.):** Apple Music RSS works (moved host) and is now in the collector (US top 100 songs + albums). Wikipedia pageviews tested and dropped. Each chart is fetched independently so one failure doesn't lose the rest.

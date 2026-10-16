@@ -57,6 +57,7 @@ const meta = `sources.json · ${new Date(SRC.generatedAt).toLocaleString("en-US"
         <li><a href={`${nav}#featured`}>Featured</a></li>
         <li><a href={`${nav}#top`}>Top</a></li>
         <li><a href={`${nav}#trending`}>Trending</a></li>
+        <li><a href={`${nav}#hot`}>Hot</a></li>
       </ul>
     </nav>
 
@@ -73,7 +74,7 @@ const meta = `sources.json · ${new Date(SRC.generatedAt).toLocaleString("en-US"
         <a href="#">Privacy</a>
       </div>
       <span>© 2026 Cosignr · Discover music through the artists you trust.</span>
-      <p class="data-sources">Data: <a href="https://musicbrainz.org" target="_blank" rel="noopener">MusicBrainz</a> (CC0){" · "}<a href="https://en.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a> tour articles (CC BY-SA, linked on each tour){" · "}<a href="https://www.last.fm" target="_blank" rel="noopener">Last.fm</a>{" · "}<a href="https://www.deezer.com" target="_blank" rel="noopener">Deezer</a>{" · "}<a href="https://www.ticketmaster.com" target="_blank" rel="noopener">Ticketmaster</a></p>
+      <p class="data-sources">Data: <a href="https://musicbrainz.org" target="_blank" rel="noopener">MusicBrainz</a> (CC0){" · "}<a href="https://en.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a> tour articles (CC BY-SA, linked on each tour){" · "}<a href="https://www.last.fm" target="_blank" rel="noopener">Last.fm</a>{" · "}<a href="https://www.deezer.com" target="_blank" rel="noopener">Deezer</a>{" · "}<a href="https://www.ticketmaster.com" target="_blank" rel="noopener">Ticketmaster</a>{" · "}<a href="https://music.apple.com" target="_blank" rel="noopener">Apple Music</a> charts and cover art{" · "}<a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a> chart and thumbnails (each links to its source)</p>
       <details class="credits" id="credits" hidden={!credits}>
         <summary>Photo credits</summary>
         <ul id="creditsList" set:html={credits}></ul>

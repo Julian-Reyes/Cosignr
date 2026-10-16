@@ -1,8 +1,9 @@
 ---
-// Home page: Featured, Trending and Top Artists, built from data/*.json at build time.
+// Home page: Featured, Trending, Hot Right Now and Top Artists, built from data/*.json at build time.
 import Base from "../layouts/Base.astro";
 import TrendingList from "../components/TrendingList.jsx";
-import { DATA, BY_ID, IMAGES, COSIGNS, hometown, metricValue, chips, pageUrl } from "../lib/data.js";
+import HotList from "../components/HotList.jsx";
+import { DATA, BY_ID, IMAGES, COSIGNS, hometown, metricValue, chips, pageUrl, hotLists } from "../lib/data.js";
 import { METRICS, CHIP_COUNT, DEFAULT_SOURCE, imageHtml, creditHtml } from "../lib/shared.js";
 
 const img = (a, opts) => imageHtml(IMAGES[a.id], a.name, DEFAULT_SOURCE, opts);
@@ -71,6 +72,9 @@ const trendingImages = Object.fromEntries(trending.map(a => [a.id, IMAGES[a.id]]
     </div>
 
     <TrendingList client:load rows={rows} metrics={metrics} images={trendingImages} />
+
+    <!-- Under Trending, above Top Artists (Julian, 2026-10-16). Hidden if there's no chart data at all. -->
+    <HotList client:load {...hotLists()} />
   </main>
 
   <section class="bottom" id="top">
