@@ -9,6 +9,7 @@ Read `PROGRESS.md` for where things stand and `WALKTHROUGH.md` for the human-fac
 ```
 cosignr/
   ASTRO.md                The approved plan for the Astro move + artist pages (phases A–C)
+  HOT.md                  Draft plan for the "What's hot right now" home section (songs/albums/videos); open decisions listed
   astro.config.mjs        Astro config: static output, base "/Cosignr" (GitHub Pages project site)
   package.json            astro, @astrojs/react, react (exact versions; Node 22.12+)
   src/layouts/Base.astro  Shared frame: head, top bar, nav, footer, modal/dev-panel islands

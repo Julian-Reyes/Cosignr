@@ -12,7 +12,8 @@ Remaining items, grouped. Julian wants a check-in before each one starts (propos
 
 **Decided, needs a plan (propose before building)**
 
-3. **YouTube "Trending now" (Julian, 2026-10-16):** the current YouTube US Music chart (30 videos) shown live, linking to YouTube, refreshed nightly, nothing stored past 30 days. Open: where (home page section?), how many, thumbnails (YouTube's own, with link).
+3. **"What's hot right now" section: plan in `HOT.md`** (Julian, 2026-10-16: under Trending Artists; Songs / Albums / Videos tabs; 4 open decisions listed there). Covers items 3–5 below.
+   **YouTube "Trending now" (Julian, 2026-10-16):** the current YouTube US Music chart (30 videos) shown live, linking to YouTube, refreshed nightly, nothing stored past 30 days. Open: where (home page section?), how many, thumbnails (YouTube's own, with link).
 4. **"Trending video" badge on artist pages (Julian, 2026-10-16):** when an artist has a video in today's YouTube chart (e.g. Justice ft. Tame Impala on 2026-10-16). Needs channel/title → artist matching (strip "VEVO", " - Topic"; featured artists in titles).
 5. **Top songs / albums section (Julian's idea, 2026-10-16):** a songs + albums chart on the home page, e.g. from today's Apple Music US top 100 (allowed for promotion with links back to Apple Music). Open: which source(s), how many, whether to mark cosigns ("Drake & Don Toliver" = a cosign we track).
 
