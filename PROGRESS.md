@@ -1,19 +1,41 @@
 # Cosignr progress
 
-Status key: ✅ done · 🟡 in progress · ⬜ not started
+Status key: ✅ done · 🟡 in progress · ⬜ not started · ✖ ruled out
 
-## Next up (as of 2026-10-15)
+## Next up (as of 2026-10-16)
 
-Remaining items, in rough order. Julian wants a check-in before each one starts (propose a plan, wait for OK). Details are in the sections below.
+Remaining items, grouped. Julian wants a check-in before each one starts (propose a plan, wait for OK). Details are in the sections below.
 
-1. **Rising rankings (step 4):** rank changes (▲/▼) and "rising this week" from `data/snapshots/`. Wait until ~2026-10-21 (a week of snapshots), then agree the formula with Julian before building. Method agreed in principle (2026-10-16): Last.fm listener growth as a %, with a minimum size, shown as e.g. "+4.2% listeners this week". Also covers the `watch` list in snapshots (artists the roster cosigned in the last 2 years, 88 with a Last.fm page), collected nightly from 2026-10-16.
-   - **Later: real-world trending.** Today the Trending/Top/Featured *membership* is hand-picked in artists.json (only the order is real). A real site needs trending artists from outside our roster. Not started; ideas in the 2026-10-16 log.
-2. ✅ **Stats on phones (step 3):** done 2026-10-16 (score badge on the photo, listeners under it; desktop shows listeners after the hometown).
-3. **"Who cosigned who" graph (step 10):** 🟡 mockups made 2026-10-16 (A everything, B page artists only, C one artist's neighbourhood as a force layout, D the same as a radial layout), using real data. Julian picked **C** (one artist + top N neighbours, force layout, names inside circles, thinner lines, small filled arrowheads); A, B, D rejected. Still a mockup, not on the site.
-4. **Accounts and real user cosigns (step 11):** Supabase. The login modal and Cosign button are demo-only for now.
-5. **Maybe: hand-curated cosigns (step 5):** shout-outs and label signings with a source URL. Julian said "possibly"; don't build until decided.
-6. ✅ **Small:** `site` in `astro.config.mjs` is now `https://julianreyes.dev` (2026-10-16).
-7. **Later:** scaling plan for hundreds of artists (see Milestone 1 §3), and full catalogs for the extended artists (they're light pages today).
+**Waiting on data**
+1. **Rising rankings (step 4):** "rising this week" and rank changes (▲/▼) from `data/snapshots/`. Method agreed in principle (2026-10-16): Last.fm listener growth as a %, with a minimum size, shown as e.g. "+4.2% listeners this week". Covers the 61 page artists (7 days of data ~2026-10-22) and the snapshot `watch` list (artists the roster cosigned in the last 2 years, 88 with a Last.fm page, collected nightly from 2026-10-16; 7 days ~2026-10-23). Agree the formula and placement with Julian before building; it could replace the hand-picked Trending list.
+
+**Designed, on hold (Julian: wait for now)**
+
+2. **"Who cosigned who" graph (step 10):** 🟡 Julian picked mockup **C**: one artist + top N cosigners/cosigned by fame, force layout, names inside circles, thin lines, small filled arrowheads. A (everything), B (page artists only) and D (radial) rejected. Still a mockup, not on the site. Open questions before building: artist page section or own page, N (8 desktop / 5 phone?), photos in circles.
+
+**Ready to start**
+
+3. Press photos for G Jones and Jackal (draft requests for Julian to send).
+4. Review Wikimedia crops and add `focus` overrides (only matters when the dev panel picks Wikimedia).
+5. Second fame source (Deezer or Wikidata) for cosigners whose Last.fm page is shared with a namesake (NERO, JENNIE, EDDIE…).
+6. More artist page facts: Wikipedia bio, Wikidata socials.
+7. Tour gaps: openers only listed in a tour's date table.
+
+**Undecided**
+
+8. **Maybe: hand-curated cosigns (step 5):** shout-outs and label signings with a source URL. Julian said "possibly"; don't build until decided.
+
+**Next phase**
+
+9. **Accounts and real user cosigns (step 11):** Supabase. The login modal and Cosign button are demo-only for now.
+10. **Real-world trending.** Today the Trending/Top/Featured *membership* is hand-picked in artists.json (only the order is real). A real site needs trending artists from outside our roster. 🟡 Collecting since 2026-10-16: `scripts/fetch-charts.mjs` saves the Last.fm top 1000 (global + US) and Apple Music US top 100 songs + albums nightly to `data/charts/` (~153 KB/day; Julian: keep 1000 for now, trim later). Later: chart climbers and new entries week over week, checked against listener growth and across sources (Adéla was top 10 on both Last.fm global and Apple US on 2026-10-16), linked to MusicBrainz for "who cosigned them".
+    - **Sources to add (Julian, 2026-10-16):** Last.fm alone skews to indie/alt listeners (Radiohead, Deftones top it), so add:
+      1. ✖ **Wikipedia pageviews (tested and dropped, Julian 2026-10-16):** top musicians were mostly news-driven (McCartney, Michael Jackson, Eagles, actors who sing). Was: general-public attention. Free, no key, daily history back to 2015 (no collecting needed), plus a top-articles-per-country list (US). Filter to musicians via Wikidata (band / musical group, or a person whose first occupations are musical). Spikes can be news, not music.
+      2. ⬜ **YouTube Data API:** most-popular chart per country, Music category: the mainstream view. Free key (10,000 units/day, ~1 per chart call). Ranks videos, not artists (artist from channel/title). Terms limit storing data to ~30 days without refreshing. Julian is getting the key (`YOUTUBE_API_KEY` in .env + repo secret).
+      3. ✅ **Apple Music RSS (collecting from 2026-10-16, US songs + albums):** `rss.marketingtools.apple.com/api/v2/<country>/music/most-played/<10|100>/songs.json` (moved from rss.applemarketingtools.com, which 301s). Free, no key, very mainstream, per country (no global), max 100, updated daily. Flaky: some sizes time out or 502, so retry. Songs credit several artists in one string ("Drake & Don Toliver"). For promotion: link back to Apple Music.
+      - **Apple global: on hold (Julian, 2026-10-16).** Apple has no global chart. Later maybe combine big markets (UK, Canada, Australia, Germany, Brazil, Mexico, some Asian countries); 2 requests per country.
+    - Weaker sources (ListenBrainz, Deezer per-country charts) ignored for now (Julian).
+11. **Scaling** to hundreds of artists (see Milestone 1 §3), and full catalogs for the extended artists (light pages today).
 
 ## Milestone 0: data-driven page and image sources 🟡
 
@@ -79,7 +101,7 @@ Goal: every section renders from one data file, no text is baked into images, an
 - ✅ Tour support, upcoming: `scripts/fetch-upcoming.mjs` → `data/upcoming.json` from Ticketmaster, rebuilt nightly, shows dropped once past ("reasonable periods" caching; no revenue from the API). Artists matched by MusicBrainz or Spotify ID only; festivals, tribute/party nights and non-artist listings skipped. Today: Tame Impala → Wet Leg (Deadbeat Tour 2027). Ticketmaster has no IDs for The xx, The Drums, Jaws, Jackal, so they're skipped (The xx's 7 listings are all Corona Capital festival passes, which would be skipped anyway). Ticketmaster lists each ticket type of a festival as its own event
 - ✅ Openings by roster artists: Wikipedia articles with "tour" in the title that link to a roster artist (Ye, Kendrick, Rihanna, The Weeknd → Travis; Florence + the Machine → The xx, The Drums)
 - ✅ New cosign type "band" (Julian): hiring someone for your touring band is a cosign (MusicBrainz supporting-musician relations, e.g. Tame Impala → Jay Watson, Cam Avery). 100 live cosigns in tours.json
-- ⬜ Setlist.fm ruled out: terms forbid storing data, non-commercial only, no competing products. Only with written permission
+- ✖ Setlist.fm ruled out: terms forbid storing data, non-commercial only, no competing products. Only with written permission
 - ⬜ Tour gaps: most tour cosigns are outbound (roster artist → opener), which only show once artist pages list "Cosigns". Openers only listed in a tour's date table (not its infobox) are missed
 - ✅ Rank cosigners by fame (Julian: fame counts most): Last.fm listeners for ~620 cosigners in `stats.json` → `cosigners`, cached 7 days. Lookup by MusicBrainz ID, then name, then MusicBrainz aliases (Ye → Kanye West); name matches carrying a different ID are rejected
 - ✅ Official releases only (drops bootlegs, fan mashup tapes, DJ edits; found via Coldplay → Drake, Oasis → Porter Robinson), plus "bootleg" in the title. Uses both `artist=` and `track_artist=` release lists (track_artist alone missed releases credited to the artist)
@@ -90,7 +112,7 @@ Goal: every section renders from one data file, no text is baked into images, an
 
 ### 4. Infrastructure
 - ✅ Nightly data refresh: first scheduled run 2026-10-15 worked (Last.fm secret used, data committed by github-actions[bot])
-- 🟡 Pages deploy: `.github/workflows/site.yml` (replaces refresh-data.yml) refreshes nightly then deploys; pushes to main deploy only. Julian sets Settings → Pages → Source: GitHub Actions. URL: https://julian-reyes.github.io/Cosignr/
+- ✅ Pages deploy: `.github/workflows/site.yml` (replaces refresh-data.yml) refreshes nightly then deploys; pushes to main deploy only. Live at https://julianreyes.dev/Cosignr/ (julian-reyes.github.io/Cosignr redirects there)
 - ✅ Demo notes: login/sign-up modal and Cosign button say accounts aren't live yet
 - ✅ **Decided 2026-10-15:** move to **Astro with React** for interactive parts, starting with artist pages. Static build, deployed to Pages by the same workflow. Lighter than Next.js because only interactive components ship JS. Plan: `ASTRO.md`
 - ✅ Phase A (2026-10-15): home page ported to Astro 7.3.5 + React 19.2.8 with an identical look (before/after screenshots matched; tabs, search, chips, Show More, modal, dev panel and image switching click-tested). Data is read at build time, so the browser no longer downloads cosigns.json (624 KB). Deploy job builds with `npm ci && npm run build` on Node 22
@@ -100,10 +122,13 @@ Goal: every section renders from one data file, no text is baked into images, an
 - ✅ Store daily snapshots (`data/snapshots/`)
 - ⬜ Accounts + user cosigns (Supabase or Firebase)
 - ✅ Artist detail page (phase C)
-- ⬜ "Who cosigned who" graph view
+- 🟡 "Who cosigned who" graph view (mockup C picked, on hold)
 
 ## Log
 
+- **2026-10-16 (late night, cont.):** Apple Music RSS works (moved host) and is now in the collector (US top 100 songs + albums). Wikipedia pageviews tested and dropped. Each chart is fetched independently so one failure doesn't lose the rest.
+- **2026-10-16 (late night):** Started collecting real-world charts: `fetch-charts.mjs` → `data/charts/<date>.json` (Last.fm top 1000 global + US, ~93% with MusicBrainz IDs, ~137 KB/day), nightly in site.yml. Deezer chart left out (varies by caller location). Apple Music RSS didn't respond.
+- **2026-10-16 (night):** Tidied PROGRESS: regrouped Next up, Pages deploy ticked (live at julianreyes.dev), Setlist.fm marked ruled out.
 - **2026-10-16 (evening):** Trending stats on phones: score badge top-left of the photo, listeners under it; listeners after the hometown on desktop.
 - **2026-10-16 (late afternoon):** Cosigned by gets the Strongest / Recent / Famous tabs (opens on Famous). Logo checkmark box removed (header + footer). Tried the logo in Roboto (nav font); Julian kept the original Nunito. Login/Sign up text set to dark grey (Safari showed its default blue because no color was set).
 - **2026-10-16 (afternoon):** Artist pages: Cosigns now comes before Cosigned by, side by side on desktop (stacked below 900px). fetch-stats saves a nightly `watch` list in snapshots (98 artists cosigned since 2024-10-16, 88 with a verified Last.fm page) for rising. Graph arrowheads: small filled.

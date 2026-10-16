@@ -30,6 +30,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - run: node scripts/fetch-charts.mjs    # seconds: today's Last.fm (global + US) and Apple Music (US) charts, for real-world rising later
+        continue-on-error: true               # a Last.fm hiccup shouldn't stop the rest of the refresh
+        env:
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
       - run: node scripts/fetch-cosigns.mjs   # ~7 min: MusicBrainz allows 1 request/second
       - run: node scripts/fetch-tours.mjs     # ~3 min first run, then cached
       - run: node scripts/fetch-extended.mjs  # ~1 min: who else gets a page (top cosigners)
