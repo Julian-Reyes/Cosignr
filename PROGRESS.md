@@ -6,36 +6,48 @@ Status key: ✅ done · 🟡 in progress · ⬜ not started · ✖ ruled out
 
 Remaining items, grouped. Julian wants a check-in before each one starts (propose a plan, wait for OK). Details are in the sections below.
 
-**Waiting on data**
-1. **Rising rankings (step 4):** "rising this week" and rank changes (▲/▼) from `data/snapshots/`. Method agreed in principle (2026-10-16): Last.fm listener growth as a %, with a minimum size, shown as e.g. "+4.2% listeners this week". Covers the 61 page artists (7 days of data ~2026-10-22) and the snapshot `watch` list (artists the roster cosigned in the last 2 years, 88 with a Last.fm page, collected nightly from 2026-10-16; 7 days ~2026-10-23). Agree the formula and placement with Julian before building; it could replace the hand-picked Trending list.
+**Waiting on data (collecting nightly)**
+1. **Rising (our artists):** "rising this week" and rank changes (▲/▼) from `data/snapshots/`. Method agreed in principle: Last.fm listener growth as a %, with a minimum size, shown as e.g. "+4.2% listeners this week". The 61 page artists have 7 days ~2026-10-22; the `watch` list (88 artists the roster cosigned in the last 2 years) ~2026-10-23. Agree the formula and placement before building; it could replace the hand-picked Trending list.
+2. **Real-world rising / trending:** from `data/charts/` (Last.fm top 1000 global + US, Apple Music US top 100 songs + albums, collected since 2026-10-16). Needs a few weeks of history. Idea: chart climbers and new entries week over week, confirmed across sources (Adéla was top 10 on Last.fm global, Apple US songs and both Wikipedia lists on 2026-10-16), linked to MusicBrainz for "who cosigned them". This is what replaces the hand-picked Trending/Top/Featured membership.
+
+**Decided, needs a plan (propose before building)**
+
+3. **YouTube "Trending now" (Julian, 2026-10-16):** the current YouTube US Music chart (30 videos) shown live, linking to YouTube, refreshed nightly, nothing stored past 30 days. Open: where (home page section?), how many, thumbnails (YouTube's own, with link).
+4. **"Trending video" badge on artist pages (Julian, 2026-10-16):** when an artist has a video in today's YouTube chart (e.g. Justice ft. Tame Impala on 2026-10-16). Needs channel/title → artist matching (strip "VEVO", " - Topic"; featured artists in titles).
+5. **Top songs / albums section (Julian's idea, 2026-10-16):** a songs + albums chart on the home page, e.g. from today's Apple Music US top 100 (allowed for promotion with links back to Apple Music). Open: which source(s), how many, whether to mark cosigns ("Drake & Don Toliver" = a cosign we track).
 
 **Designed, on hold (Julian: wait for now)**
 
-2. **"Who cosigned who" graph (step 10):** 🟡 Julian picked mockup **C**: one artist + top N cosigners/cosigned by fame, force layout, names inside circles, thin lines, small filled arrowheads. A (everything), B (page artists only) and D (radial) rejected. Still a mockup, not on the site. Open questions before building: artist page section or own page, N (8 desktop / 5 phone?), photos in circles.
+6. **"Who cosigned who" graph (step 10):** 🟡 mockup **C** picked: one artist + top N cosigners/cosigned by fame, force layout, names inside circles, thin lines, small filled arrowheads (A, B, D rejected). Open: artist page section or own page, N (8 desktop / 5 phone?), photos in circles.
+7. **Countries (Julian, 2026-10-16):** global is tricky (Apple and YouTube only chart by country), so Cosignr is **USA only for now** (the Last.fm global chart keeps being collected in case global is added someday); future versions can load by region/country (Mexico and Brazil were compared and are good candidates).
 
-**Ready to start**
+**Ready to start (small)**
 
-3. Press photos for G Jones and Jackal (draft requests for Julian to send).
-4. Review Wikimedia crops and add `focus` overrides (only matters when the dev panel picks Wikimedia).
-5. Second fame source (Deezer or Wikidata) for cosigners whose Last.fm page is shared with a namesake (NERO, JENNIE, EDDIE…).
-6. More artist page facts: Wikipedia bio, Wikidata socials.
-7. Tour gaps: openers only listed in a tour's date table.
+8. Press photos for G Jones and Jackal (draft requests for Julian to send).
+9. Review Wikimedia crops and add `focus` overrides (only matters when the dev panel picks Wikimedia).
+10. Second fame source (Deezer or Wikidata) for cosigners whose Last.fm page is shared with a namesake (NERO, JENNIE, EDDIE…).
+11. More artist page facts: Wikipedia bio, Wikidata socials.
+12. Tour gaps: openers only listed in a tour's date table.
 
 **Undecided**
 
-8. **Maybe: hand-curated cosigns (step 5):** shout-outs and label signings with a source URL. Julian said "possibly"; don't build until decided.
+13. **Maybe: hand-curated cosigns (step 5):** shout-outs and label signings with a source URL. Julian said "possibly"; don't build until decided.
 
 **Next phase**
 
-9. **Accounts and real user cosigns (step 11):** Supabase. The login modal and Cosign button are demo-only for now.
-10. **Real-world trending.** Today the Trending/Top/Featured *membership* is hand-picked in artists.json (only the order is real). A real site needs trending artists from outside our roster. 🟡 Collecting since 2026-10-16: `scripts/fetch-charts.mjs` saves the Last.fm top 1000 (global + US) and Apple Music US top 100 songs + albums nightly to `data/charts/` (~153 KB/day; Julian: keep 1000 for now, trim later). Later: chart climbers and new entries week over week, checked against listener growth and across sources (Adéla was top 10 on both Last.fm global and Apple US on 2026-10-16), linked to MusicBrainz for "who cosigned them".
-    - **Sources to add (Julian, 2026-10-16):** Last.fm alone skews to indie/alt listeners (Radiohead, Deftones top it), so add:
-      1. ✖ **Wikipedia pageviews (tested and dropped, Julian 2026-10-16):** top musicians were mostly news-driven (McCartney, Michael Jackson, Eagles, actors who sing). Was: general-public attention. Free, no key, daily history back to 2015 (no collecting needed), plus a top-articles-per-country list (US). Filter to musicians via Wikidata (band / musical group, or a person whose first occupations are musical). Spikes can be news, not music.
-      2. ⬜ **YouTube Data API:** most-popular chart per country, Music category: the mainstream view. Free key (10,000 units/day, ~1 per chart call). Ranks videos, not artists (artist from channel/title). Terms limit storing data to ~30 days without refreshing. Julian is getting the key (`YOUTUBE_API_KEY` in .env + repo secret).
-      3. ✅ **Apple Music RSS (collecting from 2026-10-16, US songs + albums):** `rss.marketingtools.apple.com/api/v2/<country>/music/most-played/<10|100>/songs.json` (moved from rss.applemarketingtools.com, which 301s). Free, no key, very mainstream, per country (no global), max 100, updated daily. Flaky: some sizes time out or 502, so retry. Songs credit several artists in one string ("Drake & Don Toliver"). For promotion: link back to Apple Music.
-      - **Apple global: on hold (Julian, 2026-10-16).** Apple has no global chart. Later maybe combine big markets (UK, Canada, Australia, Germany, Brazil, Mexico, some Asian countries); 2 requests per country.
-    - Weaker sources (ListenBrainz, Deezer per-country charts) ignored for now (Julian).
-11. **Scaling** to hundreds of artists (see Milestone 1 §3), and full catalogs for the extended artists (light pages today).
+14. **Accounts and real user cosigns (step 11):** Supabase. The login modal and Cosign button are demo-only for now.
+15. **Scaling** to hundreds of artists (see Milestone 1 §3), and full catalogs for the extended artists (light pages today).
+
+### Chart sources (reference, 2026-10-16)
+- **Why several sources:** Last.fm alone skews to indie/alt listeners (Radiohead, Deftones top it), so add:
+  1. ✖ **Wikipedia pageviews (tested and dropped, Julian 2026-10-16):** top musicians were mostly news-driven (McCartney, Michael Jackson, Eagles, actors who sing). Was: general-public attention. Free, no key, daily history back to 2015 (no collecting needed), plus a top-articles-per-country list (US). Filter to musicians via Wikidata (band / musical group, or a person whose first occupations are musical). Spikes can be news, not music.
+  2. ⬜ **YouTube Data API:** most-popular chart per country, Music category: the mainstream view. Free key (10,000 units/day, ~1 per chart call). Ranks videos, not artists (artist from channel/title). Terms limit storing data to ~30 days without refreshing. Key added by Julian 2026-10-16 (`YOUTUBE_API_KEY` in .env + repo secret) and works: US Music chart = 30 videos, mostly uploaded in the last 2 weeks. **But the YouTube API Developer Policies block a history:** API data (statistics included) can't be stored more than 30 days (III.E.4), can't be used to create new or derived metrics (III.E.4.h), and can't be used to gain insights into YouTube usage (III.E.2). So YouTube can't feed a historical rising score. **Decided (Julian, 2026-10-16): YouTube is live-only**: a "Trending now" display and a "Trending video" badge on artist pages, refreshed nightly, nothing kept past 30 days, never fed into rising or any score.
+  3. ✅ **Apple Music RSS (collecting from 2026-10-16, US songs + albums):** `rss.marketingtools.apple.com/api/v2/<country>/music/most-played/<10|100>/songs.json` (moved from rss.applemarketingtools.com, which 301s). Free, no key, very mainstream, per country (no global), max 100, updated daily. Flaky: some sizes time out or 502, so retry. Songs credit several artists in one string ("Drake & Don Toliver"). For promotion: link back to Apple Music.
+  - **Apple global: on hold (Julian, 2026-10-16).** Apple has no global chart. Later maybe combine big markets (UK, Canada, Australia, Germany, Brazil, Mexico, some Asian countries); 2 requests per country.
+- Weaker sources (ListenBrainz, Deezer per-country charts) ignored for now (Julian).
+- **Genre (checked 2026-10-16):** each Apple song carries genre tags (US top 100 today: Hip-Hop/Rap 43, Country 22, Pop 16, R&B/Soul 15, Alternative 4, Latin 2, Rock 1), so charts can be grouped by genre, but small genres get only a few songs. The legacy iTunes Store feed (`itunes.apple.com/us/rss/topsongs/limit=100/genre=<id>/json`) filters by genre but ranks purchases, not streams. Apple's genre tags are saved with each song/album from 2026-10-16 (Julian: genres come to the site later).
+- **Three-way comparison (2026-10-16, US top 15):** only Drake and Olivia Rodrigo are top 15 on Apple, YouTube and Last.fm. YouTube adds regional Mexican, Latin trap and viral one-offs that neither other source shows.
+- **USA / Mexico / Brazil comparison (2026-10-16, one-off, not collected):** top 15 in all three sources: USA Drake + Olivia Rodrigo, Mexico Fuerza Regida, Brazil Olivia Rodrigo. Apple and YouTube are very local (no artist in all three countries' top 15; Mexico and Brazil share none), Last.fm is the most global (Olivia Rodrigo and Ariana Grande top 15 in all three). Adéla is #1 on Last.fm Brazil. If we add countries to the collector later, Mexico and Brazil are good candidates (Julian's picks). Name splitting gotchas: Brazilian duos are one act ("Jorge & Mateus", "Felipe e Rodrigo"); Brazilian funk videos are titled "SONG - MCs".
 
 ## Milestone 0: data-driven page and image sources 🟡
 
@@ -126,6 +138,7 @@ Goal: every section renders from one data file, no text is baked into images, an
 
 ## Log
 
+- **2026-10-16 (late night, YouTube):** YouTube key works (US Music chart = 30 videos), but its developer policies forbid storing data over 30 days and building derived metrics, so it can't feed rising. Julian: use it live only, as "Trending now" and a "Trending video" badge on artist pages. New idea: a top songs/albums section. Next up regrouped.
 - **2026-10-16 (late night, cont.):** Apple Music RSS works (moved host) and is now in the collector (US top 100 songs + albums). Wikipedia pageviews tested and dropped. Each chart is fetched independently so one failure doesn't lose the rest.
 - **2026-10-16 (late night):** Started collecting real-world charts: `fetch-charts.mjs` → `data/charts/<date>.json` (Last.fm top 1000 global + US, ~93% with MusicBrainz IDs, ~137 KB/day), nightly in site.yml. Deezer chart left out (varies by caller location). Apple Music RSS didn't respond.
 - **2026-10-16 (night):** Tidied PROGRESS: regrouped Next up, Pages deploy ticked (live at julianreyes.dev), Setlist.fm marked ruled out.

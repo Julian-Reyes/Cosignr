@@ -4,8 +4,8 @@
 // chart history, so a day that isn't saved is lost for good.
 //   lastfmGlobal  Last.fm chart.getTopArtists, top 1000. Numbers: all-time listeners and plays.
 //   lastfmUs      Last.fm geo.getTopArtists (United States), top 1000. Number: US listeners this week.
-//   appleUsSongs  Apple Music most-played songs, US, top 100 (no key). Mainstream listening.
-//   appleUsAlbums Apple Music most-played albums, US, top 100.
+//   appleUsSongs  Apple Music most-played songs, US, top 100 (no key). Mainstream listening. With genre tags.
+//   appleUsAlbums Apple Music most-played albums, US, top 100. With genre tags.
 // Rank is the position in the list (1 = first). Each chart's row layout is in `fields`.
 // Each chart is fetched on its own: one that fails is saved as null (with the reason in `errors`)
 // and the rest are still written.
@@ -60,6 +60,10 @@ async function lastfm(params, key) {
 const apple = async kind =>
   (await getJson(`https://rss.marketingtools.apple.com/api/v2/us/music/most-played/${APPLE_LIMIT}/${kind}.json`, 5)).feed.results;
 
+// Apple tags every item with genres plus a catch-all "Music"; keep the real ones (Julian: genres come to the site later).
+const appleRow = s => [s.name, s.artistName, s.artistId || null, s.releaseDate || null, s.id,
+  (s.genres || []).map(g => g.name).filter(g => g && g !== "Music")];
+
 await loadEnv();
 const KEY = process.env.LASTFM_API_KEY;
 const today = new Date().toISOString().slice(0, 10);
@@ -78,12 +82,12 @@ const CHARTS = {
       .map(a => [a.name, a.mbid || null, Number(a.listeners)]),
   },
   appleUsSongs: {
-    fields: ["song", "artist (as credited)", "apple artist id (first artist)", "release date", "apple song id"],
-    get: async () => (await apple("songs")).map(s => [s.name, s.artistName, s.artistId || null, s.releaseDate || null, s.id]),
+    fields: ["song", "artist (as credited)", "apple artist id (first artist)", "release date", "apple song id", "genres"],
+    get: async () => (await apple("songs")).map(appleRow),
   },
   appleUsAlbums: {
-    fields: ["album", "artist (as credited)", "apple artist id (first artist)", "release date", "apple album id"],
-    get: async () => (await apple("albums")).map(s => [s.name, s.artistName, s.artistId || null, s.releaseDate || null, s.id]),
+    fields: ["album", "artist (as credited)", "apple artist id (first artist)", "release date", "apple album id", "genres"],
+    get: async () => (await apple("albums")).map(appleRow),
   },
 };
 
