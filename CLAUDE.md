@@ -62,6 +62,7 @@ Refresh generated data, in this order: `node scripts/fetch-cosigns.mjs`, `node s
 ## Rules
 
 - **Never invent real-world facts presented as real.** Anything placeholder lives under an artist's `demo` key in artists.json and should be labelled as demo in the UI once real data exists. Unknown facts are `null`, not guesses.
+- **Trending rows (Julian, 2026-10-16):** listeners after the hometown on desktop (bold, name colour `--ink`); where the stat column is hidden (≤1100px) the Cosignr score is a badge on the photo's top-left, and on phones (≤760px) listeners sit under the photo.
 - **Artist page order (Julian, 2026-10-16):** Cosigns first, then Cosigned by; side by side on desktop, stacked below 900px.
 - **Artist page lists show 10 rows, then "Show more" adds 10** (Julian, 2026-10-15); the rest comes from the per-artist JSON. Both lists have sort tabs Strongest / Recent / Famous (Julian, 2026-10-16); Cosigns opens on Strongest, Cosigned by on Famous. Islands with buttons use `client:load`: `client:visible` lost the first click.
 - **Who gets an artist page (Julian, 2026-10-15):** the 12 roster artists plus the top 5 cosigners of each (`data/extended.json`, ~49). Extended artists are **light pages**: photo, stats, hometown, genre, upcoming shows, and only the cosigns we already have with the roster. Their own catalogs are not crawled. Hundreds or thousands of pages come later (see the scaling plan in PROGRESS.md).

@@ -66,13 +66,22 @@ export default function TrendingList({ rows, metrics, images }) {
         {visible.map(({ r, rank }, i) => {
           const on = cosigned.has(r.id);
           const v = value(r);
+          const listeners = r.metrics.listeners;
           return (
             <li key={r.id} className="artist" style={{ animationDelay: `${i * 40}ms` }}>
               <div className="rank"><b>{v == null ? "–" : rank}</b></div>
-              <div className="avatar" dangerouslySetInnerHTML={{ __html: imageHtml(images[r.id], r.name, view.source, { size: "thumb", focus: "center 25%", dev: view.dev }) }} />
+              <div className="avatar-cell">
+                <div className="avatar" dangerouslySetInnerHTML={{ __html: imageHtml(images[r.id], r.name, view.source, { size: "thumb", focus: "center 25%", dev: view.dev }) }} />
+                {/* Phones (Julian, 2026-10-16): score badge on the photo's top-left, listeners under it. */}
+                {r.metrics.score != null && <div className="m-score" title="Cosignr score">{r.metrics.score}</div>}
+                {listeners != null && <div className="m-listeners"><b>{fmt(listeners)}</b><small>listeners</small></div>}
+              </div>
               <div>
                 <h3><a className="artist-link" href={r.href}>{r.name}</a></h3>
-                <div className="meta">{[r.genre, r.hometown].filter(Boolean).join(" · ")}</div>
+                <div className="meta">
+                  {[r.genre, r.hometown].filter(Boolean).join(" · ")}
+                  {listeners != null && <span className="meta-listeners">{r.genre || r.hometown ? " · " : ""}<b>{fmt(listeners)} listeners</b></span>}
+                </div>
                 <div className="cosigns">
                   <h5>Cosigned by</h5>
                   {r.chips.length

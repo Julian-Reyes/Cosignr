@@ -8,7 +8,7 @@ Remaining items, in rough order. Julian wants a check-in before each one starts 
 
 1. **Rising rankings (step 4):** rank changes (▲/▼) and "rising this week" from `data/snapshots/`. Wait until ~2026-10-21 (a week of snapshots), then agree the formula with Julian before building. Method agreed in principle (2026-10-16): Last.fm listener growth as a %, with a minimum size, shown as e.g. "+4.2% listeners this week". Also covers the `watch` list in snapshots (artists the roster cosigned in the last 2 years, 88 with a Last.fm page), collected nightly from 2026-10-16.
    - **Later: real-world trending.** Today the Trending/Top/Featured *membership* is hand-picked in artists.json (only the order is real). A real site needs trending artists from outside our roster. Not started; ideas in the 2026-10-16 log.
-2. **Stats on phones (step 3):** the Trending stat column is hidden below 1100px. Waiting for Julian to check on his phone and say what he wants.
+2. ✅ **Stats on phones (step 3):** done 2026-10-16 (score badge on the photo, listeners under it; desktop shows listeners after the hometown).
 3. **"Who cosigned who" graph (step 10):** 🟡 mockups made 2026-10-16 (A everything, B page artists only, C one artist's neighbourhood as a force layout, D the same as a radial layout), using real data. Julian picked **C** (one artist + top N neighbours, force layout, names inside circles, thinner lines, small filled arrowheads); A, B, D rejected. Still a mockup, not on the site.
 4. **Accounts and real user cosigns (step 11):** Supabase. The login modal and Cosign button are demo-only for now.
 5. **Maybe: hand-curated cosigns (step 5):** shout-outs and label signings with a source URL. Julian said "possibly"; don't build until decided.
@@ -66,7 +66,7 @@ Goal: every section renders from one data file, no text is baked into images, an
 - ✅ Score bounds checked with Last.fm included: range is 32 (G Jones, Jaws) to 89 (Drake), no tuning needed
 - ✅ Replaced fake "streams" UI: Trending ranks by Cosignr score; Now/Week/Month/Year tabs replaced by "Sort by" Score / Listeners / Plays / Fans (only metrics with data show). Removed demo `trending`/`prevRank` numbers. Badge now says "Demo cosigns"
 - ⬜ Bring back rank changes (▲/▼) and "rising this week" from snapshots once there are ~7 days of them
-- ⬜ Show the stat on narrow screens (the stat column is still hidden below 1100px, as before)
+- ✅ Stats on narrow screens (Julian picked from 4 test placements, 2026-10-16): Cosignr score as a peach badge on the photo's top-left wherever the stat column is hidden (≤1100px); on phones (≤760px) Last.fm listeners under the photo; wider than that, listeners after the hometown ("Chicago, IL · 833k listeners")
 - ✅ Hometowns: `scripts/fetch-profiles.mjs` → `data/profiles.json` (MusicBrainz born/formed, else based). Filled G Jones (Santa Cruz, CA) and Jackal (United Kingdom). Hand-written values win
 - ✅ Reviewed differences (Julian, 2026-10-15): keep Rezz = Niagara Falls (MusicBrainz: born in Ukraine), Tame Impala = Perth (formed there; MusicBrainz says Sydney), The xx = London (MusicBrainz: Wandsworth). The script will keep listing these; that's expected
 - ⬜ Evaluate extra free sources: Deezer (fans, 1000px images, previews), MusicBrainz (relationships, area), Wikidata (hometown, socials), Wikipedia (bio), ListenBrainz, TheAudioDB
@@ -104,6 +104,7 @@ Goal: every section renders from one data file, no text is baked into images, an
 
 ## Log
 
+- **2026-10-16 (evening):** Trending stats on phones: score badge top-left of the photo, listeners under it; listeners after the hometown on desktop.
 - **2026-10-16 (late afternoon):** Cosigned by gets the Strongest / Recent / Famous tabs (opens on Famous). Logo checkmark box removed (header + footer). Tried the logo in Roboto (nav font); Julian kept the original Nunito. Login/Sign up text set to dark grey (Safari showed its default blue because no color was set).
 - **2026-10-16 (afternoon):** Artist pages: Cosigns now comes before Cosigned by, side by side on desktop (stacked below 900px). fetch-stats saves a nightly `watch` list in snapshots (98 artists cosigned since 2024-10-16, 88 with a verified Last.fm page) for rising. Graph arrowheads: small filled.
 - **2026-10-16 (later):** Graph: Julian picked mockup C. Real-world trending ideas: snapshot outside charts daily (Last.fm global/country charts, Deezer charts, Wikipedia most-viewed filtered to musicians) and rank climbers/new entries; resolve each to MusicBrainz. Spotify/Billboard charts have no usable API.

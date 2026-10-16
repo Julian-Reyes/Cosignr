@@ -762,6 +762,21 @@ footer .data-sources a:hover{ color: #fff; }
 .artist-link{ text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 3px; transition: text-decoration-color .15s; }
 .artist-link:hover{ text-decoration-color: currentColor; }
 
+/* Trending stats (Julian, 2026-10-16): desktop shows listeners after the hometown. Where the stat
+   column is hidden (<=1100px) the score sits as a badge on the photo; on phones listeners move under it. */
+.avatar-cell{ position: relative; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.m-score, .m-listeners{ display: none; }
+.m-score{
+  position: absolute; left: -6px; top: -6px;
+  background: var(--peach); border: 2px solid #fff; border-radius: 99px;
+  padding: 2px 8px; box-shadow: 0 2px 6px rgba(20,50,70,.18);
+  font-size: .82em; font-weight: 800; line-height: 1.1;
+}
+.m-listeners{ text-align: center; line-height: 1.1; }
+.meta-listeners b{ color: var(--ink); font-weight: 700; } /* same dark grey as the artist name */
+.m-listeners b{ display: block; font-size: .95em; font-weight: 800; }
+.m-listeners small{ display: block; font-size: .62em; color: var(--muted); }
+
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 1100px){
   .main, .bottom{ padding-left: 40px; padding-right: 40px; }
@@ -769,6 +784,7 @@ footer .data-sources a:hover{ color: #fff; }
   .artist{ grid-template-columns: 40px 100px minmax(0,1fr) auto; }
   .avatar{ width: 100px; height: 100px; }
   .stat{ display: none; }
+  .m-score{ display: block; }
 }
 
 @media (max-width: 760px){
@@ -814,6 +830,8 @@ footer .data-sources a:hover{ color: #fff; }
   .cosigns h5{ width: 100%; }
   .chip{ font-size: .72em; padding: 5px 10px; }
   .cosign-btn{ grid-column: 2 / -1; justify-self: start; }
+  .m-listeners{ display: block; }
+  .meta-listeners{ display: none; }
 
   .tile.left .overlay h3{ font-size: 1.8em; }
 
