@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T19:36:43.735Z",
+  "generatedAt": "2026-10-16T11:36:07.537Z",
   "source": "MusicBrainz (https://musicbrainz.org), CC0",
   "artists": {
     "travis-scott": {
@@ -192,16 +192,6 @@
       },
       "genre": "Electronic"
     },
-    "sza": {
-      "type": "Person",
-      "hometown": {
-        "text": "St. Louis, MO",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/759f9567-9107-40ef-a825-e57824a62e70"
-      },
-      "genre": "Contemporary R&B"
-    },
     "justice": {
       "type": "Group",
       "hometown": {
@@ -211,6 +201,16 @@
         "area": "https://musicbrainz.org/area/dc10c22b-e510-4006-8b7f-fecb4f36436e"
       },
       "genre": "Electro House"
+    },
+    "the-flaming-lips": {
+      "type": "Group",
+      "hometown": {
+        "text": "Oklahoma City, OK",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/ca61e235-0f31-4c0e-8963-8232222ef6a8"
+      },
+      "genre": "Alternative Rock"
     },
     "metric": {
       "type": "Group",

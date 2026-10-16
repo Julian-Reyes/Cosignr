@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T19:51:01.723Z",
+  "generatedAt": "2026-10-16T11:35:12.919Z",
   "rule": "Top 5 cosigners of each roster artist (light pages)",
   "artists": [
     {
@@ -125,23 +125,6 @@
       ]
     },
     {
-      "id": "sza",
-      "name": "SZA",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "272989c8-5535-492d-a25c-9f58803e027f",
-        "wikidata": "Q16210722",
-        "spotify": "7tYKF4w9nC0nq9CsPZTHyP",
-        "deezer": "5531258",
-        "lastfm": "SZA"
-      },
-      "extended": true,
-      "cosignerOf": [
-        "tame-impala"
-      ]
-    },
-    {
       "id": "justice",
       "name": "Justice",
       "genre": null,
@@ -152,6 +135,23 @@
         "spotify": "1gR0gsQYfi6joyO1dlp76N",
         "deezer": "6404",
         "lastfm": "Justice"
+      },
+      "extended": true,
+      "cosignerOf": [
+        "tame-impala"
+      ]
+    },
+    {
+      "id": "the-flaming-lips",
+      "name": "The Flaming Lips",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "1f43d76f-8edf-44f6-aaf1-b65f05ad9402",
+        "wikidata": "Q523184",
+        "spotify": "16eRpMNXSQ15wuJoeqguaB",
+        "deezer": "1857",
+        "lastfm": "The Flaming Lips"
       },
       "extended": true,
       "cosignerOf": [
@@ -171,7 +171,7 @@
         "lastfm": "Metric"
       },
       "caveats": {
-        "deezer": "Deezer page has 623 fans vs 3,007,992 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 623 fans vs 3,007,406 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "cosignerOf": [
