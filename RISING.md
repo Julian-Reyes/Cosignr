@@ -18,7 +18,7 @@ Trending stays as it is. The listener-growth "rising" from `data/snapshots/` (PR
    - every page artist (roster + extended) with **1M+ Last.fm listeners**, plus
    - the **top of the Last.fm US chart and the Apple Music US song chart** (`data/charts/`), so stars without a page (Olivia Rodrigo, SZA…) count. Grows over time.
 2. **Window: cosigns from the last 12 months.**
-3. **A newcomer is:** under **150k Last.fm listeners** and **first release within the last ~5 years** (MusicBrainz). Unknown listeners → excluded (unknown fame is safer than wrong fame).
+3. **A newcomer is:** under **150k Last.fm listeners** and **first release within the last ~5 years** (MusicBrainz). Julian chose just these two checks (a Wikipedia-article count was considered and not taken). Unknown listeners → excluded (unknown fame is safer than wrong fame).
 4. **Old songs with new dates don't count:** reissues, live versions, re-recordings, compilations (Die With a Smile, SexyBack, Shallow, Timeless all showed up as 2025–26 recordings).
 5. **Mashups and medleys don't count** (titles joining songs with " / ", DJ-mix segments, the existing fetch-cosigns rules).
 6. Superstar-to-superstar cosigns are filtered out by the 150k rule.
@@ -41,6 +41,15 @@ Trending stays as it is. The listener-growth "rising" from `data/snapshots/` (PR
 7. **Save** the top ~50 to `data/rising.json`: newcomer (name, MusicBrainz ID, listeners, first release year, Spotify ID if MusicBrainz links one), and their cosigns (cosigner name/ID/listeners, song title, date, type, MusicBrainz recording URL).
 
 **Cost:** MusicBrainz is 1 request/second. Roughly 100–200 cosigners × 1–2 requests, plus ~3 requests per candidate (reissue, first release; Last.fm separately) ≈ 10–15 min on the first run, a few minutes after caching. Acceptable inside the nightly job (cosigns already takes ~7 min).
+
+## By genre (discussed 2026-10-16, not decided)
+
+Julian's worry: Hip-Hop and Pop crowding out Indie and others. Plugs into the existing genre bar like Trending does: **All** = mixed list with a genre quota (e.g. at most 2 per genre in the top 5, or round-robin); **a genre** = that genre's own Rising list, ranked within the genre.
+
+- **Newcomer genre**, first that exists: Last.fm top tags by MusicBrainz ID (best coverage for small artists) → MusicBrainz genre → Apple tag if charting → the cosigner's genre (most cosigns stay within a genre). Folded into the 8 groups with `genreGroup()`.
+- **Pool bias:** the Apple chart is mostly Hip-Hop/Country, the Last.fm chart leans indie/alt. Build the cosigner pool per genre (genre picks + both charts) so each genre has big cosigners.
+- **Fame scales differ by genre** (big indie ≈ 1–2M Last.fm listeners, big rap ≈ 5–8M): the cosigner/newcomer ratio already adjusts somewhat; ranking within genre adjusts fully.
+- Some genres will have only 2–3 newcomers at first (Country/Latin credits are thin on MusicBrainz): show that honestly.
 
 ## On the page
 

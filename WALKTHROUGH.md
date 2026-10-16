@@ -72,6 +72,8 @@ Spotify stopped giving popularity and follower counts to new apps in February 20
 
 The **Cosignr score (0–100)** blends these. Each number is put on a log scale (so 1k → 10k counts as much as 1M → 10M) against fixed ranges, then averaged. Because the ranges are fixed, an artist's score doesn't change just because we add someone bigger. With both sources, scores currently run from 32 (G Jones, Jaws) to 89 (Drake). Last.fm pulls up the US and underground artists that Deezer undercounts: G Jones was 5 on Deezer alone.
 
+All three numbers are **career totals**, so the score says how big an artist is overall, not how hot they are right now. Eminem scores 86, above Ye and Kendrick, mostly because of his huge Deezer following, even though he isn't on this week's charts. Making Trending use current numbers (the weekly Last.fm US chart and Apple's ranks) is the next thing to decide; see PROGRESS.md.
+
 The Trending list ranks by score by default. The "Sort by" tabs switch between whichever numbers exist (Score, Fans, and later Listeners and Plays). The old Now / This Week / Month / Year tabs are gone because they showed made-up numbers. Real "rising this week" rankings come back once enough daily snapshots have built up. Each row also shows Last.fm listeners after the hometown. On smaller screens, where the number column on the right is hidden, the Cosignr score appears as a peach badge on the photo's top-left corner, and on phones the listener count moves under the photo.
 
 If a number is known to be wrong for an artist, it's listed under `caveats` in `artists.json` and left out. Example: Deezer's "Jackal" page mixes several artists with that name, so his fan count isn't used and he shows "No reliable data yet".
