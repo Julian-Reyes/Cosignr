@@ -146,6 +146,14 @@ Some safety checks:
 - **Last.fm names.** Last.fm pages are matched the careful way: "Ye" must land on Kanye West's page, not a smaller artist called Ye.
 - **Genre.** For these artists, genre is MusicBrainz's most-voted genre tag, so it can be quirky (Skrillex: "Brostep"). Our 12 keep their hand-written genres.
 
+## Genres
+
+A thin white bar under the nav lets visitors pick a genre: All, Hip-Hop, Pop, R&B, Indie, Electronic, Rock, Country or Latin. Picking one filters Trending, Hot Right Now and Top Artists (Featured stays as it is), and adds `?genre=hip-hop` to the address so the view can be shared.
+
+Artists' genres are detailed ("Brostep", "Emo Rap", "Indie Pop"), so each one is folded into one of the eight groups by a short list of rules in `src/lib/shared.js`. The first rule that matches wins, which is why "Indie Pop" counts as Indie and "Emo Rap" as Hip-Hop. Chart songs use Apple's genre tag. YouTube doesn't give genres, so a video only has one when it's by an artist with a Cosignr page; most videos disappear when a genre is picked.
+
+**Trending by genre.** "All" shows the hand-picked Trending list. Each genre has five hand-picked artists (`genrePicks` in `data/artists.json`), so every genre always has something to show. Most picks already had a page; 19 artists (such as SZA, Morgan Wallen, Bad Bunny and Deftones) were added in a `curated` list just for this. They get light pages like the top cosigners: photo, stats, hometown and upcoming shows, but their own catalogs aren't read, so most of them show "No cosigns found yet". Ranks are counted within the list you're looking at.
+
 ## Hot Right Now
 
 The home section under Trending shows what the US is playing today, in three tabs: **Songs** and **Albums** (Apple Music's most played, from the newest `data/charts/` file) and **Videos** (YouTube's US music chart). The top 5 show first; "Show More" adds 10 at a time, up to 25. Each row has the cover art or thumbnail, a genre tag (Apple), a "New" tag for anything released in the last week, and a link back to Apple Music or YouTube. Their terms allow showing the images only with that link. Rows and cover art are the same size as the Trending rows above; video thumbnails keep their wide shape.

@@ -7,7 +7,8 @@ Status key: ✅ done · 🟡 in progress · ⬜ not started · ✖ ruled out
 Remaining items, grouped. Julian wants a check-in before each one starts (propose a plan, wait for OK). Details are in the sections below.
 
 **Waiting on data (collecting nightly)**
-1. **Rising (our artists):** "rising this week" and rank changes (▲/▼) from `data/snapshots/`. Method agreed in principle: Last.fm listener growth as a %, with a minimum size, shown as e.g. "+4.2% listeners this week". The 61 page artists have 7 days ~2026-10-22; the `watch` list (88 artists the roster cosigned in the last 2 years) ~2026-10-23. Agree the formula and placement before building; it could replace the hand-picked Trending list.
+1. **Rising (our artists):** *Option (Julian, 2026-10-16), **plan in `RISING.md`** (own "Rising" section under Trending; Julian still deciding scope for the demo): **recent cosigns from big artists to small ones**, e.g. Drake → Iconic Savvy (7k Last.fm listeners, May 2026), Travis Scott → skeler. (6.5k, remix, Oct 2026). Rank by cosigner fame vs newcomer fame and recency; combine with the snapshot growth below ("+40% since Drake's cosign") or offer it as a filter. Spot-check credits (remixes) before featuring anyone.*
+    "rising this week" and rank changes (▲/▼) from `data/snapshots/`. Method agreed in principle: Last.fm listener growth as a %, with a minimum size, shown as e.g. "+4.2% listeners this week". The 61 page artists have 7 days ~2026-10-22; the `watch` list (88 artists the roster cosigned in the last 2 years) ~2026-10-23. Agree the formula and placement before building; it could replace the hand-picked Trending list.
 2. **Real-world rising / trending:** from `data/charts/` (Last.fm top 1000 global + US, Apple Music US top 100 songs + albums, collected since 2026-10-16). Needs a few weeks of history. Idea: chart climbers and new entries week over week, confirmed across sources (Adéla was top 10 on Last.fm global, Apple US songs and both Wikipedia lists on 2026-10-16), linked to MusicBrainz for "who cosigned them". This is what replaces the hand-picked Trending/Top/Featured membership.
 
 **Decided, needs a plan (propose before building)**
@@ -22,7 +23,13 @@ Remaining items, grouped. Julian wants a check-in before each one starts (propos
 6. **"Who cosigned who" graph (step 10):** 🟡 mockup **C** picked: one artist + top N cosigners/cosigned by fame, force layout, names inside circles, thin lines, small filled arrowheads (A, B, D rejected). Open: artist page section or own page, N (8 desktop / 5 phone?), photos in circles.
 7. **Countries (Julian, 2026-10-16):** global is tricky (Apple and YouTube only chart by country), so Cosignr is **USA only for now** (the Last.fm global chart keeps being collected in case global is added someday); future versions can load by region/country (Mexico and Brazil were compared and are good candidates).
 
+**Decided, needs a plan (propose before building)**
+
+- ✅ **Genre bar (built 2026-10-16):** thin white strip under the nav (All, Hip-Hop, Pop, R&B, Indie, Electronic, Rock, Country, Latin) filtering Trending, Hot Right Now and Top. Trending has 5 hand-picked artists per genre (`genrePicks`, 19 new `curated` light pages: SZA, Morgan Wallen, Bad Bunny, Deftones…); All keeps the hand-picked 6. Later: genre filters on artist page lists and Rising; video genres for artists without a page; real cosigns for the curated artists (their catalogs aren't crawled).
+
 **Ready to start (small)**
+
+- **fetch-sources.mjs drops a photo on a temporary error** (seen 2026-10-16: a Spotify oEmbed 504 removed Bassnectar's image until a re-run). Keep the previous image when a fetch fails.
 
 8. Press photos for G Jones and Jackal (draft requests for Julian to send).
 9. Review Wikimedia crops and add `focus` overrides (only matters when the dev panel picks Wikimedia).
@@ -139,6 +146,10 @@ Goal: every section renders from one data file, no text is baked into images, an
 
 ## Log
 
+- **2026-10-16 (late night, genre picks):** Trending genre filter shows 5 hand-picked artists per genre (Julian approved the picks). 19 new curated light pages (R&B, Rock, Country, Latin, Olivia Rodrigo for Pop), IDs resolved by fetch-extended. Trending ranks now count within the current view. Linkin Park and Morgan Wallen had empty duplicate Deezer pages (3,987 / 876 fans); fetch-extended now checks curated artists' fans against their own Last.fm listeners and adds the caveat. "Cosigned by" lists are built for every page artist.
+- **2026-10-16 (late night, genres):** Genre bar under the nav (Julian picked 8 genres, filter the home page, under the nav). `genreGroup()` folds detailed genres into groups. Hot Right Now now ships each genre's top 25 from the full chart (island props ~47 → ~124 KB). Fixed Show More showing "(-2)" when it should be hidden (`display` overrode `[hidden]`).
+- **2026-10-16 (late night, Rising plan):** Wrote RISING.md: Rising = newcomers (<150k Last.fm listeners, first release within ~5 years) cosigned in the last 12 months by big artists (page artists with 1M+ listeners plus the Last.fm/Apple US chart tops). Reissues, mashups and medleys excluded. Not built; Julian to decide scope.
+- **2026-10-16 (late night, nav fix):** Section links (Featured, Top, Trending, Hot) stopped with the title hidden under the sticky nav; fixed with `scroll-padding-top` on `html`. Logged two ideas: rising from big-to-small recent cosigns, and genre tabs.
 - **2026-10-16 (late night, Hot Right Now, title):** Heading in title case: "Hot Right Now" (Julian).
 - **2026-10-16 (late night, Hot Right Now, shorter):** Hot Right Now shows the top 5, then Show More adds 10 (up to 25), like Trending (Julian).
 - **2026-10-16 (late night, Hot Right Now, cont.):** Cover art enlarged to match the Trending photos (120 / 100 / 72px; videos 16:9 at the same height), Apple artwork fetched at 240px. Docs: fetch-youtube added to the refresh order and the nightly-deploy notes.

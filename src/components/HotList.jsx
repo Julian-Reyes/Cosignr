@@ -3,7 +3,8 @@
 // Props come from hotLists() in data.js: rows hold only what the list shows. Cover art and thumbnails
 // always link back to the service they came from (Apple Music / YouTube image terms, approved by
 // Julian 2026-10-16).
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { currentGenre, genreLabel } from "../lib/shared.js";
 
 const INITIAL = 5;
 const STEP = 10;
@@ -38,13 +39,22 @@ function Row({ r, i }) {
   );
 }
 
-export default function HotList({ tabs, appleDate, youtubeDate }) {
+export default function HotList({ tabs, max, appleDate, youtubeDate }) {
   const keys = Object.keys(TABS).filter(k => tabs[k].length);
   const [tab, setTab] = useState(keys[0]);
   const [count, setCount] = useState(INITIAL);
+  const [genre, setGenre] = useState(null); // genre bar, null = All
+
+  useEffect(() => {
+    setGenre(currentGenre());
+    const onGenre = e => { setGenre(e.detail.genre); setCount(INITIAL); };
+    window.addEventListener("cosignr:genre", onGenre);
+    return () => window.removeEventListener("cosignr:genre", onGenre);
+  }, []);
   if (!keys.length) return null;
 
-  const rows = tabs[tab];
+  // Ranks stay the chart's ranks; a genre shows its own top `max` from the full chart.
+  const rows = genre ? tabs[tab].filter(r => r.g === genre).slice(0, max) : tabs[tab].filter(r => r.rank <= max);
   const visible = rows.slice(0, count);
   const left = rows.length - visible.length;
   const source = tab === "videos" ? `YouTube, ${youtubeDate}` : `Apple Music, ${appleDate}`;
@@ -65,7 +75,9 @@ export default function HotList({ tabs, appleDate, youtubeDate }) {
           </div>
         )}
       </div>
-      <ol className="hot-list">{visible.map((r, i) => <Row key={`${tab}-${r.key}`} r={r} i={i} />)}</ol>
+      {rows.length
+        ? <ol className="hot-list">{visible.map((r, i) => <Row key={`${tab}-${r.key}`} r={r} i={i} />)}</ol>
+        : <p className="genre-empty">No {genreLabel(genre)} {TABS[tab].toLowerCase()} in today's chart{tab === "videos" ? " that we can tag (video genres come from artists with a Cosignr page)" : ""}.</p>}
       {left > 0
         ? <button className="showmore" type="button" onClick={() => setCount(c => c + STEP)}>
             <span>Show More ({Math.min(STEP, left)})</span> <Icon id="i-down" />

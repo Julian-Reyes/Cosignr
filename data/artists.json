@@ -106,5 +106,38 @@
     { "artist": "rezz", "label": "New Release" }
   ],
   "trending": ["g-jones", "the-drums", "jaws", "saba", "jackal", "ski-mask"],
-  "top": ["the-xx", "porter-robinson", "drake"]
+  "top": ["the-xx", "porter-robinson", "drake"],
+
+  "_genrePicksNote": "Julian, 2026-10-16: 5 hand-picked artists per genre, shown in Trending when that genre is selected (All keeps `trending`). Any artist with a page can be picked. `curated` adds artists who get a light page only for this (not crawled like the roster); fetch-extended.mjs resolves their other IDs from MusicBrainz.",
+  "genrePicks": {
+    "hip-hop":    ["drake", "eminem", "ye", "kendrick-lamar", "travis-scott"],
+    "pop":        ["rihanna", "lady-gaga", "beyonce", "justin-timberlake", "olivia-rodrigo"],
+    "rnb":        ["the-weeknd", "sza", "partynextdoor", "summer-walker", "bryson-tiller"],
+    "indie":      ["metric", "florence-the-machine", "the-xx", "foster-the-people", "grimes"],
+    "electronic": ["calvin-harris", "daft-punk", "gorillaz", "skrillex", "kygo"],
+    "rock":       ["tame-impala", "deftones", "arctic-monkeys", "paramore", "linkin-park"],
+    "country":    ["morgan-wallen", "zach-bryan", "ella-langley", "luke-combs", "chris-stapleton"],
+    "latin":      ["bad-bunny", "karol-g", "fuerza-regida", "peso-pluma", "junior-h"]
+  },
+  "curated": [
+    { "id": "olivia-rodrigo",  "name": "Olivia Rodrigo",  "genre": "Pop",     "musicbrainz": "6925db17-f35e-42f3-a4eb-84ee6bf5d4b0" },
+    { "id": "sza",             "name": "SZA",             "genre": "R&B",     "musicbrainz": "272989c8-5535-492d-a25c-9f58803e027f" },
+    { "id": "partynextdoor",   "name": "PARTYNEXTDOOR",   "genre": "R&B",     "musicbrainz": "f23ef341-33bd-47c1-b83c-846a78581f05" },
+    { "id": "summer-walker",   "name": "Summer Walker",   "genre": "R&B",     "musicbrainz": "9167f739-da47-4495-9d63-9c13b40114ac" },
+    { "id": "bryson-tiller",   "name": "Bryson Tiller",   "genre": "R&B",     "musicbrainz": "d8fd8d9b-473b-4f06-83c8-869b1bb9de89" },
+    { "id": "deftones",        "name": "Deftones",        "genre": "Rock",    "musicbrainz": "7527f6c2-d762-4b88-b5e2-9244f1e34c46" },
+    { "id": "arctic-monkeys",  "name": "Arctic Monkeys",  "genre": "Rock",    "musicbrainz": "ada7a83c-e3e1-40f1-93f9-3e73dbc9298a" },
+    { "id": "paramore",        "name": "Paramore",        "genre": "Rock",    "musicbrainz": "44cf61b8-5197-448a-b82b-cef6ee89fac5" },
+    { "id": "linkin-park",     "name": "Linkin Park",     "genre": "Rock",    "musicbrainz": "f59c5520-5f46-4d2c-b2c4-822eabf53419" },
+    { "id": "morgan-wallen",   "name": "Morgan Wallen",   "genre": "Country", "musicbrainz": "2077273e-eaa1-4f49-903c-f286ededecb9" },
+    { "id": "zach-bryan",      "name": "Zach Bryan",      "genre": "Country", "musicbrainz": "51e90731-08c0-4f60-89b6-5b78e5844de8" },
+    { "id": "ella-langley",    "name": "Ella Langley",    "genre": "Country", "musicbrainz": "b16c0872-31a7-4db9-8569-0e3146fcecfc" },
+    { "id": "luke-combs",      "name": "Luke Combs",      "genre": "Country", "musicbrainz": "c20ee61f-071f-4e65-9c81-45ee931a54ce" },
+    { "id": "chris-stapleton", "name": "Chris Stapleton", "genre": "Country", "musicbrainz": "71d58182-aa37-4c04-b21a-efe46ea0f221" },
+    { "id": "bad-bunny",       "name": "Bad Bunny",       "genre": "Latin",   "musicbrainz": "89aa5ecb-59ad-46f5-b3eb-2d424e941f19" },
+    { "id": "karol-g",         "name": "KAROL G",         "genre": "Latin",   "musicbrainz": "de22adae-f8ac-414f-b653-b0162611bd60" },
+    { "id": "fuerza-regida",   "name": "Fuerza Regida",   "genre": "Latin",   "musicbrainz": "e665ce26-6ce9-4c42-8f6a-7a361a0ba328" },
+    { "id": "peso-pluma",      "name": "Peso Pluma",      "genre": "Latin",   "musicbrainz": "75e4f8ef-34c3-44fd-8467-88a7d9599f77" },
+    { "id": "junior-h",        "name": "Junior H",        "genre": "Latin",   "musicbrainz": "af1b83bb-3edc-4443-b771-67a1d235e82b" }
+  ]
 }

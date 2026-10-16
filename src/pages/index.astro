@@ -3,8 +3,8 @@
 import Base from "../layouts/Base.astro";
 import TrendingList from "../components/TrendingList.jsx";
 import HotList from "../components/HotList.jsx";
-import { DATA, BY_ID, IMAGES, COSIGNS, hometown, metricValue, chips, pageUrl, hotLists } from "../lib/data.js";
-import { METRICS, CHIP_COUNT, DEFAULT_SOURCE, imageHtml, creditHtml } from "../lib/shared.js";
+import { DATA, BY_ID, PAGE_BY_ID, IMAGES, COSIGNS, hometown, genre, metricValue, chips, pageUrl, hotLists } from "../lib/data.js";
+import { METRICS, CHIP_COUNT, DEFAULT_SOURCE, GENRES, genreGroup, imageHtml, creditHtml } from "../lib/shared.js";
 
 const img = (a, opts) => imageHtml(IMAGES[a.id], a.name, DEFAULT_SOURCE, opts);
 const credit = a => creditHtml(IMAGES[a.id], DEFAULT_SOURCE);
@@ -13,18 +13,28 @@ const usedSource = a => (IMAGES[a.id][DEFAULT_SOURCE] ? DEFAULT_SOURCE : "none")
 const [main, ...rest] = DATA.featured.map(f => ({ ...f, a: BY_ID[f.artist] }));
 
 // Trending rows: only what the list shows (plus search terms), not the raw data files.
-const trending = DATA.trending.map(id => BY_ID[id]);
+// "All" shows DATA.trending; a genre shows its 5 genrePicks (Julian, 2026-10-16) plus any All artist in it.
+const picksOf = id => Object.entries(DATA.genrePicks || {}).filter(([, ids]) => ids.includes(id)).map(([g]) => g);
+const trending = [...new Set([...DATA.trending, ...Object.values(DATA.genrePicks || {}).flat()])]
+  .map(id => PAGE_BY_ID[id]).filter(Boolean);
 const rows = trending.map(a => ({
-  id: a.id, name: a.name, href: pageUrl(a.id), genre: a.genre, hometown: hometown(a),
+  id: a.id, name: a.name, href: pageUrl(a.id), genre: genre(a), g: genreGroup(genre(a)), hometown: hometown(a),
+  all: DATA.trending.includes(a.id), picks: picksOf(a.id),
   caveat: Object.values(a.caveats || {})[0] || null,
   metrics: Object.fromEntries(Object.keys(METRICS).map(m => [m, metricValue(a, m)])),
   chips: chips(a, CHIP_COUNT),
-  search: [a.name, a.genre, hometown(a), ...COSIGNS[a.id].map(c => c.name)].filter(Boolean),
+  search: [a.name, genre(a), hometown(a), ...COSIGNS[a.id].map(c => c.name)].filter(Boolean),
 }));
 const metrics = Object.keys(METRICS).filter(m => trending.some(a => metricValue(a, m) != null));
 const trendingImages = Object.fromEntries(trending.map(a => [a.id, IMAGES[a.id]]));
 ---
-<Base home images={Object.fromEntries(DATA.artists.map(a => [a.id, IMAGES[a.id]]))}>
+<Base home images={Object.fromEntries([...DATA.artists, ...trending].map(a => [a.id, IMAGES[a.id]]))}>
+  <!-- Genre bar (Julian, 2026-10-16): filters Trending, Hot Right Now and Top. Not sticky; Featured stays as is. -->
+  <div class="genre-bar" role="toolbar" aria-label="Filter by genre">
+    <button type="button" class="active" data-genre="" aria-pressed="true">All</button>
+    {GENRES.map(g => <button type="button" data-genre={g.id} aria-pressed="false">{g.label}</button>)}
+  </div>
+
   <main class="main">
     <div class="section-head" id="featured">
       <div>
@@ -84,7 +94,7 @@ const trendingImages = Object.fromEntries(trending.map(a => [a.id, IMAGES[a.id]]
       {DATA.top.map((id, i) => {
         const a = BY_ID[id];
         return (
-          <article class="top-card" data-src={usedSource(a)} data-img={a.id}>
+          <article class="top-card" data-src={usedSource(a)} data-img={a.id} data-genre={genreGroup(genre(a)) || ""}>
             <Fragment set:html={img(a)} />
             <span class="num">{i + 1}</span>
             <div class="overlay">
@@ -96,5 +106,6 @@ const trendingImages = Object.fromEntries(trending.map(a => [a.id, IMAGES[a.id]]
         );
       })}
     </div>
+    <p class="genre-empty" id="topEmpty" hidden>No Top Artists in this genre yet.</p>
   </section>
 </Base>

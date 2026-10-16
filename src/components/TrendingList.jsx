@@ -2,13 +2,14 @@
 // demo Cosign button. Rendered at build time and hydrated in the browser.
 // Props are prepared by index.astro: rows hold only what this list shows, not the raw data files.
 import { useEffect, useState } from "react";
-import { METRICS, INITIAL_COUNT, DEFAULT_SOURCE, fmt, imageHtml, viewState, toast } from "../lib/shared.js";
+import { METRICS, INITIAL_COUNT, DEFAULT_SOURCE, fmt, imageHtml, viewState, toast, currentGenre, genreLabel } from "../lib/shared.js";
 
 const Icon = ({ id }) => <svg className="icon"><use href={`#${id}`} /></svg>;
 
 export default function TrendingList({ rows, metrics, images }) {
   const [metric, setMetric] = useState(metrics[0]);
   const [query, setQuery] = useState("");
+  const [genre, setGenre] = useState(null); // genre bar, null = All
   const [expanded, setExpanded] = useState(false);
   const [cosigned, setCosigned] = useState(() => new Set(["saba"])); // demo: accounts aren't live yet
   const [view, setView] = useState({ source: DEFAULT_SOURCE, dev: false });
@@ -19,15 +20,24 @@ export default function TrendingList({ rows, metrics, images }) {
     if (q) setQuery(q);
     const onSearch = e => setQuery(e.detail.query);
     const onView = e => setView(e.detail);
+    const onGenre = e => setGenre(e.detail.genre);
+    setGenre(currentGenre());
     window.addEventListener("cosignr:search", onSearch);
     window.addEventListener("cosignr:view", onView);
-    return () => { window.removeEventListener("cosignr:search", onSearch); window.removeEventListener("cosignr:view", onView); };
+    window.addEventListener("cosignr:genre", onGenre);
+    return () => {
+      window.removeEventListener("cosignr:search", onSearch);
+      window.removeEventListener("cosignr:view", onView);
+      window.removeEventListener("cosignr:genre", onGenre);
+    };
   }, []);
 
   const value = r => r.metrics[metric];
-  // Artists without a value for this metric sink to the bottom, in curated order.
-  const ranked = [...rows].sort((a, b) => (value(b) ?? -1) - (value(a) ?? -1)).map((r, i) => ({ r, rank: i + 1 }));
-  const max = METRICS[metric]?.max || value(ranked[0].r) || 1;
+  // All: the hand-picked Trending list. A genre: its genre picks plus any All artist in that genre.
+  const inView = r => (genre ? r.picks.includes(genre) || (r.all && r.g === genre) : r.all);
+  // Ranked within the current view. Artists without a value for this metric sink to the bottom, in curated order.
+  const ranked = rows.filter(inView).sort((a, b) => (value(b) ?? -1) - (value(a) ?? -1)).map((r, i) => ({ r, rank: i + 1 }));
+  const max = METRICS[metric]?.max || (ranked[0] && value(ranked[0].r)) || 1;
   const q = query.trim().toLowerCase();
   const matches = q ? ranked.filter(({ r }) => r.search.some(s => s.toLowerCase().includes(q))) : ranked;
   const visible = q || expanded ? matches : matches.slice(0, INITIAL_COUNT);
@@ -62,7 +72,7 @@ export default function TrendingList({ rows, metrics, images }) {
       </div>
 
       <ol className="trending" id="trendingList">
-        {!visible.length && <li className="empty">No artists match “{query}”.</li>}
+        {!visible.length && <li className="empty">{q ? <>No artists match “{query}”{genre ? ` in ${genreLabel(genre)}` : ""}.</> : `No ${genreLabel(genre)} artists in Trending yet.`}</li>}
         {visible.map(({ r, rank }, i) => {
           const on = cosigned.has(r.id);
           const v = value(r);

@@ -9,6 +9,7 @@ import upcoming from "../../data/upcoming.json";
 import profiles from "../../data/profiles.json";
 import extendedJson from "../../data/extended.json";
 import { mergeCosigns, byCosignerFame } from "./cosigns.js";
+import { genreGroup } from "./shared.js";
 import { readFileSync, readdirSync } from "node:fs";
 
 export const BASE = import.meta.env.BASE_URL.replace(/\/?$/, "/");
@@ -57,11 +58,12 @@ export function metricValue(artist, metric) {
 
 // ---------- cosigns ----------
 
-// For each roster artist: everyone who cosigned them, ranked by byCosignerFame (src/lib/cosigns.js).
+// For each page artist: everyone who cosigned them, ranked by byCosignerFame (src/lib/cosigns.js).
+// Extended artists (light pages) only have cosigns with the roster.
 const MERGED = mergeCosigns({ cosigns: cosignsJson, tours, upcoming, fame: STATS.cosigners });
 function buildCosignedBy() {
-  const byMbid = Object.fromEntries(DATA.artists.map(a => [a.ids.musicbrainz, a.id]));
-  const out = Object.fromEntries(DATA.artists.map(a => [a.id, []]));
+  const byMbid = Object.fromEntries(PAGES.map(a => [a.ids.musicbrainz, a.id]));
+  const out = Object.fromEntries(PAGES.map(a => [a.id, []]));
   for (const e of MERGED) {
     const id = byMbid[e.to];
     if (id) out[id].push({ ...e, name: e.fromName, fame: e.fromFame });
@@ -253,7 +255,7 @@ function appleRows(list) {
     return {
       key: id, rank: i + 1, title, url, service: "Apple Music",
       art: art ? art.replace(/\/\d+x\d+bb\.(jpg|png)$/, "/240x240bb.$1") : null, // 240px for retina at 120px
-      artists: creditSegments(credit, people), genre: genres?.[0] || null,
+      artists: creditSegments(credit, people), genre: genres?.[0] || null, g: genreGroup(genres?.[0]),
       isNew: !!released && released >= newSince, cosigns, pages: people.filter(p => p.href).map(p => p.mbid),
     };
   });
@@ -277,6 +279,7 @@ function videoRows() {
     return {
       key: v.id, rank: i + 1, title: v.title, url: `https://www.youtube.com/watch?v=${v.id}`, service: "YouTube",
       art: v.thumb, artists, genre: null, isNew: v.published >= newSince, cosigns, pages: linked.map(p => p.mbid), wide: true,
+      g: linked.length ? genreGroup(genre(PAGE_BY_MBID[linked[0].mbid])) : null, // only known for our artists
     };
   });
 }
@@ -284,14 +287,22 @@ function videoRows() {
 const SONGS = CHART ? appleRows(CHART.appleUsSongs) : [];
 const VIDEOS = YOUTUBE?.videos?.length ? videoRows() : [];
 
-// Props for the home page's HotList island: only the rows it shows.
+// Props for the home page's HotList island: only the rows it shows. That's the overall top HOT_COUNT
+// plus each genre's top HOT_COUNT (from the full chart), so the genre bar has enough rows to filter.
 export function hotLists() {
-  const strip = ({ pages, ...r }) => r;
+  const pick = rows => {
+    const seen = {};
+    return rows.filter(r => {
+      const n = r.g ? (seen[r.g] = (seen[r.g] || 0) + 1) : 0;
+      return r.rank <= HOT_COUNT || (r.g && n <= HOT_COUNT);
+    }).map(({ pages, ...r }) => r);
+  };
   return {
+    max: HOT_COUNT,
     tabs: {
-      songs: SONGS.slice(0, HOT_COUNT).map(strip),
-      albums: CHART ? appleRows(CHART.appleUsAlbums).slice(0, HOT_COUNT).map(strip) : [],
-      videos: VIDEOS.slice(0, HOT_COUNT).map(strip),
+      songs: pick(SONGS),
+      albums: CHART ? pick(appleRows(CHART.appleUsAlbums)) : [],
+      videos: pick(VIDEOS),
     },
     appleDate: CHART ? shortDate(CHART.date) : null,
     youtubeDate: YOUTUBE ? shortDate(YOUTUBE.fetchedAt) : null,

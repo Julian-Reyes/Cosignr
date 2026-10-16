@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Builds data/extended.json: the artists who get a page besides our roster. Julian (2026-10-15):
 // the top EXTENDED_PER_ARTIST cosigners of each roster artist, ranked exactly like the "Cosigned by"
-// chips (src/lib/cosigns.js). These are "light" pages: photo, stats, hometown, genre and upcoming
+// chips (src/lib/cosigns.js), plus the hand-picked `curated` artists in artists.json (Julian,
+// 2026-10-16: genre picks for Trending; they keep their hand-written id and genre). These are "light" pages: photo, stats, hometown, genre and upcoming
 // shows are fetched for them by the other scripts, but their own song/tour history is not crawled.
 //
 // IDs come from MusicBrainz URL relations (Wikidata, Spotify, Deezer), falling back to Wikidata
@@ -35,7 +36,7 @@ const getJson = async url => {
 const slug = name => name.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase()
   .replace(/\$/g, "s").replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "artist";
 
-const { artists } = await read("artists.json");
+const { artists, curated = [] } = await read("artists.json");
 const stats = await read("stats.json");
 const merged = mergeCosigns({ cosigns: await read("cosigns.json"), tours: await read("tours.json"), upcoming: await read("upcoming.json"), fame: stats.cosigners });
 const roster = new Map(artists.map(a => [a.ids.musicbrainz, a]));
@@ -50,8 +51,14 @@ for (const a of artists) {
   }
 }
 
-// 2. IDs on other services.
-const used = new Set(artists.map(a => a.id));
+// 2. Hand-picked artists (genre picks). A curated artist who is also a top cosigner keeps the curated id/genre.
+for (const c of curated) {
+  if (roster.has(c.musicbrainz)) continue;
+  picked.set(c.musicbrainz, { cosignerOf: [], ...picked.get(c.musicbrainz), name: c.name, curated: c });
+}
+
+// 3. IDs on other services.
+const used = new Set([...artists.map(a => a.id), ...curated.map(c => c.id)]);
 const out = [];
 for (const [mbid, p] of picked) {
   const ids = { musicbrainz: mbid, wikidata: null, spotify: null, deezer: null, lastfm: stats.cosigners[mbid]?.lastfmName || p.name };
@@ -81,7 +88,8 @@ for (const [mbid, p] of picked) {
       const d = await getJson(`https://api.deezer.com/artist/${dz}`);
       if (d.error || !(d.nb_album > 0)) { console.log(`  ${p.name}: Deezer ${dz} has no albums, skipped`); continue; }
       ids.deezer = dz;
-      const listeners = stats.cosigners[mbid]?.listeners;
+      // Cosigners' fame, or (curated artists) their own listeners from the last fetch-stats.mjs run.
+      const listeners = stats.cosigners[mbid]?.listeners || stats.artists[p.curated?.id]?.lastfm?.listeners;
       if (listeners && d.nb_fan < listeners / 100) {
         caveats.deezer = `Deezer page has ${d.nb_fan.toLocaleString("en-US")} fans vs ${listeners.toLocaleString("en-US")} Last.fm listeners: probably a duplicate page, so it's left out of the score.`;
         console.log(`  ${p.name}: Deezer ${dz} has only ${d.nb_fan} fans, caveat added`);
@@ -91,17 +99,21 @@ for (const [mbid, p] of picked) {
   } catch (err) {
     console.warn(`  ! ${p.name}: ${err.message}`);
   }
-  let id = slug(p.name);
-  for (let n = 2; used.has(id); n++) id = `${slug(p.name)}-${n}`;
-  used.add(id);
-  out.push({ id, name: p.name, genre: null, hometown: null, ids, ...(Object.keys(caveats).length ? { caveats } : {}), extended: true, cosignerOf: p.cosignerOf });
+  let id = p.curated?.id;
+  if (!id) {
+    id = slug(p.name);
+    for (let n = 2; used.has(id); n++) id = `${slug(p.name)}-${n}`;
+    used.add(id);
+  }
+  out.push({ id, name: p.name, genre: p.curated?.genre || null, hometown: null, ids, ...(Object.keys(caveats).length ? { caveats } : {}),
+             extended: true, ...(p.curated ? { curated: true } : {}), cosignerOf: p.cosignerOf });
   const mark = k => (ids[k] ? "✓" : "·");
-  console.log(`${id.padEnd(26)} wikidata ${mark("wikidata")}  spotify ${mark("spotify")}  deezer ${mark("deezer")}  (top cosigner of ${p.cosignerOf.join(", ")})`);
+  console.log(`${id.padEnd(26)} wikidata ${mark("wikidata")}  spotify ${mark("spotify")}  deezer ${mark("deezer")}  (${[p.cosignerOf.length ? `top cosigner of ${p.cosignerOf.join(", ")}` : "", p.curated ? "genre pick" : ""].filter(Boolean).join("; ")})`);
 }
 
 await writeFile(path.join(ROOT, "data/extended.json"), JSON.stringify({
   generatedAt: new Date().toISOString(),
-  rule: `Top ${EXTENDED_PER_ARTIST} cosigners of each roster artist (light pages)`,
+  rule: `Top ${EXTENDED_PER_ARTIST} cosigners of each roster artist, plus curated genre picks (light pages)`,
   artists: out,
 }, null, 2) + "\n");
 console.log(`\nWrote data/extended.json: ${out.length} artists`);

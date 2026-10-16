@@ -23,6 +23,31 @@ export const SOURCES = {
 export const AUTO_ORDER = ["press", "wikimedia", "spotify", "original"];
 export const DEFAULT_SOURCE = "spotify"; // chosen 2026-10-14 after comparing sources
 
+// Home page genre bar (Julian, 2026-10-16). Detailed genres (hand-written, MusicBrainz, Apple tags) fold
+// into these groups; the first rule that matches wins, so "Indie Pop" is Indie and "Emo Rap" is Hip-Hop.
+export const GENRES = [
+  { id: "hip-hop", label: "Hip-Hop" }, { id: "pop", label: "Pop" }, { id: "rnb", label: "R&B" },
+  { id: "indie", label: "Indie" }, { id: "electronic", label: "Electronic" }, { id: "rock", label: "Rock" },
+  { id: "country", label: "Country" }, { id: "latin", label: "Latin" },
+];
+const GENRE_RULES = [
+  ["hip-hop", /hip.?hop|rap\b|trap\b|drill|grime/i],
+  ["rnb", /r&b|soul/i],
+  ["country", /country|americana/i],
+  ["latin", /latin|reggaeton|urbano|regional mexican|corrido|bachata|salsa/i],
+  ["indie", /indie|alternative(?! dance)|art pop|dream pop|shoegaze|bedroom/i],
+  ["rock", /rock|emo\b|punk|metal|grunge|hardcore/i],
+  ["electronic", /electro|edm|house|techno|dubstep|brostep|bass|trance|dance|drum|breakbeat|garage|ambient/i],
+  ["pop", /pop/i],
+];
+export const genreGroup = g => (g ? GENRE_RULES.find(([, re]) => re.test(g))?.[0] || null : null);
+export const genreLabel = id => GENRES.find(g => g.id === id)?.label || null;
+// Current genre filter (browser only): ?genre=hip-hop. Changes are broadcast as "cosignr:genre" events.
+export const currentGenre = () => {
+  const g = new URLSearchParams(location.search).get("genre");
+  return GENRES.some(x => x.id === g) ? g : null;
+};
+
 export const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 export const fmt = n => n >= 1e6 ? (n / 1e6).toFixed(1).replace(/\.0$/, "") + "M"
                       : n >= 1e3 ? (n / 1e3).toFixed(1).replace(/\.0$/, "") + "k" : String(n);

@@ -2,7 +2,8 @@
 // nav links, "coming soon" links and the Shift+D shortcut. Islands listen for the same events:
 //   cosignr:view    { source, dev }  image source or dev mode changed
 //   cosignr:search  { query }        header search typed
-import { DEFAULT_SOURCE, imageHtml, creditHtml, creditsHtml, viewState, store, toast } from "../lib/shared.js";
+//   cosignr:genre   { genre }        genre bar clicked (null = All)
+import { DEFAULT_SOURCE, imageHtml, creditHtml, creditsHtml, viewState, store, toast, currentGenre } from "../lib/shared.js";
 
 const IMAGES = JSON.parse(document.getElementById("cosignr-images")?.textContent || "{}");
 const BASE = document.body.dataset.base || "/";
@@ -57,6 +58,32 @@ document.getElementById("searchForm")?.addEventListener("submit", e => {
   window.dispatchEvent(new CustomEvent("cosignr:search", { detail: { query: input.value } }));
   document.getElementById("trending").scrollIntoView({ behavior: "smooth" });
 });
+
+// ---------- genre bar (home page) ----------
+// Sets ?genre=<id> without reloading, filters the static Top grid and tells the islands (Trending,
+// Hot Right Now) through a "cosignr:genre" event. Featured is not filtered.
+function applyGenre(genre) {
+  for (const b of document.querySelectorAll(".genre-bar button")) {
+    const on = (b.dataset.genre || null) === genre;
+    b.classList.toggle("active", on);
+    b.setAttribute("aria-pressed", on);
+    // On phones the bar scrolls sideways: bring the active genre into view (horizontal only).
+    if (on) b.parentElement.scrollLeft = b.offsetLeft - (b.parentElement.clientWidth - b.offsetWidth) / 2;
+  }
+  const cards = [...document.querySelectorAll(".top-card[data-genre]")];
+  cards.forEach(c => { c.hidden = !!genre && c.dataset.genre !== genre; });
+  const empty = document.getElementById("topEmpty");
+  if (empty) empty.hidden = !genre || cards.some(c => !c.hidden);
+}
+document.querySelectorAll(".genre-bar button").forEach(b => b.addEventListener("click", () => {
+  const genre = b.dataset.genre || null;
+  const url = new URL(location.href);
+  if (genre) url.searchParams.set("genre", genre); else url.searchParams.delete("genre");
+  history.replaceState(null, "", url);
+  applyGenre(genre);
+  window.dispatchEvent(new CustomEvent("cosignr:genre", { detail: { genre } }));
+}));
+if (currentGenre()) applyGenre(currentGenre());
 
 // ---------- nav and placeholder links ----------
 document.querySelectorAll("nav a").forEach(a => {
