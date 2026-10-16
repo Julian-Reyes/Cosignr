@@ -19,7 +19,7 @@ const meta = `sources.json · ${new Date(SRC.generatedAt).toLocaleString("en-US"
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,800|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,800|Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="icon" href={`${BASE}images/favicon.png`}>
     <title>{title}</title>
   </head>
@@ -42,7 +42,6 @@ const meta = `sources.json · ${new Date(SRC.generatedAt).toLocaleString("en-US"
       </form>
 
       <a href={home ? "#" : BASE} class="logo" aria-label="Cosignr home">
-        <span class="logo-mark"><svg class="icon"><use href="#i-check"/></svg></span>
         Cosignr
       </a>
 
@@ -65,7 +64,6 @@ const meta = `sources.json · ${new Date(SRC.generatedAt).toLocaleString("en-US"
 
     <footer>
       <a href={home ? "#" : BASE} class="logo">
-        <span class="logo-mark"><svg class="icon"><use href="#i-check"/></svg></span>
         Cosignr
       </a>
       <div class="links">

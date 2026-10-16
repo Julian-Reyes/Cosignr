@@ -6,12 +6,13 @@ Status key: ✅ done · 🟡 in progress · ⬜ not started
 
 Remaining items, in rough order. Julian wants a check-in before each one starts (propose a plan, wait for OK). Details are in the sections below.
 
-1. **Rising rankings (step 4):** rank changes (▲/▼) and "rising this week" from `data/snapshots/`. Wait until ~2026-10-21 (a week of snapshots), then agree the formula with Julian before building.
+1. **Rising rankings (step 4):** rank changes (▲/▼) and "rising this week" from `data/snapshots/`. Wait until ~2026-10-21 (a week of snapshots), then agree the formula with Julian before building. Method agreed in principle (2026-10-16): Last.fm listener growth as a %, with a minimum size, shown as e.g. "+4.2% listeners this week". Also covers the `watch` list in snapshots (artists the roster cosigned in the last 2 years, 88 with a Last.fm page), collected nightly from 2026-10-16.
+   - **Later: real-world trending.** Today the Trending/Top/Featured *membership* is hand-picked in artists.json (only the order is real). A real site needs trending artists from outside our roster. Not started; ideas in the 2026-10-16 log.
 2. **Stats on phones (step 3):** the Trending stat column is hidden below 1100px. Waiting for Julian to check on his phone and say what he wants.
-3. **"Who cosigned who" graph (step 10):** a visual graph of cosigns. Not designed yet.
+3. **"Who cosigned who" graph (step 10):** 🟡 mockups made 2026-10-16 (A everything, B page artists only, C one artist's neighbourhood as a force layout, D the same as a radial layout), using real data. Julian picked **C** (one artist + top N neighbours, force layout, names inside circles, thinner lines, small filled arrowheads); A, B, D rejected. Still a mockup, not on the site.
 4. **Accounts and real user cosigns (step 11):** Supabase. The login modal and Cosign button are demo-only for now.
 5. **Maybe: hand-curated cosigns (step 5):** shout-outs and label signings with a source URL. Julian said "possibly"; don't build until decided.
-6. **Small:** set `site` in `astro.config.mjs` to `https://julianreyes.dev` (the Pages URL redirects there; only affects full URLs like share previews).
+6. ✅ **Small:** `site` in `astro.config.mjs` is now `https://julianreyes.dev` (2026-10-16).
 7. **Later:** scaling plan for hundreds of artists (see Milestone 1 §3), and full catalogs for the extended artists (they're light pages today).
 
 ## Milestone 0: data-driven page and image sources 🟡
@@ -103,6 +104,10 @@ Goal: every section renders from one data file, no text is baked into images, an
 
 ## Log
 
+- **2026-10-16 (late afternoon):** Cosigned by gets the Strongest / Recent / Famous tabs (opens on Famous). Logo checkmark box removed (header + footer) and logo set in Roboto bold to match the nav. Login/Sign up text set to dark grey (Safari showed its default blue because no color was set).
+- **2026-10-16 (afternoon):** Artist pages: Cosigns now comes before Cosigned by, side by side on desktop (stacked below 900px). fetch-stats saves a nightly `watch` list in snapshots (98 artists cosigned since 2024-10-16, 88 with a verified Last.fm page) for rising. Graph arrowheads: small filled.
+- **2026-10-16 (later):** Graph: Julian picked mockup C. Real-world trending ideas: snapshot outside charts daily (Last.fm global/country charts, Deezer charts, Wikipedia most-viewed filtered to musicians) and rank climbers/new entries; resolve each to MusicBrainz. Spotify/Billboard charts have no usable API.
+- **2026-10-16:** `site` set to julianreyes.dev. Cosign graph mockups (4 variants, real data) shared with Julian for a decision. Snapshots so far cover only the 61 page artists.
 - **2026-10-14:** UI polish pass on the original mockup (layout kept, interactions added). Started Milestone 0: moved data to `artists.json`, added fetch script, Wikimedia + Spotify + press sources, dev panel, credits. Found Commons rejects 400px thumbnails (now 500px) and Spotify oEmbed returns only 320px (upgraded to 640px via URL size code). Created CLAUDE.md, PROGRESS.md, WALKTHROUGH.md. Julian picked Spotify as the default image source. Moved the project out of the portfolio repo (`Julian-Reyes.github.io/CoSign`) into its own folder, `cosignr/`.
 - **2026-10-14 (later):** Pushed to GitHub (needed `http.postBuffer` raised for the first push). Started Milestone 1 research: Spotify no longer gives popularity/followers to new apps; Deezer works keyless; verified Deezer IDs for 10 artists (see Research findings).
 - **2026-10-14 (evening):** Resolved Deezer IDs for Jaws (5566102) and Jackal (310086, shared page, excluded via new `caveats` field). Added `scripts/fetch-stats.mjs` (Deezer + Last.fm-when-keyed, Cosignr score, daily snapshots), switched Trending to real scores with metric tabs, removed fake trending numbers, added nightly refresh workflow. Waiting on Last.fm key.

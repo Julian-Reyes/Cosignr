@@ -80,31 +80,23 @@ button:focus-visible, a:focus-visible, input:focus-visible{
 .search button:hover{ background-color: var(--peach-dark); }
 
 .logo{
-  font-family: Nunito, sans-serif;
-  font-weight: 800;
+  font-family: Roboto, sans-serif; /* same face as the nav links (Julian, 2026-10-16) */
+  font-weight: 700;
   font-size: 1.6em;
-  letter-spacing: -.5px;
+  letter-spacing: -.3px;
   color: #fff;
   display: flex;
   align-items: center;
   gap: 8px;
   text-shadow: 0 1px 2px rgba(0,0,0,.12);
 }
-.logo-mark{
-  width: 30px; height: 30px;
-  border-radius: 8px;
-  background: var(--nav);
-  display: grid;
-  place-items: center;
-}
-.logo-mark .icon{ color: var(--peach); width: 18px; height: 18px; }
-
 .auth{
   display: flex;
   justify-content: flex-end;
   gap: 10px;
 }
 .auth button{
+  color: var(--nav);
   font-size: .8em;
   font-weight: 700;
   height: 34px;
@@ -523,8 +515,6 @@ footer{
   font-size: .9em;
 }
 footer .logo{ font-size: 1.2em; }
-footer .logo-mark{ background: var(--peach); }
-footer .logo-mark .icon{ color: var(--nav); }
 footer .links{ display: flex; gap: 22px; flex-wrap: wrap; }
 footer .links a:hover{ color: #fff; }
 
@@ -714,6 +704,9 @@ body.dev .credit{ opacity: 1; }
   background: #eef2f4;
 }
 .upcoming, .cosign-list{ margin-bottom: 40px; }
+/* Cosigns and Cosigned by: two columns on desktop, stacked below 900px */
+.cosign-columns{ display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 0 48px; align-items: start; }
+@media (max-width: 900px){ .cosign-columns{ grid-template-columns: minmax(0,1fr); } }
 .show-list{ list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 .show-list li{
   display: grid;

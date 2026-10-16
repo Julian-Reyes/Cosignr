@@ -35,7 +35,7 @@ The data files are read **when the site is built**, not in your browser. Visitor
 
 - **`data/artists.json`** is written by hand. It lists each artist, their IDs on other services, and which artists go in Featured, Trending and Top. Anything fake is kept under a `demo` key so it's easy to find and replace later.
 - **`data/sources.json`** is generated, so don't edit it by hand. It holds image links and photo credits for each artist.
-- **`data/stats.json`** is generated too. It holds each artist's real numbers (Deezer fans, Last.fm listeners and plays) and their Cosignr score. Each run also saves a copy of the day's numbers in `data/snapshots/`, so later we can show who is actually rising.
+- **`data/stats.json`** is generated too. It holds each artist's real numbers (Deezer fans, Last.fm listeners and plays) and their Cosignr score. Each run also saves a copy of the day's numbers in `data/snapshots/`, so later we can show who is actually rising. Besides the 61 page artists, the snapshot has a `watch` list: Last.fm listeners for every artist our roster cosigned in the last two years (about 90), refreshed every night, so "rising" can include the artists our roster is putting on.
 - **`data/cosigns.json`** is generated from MusicBrainz and lists who has vouched for whom, with the songs as evidence (see "Cosigns" below).
 - **`data/tours.json`** is generated from Wikipedia and MusicBrainz and lists who took whom on tour, or into their touring band (see "Tours" below).
 - **`data/upcoming.json`** is generated from Ticketmaster and lists announced shows with an opener. It's rebuilt nightly.
@@ -123,8 +123,10 @@ The script also prints any artist whose typed hometown differs from MusicBrainz,
 Every artist with a page lives at `/Cosignr/artist/<id>/`, for example `/Cosignr/artist/travis-scott/`. A page shows:
 - **Photo and numbers:** genre, hometown, Cosignr score, Last.fm listeners and plays, Deezer fans. A faded number is left out of the score; hover it to see why. Plus a Spotify button.
 - **Upcoming shows** from Ticketmaster, when there are any. Shows disappear once they've happened.
-- **Cosigned by:** everyone who vouched for this artist, most famous first. Each row says what happened ("Took Travis Scott on tour: Anti World Tour (2016)") and links to where we found it.
 - **Cosigns:** everyone this artist vouched for, sorted by **Strongest** (most vouches), **Recent** or **Famous**.
+- **Cosigned by:** everyone who vouched for this artist, most famous first by default, with the same Strongest / Recent / Famous tabs. Each row says what happened ("Took Travis Scott on tour: Anti World Tour (2016)") and links to where we found it.
+
+On desktop the two lists sit side by side (Cosigns on the left). On screens narrower than 900px they stack, Cosigns first.
 
 Each list shows 10 at first. "Show more" adds 10 at a time. The full list is a separate small file that only downloads when you ask for more, so pages stay quick even for Drake (about 200 cosigns each way).
 
@@ -159,7 +161,7 @@ Some safety checks:
 
 **Refresh stats:** `node scripts/fetch-stats.mjs`. Works without keys (Deezer only). For Last.fm, create a free API account at https://www.last.fm/api/account/create and put the key in a `.env` file in the project root: `LASTFM_API_KEY=...`. `.env` is git-ignored, so it is never committed.
 
-**Nightly refresh and deploy:** `.github/workflows/site.yml` runs all three scripts every day around 06:17 UTC (GitHub often starts it late), commits any changes to `data/`, then publishes the site to https://julian-reyes.github.io/Cosignr/. Every push to `main` also republishes (without refreshing data). Because the bot commits to GitHub every night, run `git pull` before you start editing. To include Last.fm, add the key as a repository secret called `LASTFM_API_KEY` (GitHub → Settings → Secrets and variables → Actions). You can also start it by hand from the Actions tab ("Run workflow").
+**Nightly refresh and deploy:** `.github/workflows/site.yml` runs all three scripts every day around 06:17 UTC (GitHub often starts it late), commits any changes to `data/`, then publishes the site to https://julianreyes.dev/Cosignr/ (the github.io address redirects there). Every push to `main` also republishes (without refreshing data). Because the bot commits to GitHub every night, run `git pull` before you start editing. To include Last.fm, add the key as a repository secret called `LASTFM_API_KEY` (GitHub → Settings → Secrets and variables → Actions). You can also start it by hand from the Actions tab ("Run workflow").
 
 ## What's next
 

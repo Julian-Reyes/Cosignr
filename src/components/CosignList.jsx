@@ -6,7 +6,7 @@ import { useState } from "react";
 const PAGE_SIZE = 10;
 const TYPE_LABELS = { upcoming: "Upcoming", tour: "Tour", band: "Touring band", feature: "Feature", remix: "Remix", collab: "Collab" };
 const TYPE_ORDER = Object.keys(TYPE_LABELS);
-// Sort tabs for the outbound list (Julian: Strongest is the default, then Recent and Famous).
+// Sort tabs, on both lists (Julian, 2026-10-16). Cosigns opens on Strongest, Cosigned by on Famous.
 const SORTS = {
   strongest: { tab: "Strongest", title: "Most vouches first: tours, features, remixes, touring band, upcoming shows",
                fn: (x, y) => y.vouches - x.vouches || y.songs - x.songs || (y.last || "").localeCompare(x.last || "") },
@@ -39,11 +39,11 @@ function Row({ r, i }) {
   );
 }
 
-export default function CosignList({ id, list, title, sub, initial, total, jsonUrl, sorts = null, empty }) {
+export default function CosignList({ id, list, title, sub, initial, total, jsonUrl, sorts = null, defaultSort = sorts?.[0], empty }) {
   const [rows, setRows] = useState(initial); // full list once loaded, else the first PAGE_SIZE
   const [loaded, setLoaded] = useState(initial.length >= total);
   const [count, setCount] = useState(PAGE_SIZE);
-  const [sort, setSort] = useState(sorts?.[0] || null);
+  const [sort, setSort] = useState(defaultSort || null);
   const [busy, setBusy] = useState(false);
 
   async function full() {

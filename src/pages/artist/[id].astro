@@ -65,16 +65,20 @@ const credit = creditHtml(img, DEFAULT_SOURCE);
       </section>
     )}
 
-    <CosignList client:load id="cosigned-by" list="cosignedBy" title="Cosigned by"
-      sub={`Artists who vouched for ${a.name}: featured them, remixed them, took them on tour. Most famous first.`}
-      initial={cosignedBy.slice(0, PAGE_SIZE)} total={cosignedBy.length} jsonUrl={jsonUrl}
-      empty={`No cosigns found for ${a.name} yet.`} />
+    <!-- Cosigns first, then Cosigned by (Julian, 2026-10-16). Side by side on desktop, stacked on phones. -->
+    <div class="cosign-columns">
+      <CosignList client:load id="cosigns" list="cosigns" title="Cosigns"
+        sub={`Artists ${a.name} vouched for: features, remixes, tour openers, touring band.`}
+        initial={cosigns.slice(0, PAGE_SIZE)} total={cosigns.length} jsonUrl={jsonUrl}
+        sorts={["strongest", "recent", "famous"]}
+        empty={`${a.name} hasn't cosigned anyone we know of yet.`} />
 
-    <CosignList client:load id="cosigns" list="cosigns" title="Cosigns"
-      sub={`Artists ${a.name} vouched for: features, remixes, tour openers, touring band.`}
-      initial={cosigns.slice(0, PAGE_SIZE)} total={cosigns.length} jsonUrl={jsonUrl}
-      sorts={["strongest", "recent", "famous"]}
-      empty={`${a.name} hasn't cosigned anyone we know of yet.`} />
+      <CosignList client:load id="cosigned-by" list="cosignedBy" title="Cosigned by"
+        sub={`Artists who vouched for ${a.name}: featured them, remixed them, took them on tour.`}
+        initial={cosignedBy.slice(0, PAGE_SIZE)} total={cosignedBy.length} jsonUrl={jsonUrl}
+        sorts={["strongest", "recent", "famous"]} defaultSort="famous"
+        empty={`No cosigns found for ${a.name} yet.`} />
+    </div>
   </main>
 
   <script>
