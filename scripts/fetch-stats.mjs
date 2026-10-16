@@ -16,6 +16,10 @@
 // treated as a possible namesake, and the cosigner gets no fame and ranks after known ones.
 // Results are cached for FAME_MAX_AGE_DAYS.
 //
+// Watch list (for "rising" later): artists a page artist cosigned in the last WATCH_YEARS years get
+// their Last.fm listeners refreshed every night (not cached) and saved in the snapshot under `watch`,
+// keyed by MusicBrainz ID. Only artists whose Last.fm page was already verified by the fame lookup.
+//
 // Usage (from the project root):  node scripts/fetch-stats.mjs
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
@@ -35,6 +39,7 @@ const SCALE = {
   lastfmPlays:     [4, 9.5], // 10k .. ~3B plays
 };
 const FAME_MAX_AGE_DAYS = 7;
+const WATCH_YEARS = 2;
 const CAVEAT_METRICS = { deezer: ["deezerFans"], lastfm: ["lastfmListeners", "lastfmPlays"] };
 
 async function loadEnv() {
@@ -209,6 +214,27 @@ try {
     }
   }
   console.log(`\nCosigner fame: ${cosigners.length} cosigners, ${fetched} looked up (${unknown} not found), rest cached`);
+
+  // Watch list: refresh listeners nightly for everyone a page artist cosigned recently.
+  const since = new Date(Date.now() - WATCH_YEARS * 365.25 * 864e5).toISOString().slice(0, 10);
+  const watch = [...new Set(cosigns.cosigns
+    .filter(c => rosterMbids.has(c.from) && !rosterMbids.has(c.to) && c.last && c.last >= since)
+    .map(c => c.to))];
+  snapshot.watch = {};
+  let watched = 0;
+  for (const mbid of watch) {
+    const f = out.cosigners[mbid];
+    if (!f?.lastfmName || f.listeners == null) continue; // no verified Last.fm page
+    if (LASTFM_KEY && f.fetchedAt?.slice(0, 10) !== today) {
+      try {
+        const page = await lastfmInfo(f.via === "mbid" ? { mbid } : { artist: f.lastfmName }, LASTFM_KEY);
+        if (page?.name === f.lastfmName) { f.listeners = Number(page.stats.listeners); watched++; } // same page as verified
+        else console.warn(`  ! watch ${f.lastfmName}: Last.fm returned "${page?.name}", keeping cached number`);
+      } catch (err) { console.warn(`  ! watch ${f.lastfmName}: ${err.message}`); }
+    }
+    snapshot.watch[mbid] = { name: cosigns.artists[mbid].name, lastfmListeners: f.listeners };
+  }
+  console.log(`Watch list: ${watch.length} artists cosigned since ${since}, ${Object.keys(snapshot.watch).length} with a Last.fm page (${watched} refreshed)`);
 } catch (err) {
   console.warn(`  ! cosigner fame skipped: ${err.message}`);
   out.cosigners = prevFame;
