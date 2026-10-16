@@ -104,7 +104,7 @@ Goal: every section renders from one data file, no text is baked into images, an
 
 ## Log
 
-- **2026-10-16 (late afternoon):** Cosigned by gets the Strongest / Recent / Famous tabs (opens on Famous). Logo checkmark box removed (header + footer) and logo set in Roboto bold to match the nav. Login/Sign up text set to dark grey (Safari showed its default blue because no color was set).
+- **2026-10-16 (late afternoon):** Cosigned by gets the Strongest / Recent / Famous tabs (opens on Famous). Logo checkmark box removed (header + footer). Tried the logo in Roboto (nav font); Julian kept the original Nunito. Login/Sign up text set to dark grey (Safari showed its default blue because no color was set).
 - **2026-10-16 (afternoon):** Artist pages: Cosigns now comes before Cosigned by, side by side on desktop (stacked below 900px). fetch-stats saves a nightly `watch` list in snapshots (98 artists cosigned since 2024-10-16, 88 with a verified Last.fm page) for rising. Graph arrowheads: small filled.
 - **2026-10-16 (later):** Graph: Julian picked mockup C. Real-world trending ideas: snapshot outside charts daily (Last.fm global/country charts, Deezer charts, Wikipedia most-viewed filtered to musicians) and rank climbers/new entries; resolve each to MusicBrainz. Spotify/Billboard charts have no usable API.
 - **2026-10-16:** `site` set to julianreyes.dev. Cosign graph mockups (4 variants, real data) shared with Julian for a decision. Snapshots so far cover only the 61 page artists.

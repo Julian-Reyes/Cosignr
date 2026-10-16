@@ -80,10 +80,10 @@ button:focus-visible, a:focus-visible, input:focus-visible{
 .search button:hover{ background-color: var(--peach-dark); }
 
 .logo{
-  font-family: Roboto, sans-serif; /* same face as the nav links (Julian, 2026-10-16) */
-  font-weight: 700;
+  font-family: Nunito, sans-serif;
+  font-weight: 800;
   font-size: 1.6em;
-  letter-spacing: -.3px;
+  letter-spacing: -.5px;
   color: #fff;
   display: flex;
   align-items: center;
