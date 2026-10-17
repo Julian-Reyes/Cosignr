@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T11:36:07.485Z",
+  "generatedAt": "2026-10-17T10:55:04.609Z",
   "source": "Ticketmaster Discovery API (live listings, rebuilt nightly)",
   "artists": {
     "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
@@ -57,35 +57,19 @@
   },
   "cosigns": [
     {
-      "from": "e21857d5-3256-4547-afb3-4b6ded592596",
-      "to": "3cdb40fe-a63e-4bb9-b40d-17cda5f50979",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 10,
-      "first": "2026-10-16",
-      "last": "2026-10-31",
-      "next": {
-        "tour": "Gorillaz - The Mountain Tour",
-        "date": "2026-10-16",
-        "city": "Fort Worth",
-        "url": "https://www.ticketmaster.com/gorillaz-the-mountain-tour-fort-worth-texas-10-16-2026/event/0C006438A0867920"
-      }
-    },
-    {
       "from": "e0e1a584-dd0a-4bd1-88d1-c4c62895039d",
       "to": "3482e723-ee80-4dfc-b6e9-5a47732fd6b6",
       "types": [
         "upcoming"
       ],
-      "shows": 5,
-      "first": "2026-10-16",
+      "shows": 4,
+      "first": "2026-10-17",
       "last": "2026-10-23",
       "next": {
-        "tour": "Foster The People - Good Mourning Sunshine",
-        "date": "2026-10-16",
-        "city": "Austin",
-        "url": "https://www.ticketmaster.com/foster-the-people-good-mourning-sunshine-austin-texas-10-16-2026/event/3A00649CBDB12FBE"
+        "tour": "Foster The People: Good Mourning Sunshine Tour",
+        "date": "2026-10-17",
+        "city": "Houston",
+        "url": "https://www.ticketmaster.com/foster-the-people-good-mourning-sunshine-houston-texas-10-17-2026/event/3A00649CA104D39B"
       }
     },
     {
@@ -94,14 +78,30 @@
       "types": [
         "upcoming"
       ],
-      "shows": 12,
-      "first": "2026-10-16",
+      "shows": 11,
+      "first": "2026-10-17",
       "last": "2026-11-05",
       "next": {
         "tour": "Knocked Loose w/ Denzel Curry",
-        "date": "2026-10-16",
-        "city": "Orlando",
-        "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7P8e6"
+        "date": "2026-10-17",
+        "city": "Fort Lauderdale",
+        "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70yjp"
+      }
+    },
+    {
+      "from": "e21857d5-3256-4547-afb3-4b6ded592596",
+      "to": "3cdb40fe-a63e-4bb9-b40d-17cda5f50979",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 9,
+      "first": "2026-10-18",
+      "last": "2026-10-31",
+      "next": {
+        "tour": "Gorillaz - The Mountain Tour",
+        "date": "2026-10-18",
+        "city": "Denver",
+        "url": "https://www.ticketmaster.com/gorillaz-the-mountain-tour-denver-colorado-10-18-2026/event/1E00645B9DB09437"
       }
     },
     {
