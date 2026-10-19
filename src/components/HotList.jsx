@@ -1,4 +1,6 @@
-// "Hot Right Now" (HOT.md): Songs | Albums | Videos tabs from Apple Music US and YouTube US.
+// "Hot Right Now" (HOT.md): Songs | Albums | Videos | Climbing tabs from Apple Music US and YouTube US.
+// Apple rows carry movement since an earlier chart (▲/▼ badges); Climbing ranks songs from the last
+// year by how far they rose (Julian, 2026-10-19).
 // Top 5, then Show More adds 10 at a time, up to HOT_COUNT (Julian, 2026-10-16; like Trending).
 // Props come from hotLists() in data.js: rows hold only what the list shows. Cover art and thumbnails
 // always link back to the service they came from (Apple Music / YouTube image terms, approved by
@@ -8,14 +10,23 @@ import { currentGenre, genreLabel } from "../lib/shared.js";
 
 const INITIAL = 5;
 const STEP = 10;
-const TABS = { songs: "Songs", albums: "Albums", videos: "Videos" };
+const TABS = { songs: "Songs", albums: "Albums", videos: "Videos", climbing: "Climbing" };
+const MIN_MOVE = 3; // smaller moves get no badge
 
 const Icon = ({ id }) => <svg className="icon"><use href={`#${id}`} /></svg>;
 
-function Row({ r, i }) {
+function Move({ r, since }) {
+  if (r.chartRank) return <span className="hot-move up" title={`Now #${r.chartRank} on Apple Music US`}>{r.entered ? "New entry" : `▲ ${r.move}`} · now #{r.chartRank}</span>;
+  if (r.move >= MIN_MOVE) return <span className="hot-move up" title={`Up ${r.move} places since ${since}`}>▲ {r.move}</span>;
+  if (r.move <= -MIN_MOVE) return <span className="hot-move down" title={`Down ${-r.move} places since ${since}`}>▼ {-r.move}</span>;
+  if (r.entered && !r.isNew) return <span className="hot-move up" title={`Not in the top 100 on ${since}`}>New entry</span>;
+  return null;
+}
+
+function Row({ r, i, since }) {
   return (
     <li className={`hot-row${r.wide ? " wide" : ""}`} style={{ animationDelay: `${(i < INITIAL ? i : (i - INITIAL) % STEP) * 30}ms` }}>
-      <div className="rank"><b>{r.rank}</b></div>
+      <div className="rank"><b>{r.rank}</b><Move r={r} since={since} /></div>
       <a className="hot-art" href={r.url} target="_blank" rel="noopener" tabIndex={-1} aria-hidden="true">
         {r.art ? <img src={r.art} alt="" loading="lazy" /> : <span className="ph" />}
       </a>
@@ -39,7 +50,7 @@ function Row({ r, i }) {
   );
 }
 
-export default function HotList({ tabs, max, appleDate, youtubeDate }) {
+export default function HotList({ tabs, max, appleDate, youtubeDate, since }) {
   const keys = Object.keys(TABS).filter(k => tabs[k].length);
   const [tab, setTab] = useState(keys[0]);
   const [count, setCount] = useState(INITIAL);
@@ -64,7 +75,9 @@ export default function HotList({ tabs, max, appleDate, youtubeDate }) {
       <div className="section-head">
         <div>
           <h2>Hot Right Now</h2>
-          <p>Most played in the US today ({source}). Updated daily.</p>
+          <p>{tab === "climbing"
+            ? `Biggest climbers on Apple Music US since ${since} (songs from the last year). Updated daily.`
+            : <>Most played in the US today ({source}). Updated daily.</>}</p>
         </div>
         {keys.length > 1 && (
           <div className="tabs" role="tablist" aria-label="Hot Right Now">
@@ -76,7 +89,7 @@ export default function HotList({ tabs, max, appleDate, youtubeDate }) {
         )}
       </div>
       {rows.length
-        ? <ol className="hot-list">{visible.map((r, i) => <Row key={`${tab}-${r.key}`} r={r} i={i} />)}</ol>
+        ? <ol className="hot-list">{visible.map((r, i) => <Row key={`${tab}-${r.key}`} r={r} i={i} since={since} />)}</ol>
         : <p className="genre-empty">No {genreLabel(genre)} {TABS[tab].toLowerCase()} in today's chart{tab === "videos" ? " that we can tag (video genres come from artists with a Cosignr page)" : ""}.</p>}
       {left > 0
         ? <button className="showmore" type="button" onClick={() => setCount(c => c + STEP)}>

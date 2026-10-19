@@ -3,7 +3,8 @@
 import Base from "../layouts/Base.astro";
 import TrendingList from "../components/TrendingList.jsx";
 import HotList from "../components/HotList.jsx";
-import { DATA, BY_ID, IMAGES, genre, hometown, chips, pageUrl, hotLists, trendingRows, trendingImages, trendingDate } from "../lib/data.js";
+import RisingList from "../components/RisingList.jsx";
+import { DATA, BY_ID, IMAGES, genre, hometown, chips, pageUrl, hotLists, trendingRows, trendingImages, trendingDate, risingRows, risingImages } from "../lib/data.js";
 import { DEFAULT_SOURCE, GENRES, genreGroup, imageHtml, creditHtml } from "../lib/shared.js";
 
 const img = (a, opts) => imageHtml(IMAGES[a.id], a.name, DEFAULT_SOURCE, opts);
@@ -15,8 +16,11 @@ const [main, ...rest] = DATA.featured.map(f => ({ ...f, a: BY_ID[f.artist] }));
 // Trending: who's big right now (TRENDING.md), from data/trending.json. Rows hold only what the list shows.
 const rows = trendingRows();
 const trendImages = trendingImages();
+// Rising: newcomers recently cosigned by big artists (RISING.md).
+const rising = risingRows();
+const riseImages = risingImages();
 ---
-<Base home images={{ ...Object.fromEntries(DATA.artists.map(a => [a.id, IMAGES[a.id]])), ...trendImages }}>
+<Base home images={{ ...Object.fromEntries(DATA.artists.map(a => [a.id, IMAGES[a.id]])), ...trendImages, ...riseImages }}>
   <!-- Genre bar (Julian, 2026-10-16): filters Trending, Hot Right Now and Top. Not sticky; Featured stays as is. -->
   <div class="genre-bar" role="toolbar" aria-label="Filter by genre">
     <button type="button" class="active" data-genre="" aria-pressed="true">All</button>
@@ -70,6 +74,9 @@ const trendImages = trendingImages();
     </div>
 
     <TrendingList client:load rows={rows} images={trendImages} date={trendingDate()} />
+
+    <!-- Rising: under Trending, above Hot Right Now (Julian, 2026-10-19). -->
+    {rising.length > 0 && <RisingList client:load rows={rising} images={riseImages} />}
 
     <!-- Under Trending, above Top Artists (Julian, 2026-10-16). Hidden if there's no chart data at all. -->
     <HotList client:load {...hotLists()} />

@@ -13,6 +13,22 @@ export const TREND_METRICS = {
 // "All" (Julian, 2026-10-19): 20 artists; at most 2 per genre in the top 10, at most 3 per genre overall;
 // artists without a genre (sleep/white-noise albums) are left out of All.
 export const TREND_ALL = [{ upTo: 10, perGenre: 2 }, { upTo: 20, perGenre: 3 }];
+
+// The "All" view of Trending and Rising. Each step fills up to `upTo` rows with at most `perGenre` per
+// genre; rows skipped by an earlier step are looked at again by the next one (Lil Baby misses the top
+// 10's 2-per-genre cap, then gets #11). Rows without a genre (`g`) are left out.
+export function capByGenre(list, steps = TREND_ALL) {
+  const per = {}, out = [];
+  for (const { upTo, perGenre } of steps) {
+    for (const r of list) {
+      if (out.length >= upTo) break;
+      if (!r.g || out.includes(r) || (per[r.g] || 0) >= perGenre) continue;
+      per[r.g] = (per[r.g] || 0) + 1;
+      out.push(r);
+    }
+  }
+  return out;
+}
 export const INITIAL_COUNT = 5; // Trending shows 5, then Show More adds MORE_COUNT (Julian, 2026-10-19)
 export const MORE_COUNT = 10;
 export const CHIP_COUNT = 4;

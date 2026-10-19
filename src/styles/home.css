@@ -816,7 +816,8 @@ footer .data-sources a:hover{ color: #fff; }
 .top-card[hidden], .showmore[hidden]{ display: none; } /* their display rules would override [hidden] */
 
 /* Hot Right Now (HOT.md): Songs | Albums | Videos from Apple Music and YouTube */
-.hot{ margin-top: 40px; }
+.hot, .rising{ margin-top: 40px; }
+.rising-charts{ margin: -6px 0 10px; font-size: .85em; font-weight: 700; color: #1a9b5b; }
 .hot-list{ list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 /* Rows and cover art sized like the Trending rows (Julian, 2026-10-16); videos keep 16:9 at the same height */
 .hot-row{
@@ -841,6 +842,11 @@ footer .data-sources a:hover{ color: #fff; }
   font-size: .62em; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
   background: var(--peach); padding: 1px 8px; border-radius: 99px;
 }
+/* Chart movement under the rank (▲ climbed / ▼ fell since an earlier chart) */
+.hot-row .rank{ display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.hot-move{ font-size: .68em; font-weight: 800; white-space: nowrap; }
+.hot-move.up{ color: #1a9b5b; }
+.hot-move.down{ color: #d4533b; }
 .hot-artists{ color: var(--muted); font-size: .95em; }
 .hot-artists a{ color: var(--ink); font-weight: 700; text-decoration-color: var(--blue); }
 .hot-tags{ display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }

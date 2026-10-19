@@ -2,7 +2,8 @@
 // Builds data/extended.json: the artists who get a page besides our roster. Julian (2026-10-15):
 // the top EXTENDED_PER_ARTIST cosigners of each roster artist, ranked exactly like the "Cosigned by"
 // chips (src/lib/cosigns.js), plus every Trending artist with a MusicBrainz ID (data/trending.json from
-// fetch-trending.mjs: who's charting now, TRENDING.md). Run fetch-trending.mjs first. These are "light" pages: photo, stats, hometown, genre and upcoming
+// fetch-trending.mjs: who's charting now, TRENDING.md) and every Rising newcomer (data/rising.json from
+// fetch-rising.mjs, which runs later in the night: newcomers get their page the night after they appear). These are "light" pages: photo, stats, hometown, genre and upcoming
 // shows are fetched for them by the other scripts, but their own song/tour history is not crawled.
 //
 // IDs come from MusicBrainz URL relations (Wikidata, Spotify, Deezer), falling back to Wikidata
@@ -39,6 +40,8 @@ const slug = name => name.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase(
 const { artists } = await read("artists.json");
 let trending = [];
 try { trending = (await read("trending.json")).artists.filter(a => a.mbid); } catch { console.log("No data/trending.json yet (run fetch-trending.mjs)"); }
+let rising = [];
+try { rising = (await read("rising.json")).artists; } catch {}
 const stats = await read("stats.json");
 const merged = mergeCosigns({ cosigns: await read("cosigns.json"), tours: await read("tours.json"), upcoming: await read("upcoming.json"), fame: stats.cosigners });
 const roster = new Map(artists.map(a => [a.ids.musicbrainz, a]));
@@ -60,6 +63,11 @@ for (const a of artists) {
 for (const t of trending) {
   if (roster.has(t.mbid)) continue;
   picked.set(t.mbid, { cosignerOf: [], name: t.name, ...picked.get(t.mbid), trending: true });
+}
+// Rising newcomers (RISING.md, Julian 2026-10-19: they get pages too).
+for (const r of rising) {
+  if (roster.has(r.mbid)) continue;
+  picked.set(r.mbid, { cosignerOf: [], name: r.name, ...picked.get(r.mbid), rising: true });
 }
 
 // 3. IDs on other services.
@@ -108,14 +116,14 @@ for (const [mbid, p] of picked) {
   for (let n = 2; used.has(id); n++) id = `${slug(p.name)}-${n}`;
   used.add(id);
   out.push({ id, name: p.name, genre: null, hometown: null, ids, ...(Object.keys(caveats).length ? { caveats } : {}),
-             extended: true, ...(p.trending ? { trending: true } : {}), cosignerOf: p.cosignerOf });
+             extended: true, ...(p.trending ? { trending: true } : {}), ...(p.rising ? { rising: true } : {}), cosignerOf: p.cosignerOf });
   const mark = k => (ids[k] ? "✓" : "·");
-  console.log(`${id.padEnd(26)} wikidata ${mark("wikidata")}  spotify ${mark("spotify")}  deezer ${mark("deezer")}  (${[p.cosignerOf.length ? `top cosigner of ${p.cosignerOf.join(", ")}` : "", p.trending ? "trending" : ""].filter(Boolean).join("; ")})`);
+  console.log(`${id.padEnd(26)} wikidata ${mark("wikidata")}  spotify ${mark("spotify")}  deezer ${mark("deezer")}  (${[p.cosignerOf.length ? `top cosigner of ${p.cosignerOf.join(", ")}` : "", p.trending ? "trending" : "", p.rising ? "rising" : ""].filter(Boolean).join("; ")})`);
 }
 
 await writeFile(path.join(ROOT, "data/extended.json"), JSON.stringify({
   generatedAt: new Date().toISOString(),
-  rule: `Top ${EXTENDED_PER_ARTIST} cosigners of each roster artist, plus everyone in data/trending.json (light pages)`,
+  rule: `Top ${EXTENDED_PER_ARTIST} cosigners of each roster artist, plus everyone in data/trending.json and data/rising.json (light pages)`,
   artists: out,
 }, null, 2) + "\n");
 console.log(`\nWrote data/extended.json: ${out.length} artists`);

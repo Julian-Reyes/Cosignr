@@ -1,0 +1,574 @@
+{
+ "generatedAt": "2026-10-19T16:57:59.407Z",
+ "rules": {
+  "bigListeners": 1000000,
+  "maxListeners": 150000,
+  "maxYears": 5,
+  "windowDays": 365
+ },
+ "artists": [
+  {
+   "mbid": "73b41db5-bc46-4c95-b189-9e7c532014ec",
+   "name": "Iconic Savvy",
+   "listeners": 7190,
+   "firstRelease": null,
+   "genre": "hip-hop",
+   "score": 2.08,
+   "charts": null,
+   "newest": "2026-05-15",
+   "cosigns": [
+    {
+     "from": "9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+     "name": "Drake",
+     "listeners": 6948676,
+     "date": "2026-05-15",
+     "types": [
+      "feature"
+     ],
+     "title": "True Bestie",
+     "url": "https://musicbrainz.org/recording/bea4044a-57e8-44bd-a013-4e2410dfb777"
+    }
+   ]
+  },
+  {
+   "mbid": "5df8f26f-6566-4206-9162-d66e00eeecbe",
+   "name": "DJ Bandz",
+   "listeners": 5053,
+   "firstRelease": "2026-06-26",
+   "genre": "hip-hop",
+   "score": 2.01,
+   "charts": null,
+   "newest": "2026-06-26",
+   "cosigns": [
+    {
+     "from": "5ec1ecc6-4535-4911-a27a-e26343f4a189",
+     "name": "Kodak Black",
+     "listeners": 1941247,
+     "date": "2026-06-26",
+     "types": [
+      "collab"
+     ],
+     "title": "Dark Days",
+     "url": "https://musicbrainz.org/recording/7f707f84-76cd-481c-b578-81a35dc99346"
+    }
+   ]
+  },
+  {
+   "mbid": "cb9c2a2b-96c2-44d7-bd31-04ef87572b57",
+   "name": "FRIDAYY",
+   "listeners": 130387,
+   "firstRelease": "2022-10-21",
+   "genre": "rnb",
+   "score": 1.87,
+   "charts": null,
+   "newest": "2026-10-19",
+   "cosigns": [
+    {
+     "from": "5ec1ecc6-4535-4911-a27a-e26343f4a189",
+     "name": "Kodak Black",
+     "listeners": 1941247,
+     "date": "2026-06-12",
+     "types": [
+      "collab"
+     ],
+     "title": "Better or Worse",
+     "url": "https://musicbrainz.org/recording/a20e5678-5cbe-48f8-8ac8-366bbce8b2ec"
+    },
+    {
+     "from": "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1",
+     "name": "Rod Wave",
+     "listeners": 697958,
+     "date": "2026-10-19",
+     "types": [
+      "upcoming"
+     ],
+     "title": "Rod Wave: Don't Look Down Tour",
+     "url": "https://www.ticketmaster.com/rod-wave-dont-look-down-tour-detroit-michigan-10-19-2026/event/080064D0D671B929"
+    },
+    {
+     "from": "5fc55ebf-21bd-4eda-954c-dd250132331e",
+     "name": "Mariah the Scientist",
+     "listeners": 581001,
+     "date": "2025-12-12",
+     "types": [
+      "collab"
+     ],
+     "title": "Death Do Us Part",
+     "url": "https://musicbrainz.org/recording/a7e197c9-8e6a-41d9-a8ee-07746262e8d5"
+    }
+   ]
+  },
+  {
+   "mbid": "b38999fd-502c-49be-a85e-1b090827aa00",
+   "name": "AYO SK3TCH",
+   "listeners": 9924,
+   "firstRelease": "2026-08-07",
+   "genre": "hip-hop",
+   "score": 1.83,
+   "charts": null,
+   "newest": "2026-08-07",
+   "cosigns": [
+    {
+     "from": "faf916e0-ffc5-4345-a10b-b79ed8c9b8f6",
+     "name": "Ski Mask The Slump God",
+     "listeners": 1347832,
+     "date": "2026-08-07",
+     "types": [
+      "collab"
+     ],
+     "title": "Uh Uh Pt. 2",
+     "url": "https://musicbrainz.org/recording/96587606-9c2f-43b6-9417-fab6d0863d7b"
+    }
+   ]
+  },
+  {
+   "mbid": "a377052a-5450-42fc-9eaf-1f55696194fd",
+   "name": "Buddah Bless",
+   "listeners": 12969,
+   "firstRelease": null,
+   "genre": "hip-hop",
+   "score": 1.75,
+   "charts": null,
+   "newest": "2026-02-13",
+   "cosigns": [
+    {
+     "from": "5ec1ecc6-4535-4911-a27a-e26343f4a189",
+     "name": "Kodak Black",
+     "listeners": 1941247,
+     "date": "2026-02-13",
+     "types": [
+      "collab"
+     ],
+     "title": "Owe Me",
+     "url": "https://musicbrainz.org/recording/4a1ebefc-949b-49dd-867b-8adcbfeabfd7"
+    },
+    {
+     "from": "59c2a349-e284-4925-9165-ec7f79ca142a",
+     "name": "Hunxho",
+     "listeners": 193819,
+     "date": "2026-02-13",
+     "types": [
+      "collab"
+     ],
+     "title": "Same Soldier",
+     "url": "https://musicbrainz.org/recording/3d89a52d-c833-4d32-a9f3-eb4903e33d1a"
+    }
+   ]
+  },
+  {
+   "mbid": "e3c7b222-6f7f-47ab-8c66-5e59835a25c9",
+   "name": "K Carbon",
+   "listeners": 5961,
+   "firstRelease": "2022-09-08",
+   "genre": "hip-hop",
+   "score": 1.72,
+   "charts": null,
+   "newest": "2026-08-21",
+   "cosigns": [
+    {
+     "from": "82cc5b8b-22e8-48e3-9f97-6ab39ac316d6",
+     "name": "Pooh Shiesty",
+     "listeners": 526963,
+     "date": "2026-08-21",
+     "types": [
+      "collab"
+     ],
+     "title": "New One",
+     "url": "https://musicbrainz.org/recording/2f8b5ee1-0fa8-4b26-bb93-acb72836f53a"
+    }
+   ]
+  },
+  {
+   "mbid": "6bdd879f-170f-4620-ada0-8dea2558cab7",
+   "name": "Ayetian",
+   "listeners": 14231,
+   "firstRelease": "2025-02-14",
+   "genre": "hip-hop",
+   "score": 1.72,
+   "charts": null,
+   "newest": "2026-07-10",
+   "cosigns": [
+    {
+     "from": "5ec1ecc6-4535-4911-a27a-e26343f4a189",
+     "name": "Kodak Black",
+     "listeners": 1941247,
+     "date": "2026-07-10",
+     "types": [
+      "collab"
+     ],
+     "title": "Zzz Out",
+     "url": "https://musicbrainz.org/recording/76167e6f-aefb-4093-a9bf-0e79e3c30f12"
+    }
+   ]
+  },
+  {
+   "mbid": "fc999ef9-9622-46fb-9bfd-a56cd985432a",
+   "name": "Reese Youngn",
+   "listeners": 33317,
+   "firstRelease": "2021-12-02",
+   "genre": "hip-hop",
+   "score": 1.33,
+   "charts": null,
+   "newest": "2026-06-12",
+   "cosigns": [
+    {
+     "from": "5ec1ecc6-4535-4911-a27a-e26343f4a189",
+     "name": "Kodak Black",
+     "listeners": 1941247,
+     "date": "2026-06-12",
+     "types": [
+      "collab"
+     ],
+     "title": "Handling the Death",
+     "url": "https://musicbrainz.org/recording/2cba7823-cba4-4de1-89c5-48e12e7dfa13"
+    }
+   ]
+  },
+  {
+   "mbid": "cd7af4e4-5624-4965-a8fc-49220f85b351",
+   "name": "Hannah McFarland",
+   "listeners": 5277,
+   "firstRelease": "2024-10-13",
+   "genre": "country",
+   "score": 1.31,
+   "charts": null,
+   "newest": "2026-07-03",
+   "cosigns": [
+    {
+     "from": "d8c85c0e-ad88-47a7-a1df-b70608c2f52f",
+     "name": "Riley Green",
+     "listeners": 241543,
+     "date": "2026-07-03",
+     "types": [
+      "collab"
+     ],
+     "title": "Go Again",
+     "url": "https://musicbrainz.org/recording/066e600f-f2e8-4429-b059-0068232e751e"
+    }
+   ]
+  },
+  {
+   "mbid": "f8fbdd1b-2d25-4d16-9b4a-d0ee2efeb98b",
+   "name": "Stunna Sandy",
+   "listeners": 92276,
+   "firstRelease": null,
+   "genre": "hip-hop",
+   "score": 1.31,
+   "charts": null,
+   "newest": "2026-05-15",
+   "cosigns": [
+    {
+     "from": "9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+     "name": "Drake",
+     "listeners": 6948676,
+     "date": "2026-05-15",
+     "types": [
+      "feature"
+     ],
+     "title": "Outside Tweaking",
+     "url": "https://musicbrainz.org/recording/0b12b65c-d8bb-4141-be0b-460be07348c9"
+    }
+   ]
+  },
+  {
+   "mbid": "cfc2a5d4-81c0-4caa-b706-d3e2b5f08641",
+   "name": "thayerperiod",
+   "listeners": 26161,
+   "firstRelease": "2023-12-08",
+   "genre": "electronic",
+   "score": 1.3,
+   "charts": null,
+   "newest": "2026-06-19",
+   "cosigns": [
+    {
+     "from": "de5d7601-f6fa-4efa-ae3f-7005a2b89a1b",
+     "name": "Ayesha Erotica",
+     "listeners": 1319721,
+     "date": "2026-06-19",
+     "types": [
+      "collab"
+     ],
+     "title": "Fall1nLuv",
+     "url": "https://musicbrainz.org/recording/25735ee4-3542-4325-a4da-b06b88434a71"
+    }
+   ]
+  },
+  {
+   "mbid": "da8fb855-1a7f-4648-8d97-dd832328b92b",
+   "name": "Ledbyher",
+   "listeners": 106692,
+   "firstRelease": "2023-08-18",
+   "genre": "indie",
+   "score": 1.19,
+   "charts": null,
+   "newest": "2026-08-28",
+   "cosigns": [
+    {
+     "from": "c3ecef5d-84f3-4942-8c24-0a626343c3f4",
+     "name": "The Drums",
+     "listeners": 2232820,
+     "date": "2026-08-28",
+     "types": [
+      "collab"
+     ],
+     "title": "Yes&No",
+     "url": "https://musicbrainz.org/recording/dce5220c-51fe-4850-a895-c361b75832bc"
+    }
+   ]
+  },
+  {
+   "mbid": "49ed5e10-3625-49a5-acaf-d71def2e7d78",
+   "name": "YTB Fatt",
+   "listeners": 88362,
+   "firstRelease": "2023-03-10",
+   "genre": "hip-hop",
+   "score": 1.1,
+   "charts": null,
+   "newest": "2026-08-04",
+   "cosigns": [
+    {
+     "from": "d42a5768-ada1-4fb6-85fd-f61aba6264e0",
+     "name": "Lil Baby",
+     "listeners": 1716504,
+     "date": "2026-08-04",
+     "types": [
+      "collab"
+     ],
+     "title": "HERE AND THERE",
+     "url": "https://musicbrainz.org/recording/7f9a9be5-efff-4352-9ee4-fa0d20fd70a9"
+    }
+   ]
+  },
+  {
+   "mbid": "dee4e630-9738-42ba-90ea-f2663af9e8dd",
+   "name": "ICEGERGERT",
+   "listeners": 38995,
+   "firstRelease": "2023-03-17",
+   "genre": "hip-hop",
+   "score": 0.98,
+   "charts": null,
+   "newest": "2026-02-13",
+   "cosigns": [
+    {
+     "from": "36494952-f434-45d8-a958-8b4acdbcf8a8",
+     "name": "Gucci Mane",
+     "listeners": 2910047,
+     "date": "2026-02-13",
+     "types": [
+      "collab"
+     ],
+     "title": "Око",
+     "url": "https://musicbrainz.org/recording/4b0755b6-8d97-486e-a98d-8ca164a1346a"
+    }
+   ]
+  },
+  {
+   "mbid": "2eab1dfb-3a24-4389-b3d4-e8a53b9d5e36",
+   "name": "The Paradox",
+   "listeners": 93519,
+   "firstRelease": "2024-08-02",
+   "genre": "rock",
+   "score": 0.88,
+   "charts": null,
+   "newest": "2026-10-16",
+   "cosigns": [
+    {
+     "from": "a7472b5e-9b6e-48a6-b910-37c940487086",
+     "name": "Lucky Daye",
+     "listeners": 716518,
+     "date": "2026-10-16",
+     "types": [
+      "collab"
+     ],
+     "title": "Knockin",
+     "url": "https://musicbrainz.org/recording/b6e6ff0c-ee9e-496e-838f-2d050b646f5a"
+    }
+   ]
+  },
+  {
+   "mbid": "7c0f0759-ac44-4403-b366-c0a89b808504",
+   "name": "Chxrry",
+   "listeners": 49024,
+   "firstRelease": "2022-04-08",
+   "genre": "rnb",
+   "score": 0.72,
+   "charts": null,
+   "newest": "2026-04-29",
+   "cosigns": [
+    {
+     "from": "5fc55ebf-21bd-4eda-954c-dd250132331e",
+     "name": "Mariah the Scientist",
+     "listeners": 581001,
+     "date": "2026-04-29",
+     "types": [
+      "collab"
+     ],
+     "title": "Bottles & Lights",
+     "url": "https://musicbrainz.org/recording/43679088-616a-4b72-b24d-00f60e16722b"
+    }
+   ]
+  },
+  {
+   "mbid": "a505053e-11a0-4f24-b0af-dda05562da0f",
+   "name": "Los Gemelos de Sinaloa",
+   "listeners": 87967,
+   "firstRelease": "2022-10-14",
+   "genre": "latin",
+   "score": 0.56,
+   "charts": null,
+   "newest": "2026-04-15",
+   "cosigns": [
+    {
+     "from": "e665ce26-6ce9-4c42-8f6a-7a361a0ba328",
+     "name": "Fuerza Regida",
+     "listeners": 663943,
+     "date": "2026-04-15",
+     "types": [
+      "collab"
+     ],
+     "title": "FERRARI",
+     "url": "https://musicbrainz.org/recording/e2b03072-19a2-470e-8583-dd2547010fa4"
+    }
+   ]
+  },
+  {
+   "mbid": "ccf34cee-ac88-482c-a651-cb5170a8c5f4",
+   "name": "Worldpeace DMT",
+   "listeners": 35539,
+   "firstRelease": "2024-09-20",
+   "genre": "electronic",
+   "score": 0.56,
+   "charts": null,
+   "newest": "2026-03-04",
+   "cosigns": [
+    {
+     "from": "4de1756c-e988-4f9f-87bf-bae46f56fefe",
+     "name": "bassvictim",
+     "listeners": 354193,
+     "date": "2026-03-04",
+     "types": [
+      "collab"
+     ],
+     "title": "Year of the Dragon",
+     "url": "https://musicbrainz.org/recording/a40203d3-43d6-486d-ac07-49ad812ed0d8"
+    }
+   ]
+  },
+  {
+   "mbid": "b559b40a-1d92-46e2-8f91-754fe3c83958",
+   "name": "takihasdied",
+   "listeners": 16313,
+   "firstRelease": "2023-07-27",
+   "genre": "electronic",
+   "score": 0.53,
+   "charts": null,
+   "newest": "2025-12-01",
+   "cosigns": [
+    {
+     "from": "eb3c021d-e056-42d6-8fad-064205a90527",
+     "name": "femtanyl",
+     "listeners": 392651,
+     "date": "2025-12-01",
+     "types": [
+      "collab",
+      "feature"
+     ],
+     "title": "SH3 L00K3D D3DD",
+     "url": "https://musicbrainz.org/recording/b6a561b6-96c9-4648-b284-90160283cad9"
+    }
+   ]
+  },
+  {
+   "mbid": "91b449dd-746e-4fd3-b38d-b1dac80e655e",
+   "name": "Grace Enger",
+   "listeners": 67349,
+   "firstRelease": "2022-10-07",
+   "genre": "country",
+   "score": 0.52,
+   "charts": null,
+   "newest": "2026-11-06",
+   "cosigns": [
+    {
+     "from": "e881b225-42b1-41d9-9d5e-eff55568585b",
+     "name": "STELLA LEFTY",
+     "listeners": 213643,
+     "date": "2026-11-06",
+     "types": [
+      "upcoming"
+     ],
+     "title": "Stella Lefty: Lefty Live",
+     "url": "https://www.ticketmaster.com/stella-lefty-lefty-live-dallas-texas-11-06-2026/event/0C0064AF96246D74"
+    }
+   ]
+  },
+  {
+   "mbid": "e8117b20-07df-48c3-840c-e192e0152533",
+   "name": "Fatt Smaxk",
+   "listeners": 74334,
+   "firstRelease": "2025-10-11",
+   "genre": "hip-hop",
+   "score": 0.39,
+   "charts": null,
+   "newest": "2026-09-18",
+   "cosigns": [
+    {
+     "from": "59c2a349-e284-4925-9165-ec7f79ca142a",
+     "name": "Hunxho",
+     "listeners": 193819,
+     "date": "2026-09-18",
+     "types": [
+      "collab"
+     ],
+     "title": "Throw It",
+     "url": "https://musicbrainz.org/recording/ade0440d-0caf-4cb6-a60e-f15a4f243a1b"
+    }
+   ]
+  },
+  {
+   "mbid": "483ccf02-0faf-458e-88fc-e39e03cb9875",
+   "name": "Vincent Mason",
+   "listeners": 88524,
+   "firstRelease": "2022-02-11",
+   "genre": "country",
+   "score": 0.27,
+   "charts": null,
+   "newest": "2026-05-15",
+   "cosigns": [
+    {
+     "from": "e881b225-42b1-41d9-9d5e-eff55568585b",
+     "name": "STELLA LEFTY",
+     "listeners": 213643,
+     "date": "2026-05-15",
+     "types": [
+      "collab"
+     ],
+     "title": "Something to Lose",
+     "url": "https://musicbrainz.org/recording/872d9b4b-fb93-4404-9af7-6a3983119485"
+    }
+   ]
+  },
+  {
+   "mbid": "bc8efafe-52f9-4b6d-95a0-dc193a3556e5",
+   "name": "BloodHound Q50",
+   "listeners": 106559,
+   "firstRelease": "2024-08-12",
+   "genre": "hip-hop",
+   "score": 0.24,
+   "charts": null,
+   "newest": "2026-02-20",
+   "cosigns": [
+    {
+     "from": "b299e6fc-a7cb-4c7d-a798-0692b60b9e48",
+     "name": "EST Gee",
+     "listeners": 302799,
+     "date": "2026-02-20",
+     "types": [
+      "feature"
+     ],
+     "title": "ASIDE",
+     "url": "https://musicbrainz.org/recording/bf39c1a3-4620-44e6-a5ee-15d2c3dec74a"
+    }
+   ]
+  }
+ ]
+}

@@ -96,17 +96,19 @@ async function lastfmInfo(params, key) {
   }
 }
 
-// Returns { listeners, name, via } or null if no trustworthy Last.fm page was found.
+// Returns { listeners, name, via, tags } or null if no trustworthy Last.fm page was found.
+// `tags` (top 5 Last.fm tags) give Rising newcomers a genre (RISING.md).
+const topTags = page => (page?.tags?.tag || []).slice(0, 5).map(t => t.name);
 async function fame(mbid, name, key) {
   const byId = await lastfmInfo({ mbid }, key);
   const sameName = n => n.toLowerCase().replace(/\s+/g, " ") === name.toLowerCase().replace(/\s+/g, " ");
-  if (byId && sameName(byId.name)) return { listeners: Number(byId.stats.listeners), name: byId.name, via: "mbid" };
+  if (byId && sameName(byId.name)) return { listeners: Number(byId.stats.listeners), name: byId.name, via: "mbid", tags: topTags(byId) };
   // The ID can point at a broken duplicate page ("Florence   The Machine"); prefer the page by
   // name if it carries our exact ID, otherwise keep the ID match.
   if (byId) {
     const byName = await lastfmInfo({ artist: name }, key);
     const best = byName?.mbid === mbid ? byName : byId;
-    return { listeners: Number(best.stats.listeners), name: best.name, via: best === byName ? "name+mbid" : "mbid" };
+    return { listeners: Number(best.stats.listeners), name: best.name, via: best === byName ? "name+mbid" : "mbid", tags: topTags(best) };
   }
   // Last.fm may hold an old ID for an artist MusicBrainz has since merged; lookups of old IDs redirect.
   const sameArtist = async other => { try { return (await mb(`artist/${other}`)).id === mbid; } catch { return false; } };
@@ -117,7 +119,7 @@ async function fame(mbid, name, key) {
     if (tried.has(n.toLowerCase())) return;
     tried.add(n.toLowerCase());
     const page = await lastfmInfo({ artist: n }, key);
-    if (await trusted(page)) candidates.push({ listeners: Number(page.stats.listeners), name: page.name, via: n === name ? "name" : "alias" });
+    if (await trusted(page)) candidates.push({ listeners: Number(page.stats.listeners), name: page.name, via: n === name ? "name" : "alias", tags: topTags(page) });
   };
   await tryName(name);
   if (!candidates.length) {
@@ -212,7 +214,7 @@ try {
     if (fresh(prevFame[mbid]) || !LASTFM_KEY) { if (prevFame[mbid]) out.cosigners[mbid] = prevFame[mbid]; continue; }
     try {
       const f = await fame(mbid, cosigns.artists[mbid].name, LASTFM_KEY);
-      out.cosigners[mbid] = { listeners: f?.listeners ?? null, lastfmName: f?.name ?? null, via: f?.via ?? "unknown", fetchedAt: new Date().toISOString() };
+      out.cosigners[mbid] = { listeners: f?.listeners ?? null, lastfmName: f?.name ?? null, via: f?.via ?? "unknown", tags: f?.tags || [], fetchedAt: new Date().toISOString() };
       fetched++;
       if (!f) unknown++;
     } catch (err) {

@@ -48,6 +48,10 @@ Apple goes up to 100, but stopping at 50 keeps the page light. Ten at a time, th
 - **Apple credits** put several artists in one string ("Drake & Don Toliver", "KAROL G, Judeline & rusowsky"); Brazilian duos are one act ("Jorge & Mateus"). Apple gives an artist ID for the first artist only.
 - **Scope:** USA only for now (Julian, 2026-10-16); later versions can load by country.
 
+## Added 2026-10-19
+
+- **Climbing (Julian):** ▲/▼/New entry badges on Apple rows and a fourth tab, Climbing (songs released in the last year, ranked by rank ratio since the chart a week earlier). Last.fm US top tracks (listener counts) are collected from 2026-10-19 for real % growth later.
+
 ## Decisions (answered by Julian, 2026-10-16)
 
 1. Images: **Apple cover art and YouTube thumbnails approved**, each linking back.

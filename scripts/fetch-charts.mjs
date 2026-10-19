@@ -4,6 +4,9 @@
 // None of these sources keep chart history, so a day that isn't saved is lost for good.
 //   lastfmGlobal  Last.fm chart.getTopArtists, top 1000. Numbers: all-time listeners and plays.
 //   lastfmUs      Last.fm geo.getTopArtists (United States), top 1000. Number: US listeners this week.
+//   lastfmUsTracks     Last.fm geo.getTopTracks (United States), top 1000. Number: US listeners this week.
+//   lastfmGlobalTracks Last.fm chart.getTopTracks, top 1000. Numbers: all-time listeners and plays.
+//                 (Added 2026-10-19: listener counts per song, so song growth can be a real percentage.)
 //   appleUsSongs  Apple Music most-played songs, US, top 100 (no key). Mainstream listening. With genre tags.
 //   appleUsAlbums Apple Music most-played albums, US, top 100. With genre tags.
 // Rank is the position in the list (1 = first). Each chart's row layout is in `fields`.
@@ -81,6 +84,18 @@ const CHARTS = {
     needsKey: true,
     get: async () => (await lastfm({ method: "geo.gettopartists", country: "united states" }, KEY)).topartists.artist
       .map(a => [a.name, a.mbid || null, Number(a.listeners)]),
+  },
+  lastfmUsTracks: {
+    fields: ["track", "artist", "artist musicbrainz", "track musicbrainz", "US listeners this week"],
+    needsKey: true,
+    get: async () => (await lastfm({ method: "geo.gettoptracks", country: "united states" }, KEY)).tracks.track
+      .map(t => [t.name, t.artist?.name || null, t.artist?.mbid || null, t.mbid || null, Number(t.listeners)]),
+  },
+  lastfmGlobalTracks: {
+    fields: ["track", "artist", "artist musicbrainz", "track musicbrainz", "listeners (all time)", "plays (all time)"],
+    needsKey: true,
+    get: async () => (await lastfm({ method: "chart.gettoptracks" }, KEY)).tracks.track
+      .map(t => [t.name, t.artist?.name || null, t.artist?.mbid || null, t.mbid || null, Number(t.listeners), Number(t.playcount)]),
   },
   appleUsSongs: {
     fields: ["song", "artist (as credited)", "apple artist id (first artist)", "release date", "apple song id", "genres", "artwork (100px)", "apple music url"],

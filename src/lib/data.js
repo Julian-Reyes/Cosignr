@@ -164,15 +164,28 @@ export function upcomingFor(a) {
 // Paths are relative to the project root, where `astro build` / `astro dev` run.
 
 const readJson = f => { try { return JSON.parse(readFileSync(f, "utf8")); } catch { return null; } };
+let CHART_FILES = [];
+try { CHART_FILES = readdirSync("data/charts").filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().reverse(); } catch {}
 const CHART = (() => {
-  let files = [];
-  try { files = readdirSync("data/charts").filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().reverse(); } catch {}
-  for (const f of files) { // newest day whose Apple chart didn't fail
+  for (const f of CHART_FILES) { // newest day whose Apple chart didn't fail
     const c = readJson(`data/charts/${f}`);
     if (c?.appleUsSongs) return c;
   }
   return null;
 })();
+// Climbing (Julian, 2026-10-19): today's Apple ranks against the chart CLIMB_DAYS earlier, or the oldest
+// we have until there's that much history (collection started 2026-10-16).
+const CLIMB_DAYS = 7;
+const CHART_THEN = (() => {
+  if (!CHART) return null;
+  const target = new Date(Date.parse(CHART.date) - CLIMB_DAYS * 864e5).toISOString().slice(0, 10);
+  const older = CHART_FILES.map(f => f.slice(0, 10)).filter(d => d < CHART.date);
+  const pickDate = older.find(d => d <= target) || older.at(-1);
+  const c = pickDate && readJson(`data/charts/${pickDate}.json`);
+  return c?.appleUsSongs ? c : null;
+})();
+const rankMap = list => new Map((list || []).map((r, i) => [r[4], i + 1]));
+const THEN = CHART_THEN ? { songs: rankMap(CHART_THEN.appleUsSongs), albums: rankMap(CHART_THEN.appleUsAlbums) } : null;
 const YOUTUBE = readJson("data/live/youtube.json");
 
 export const HOT_COUNT = 25; // Julian, 2026-10-16: top 5 shown, Show More adds 10, up to 25 per tab
@@ -238,9 +251,11 @@ function creditSegments(credit, people) {
 const daysBefore = (date, n) => new Date(Date.parse(date) - n * 864e5).toISOString().slice(0, 10);
 const shortDate = d => new Date(d.slice(0, 10) + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
 
-function appleRows(list) {
+function appleRows(list, kind) {
   const newSince = daysBefore(CHART.date, NEW_DAYS);
   return (list || []).map(([title, credit, artistId, released, id, genres, art, url], i) => {
+    // Movement since CHART_THEN: positive = climbed. `entered`: not on that chart (null = no history yet).
+    const was = THEN?.[kind]?.get(id) ?? null;
     // Titles carry features too: "WAIT FOR U (feat. Drake & Tems)" is credited to Future alone.
     const { people, cosigns } = creditsFor(`${credit} | ${title}`, BY_APPLE[artistId] ? [BY_APPLE[artistId]] : []);
     return {
@@ -248,8 +263,23 @@ function appleRows(list) {
       art: art ? art.replace(/\/\d+x\d+bb\.(jpg|png)$/, "/240x240bb.$1") : null, // 240px for retina at 120px
       artists: creditSegments(credit, people), genre: genres?.[0] || null, g: genreGroup(genres?.[0]),
       isNew: !!released && released >= newSince, cosigns, pages: people.filter(p => p.href).map(p => p.mbid),
+      released, credit, artistId,
+      move: was ? was - (i + 1) : null, entered: THEN ? !was : false,
     };
   });
+}
+
+// Climbing tab: songs released in the last year, ranked by how far they rose since CHART_THEN, as a
+// ratio (#89 → #6 is ×15, #7 → #2 is ×3.5) so moves near the top count fairly. New entries count as
+// coming from #101. Old songs re-entering (Thriller in October, Mr. Brightside) are left out.
+const CLIMB_MIN_PLACES = 3;
+function climbRows(rows) {
+  if (!THEN) return [];
+  const yearAgo = daysBefore(CHART.date, 365);
+  return rows.filter(r => r.released && r.released >= yearAgo && ((r.move ?? 0) >= CLIMB_MIN_PLACES || r.entered))
+    .map(r => ({ ...r, climb: (r.entered ? 101 : r.rank + r.move) / r.rank }))
+    .sort((x, y) => y.climb - x.climb || x.rank - y.rank)
+    .map((r, i) => ({ ...r, chartRank: r.rank, rank: i + 1 }));
 }
 
 // "OliviaRodrigoVEVO" -> "Olivia Rodrigo", "PARTYNEXTDOOR - Topic" -> "PARTYNEXTDOOR". Display only.
@@ -275,7 +305,7 @@ function videoRows() {
   });
 }
 
-const SONGS = CHART ? appleRows(CHART.appleUsSongs) : [];
+const SONGS = CHART ? appleRows(CHART.appleUsSongs, "songs") : [];
 const VIDEOS = YOUTUBE?.videos?.length ? videoRows() : [];
 
 // Props for the home page's HotList island: only the rows it shows. That's the overall top HOT_COUNT
@@ -286,15 +316,17 @@ export function hotLists() {
     return rows.filter(r => {
       const n = r.g ? (seen[r.g] = (seen[r.g] || 0) + 1) : 0;
       return r.rank <= HOT_COUNT || (r.g && n <= HOT_COUNT);
-    }).map(({ pages, ...r }) => r);
+    }).map(({ pages, credit, artistId, released, ...r }) => r); // build-time fields stay out of the props
   };
   return {
     max: HOT_COUNT,
     tabs: {
       songs: pick(SONGS),
-      albums: CHART ? pick(appleRows(CHART.appleUsAlbums)) : [],
+      albums: CHART ? pick(appleRows(CHART.appleUsAlbums, "albums")) : [],
       videos: pick(VIDEOS),
+      climbing: pick(climbRows(SONGS)),
     },
+    since: CHART_THEN ? shortDate(CHART_THEN.date) : null,
     appleDate: CHART ? shortDate(CHART.date) : null,
     youtubeDate: YOUTUBE ? shortDate(YOUTUBE.fetchedAt) : null,
   };
@@ -333,6 +365,44 @@ export function trendingRows() {
 export const trendingImages = () => Object.fromEntries((TRENDING?.artists || [])
   .map(t => t.mbid && PAGE_BY_MBID[t.mbid]).filter(Boolean).map(a => [a.id, IMAGES[a.id]]));
 export const trendingDate = () => (TRENDING ? shortDate(TRENDING.chartDate) : null);
+
+// ---------- Rising (RISING.md) ----------
+// Newcomers recently cosigned by big artists: data/rising.json from fetch-rising.mjs.
+const RISING = readJson("data/rising.json");
+const monthYear = d => new Date(d.slice(0, 10).padEnd(10, "-01") + "T12:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" });
+
+// Hover text for one big-artist cosign of a newcomer.
+function risingTitle(c, name) {
+  const t = c.title ? `“${c.title}”` : null;
+  const when = c.types.includes("upcoming") ? `next show ${monthYear(c.date)}` : monthYear(c.date);
+  const text = c.types.includes("upcoming") ? `${name} opens for ${c.name}${c.title ? `: ${c.title}` : ""}`
+    : c.types.includes("tour") || c.types.includes("band") ? `${c.name} took ${name} on tour${c.title ? `: ${c.title}` : ""}`
+    : c.types.includes("feature") ? `${c.name} featured ${name}${t ? ` on ${t}` : ""}`
+    : `${c.name} and ${name}${t ? `: ${t}` : ""}`;
+  return `${text} (${when}) · ${c.name} has ${fmt(c.listeners)} Last.fm listeners`;
+}
+
+export function risingRows() {
+  if (!RISING) return [];
+  return RISING.artists.map(r => {
+    const page = PAGE_BY_MBID[r.mbid];
+    const shownGenre = (page && genre(page)) || GENRES.find(x => x.id === r.genre)?.label || null;
+    return {
+      id: page?.id || `mb-${r.mbid}`, name: r.name, href: page ? pageUrl(page.id) : `https://musicbrainz.org/artist/${r.mbid}`,
+      page: !!page, genre: shownGenre, g: r.genre, hometown: page ? hometown(page) : null,
+      listeners: r.listeners, firstYear: r.firstRelease ? r.firstRelease.slice(0, 4) : null, score: r.score,
+      // Their own songs charting now (fetch-rising.mjs chart boost): "“WTF GOIN” #48 on Apple Music US ▲32".
+      charts: [
+        ...(r.charts?.apple || []).map(s => `“${s.title}” #${s.rank} on Apple Music US${s.entered ? " · new entry" : s.move >= 3 ? ` · ▲${s.move}` : ""}`),
+        ...(r.charts?.lastfm || []).map(s => `“${s.title}” #${s.rank} on Last.fm US · ${fmt(s.listeners)} listeners this week`),
+      ],
+      chips: r.cosigns.map(c => ({ name: c.name, title: risingTitle(c, r.name), href: hasPage(c.from) ? linkFor(c.from) : null, url: c.url })),
+      search: [r.name, shownGenre, page && hometown(page), ...r.cosigns.map(c => c.name)].filter(Boolean),
+    };
+  });
+}
+export const risingImages = () => Object.fromEntries((RISING?.artists || [])
+  .map(r => PAGE_BY_MBID[r.mbid]).filter(Boolean).map(a => [a.id, IMAGES[a.id]]));
 
 // Artist page badges: best Apple Music US song rank (top 100) and a video in YouTube's US top chart.
 export function hotFor(a) {

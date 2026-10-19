@@ -4,25 +4,11 @@
 //   All (no genre): 20 artists, max 2 per genre in the top 10 and max 3 overall (TREND_ALL), no ungenred rows.
 //   A genre: everyone charting in that genre.
 import { useEffect, useState } from "react";
-import { TREND_METRICS, TREND_ALL, INITIAL_COUNT, MORE_COUNT, DEFAULT_SOURCE, fmt, esc, imageHtml, viewState, toast, currentGenre, genreLabel } from "../lib/shared.js";
+import { TREND_METRICS, capByGenre, INITIAL_COUNT, MORE_COUNT, DEFAULT_SOURCE, fmt, esc, imageHtml, viewState, toast, currentGenre, genreLabel } from "../lib/shared.js";
 
 const Icon = ({ id }) => <svg className="icon"><use href={`#${id}`} /></svg>;
 const SOURCE_LABEL = { apple: "Apple Music", lastfm: "Last.fm" };
 
-// Each step fills up to `upTo` rows with at most `perGenre` per genre; artists skipped by an earlier step
-// are looked at again by the next one (Lil Baby misses the top 10's 2-per-genre cap, then gets #11).
-function capPerGenre(list) {
-  const per = {}, out = [];
-  for (const { upTo, perGenre } of TREND_ALL) {
-    for (const r of list) {
-      if (out.length >= upTo) break;
-      if (!r.g || out.includes(r) || (per[r.g] || 0) >= perGenre) continue;
-      per[r.g] = (per[r.g] || 0) + 1;
-      out.push(r);
-    }
-  }
-  return out;
-}
 
 export default function TrendingList({ rows, images, date }) {
   const metrics = Object.keys(TREND_METRICS);
@@ -53,7 +39,7 @@ export default function TrendingList({ rows, images, date }) {
 
   const value = r => r[metric];
   const sorted = rows.filter(r => value(r) != null && (!genre || r.g === genre)).sort((a, b) => value(b) - value(a));
-  const ranked = (genre ? sorted : capPerGenre(sorted)).map((r, i) => ({ r, rank: i + 1 }));
+  const ranked = (genre ? sorted : capByGenre(sorted)).map((r, i) => ({ r, rank: i + 1 }));
   const max = TREND_METRICS[metric].max || (ranked[0] && value(ranked[0].r)) || 1;
   const q = query.trim().toLowerCase();
   // A search looks through everyone charting, not just the capped top 10.
