@@ -59,6 +59,19 @@ document.getElementById("searchForm")?.addEventListener("submit", e => {
   document.getElementById("trending").scrollIntoView({ behavior: "smooth" });
 });
 
+// ---------- sticky bars ----------
+// The nav is sticky, and on the home page the genre bar sticks right under it (Julian, 2026-10-19).
+// Their heights differ by screen size, so measure them: --nav-h places the genre bar, and
+// scroll-padding-top keeps section links and the genre scroll from landing under the bars.
+function measureBars() {
+  const nav = document.querySelector("nav")?.offsetHeight || 0;
+  const bar = document.querySelector(".genre-bar")?.offsetHeight || 0;
+  document.documentElement.style.setProperty("--nav-h", `${nav}px`);
+  document.documentElement.style.scrollPaddingTop = `${nav + bar + 20}px`;
+}
+measureBars();
+window.addEventListener("resize", measureBars);
+
 // ---------- genre bar (home page) ----------
 // Sets ?genre=<id> without reloading and tells the islands (Trending, Rising, Hot Right Now, Most
 // Cosigned) through a "cosignr:genre" event. Featured is not filtered.

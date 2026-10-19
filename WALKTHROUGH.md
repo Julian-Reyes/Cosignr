@@ -163,7 +163,7 @@ Some safety checks:
 
 ## Genres
 
-A thin white bar under the nav lets visitors pick a genre: All, Hip-Hop, Pop, R&B, Indie, Electronic, Rock, Country or Latin. Picking one filters Trending, Rising, Hot Right Now and Most Cosigned (Featured stays as it is), scrolls down to Trending, and adds `?genre=hip-hop` to the address so the view can be shared.
+A thin white bar under the nav (it stays on screen with the nav as you scroll) lets visitors pick a genre: All, Hip-Hop, Pop, R&B, Indie, Electronic, Rock, Country or Latin. Picking one filters Trending, Rising, Hot Right Now and Most Cosigned (Featured stays as it is), scrolls down to Trending, and adds `?genre=hip-hop` to the address so the view can be shared.
 
 Artists' genres are detailed ("Brostep", "Emo Rap", "Indie Pop"), so each one is folded into one of the eight groups by a short list of rules in `src/lib/shared.js`. The first rule that matches wins, which is why "Indie Pop" counts as Indie and "Emo Rap" as Hip-Hop. Chart songs use Apple's genre tag. YouTube doesn't give genres, so a video only has one when it's by an artist with a Cosignr page; most videos disappear when a genre is picked.
 

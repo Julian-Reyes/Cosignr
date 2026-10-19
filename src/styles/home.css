@@ -790,8 +790,12 @@ footer .data-sources a:hover{ color: #fff; }
 }
 .src-tag.src-lastfm{ background: #fff1e6; color: #9a5a2c; }
 
-/* Genre bar (Julian, 2026-10-16): thin white strip under the nav, not sticky. Filters Trending, Hot Right Now, Top. */
+/* Genre bar (Julian, 2026-10-16): thin white strip under the nav. Sticky with the nav since 2026-10-19:
+   site.js measures the nav and sets --nav-h, so the bar parks right under it on any screen size. */
 .genre-bar{
+  position: sticky;
+  top: var(--nav-h, 51px);
+  z-index: 19;
   display: flex;
   justify-content: center;
   gap: 8px;
