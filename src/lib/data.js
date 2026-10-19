@@ -394,16 +394,6 @@ export function risingRows() {
       tier: r.tier, route: r.route,
       // Heat (shown, Julian 2026-10-19): US listeners this week per 1,000 all-time listeners.
       heat: r.heat, heatTitle: r.heat ? `Heat Score ${Math.round(r.heat)}: ${Math.round(r.heat)} of every 1,000 of ${r.name}'s all-time Last.fm listeners played them in the US this week (${fmt(r.weekly)} of ${fmt(r.listeners)})` : null,
-      // The number backing each row (Julian, 2026-10-19): new listeners once a week of snapshots exists,
-      // until then their strongest current fact: Apple rank, else Last.fm US listeners this week.
-      stat: (() => {
-        const days = RISING.growthSince ? Math.round((Date.parse(RISING.chartDate) - Date.parse(RISING.growthSince)) / 864e5) : 0;
-        if (r.growthGain > 0 && days >= 7) return { value: `+${fmt(r.growthGain)}`, label: "new listeners this week" };
-        const best = r.charts?.apple?.[0];
-        if (best) return { value: `#${best.rank}`, label: "on Apple Music US" };
-        if (r.weekly) return { value: fmt(r.weekly), label: "US listeners this week (Last.fm)" };
-        return { value: fmt(r.listeners), label: "Last.fm listeners" };
-      })(),
       // Their own songs charting now (fetch-rising.mjs chart boost): "“WTF GOIN” #48 on Apple Music US ▲32".
       charts: [
         ...(r.charts?.apple || []).slice(0, 2).map(s => `“${s.title}” #${s.rank} on Apple Music US${s.entered ? " · new entry" : s.move >= 3 ? ` · ▲${s.move}` : ""}`),

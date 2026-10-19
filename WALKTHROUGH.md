@@ -182,7 +182,7 @@ Under Trending, **Rising** shows artists on the way up. Like other "rising" char
 
 **How they're ranked:** anyone on **Apple's US top 100** comes first, then anyone on **Last.fm's US top tracks**, then everyone else. Within each group, chart position counts most, then cosigns from big artists in the last year (any artist with over a million listeners counts as big, and Apple's own song credits count as proof of a collab), then heat or listener growth.
 
-Each row's number backs up why they're there: "+3.4k new listeners this week" once a week of daily numbers exists, until then their Apple chart position or this week's Last.fm US listeners. The **Rising score** (out of 10) is shown smaller underneath; it only orders artists within their group.
+Each row's number is the **Rising score**, out of 10. It only orders artists within their group (Apple chart, Last.fm chart, everyone else). The facts behind it (chart positions, Heat Score, cosigns) are in the row itself.
 
 Rising artists and the big artists who cosigned them get light artist pages. Listener growth will matter more once a week or two of daily numbers have built up.
 

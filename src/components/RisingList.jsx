@@ -90,10 +90,9 @@ export default function RisingList({ rows, images }) {
                 </div>
               </div>
               <div className="stat">
-                <b>{r.stat.value}</b>
-                <small>{r.stat.label}</small>
-                <div className="bar" title={`Rising score ${r.score.toFixed(1)} out of 10`}><i style={{ width: `${Math.round(r.score * 10)}%` }} /></div>
-                <small className="rise-score">Rising score {r.score.toFixed(1)}/10</small>
+                <b>{r.score.toFixed(1)}</b>
+                <small>Rising score (out of 10)</small>
+                <div className="bar"><i style={{ width: `${Math.round(r.score * 10)}%` }} /></div>
               </div>
               <button className={`cosign-btn${on ? " on" : ""}`} type="button" aria-pressed={on} onClick={() => toggleCosign(r)}>
                 <Icon id={on ? "i-check" : "i-plus"} />{on ? "Cosigned" : "Cosign"}
