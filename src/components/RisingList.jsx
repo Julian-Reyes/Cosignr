@@ -1,4 +1,5 @@
-// Rising (RISING.md): newcomers recently cosigned by big artists. Same row style as Trending.
+// Rising (RISING.md): artists on the way up. Rows arrive ranked: Apple top 100 first, then Last.fm US top
+// tracks, then everyone else (charting 3 · cosign 2 · heat/growth 1 within each tier). Same row style as Trending.
 // Genre bar filter, header search, 5 shown + Show More 10, demo Cosign button. Props from risingRows().
 //   All (no genre): 20, max 2 per genre in the top 10 and max 3 overall (capByGenre, like Trending).
 //   A genre: every newcomer in that genre.
@@ -52,7 +53,7 @@ export default function RisingList({ rows, images }) {
       <div className="section-head">
         <div>
           <h2>Rising</h2>
-          <p>Newcomers the big names put on their songs and tours in the last year. Hover a cosign to see how.</p>
+          <p>Artists on the way up: new and little-known names charting now, breaking out, or vouched for by the big names. Hover heat or a cosign to see why.</p>
         </div>
       </div>
 
@@ -75,9 +76,15 @@ export default function RisingList({ rows, images }) {
                   {[r.genre, r.hometown].filter(Boolean).join(" · ")}
                   <span className="meta-listeners">{r.genre || r.hometown ? " · " : ""}<b>{facts}</b></span>
                 </div>
-                {r.charts.length > 0 && <div className="rising-charts">{r.charts.join(" · ")}</div>}
+                {(r.heat || r.charts.length > 0) && (
+                  <div className="rising-charts">
+                    {r.heat && <span className="heat" title={r.heatTitle}>Heat {Math.round(r.heat)}</span>}
+                    {r.heat && r.charts.length > 0 && " · "}{r.charts.join(" · ")}
+                  </div>
+                )}
                 <div className="cosigns">
                   <h5>Cosigned by</h5>
+                  {r.chips.length === 0 && <span className="no-cosigns">No cosigns found yet</span>}
                   {r.chips.map((c, j) => c.href
                     ? <a key={c.name} className={`chip${j === 0 ? " top" : ""}`} title={c.title} href={c.href}>{c.name}</a>
                     : <a key={c.name} className={`chip${j === 0 ? " top" : ""}`} title={c.title} href={c.url || "#"} target="_blank" rel="noopener">{c.name}</a>)}

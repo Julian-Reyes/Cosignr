@@ -64,10 +64,13 @@ for (const t of trending) {
   if (roster.has(t.mbid)) continue;
   picked.set(t.mbid, { cosignerOf: [], name: t.name, ...picked.get(t.mbid), trending: true });
 }
-// Rising newcomers (RISING.md, Julian 2026-10-19: they get pages too).
+// Rising artists and the big artists who cosigned them (RISING.md, Julian 2026-10-19: they get pages
+// too, so a "Cosigned by Gunna" chip links to a real page).
 for (const r of rising) {
-  if (roster.has(r.mbid)) continue;
-  picked.set(r.mbid, { cosignerOf: [], name: r.name, ...picked.get(r.mbid), rising: true });
+  if (!roster.has(r.mbid)) picked.set(r.mbid, { cosignerOf: [], name: r.name, ...picked.get(r.mbid), rising: true });
+  for (const c of r.cosigns || []) {
+    if (!roster.has(c.from) && c.name) picked.set(c.from, { cosignerOf: [], name: c.name, ...picked.get(c.from) });
+  }
 }
 
 // 3. IDs on other services.

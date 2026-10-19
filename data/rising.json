@@ -1,32 +1,2368 @@
 {
- "generatedAt": "2026-10-19T16:57:59.407Z",
+ "generatedAt": "2026-10-19T19:07:57.090Z",
+ "chartDate": "2026-10-19",
+ "climbSince": "2026-10-16",
+ "growthSince": "2026-10-16",
  "rules": {
-  "bigListeners": 1000000,
-  "maxListeners": 150000,
-  "maxYears": 5,
-  "windowDays": 365
+  "minListeners": 5000,
+  "little": 150000,
+  "newYears": 5,
+  "minHeat": 10,
+  "breakoutMax": 2000000,
+  "breakoutYears": 12,
+  "big": 1000000,
+  "windowDays": 365,
+  "weights": {
+   "chart": 3,
+   "cosign": 2,
+   "heat": 1
+  }
  },
  "artists": [
+  {
+   "mbid": "b16c0872-31a7-4db9-8569-0e3146fcecfc",
+   "name": "Ella Langley",
+   "listeners": 533932,
+   "firstRelease": "2018-05-24",
+   "route": "breaking out",
+   "tier": 0,
+   "genre": "country",
+   "heat": 13.3,
+   "weekly": 7092,
+   "growthPct": 0.25,
+   "signals": {
+    "chart": 0.97,
+    "cosign": 0.23,
+    "heat": 0.44
+   },
+   "score": 3.81,
+   "charts": {
+    "apple": [
+     {
+      "title": "Choosin' Texas",
+      "rank": 4,
+      "move": -2,
+      "entered": false,
+      "url": "https://music.apple.com/us/album/choosin-texas/1844932149?i=1844932150"
+     },
+     {
+      "title": "I Can't Love You Anymore",
+      "rank": 26,
+      "move": -8,
+      "entered": false,
+      "url": "https://music.apple.com/us/album/i-cant-love-you-anymore/1895158676?i=6763091996"
+     },
+     {
+      "title": "Be Her",
+      "rank": 36,
+      "move": -13,
+      "entered": false,
+      "url": "https://music.apple.com/us/album/be-her/1869436835?i=1869436845"
+     }
+    ],
+    "lastfm": [
+     {
+      "title": "Choosin' Texas",
+      "rank": 777,
+      "listeners": 4460
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "2077273e-eaa1-4f49-903c-f286ededecb9",
+     "date": "2026-10-19",
+     "types": [
+      "collab"
+     ],
+     "title": "I Can't Love You Anymore",
+     "url": "https://music.apple.com/us/album/i-cant-love-you-anymore/1895158676?i=6763091996",
+     "viaApple": true,
+     "name": "Morgan Wallen",
+     "listeners": 1048772
+    },
+    {
+     "from": "4eca1aa0-c79f-481b-af8a-4a2d6c41aa5c",
+     "date": "2026-10-02",
+     "types": [
+      "feature"
+     ],
+     "title": "Snakeskin Boots",
+     "url": "https://musicbrainz.org/recording/4aff2838-9575-41f0-a9f3-cc8b27659eb4",
+     "name": "Miranda Lambert",
+     "listeners": 1032862
+    },
+    {
+     "from": "aab35942-f176-4f77-bbf9-1d6aa98ccf3f",
+     "date": "2025-11-14",
+     "types": [
+      "feature"
+     ],
+     "title": "Winter Wonderland",
+     "url": "https://musicbrainz.org/recording/93aa3149-82c5-4506-8ab3-22cfb5fab0c8",
+     "name": "Luke Bryan",
+     "listeners": 1175371
+    }
+   ]
+  },
+  {
+   "mbid": "f40856e6-079f-4a0a-916e-9e6a5e04f646",
+   "name": "ADÉLA",
+   "listeners": 739115,
+   "firstRelease": "2024-09-13",
+   "route": "new",
+   "tier": 0,
+   "genre": "pop",
+   "heat": 50.3,
+   "weekly": 37031,
+   "growthPct": null,
+   "signals": {
+    "chart": 1,
+    "cosign": 0,
+    "heat": 0
+   },
+   "score": 3,
+   "charts": {
+    "apple": [
+     {
+      "title": "Nicole Kidman",
+      "rank": 9,
+      "move": null,
+      "entered": true,
+      "url": "https://music.apple.com/us/album/nicole-kidman/6807192580?i=6807192825"
+     },
+     {
+      "title": "Ain't In LA",
+      "rank": 91,
+      "move": -3,
+      "entered": false,
+      "url": "https://music.apple.com/us/album/aint-in-la/6792883860?i=6792884101"
+     }
+    ],
+    "lastfm": [
+     {
+      "title": "NICOLE KIDMAN",
+      "rank": 1,
+      "listeners": 24949
+     },
+     {
+      "title": "Ain't In LA",
+      "rank": 7,
+      "listeners": 16667
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "f3cb8059-add2-4bf9-a19e-5664588e30ba",
+   "name": "Belly Gang Kushington",
+   "listeners": 45280,
+   "firstRelease": "2020-06-17",
+   "route": "little-known",
+   "tier": 0,
+   "genre": "hip-hop",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.19,
+    "cosign": 1,
+    "heat": 0
+   },
+   "score": 2.57,
+   "charts": {
+    "apple": [
+     {
+      "title": "WTF GOIN",
+      "rank": 82,
+      "move": -2,
+      "entered": false,
+      "url": "https://music.apple.com/us/album/wtf-goin/6779378647?i=6779378648"
+     }
+    ],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "37b2cb82-ef79-4d46-a184-a549450aa231",
+     "date": "2026-10-19",
+     "types": [
+      "collab"
+     ],
+     "title": "WTF GOIN",
+     "url": "https://music.apple.com/us/album/wtf-goin/6779378647?i=6779378648",
+     "viaApple": true,
+     "name": "21 Savage",
+     "listeners": 2411862
+    },
+    {
+     "from": "100b8734-f4f0-4536-9960-47f7c59d1b4c",
+     "date": "2026-10-22",
+     "types": [
+      "upcoming"
+     ],
+     "title": "2026 FAMU Homecoming Concert",
+     "url": "https://www.ticketmaster.com/2026-famu-homecoming-concert-tallahassee-florida-10-22-2026/event/2200651F8B041E9F",
+     "name": "Gunna",
+     "listeners": 1917248
+    }
+   ]
+  },
+  {
+   "mbid": "a2a3f910-b188-43e7-81d0-f1ac2a2f3e12",
+   "name": "Noah Kahan",
+   "listeners": 1731851,
+   "firstRelease": "2017-01-27",
+   "route": "breaking out",
+   "tier": 0,
+   "genre": "pop",
+   "heat": 11,
+   "weekly": 19005,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.43,
+    "cosign": 0,
+    "heat": 0.37
+   },
+   "score": 1.66,
+   "charts": {
+    "apple": [
+     {
+      "title": "Orbiter",
+      "rank": 94,
+      "move": -22,
+      "entered": false,
+      "url": "https://music.apple.com/us/album/orbiter/1894997820?i=6762757958"
+     }
+    ],
+    "lastfm": [
+     {
+      "title": "Orbiter",
+      "rank": 624,
+      "listeners": 4890
+     },
+     {
+      "title": "Willing and Able",
+      "rank": 634,
+      "listeners": 4867
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "ea696191-407a-4bf2-8302-7e05f6c163c5",
+   "name": "Sienna Spiro",
+   "listeners": 682942,
+   "firstRelease": "2024-05-23",
+   "route": "new",
+   "tier": 0,
+   "genre": "rnb",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.48,
+    "cosign": 0,
+    "heat": 0
+   },
+   "score": 1.44,
+   "charts": {
+    "apple": [
+     {
+      "title": "Great Expectation",
+      "rank": 53,
+      "move": -16,
+      "entered": false,
+      "url": "https://music.apple.com/us/album/great-expectation/6769552402?i=6769552411"
+     }
+    ],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "e881b225-42b1-41d9-9d5e-eff55568585b",
+   "name": "STELLA LEFTY",
+   "listeners": 213643,
+   "firstRelease": "2022-08-27",
+   "route": "new",
+   "tier": 0,
+   "genre": "country",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.34,
+    "cosign": 0,
+    "heat": 0
+   },
+   "score": 1.02,
+   "charts": {
+    "apple": [
+     {
+      "title": "Boston",
+      "rank": 67,
+      "move": -13,
+      "entered": false,
+      "url": "https://music.apple.com/us/album/boston/1884403092?i=1884403093"
+     }
+    ],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "80bd07ef-4e48-4e2c-b5ad-e590e3879cf7",
+   "name": "Alyssa Grace",
+   "listeners": 106080,
+   "firstRelease": "2026-04-24",
+   "route": "new",
+   "tier": 0,
+   "genre": "pop",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.12,
+    "cosign": 0,
+    "heat": 0
+   },
+   "score": 0.36,
+   "charts": {
+    "apple": [
+     {
+      "title": "bloodstream",
+      "rank": 89,
+      "move": -5,
+      "entered": false,
+      "url": "https://music.apple.com/us/album/bloodstream/6783576156?i=6783576167"
+     }
+    ],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "ab1a3f85-e0ea-470a-af5c-175447ae774c",
+   "name": "underscores",
+   "listeners": 687824,
+   "firstRelease": "2015-03-17",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "pop",
+   "heat": 41,
+   "weekly": 28204,
+   "growthPct": 0.3,
+   "signals": {
+    "chart": 0.68,
+    "cosign": 0.35,
+    "heat": 1
+   },
+   "score": 3.73,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "The Peace",
+      "rank": 32,
+      "listeners": 11509
+     },
+     {
+      "title": "Do It",
+      "rank": 41,
+      "listeners": 11044
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "260b6184-8828-48eb-945c-bc4cb6fc34ca",
+     "date": "2026-10-21",
+     "types": [
+      "upcoming"
+     ],
+     "title": "Charli xcx - Music, Fashion, Film Tour",
+     "url": "https://www.ticketmaster.com/charli-xcx-music-fashion-film-tour-glendale-arizona-10-21-2026/event/190064C5D6359C3F",
+     "name": "Charli xcx",
+     "listeners": 3950284
+    },
+    {
+     "from": "4ae36ade-1798-48c4-b06b-cc68b7d3d83f",
+     "date": "2026-09-18",
+     "types": [
+      "tour"
+     ],
+     "title": "Perfect Pinterest Garden (Ninajirachi & underscores remix)",
+     "url": "https://musicbrainz.org/recording/8b073b7b-7a80-44a1-a6a3-27338d8a43d4",
+     "name": "Porter Robinson",
+     "listeners": 1397179
+    }
+   ]
+  },
+  {
+   "mbid": "9058d01e-8afc-47a4-8664-621fb5f159c0",
+   "name": "Slayyyter",
+   "listeners": 1151069,
+   "firstRelease": "2017-11-28",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "pop",
+   "heat": 27.9,
+   "weekly": 32146,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.69,
+    "cosign": 0,
+    "heat": 0.93
+   },
+   "score": 2.99,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "i think he's got a girl",
+      "rank": 20,
+      "listeners": 13180
+     },
+     {
+      "title": "BRAND NEW CHANEL$",
+      "rank": 21,
+      "listeners": 12534
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "6897b46a-9236-4480-9ed7-300f6b85d62f",
+   "name": "Ninajirachi",
+   "listeners": 528373,
+   "firstRelease": "2017-03-13",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "pop",
+   "heat": 34.8,
+   "weekly": 18385,
+   "growthPct": 0.28,
+   "signals": {
+    "chart": 0.57,
+    "cosign": 0.13,
+    "heat": 1
+   },
+   "score": 2.98,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "iPod Touch",
+      "rank": 185,
+      "listeners": 7260
+     },
+     {
+      "title": "Fuck My Computer",
+      "rank": 293,
+      "listeners": 6365
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "4ae36ade-1798-48c4-b06b-cc68b7d3d83f",
+     "date": "2026-09-18",
+     "types": [
+      "collab"
+     ],
+     "title": "Perfect Pinterest Garden (Ninajirachi & underscores remix)",
+     "url": "https://musicbrainz.org/recording/8b073b7b-7a80-44a1-a6a3-27338d8a43d4",
+     "name": "Porter Robinson",
+     "listeners": 1397179
+    }
+   ]
+  },
+  {
+   "mbid": "6c2a79b8-2b5c-4c2d-b495-6a446811bf9d",
+   "name": "Malcolm Todd",
+   "listeners": 1787415,
+   "firstRelease": "2022-05-15",
+   "route": "new",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 23.9,
+   "weekly": 42659,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.7,
+    "cosign": 0,
+    "heat": 0.8
+   },
+   "score": 2.89,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Earrings",
+      "rank": 5,
+      "listeners": 19645
+     },
+     {
+      "title": "Roommates",
+      "rank": 31,
+      "listeners": 11544
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "c9e3089c-a7bc-4df5-80f9-9161eaa74a02",
+   "name": "Tiffany Day",
+   "listeners": 518232,
+   "firstRelease": "2018-08-16",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 34.5,
+   "weekly": 17888,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.58,
+    "cosign": 0,
+    "heat": 1
+   },
+   "score": 2.75,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "AMERICAN GIRL",
+      "rank": 166,
+      "listeners": 7444
+     },
+     {
+      "title": "PRETTY4U",
+      "rank": 378,
+      "listeners": 5868
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "18dab8ad-3d93-46aa-b153-2f22772ea5bc",
+   "name": "The Long Faces",
+   "listeners": 542884,
+   "firstRelease": "2017-12-03",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "rock",
+   "heat": 19.9,
+   "weekly": 10785,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.66,
+    "cosign": 0,
+    "heat": 0.66
+   },
+   "score": 2.64,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Jane!",
+      "rank": 60,
+      "listeners": 10029
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "79c6b6f4-cb92-4f03-a1ef-82e7aa4eddbb",
+   "name": "Cameron Winter",
+   "listeners": 440994,
+   "firstRelease": "2024-10-22",
+   "route": "new",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 36.7,
+   "weekly": 16198,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.54,
+    "cosign": 0,
+    "heat": 1
+   },
+   "score": 2.61,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Love Takes Miles",
+      "rank": 232,
+      "listeners": 6784
+     },
+     {
+      "title": "Drinking Age",
+      "rank": 648,
+      "listeners": 4835
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "bb7959ac-84cc-45c4-8138-d80ee5f2bd9a",
+   "name": "Lucy Bedroque",
+   "listeners": 417062,
+   "firstRelease": "2020-11-07",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "hip-hop",
+   "heat": 50.1,
+   "weekly": 20889,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.49,
+    "cosign": 0,
+    "heat": 1
+   },
+   "score": 2.46,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "How To Pretend",
+      "rank": 304,
+      "listeners": 6299
+     },
+     {
+      "title": "2010 Justin Bieber",
+      "rank": 579,
+      "listeners": 4990
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "0e55d4b1-6a3e-4565-accb-e1da78e83ff3",
+   "name": "F3miii",
+   "listeners": 602505,
+   "firstRelease": "2025-12-26",
+   "route": "new",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 16,
+   "weekly": 9650,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.61,
+    "cosign": 0,
+    "heat": 0.53
+   },
+   "score": 2.37,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "NOBLE",
+      "rank": 129,
+      "listeners": 8064
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "35214d53-009b-45d9-8a00-6664325b9e2a",
+   "name": "OsamaSon",
+   "listeners": 506464,
+   "firstRelease": "2022-10-05",
+   "route": "new",
+   "tier": 1,
+   "genre": "hip-hop",
+   "heat": 37,
+   "weekly": 18752,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.43,
+    "cosign": 0,
+    "heat": 1
+   },
+   "score": 2.29,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Made Sum Plans",
+      "rank": 962,
+      "listeners": 4053
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "afb6cc6d-a060-4f5e-bc3a-00d4b6832e41",
+   "name": "Remi Wolf",
+   "listeners": 1035723,
+   "firstRelease": "2019-11-14",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 12.8,
+   "weekly": 13227,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.5,
+    "cosign": 0.18,
+    "heat": 0.43
+   },
+   "score": 2.28,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Bottle",
+      "rank": 292,
+      "listeners": 6378
+     },
+     {
+      "title": "Champagne",
+      "rank": 491,
+      "listeners": 5327
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "144ef525-85e9-40c3-8335-02c32d0861f3",
+     "date": "2026-10-09",
+     "types": [
+      "collab"
+     ],
+     "title": "Moon So High",
+     "url": "https://musicbrainz.org/recording/16bdac72-3650-4b49-a49a-cd178b1268bf",
+     "name": "John Mayer",
+     "listeners": 3819232
+    }
+   ]
+  },
+  {
+   "mbid": "16a8a6cc-57d9-4a13-9fb9-c87e359c5abe",
+   "name": "Geese",
+   "listeners": 631557,
+   "firstRelease": null,
+   "route": "debut unknown",
+   "tier": 1,
+   "genre": "rock",
+   "heat": 23.2,
+   "weekly": 14623,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.5,
+    "cosign": 0,
+    "heat": 0.77
+   },
+   "score": 2.27,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Au Pays du Cocaine",
+      "rank": 287,
+      "listeners": 6415
+     },
+     {
+      "title": "Cobra",
+      "rank": 690,
+      "listeners": 4705
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "e10ddbc5-dcae-4bbb-8a32-4c9a7228bfab",
+   "name": "Che",
+   "listeners": 505363,
+   "firstRelease": null,
+   "route": "debut unknown",
+   "tier": 1,
+   "genre": "rock",
+   "heat": 35.5,
+   "weekly": 17916,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.42,
+    "cosign": 0,
+    "heat": 1
+   },
+   "score": 2.27,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Og Ginobili",
+      "rank": 939,
+      "listeners": 4106
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "33243fef-ce1a-4ba7-a81e-ec72e4c5029a",
+   "name": "Snow Strippers",
+   "listeners": 1039645,
+   "firstRelease": "2021-12-31",
+   "route": "new",
+   "tier": 1,
+   "genre": "electronic",
+   "heat": 14.8,
+   "weekly": 15418,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.56,
+    "cosign": 0,
+    "heat": 0.49
+   },
+   "score": 2.18,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Under Your Spell",
+      "rank": 196,
+      "listeners": 7104
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "9e6a6a2f-f696-4cc0-87f1-e4f712e46802",
+   "name": "Yeat",
+   "listeners": 1781940,
+   "firstRelease": "2018-04-10",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "hip-hop",
+   "heat": 15.3,
+   "weekly": 27349,
+   "growthPct": 0.15,
+   "signals": {
+    "chart": 0.47,
+    "cosign": 0.13,
+    "heat": 0.51
+   },
+   "score": 2.16,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "COMË N GO",
+      "rank": 633,
+      "listeners": 4869
+     },
+     {
+      "title": "Monëy So Big",
+      "rank": 805,
+      "listeners": 4383
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6",
+     "date": "2026-08-28",
+     "types": [
+      "collab"
+     ],
+     "title": "Eaters",
+     "url": "https://musicbrainz.org/recording/8f9099c1-0951-4cc3-94d5-18fa90f23066",
+     "name": "Travis Scott",
+     "listeners": 3496991
+    },
+    {
+     "from": "7e5a2a59-6d9f-4a17-b7c2-e1eedb7bd222",
+     "date": "2026-03-27",
+     "types": [
+      "collab"
+     ],
+     "title": "Face the Flamë",
+     "url": "https://musicbrainz.org/recording/569b4d90-f40b-4089-a3a3-fb6acf0a1e44",
+     "name": "Grimes",
+     "listeners": 2791273
+    }
+   ]
+  },
+  {
+   "mbid": "1018344f-abc8-4c62-b4fd-37a30fd2dc6f",
+   "name": "Matt Martians",
+   "listeners": 422550,
+   "firstRelease": "2017-01-20",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "rnb",
+   "heat": 17.3,
+   "weekly": 7319,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.52,
+    "cosign": 0,
+    "heat": 0.58
+   },
+   "score": 2.14,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "An Eater",
+      "rank": 256,
+      "listeners": 6643
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "8ab64ebd-200e-47af-a3fc-92540e186214",
+   "name": "Gigi Perez",
+   "listeners": 1593127,
+   "firstRelease": "2021-11-19",
+   "route": "new",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 8.1,
+   "weekly": 12945,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.6,
+    "cosign": 0,
+    "heat": 0.27
+   },
+   "score": 2.09,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Sailor Song",
+      "rank": 137,
+      "listeners": 7945
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "fd87acc7-e0a0-4a45-bc2a-d2ab5c10be68",
+   "name": "Fontaines D.C.",
+   "listeners": 1295069,
+   "firstRelease": "2018-08-20",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "rock",
+   "heat": 13.8,
+   "weekly": 17825,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.49,
+    "cosign": 0.06,
+    "heat": 0.46
+   },
+   "score": 2.04,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Marianne",
+      "rank": 305,
+      "listeners": 6297
+     },
+     {
+      "title": "I Love You",
+      "rank": 368,
+      "listeners": 5914
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "25f3abd9-63b5-471a-bd25-feb9672dfa11",
+     "date": "2026-10-12",
+     "types": [
+      "collab"
+     ],
+     "title": "Where Is Gone?",
+     "url": "https://musicbrainz.org/recording/c2d5f399-b1b8-40f8-8152-b3f7400dbfdd",
+     "name": "ROSALÍA",
+     "listeners": 1952408
+    }
+   ]
+  },
+  {
+   "mbid": "b51c672b-85e0-48fe-8648-470a2422229f",
+   "name": "aespa",
+   "listeners": 1468076,
+   "firstRelease": "2020-11-17",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "pop",
+   "heat": 12,
+   "weekly": 17572,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.53,
+    "cosign": 0,
+    "heat": 0.4
+   },
+   "score": 2,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "KISS N TELL",
+      "rank": 240,
+      "listeners": 6732
+     },
+     {
+      "title": "Lemonade",
+      "rank": 435,
+      "listeners": 5603
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "38ed4923-005f-4ba0-baf7-749269dfea29",
+   "name": "Dexter and The Moonrocks",
+   "listeners": 382682,
+   "firstRelease": "2021-08-16",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "rock",
+   "heat": 19.8,
+   "weekly": 7567,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.45,
+    "cosign": 0,
+    "heat": 0.66
+   },
+   "score": 2,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Freakin’ Out",
+      "rank": 363,
+      "listeners": 5927
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "8bd5a8fb-4c25-401d-a597-2c24affdd5c5",
+   "name": "2hollis",
+   "listeners": 932326,
+   "firstRelease": "2020-10-14",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "hip-hop",
+   "heat": 19.9,
+   "weekly": 18520,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.43,
+    "cosign": 0,
+    "heat": 0.66
+   },
+   "score": 1.94,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "crush",
+      "rank": 595,
+      "listeners": 4956
+     },
+     {
+      "title": "poster boy",
+      "rank": 803,
+      "listeners": 4388
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "a7fd3cbf-15cc-4a8a-b59f-587b5784feb2",
+   "name": "Dazey and the Scouts",
+   "listeners": 719890,
+   "firstRelease": "2017-02-14",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "rock",
+   "heat": 11.8,
+   "weekly": 8494,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.49,
+    "cosign": 0,
+    "heat": 0.39
+   },
+   "score": 1.87,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Wet",
+      "rank": 297,
+      "listeners": 6331
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "abbf7d85-9a7f-4a6c-80bd-bf71f2c7d520",
+   "name": "KATSEYE",
+   "listeners": 1754239,
+   "firstRelease": "2024-06-28",
+   "route": "new",
+   "tier": 1,
+   "genre": "pop",
+   "heat": 11.2,
+   "weekly": 19623,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.48,
+    "cosign": 0,
+    "heat": 0.37
+   },
+   "score": 1.81,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Animal",
+      "rank": 317,
+      "listeners": 6193
+     },
+     {
+      "title": "HOOTIE FRUTTI",
+      "rank": 409,
+      "listeners": 5701
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "7e1216c3-4ccc-48c7-9e18-19f089dbf13b",
+   "name": "Buckshot",
+   "listeners": 504242,
+   "firstRelease": "2021-03-19",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "hip-hop",
+   "heat": 15,
+   "weekly": 7551,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.44,
+    "cosign": 0,
+    "heat": 0.5
+   },
+   "score": 1.81,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "fever",
+      "rank": 376,
+      "listeners": 5877
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "9cfabb8c-24a3-498d-b383-bb5324cfe30f",
+   "name": "Sidney Gish",
+   "listeners": 622171,
+   "firstRelease": "2016-01-09",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 12.2,
+   "weekly": 7572,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.46,
+    "cosign": 0,
+    "heat": 0.41
+   },
+   "score": 1.8,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Impostor Syndrome",
+      "rank": 338,
+      "listeners": 6064
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "987d3d86-0d7a-4292-ae96-a8d59e456436",
+   "name": "Destroy Lonely",
+   "listeners": 969204,
+   "firstRelease": "2017-10-19",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "hip-hop",
+   "heat": 16.9,
+   "weekly": 16342,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.41,
+    "cosign": 0,
+    "heat": 0.56
+   },
+   "score": 1.79,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "NOSTYLIST",
+      "rank": 788,
+      "listeners": 4435
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "68c261d5-48c8-4ea9-9466-9fc908dc79bb",
+   "name": "Magdalena Bay",
+   "listeners": 1558563,
+   "firstRelease": "2016-06-01",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "pop",
+   "heat": 13,
+   "weekly": 20324,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.44,
+    "cosign": 0,
+    "heat": 0.43
+   },
+   "score": 1.75,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Image",
+      "rank": 377,
+      "listeners": 5876
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "9f81247f-7f57-42f3-a8ba-75bef554e591",
+   "name": "Big Thief",
+   "listeners": 1769139,
+   "firstRelease": "2016-02-15",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 12,
+   "weekly": 21168,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.44,
+    "cosign": 0,
+    "heat": 0.4
+   },
+   "score": 1.73,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Simulation Swarm",
+      "rank": 600,
+      "listeners": 4942
+     },
+     {
+      "title": "Velvet Ring - 2023 Remaster",
+      "rank": 607,
+      "listeners": 4930
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "6b128dd7-e998-4edb-a4f5-400fef190445",
+   "name": "ILLIT",
+   "listeners": 1316993,
+   "firstRelease": "2024-03-25",
+   "route": "new",
+   "tier": 1,
+   "genre": "pop",
+   "heat": 12.8,
+   "weekly": 16841,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.42,
+    "cosign": 0,
+    "heat": 0.43
+   },
+   "score": 1.67,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "NOT CUTE ANYMORE",
+      "rank": 428,
+      "listeners": 5623
+     },
+     {
+      "title": "Magnetic",
+      "rank": 439,
+      "listeners": 5595
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "677e31f1-4035-463c-8ca4-41175440c919",
+   "name": "Ethel Cain",
+   "listeners": 1372914,
+   "firstRelease": "2019-04-24",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 12.3,
+   "weekly": 16935,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.42,
+    "cosign": 0,
+    "heat": 0.41
+   },
+   "score": 1.66,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "American Teenager",
+      "rank": 647,
+      "listeners": 4839
+     },
+     {
+      "title": "Crush",
+      "rank": 800,
+      "listeners": 4394
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "152e8c18-d65a-4ac5-af97-43a2191d2f64",
+   "name": "Roar",
+   "listeners": 1631652,
+   "firstRelease": "2021-11-01",
+   "route": "new",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 6.5,
+   "weekly": 10527,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.47,
+    "cosign": 0,
+    "heat": 0.22
+   },
+   "score": 1.62,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "I Can't Handle Change",
+      "rank": 331,
+      "listeners": 6110
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "49204a7a-ed85-407a-828f-6fd46f1d8126",
+   "name": "NewJeans",
+   "listeners": 1946905,
+   "firstRelease": "2022-07-22",
+   "route": "new",
+   "tier": 1,
+   "genre": "pop",
+   "heat": 9.5,
+   "weekly": 18543,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.43,
+    "cosign": 0,
+    "heat": 0.32
+   },
+   "score": 1.6,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Ditto",
+      "rank": 498,
+      "listeners": 5308
+     },
+     {
+      "title": "Supernatural",
+      "rank": 649,
+      "listeners": 4829
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "d1db50d7-9e78-4975-b57b-81539121d3b2",
+   "name": "Dev Lemons",
+   "listeners": 332380,
+   "firstRelease": "2020-07-24",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 24.7,
+   "weekly": 8203,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.25,
+    "cosign": 0,
+    "heat": 0.82
+   },
+   "score": 1.56,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "in the middle of the night",
+      "rank": 855,
+      "listeners": 4269
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "ee0b11de-0c8a-4267-9886-198f4579e1db",
+   "name": "Lizzy McAlpine",
+   "listeners": 1544764,
+   "firstRelease": "2018-02-09",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 10.2,
+   "weekly": 15827,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.4,
+    "cosign": 0,
+    "heat": 0.34
+   },
+   "score": 1.55,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Pushing It Down and Praying",
+      "rank": 533,
+      "listeners": 5172
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "066080a4-84c7-46c6-91d3-dc10d572749b",
+   "name": "Hearts2Hearts",
+   "listeners": 562847,
+   "firstRelease": "2025-02-24",
+   "route": "new",
+   "tier": 1,
+   "genre": "pop",
+   "heat": 17.7,
+   "weekly": 9949,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.31,
+    "cosign": 0,
+    "heat": 0.59
+   },
+   "score": 1.51,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "RUDE!",
+      "rank": 655,
+      "listeners": 4806
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "b1dd1370-cdb8-4aae-9aaf-9147df315cc2",
+   "name": "CORTIS",
+   "listeners": 650306,
+   "firstRelease": null,
+   "route": "debut unknown",
+   "tier": 1,
+   "genre": "pop",
+   "heat": 14,
+   "weekly": 9120,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.33,
+    "cosign": 0,
+    "heat": 0.47
+   },
+   "score": 1.47,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "REDRED",
+      "rank": 523,
+      "listeners": 5200
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "9a6273b2-72fa-47a4-a48b-073d6cbe037d",
+   "name": "Rosa Walton",
+   "listeners": 580800,
+   "firstRelease": "2023-02-18",
+   "route": "new",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 9.1,
+   "weekly": 5293,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.33,
+    "cosign": 0,
+    "heat": 0.3
+   },
+   "score": 1.3,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "I Really Want to Stay at Your House",
+      "rank": 527,
+      "listeners": 5187
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "fdda77a2-1c94-4d0c-ad87-6d7e74a0c091",
+   "name": "Luvcat",
+   "listeners": 402314,
+   "firstRelease": "2024-05-31",
+   "route": "new",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 12.9,
+   "weekly": 5208,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.18,
+    "cosign": 0,
+    "heat": 0.43
+   },
+   "score": 0.98,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "He's My Man",
+      "rank": 742,
+      "listeners": 4553
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "81255601-2efa-4ffc-a4c1-8ca7c9f4c7e9",
+   "name": "Madds Buckley",
+   "listeners": 501503,
+   "firstRelease": "2017-05-23",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 10.8,
+   "weekly": 5417,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.18,
+    "cosign": 0,
+    "heat": 0.36
+   },
+   "score": 0.89,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "The Red Means I Love You",
+      "rank": 747,
+      "listeners": 4549
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "02452937-d06b-4e9f-966d-8477bae38ddc",
+   "name": "Susannah Joffe",
+   "listeners": 562058,
+   "firstRelease": "2018-11-30",
+   "route": "breaking out",
+   "tier": 1,
+   "genre": "indie",
+   "heat": 10.8,
+   "weekly": 6051,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.17,
+    "cosign": 0,
+    "heat": 0.36
+   },
+   "score": 0.86,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Die Your Daughter",
+      "rank": 762,
+      "listeners": 4503
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "28387ab9-0a6c-4de9-8ebc-852288e3466e",
+   "name": "Yena",
+   "listeners": 594241,
+   "firstRelease": null,
+   "route": "debut unknown",
+   "tier": 1,
+   "genre": "pop",
+   "heat": 11.3,
+   "weekly": 6693,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.16,
+    "cosign": 0,
+    "heat": 0.38
+   },
+   "score": 0.86,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "Catch Catch",
+      "rank": 833,
+      "listeners": 4321
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "735f6247-67a0-49bf-8d67-e4cd4d07f1bb",
+   "name": "proderics",
+   "listeners": 461243,
+   "firstRelease": "2024-03-16",
+   "route": "new",
+   "tier": 1,
+   "genre": null,
+   "heat": 11.1,
+   "weekly": 5130,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.09,
+    "cosign": 0,
+    "heat": 0.37
+   },
+   "score": 0.64,
+   "charts": {
+    "apple": [],
+    "lastfm": [
+     {
+      "title": "strangers",
+      "rank": 874,
+      "listeners": 4236
+     }
+    ],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "1753124e-e4be-4dba-9741-5e50e4dc351f",
+   "name": "Tezzus",
+   "listeners": 84804,
+   "firstRelease": "2024-09-05",
+   "route": "new",
+   "tier": 2,
+   "genre": "hip-hop",
+   "heat": 95.1,
+   "weekly": 8064,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.24,
+    "cosign": 0.29,
+    "heat": 1
+   },
+   "score": 2.31,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "800760de-bdf8-43a2-8fe0-44a2401a5515",
+     "date": "2026-04-17",
+     "types": [
+      "collab"
+     ],
+     "title": "Da Fuck",
+     "url": "https://musicbrainz.org/recording/17b4fbf5-eda8-4a4a-8ccf-8eea5ed7e06d",
+     "name": "Young Thug",
+     "listeners": 1976341
+    }
+   ]
+  },
+  {
+   "mbid": "1c4b484c-746c-48b8-88b2-40f09e15159d",
+   "name": "Rylo Rodriguez",
+   "listeners": 118930,
+   "firstRelease": "2019-04-19",
+   "route": "little-known",
+   "tier": 2,
+   "genre": "hip-hop",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 1,
+    "heat": 0
+   },
+   "score": 2,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "d42a5768-ada1-4fb6-85fd-f61aba6264e0",
+     "date": "2026-07-03",
+     "types": [
+      "collab",
+      "feature"
+     ],
+     "title": "Neighborhood Starz",
+     "url": "https://musicbrainz.org/recording/b1b69d7b-d45e-4e71-a1b4-8b71457080cb",
+     "name": "Lil Baby",
+     "listeners": 1716504
+    },
+    {
+     "from": "5ec1ecc6-4535-4911-a27a-e26343f4a189",
+     "date": "2026-06-12",
+     "types": [
+      "collab",
+      "feature"
+     ],
+     "title": "American Dream",
+     "url": "https://musicbrainz.org/recording/7373bc81-d6d8-45d8-86d2-c66d0c2ab8dc",
+     "name": "Kodak Black",
+     "listeners": 1941804
+    },
+    {
+     "from": "800760de-bdf8-43a2-8fe0-44a2401a5515",
+     "date": "2026-04-17",
+     "types": [
+      "collab"
+     ],
+     "title": "Da Fuck",
+     "url": "https://musicbrainz.org/recording/17b4fbf5-eda8-4a4a-8ccf-8eea5ed7e06d",
+     "name": "Young Thug",
+     "listeners": 1976341
+    },
+    {
+     "from": "9ccaca30-60aa-4890-ae6c-ab55225ee274",
+     "date": "2026-05-15",
+     "types": [
+      "collab"
+     ],
+     "title": "No Stars in Maybachs",
+     "url": "https://musicbrainz.org/recording/d0e1bb91-8317-496d-a6c7-6277f6e12a26",
+     "name": "LUCKI",
+     "listeners": 1235588
+    }
+   ]
+  },
+  {
+   "mbid": "f0241c8e-45bf-474e-a78f-f5b7f1fab7a3",
+   "name": "Mike & Keys",
+   "listeners": 5877,
+   "firstRelease": "2018-07-27",
+   "route": "little-known",
+   "tier": 2,
+   "genre": "hip-hop",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 1,
+    "heat": 0
+   },
+   "score": 2,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "164f0d73-1234-4e2c-8743-d77bf2191051",
+     "date": "2026-08-21",
+     "types": [
+      "collab"
+     ],
+     "title": "40 Nights",
+     "url": "https://musicbrainz.org/recording/ea973f2e-0aae-4ff1-a60a-43c9e67b6d5d",
+     "name": "Ye",
+     "listeners": 8161930
+    },
+    {
+     "from": "07cc14fb-4784-4a25-804b-2686ed5ef52c",
+     "date": "2026-08-21",
+     "types": [
+      "collab"
+     ],
+     "title": "40 Nights",
+     "url": "https://musicbrainz.org/recording/ea973f2e-0aae-4ff1-a60a-43c9e67b6d5d",
+     "name": "The Game",
+     "listeners": 3198153
+    }
+   ]
+  },
+  {
+   "mbid": "259dee1b-1213-4774-863d-f78223214806",
+   "name": "Ball Greezy",
+   "listeners": 14763,
+   "firstRelease": "2007-11-27",
+   "route": "little-known",
+   "tier": 2,
+   "genre": "hip-hop",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 1,
+    "heat": 0
+   },
+   "score": 2,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "13bcb2bb-db37-4397-baf5-e0f085be2d64",
+     "date": "2026-07-17",
+     "types": [
+      "collab"
+     ],
+     "title": "Diamonds Never Die",
+     "url": "https://musicbrainz.org/recording/1cf1c4e0-9f74-4b0b-b552-24dacee21ace",
+     "name": "Rick Ross",
+     "listeners": 2543061
+    },
+    {
+     "from": "5ec1ecc6-4535-4911-a27a-e26343f4a189",
+     "date": "2026-07-17",
+     "types": [
+      "collab"
+     ],
+     "title": "Diamonds Never Die",
+     "url": "https://musicbrainz.org/recording/1cf1c4e0-9f74-4b0b-b552-24dacee21ace",
+     "name": "Kodak Black",
+     "listeners": 1941804
+    }
+   ]
+  },
+  {
+   "mbid": "eb3c021d-e056-42d6-8fad-064205a90527",
+   "name": "femtanyl",
+   "listeners": 392651,
+   "firstRelease": "2023-05-28",
+   "route": "new",
+   "tier": 2,
+   "genre": "electronic",
+   "heat": 27.2,
+   "weekly": 10675,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.32,
+    "cosign": 0.05,
+    "heat": 0.91
+   },
+   "score": 1.97,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "960afc67-9c21-46dd-9c7f-ff2b509e3150",
+     "date": "2025-11-07",
+     "types": [
+      "collab"
+     ],
+     "title": "1L0v3myL1f3!",
+     "url": "https://musicbrainz.org/recording/4967bc3a-af0b-4e19-b69a-a129d4422b8d",
+     "name": "Danny Brown",
+     "listeners": 1146838
+    }
+   ]
+  },
+  {
+   "mbid": "ce6a32ee-197d-4a59-9dad-37eb21b45c30",
+   "name": "bleood",
+   "listeners": 147959,
+   "firstRelease": "2022-02-16",
+   "route": "new",
+   "tier": 2,
+   "genre": "hip-hop",
+   "heat": 65.4,
+   "weekly": 9680,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.3,
+    "cosign": 0,
+    "heat": 1
+   },
+   "score": 1.9,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "ec63abed-419c-45c8-a189-fb8e1b44f926",
+   "name": "Nine Vicious",
+   "listeners": 244809,
+   "firstRelease": "2024-07-15",
+   "route": "new",
+   "tier": 2,
+   "genre": "hip-hop",
+   "heat": 37.3,
+   "weekly": 9127,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.28,
+    "cosign": 0,
+    "heat": 1
+   },
+   "score": 1.85,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "b9de03fa-04ac-4249-8481-badfd26b9190",
+   "name": "Dei V",
+   "listeners": 143345,
+   "firstRelease": "2023-10-26",
+   "route": "new",
+   "tier": 2,
+   "genre": "latin",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.88,
+    "heat": 0
+   },
+   "score": 1.76,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "197b70c7-8910-4030-ad03-632d82aa40e3",
+     "date": "2026-10-14",
+     "types": [
+      "collab"
+     ],
+     "title": "All Night",
+     "url": "https://musicbrainz.org/recording/833fca26-060c-4371-8865-4c6798703bae",
+     "name": "Rauw Alejandro",
+     "listeners": 1195599
+    },
+    {
+     "from": "c458e9dc-e0d5-45ea-9e83-f9d0395f030d",
+     "date": "2026-10-14",
+     "types": [
+      "collab"
+     ],
+     "title": "UNA DE UNA",
+     "url": "https://musicbrainz.org/recording/642956a8-88e9-4bab-8340-12fe8831c01c",
+     "name": "Nicky Jam",
+     "listeners": 1139363
+    },
+    {
+     "from": "f2651b63-a44d-4d1d-ba64-d981d971ecd1",
+     "date": "2026-10-14",
+     "types": [
+      "collab"
+     ],
+     "title": "Once y once",
+     "url": "https://musicbrainz.org/recording/0755c04e-114c-4496-a11a-3023e27d9cbe",
+     "name": "Ozuna",
+     "listeners": 1007861
+    }
+   ]
+  },
+  {
+   "mbid": "ad1aaeab-67a6-4bbf-8676-9450e95ff234",
+   "name": "亜蘭知子",
+   "listeners": 8003,
+   "firstRelease": "1981",
+   "route": "little-known",
+   "tier": 2,
+   "genre": "pop",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.85,
+    "heat": 0
+   },
+   "score": 1.7,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "c8b03190-306c-4120-bb0b-6f2ebfc06ea9",
+     "date": "2026-08-28",
+     "types": [
+      "feature"
+     ],
+     "title": "Out of Time",
+     "url": "https://musicbrainz.org/recording/24886b8c-4687-4865-8fe6-d9f53f14be05",
+     "name": "The Weeknd",
+     "listeners": 5563516
+    }
+   ]
+  },
+  {
+   "mbid": "2f18a4c9-1d22-48f7-aba2-fc755c38a514",
+   "name": "Lelo",
+   "listeners": 367851,
+   "firstRelease": "2024-02-23",
+   "route": "new",
+   "tier": 2,
+   "genre": "hip-hop",
+   "heat": 23.2,
+   "weekly": 8537,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.26,
+    "cosign": 0,
+    "heat": 0.77
+   },
+   "score": 1.57,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "c1456889-98fb-4be6-9580-88dc6667fed2",
+   "name": "smokedope2016",
+   "listeners": 347828,
+   "firstRelease": "2022-04-01",
+   "route": "new",
+   "tier": 2,
+   "genre": "hip-hop",
+   "heat": 23,
+   "weekly": 8011,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.24,
+    "cosign": 0,
+    "heat": 0.77
+   },
+   "score": 1.48,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "72f75074-0607-4a5b-bf9a-0b861e9c8681",
+   "name": "venturing",
+   "listeners": 183156,
+   "firstRelease": "2022",
+   "route": "new",
+   "tier": 2,
+   "genre": "indie",
+   "heat": 35.3,
+   "weekly": 6474,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.15,
+    "cosign": 0,
+    "heat": 1
+   },
+   "score": 1.45,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "0dde1a9a-fddc-4a13-a90d-c9b3b63880e3",
+   "name": "Lil Unky",
+   "listeners": 8489,
+   "firstRelease": "2020-12-16",
+   "route": "little-known",
+   "tier": 2,
+   "genre": "hip-hop",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.71,
+    "heat": 0
+   },
+   "score": 1.42,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "800760de-bdf8-43a2-8fe0-44a2401a5515",
+     "date": "2026-08-28",
+     "types": [
+      "collab"
+     ],
+     "title": "Switch Up",
+     "url": "https://musicbrainz.org/recording/e8bb30e0-26af-4866-ad8f-17a6ff66d06a",
+     "name": "Young Thug",
+     "listeners": 1976341
+    }
+   ]
+  },
   {
    "mbid": "73b41db5-bc46-4c95-b189-9e7c532014ec",
    "name": "Iconic Savvy",
    "listeners": 7190,
    "firstRelease": null,
+   "route": "little-known",
+   "tier": 2,
    "genre": "hip-hop",
-   "score": 2.08,
-   "charts": null,
-   "newest": "2026-05-15",
+   "heat": null,
+   "weekly": null,
+   "growthPct": 0.13,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.69,
+    "heat": 0.03
+   },
+   "score": 1.41,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
    "cosigns": [
     {
      "from": "9fff2f8a-21e6-47de-a2b8-7f449929d43f",
-     "name": "Drake",
-     "listeners": 6948676,
      "date": "2026-05-15",
      "types": [
       "feature"
      ],
      "title": "True Bestie",
-     "url": "https://musicbrainz.org/recording/bea4044a-57e8-44bd-a013-4e2410dfb777"
+     "url": "https://musicbrainz.org/recording/bea4044a-57e8-44bd-a013-4e2410dfb777",
+     "name": "Drake",
+     "listeners": 6948676
+    }
+   ]
+  },
+  {
+   "mbid": "bdbc7927-6ff5-4a64-a2dd-9756323008e1",
+   "name": "KiiiKiii",
+   "listeners": 382848,
+   "firstRelease": "2025-02-24",
+   "route": "new",
+   "tier": 2,
+   "genre": "pop",
+   "heat": 20.7,
+   "weekly": 7943,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.24,
+    "cosign": 0,
+    "heat": 0.69
+   },
+   "score": 1.4,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "903b7139-8174-48b2-b6ce-6b00ca325907",
+   "name": "PFG",
+   "listeners": 10219,
+   "firstRelease": "2020-07-03",
+   "route": "little-known",
+   "tier": 2,
+   "genre": "hip-hop",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.7,
+    "heat": 0
+   },
+   "score": 1.39,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "875203e1-8e58-4b86-8dcb-7190faf411c5",
+     "date": "2026-07-10",
+     "types": [
+      "collab"
+     ],
+     "title": "Mighty Mouse",
+     "url": "https://musicbrainz.org/recording/14b9a74c-4884-4bce-86fe-0fd0e4f7acae",
+     "name": "J. Cole",
+     "listeners": 3995205
     }
    ]
   },
@@ -35,66 +2371,130 @@
    "name": "DJ Bandz",
    "listeners": 5053,
    "firstRelease": "2026-06-26",
+   "route": "new",
+   "tier": 2,
    "genre": "hip-hop",
-   "score": 2.01,
-   "charts": null,
-   "newest": "2026-06-26",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.67,
+    "heat": 0
+   },
+   "score": 1.34,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
    "cosigns": [
     {
      "from": "5ec1ecc6-4535-4911-a27a-e26343f4a189",
-     "name": "Kodak Black",
-     "listeners": 1941247,
      "date": "2026-06-26",
      "types": [
       "collab"
      ],
      "title": "Dark Days",
-     "url": "https://musicbrainz.org/recording/7f707f84-76cd-481c-b578-81a35dc99346"
+     "url": "https://musicbrainz.org/recording/7f707f84-76cd-481c-b578-81a35dc99346",
+     "name": "Kodak Black",
+     "listeners": 1941804
     }
    ]
   },
   {
-   "mbid": "cb9c2a2b-96c2-44d7-bd31-04ef87572b57",
-   "name": "FRIDAYY",
-   "listeners": 130387,
-   "firstRelease": "2022-10-21",
-   "genre": "rnb",
-   "score": 1.87,
-   "charts": null,
-   "newest": "2026-10-19",
+   "mbid": "547e23af-e455-41dd-baae-a3b58e065d0c",
+   "name": "Damien Dempsey",
+   "listeners": 57446,
+   "firstRelease": "1997-02-07",
+   "route": "little-known",
+   "tier": 2,
+   "genre": "rock",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.67,
+    "heat": 0
+   },
+   "score": 1.33,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
    "cosigns": [
     {
-     "from": "5ec1ecc6-4535-4911-a27a-e26343f4a189",
-     "name": "Kodak Black",
-     "listeners": 1941247,
-     "date": "2026-06-12",
-     "types": [
-      "collab"
-     ],
-     "title": "Better or Worse",
-     "url": "https://musicbrainz.org/recording/a20e5678-5cbe-48f8-8ac8-366bbce8b2ec"
-    },
-    {
-     "from": "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1",
-     "name": "Rod Wave",
-     "listeners": 697958,
-     "date": "2026-10-19",
+     "from": "fd87acc7-e0a0-4a45-bc2a-d2ab5c10be68",
+     "date": "2027-06-26",
      "types": [
       "upcoming"
      ],
-     "title": "Rod Wave: Don't Look Down Tour",
-     "url": "https://www.ticketmaster.com/rod-wave-dont-look-down-tour-detroit-michigan-10-19-2026/event/080064D0D671B929"
-    },
+     "title": "Fontaines D.C.",
+     "url": "https://www.ticketmaster.ie/fontaines-dc-co-meath-26-06-2027/event/1800651F79582237",
+     "name": "Fontaines D.C.",
+     "listeners": 1295069
+    }
+   ]
+  },
+  {
+   "mbid": "4de1756c-e988-4f9f-87bf-bae46f56fefe",
+   "name": "bassvictim",
+   "listeners": 354193,
+   "firstRelease": "2023-09-28",
+   "route": "new",
+   "tier": 2,
+   "genre": "electronic",
+   "heat": 20.9,
+   "weekly": 7402,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.21,
+    "cosign": 0,
+    "heat": 0.7
+   },
+   "score": 1.32,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "2a45e2cd-cde7-4276-a013-209bd3312c4f",
+   "name": "Trevor Alan Gomes",
+   "listeners": 13165,
+   "firstRelease": "2016-12-09",
+   "route": "little-known",
+   "tier": 2,
+   "genre": "electronic",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.66,
+    "heat": 0
+   },
+   "score": 1.32,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
     {
-     "from": "5fc55ebf-21bd-4eda-954c-dd250132331e",
-     "name": "Mariah the Scientist",
-     "listeners": 581001,
-     "date": "2025-12-12",
+     "from": "1c26f82c-b35d-4c8e-a1f4-9c20747495c9",
+     "date": "2026-10-16",
      "types": [
       "collab"
      ],
-     "title": "Death Do Us Part",
-     "url": "https://musicbrainz.org/recording/a7e197c9-8e6a-41d9-a8ee-07746262e8d5"
+     "title": "Hammer of Justice",
+     "url": "https://musicbrainz.org/recording/45d7d9e0-0ca8-493f-9d12-cf4e3fcd4b36",
+     "name": "Toby Fox",
+     "listeners": 1313660
     }
    ]
   },
@@ -103,78 +2503,131 @@
    "name": "AYO SK3TCH",
    "listeners": 9924,
    "firstRelease": "2026-08-07",
+   "route": "new",
+   "tier": 2,
    "genre": "hip-hop",
-   "score": 1.83,
-   "charts": null,
-   "newest": "2026-08-07",
+   "heat": null,
+   "weekly": null,
+   "growthPct": 0.01,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.61,
+    "heat": 0
+   },
+   "score": 1.22,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
    "cosigns": [
     {
      "from": "faf916e0-ffc5-4345-a10b-b79ed8c9b8f6",
-     "name": "Ski Mask The Slump God",
-     "listeners": 1347832,
      "date": "2026-08-07",
      "types": [
       "collab"
      ],
      "title": "Uh Uh Pt. 2",
-     "url": "https://musicbrainz.org/recording/96587606-9c2f-43b6-9417-fab6d0863d7b"
+     "url": "https://musicbrainz.org/recording/96587606-9c2f-43b6-9417-fab6d0863d7b",
+     "name": "Ski Mask The Slump God",
+     "listeners": 1347832
     }
    ]
   },
   {
-   "mbid": "a377052a-5450-42fc-9eaf-1f55696194fd",
-   "name": "Buddah Bless",
-   "listeners": 12969,
-   "firstRelease": null,
+   "mbid": "38a8be60-3543-4ab4-b344-a0764463e4f4",
+   "name": "rexv2",
+   "listeners": 117266,
+   "firstRelease": "2024-06-18",
+   "route": "new",
+   "tier": 2,
    "genre": "hip-hop",
-   "score": 1.75,
-   "charts": null,
-   "newest": "2026-02-13",
+   "heat": 45.9,
+   "weekly": 5382,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.06,
+    "cosign": 0,
+    "heat": 1
+   },
+   "score": 1.19,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "4fbc993f-c578-49e5-ab2a-62869ce85bf6",
+   "name": "James Tonic",
+   "listeners": 14381,
+   "firstRelease": "2020-10-15",
+   "route": "little-known",
+   "tier": 2,
+   "genre": "hip-hop",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.59,
+    "heat": 0
+   },
+   "score": 1.18,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
    "cosigns": [
     {
      "from": "5ec1ecc6-4535-4911-a27a-e26343f4a189",
+     "date": "2026-07-23",
+     "types": [
+      "collab"
+     ],
+     "title": "How It Goes [Censored]",
+     "url": "https://musicbrainz.org/recording/01a32577-dc43-49a1-b6ca-ab886c34934f",
      "name": "Kodak Black",
-     "listeners": 1941247,
-     "date": "2026-02-13",
-     "types": [
-      "collab"
-     ],
-     "title": "Owe Me",
-     "url": "https://musicbrainz.org/recording/4a1ebefc-949b-49dd-867b-8adcbfeabfd7"
-    },
-    {
-     "from": "59c2a349-e284-4925-9165-ec7f79ca142a",
-     "name": "Hunxho",
-     "listeners": 193819,
-     "date": "2026-02-13",
-     "types": [
-      "collab"
-     ],
-     "title": "Same Soldier",
-     "url": "https://musicbrainz.org/recording/3d89a52d-c833-4d32-a9f3-eb4903e33d1a"
+     "listeners": 1941804
     }
    ]
   },
   {
-   "mbid": "e3c7b222-6f7f-47ab-8c66-5e59835a25c9",
-   "name": "K Carbon",
-   "listeners": 5961,
-   "firstRelease": "2022-09-08",
+   "mbid": "15550c23-10ce-42e0-961d-2a9c801ebd1f",
+   "name": "Bslime",
+   "listeners": 21867,
+   "firstRelease": "2019-01-01",
+   "route": "little-known",
+   "tier": 2,
    "genre": "hip-hop",
-   "score": 1.72,
-   "charts": null,
-   "newest": "2026-08-21",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.59,
+    "heat": 0
+   },
+   "score": 1.17,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
    "cosigns": [
     {
-     "from": "82cc5b8b-22e8-48e3-9f97-6ab39ac316d6",
-     "name": "Pooh Shiesty",
-     "listeners": 526963,
-     "date": "2026-08-21",
+     "from": "800760de-bdf8-43a2-8fe0-44a2401a5515",
+     "date": "2026-08-28",
      "types": [
-      "collab"
+      "collab",
+      "feature"
      ],
-     "title": "New One",
-     "url": "https://musicbrainz.org/recording/2f8b5ee1-0fa8-4b26-bb93-acb72836f53a"
+     "title": "Switch Up",
+     "url": "https://musicbrainz.org/recording/e8bb30e0-26af-4866-ad8f-17a6ff66d06a",
+     "name": "Young Thug",
+     "listeners": 1976341
     }
    ]
   },
@@ -183,390 +2636,250 @@
    "name": "Ayetian",
    "listeners": 14231,
    "firstRelease": "2025-02-14",
+   "route": "new",
+   "tier": 2,
    "genre": "hip-hop",
-   "score": 1.72,
-   "charts": null,
-   "newest": "2026-07-10",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.57,
+    "heat": 0
+   },
+   "score": 1.15,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
    "cosigns": [
     {
      "from": "5ec1ecc6-4535-4911-a27a-e26343f4a189",
-     "name": "Kodak Black",
-     "listeners": 1941247,
      "date": "2026-07-10",
      "types": [
       "collab"
      ],
      "title": "Zzz Out",
-     "url": "https://musicbrainz.org/recording/76167e6f-aefb-4093-a9bf-0e79e3c30f12"
+     "url": "https://musicbrainz.org/recording/76167e6f-aefb-4093-a9bf-0e79e3c30f12",
+     "name": "Kodak Black",
+     "listeners": 1941804
     }
    ]
   },
   {
-   "mbid": "fc999ef9-9622-46fb-9bfd-a56cd985432a",
-   "name": "Reese Youngn",
-   "listeners": 33317,
-   "firstRelease": "2021-12-02",
+   "mbid": "2d623e82-73e2-4179-9c44-e963980f2d58",
+   "name": "NMIXX",
+   "listeners": 827170,
+   "firstRelease": "2022-02-04",
+   "route": "new",
+   "tier": 2,
+   "genre": "pop",
+   "heat": 10,
+   "weekly": 8287,
+   "growthPct": null,
+   "signals": {
+    "chart": 0.25,
+    "cosign": 0,
+    "heat": 0.33
+   },
+   "score": 1.09,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": []
+  },
+  {
+   "mbid": "d39c86e9-900e-4dc5-93a4-939082c71a45",
+   "name": "Lil Crix",
+   "listeners": 15336,
+   "firstRelease": "2020-12-15",
+   "route": "little-known",
+   "tier": 2,
    "genre": "hip-hop",
-   "score": 1.33,
-   "charts": null,
-   "newest": "2026-06-12",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.53,
+    "heat": 0
+   },
+   "score": 1.05,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
    "cosigns": [
     {
      "from": "5ec1ecc6-4535-4911-a27a-e26343f4a189",
-     "name": "Kodak Black",
-     "listeners": 1941247,
      "date": "2026-06-12",
-     "types": [
-      "collab"
-     ],
-     "title": "Handling the Death",
-     "url": "https://musicbrainz.org/recording/2cba7823-cba4-4de1-89c5-48e12e7dfa13"
-    }
-   ]
-  },
-  {
-   "mbid": "cd7af4e4-5624-4965-a8fc-49220f85b351",
-   "name": "Hannah McFarland",
-   "listeners": 5277,
-   "firstRelease": "2024-10-13",
-   "genre": "country",
-   "score": 1.31,
-   "charts": null,
-   "newest": "2026-07-03",
-   "cosigns": [
-    {
-     "from": "d8c85c0e-ad88-47a7-a1df-b70608c2f52f",
-     "name": "Riley Green",
-     "listeners": 241543,
-     "date": "2026-07-03",
-     "types": [
-      "collab"
-     ],
-     "title": "Go Again",
-     "url": "https://musicbrainz.org/recording/066e600f-f2e8-4429-b059-0068232e751e"
-    }
-   ]
-  },
-  {
-   "mbid": "f8fbdd1b-2d25-4d16-9b4a-d0ee2efeb98b",
-   "name": "Stunna Sandy",
-   "listeners": 92276,
-   "firstRelease": null,
-   "genre": "hip-hop",
-   "score": 1.31,
-   "charts": null,
-   "newest": "2026-05-15",
-   "cosigns": [
-    {
-     "from": "9fff2f8a-21e6-47de-a2b8-7f449929d43f",
-     "name": "Drake",
-     "listeners": 6948676,
-     "date": "2026-05-15",
-     "types": [
-      "feature"
-     ],
-     "title": "Outside Tweaking",
-     "url": "https://musicbrainz.org/recording/0b12b65c-d8bb-4141-be0b-460be07348c9"
-    }
-   ]
-  },
-  {
-   "mbid": "cfc2a5d4-81c0-4caa-b706-d3e2b5f08641",
-   "name": "thayerperiod",
-   "listeners": 26161,
-   "firstRelease": "2023-12-08",
-   "genre": "electronic",
-   "score": 1.3,
-   "charts": null,
-   "newest": "2026-06-19",
-   "cosigns": [
-    {
-     "from": "de5d7601-f6fa-4efa-ae3f-7005a2b89a1b",
-     "name": "Ayesha Erotica",
-     "listeners": 1319721,
-     "date": "2026-06-19",
-     "types": [
-      "collab"
-     ],
-     "title": "Fall1nLuv",
-     "url": "https://musicbrainz.org/recording/25735ee4-3542-4325-a4da-b06b88434a71"
-    }
-   ]
-  },
-  {
-   "mbid": "da8fb855-1a7f-4648-8d97-dd832328b92b",
-   "name": "Ledbyher",
-   "listeners": 106692,
-   "firstRelease": "2023-08-18",
-   "genre": "indie",
-   "score": 1.19,
-   "charts": null,
-   "newest": "2026-08-28",
-   "cosigns": [
-    {
-     "from": "c3ecef5d-84f3-4942-8c24-0a626343c3f4",
-     "name": "The Drums",
-     "listeners": 2232820,
-     "date": "2026-08-28",
-     "types": [
-      "collab"
-     ],
-     "title": "Yes&No",
-     "url": "https://musicbrainz.org/recording/dce5220c-51fe-4850-a895-c361b75832bc"
-    }
-   ]
-  },
-  {
-   "mbid": "49ed5e10-3625-49a5-acaf-d71def2e7d78",
-   "name": "YTB Fatt",
-   "listeners": 88362,
-   "firstRelease": "2023-03-10",
-   "genre": "hip-hop",
-   "score": 1.1,
-   "charts": null,
-   "newest": "2026-08-04",
-   "cosigns": [
-    {
-     "from": "d42a5768-ada1-4fb6-85fd-f61aba6264e0",
-     "name": "Lil Baby",
-     "listeners": 1716504,
-     "date": "2026-08-04",
-     "types": [
-      "collab"
-     ],
-     "title": "HERE AND THERE",
-     "url": "https://musicbrainz.org/recording/7f9a9be5-efff-4352-9ee4-fa0d20fd70a9"
-    }
-   ]
-  },
-  {
-   "mbid": "dee4e630-9738-42ba-90ea-f2663af9e8dd",
-   "name": "ICEGERGERT",
-   "listeners": 38995,
-   "firstRelease": "2023-03-17",
-   "genre": "hip-hop",
-   "score": 0.98,
-   "charts": null,
-   "newest": "2026-02-13",
-   "cosigns": [
-    {
-     "from": "36494952-f434-45d8-a958-8b4acdbcf8a8",
-     "name": "Gucci Mane",
-     "listeners": 2910047,
-     "date": "2026-02-13",
-     "types": [
-      "collab"
-     ],
-     "title": "Око",
-     "url": "https://musicbrainz.org/recording/4b0755b6-8d97-486e-a98d-8ca164a1346a"
-    }
-   ]
-  },
-  {
-   "mbid": "2eab1dfb-3a24-4389-b3d4-e8a53b9d5e36",
-   "name": "The Paradox",
-   "listeners": 93519,
-   "firstRelease": "2024-08-02",
-   "genre": "rock",
-   "score": 0.88,
-   "charts": null,
-   "newest": "2026-10-16",
-   "cosigns": [
-    {
-     "from": "a7472b5e-9b6e-48a6-b910-37c940487086",
-     "name": "Lucky Daye",
-     "listeners": 716518,
-     "date": "2026-10-16",
-     "types": [
-      "collab"
-     ],
-     "title": "Knockin",
-     "url": "https://musicbrainz.org/recording/b6e6ff0c-ee9e-496e-838f-2d050b646f5a"
-    }
-   ]
-  },
-  {
-   "mbid": "7c0f0759-ac44-4403-b366-c0a89b808504",
-   "name": "Chxrry",
-   "listeners": 49024,
-   "firstRelease": "2022-04-08",
-   "genre": "rnb",
-   "score": 0.72,
-   "charts": null,
-   "newest": "2026-04-29",
-   "cosigns": [
-    {
-     "from": "5fc55ebf-21bd-4eda-954c-dd250132331e",
-     "name": "Mariah the Scientist",
-     "listeners": 581001,
-     "date": "2026-04-29",
-     "types": [
-      "collab"
-     ],
-     "title": "Bottles & Lights",
-     "url": "https://musicbrainz.org/recording/43679088-616a-4b72-b24d-00f60e16722b"
-    }
-   ]
-  },
-  {
-   "mbid": "a505053e-11a0-4f24-b0af-dda05562da0f",
-   "name": "Los Gemelos de Sinaloa",
-   "listeners": 87967,
-   "firstRelease": "2022-10-14",
-   "genre": "latin",
-   "score": 0.56,
-   "charts": null,
-   "newest": "2026-04-15",
-   "cosigns": [
-    {
-     "from": "e665ce26-6ce9-4c42-8f6a-7a361a0ba328",
-     "name": "Fuerza Regida",
-     "listeners": 663943,
-     "date": "2026-04-15",
-     "types": [
-      "collab"
-     ],
-     "title": "FERRARI",
-     "url": "https://musicbrainz.org/recording/e2b03072-19a2-470e-8583-dd2547010fa4"
-    }
-   ]
-  },
-  {
-   "mbid": "ccf34cee-ac88-482c-a651-cb5170a8c5f4",
-   "name": "Worldpeace DMT",
-   "listeners": 35539,
-   "firstRelease": "2024-09-20",
-   "genre": "electronic",
-   "score": 0.56,
-   "charts": null,
-   "newest": "2026-03-04",
-   "cosigns": [
-    {
-     "from": "4de1756c-e988-4f9f-87bf-bae46f56fefe",
-     "name": "bassvictim",
-     "listeners": 354193,
-     "date": "2026-03-04",
-     "types": [
-      "collab"
-     ],
-     "title": "Year of the Dragon",
-     "url": "https://musicbrainz.org/recording/a40203d3-43d6-486d-ac07-49ad812ed0d8"
-    }
-   ]
-  },
-  {
-   "mbid": "b559b40a-1d92-46e2-8f91-754fe3c83958",
-   "name": "takihasdied",
-   "listeners": 16313,
-   "firstRelease": "2023-07-27",
-   "genre": "electronic",
-   "score": 0.53,
-   "charts": null,
-   "newest": "2025-12-01",
-   "cosigns": [
-    {
-     "from": "eb3c021d-e056-42d6-8fad-064205a90527",
-     "name": "femtanyl",
-     "listeners": 392651,
-     "date": "2025-12-01",
      "types": [
       "collab",
       "feature"
      ],
-     "title": "SH3 L00K3D D3DD",
-     "url": "https://musicbrainz.org/recording/b6a561b6-96c9-4648-b284-90160283cad9"
+     "title": "American Dream",
+     "url": "https://musicbrainz.org/recording/7373bc81-d6d8-45d8-86d2-c66d0c2ab8dc",
+     "name": "Kodak Black",
+     "listeners": 1941804
     }
    ]
   },
   {
-   "mbid": "91b449dd-746e-4fd3-b38d-b1dac80e655e",
-   "name": "Grace Enger",
-   "listeners": 67349,
-   "firstRelease": "2022-10-07",
-   "genre": "country",
-   "score": 0.52,
-   "charts": null,
-   "newest": "2026-11-06",
-   "cosigns": [
-    {
-     "from": "e881b225-42b1-41d9-9d5e-eff55568585b",
-     "name": "STELLA LEFTY",
-     "listeners": 213643,
-     "date": "2026-11-06",
-     "types": [
-      "upcoming"
-     ],
-     "title": "Stella Lefty: Lefty Live",
-     "url": "https://www.ticketmaster.com/stella-lefty-lefty-live-dallas-texas-11-06-2026/event/0C0064AF96246D74"
-    }
-   ]
-  },
-  {
-   "mbid": "e8117b20-07df-48c3-840c-e192e0152533",
-   "name": "Fatt Smaxk",
-   "listeners": 74334,
-   "firstRelease": "2025-10-11",
+   "mbid": "07ea3fdf-f602-4732-b7f5-d1f16c6945e9",
+   "name": "Albee Al",
+   "listeners": 17122,
+   "firstRelease": "2016-02-29",
+   "route": "little-known",
+   "tier": 2,
    "genre": "hip-hop",
-   "score": 0.39,
-   "charts": null,
-   "newest": "2026-09-18",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.51,
+    "heat": 0
+   },
+   "score": 1.03,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
    "cosigns": [
     {
-     "from": "59c2a349-e284-4925-9165-ec7f79ca142a",
-     "name": "Hunxho",
-     "listeners": 193819,
-     "date": "2026-09-18",
+     "from": "5ec1ecc6-4535-4911-a27a-e26343f4a189",
+     "date": "2026-06-12",
      "types": [
       "collab"
      ],
-     "title": "Throw It",
-     "url": "https://musicbrainz.org/recording/ade0440d-0caf-4cb6-a60e-f15a4f243a1b"
+     "title": "Peter Roll",
+     "url": "https://musicbrainz.org/recording/7307a78c-4674-4181-a285-935e7ff47260",
+     "name": "Kodak Black",
+     "listeners": 1941804
     }
    ]
   },
   {
-   "mbid": "483ccf02-0faf-458e-88fc-e39e03cb9875",
-   "name": "Vincent Mason",
-   "listeners": 88524,
-   "firstRelease": "2022-02-11",
-   "genre": "country",
-   "score": 0.27,
-   "charts": null,
-   "newest": "2026-05-15",
+   "mbid": "49d548aa-5417-4a4d-8d1d-58dad2103bd2",
+   "name": "Skooly",
+   "listeners": 21365,
+   "firstRelease": "2015-06-01",
+   "route": "little-known",
+   "tier": 2,
+   "genre": "hip-hop",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.51,
+    "heat": 0
+   },
+   "score": 1.02,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
    "cosigns": [
     {
-     "from": "e881b225-42b1-41d9-9d5e-eff55568585b",
-     "name": "STELLA LEFTY",
-     "listeners": 213643,
-     "date": "2026-05-15",
+     "from": "2baf3276-ed6a-4349-8d2e-f4601e7b2167",
+     "date": "2025-12-03",
      "types": [
       "collab"
      ],
-     "title": "Something to Lose",
-     "url": "https://musicbrainz.org/recording/872d9b4b-fb93-4404-9af7-6a3983119485"
+     "title": "Let's Do It",
+     "url": "https://musicbrainz.org/recording/936583e9-eebd-49d4-9191-9a554ec720ad",
+     "name": "Playboi Carti",
+     "listeners": 2607193
+    },
+    {
+     "from": "d42a5768-ada1-4fb6-85fd-f61aba6264e0",
+     "date": "2025-12-03",
+     "types": [
+      "collab"
+     ],
+     "title": "Let's Do It",
+     "url": "https://musicbrainz.org/recording/936583e9-eebd-49d4-9191-9a554ec720ad",
+     "name": "Lil Baby",
+     "listeners": 1716504
     }
    ]
   },
   {
-   "mbid": "bc8efafe-52f9-4b6d-95a0-dc193a3556e5",
-   "name": "BloodHound Q50",
-   "listeners": 106559,
-   "firstRelease": "2024-08-12",
-   "genre": "hip-hop",
-   "score": 0.24,
-   "charts": null,
-   "newest": "2026-02-20",
+   "mbid": "25a57a79-2e18-4e0c-8d04-bcad8e212ae4",
+   "name": "Pokestir",
+   "listeners": 24163,
+   "firstRelease": "2021",
+   "route": "little-known",
+   "tier": 2,
+   "genre": "electronic",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.49,
+    "heat": 0
+   },
+   "score": 0.98,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
    "cosigns": [
     {
-     "from": "b299e6fc-a7cb-4c7d-a798-0692b60b9e48",
-     "name": "EST Gee",
-     "listeners": 302799,
-     "date": "2026-02-20",
+     "from": "1c26f82c-b35d-4c8e-a1f4-9c20747495c9",
+     "date": "2026-07-31",
      "types": [
-      "feature"
+      "collab"
      ],
-     "title": "ASIDE",
-     "url": "https://musicbrainz.org/recording/bf39c1a3-4620-44e6-a5ee-15d2c3dec74a"
+     "title": "Sunset of Seven Suns (from “Deltarune Chapter 5”) (Arr. for Orchestra)",
+     "url": "https://musicbrainz.org/recording/c1306339-2841-40d2-a041-db2742edd451",
+     "name": "Toby Fox",
+     "listeners": 1313660
+    }
+   ]
+  },
+  {
+   "mbid": "e5d70460-7057-4cbe-9c07-11ca2dac975c",
+   "name": "Tay Keith",
+   "listeners": 24354,
+   "firstRelease": "2018-05-18",
+   "route": "little-known",
+   "tier": 2,
+   "genre": "hip-hop",
+   "heat": null,
+   "weekly": null,
+   "growthPct": null,
+   "signals": {
+    "chart": 0,
+    "cosign": 0.47,
+    "heat": 0
+   },
+   "score": 0.94,
+   "charts": {
+    "apple": [],
+    "lastfm": [],
+    "since": "2026-10-16"
+   },
+   "cosigns": [
+    {
+     "from": "0953d634-b964-4f2a-b862-8de475aeaf47",
+     "date": "2026-08-07",
+     "types": [
+      "collab"
+     ],
+     "title": "Booty Club",
+     "url": "https://musicbrainz.org/recording/5802b945-bfb7-4df7-a80f-07aecbf7edb1",
+     "name": "Sexyy Red",
+     "listeners": 1051227
     }
    ]
   }

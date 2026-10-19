@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T15:14:54.025Z",
+  "generatedAt": "2026-10-19T18:27:08.614Z",
   "source": "Ticketmaster Discovery API (live listings, rebuilt nightly)",
   "artists": {
     "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
@@ -111,7 +111,8 @@
       "id": "hayley-williams"
     },
     "547e23af-e455-41dd-baae-a3b58e065d0c": {
-      "name": "Damien Dempsey"
+      "name": "Damien Dempsey",
+      "id": "damien-dempsey"
     },
     "9df0c0ec-619e-447d-a155-23e19d9c84ce": {
       "name": "Viagra Boys"
@@ -136,7 +137,11 @@
       "name": "Boston Manor"
     },
     "100b8734-f4f0-4536-9960-47f7c59d1b4c": {
-      "name": "Gunna"
+      "name": "Gunna",
+      "id": "gunna"
+    },
+    "f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62": {
+      "name": "T.I."
     },
     "9167f739-da47-4495-9d63-9c13b40114ac": {
       "name": "Summer Walker",
@@ -256,6 +261,55 @@
     "ca204bac-2768-4d6f-a5e4-8e8f9080817b": {
       "name": "The Hellp",
       "id": "the-hellp"
+    },
+    "260b6184-8828-48eb-945c-bc4cb6fc34ca": {
+      "name": "Charli xcx"
+    },
+    "ab1a3f85-e0ea-470a-af5c-175447ae774c": {
+      "name": "Underscores",
+      "id": "underscores"
+    },
+    "fd36f43e-5bd1-488e-b844-0e059250ef78": {
+      "name": "glaive"
+    },
+    "c9e3089c-a7bc-4df5-80f9-9161eaa74a02": {
+      "name": "Tiffany Day",
+      "id": "tiffany-day"
+    },
+    "38ed4923-005f-4ba0-baf7-749269dfea29": {
+      "name": "Dexter and The Moonrocks",
+      "id": "dexter-and-the-moonrocks"
+    },
+    "11b34f7b-42d0-4d16-a96f-f47a517cca7d": {
+      "name": "Return to Dust"
+    },
+    "a2d140d8-ae17-4d72-b680-b89c77f1ed52": {
+      "name": "This Is Lorelei"
+    },
+    "9cfabb8c-24a3-498d-b383-bb5324cfe30f": {
+      "name": "Sidney Gish",
+      "id": "sidney-gish"
+    },
+    "ee0b11de-0c8a-4267-9886-198f4579e1db": {
+      "name": "Lizzy McAlpine",
+      "id": "lizzy-mcalpine"
+    },
+    "40c857d5-6ab0-41f4-aa1d-7614a79a0686": {
+      "name": "Post Animal"
+    },
+    "2ba1af4b-9d6b-4a0a-af47-f00769700da2": {
+      "name": "Paris Paloma"
+    },
+    "02452937-d06b-4e9f-966d-8477bae38ddc": {
+      "name": "Susannah Joffe",
+      "id": "susannah-joffe"
+    },
+    "0638ba22-040f-438d-83a5-9b670c4adaf5": {
+      "name": "Ludacris"
+    },
+    "13bcb2bb-db37-4397-baf5-e0f085be2d64": {
+      "name": "Rick Ross",
+      "id": "rick-ross"
     }
   },
   "cosigns": [
@@ -388,6 +442,22 @@
       }
     },
     {
+      "from": "2ba1af4b-9d6b-4a0a-af47-f00769700da2",
+      "to": "02452937-d06b-4e9f-966d-8477bae38ddc",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 3,
+      "first": "2026-10-20",
+      "last": "2026-10-25",
+      "next": {
+        "tour": "Paris Paloma: The Fatal Flaw Tour",
+        "date": "2026-10-20",
+        "city": "Brooklyn",
+        "url": "https://www.ticketmaster.com/paris-paloma-the-fatal-flaw-tour-brooklyn-new-york-10-20-2026/event/000064A4E12EF369"
+      }
+    },
+    {
       "from": "e0e1a584-dd0a-4bd1-88d1-c4c62895039d",
       "to": "3482e723-ee80-4dfc-b6e9-5a47732fd6b6",
       "types": [
@@ -452,6 +522,54 @@
       }
     },
     {
+      "from": "260b6184-8828-48eb-945c-bc4cb6fc34ca",
+      "to": "ab1a3f85-e0ea-470a-af5c-175447ae774c",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 2,
+      "first": "2026-10-21",
+      "last": "2026-10-23",
+      "next": {
+        "tour": "Charli xcx - Music, Fashion, Film Tour",
+        "date": "2026-10-21",
+        "city": "Glendale",
+        "url": "https://www.ticketmaster.com/charli-xcx-music-fashion-film-tour-glendale-arizona-10-21-2026/event/190064C5D6359C3F"
+      }
+    },
+    {
+      "from": "fd36f43e-5bd1-488e-b844-0e059250ef78",
+      "to": "c9e3089c-a7bc-4df5-80f9-9161eaa74a02",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 5,
+      "first": "2026-10-21",
+      "last": "2026-10-28",
+      "next": {
+        "tour": "glaive w/ Tiffany Day",
+        "date": "2026-10-21",
+        "city": "Albuquerque",
+        "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70_Fg"
+      }
+    },
+    {
+      "from": "100b8734-f4f0-4536-9960-47f7c59d1b4c",
+      "to": "f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2026-10-22",
+      "last": "2026-10-22",
+      "next": {
+        "tour": "2026 FAMU Homecoming Concert",
+        "date": "2026-10-22",
+        "city": "Tallahassee",
+        "url": "https://www.ticketmaster.com/2026-famu-homecoming-concert-tallahassee-florida-10-22-2026/event/2200651F8B041E9F"
+      }
+    },
+    {
       "from": "100b8734-f4f0-4536-9960-47f7c59d1b4c",
       "to": "9167f739-da47-4495-9d63-9c13b40114ac",
       "types": [
@@ -497,6 +615,22 @@
         "date": "2026-10-23",
         "city": "Austin",
         "url": "https://am.ticketmaster.com/cota/buy/quickbuy?id=Mzg1"
+      }
+    },
+    {
+      "from": "0638ba22-040f-438d-83a5-9b670c4adaf5",
+      "to": "13bcb2bb-db37-4397-baf5-e0f085be2d64",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2026-10-24",
+      "last": "2026-10-24",
+      "next": {
+        "tour": "The Crown Live in the Ville",
+        "date": "2026-10-24",
+        "city": "Louisville",
+        "url": "https://www.ticketmaster.com/the-crown-live-in-the-ville-louisville-kentucky-10-24-2026/event/160064D0ADDB95A7"
       }
     },
     {
@@ -724,6 +858,22 @@
       }
     },
     {
+      "from": "38ed4923-005f-4ba0-baf7-749269dfea29",
+      "to": "11b34f7b-42d0-4d16-a96f-f47a517cca7d",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 5,
+      "first": "2027-02-09",
+      "last": "2027-02-19",
+      "next": {
+        "tour": "Dexter and the Moonrocks: Friends That I Don't Like - Canadian Tour",
+        "date": "2027-02-09",
+        "city": "Calgary",
+        "url": "https://www.ticketmaster.ca/dexter-and-the-moonrocks-friends-that-calgary-alberta-02-09-2027/event/11006523D960BCEF"
+      }
+    },
+    {
       "from": "d89de379-665d-425c-b2e9-41b95d1edb36",
       "to": "af063224-5624-46d9-a2cd-d0374b55382e",
       "types": [
@@ -769,6 +919,22 @@
         "date": "2027-03-02",
         "city": "Bristol",
         "url": "https://www.ticketmaster.co.uk/sleeping-with-sirens-an-ending-in-bristol-02-03-2027/event/350064C206BFE21C"
+      }
+    },
+    {
+      "from": "a2d140d8-ae17-4d72-b680-b89c77f1ed52",
+      "to": "9cfabb8c-24a3-498d-b383-bb5324cfe30f",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2027-03-27",
+      "last": "2027-03-27",
+      "next": {
+        "tour": "This Is Lorelei",
+        "date": "2027-03-27",
+        "city": "Brooklyn",
+        "url": "https://www.ticketmaster.com/this-is-lorelei-brooklyn-new-york-03-27-2027/event/00006548B30E8830"
       }
     },
     {
@@ -913,6 +1079,22 @@
         "date": "2027-05-28",
         "city": "Manchester",
         "url": "https://www.ticketmaster.co.uk/tame-impala-deadbeat-euuk-tour-2027-manchester-28-05-2027/event/37006515B7C2A40D"
+      }
+    },
+    {
+      "from": "ee0b11de-0c8a-4267-9886-198f4579e1db",
+      "to": "40c857d5-6ab0-41f4-aa1d-7614a79a0686",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 14,
+      "first": "2027-06-16",
+      "last": "2027-07-17",
+      "next": {
+        "tour": "Lizzy McAlpine: The Over Country Tour",
+        "date": "2027-06-16",
+        "city": "Nashville",
+        "url": "https://www.ticketmaster.com/lizzy-mcalpine-the-over-country-tour-nashville-tennessee-06-16-2027/event/1B00653773DE4835"
       }
     },
     {

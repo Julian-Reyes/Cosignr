@@ -149,7 +149,7 @@ Names link to that artist's Cosignr page if they have one. Otherwise they link t
 
 ## Who gets an artist page
 
-That's our 12 hand-picked artists, the **top 5 cosigners of each** (like Rihanna, Ye, Gorillaz, Skrillex and Florence + the Machine), and **everyone in Trending** (about 120 artists charting now). Pages are kept when an artist drops off the chart.
+That's our 12 hand-picked artists, the **top 5 cosigners of each** (like Rihanna, Ye, Gorillaz, Skrillex and Florence + the Machine), **everyone in Trending** (about 120 artists charting now), and **everyone in Rising plus the big artists who cosigned them** (so a "Cosigned by Gunna" chip leads to a real page). Pages are kept when an artist drops off the charts.
 
 `node scripts/fetch-extended.mjs` picks them every night. It uses the same ranking as the "Cosigned by" chips, so the list can change as new cosigns appear, and it saves the list to `data/extended.json`. It also finds each artist's Wikidata, Spotify and Deezer pages through MusicBrainz, so the other scripts can fetch their photo, numbers, hometown and genre like they do for our 12.
 
@@ -171,17 +171,18 @@ Artists' genres are detailed ("Brostep", "Emo Rap", "Indie Pop"), so each one is
 
 ## Rising
 
-Under Trending, **Rising** shows newcomers that big artists recently vouched for: a star put them on a song, made a song with them, or took them on tour in the last 12 months. It's the Cosignr idea in one list.
+Under Trending, **Rising** shows artists on the way up. Like other "rising" charts it's driven by what's climbing right now; Cosignr adds artists the big names have vouched for. `scripts/fetch-rising.mjs` builds it every night from data we already collect.
 
-`scripts/fetch-rising.mjs` builds it every night from data we already collect:
-- **Big artists** are everyone in Trending plus any artist with a page and over a million Last.fm listeners.
-- **A newcomer** has between 5,000 and 150,000 Last.fm listeners and released their first music within the last five years. (Under 5,000 we mostly found people who aren't really artists yet: a singer's child credited on one song, record labels, an actress.) Someone with 100+ releases on MusicBrainz is treated as established.
-- **Ranking:** each cosign counts more when the star is much bigger than the newcomer, and when it's recent. Several stars add up, so FRIDAYY (cosigned by Chris Brown, Kodak Black, Rod Wave and Mariah the Scientist) ranks first.
-- **Genre** comes from Last.fm's tags for the newcomer, then MusicBrainz, then the genre of whoever cosigned them. The genre bar filters Rising like Trending, and "All" uses the same per-genre limits.
+**Who can be in it** (anyone with at least 5,000 Last.fm listeners who fits one of these):
+- **New:** their first release was in the last five years, however big they've got (ADÉLA, Sienna Spiro).
+- **Little-known:** fewer than 150,000 listeners, however long they've been around (Belly Gang Kushington).
+- **Breaking out:** on the charts right now with high **heat**, under two million listeners, and a first release in the last 12 years (Ella Langley, underscores).
 
-A newcomer whose **own song is on the charts** (Apple's US top 100, or Last.fm's US top tracks) gets a boost, more if the song is climbing, and the row says so ("“WTF GOIN” #48 on Apple Music US · ▲32"). This is the pattern Rising is really looking for: a star's cosign, then the newcomer taking off on their own.
+**Heat** is this week's US listeners per 1,000 all-time listeners on Last.fm. A band with a big, steady fanbase scores low (Morgan Wallen about 8); an artist having a moment scores high (ADÉLA about 50). It's shown on each row.
 
-Newcomers get a light artist page the night after they first appear. Their listener counts are already tracked every night, so "+X% this week" can be added once there's a week of history.
+**How they're ranked:** anyone on **Apple's US top 100** comes first, then anyone on **Last.fm's US top tracks**, then everyone else. Within each group, chart position counts most, then cosigns from big artists in the last year (any artist with over a million listeners counts as big, and Apple's own song credits count as proof of a collab), then heat or listener growth.
+
+Rising artists and the big artists who cosigned them get light artist pages. Listener growth will matter more once a week or two of daily numbers have built up.
 
 ## Hot Right Now
 
@@ -212,10 +213,10 @@ Apple only publishes ranks, not play counts, so these are moves, not percentages
 
 **Refresh stats:** `node scripts/fetch-stats.mjs`. Works without keys (Deezer only). For Last.fm, create a free API account at https://www.last.fm/api/account/create and put the key in a `.env` file in the project root: `LASTFM_API_KEY=...`. `.env` is git-ignored, so it is never committed.
 
-**Real-world charts:** `node scripts/fetch-charts.mjs` saves the day's Last.fm top 1,000 artists and top 1,000 tracks (worldwide and in the US; tracks since October 19) and Apple Music's top 100 songs and albums in the US to `data/charts/<date>.json`. Last.fm leans toward indie and alternative listeners; Apple Music shows what the mainstream is playing. The "Hot Right Now" section reads the newest file's Apple charts. The rest is there so that later we can spot artists climbing the charts in the real world, not just among the artists we already track. Neither source keeps old charts, so the only way to have history is to save it every day. If one chart fails on a given night, the others are still saved.
+**Real-world charts:** `node scripts/fetch-charts.mjs` saves the day's Last.fm top 1,000 artists and top 1,000 tracks (worldwide and in the US; tracks since October 19) and Apple Music's top 100 songs and albums in the US to `data/charts/<date>.json`. Last.fm leans toward indie and alternative listeners; Apple Music shows what the mainstream is playing. The "Hot Right Now" section reads the newest file's Apple charts. The rest is there so that later we can spot artists climbing the charts in the real world, not just among the artists we already track. Neither source keeps old charts, so the only way to have history is to save it every day. Two limits worth knowing: Apple's chart is one overall US top 100 (songs and albums), with no per-genre charts, which is why Rock and Electronic are thin there. An older iTunes feed does have per-genre charts, but it ranks downloads rather than streams, so we left it out (2026-10-19) and let Last.fm fill those genres instead. Last.fm's track charts have listener counts but no genres, so a song takes its artist's Last.fm tags. If one chart fails on a given night, the others are still saved.
 
 **Nightly refresh and deploy:** `.github/workflows/site.yml` runs all the fetch scripts every day around 06:17 UTC (except YouTube: the publish step fetches its chart just before building, and needs the `YOUTUBE_API_KEY` repository secret; see "Hot Right Now") (GitHub often starts it late), commits any changes to `data/`, then publishes the site to https://julianreyes.dev/Cosignr/ (the github.io address redirects there). Every push to `main` also republishes (without refreshing data). Because the bot commits to GitHub every night, run `git pull` before you start editing. To include Last.fm, add the key as a repository secret called `LASTFM_API_KEY` (GitHub → Settings → Secrets and variables → Actions). You can also start it by hand from the Actions tab ("Run workflow").
 
 ## What's next
 
-The rest of Milestone 1: hand-curated cosigns, real "rising" rankings from the daily snapshots, publishing the site, then accounts, artist pages and the "who cosigned who" graph. See `PROGRESS.md`.
+Next: let listener growth count properly in Rising once a week or two of daily numbers exist (around October 26), fix the Top Artists label (it's still a hand-picked list described as "most cosigned"), then accounts and real user cosigns, and the "who cosigned who" graph. See `PROGRESS.md`.

@@ -1,8 +1,19 @@
 # "Rising" section: plan (v2, 2026-10-19)
 
-Status: **built 2026-10-19** (`scripts/fetch-rising.mjs` → `data/rising.json`, `risingRows()` in src/lib/data.js, `src/components/RisingList.jsx`). v1 of this plan (2026-10-16) assumed a separate crawl; v2 reuses Trending's data.
+Status: **built 2026-10-19, redesigned the same day** (see "Final design" below; the sections after it are the earlier cosign-first version, kept for history).
 
-Rules added while building (2026-10-19): **at least 5,000 Last.fm listeners** (below it were kids credited on a parent's song, labels, an actress, mismatched Last.fm pages; proposed, for Julian to confirm); **100+ release groups = established** (MusicBrainz's artist lookup caps release groups at 25 in no order, which let Kylie Minogue through; the paged list is used instead); **no releases of their own counts only with a song cosign** (a show-only cosign with 0 releases was a stale Ticketmaster ID); **same-name duplicates merged** (Buddah Bless has two MusicBrainz entries). No per-cosigner cap: the genre caps already spread cosigners out.
+## Final design (Julian, 2026-10-19)
+
+Julian: song climbers should drive Rising, like other sites; Cosignr's cosigns add to it. Worked out with scratch comparisons of three weightings (A 3/2/1 chosen; growth-heavy and even versions were dominated by the 7 artists that had any growth data).
+
+- **Ways in** (at least 5k Last.fm listeners): **new** = first release within 5 years, any size (ADÉLA, Sienna Spiro); **little-known** = under 150k, any debut (Belly Gang Kushington, debut 2020); **breaking out** = charting (Apple US top 100 or Last.fm US top tracks) + heat ≥ 10 + under 2M listeners + debut within 12 years (Ella Langley, 2018; underscores, 2015; 12 not 10 for underscores; Noah Kahan qualifies and that's fine). Debut unknown: under 750k.
+- **Heat** = Last.fm US listeners this week ÷ all-time listeners × 1000. Shown on rows ("Heat 13", hover explains). Keeps steady veterans out (Morgan Wallen 7.6, Zach Bryan 9.0).
+- **Rank:** tier first: Apple top 100 → Last.fm US top tracks → everyone else (Julian: anyone on Apple's top 100 beats non-charting; Iconic Savvy at 7k was above Sienna Spiro at #53 before). Within a tier: 3 × charting + 2 × cosign + 1 × heat/growth (the stronger of heat ÷ 30 and weekly growth % ÷ 5).
+- **Charting signal:** Apple position (#1 = 1.0, +0.2 if it rose 3+ or entered since a week earlier), Last.fm US tracks ×0.7, Last.fm US artists ×0.5.
+- **Cosign signal:** big-artist cosigns in the last 12 months (24 considered, not chosen), log10(star ÷ artist listeners) × recency. **Big = any verified 1M+ Last.fm artist** (Gunna wasn't charting and had no page, but is clearly big). **Apple's chart credits count as evidence** ("Belly Gang Kushington & 21 Savage", before MusicBrainz has the song).
+- **Pages** for Rising artists and the big artists who cosigned them.
+- **Known gap:** the little-known route has no debut limit, so small veterans can appear (Ball Greezy 2007, Damien Dempsey 1997). Watch and fix if it matters.
+- **Growth** has only a few days of data (snapshots from 2026-10-16); it becomes meaningful around 2026-10-26.
 
 ## The idea
 

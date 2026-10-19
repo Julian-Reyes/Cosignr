@@ -818,6 +818,7 @@ footer .data-sources a:hover{ color: #fff; }
 /* Hot Right Now (HOT.md): Songs | Albums | Videos from Apple Music and YouTube */
 .hot, .rising{ margin-top: 40px; }
 .rising-charts{ margin: -6px 0 10px; font-size: .85em; font-weight: 700; color: #1a9b5b; }
+.rising-charts .heat{ color: #c2581c; cursor: help; }
 .hot-list{ list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 /* Rows and cover art sized like the Trending rows (Julian, 2026-10-16); videos keep 16:9 at the same height */
 .hot-row{

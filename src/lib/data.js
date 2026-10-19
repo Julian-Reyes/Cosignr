@@ -391,10 +391,13 @@ export function risingRows() {
       id: page?.id || `mb-${r.mbid}`, name: r.name, href: page ? pageUrl(page.id) : `https://musicbrainz.org/artist/${r.mbid}`,
       page: !!page, genre: shownGenre, g: r.genre, hometown: page ? hometown(page) : null,
       listeners: r.listeners, firstYear: r.firstRelease ? r.firstRelease.slice(0, 4) : null, score: r.score,
+      tier: r.tier, route: r.route,
+      // Heat (shown, Julian 2026-10-19): US listeners this week per 1,000 all-time listeners.
+      heat: r.heat, heatTitle: r.heat ? `${Math.round(r.heat)} of every 1,000 of ${r.name}'s all-time Last.fm listeners played them in the US this week (${fmt(r.weekly)} of ${fmt(r.listeners)})` : null,
       // Their own songs charting now (fetch-rising.mjs chart boost): "“WTF GOIN” #48 on Apple Music US ▲32".
       charts: [
-        ...(r.charts?.apple || []).map(s => `“${s.title}” #${s.rank} on Apple Music US${s.entered ? " · new entry" : s.move >= 3 ? ` · ▲${s.move}` : ""}`),
-        ...(r.charts?.lastfm || []).map(s => `“${s.title}” #${s.rank} on Last.fm US · ${fmt(s.listeners)} listeners this week`),
+        ...(r.charts?.apple || []).slice(0, 2).map(s => `“${s.title}” #${s.rank} on Apple Music US${s.entered ? " · new entry" : s.move >= 3 ? ` · ▲${s.move}` : ""}`),
+        ...(r.charts?.lastfm || []).slice(0, 1).map(s => `“${s.title}” #${s.rank} on Last.fm US · ${fmt(s.listeners)} listeners this week`),
       ],
       chips: r.cosigns.map(c => ({ name: c.name, title: risingTitle(c, r.name), href: hasPage(c.from) ? linkFor(c.from) : null, url: c.url })),
       search: [r.name, shownGenre, page && hometown(page), ...r.cosigns.map(c => c.name)].filter(Boolean),
