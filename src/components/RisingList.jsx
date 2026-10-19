@@ -91,7 +91,7 @@ export default function RisingList({ rows, images }) {
               </div>
               <div className="stat">
                 <b>{r.score.toFixed(1)}</b>
-                <small>Rising score (out of 10)</small>
+                <small>Rising Score</small>
                 <div className="bar"><i style={{ width: `${Math.round(r.score * 10)}%` }} /></div>
               </div>
               <button className={`cosign-btn${on ? " on" : ""}`} type="button" aria-pressed={on} onClick={() => toggleCosign(r)}>

@@ -27,6 +27,8 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { mb } from "./lib/musicbrainz.mjs";
 import { loadArtists } from "./lib/artists.mjs";
+import { loadMbidFixes, lastfmNameFor } from "./lib/mbid-fixes.mjs";
+const MBID_FIXES = await loadMbidFixes();
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const UA = { "User-Agent": "Cosignr/0.1 (music discovery demo; https://github.com/Julian-Reyes)" };
@@ -100,6 +102,9 @@ async function lastfmInfo(params, key) {
 // `tags` (top 5 Last.fm tags) give Rising newcomers a genre (RISING.md).
 const topTags = page => (page?.tags?.tag || []).slice(0, 5).map(t => t.name);
 async function fame(mbid, name, key) {
+  // Hand-checked correction (data/artists.json mbidFixes): Last.fm knows this artist only by page name.
+  const fixed = lastfmNameFor(MBID_FIXES, mbid);
+  if (fixed) { const p = await lastfmInfo({ artist: fixed }, key); return p ? { listeners: Number(p.stats.listeners), name: p.name, via: "fix", tags: topTags(p) } : null; }
   const byId = await lastfmInfo({ mbid }, key);
   const sameName = n => n.toLowerCase().replace(/\s+/g, " ") === name.toLowerCase().replace(/\s+/g, " ");
   if (byId && sameName(byId.name)) return { listeners: Number(byId.stats.listeners), name: byId.name, via: "mbid", tags: topTags(byId) };

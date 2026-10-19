@@ -25,6 +25,7 @@ import path from "node:path";
 import { mb } from "./lib/musicbrainz.mjs";
 import { loadArtists } from "./lib/artists.mjs";
 import { GENRES, genreGroup } from "../src/lib/shared.js";
+import { loadMbidFixes, fixChartMbids, lastfmNameFor } from "./lib/mbid-fixes.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const UA = { "User-Agent": "Cosignr/0.1 (music discovery demo; https://github.com/Julian-Reyes/Cosignr)" };
@@ -65,6 +66,8 @@ const pageGenre = a => a.genre || profiles[a.id]?.genre || null;
 const files = (await readdir(path.join(ROOT, "data/charts"))).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().reverse();
 let chart = null;
 for (const f of files) { const c = await read(`data/charts/${f}`); if (c.appleUsSongs) { chart = c; break; } }
+const MBID_FIXES = await loadMbidFixes();
+fixChartMbids(chart, MBID_FIXES); // Last.fm namesake IDs (YENA)
 if (!chart) { console.error("No Apple chart in data/charts/; run fetch-charts.mjs first"); process.exit(1); }
 console.log(`Chart: ${chart.date}`);
 
@@ -158,7 +161,10 @@ async function lastfmInfo(mbid) {
   const wait = lastCall + 220 - Date.now(); // Last.fm: at most ~5 requests/second
   if (wait > 0) await new Promise(r => setTimeout(r, wait));
   lastCall = Date.now();
-  const d = await getJson(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&mbid=${mbid}&autocorrect=0&format=json&api_key=${KEY}`);
+  // A corrected ID isn't known to Last.fm: look its page up by the hand-checked name instead.
+  const byName = lastfmNameFor(MBID_FIXES, mbid);
+  const q = byName ? `artist=${encodeURIComponent(byName)}` : `mbid=${mbid}`;
+  const d = await getJson(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&${q}&autocorrect=0&format=json&api_key=${KEY}`);
   const e = d.error ? { name: null, at: new Date().toISOString() }
     : { name: d.artist.name, listeners: Number(d.artist.stats.listeners), tags: (d.artist.tags?.tag || []).map(t => t.name), at: new Date().toISOString() };
   lastfmCache[mbid] = e;

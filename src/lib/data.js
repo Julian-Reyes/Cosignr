@@ -382,15 +382,22 @@ function risingTitle(c, name) {
   return `${text} (${when}) · ${c.name} has ${fmt(c.listeners)} Last.fm listeners`;
 }
 
+// Shown Rising Score (Julian, 2026-10-19): everyone shifted by the same amount so that #1 in "All" (the
+// first artist with a genre; All leaves ungenred rows out) shows 9.9. Capped at 9.9, since a lower tier
+// can have a higher raw score than the top of the Apple tier.
+const RISING_TOP = 9.9;
 export function risingRows() {
   if (!RISING) return [];
+  const first = RISING.artists.find(r => r.genre);
+  const shift = first ? RISING_TOP - first.score : 0;
+  const shown = s => Math.min(RISING_TOP, Math.round((s + shift) * 10) / 10);
   return RISING.artists.map(r => {
     const page = PAGE_BY_MBID[r.mbid];
     const shownGenre = (page && genre(page)) || GENRES.find(x => x.id === r.genre)?.label || null;
     return {
       id: page?.id || `mb-${r.mbid}`, name: r.name, href: page ? pageUrl(page.id) : `https://musicbrainz.org/artist/${r.mbid}`,
       page: !!page, genre: shownGenre, g: r.genre, hometown: page ? hometown(page) : null,
-      listeners: r.listeners, firstYear: r.firstRelease ? r.firstRelease.slice(0, 4) : null, score: r.score,
+      listeners: r.listeners, firstYear: r.firstRelease ? r.firstRelease.slice(0, 4) : null, score: shown(r.score),
       tier: r.tier, route: r.route,
       // Heat (shown, Julian 2026-10-19): US listeners this week per 1,000 all-time listeners.
       heat: r.heat, heatTitle: r.heat ? `Heat Score ${Math.round(r.heat)}: ${Math.round(r.heat)} of every 1,000 of ${r.name}'s all-time Last.fm listeners played them in the US this week (${fmt(r.weekly)} of ${fmt(r.listeners)})` : null,

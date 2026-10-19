@@ -91,8 +91,9 @@ document.querySelectorAll(".genre-bar button").forEach(b => b.addEventListener("
   history.replaceState(null, "", url);
   applyGenre(genre);
   window.dispatchEvent(new CustomEvent("cosignr:genre", { detail: { genre } }));
-  // Jump to the first list it filters, like the Trending nav link (Julian, 2026-10-19).
-  document.getElementById("trending")?.scrollIntoView({ behavior: "smooth" });
+  // Jump like the nav links (Julian, 2026-10-19): a genre goes to Trending, the first list it filters;
+  // "All" goes back to Featured.
+  document.getElementById(genre ? "trending" : "featured")?.scrollIntoView({ behavior: "smooth" });
 }));
 if (currentGenre()) applyGenre(currentGenre());
 

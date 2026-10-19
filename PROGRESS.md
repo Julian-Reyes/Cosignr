@@ -152,6 +152,7 @@ Goal: every section renders from one data file, no text is baked into images, an
 
 ## Log
 
+- **2026-10-19 (Yena fix + small edits):** `mbidFixes` (hand-checked Last.fm namesake corrections, first entry YENA → the Korean singer) used by fetch-trending/rising/stats; "All" scrolls to Featured; Rising Score label, shifted so #1 in All shows 9.9.
 - **2026-10-19 (Commons photos):** Spotify images: checked Spotify's Developer Policy and Design Guidelines; our use (cropping, text over photos, no Spotify logo, next to Apple content) doesn't comply. Julian: leave as is for now. Added hand-checked Commons photos for Geese (CC BY 4.0), Loathe (CC BY-SA 4.0), Yena (CC BY 3.0) and a page fallback when Spotify has no photo; fixed Wikidata redirects in fetch-sources (underscores). Found: the Yena page is bound to an Italian namesake's MBID via Last.fm (fix proposed).
 - **2026-10-19 (sticky genre bar):** The genre bar now sticks under the nav; site.js measures both bars to place it and to set the scroll offset for section links.
 - **2026-10-19 (Rising display):** Rising score out of 10; "Heat Score" label. (Replacing the number column with a "backing fact" was a mistake made without asking; reverted to the Rising score, since those facts are already in the row text.) Photo workaround via song.link failed (public API closed); none of the 7 photo-less Rising artists are on Apple's chart, so the cover-art fallback doesn't apply to them. Next: Spotify Web API key (Julian to create) or leave initials.

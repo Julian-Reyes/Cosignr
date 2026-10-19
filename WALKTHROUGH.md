@@ -163,7 +163,7 @@ Some safety checks:
 
 ## Genres
 
-A thin white bar under the nav (it stays on screen with the nav as you scroll) lets visitors pick a genre: All, Hip-Hop, Pop, R&B, Indie, Electronic, Rock, Country or Latin. Picking one filters Trending, Rising, Hot Right Now and Most Cosigned (Featured stays as it is), scrolls down to Trending, and adds `?genre=hip-hop` to the address so the view can be shared.
+A thin white bar under the nav (it stays on screen with the nav as you scroll) lets visitors pick a genre: All, Hip-Hop, Pop, R&B, Indie, Electronic, Rock, Country or Latin. Picking one filters Trending, Rising, Hot Right Now and Most Cosigned (Featured stays as it is), scrolls down to Trending ("All" goes back up to Featured), and adds `?genre=hip-hop` to the address so the view can be shared.
 
 Artists' genres are detailed ("Brostep", "Emo Rap", "Indie Pop"), so each one is folded into one of the eight groups by a short list of rules in `src/lib/shared.js`. The first rule that matches wins, which is why "Indie Pop" counts as Indie and "Emo Rap" as Hip-Hop. Chart songs use Apple's genre tag. YouTube doesn't give genres, so a video only has one when it's by an artist with a Cosignr page; most videos disappear when a genre is picked.
 
@@ -182,7 +182,7 @@ Under Trending, **Rising** shows artists on the way up. Like other "rising" char
 
 **How they're ranked:** anyone on **Apple's US top 100** comes first, then anyone on **Last.fm's US top tracks**, then everyone else. Within each group, chart position counts most, then cosigns from big artists in the last year (any artist with over a million listeners counts as big, and Apple's own song credits count as proof of a collab), then heat or listener growth.
 
-Each row's number is the **Rising score**, out of 10. It only orders artists within their group (Apple chart, Last.fm chart, everyone else). The facts behind it (chart positions, Heat Score, cosigns) are in the row itself.
+Each row's number is the **Rising Score**. The top artist in "All" always shows 9.9 and everyone else is shifted by the same amount, so the gaps between artists stay the same. It only orders artists within their group (Apple chart, Last.fm chart, everyone else). The facts behind it (chart positions, Heat Score, cosigns) are in the row itself.
 
 Rising artists and the big artists who cosigned them get light artist pages. Listener growth will matter more once a week or two of daily numbers have built up.
 

@@ -30,6 +30,7 @@ import { mb } from "./lib/musicbrainz.mjs";
 import { loadArtists } from "./lib/artists.mjs";
 import { mergeCosigns } from "../src/lib/cosigns.js";
 import { genreGroup } from "../src/lib/shared.js";
+import { loadMbidFixes, fixChartMbids, lastfmNameFor } from "./lib/mbid-fixes.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const MIN_LISTENERS = 5_000;     // below it were kids credited on a parent's song, labels, actors, mismatched pages
@@ -90,7 +91,9 @@ async function lastfmInfo(mbid, name) {
   if (wait > 0) await new Promise(r => setTimeout(r, wait));
   lastCall = Date.now();
   try {
-    const res = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&mbid=${mbid}&autocorrect=0&format=json&api_key=${KEY}`, { headers: UA });
+    const byName = lastfmNameFor(MBID_FIXES, mbid); // corrected ID: Last.fm only knows the page by name
+    const q = byName ? `artist=${encodeURIComponent(byName)}` : `mbid=${mbid}`;
+    const res = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&${q}&autocorrect=0&format=json&api_key=${KEY}`, { headers: UA });
     const d = await res.json();
     lastfmCache[mbid] = d.error ? { name: null, at: new Date().toISOString() }
       : { name: d.artist.name, listeners: Number(d.artist.stats.listeners), tags: (d.artist.tags?.tag || []).map(t => t.name), at: new Date().toISOString() };
@@ -109,6 +112,8 @@ const fameOf = mbid => {
 const chartFiles = (await readdir(path.join(ROOT, "data/charts"))).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().reverse();
 let now = null;
 for (const f of chartFiles) { const c = await read(`charts/${f}`); if (c.appleUsSongs) { now = c; break; } }
+const MBID_FIXES = await loadMbidFixes();
+fixChartMbids(now, MBID_FIXES); // Last.fm namesake IDs (YENA)
 if (!now) { console.error("No Apple chart in data/charts/"); process.exit(1); }
 const olderThan = (date, days) => {
   const target = iso(Date.parse(date) - days * 864e5);

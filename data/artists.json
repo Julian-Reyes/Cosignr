@@ -113,6 +113,12 @@
     "yena":   "20241004 Choi Yena Music Bank 2024 05.jpg"
   },
 
+  "_mbidFixesNote": "Hand-checked corrections for Last.fm pages tagged with a namesake's MusicBrainz ID (Julian, 2026-10-19). On Last.fm, page lastfmName with ID wrong is really artist right. Used by fetch-trending, fetch-rising and fetch-stats (scripts/lib/mbid-fixes.mjs).",
+  "mbidFixes": [
+    { "lastfmName": "YENA", "wrong": "28387ab9-0a6c-4de9-8ebc-852288e3466e", "right": "745c5b92-325f-451d-bd52-e6b95229c776",
+      "note": "Last.fm's YENA is the Korean singer (ex-IZ*ONE); the ID it carries is an Italian italodance DJ also called Yena" }
+  ],
+
   "demo": {
     "_note": "Saved 2026-10-19 (git tag demo-12-artists): the hand-picked Trending lists from the 12-artist mockup, replaced by chart-driven Trending (TRENDING.md). Not read by the site or scripts; kept to rebuild a demo page. trending = the old All list; top = the old Top Artists (replaced 2026-10-19 by real most-cosigned counts); genrePicks = 5 per genre; curated = artists who got light pages only for genre picks.",
     "trending": ["g-jones", "the-drums", "jaws", "saba", "jackal", "ski-mask"],
