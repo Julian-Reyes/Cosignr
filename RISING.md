@@ -42,6 +42,10 @@ Trending stays as it is. The listener-growth "rising" from `data/snapshots/` (PR
 
 **Cost:** MusicBrainz is 1 request/second. Roughly 100–200 cosigners × 1–2 requests, plus ~3 requests per candidate (reissue, first release; Last.fm separately) ≈ 10–15 min on the first run, a few minutes after caching. Acceptable inside the nightly job (cosigns already takes ~7 min).
 
+## Heat ratio: a day-one rising signal (found 2026-10-19)
+
+Ratio = Last.fm US listeners this week ÷ all-time global listeners × 1000 (both from `data/charts/`). Small artists whose listeners are concentrated in *this week* score high, so it works without weeks of history. Top of the US top 200 on 2026-10-18: ADÉLA 50.4, Lucy Bedroque 50.1, underscores 41.0 (Porter Robinson cosign), Cameron Winter 37.6, OsamaSon 36.6, Jane Remover 36.2, Che, Ninajirachi (Porter Robinson cosign), Tiffany Day, nettspend, 2hollis, Bladee. Legacy acts sit at the bottom (Coldplay, Queen, Eminem 2.8). Julian: "really good information, good for the rising section". Candidate ingredient next to "cosigned by a big artist". Limits: only artists in both Last.fm top-1000 charts (others need artist.getInfo); refreshes weekly; US ÷ global undercounts artists big abroad.
+
 ## By genre (discussed 2026-10-16, not decided)
 
 Julian's worry: Hip-Hop and Pop crowding out Indie and others. Plugs into the existing genre bar like Trending does: **All** = mixed list with a genre quota (e.g. at most 2 per genre in the top 5, or round-robin); **a genre** = that genre's own Rising list, ranked within the genre.

@@ -10,7 +10,8 @@ Read `PROGRESS.md` for where things stand and `WALKTHROUGH.md` for the human-fac
 cosignr/
   ASTRO.md                The approved plan for the Astro move + artist pages (phases A–C)
   HOT.md                  Plan for the "Hot Right Now" home section (built 2026-10-16)
-  RISING.md               Draft plan for a "Rising" section (newcomers cosigned by big artists); open decisions listed, not built
+  RISING.md               Draft plan for a "Rising" section (newcomers cosigned by big artists, heat ratio); open decisions listed, not built
+  TRENDING.md             Draft plan: Trending from current data (Apple Music main, Last.fm fills thin genres); open decisions listed, not built
   astro.config.mjs        Astro config: static output, base "/Cosignr" (GitHub Pages project site)
   package.json            astro, @astrojs/react, react (exact versions; Node 22.12+)
   src/layouts/Base.astro  Shared frame: head, top bar, nav, footer, modal/dev-panel islands
@@ -79,7 +80,7 @@ Refresh generated data, in this order: `node scripts/fetch-charts.mjs` (independ
 - **Be polite to free APIs.** Send a descriptive User-Agent. MusicBrainz is max 1 request/second. Cache results in `data/` instead of calling APIs from the browser.
 - **Wikimedia thumbnails** only exist at standard widths (330, 500, 960, 1280...). Other widths, like 400, return an error.
 - **The Cosignr score is career size, not heat** (Julian, 2026-10-16): all-time Last.fm listeners/plays + Deezer followers. Deezer skews Europe and long careers (Eminem 86 > Ye 85 on Deezer fans alone). Don't present it as "trending now"; current signals are the Last.fm US weekly chart and Apple ranks in `data/charts/`.
-- **Last.fm `geo.getTopArtists` is a 7-day window** (saved daily, not a daily count). Last.fm all-time totals can be stale for days (Kendrick unchanged Oct 15→16), so compute growth over 7+ days.
+- **Last.fm `geo.getTopArtists` is a 7-day window** (saved daily, not a daily count), and it seems to refresh weekly (identical 2026-10-16/17, changed Sunday 2026-10-18). `git pull` needs `--rebase` here: the nightly job pushes data commits, so local and GitHub diverge. Last.fm all-time totals can be stale for days (Kendrick unchanged Oct 15→16), so compute growth over 7+ days.
 - **Spotify popularity/followers are gone for new apps** (Feb 2026). Don't plan features around them; the Cosignr score uses Deezer + Last.fm.
 - **Check Deezer IDs by their albums.** fetch-extended.mjs does this automatically: it tries every Deezer ID from MusicBrainz and Wikidata (P2722) and keeps the first page with albums (Daft Punk, Kygo, FERG had empty duplicates linked on MusicBrainz). MusicBrainz sometimes links to an empty duplicate Deezer page, and common names (Jackal) can share one page between several artists. Put known-bad metrics under the artist's `caveats` (key = source) so they're excluded instead of shown.
 - **Deezer is not an approved image source.** Use it for numbers only, not `picture_xl`, unless licensing is checked first.
