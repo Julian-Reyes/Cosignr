@@ -34,6 +34,12 @@ jobs:
         continue-on-error: true               # a Last.fm hiccup shouldn't stop the rest of the refresh
         env:
           LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+      - run: node scripts/fetch-trending.mjs  # who's charting now (Apple + Last.fm fill), TRENDING.md
+        continue-on-error: true               # keeps yesterday's trending.json if a source is down
+        env:
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+      - run: node scripts/fetch-recent-cosigns.mjs  # last 12 months of cosigns for the Trending artists
+        continue-on-error: true
       - run: node scripts/fetch-cosigns.mjs   # ~7 min: MusicBrainz allows 1 request/second
       - run: node scripts/fetch-tours.mjs     # ~3 min first run, then cached
       - run: node scripts/fetch-extended.mjs  # ~1 min: who else gets a page (top cosigners)

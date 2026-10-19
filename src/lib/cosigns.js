@@ -1,13 +1,15 @@
-// Merges the three cosign files into one entry per (from, to) pair. Plain ESM with no imports, so
+// Merges the cosign files into one entry per (from, to) pair. Plain ESM with no imports, so
 // both the site (src/lib/data.js) and the Node scripts (scripts/fetch-extended.mjs) use the same rules.
-//   songs     data/cosigns.json   feature / collab / remix
+//   songs     data/cosigns.json   feature / collab / remix (the roster's full catalogs)
+//   recent    data/recent-cosigns.json  feature / collab, last 12 months of the Trending artists; a pair
+//             cosigns.json already has keeps the cosigns.json version
 //   live      data/tours.json     tour / band
 //   upcoming  data/upcoming.json  shows announced on Ticketmaster (dropped once past)
 // `fame` maps MusicBrainz ID -> Last.fm listeners (stats.json -> cosigners).
 
-export function mergeCosigns({ cosigns, tours, upcoming, fame = {}, today = new Date().toISOString().slice(0, 10) }) {
+export function mergeCosigns({ cosigns, recent, tours, upcoming, fame = {}, today = new Date().toISOString().slice(0, 10) }) {
   const pairs = new Map();
-  const names = { ...upcoming?.artists, ...tours?.artists, ...cosigns.artists };
+  const names = { ...recent?.artists, ...upcoming?.artists, ...tours?.artists, ...cosigns.artists };
   const entry = c => {
     const key = `${c.from}|${c.to}`;
     let e = pairs.get(key);
@@ -19,6 +21,11 @@ export function mergeCosigns({ cosigns, tours, upcoming, fame = {}, today = new 
     return e;
   };
   for (const c of cosigns.cosigns) {
+    const { from, to, ...rest } = c;
+    Object.assign(entry(c), rest);
+  }
+  for (const c of recent?.cosigns || []) {
+    if (pairs.has(`${c.from}|${c.to}`)) continue;
     const { from, to, ...rest } = c;
     Object.assign(entry(c), rest);
   }

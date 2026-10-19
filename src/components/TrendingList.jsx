@@ -1,17 +1,33 @@
-// Trending Artists: sort tabs, search filter, Show More, chip click (search by cosigner) and the
-// demo Cosign button. Rendered at build time and hydrated in the browser.
-// Props are prepared by index.astro: rows hold only what this list shows, not the raw data files.
+// Trending Artists: who's big right now (TRENDING.md). Sort tabs (All sources / Apple Music / Last.fm),
+// genre bar filter, search filter, Show More, chip click (search by cosigner) and the demo Cosign button.
+// Rendered at build time and hydrated in the browser. Props come from trendingRows() in data.js.
+//   All (no genre): top TREND_ALL with at most TREND_PER_GENRE per genre, so Hip-Hop/Country don't fill it.
+//   A genre: everyone charting in that genre.
 import { useEffect, useState } from "react";
-import { METRICS, INITIAL_COUNT, DEFAULT_SOURCE, fmt, imageHtml, viewState, toast, currentGenre, genreLabel } from "../lib/shared.js";
+import { TREND_METRICS, TREND_ALL, TREND_PER_GENRE, INITIAL_COUNT, DEFAULT_SOURCE, fmt, esc, imageHtml, viewState, toast, currentGenre, genreLabel } from "../lib/shared.js";
 
 const Icon = ({ id }) => <svg className="icon"><use href={`#${id}`} /></svg>;
+const SOURCE_LABEL = { apple: "Apple Music", lastfm: "Last.fm" };
 
-export default function TrendingList({ rows, metrics, images }) {
+function capPerGenre(list) {
+  const per = {}, out = [];
+  for (const r of list) {
+    const g = r.g || "other";
+    if ((per[g] || 0) >= TREND_PER_GENRE) continue;
+    per[g] = (per[g] || 0) + 1;
+    out.push(r);
+    if (out.length >= TREND_ALL) break;
+  }
+  return out;
+}
+
+export default function TrendingList({ rows, images, date }) {
+  const metrics = Object.keys(TREND_METRICS);
   const [metric, setMetric] = useState(metrics[0]);
   const [query, setQuery] = useState("");
   const [genre, setGenre] = useState(null); // genre bar, null = All
   const [expanded, setExpanded] = useState(false);
-  const [cosigned, setCosigned] = useState(() => new Set(["saba"])); // demo: accounts aren't live yet
+  const [cosigned, setCosigned] = useState(() => new Set()); // demo: accounts aren't live yet
   const [view, setView] = useState({ source: DEFAULT_SOURCE, dev: false });
 
   useEffect(() => {
@@ -20,7 +36,7 @@ export default function TrendingList({ rows, metrics, images }) {
     if (q) setQuery(q);
     const onSearch = e => setQuery(e.detail.query);
     const onView = e => setView(e.detail);
-    const onGenre = e => setGenre(e.detail.genre);
+    const onGenre = e => { setGenre(e.detail.genre); setExpanded(false); };
     setGenre(currentGenre());
     window.addEventListener("cosignr:search", onSearch);
     window.addEventListener("cosignr:view", onView);
@@ -32,14 +48,14 @@ export default function TrendingList({ rows, metrics, images }) {
     };
   }, []);
 
-  const value = r => r.metrics[metric];
-  // All: the hand-picked Trending list. A genre: its genre picks plus any All artist in that genre.
-  const inView = r => (genre ? r.picks.includes(genre) || (r.all && r.g === genre) : r.all);
-  // Ranked within the current view. Artists without a value for this metric sink to the bottom, in curated order.
-  const ranked = rows.filter(inView).sort((a, b) => (value(b) ?? -1) - (value(a) ?? -1)).map((r, i) => ({ r, rank: i + 1 }));
-  const max = METRICS[metric]?.max || (ranked[0] && value(ranked[0].r)) || 1;
+  const value = r => r[metric];
+  const sorted = rows.filter(r => value(r) != null && (!genre || r.g === genre)).sort((a, b) => value(b) - value(a));
+  const ranked = (genre ? sorted : capPerGenre(sorted)).map((r, i) => ({ r, rank: i + 1 }));
+  const max = TREND_METRICS[metric].max || (ranked[0] && value(ranked[0].r)) || 1;
   const q = query.trim().toLowerCase();
-  const matches = q ? ranked.filter(({ r }) => r.search.some(s => s.toLowerCase().includes(q))) : ranked;
+  // A search looks through everyone charting, not just the capped top 10.
+  const pool = q ? sorted.map((r, i) => ({ r, rank: i + 1 })) : ranked;
+  const matches = q ? pool.filter(({ r }) => r.search.some(s => s.toLowerCase().includes(q))) : pool;
   const visible = q || expanded ? matches : matches.slice(0, INITIAL_COUNT);
 
   const searchFor = name => {
@@ -54,43 +70,51 @@ export default function TrendingList({ rows, metrics, images }) {
     else { next.add(r.id); toast(`You cosigned ${r.name} (demo, not saved yet)`); }
     setCosigned(next);
   };
+  const statText = r => (metric === "now" ? r.now : metric === "apple" ? (r.short || "–") : fmt(r.lastfm));
 
   return (
     <>
       <div className="section-head" id="trending">
         <div>
           <h2>Trending Artists</h2>
-          <p id="trendingSub">Who the artists you love are cosigning right now. Hover a cosign to see the song behind it.</p>
+          <p id="trendingSub">What the US is playing right now: Apple Music today{date ? ` (${date})` : ""}, Last.fm this week. Hover a cosign to see the song behind it.</p>
         </div>
         <div className="tabs" id="metricTabs" role="tablist" aria-label="Sort trending artists">
           <span>Sort by</span>
           {metrics.map(m => (
             <button key={m} className={m === metric ? "active" : ""} type="button" role="tab" aria-selected={m === metric}
-                    title={METRICS[m].title} onClick={() => setMetric(m)}>{METRICS[m].tab}</button>
+                    title={TREND_METRICS[m].title} onClick={() => { setMetric(m); setExpanded(false); }}>{TREND_METRICS[m].tab}</button>
           ))}
         </div>
       </div>
 
       <ol className="trending" id="trendingList">
-        {!visible.length && <li className="empty">{q ? <>No artists match “{query}”{genre ? ` in ${genreLabel(genre)}` : ""}.</> : `No ${genreLabel(genre)} artists in Trending yet.`}</li>}
+        {!visible.length && <li className="empty">{q ? <>No artists match “{query}”{genre ? ` in ${genreLabel(genre)}` : ""}.</> : `No ${genre ? genreLabel(genre) + " " : ""}artists ${metric === "lastfm" ? "on Last.fm's US chart" : metric === "apple" ? "on Apple's US charts" : "charting"} right now.`}</li>}
         {visible.map(({ r, rank }, i) => {
           const on = cosigned.has(r.id);
           const v = value(r);
-          const listeners = r.metrics.listeners;
+          const summary = r.appleText || r.lastfmText;
           return (
             <li key={r.id} className="artist" style={{ animationDelay: `${i * 40}ms` }}>
-              <div className="rank"><b>{v == null ? "–" : rank}</b></div>
+              <div className="rank"><b>{rank}</b></div>
               <div className="avatar-cell">
-                <div className="avatar" dangerouslySetInnerHTML={{ __html: imageHtml(images[r.id], r.name, view.source, { size: "thumb", focus: "center 25%", dev: view.dev }) }} />
-                {/* Phones (Julian, 2026-10-16): score badge on the photo's top-left, listeners under it. */}
-                {r.metrics.score != null && <div className="m-score" title="Cosignr score">{r.metrics.score}</div>}
-                {listeners != null && <div className="m-listeners"><b>{fmt(listeners)}</b><small>listeners</small></div>}
+                {r.art
+                  // No Cosignr page: their top chart entry's cover art, linking back to Apple Music.
+                  ? <a className="avatar" href={r.art.url} target="_blank" rel="noopener" title="Cover art: Apple Music"
+                       dangerouslySetInnerHTML={{ __html: `<img src="${esc(r.art.src)}" alt="${esc(r.name)}" loading="lazy">` }} />
+                  : <div className="avatar" dangerouslySetInnerHTML={{ __html: imageHtml(images[r.id], r.name, view.source, { size: "thumb", focus: "center 25%", dev: view.dev }) }} />}
+                {/* Phones (Julian, 2026-10-16): score badge on the photo's top-left, the current number under it. */}
+                <div className="m-score" title="Trending score">{r.now}</div>
+                {r.short && <div className="m-listeners"><b>{r.short}</b><small>{r.apple != null ? "on Apple" : "this week"}</small></div>}
               </div>
               <div>
-                <h3><a className="artist-link" href={r.href}>{r.name}</a></h3>
+                <h3>
+                  {r.href ? <a className="artist-link" href={r.href}>{r.name}</a> : r.name}
+                  <span className={`src-tag src-${r.source}`} title={r.source === "lastfm" ? "Added from Last.fm: Apple's chart barely covers this genre" : "From Apple Music's US charts"}>{SOURCE_LABEL[r.source]}</span>
+                </h3>
                 <div className="meta">
                   {[r.genre, r.hometown].filter(Boolean).join(" · ")}
-                  {listeners != null && <span className="meta-listeners">{r.genre || r.hometown ? " · " : ""}<b>{fmt(listeners)} listeners</b></span>}
+                  {summary && <span className="meta-listeners">{r.genre || r.hometown ? " · " : ""}<b>{summary}</b></span>}
                 </div>
                 <div className="cosigns">
                   <h5>Cosigned by</h5>
@@ -103,10 +127,10 @@ export default function TrendingList({ rows, metrics, images }) {
                     : <span className="no-cosigns">No cosigns found yet</span>}
                 </div>
               </div>
-              <div className="stat" title={v == null && r.caveat ? r.caveat : undefined}>
-                <b>{v == null ? "–" : metric === "score" ? v : fmt(v)}</b>
-                <small>{v == null ? "No reliable data yet" : METRICS[metric].label}</small>
-                <div className="bar"><i style={{ width: `${v == null ? 0 : Math.round(v / max * 100)}%` }} /></div>
+              <div className="stat">
+                <b>{statText(r)}</b>
+                <small>{TREND_METRICS[metric].label}</small>
+                <div className="bar"><i style={{ width: `${Math.round(v / max * 100)}%` }} /></div>
               </div>
               <button className={`cosign-btn${on ? " on" : ""}`} type="button" aria-pressed={on} onClick={() => toggleCosign(r)}>
                 <Icon id={on ? "i-check" : "i-plus"} />{on ? "Cosigned" : "Cosign"}

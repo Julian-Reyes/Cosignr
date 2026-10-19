@@ -780,6 +780,14 @@ footer .data-sources a:hover{ color: #fff; }
 .m-listeners b{ display: block; font-size: .95em; font-weight: 800; }
 .m-listeners small{ display: block; font-size: .62em; color: var(--muted); }
 
+/* Trending source tag (TRENDING.md): where an artist's "now" numbers come from */
+.src-tag{
+  display: inline-block; margin-left: 10px; vertical-align: middle;
+  font-size: .5em; font-weight: 700; letter-spacing: .02em;
+  padding: 2px 8px; border-radius: 99px; background: #eef2f4; color: var(--muted);
+}
+.src-tag.src-lastfm{ background: #fff1e6; color: #9a5a2c; }
+
 /* Genre bar (Julian, 2026-10-16): thin white strip under the nav, not sticky. Filters Trending, Hot Right Now, Top. */
 .genre-bar{
   display: flex;

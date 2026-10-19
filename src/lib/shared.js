@@ -1,15 +1,17 @@
 // Helpers used both at build time (Astro pages) and in the browser (React islands, site scripts).
 // No data imports here: anything that runs in the browser must not pull in data/*.json.
 
-// Trending sort options. Only metrics that at least one artist has are shown as tabs.
-// `max` fixes the bar scale (score is out of 100); otherwise bars are relative to the leader.
-export const METRICS = {
-  score:     { tab: "Score",     label: "Cosignr score",     max: 100,
-               title: "0–100, from Deezer fans and Last.fm listeners/plays on a log scale" },
-  listeners: { tab: "Listeners", label: "Last.fm listeners" },
-  plays:     { tab: "Plays",     label: "Last.fm plays" },
-  fans:      { tab: "Fans",      label: "Deezer fans" },
+// Trending sort tabs. `max` fixes the bar scale (the score is out of 100); otherwise bars are
+// relative to the leader. (The all-time Score/Listeners/Plays/Fans tabs were retired 2026-10-19.)
+// (TRENDING.md, Julian 2026-10-19: tabs for now, may go later.) All current data.
+export const TREND_METRICS = {
+  now:    { tab: "All sources", label: "Trending score", max: 100,
+            title: "0–100: Apple Music chart position (US, today), Last.fm for genres Apple barely charts" },
+  apple:  { tab: "Apple Music", label: "Apple chart points", title: "Songs and albums in Apple Music's US top 100 today (101 − rank each)" },
+  lastfm: { tab: "Last.fm",     label: "US listeners this week", title: "Last.fm US chart, last 7 days" },
 };
+export const TREND_ALL = 10;      // "All" shows the top 10…
+export const TREND_PER_GENRE = 2; // …with at most 2 per genre (Julian, 2026-10-19)
 export const INITIAL_COUNT = 4;
 export const CHIP_COUNT = 4;
 

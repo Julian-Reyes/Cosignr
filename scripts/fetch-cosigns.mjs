@@ -12,47 +12,22 @@
 // pairs between a band and its own members, and pairs where neither artist is on our roster.
 // Posthumous: a song released after the cosigner died (or after a band split up) doesn't count,
 // because a cosign means the artist personally vouched. End dates are cached in
-// data/cache/mb-lifespans.json and refreshed after LIFESPAN_MAX_AGE_DAYS.
+// data/cache/mb-lifespans.json (rules shared with fetch-recent-cosigns.mjs: scripts/lib/cosign-rules.mjs).
 // Cosigns are grouped per (from, to) pair. `songs` counts distinct song titles, so versions,
 // edits and remixes of one song count once. `vouches` counts the songs that are a feature or remix:
 // explicit vouching, which ranks above collab-only pairs (often duo partners or joint albums).
 //
 // Usage (from the project root):  node scripts/fetch-cosigns.mjs
 
-import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { mb } from "./lib/musicbrainz.mjs";
+import { SKIP, isMashup, songKey, splitCredit, lifespans, afterEnd } from "./lib/cosign-rules.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const EVIDENCE_PER_COSIGN = 3;
 const MAX_REMIX_LOOKUPS = 60; // per artist; each is one request
-const LIFESPAN_MAX_AGE_DAYS = 30;
-const LIFESPAN_CACHE = path.join(ROOT, "data/cache/mb-lifespans.json");
-// Special-purpose MusicBrainz artists that aren't real people or groups.
-const SKIP = new Set([
-  "89ad4ac3-39f7-470e-963a-56509c546377", // Various Artists
-  "125ec42a-7229-4250-afc5-e057484327fe", // [unknown]
-  "f731ccc4-e22a-43af-a747-64213329e088", // [anonymous]
-  "9be7f096-97ec-4615-8957-8d40b5dcbc41", // [traditional]
-]);
-const FEAT = /\b(feat|ft|featuring|with)\b\.?/i;
-// "bootleg" in a title is an unofficial remix even when a producer puts it on an official release.
-const isMashup = rec => / \/ |\bmedley\b|\bmash-?up\b|\bmegamix\b|\bbootleg\b/i.test(rec.title)
-  || /dj-?mix|mash-?up/i.test(rec.disambiguation || "");
-
-const songKey = title => title.toLowerCase().replace(/\s*[([].*?[)\]]/g, "").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
-
-// Splits an artist credit into main artists and guests.
-function splitCredit(credit) {
-  const main = [], guests = [];
-  let target = main;
-  for (const c of credit) {
-    if (!SKIP.has(c.artist.id)) target.push({ mbid: c.artist.id, name: c.artist.name });
-    if (FEAT.test(c.joinphrase || "")) target = guests;
-  }
-  return { main, guests };
-}
 
 const names = {};       // mbid -> name
 const members = new Set(); // "band|member" and "member|band" for roster bands
@@ -140,28 +115,12 @@ for (const a of artists) {
 const roster = Object.fromEntries(artists.filter(a => a.ids.musicbrainz).map(a => [a.ids.musicbrainz, a.id]));
 const kept = [...edges.values()].filter(e => roster[e.from] || roster[e.to]);
 
-// Posthumous filter: look up when each cosigner died or split up (cached).
-let lifespans = {};
-try { lifespans = JSON.parse(await readFile(LIFESPAN_CACHE, "utf8")); } catch {}
-const stale = e => !e || Date.now() - Date.parse(e.fetchedAt) > LIFESPAN_MAX_AGE_DAYS * 864e5;
-const cosigners = [...new Set(kept.map(e => e.from))].filter(m => stale(lifespans[m]));
-console.log(`\nLooking up end dates for ${cosigners.length} cosigners (rest cached)…`);
-for (const m of cosigners) {
-  try {
-    const a = await mb(`artist/${m}`);
-    lifespans[m] = { end: a["life-span"]?.end || null, ended: !!a["life-span"]?.ended, type: a.type || null, fetchedAt: new Date().toISOString() };
-  } catch (err) { console.warn(`  ! lifespan ${names[m]}: ${err.message}`); }
-}
-await mkdir(path.dirname(LIFESPAN_CACHE), { recursive: true });
-await writeFile(LIFESPAN_CACHE, JSON.stringify(lifespans) + "\n");
-
-// Partial dates ("2018", "2018-06"): pad the song date to its earliest day and the end date to its
-// latest ("2018" -> "2018-31-31" sorts after every real 2018 date), so only clear cases are dropped.
-const after = (date, end) => date && end && date.padEnd(10, "-01") > end.padEnd(10, "-31");
+// Posthumous filter: drop songs released after the cosigner died or split up.
+const ends = await lifespans(kept.map(e => e.from), names);
 let posthumous = 0;
 for (const e of kept) {
-  const end = lifespans[e.from]?.end;
-  for (const [k, song] of e.songs) if (after(song.date, end)) { e.songs.delete(k); posthumous++; }
+  const end = ends[e.from]?.end;
+  for (const [k, song] of e.songs) if (afterEnd(song.date, end)) { e.songs.delete(k); posthumous++; }
 }
 console.log(`Dropped ${posthumous} posthumous songs`);
 

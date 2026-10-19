@@ -53,7 +53,9 @@ const hot = hotFor(a);
           <a class="btn-source" href={`https://musicbrainz.org/artist/${a.ids.musicbrainz}`} target="_blank" rel="noopener">MusicBrainz</a>
         </div>
         {stats.rows.some(r => r.note) && <p class="hero-note">* Left out of the score: hover it to see why.</p>}
-        {a.extended && <p class="hero-note">Only cosigns involving artists Cosignr tracks so far are shown for {a.name}.</p>}
+        {a.extended && <p class="hero-note">{a.trending
+          ? `Cosigns from ${a.name}'s songs of the last 12 months, plus any with the artists Cosignr follows closely.`
+          : `Only cosigns involving artists Cosignr tracks so far are shown for ${a.name}.`}</p>}
       </div>
     </section>
 

@@ -72,9 +72,22 @@ Spotify stopped giving popularity and follower counts to new apps in February 20
 
 The **Cosignr score (0–100)** blends these. Each number is put on a log scale (so 1k → 10k counts as much as 1M → 10M) against fixed ranges, then averaged. Because the ranges are fixed, an artist's score doesn't change just because we add someone bigger. With both sources, scores currently run from 32 (G Jones, Jaws) to 89 (Drake). Last.fm pulls up the US and underground artists that Deezer undercounts: G Jones was 5 on Deezer alone.
 
-All three numbers are **career totals**, so the score says how big an artist is overall, not how hot they are right now. Eminem scores 86, above Ye and Kendrick, mostly because of his huge Deezer following, even though he isn't on this week's charts. Making Trending use current numbers (the weekly Last.fm US chart and Apple's ranks) is the next thing to decide; see PROGRESS.md.
+All three numbers are **career totals**, so the score says how big an artist is overall, not how hot they are right now. Eminem scores 86, above Ye and Kendrick, mostly because of his huge Deezer following, even though he isn't on this week's charts. That's why Trending no longer uses it (see "Trending" below); the score stays on artist pages and in Top.
 
-The Trending list ranks by score by default. The "Sort by" tabs switch between whichever numbers exist (Score, Fans, and later Listeners and Plays). The old Now / This Week / Month / Year tabs are gone because they showed made-up numbers. Real "rising this week" rankings come back once enough daily snapshots have built up. Each row also shows Last.fm listeners after the hometown. On smaller screens, where the number column on the right is hidden, the Cosignr score appears as a peach badge on the photo's top-left corner, and on phones the listener count moves under the photo.
+## Trending
+
+Trending shows **who's big right now**, from real charts, not a hand-picked list (TRENDING.md). Every night `scripts/fetch-trending.mjs` reads the newest charts and writes `data/trending.json`:
+
+- **Apple Music is the main source.** Every lead artist on Apple's US top 100 songs and top 100 albums is in the pool (about 85). Each chart entry earns points for its position (#1 = 100 points, #100 = 1), added up per artist, so one huge hit and a lot of chart entries both count. Old songs still on the chart count too.
+- **Last.fm fills the genres Apple barely charts.** Apple's US chart is mostly Hip-Hop and Country, with almost no Rock or Electronic. For any genre with fewer than 5 Apple artists, up to 20 artists are added from Last.fm's US weekly chart. They must pass a **heat check**: this week's US listeners divided by their all-time listeners, times 1,000, must be at least 10. That keeps out bands with a huge steady fanbase (Radiohead scores 7.8) and lets in artists having a moment (Deftones 11.4).
+- **One score.** Each source is turned into 0–100 by position within its own list; Last.fm scores count three quarters as much, so Apple leads.
+- **"All" shows the top 10, at most 2 per genre**, so Hip-Hop and Country don't fill it. Picking a genre shows everyone charting in it. The tabs switch between the combined score, Apple only and Last.fm only.
+
+Each row says where its numbers come from ("13 songs · 11 albums in Apple's US top 100 · best #5", or "50k US listeners this week") with a small Apple Music / Last.fm tag. Every charting artist gets a light artist page. The few Apple artists we can't match to MusicBrainz (mostly kids' and sleep albums) show with their album cover, linking to Apple Music. Their cosigns come from the last 12 months of their songs (`scripts/fetch-recent-cosigns.mjs`).
+
+The old hand-picked lists (the six Trending artists, five picks per genre, and the 19 "curated" artists) are kept under `demo` in `data/artists.json` and in the git tag `demo-12-artists`, in case we want to rebuild the original demo page.
+
+On smaller screens, where the number column is hidden, the Trending score appears as a peach badge on the photo's top-left corner, and on phones the chart summary moves under the photo.
 
 If a number is known to be wrong for an artist, it's listed under `caveats` in `artists.json` and left out. Example: Deezer's "Jackal" page mixes several artists with that name, so his fan count isn't used and he shows "No reliable data yet".
 
@@ -136,11 +149,11 @@ Names link to that artist's Cosignr page if they have one. Otherwise they link t
 
 ## Who gets an artist page
 
-That's our 12 hand-picked artists plus the **top 5 cosigners of each**: 49 more, like Rihanna, Ye, Gorillaz, Skrillex and Florence + the Machine. Later it could be hundreds or thousands.
+That's our 12 hand-picked artists, the **top 5 cosigners of each** (like Rihanna, Ye, Gorillaz, Skrillex and Florence + the Machine), and **everyone in Trending** (about 120 artists charting now). Pages are kept when an artist drops off the chart.
 
 `node scripts/fetch-extended.mjs` picks them every night. It uses the same ranking as the "Cosigned by" chips, so the list can change as new cosigns appear, and it saves the list to `data/extended.json`. It also finds each artist's Wikidata, Spotify and Deezer pages through MusicBrainz, so the other scripts can fetch their photo, numbers, hometown and genre like they do for our 12.
 
-These are **light pages**. They show what we know about the artist plus the cosigns they share with our 12 (Rihanna → Travis Scott, Drake). We don't download their whole catalogue, because superstar catalogues would make the nightly job hours long.
+These are **light pages**. They show what we know about the artist plus the cosigns they share with our 12 (Rihanna → Travis Scott, Drake), and for Trending artists, everyone they featured or were featured by in the last 12 months. We don't download whole catalogues, because superstar catalogues would make the nightly job hours long.
 
 Some safety checks:
 - **Duplicate pages.** Spotify and Deezer have empty leftover pages for some artists (Beyoncé, Daft Punk), so the script tries each link and keeps the one with a photo or albums.
@@ -154,7 +167,7 @@ A thin white bar under the nav lets visitors pick a genre: All, Hip-Hop, Pop, R&
 
 Artists' genres are detailed ("Brostep", "Emo Rap", "Indie Pop"), so each one is folded into one of the eight groups by a short list of rules in `src/lib/shared.js`. The first rule that matches wins, which is why "Indie Pop" counts as Indie and "Emo Rap" as Hip-Hop. Chart songs use Apple's genre tag. YouTube doesn't give genres, so a video only has one when it's by an artist with a Cosignr page; most videos disappear when a genre is picked.
 
-**Trending by genre.** "All" shows the hand-picked Trending list. Each genre has five hand-picked artists (`genrePicks` in `data/artists.json`), so every genre always has something to show. Most picks already had a page; 19 artists (such as SZA, Morgan Wallen, Bad Bunny and Deftones) were added in a `curated` list just for this. They get light pages like the top cosigners: photo, stats, hometown and upcoming shows, but their own catalogs aren't read, so most of them show "No cosigns found yet". Ranks are counted within the list you're looking at.
+**Trending by genre.** Picking a genre shows every Trending artist in it, ranked within the genre. Genres Apple barely charts (Rock, Electronic) are filled from Last.fm, so every genre has something to show.
 
 ## Hot Right Now
 

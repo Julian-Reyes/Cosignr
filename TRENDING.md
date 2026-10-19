@@ -1,6 +1,6 @@
 # Trending from real current data: plan (draft, 2026-10-19)
 
-Status: **plan only, not built.** Check in before starting (see CLAUDE.md / memory).
+Status: **built 2026-10-19** (`scripts/fetch-trending.mjs`, `scripts/fetch-recent-cosigns.mjs`, `trendingRows()` in src/lib/data.js, `src/components/TrendingList.jsx`). Implementation note: Last.fm scores are weighted ×0.75 (`LASTFM_WEIGHT`) so Apple artists lead in All.
 
 ## Why
 

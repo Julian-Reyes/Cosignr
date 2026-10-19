@@ -9,7 +9,7 @@ import upcoming from "../../data/upcoming.json";
 import profiles from "../../data/profiles.json";
 import extendedJson from "../../data/extended.json";
 import { mergeCosigns, byCosignerFame } from "./cosigns.js";
-import { genreGroup } from "./shared.js";
+import { genreGroup, GENRES, CHIP_COUNT, fmt } from "./shared.js";
 import { readFileSync, readdirSync } from "node:fs";
 
 export const BASE = import.meta.env.BASE_URL.replace(/\/?$/, "/");
@@ -44,23 +44,14 @@ export const IMAGES = Object.fromEntries(PAGES.map(a => {
   }];
 }));
 
-// ---------- stats ----------
-export function metricValue(artist, metric) {
-  const s = STATS.artists[artist.id];
-  if (!s) return null;
-  switch (metric) {
-    case "score":     return s.score?.value ?? null;
-    case "listeners": return s.excluded.includes("lastfmListeners") ? null : s.lastfm?.listeners ?? null;
-    case "plays":     return s.excluded.includes("lastfmPlays") ? null : s.lastfm?.plays ?? null;
-    case "fans":      return s.excluded.includes("deezerFans") ? null : s.deezer?.fans ?? null;
-  }
-}
-
 // ---------- cosigns ----------
 
 // For each page artist: everyone who cosigned them, ranked by byCosignerFame (src/lib/cosigns.js).
 // Extended artists (light pages) only have cosigns with the roster.
-const MERGED = mergeCosigns({ cosigns: cosignsJson, tours, upcoming, fame: STATS.cosigners });
+// Recent cosigns (fetch-recent-cosigns.mjs) may not exist yet: read it with a fallback, not an import.
+let recentCosigns = null;
+try { recentCosigns = JSON.parse(readFileSync("data/recent-cosigns.json", "utf8")); } catch {}
+const MERGED = mergeCosigns({ cosigns: cosignsJson, recent: recentCosigns, tours, upcoming, fame: STATS.cosigners });
 function buildCosignedBy() {
   const byMbid = Object.fromEntries(PAGES.map(a => [a.ids.musicbrainz, a.id]));
   const out = Object.fromEntries(PAGES.map(a => [a.id, []]));
@@ -308,6 +299,40 @@ export function hotLists() {
     youtubeDate: YOUTUBE ? shortDate(YOUTUBE.fetchedAt) : null,
   };
 }
+
+// ---------- Trending (TRENDING.md) ----------
+// Who's big right now: data/trending.json from fetch-trending.mjs (Apple Music US charts, Last.fm US
+// filling thin genres). Rows for the TrendingList island; only what the list shows.
+const TRENDING = readJson("data/trending.json");
+const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
+
+export function trendingRows() {
+  if (!TRENDING) return [];
+  return TRENDING.artists.map(t => {
+    const page = t.mbid ? PAGE_BY_MBID[t.mbid] : null;
+    const ap = t.apple;
+    const appleText = ap && [ap.songs && plural(ap.songs, "song"), ap.albums && plural(ap.albums, "album")].filter(Boolean).join(" · ")
+      + " in Apple's US top 100" + (ap.best ? ` · best #${ap.best}` : "");
+    const lastfmText = t.lastfm ? `${fmt(t.lastfm.listeners)} US listeners this week` : null;
+    const cosigners = page ? COSIGNS[page.id] || [] : [];
+    const g = t.genre;
+    const shownGenre = (page && genre(page)) || GENRES.find(x => x.id === g)?.label || null;
+    return {
+      id: page?.id || `apple-${t.appleId || t.mbid}`, name: t.name, href: page ? pageUrl(page.id) : null,
+      genre: shownGenre, g, hometown: page ? hometown(page) : null, source: t.source,
+      now: t.score, apple: ap?.points ?? null, lastfm: t.lastfm?.listeners ?? null,
+      appleText, lastfmText,
+      short: ap ? (ap.songs ? plural(ap.songs, "song") : plural(ap.albums, "album")) : lastfmText ? `${fmt(t.lastfm.listeners)} listeners` : null,
+      // No page (Apple ID not on MusicBrainz/Wikidata): the top chart entry's cover art, linking to Apple Music.
+      art: !page && ap?.top?.art ? { src: ap.top.art.replace(/\/\d+x\d+bb\.(jpg|png)$/, "/240x240bb.$1"), url: ap.top.url } : null,
+      chips: page ? chips(page, CHIP_COUNT) : [],
+      search: [t.name, shownGenre, page && hometown(page), ...cosigners.map(c => c.name)].filter(Boolean),
+    };
+  });
+}
+export const trendingImages = () => Object.fromEntries((TRENDING?.artists || [])
+  .map(t => t.mbid && PAGE_BY_MBID[t.mbid]).filter(Boolean).map(a => [a.id, IMAGES[a.id]]));
+export const trendingDate = () => (TRENDING ? shortDate(TRENDING.chartDate) : null);
 
 // Artist page badges: best Apple Music US song rank (top 100) and a video in YouTube's US top chart.
 export function hotFor(a) {

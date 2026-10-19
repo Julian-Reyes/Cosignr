@@ -7,9 +7,9 @@
 // A metric listed under an artist's `caveats` is fetched but left out of the score.
 //
 // Also fetches Last.fm listeners ("fame", stored under `cosigners`) for everyone linked to a page
-// artist: their cosigners (to rank "Cosigned by" chips) and the artists our roster cosigned (for the
-// "Famous" sort on artist pages). Reads data/cosigns.json, tours.json and upcoming.json, so run
-// those scripts first.
+// artist: their cosigners (to rank "Cosigned by" chips) and the artists they cosigned (for the
+// "Famous" sort on artist pages). Reads data/cosigns.json, recent-cosigns.json, tours.json and
+// upcoming.json, so run those scripts first.
 // Lookup order: MusicBrainz ID, then name, then the artist's other names on MusicBrainz
 // ("Ye" -> "Kanye West"). A name match whose Last.fm page carries a different MusicBrainz ID is
 // accepted only if MusicBrainz redirects that ID to ours (merged duplicates); otherwise it's
@@ -84,8 +84,16 @@ async function lastfmInfo(params, key) {
   // Last.fm reads a "+" in a name as a space unless it's encoded twice ("Florence + the Machine").
   if (params.artist) params = { ...params, artist: params.artist.replace(/\+/g, "%2B") };
   const q = new URLSearchParams({ method: "artist.getinfo", format: "json", autocorrect: "0", api_key: key, ...params });
-  const d = await getJson(`https://ws.audioscrobbler.com/2.0/?${q}`);
-  return d.error ? null : d.artist;
+  // Last.fm sometimes answers 503 for a few minutes (2026-10-19: 24 artists lost their numbers): retry.
+  for (let attempt = 1; ; attempt++) {
+    try {
+      const d = await getJson(`https://ws.audioscrobbler.com/2.0/?${q}`);
+      return d.error ? null : d.artist;
+    } catch (err) {
+      if (!/^5\d\d /.test(err.message) || attempt >= 4) throw err;
+      await new Promise(r => setTimeout(r, 5000 * attempt));
+    }
+  }
 }
 
 // Returns { listeners, name, via } or null if no trustworthy Last.fm page was found.
@@ -179,7 +187,7 @@ try { prevFame = JSON.parse(await readFile(path.join(ROOT, "data/stats.json"), "
 out.cosigners = {};
 try {
   const cosigns = JSON.parse(await readFile(path.join(ROOT, "data/cosigns.json"), "utf8"));
-  for (const file of ["tours.json", "upcoming.json"]) { // tour, touring-band and upcoming cosigns
+  for (const file of ["recent-cosigns.json", "tours.json", "upcoming.json"]) { // recent songs, tours, touring band, upcoming
     try {
       const more = JSON.parse(await readFile(path.join(ROOT, "data", file), "utf8"));
       cosigns.cosigns.push(...more.cosigns);
@@ -187,10 +195,9 @@ try {
     } catch {}
   }
   const rosterMbids = new Map(artists.map(a => [a.ids.musicbrainz, a.id])); // everyone with a page
-  const roster = new Set(artists.filter(a => !a.extended).map(a => a.ids.musicbrainz));
   const cosigners = [...new Set(cosigns.cosigns.flatMap(c => [
-    ...(rosterMbids.has(c.to) ? [c.from] : []), // who vouched for someone with a page
-    ...(roster.has(c.from) ? [c.to] : []),       // who our roster vouched for ("Famous" sort)
+    ...(rosterMbids.has(c.to) ? [c.from] : []),   // who vouched for someone with a page
+    ...(rosterMbids.has(c.from) ? [c.to] : []),   // who page artists vouched for ("Famous" sort)
   ]))].filter(m => cosigns.artists[m]);
   const fresh = e => e && Date.now() - Date.parse(e.fetchedAt) < FAME_MAX_AGE_DAYS * 864e5;
   let fetched = 0, unknown = 0;
