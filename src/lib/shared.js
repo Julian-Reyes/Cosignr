@@ -92,8 +92,16 @@ export function pickImage(img, source) {
   return { src: null, name: "none" };
 }
 
+// The chosen source, or (outside the dev panel) the next best one when it has no photo: Spotify is the
+// default, but a few artists only have a Wikimedia photo (Julian, 2026-10-19). In dev mode a missing
+// source shows initials on purpose, so the sources can be compared.
+export const shownImage = (img, source, dev = false) => {
+  const pick = pickImage(img, source);
+  return pick.src || dev ? pick : pickImage(img, "auto");
+};
+
 export function imageHtml(img, name, source, { size = "large", focus = "center 30%", dev = false } = {}) {
-  const { src, name: used } = pickImage(img, source);
+  const { src, name: used } = shownImage(img, source, dev);
   if (!src) {
     return `<div class="ph" data-src="none" role="img" aria-label="${esc(name)}">
               <span>${esc(initials(name))}</span>
@@ -106,7 +114,7 @@ export function imageHtml(img, name, source, { size = "large", focus = "center 3
 }
 
 export function creditHtml(img, source) {
-  const { src, name } = pickImage(img, source);
+  const { src, name } = shownImage(img, source);
   if (!src?.credit) return "";
   const c = src.credit;
   const text = name === "spotify" ? "Image: Spotify" : `Photo: ${c.author} · ${c.license}`;
@@ -118,7 +126,7 @@ export function creditHtml(img, source) {
 // Footer photo credits: <li> items for every artist whose image in this source has a credit.
 export function creditsHtml(images, source) {
   return Object.values(images).map(img => {
-    const { src, name } = pickImage(img, source);
+    const { src, name } = shownImage(img, source);
     if (!src?.credit || name === "original") return "";
     const c = src.credit;
     const license = c.licenseUrl ? `<a href="${esc(c.licenseUrl)}" target="_blank" rel="noopener">${esc(c.license)}</a>` : esc(c.license);

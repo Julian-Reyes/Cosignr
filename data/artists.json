@@ -106,6 +106,13 @@
     { "artist": "rezz", "label": "New Release" }
   ],
 
+  "_commonsPhotosNote": "Hand-checked Wikimedia Commons photos for artists Wikidata has no photo for (Julian, 2026-10-19). Page id -> Commons file name. Each one was checked: the file's category is about that artist and the license is free (CC BY / CC BY-SA). fetch-sources.mjs uses these when Wikidata has no P18 image.",
+  "commonsPhotos": {
+    "geese":  "Geese (band) at White Oak Music Hall Upstairs, Houston, TX, 2024-05-05.png",
+    "loathe": "Loathe (band) 2026.jpg",
+    "yena":   "20241004 Choi Yena Music Bank 2024 05.jpg"
+  },
+
   "demo": {
     "_note": "Saved 2026-10-19 (git tag demo-12-artists): the hand-picked Trending lists from the 12-artist mockup, replaced by chart-driven Trending (TRENDING.md). Not read by the site or scripts; kept to rebuild a demo page. trending = the old All list; top = the old Top Artists (replaced 2026-10-19 by real most-cosigned counts); genrePicks = 5 per genre; curated = artists who got light pages only for genre picks.",
     "trending": ["g-jones", "the-drums", "jaws", "saba", "jackal", "ski-mask"],

@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Builds data/sources.json from the IDs in data/artists.json and data/extended.json (everyone with a page).
 // Free, key-less sources only:
-//   - Wikimedia Commons: lead photo from Wikidata (P18) + license/author for attribution
+//   - Wikimedia Commons: lead photo from Wikidata (P18), or the hand-checked `commonsPhotos` file in
+//                        data/artists.json when Wikidata has none, + license/author for attribution
 //   - Spotify oEmbed:    artist thumbnail (no API key needed)
 //   - Press kit:         local files in public/images/press/<id>.(jpg|png|webp), added by hand with permission
 //
@@ -23,10 +24,14 @@ async function getJson(url) {
   return res.json();
 }
 
-async function wikimedia(qid) {
-  if (!qid) return null;
-  const entity = (await getJson(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`)).entities[qid];
-  const file = entity.claims?.P18?.[0]?.mainsnak?.datavalue?.value;
+async function wikimedia(qid, handFile) {
+  let file = null;
+  if (qid) {
+    // A merged Wikidata item redirects, so its data comes back under the new ID: take whichever entity returns.
+    const entity = Object.values((await getJson(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`)).entities)[0];
+    file = entity.claims?.P18?.[0]?.mainsnak?.datavalue?.value || null;
+  }
+  file ??= handFile || null;
   if (!file) return null;
 
   const api = "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo"
@@ -76,11 +81,12 @@ async function pressFiles() {
 
 const artists = await loadArtists();
 const press = await pressFiles();
+const { commonsPhotos = {} } = JSON.parse(await readFile(path.join(ROOT, "data/artists.json"), "utf8"));
 const out = { generatedAt: new Date().toISOString(), artists: {} };
 
 for (const a of artists) {
   const entry = {};
-  for (const [name, fn] of [["wikimedia", () => wikimedia(a.ids.wikidata)], ["spotify", () => spotify(a.ids.spotify)]]) {
+  for (const [name, fn] of [["wikimedia", () => wikimedia(a.ids.wikidata, commonsPhotos[a.id])], ["spotify", () => spotify(a.ids.spotify)]]) {
     try {
       entry[name] = await fn();
     } catch (err) {

@@ -54,7 +54,7 @@ Using the wrong photos is the fastest way to get a real site into trouble, so ev
 | **Press kit** | 0 of 12 so far | Best, chosen by the artist | Needs permission. Drop files in `images/press/` |
 | *Original (2019)* | 12 of 12 | Low-res, text baked in | Kept only for comparison |
 
-The site shows **Spotify** images by default (consistent, official, covers every artist). **Auto** mode instead uses the best available image for each artist, in the order press kit → Wikimedia → Spotify → original.
+The site shows **Spotify** images by default (consistent, official, covers almost every artist). When an artist has no Spotify photo, the page uses the next best one instead. A few artists Wikidata doesn't know get a hand-checked Wikimedia Commons photo (`commonsPhotos` in `data/artists.json`): Geese, Loathe and Yena so far. **Auto** mode instead uses the best available image for each artist, in the order press kit → Wikimedia → Spotify → original.
 
 ### Comparing them (developer panel)
 
