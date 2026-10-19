@@ -10,8 +10,9 @@ export const TREND_METRICS = {
   apple:  { tab: "Apple Music", label: "Apple chart points", title: "Songs and albums in Apple Music's US top 100 today (101 − rank each)" },
   lastfm: { tab: "Last.fm",     label: "US listeners this week", title: "Last.fm US chart, last 7 days" },
 };
-export const TREND_ALL = 10;      // "All" shows the top 10…
-export const TREND_PER_GENRE = 2; // …with at most 2 per genre (Julian, 2026-10-19)
+// "All" (Julian, 2026-10-19): 20 artists; at most 2 per genre in the top 10, at most 3 per genre overall;
+// artists without a genre (sleep/white-noise albums) are left out of All.
+export const TREND_ALL = [{ upTo: 10, perGenre: 2 }, { upTo: 20, perGenre: 3 }];
 export const INITIAL_COUNT = 5; // Trending shows 5, then Show More adds MORE_COUNT (Julian, 2026-10-19)
 export const MORE_COUNT = 10;
 export const CHIP_COUNT = 4;

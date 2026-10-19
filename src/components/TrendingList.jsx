@@ -1,22 +1,25 @@
 // Trending Artists: who's big right now (TRENDING.md). Sort tabs (All sources / Apple Music / Last.fm),
 // genre bar filter, search filter, Show More, chip click (search by cosigner) and the demo Cosign button.
 // Rendered at build time and hydrated in the browser. Props come from trendingRows() in data.js.
-//   All (no genre): top TREND_ALL with at most TREND_PER_GENRE per genre, so Hip-Hop/Country don't fill it.
+//   All (no genre): 20 artists, max 2 per genre in the top 10 and max 3 overall (TREND_ALL), no ungenred rows.
 //   A genre: everyone charting in that genre.
 import { useEffect, useState } from "react";
-import { TREND_METRICS, TREND_ALL, TREND_PER_GENRE, INITIAL_COUNT, MORE_COUNT, DEFAULT_SOURCE, fmt, esc, imageHtml, viewState, toast, currentGenre, genreLabel } from "../lib/shared.js";
+import { TREND_METRICS, TREND_ALL, INITIAL_COUNT, MORE_COUNT, DEFAULT_SOURCE, fmt, esc, imageHtml, viewState, toast, currentGenre, genreLabel } from "../lib/shared.js";
 
 const Icon = ({ id }) => <svg className="icon"><use href={`#${id}`} /></svg>;
 const SOURCE_LABEL = { apple: "Apple Music", lastfm: "Last.fm" };
 
+// Each step fills up to `upTo` rows with at most `perGenre` per genre; artists skipped by an earlier step
+// are looked at again by the next one (Lil Baby misses the top 10's 2-per-genre cap, then gets #11).
 function capPerGenre(list) {
   const per = {}, out = [];
-  for (const r of list) {
-    const g = r.g || "other";
-    if ((per[g] || 0) >= TREND_PER_GENRE) continue;
-    per[g] = (per[g] || 0) + 1;
-    out.push(r);
-    if (out.length >= TREND_ALL) break;
+  for (const { upTo, perGenre } of TREND_ALL) {
+    for (const r of list) {
+      if (out.length >= upTo) break;
+      if (!r.g || out.includes(r) || (per[r.g] || 0) >= perGenre) continue;
+      per[r.g] = (per[r.g] || 0) + 1;
+      out.push(r);
+    }
   }
   return out;
 }
