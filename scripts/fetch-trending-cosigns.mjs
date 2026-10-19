@@ -7,7 +7,7 @@
 // One paged search per artist finds every recording they're credited on, so both directions come out
 // of it: songs they lead (they cosign the guests) and songs they guest on (the lead cosigns them).
 // Same rules as fetch-cosigns.mjs (scripts/lib/cosign-rules.mjs), plus:
-//   - Official releases only (search filter `status:official`).
+//   - Official releases only (search filter `status:official`), not soundtracks or cast recordings.
 //   - No remixes, edits, flips, covers/arrangements, live or alternate versions (most "flips"/"edits"
 //     are fan uploads; arrangements credit the original artist with the arranger).
 // Each song keeps its earliest date, so a reissue or re-dated live recording can't make an old cosign
@@ -20,7 +20,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { mb } from "./lib/musicbrainz.mjs";
-import { SKIP, isMashup, songKey, splitCredit, lifespans, afterEnd } from "./lib/cosign-rules.mjs";
+import { SKIP, isMashup, songKey, splitCredit, lifespans, afterEnd, isSoundtrackRelease, isCastCredit } from "./lib/cosign-rules.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const EVIDENCE_PER_COSIGN = 3;
@@ -69,7 +69,9 @@ for (const a of trending) {
         if (seen.has(rec.id)) continue;
         seen.add(rec.id);
         if (isMashup(rec) || NOT_ORIGINAL.test(rec.title) || NOT_ORIGINAL.test(rec.disambiguation || "")) continue;
-        if (!(rec.releases || []).some(x => x.status === "Official")) continue;
+        // An Official release that isn't a soundtrack or cast recording, and no "… Cast" in the credit.
+        if (!(rec.releases || []).some(x => x.status === "Official" && !isSoundtrackRelease(x))) continue;
+        if (isCastCredit(rec["artist-credit"])) continue;
         const { main, guests } = splitCredit(rec["artist-credit"] || []);
         if (!main.length || main.length + guests.length < 2) continue;
         for (const m of main) for (const g of guests) add(m, g, "feature", rec);

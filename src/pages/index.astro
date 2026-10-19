@@ -4,7 +4,8 @@ import Base from "../layouts/Base.astro";
 import TrendingList from "../components/TrendingList.jsx";
 import HotList from "../components/HotList.jsx";
 import RisingList from "../components/RisingList.jsx";
-import { DATA, BY_ID, IMAGES, genre, hometown, chips, pageUrl, hotLists, trendingRows, trendingImages, trendingDate, risingRows, risingImages } from "../lib/data.js";
+import TopList from "../components/TopList.jsx";
+import { DATA, BY_ID, IMAGES, genre, hometown, chips, pageUrl, hotLists, trendingRows, trendingImages, trendingDate, risingRows, risingImages, topRows } from "../lib/data.js";
 import { DEFAULT_SOURCE, GENRES, genreGroup, imageHtml, creditHtml } from "../lib/shared.js";
 
 const img = (a, opts) => imageHtml(IMAGES[a.id], a.name, DEFAULT_SOURCE, opts);
@@ -19,8 +20,11 @@ const trendImages = trendingImages();
 // Rising: newcomers recently cosigned by big artists (RISING.md).
 const rising = risingRows();
 const riseImages = risingImages();
+// Most cosigned (replaces the hand-picked 2019 Top list).
+const top = topRows();
+const topImages = Object.fromEntries(top.map(r => [r.id, IMAGES[r.id]]));
 ---
-<Base home images={{ ...Object.fromEntries(DATA.artists.map(a => [a.id, IMAGES[a.id]])), ...trendImages, ...riseImages }}>
+<Base home images={{ ...Object.fromEntries(DATA.artists.map(a => [a.id, IMAGES[a.id]])), ...trendImages, ...riseImages, ...topImages }}>
   <!-- Genre bar (Julian, 2026-10-16): filters Trending, Hot Right Now and Top. Not sticky; Featured stays as is. -->
   <div class="genre-bar" role="toolbar" aria-label="Filter by genre">
     <button type="button" class="active" data-genre="" aria-pressed="true">All</button>
@@ -82,25 +86,6 @@ const riseImages = risingImages();
     <HotList client:load {...hotLists()} />
   </main>
 
-  <section class="bottom" id="top">
-    <h3>Top Artists</h3>
-    <p class="sub">The most cosigned artists on Cosignr of all time.</p>
-    <div class="top-grid" id="topGrid">
-      {DATA.top.map((id, i) => {
-        const a = BY_ID[id];
-        return (
-          <article class="top-card" data-src={usedSource(a)} data-img={a.id} data-genre={genreGroup(genre(a)) || ""}>
-            <Fragment set:html={img(a)} />
-            <span class="num">{i + 1}</span>
-            <div class="overlay">
-              <h3><a class="artist-link" href={pageUrl(a.id)}>{a.name}</a></h3>
-              <p>{a.genre}</p>
-            </div>
-            <Fragment set:html={credit(a).replace(/^<(a|span) /, `<$1 data-credit="${a.id}" `) || `<span hidden data-credit="${a.id}"></span>`} />
-          </article>
-        );
-      })}
-    </div>
-    <p class="genre-empty" id="topEmpty" hidden>No Top Artists in this genre yet.</p>
-  </section>
+  <!-- Most cosigned (Julian, 2026-10-19): real counts, 3 per genre, All time / This year. -->
+  <TopList client:load rows={top} images={topImages} />
 </Base>

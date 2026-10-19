@@ -60,8 +60,8 @@ document.getElementById("searchForm")?.addEventListener("submit", e => {
 });
 
 // ---------- genre bar (home page) ----------
-// Sets ?genre=<id> without reloading, filters the static Top grid and tells the islands (Trending,
-// Hot Right Now) through a "cosignr:genre" event. Featured is not filtered.
+// Sets ?genre=<id> without reloading and tells the islands (Trending, Rising, Hot Right Now, Most
+// Cosigned) through a "cosignr:genre" event. Featured is not filtered.
 function applyGenre(genre) {
   for (const b of document.querySelectorAll(".genre-bar button")) {
     const on = (b.dataset.genre || null) === genre;
@@ -70,10 +70,6 @@ function applyGenre(genre) {
     // On phones the bar scrolls sideways: bring the active genre into view (horizontal only).
     if (on) b.parentElement.scrollLeft = b.offsetLeft - (b.parentElement.clientWidth - b.offsetWidth) / 2;
   }
-  const cards = [...document.querySelectorAll(".top-card[data-genre]")];
-  cards.forEach(c => { c.hidden = !!genre && c.dataset.genre !== genre; });
-  const empty = document.getElementById("topEmpty");
-  if (empty) empty.hidden = !genre || cards.some(c => !c.hidden);
 }
 document.querySelectorAll(".genre-bar button").forEach(b => b.addEventListener("click", () => {
   const genre = b.dataset.genre || null;
@@ -82,6 +78,8 @@ document.querySelectorAll(".genre-bar button").forEach(b => b.addEventListener("
   history.replaceState(null, "", url);
   applyGenre(genre);
   window.dispatchEvent(new CustomEvent("cosignr:genre", { detail: { genre } }));
+  // Jump to the first list it filters, like the Trending nav link (Julian, 2026-10-19).
+  document.getElementById("trending")?.scrollIntoView({ behavior: "smooth" });
 }));
 if (currentGenre()) applyGenre(currentGenre());
 

@@ -17,7 +17,7 @@
 //   heat      Last.fm US listeners this week ÷ all-time listeners × 1000 (÷ 30, capped), or growth in
 //             listeners since an earlier snapshot (% ÷ GROWTH_FULL), whichever is stronger
 // Rank: tier first (Apple top 100, then Last.fm US top tracks, then everyone else), then
-//   3 × charting + 2 × cosign + 1 × heat/growth within the tier (Julian: weighting "A").
+//   3 × charting + 2 × cosign + 1 × heat/growth within the tier (Julian: weighting "A"), shown as 0–10.
 // Genre: Last.fm tags → our page genre → MusicBrainz genre → Apple tag → the cosigner's genre.
 //
 // Run after fetch-stats.mjs. Needs LASTFM_API_KEY for chart artists we haven't looked up before.
@@ -246,8 +246,10 @@ for (const c of pool) {
   rows.push({
     mbid: c.mbid, name: c.name, listeners, firstRelease: s.first || null, route, tier, genre,
     heat: heat ? Math.round(heat * 10) / 10 : null, weekly: wk?.listeners ?? null, growthPct: growthPct != null ? Math.round(growthPct * 100) / 100 : null,
+    growthGain: a && b && b >= a ? b - a : null, // new all-time listeners since growthSince ("+3,400 new listeners")
     signals: { chart: Math.round(chart * 100) / 100, cosign: Math.round(cosign * 100) / 100, heat: Math.round(heatOrGrowth * 100) / 100 },
-    score: Math.round((WEIGHTS.chart * chart + WEIGHTS.cosign * cosign + WEIGHTS.heat * heatOrGrowth) * 100) / 100,
+    // 0–10 for display (Julian, 2026-10-19): the weighted sum ÷ the best possible sum × 10.
+    score: Math.round((WEIGHTS.chart * chart + WEIGHTS.cosign * cosign + WEIGHTS.heat * heatOrGrowth) / (WEIGHTS.chart + WEIGHTS.cosign + WEIGHTS.heat) * 100) / 10,
     charts: { apple: c.appleSongs.slice(0, 3), lastfm: c.lfSongs, since: thenDate },
     cosigns: cos.slice(0, 4).map(({ weight, ...x }) => x),
   });

@@ -25,6 +25,15 @@ export const FEAT = /\b(feat|ft|featuring|with)\b\.?/i;
 export const isMashup = rec => / \/ |\bmedley\b|\bmash-?up\b|\bmegamix\b|\bbootleg\b/i.test(rec.title)
   || /dj-?mix|mash-?up/i.test(rec.disambiguation || "");
 
+// Cast recordings and soundtracks don't count (Julian, 2026-10-19): everyone in a cast is credited with
+// the composer, which made Lin-Manuel Miranda the 4th most cosigned artist. MusicBrainz types these
+// unevenly, so the release type, the release title and "Cast" in a credited name are all checked.
+const SOUNDTRACK_TYPES = /soundtrack|cast recording|musical/i;
+const SOUNDTRACK_TITLE = /soundtrack|original (broadway|motion picture|cast|score|television)|music from (and inspired by )?the|\bcast recording\b|\bthe musical\b/i;
+export const isSoundtrackRelease = rel => !!rel && (SOUNDTRACK_TITLE.test(rel.title || "")
+  || (rel["release-group"]?.["secondary-types"] || []).some(t => SOUNDTRACK_TYPES.test(t)));
+export const isCastCredit = credit => (credit || []).some(c => /\bcast\b/i.test(c.name || c.artist?.name || ""));
+
 // One key per song, so versions, edits and remixes of a song count once.
 export const songKey = title => title.toLowerCase().replace(/\s*[([].*?[)\]]/g, "").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
 

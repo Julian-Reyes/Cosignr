@@ -393,7 +393,17 @@ export function risingRows() {
       listeners: r.listeners, firstYear: r.firstRelease ? r.firstRelease.slice(0, 4) : null, score: r.score,
       tier: r.tier, route: r.route,
       // Heat (shown, Julian 2026-10-19): US listeners this week per 1,000 all-time listeners.
-      heat: r.heat, heatTitle: r.heat ? `${Math.round(r.heat)} of every 1,000 of ${r.name}'s all-time Last.fm listeners played them in the US this week (${fmt(r.weekly)} of ${fmt(r.listeners)})` : null,
+      heat: r.heat, heatTitle: r.heat ? `Heat Score ${Math.round(r.heat)}: ${Math.round(r.heat)} of every 1,000 of ${r.name}'s all-time Last.fm listeners played them in the US this week (${fmt(r.weekly)} of ${fmt(r.listeners)})` : null,
+      // The number backing each row (Julian, 2026-10-19): new listeners once a week of snapshots exists,
+      // until then their strongest current fact: Apple rank, else Last.fm US listeners this week.
+      stat: (() => {
+        const days = RISING.growthSince ? Math.round((Date.parse(RISING.chartDate) - Date.parse(RISING.growthSince)) / 864e5) : 0;
+        if (r.growthGain > 0 && days >= 7) return { value: `+${fmt(r.growthGain)}`, label: "new listeners this week" };
+        const best = r.charts?.apple?.[0];
+        if (best) return { value: `#${best.rank}`, label: "on Apple Music US" };
+        if (r.weekly) return { value: fmt(r.weekly), label: "US listeners this week (Last.fm)" };
+        return { value: fmt(r.listeners), label: "Last.fm listeners" };
+      })(),
       // Their own songs charting now (fetch-rising.mjs chart boost): "“WTF GOIN” #48 on Apple Music US ▲32".
       charts: [
         ...(r.charts?.apple || []).slice(0, 2).map(s => `“${s.title}” #${s.rank} on Apple Music US${s.entered ? " · new entry" : s.move >= 3 ? ` · ▲${s.move}` : ""}`),
@@ -406,6 +416,36 @@ export function risingRows() {
 }
 export const risingImages = () => Object.fromEntries((RISING?.artists || [])
   .map(r => PAGE_BY_MBID[r.mbid]).filter(Boolean).map(a => [a.id, IMAGES[a.id]]));
+
+// ---------- Top: most cosigned (Julian, 2026-10-19) ----------
+// Real counts replace the hand-picked 2019 list: distinct artists who cosigned each artist (songs, tours,
+// touring band, upcoming support), all time and in the last 12 months. Only fully covered artists can rank
+// (the roster and everyone charting, whose whole catalogs are crawled); light pages would undercount.
+// The island shows 3 per view (All or a genre).
+export const TOP_COUNT = 3;
+export function topRows() {
+  const covered = new Set([...DATA.artists.map(a => a.ids.musicbrainz), ...(TRENDING?.artists || []).map(t => t.mbid).filter(Boolean)]);
+  const yearAgo = new Date(Date.now() - 365 * 864e5).toISOString().slice(0, 10);
+  const all = {}, year = {};
+  for (const e of MERGED) {
+    if (!covered.has(e.to)) continue;
+    (all[e.to] ??= new Set()).add(e.from);
+    const when = e.next?.date || e.last;
+    if (when && when >= yearAgo) (year[e.to] ??= new Set()).add(e.from);
+  }
+  const rows = [...covered].map(m => PAGE_BY_MBID[m]).filter(a => a && all[a.ids.musicbrainz]).map(a => ({
+    id: a.id, name: a.name, href: pageUrl(a.id), genre: genre(a), g: genreGroup(genre(a)),
+    allTime: all[a.ids.musicbrainz].size, thisYear: year[a.ids.musicbrainz]?.size || 0,
+  }));
+  // Only what any view can show: the top TOP_COUNT per view (All + each genre) for both periods.
+  const keep = new Set();
+  for (const key of ["allTime", "thisYear"]) {
+    const sorted = [...rows].filter(r => r[key] > 0).sort((x, y) => y[key] - x[key]);
+    sorted.slice(0, TOP_COUNT).forEach(r => keep.add(r));
+    for (const g of GENRES) sorted.filter(r => r.g === g.id).slice(0, TOP_COUNT).forEach(r => keep.add(r));
+  }
+  return [...keep];
+}
 
 // Artist page badges: best Apple Music US song rank (top 100) and a video in YouTube's US top chart.
 export function hotFor(a) {

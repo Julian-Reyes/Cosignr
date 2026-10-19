@@ -483,14 +483,16 @@ a.chip{ display: inline-block; border-radius: 6px; transition: transform .15s, b
 }
 .top-card:hover{ transform: translateY(-4px); box-shadow: 0 12px 30px rgba(20,50,70,.2); }
 .top-card{ aspect-ratio: 390 / 276; }
-.top-card > img, .top-card > .ph{
+.top-card .top-img{ width: 100%; height: 100%; }
+.top-card > img, .top-card > .ph, .top-img > img, .top-img > .ph{
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 0;
   transition: transform .5s ease;
 }
-.top-card:hover > img{ transform: scale(1.04); }
+.top-card:hover > img, .top-card:hover .top-img > img{ transform: scale(1.04); }
+.top-toggle{ justify-content: center; margin: -6px 0 22px; }
 .top-card .num{
   position: absolute;
   right: 12px;
@@ -819,6 +821,7 @@ footer .data-sources a:hover{ color: #fff; }
 .hot, .rising{ margin-top: 40px; }
 .rising-charts{ margin: -6px 0 10px; font-size: .85em; font-weight: 700; color: #1a9b5b; }
 .rising-charts .heat{ color: #c2581c; cursor: help; }
+.stat .rise-score{ display: block; margin-top: 6px; font-size: .75em; }
 .hot-list{ list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 /* Rows and cover art sized like the Trending rows (Julian, 2026-10-16); videos keep 16:9 at the same height */
 .hot-row{

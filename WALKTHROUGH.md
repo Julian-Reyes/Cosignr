@@ -163,7 +163,7 @@ Some safety checks:
 
 ## Genres
 
-A thin white bar under the nav lets visitors pick a genre: All, Hip-Hop, Pop, R&B, Indie, Electronic, Rock, Country or Latin. Picking one filters Trending, Hot Right Now and Top Artists (Featured stays as it is), and adds `?genre=hip-hop` to the address so the view can be shared.
+A thin white bar under the nav lets visitors pick a genre: All, Hip-Hop, Pop, R&B, Indie, Electronic, Rock, Country or Latin. Picking one filters Trending, Rising, Hot Right Now and Most Cosigned (Featured stays as it is), scrolls down to Trending, and adds `?genre=hip-hop` to the address so the view can be shared.
 
 Artists' genres are detailed ("Brostep", "Emo Rap", "Indie Pop"), so each one is folded into one of the eight groups by a short list of rules in `src/lib/shared.js`. The first rule that matches wins, which is why "Indie Pop" counts as Indie and "Emo Rap" as Hip-Hop. Chart songs use Apple's genre tag. YouTube doesn't give genres, so a video only has one when it's by an artist with a Cosignr page; most videos disappear when a genre is picked.
 
@@ -178,11 +178,17 @@ Under Trending, **Rising** shows artists on the way up. Like other "rising" char
 - **Little-known:** fewer than 150,000 listeners, however long they've been around (Belly Gang Kushington).
 - **Breaking out:** on the charts right now with high **heat**, under two million listeners, and a first release in the last 12 years (Ella Langley, underscores).
 
-**Heat** is this week's US listeners per 1,000 all-time listeners on Last.fm. A band with a big, steady fanbase scores low (Morgan Wallen about 8); an artist having a moment scores high (ADÉLA about 50). It's shown on each row.
+**Heat Score** is this week's US listeners per 1,000 all-time listeners on Last.fm. A band with a big, steady fanbase scores low (Morgan Wallen about 8); an artist having a moment scores high (ADÉLA about 50). It's shown on each row.
 
 **How they're ranked:** anyone on **Apple's US top 100** comes first, then anyone on **Last.fm's US top tracks**, then everyone else. Within each group, chart position counts most, then cosigns from big artists in the last year (any artist with over a million listeners counts as big, and Apple's own song credits count as proof of a collab), then heat or listener growth.
 
+Each row's number backs up why they're there: "+3.4k new listeners this week" once a week of daily numbers exists, until then their Apple chart position or this week's Last.fm US listeners. The **Rising score** (out of 10) is shown smaller underneath; it only orders artists within their group.
+
 Rising artists and the big artists who cosigned them get light artist pages. Listener growth will matter more once a week or two of daily numbers have built up.
+
+## Most Cosigned
+
+The light-blue band at the bottom shows the **three most cosigned artists**: the ones the most different artists have vouched for (features, collabs, tours, touring band, announced support slots). It follows the genre bar, so Pop shows the three most cosigned pop artists, and a toggle switches between **All time** (default) and **This year** (the last 12 months). Only artists whose whole catalogue we've read can rank (our 12 plus everyone currently charting), since the others would be undercounted. Cast albums and soundtracks don't count: every cast member gets credited with the composer, which once made Lin-Manuel Miranda the fourth most cosigned artist. (This replaced a hand-picked list from the 2019 mockup that claimed to be "the most cosigned of all time".)
 
 ## Hot Right Now
 

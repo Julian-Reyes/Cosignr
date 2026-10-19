@@ -39,7 +39,6 @@ export default function RisingList({ rows, images }) {
   const matches = q ? inGenre.map((r, i) => ({ r, rank: i + 1 })).filter(({ r }) => r.search.some(s => s.toLowerCase().includes(q))) : ranked;
   const visible = q ? matches : matches.slice(0, count);
   const left = matches.length - visible.length;
-  const max = Math.max(...rows.map(r => r.score), 1);
 
   const toggleCosign = r => {
     const next = new Set(cosigned);
@@ -78,7 +77,7 @@ export default function RisingList({ rows, images }) {
                 </div>
                 {(r.heat || r.charts.length > 0) && (
                   <div className="rising-charts">
-                    {r.heat && <span className="heat" title={r.heatTitle}>Heat {Math.round(r.heat)}</span>}
+                    {r.heat && <span className="heat" title={r.heatTitle}>Heat Score {Math.round(r.heat)}</span>}
                     {r.heat && r.charts.length > 0 && " · "}{r.charts.join(" · ")}
                   </div>
                 )}
@@ -91,9 +90,10 @@ export default function RisingList({ rows, images }) {
                 </div>
               </div>
               <div className="stat">
-                <b>{r.score.toFixed(1)}</b>
-                <small>Rising score</small>
-                <div className="bar"><i style={{ width: `${Math.round(r.score / max * 100)}%` }} /></div>
+                <b>{r.stat.value}</b>
+                <small>{r.stat.label}</small>
+                <div className="bar" title={`Rising score ${r.score.toFixed(1)} out of 10`}><i style={{ width: `${Math.round(r.score * 10)}%` }} /></div>
+                <small className="rise-score">Rising score {r.score.toFixed(1)}/10</small>
               </div>
               <button className={`cosign-btn${on ? " on" : ""}`} type="button" aria-pressed={on} onClick={() => toggleCosign(r)}>
                 <Icon id={on ? "i-check" : "i-plus"} />{on ? "Cosigned" : "Cosign"}

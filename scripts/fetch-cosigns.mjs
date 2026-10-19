@@ -23,7 +23,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { mb } from "./lib/musicbrainz.mjs";
-import { SKIP, isMashup, songKey, splitCredit, lifespans, afterEnd } from "./lib/cosign-rules.mjs";
+import { SKIP, isMashup, songKey, splitCredit, lifespans, afterEnd, isSoundtrackRelease, isCastCredit } from "./lib/cosign-rules.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const EVIDENCE_PER_COSIGN = 3;
@@ -50,7 +50,7 @@ function add(from, to, type, rec) {
 }
 
 function fromRecording(rec) {
-  if (isMashup(rec) || !official.has(rec.id)) return;
+  if (isMashup(rec) || !official.has(rec.id) || isCastCredit(rec["artist-credit"])) return;
   const { main, guests } = splitCredit(rec["artist-credit"] || []);
   for (const a of main) for (const g of guests) add(a, g, "feature", rec);
   for (const a of main) for (const b of main) add(a, b, "collab", rec);
@@ -78,9 +78,10 @@ for (const a of artists) {
   //    `track_artist` lists only releases where they're on a track but NOT the release artist.
   for (const param of ["artist", "track_artist"]) {
     for (let offset = 0, count = Infinity; offset < count;) {
-      const page = await mb(`release?${param}=${mbid}&status=official&inc=recordings&limit=100&offset=${offset}`);
+      const page = await mb(`release?${param}=${mbid}&status=official&inc=recordings+release-groups&limit=100&offset=${offset}`);
       count = page["release-count"];
-      for (const rel of page.releases) for (const m of rel.media || []) for (const t of m.tracks || []) official.add(t.recording.id);
+      // Soundtracks and cast recordings don't make a song count (shared rule, cosign-rules.mjs).
+      for (const rel of page.releases) if (!isSoundtrackRelease(rel)) for (const m of rel.media || []) for (const t of m.tracks || []) official.add(t.recording.id);
       offset += page.releases.length;
       if (!page.releases.length) break;
     }

@@ -105,11 +105,11 @@
     { "artist": "tame-impala", "label": "Rising" },
     { "artist": "rezz", "label": "New Release" }
   ],
-  "top": ["the-xx", "porter-robinson", "drake"],
 
   "demo": {
-    "_note": "Saved 2026-10-19 (git tag demo-12-artists): the hand-picked Trending lists from the 12-artist mockup, replaced by chart-driven Trending (TRENDING.md). Not read by the site or scripts; kept to rebuild a demo page. trending = the old All list; genrePicks = 5 per genre; curated = artists who got light pages only for genre picks.",
+    "_note": "Saved 2026-10-19 (git tag demo-12-artists): the hand-picked Trending lists from the 12-artist mockup, replaced by chart-driven Trending (TRENDING.md). Not read by the site or scripts; kept to rebuild a demo page. trending = the old All list; top = the old Top Artists (replaced 2026-10-19 by real most-cosigned counts); genrePicks = 5 per genre; curated = artists who got light pages only for genre picks.",
     "trending": ["g-jones", "the-drums", "jaws", "saba", "jackal", "ski-mask"],
+    "top": ["the-xx", "porter-robinson", "drake"],
     "genrePicks": {
       "hip-hop":    ["drake", "eminem", "ye", "kendrick-lamar", "travis-scott"],
       "pop":        ["rihanna", "lady-gaga", "beyonce", "justin-timberlake", "olivia-rodrigo"],
