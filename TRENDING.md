@@ -1,6 +1,6 @@
 # Trending from real current data: plan (draft, 2026-10-19)
 
-Status: **built 2026-10-19** (`scripts/fetch-trending.mjs`, `scripts/fetch-recent-cosigns.mjs`, `trendingRows()` in src/lib/data.js, `src/components/TrendingList.jsx`). Implementation note: Last.fm scores are weighted ×0.75 (`LASTFM_WEIGHT`) so Apple artists lead in All.
+Status: **built 2026-10-19** (`scripts/fetch-trending.mjs`, `scripts/fetch-trending-cosigns.mjs`, `trendingRows()` in src/lib/data.js, `src/components/TrendingList.jsx`). Implementation note: Last.fm scores are weighted ×0.75 (`LASTFM_WEIGHT`) so Apple artists lead in All.
 
 ## Why
 
@@ -18,7 +18,7 @@ Trending today is hand-picked (the 6 in `trending`, plus 5 `genrePicks` per genr
 
 ## How it would work
 
-**New script `scripts/fetch-trending.mjs` → `data/trending.json`**, nightly right after fetch-charts. Run order becomes: charts → **trending** → **recent-cosigns** → cosigns → tours → extended → sources → upcoming → profiles → stats.
+**New script `scripts/fetch-trending.mjs` → `data/trending.json`**, nightly right after fetch-charts. Run order becomes: charts → **trending** → **trending-cosigns** → cosigns → tours → extended → sources → upcoming → profiles → stats.
 
 1. **Apple pool.** Every *lead* artist (first credited; the only one Apple gives an ID for) across the newest chart's songs + albums (~90 artists on 2026-10-18). Featured artists count only when they have a page and a known cosign with the lead (the Hot Right Now rule).
    - **Points:** each entry earns `101 − rank`, summed over the artist's songs and albums (rewards a big hit and depth: Drake 14 songs + 11 albums = 1437, Zach Bryan 772, Olivia Rodrigo 394).
@@ -28,9 +28,11 @@ Trending today is hand-picked (the 6 in `trending`, plus 5 `genrePicks` per genr
 4. **Artist IDs (Apple → MusicBrainz).** profiles.json already maps page artists' Apple IDs. For new ones: MusicBrainz URL lookup (`url?resource=https://music.apple.com/us/artist/<id>&inc=artist-rels`, also the `itunes.apple.com` form), then Wikidata (`haswbstatement:P2850=<id>`). Cached in `data/cache/apple-mbid.json`. **Unresolved artists** still appear, name only, with their top entry's Apple cover art linking to Apple Music (an approved image use), no page link.
 5. **Pages.** fetch-extended.mjs adds the Trending pool (like the top cosigners), so the other scripts give them photo, stats, hometown, upcoming shows.
 
-## Recent cosigns (last 12 months) for the Trending pool
+## Cosigns for the Trending pool (full history)
 
-**New script `scripts/fetch-recent-cosigns.mjs` → `data/recent-cosigns.json`** (same shape as cosigns.json: `{from, to, types, songs, vouches, first, last, evidence}` + `artists`), run nightly after fetch-trending. `mergeCosigns()` (src/lib/cosigns.js) takes it as one more input, so chips, artist page lists and Hot Right Now markers all pick it up.
+*Changed 2026-10-19 (Julian): first built as the last 12 months, then switched to the full history like the roster ("go before 12 months"). The script is now `scripts/fetch-trending-cosigns.mjs` → `data/trending-cosigns.json`; no date window, no reissue check needed (each song keeps its earliest date). The original 12-month design follows.*
+
+**New script `scripts/fetch-trending-cosigns.mjs` → `data/recent-cosigns.json`** (same shape as cosigns.json: `{from, to, types, songs, vouches, first, last, evidence}` + `artists`), run nightly after fetch-trending. `mergeCosigns()` (src/lib/cosigns.js) takes it as one more input, so chips, artist page lists and Hot Right Now markers all pick it up.
 
 - **Who:** every Trending artist with a MusicBrainz ID (~90 Apple + up to 60 Last.fm ≈ 150). Roster artists are skipped (fetch-cosigns already has their full history).
 - **Query:** MusicBrainz recording search `arid:<id> AND firstreleasedate:[<12 months ago> TO *] AND status:official`, paged at 100 (~1–3 requests per artist, ~5–8 min a night at 1 req/s). One query finds both directions: songs they lead (they cosign the featured artists) and songs they're featured on (the lead cosigns them).
@@ -54,7 +56,7 @@ Trending today is hand-picked (the 6 in `trending`, plus 5 `genrePicks` per genr
 1. **Sort tabs: yes, for now** ("All sources / Apple Music / Last.fm"); may be removed later.
 2. **Pages for artists who drop off the chart: keep them** for now.
 3. **Thin genre = fewer than 5 Apple artists; each thin genre gets up to 20 Last.fm artists** (ratio ≥ 10).
-4. **Cosigns for every Trending artist from the last 12 months** (see "Recent cosigns" above), so rows don't say "No cosigns found yet". Today cosigns only exist for pairs involving the 12 roster artists, because only their catalogs are crawled.
+4. **Cosigns for every Trending artist, full history** (see "Cosigns for the Trending pool" above), so rows don't say "No cosigns found yet". Today cosigns only exist for pairs involving the 12 roster artists, because only their catalogs are crawled.
 
 No open questions left; waiting for Julian's go.
 

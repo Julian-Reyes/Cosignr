@@ -12,7 +12,7 @@
 // pairs between a band and its own members, and pairs where neither artist is on our roster.
 // Posthumous: a song released after the cosigner died (or after a band split up) doesn't count,
 // because a cosign means the artist personally vouched. End dates are cached in
-// data/cache/mb-lifespans.json (rules shared with fetch-recent-cosigns.mjs: scripts/lib/cosign-rules.mjs).
+// data/cache/mb-lifespans.json (rules shared with fetch-trending-cosigns.mjs: scripts/lib/cosign-rules.mjs).
 // Cosigns are grouped per (from, to) pair. `songs` counts distinct song titles, so versions,
 // edits and remixes of one song count once. `vouches` counts the songs that are a feature or remix:
 // explicit vouching, which ranks above collab-only pairs (often duo partners or joint albums).

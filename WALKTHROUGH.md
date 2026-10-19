@@ -83,11 +83,11 @@ Trending shows **who's big right now**, from real charts, not a hand-picked list
 - **One score.** Each source is turned into 0–100 by position within its own list; Last.fm scores count three quarters as much, so Apple leads.
 - **"All" shows the top 10, at most 2 per genre**, so Hip-Hop and Country don't fill it. Picking a genre shows everyone charting in it. The tabs switch between the combined score, Apple only and Last.fm only.
 
-Each row says where its numbers come from ("13 songs · 11 albums in Apple's US top 100 · best #5", or "50k US listeners this week") with a small Apple Music / Last.fm tag. Every charting artist gets a light artist page. The few Apple artists we can't match to MusicBrainz (mostly kids' and sleep albums) show with their album cover, linking to Apple Music. Their cosigns come from the last 12 months of their songs (`scripts/fetch-recent-cosigns.mjs`).
+Each row says where its numbers come from ("13 songs · 11 albums in Apple's US top 100 · best #5", or "50k US listeners this week") with a small Apple Music / Last.fm tag. Every charting artist gets a light artist page. The few Apple artists we can't match to MusicBrainz (mostly kids' and sleep albums) show with their album cover, linking to Apple Music. Their cosigns come from all their songs on MusicBrainz (`scripts/fetch-trending-cosigns.mjs`), the same way as our 12 roster artists, except remixes and covers aren't counted for them yet.
 
 The old hand-picked lists (the six Trending artists, five picks per genre, and the 19 "curated" artists) are kept under `demo` in `data/artists.json` and in the git tag `demo-12-artists`, in case we want to rebuild the original demo page.
 
-On smaller screens, where the number column is hidden, the Trending score appears as a peach badge on the photo's top-left corner, and on phones the chart summary moves under the photo.
+The list shows the top 5; each "Show More" adds 10. On smaller screens, where the number column is hidden, the Trending score appears as a peach badge on the photo's top-left corner, and on phones the chart summary moves under the photo.
 
 If a number is known to be wrong for an artist, it's listed under `caveats` in `artists.json` and left out. Example: Deezer's "Jackal" page mixes several artists with that name, so his fan count isn't used and he shows "No reliable data yet".
 
@@ -153,7 +153,7 @@ That's our 12 hand-picked artists, the **top 5 cosigners of each** (like Rihanna
 
 `node scripts/fetch-extended.mjs` picks them every night. It uses the same ranking as the "Cosigned by" chips, so the list can change as new cosigns appear, and it saves the list to `data/extended.json`. It also finds each artist's Wikidata, Spotify and Deezer pages through MusicBrainz, so the other scripts can fetch their photo, numbers, hometown and genre like they do for our 12.
 
-These are **light pages**. They show what we know about the artist plus the cosigns they share with our 12 (Rihanna → Travis Scott, Drake), and for Trending artists, everyone they featured or were featured by in the last 12 months. We don't download whole catalogues, because superstar catalogues would make the nightly job hours long.
+These are **light pages**. They show what we know about the artist plus the cosigns they share with our 12 (Rihanna → Travis Scott, Drake), and for Trending artists, everyone they featured or were featured by across their whole career. We don't download whole catalogues, because superstar catalogues would make the nightly job hours long.
 
 Some safety checks:
 - **Duplicate pages.** Spotify and Deezer have empty leftover pages for some artists (Beyoncé, Daft Punk), so the script tries each link and keeps the one with a photo or albums.

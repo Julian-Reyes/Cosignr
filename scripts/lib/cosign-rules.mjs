@@ -1,5 +1,5 @@
-// Cosign rules shared by fetch-cosigns.mjs (full catalogs of the roster) and fetch-recent-cosigns.mjs
-// (last 12 months of the Trending artists), so both read MusicBrainz credits the same way.
+// Cosign rules shared by fetch-cosigns.mjs (the roster's release lists) and fetch-trending-cosigns.mjs
+// (the Trending artists' recordings via search), so both read MusicBrainz credits the same way.
 //   "A feat. B"  A cosigns B (feature)      "A & B"  both ways (collab)
 // Skipped: DJ-mix segments, mashups and medleys, bootlegs, special artists (Various Artists…),
 // band ↔ own member, and songs released after the cosigner died or split up.

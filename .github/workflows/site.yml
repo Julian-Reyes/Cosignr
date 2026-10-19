@@ -38,7 +38,7 @@ jobs:
         continue-on-error: true               # keeps yesterday's trending.json if a source is down
         env:
           LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
-      - run: node scripts/fetch-recent-cosigns.mjs  # last 12 months of cosigns for the Trending artists
+      - run: node scripts/fetch-trending-cosigns.mjs  # full cosign history of the Trending artists (MusicBrainz search)
         continue-on-error: true
       - run: node scripts/fetch-cosigns.mjs   # ~7 min: MusicBrainz allows 1 request/second
       - run: node scripts/fetch-tours.mjs     # ~3 min first run, then cached

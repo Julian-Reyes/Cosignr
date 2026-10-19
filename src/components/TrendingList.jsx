@@ -4,7 +4,7 @@
 //   All (no genre): top TREND_ALL with at most TREND_PER_GENRE per genre, so Hip-Hop/Country don't fill it.
 //   A genre: everyone charting in that genre.
 import { useEffect, useState } from "react";
-import { TREND_METRICS, TREND_ALL, TREND_PER_GENRE, INITIAL_COUNT, DEFAULT_SOURCE, fmt, esc, imageHtml, viewState, toast, currentGenre, genreLabel } from "../lib/shared.js";
+import { TREND_METRICS, TREND_ALL, TREND_PER_GENRE, INITIAL_COUNT, MORE_COUNT, DEFAULT_SOURCE, fmt, esc, imageHtml, viewState, toast, currentGenre, genreLabel } from "../lib/shared.js";
 
 const Icon = ({ id }) => <svg className="icon"><use href={`#${id}`} /></svg>;
 const SOURCE_LABEL = { apple: "Apple Music", lastfm: "Last.fm" };
@@ -26,7 +26,7 @@ export default function TrendingList({ rows, images, date }) {
   const [metric, setMetric] = useState(metrics[0]);
   const [query, setQuery] = useState("");
   const [genre, setGenre] = useState(null); // genre bar, null = All
-  const [expanded, setExpanded] = useState(false);
+  const [count, setCount] = useState(INITIAL_COUNT); // rows shown; Show More adds MORE_COUNT
   const [cosigned, setCosigned] = useState(() => new Set()); // demo: accounts aren't live yet
   const [view, setView] = useState({ source: DEFAULT_SOURCE, dev: false });
 
@@ -36,7 +36,7 @@ export default function TrendingList({ rows, images, date }) {
     if (q) setQuery(q);
     const onSearch = e => setQuery(e.detail.query);
     const onView = e => setView(e.detail);
-    const onGenre = e => { setGenre(e.detail.genre); setExpanded(false); };
+    const onGenre = e => { setGenre(e.detail.genre); setCount(INITIAL_COUNT); };
     setGenre(currentGenre());
     window.addEventListener("cosignr:search", onSearch);
     window.addEventListener("cosignr:view", onView);
@@ -56,7 +56,8 @@ export default function TrendingList({ rows, images, date }) {
   // A search looks through everyone charting, not just the capped top 10.
   const pool = q ? sorted.map((r, i) => ({ r, rank: i + 1 })) : ranked;
   const matches = q ? pool.filter(({ r }) => r.search.some(s => s.toLowerCase().includes(q))) : pool;
-  const visible = q || expanded ? matches : matches.slice(0, INITIAL_COUNT);
+  const visible = q ? matches : matches.slice(0, count);
+  const left = matches.length - visible.length;
 
   const searchFor = name => {
     const input = document.getElementById("search");
@@ -83,7 +84,7 @@ export default function TrendingList({ rows, images, date }) {
           <span>Sort by</span>
           {metrics.map(m => (
             <button key={m} className={m === metric ? "active" : ""} type="button" role="tab" aria-selected={m === metric}
-                    title={TREND_METRICS[m].title} onClick={() => { setMetric(m); setExpanded(false); }}>{TREND_METRICS[m].tab}</button>
+                    title={TREND_METRICS[m].title} onClick={() => { setMetric(m); setCount(INITIAL_COUNT); }}>{TREND_METRICS[m].tab}</button>
           ))}
         </div>
       </div>
@@ -140,9 +141,13 @@ export default function TrendingList({ rows, images, date }) {
         })}
       </ol>
 
-      <button className={`showmore${expanded ? " open" : ""}`} id="showMore" type="button" hidden={!!q || matches.length <= INITIAL_COUNT}
-              onClick={() => setExpanded(!expanded)}>
-        <span>{expanded ? "Show Less" : `Show More (${matches.length - INITIAL_COUNT})`}</span> <Icon id="i-down" />
+      {/* 10 more per click, then Show Less (like Hot Right Now). */}
+      <button className={`showmore${left > 0 ? "" : " open"}`} id="showMore" type="button" hidden={!!q || matches.length <= INITIAL_COUNT}
+              onClick={() => {
+                if (left > 0) setCount(c => c + MORE_COUNT);
+                else { setCount(INITIAL_COUNT); document.getElementById("trending")?.scrollIntoView({ behavior: "smooth" }); }
+              }}>
+        <span>{left > 0 ? `Show More (${Math.min(MORE_COUNT, left)})` : "Show Less"}</span> <Icon id="i-down" />
       </button>
     </>
   );

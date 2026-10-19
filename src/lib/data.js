@@ -48,10 +48,10 @@ export const IMAGES = Object.fromEntries(PAGES.map(a => {
 
 // For each page artist: everyone who cosigned them, ranked by byCosignerFame (src/lib/cosigns.js).
 // Extended artists (light pages) only have cosigns with the roster.
-// Recent cosigns (fetch-recent-cosigns.mjs) may not exist yet: read it with a fallback, not an import.
-let recentCosigns = null;
-try { recentCosigns = JSON.parse(readFileSync("data/recent-cosigns.json", "utf8")); } catch {}
-const MERGED = mergeCosigns({ cosigns: cosignsJson, recent: recentCosigns, tours, upcoming, fame: STATS.cosigners });
+// Trending artists' cosigns (fetch-trending-cosigns.mjs) may not exist yet: read with a fallback, not an import.
+let trendingCosigns = null;
+try { trendingCosigns = JSON.parse(readFileSync("data/trending-cosigns.json", "utf8")); } catch {}
+const MERGED = mergeCosigns({ cosigns: cosignsJson, charting: trendingCosigns, tours, upcoming, fame: STATS.cosigners });
 function buildCosignedBy() {
   const byMbid = Object.fromEntries(PAGES.map(a => [a.ids.musicbrainz, a.id]));
   const out = Object.fromEntries(PAGES.map(a => [a.id, []]));

@@ -8,7 +8,7 @@
 //
 // Also fetches Last.fm listeners ("fame", stored under `cosigners`) for everyone linked to a page
 // artist: their cosigners (to rank "Cosigned by" chips) and the artists they cosigned (for the
-// "Famous" sort on artist pages). Reads data/cosigns.json, recent-cosigns.json, tours.json and
+// "Famous" sort on artist pages). Reads data/cosigns.json, trending-cosigns.json, tours.json and
 // upcoming.json, so run those scripts first.
 // Lookup order: MusicBrainz ID, then name, then the artist's other names on MusicBrainz
 // ("Ye" -> "Kanye West"). A name match whose Last.fm page carries a different MusicBrainz ID is
@@ -187,7 +187,7 @@ try { prevFame = JSON.parse(await readFile(path.join(ROOT, "data/stats.json"), "
 out.cosigners = {};
 try {
   const cosigns = JSON.parse(await readFile(path.join(ROOT, "data/cosigns.json"), "utf8"));
-  for (const file of ["recent-cosigns.json", "tours.json", "upcoming.json"]) { // recent songs, tours, touring band, upcoming
+  for (const file of ["trending-cosigns.json", "tours.json", "upcoming.json"]) { // chart artists' songs, tours, touring band, upcoming
     try {
       const more = JSON.parse(await readFile(path.join(ROOT, "data", file), "utf8"));
       cosigns.cosigns.push(...more.cosigns);

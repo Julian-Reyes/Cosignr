@@ -12,7 +12,8 @@ export const TREND_METRICS = {
 };
 export const TREND_ALL = 10;      // "All" shows the top 10…
 export const TREND_PER_GENRE = 2; // …with at most 2 per genre (Julian, 2026-10-19)
-export const INITIAL_COUNT = 4;
+export const INITIAL_COUNT = 5; // Trending shows 5, then Show More adds MORE_COUNT (Julian, 2026-10-19)
+export const MORE_COUNT = 10;
 export const CHIP_COUNT = 4;
 
 // Image sources, in "auto" fallback order (best first).
