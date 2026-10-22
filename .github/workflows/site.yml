@@ -34,6 +34,17 @@ jobs:
         continue-on-error: true               # a Last.fm hiccup shouldn't stop the rest of the refresh
         env:
           LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+      - name: Save today's charts
+        # Committed on their own, straight away: no source keeps chart history, so a later step
+        # failing must not lose the day. The rest of data/ is committed at the end.
+        continue-on-error: true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data/charts/
+          git diff --cached --quiet && echo "No new charts" && exit 0
+          git commit -m "Charts $(date -u +%F)"
+          git push
       - run: node scripts/fetch-trending.mjs  # who's charting now (Apple + Last.fm fill), TRENDING.md
         continue-on-error: true               # keeps yesterday's trending.json if a source is down
         env:
@@ -57,8 +68,6 @@ jobs:
           LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
       - name: Commit changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
           git add data/
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "Refresh data $(date -u +%F)"

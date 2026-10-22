@@ -146,12 +146,14 @@ Goal: every section renders from one data file, no text is baked into images, an
 - ✅ Reviewed (Julian): Gorillaz = Essex is fine; quirky MusicBrainz genres (Skrillex: "Brostep") left as they are for now
 - ✅ Phase C (2026-10-15): 61 artist pages (`src/pages/artist/[id].astro`) + per-artist JSON for "Show more". Cosigned by (fame), Cosigns (Strongest / Recent / Famous), upcoming shows, stats with caveats, evidence linked to sources. Home names and chips link to pages; whole Featured tiles open the artist page (Julian), which also fixed the Featured chips being unclickable. Footer data credits. Click-tested desktop + phone
 - ✅ Store daily snapshots (`data/snapshots/`)
+- ✅ Nightly job hardening (2026-10-22): MusicBrainz retries on network errors + 5xx; charts committed on their own right after fetching
 - ⬜ Accounts + user cosigns (Supabase or Firebase)
 - ✅ Artist detail page (phase C)
 - 🟡 "Who cosigned who" graph view (mockup C picked, on hold)
 
 ## Log
 
+- **2026-10-22 (nightly fix):** The 2026-10-22 refresh failed: fetch-cosigns' first MusicBrainz request hit a connect timeout (`fetch failed`, ETIMEDOUT; the runner has no IPv6), so every later step, the data commit and the deploy were skipped. The shared MusicBrainz client now retries network failures (5 tries, growing waits) and 5xx replies. The workflow commits `data/charts/` straight after fetch-charts, so a later failure can't lose a chart day.
 - **2026-10-19 (Yena fix + small edits):** `mbidFixes` (hand-checked Last.fm namesake corrections, first entry YENA → the Korean singer) used by fetch-trending/rising/stats; "All" scrolls to Featured; Rising Score label, shifted so #1 in All shows 9.9.
 - **2026-10-19 (Commons photos):** Spotify images: checked Spotify's Developer Policy and Design Guidelines; our use (cropping, text over photos, no Spotify logo, next to Apple content) doesn't comply. Julian: leave as is for now. Added hand-checked Commons photos for Geese (CC BY 4.0), Loathe (CC BY-SA 4.0), Yena (CC BY 3.0) and a page fallback when Spotify has no photo; fixed Wikidata redirects in fetch-sources (underscores). Found: the Yena page is bound to an Italian namesake's MBID via Last.fm (fix proposed).
 - **2026-10-19 (sticky genre bar):** The genre bar now sticks under the nav; site.js measures both bars to place it and to set the scroll offset for section links.
