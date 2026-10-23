@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T13:10:00.494Z",
+  "generatedAt": "2026-10-23T12:09:45.207Z",
   "source": "Ticketmaster Discovery API (live listings, rebuilt nightly)",
   "artists": {
     "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
@@ -57,6 +57,10 @@
       "name": "Denzel Curry",
       "id": "denzel-curry"
     },
+    "16f7e748-59b4-4705-959c-9276be0ebf6a": {
+      "name": "Superheaven",
+      "id": "superheaven"
+    },
     "fa1de503-aba7-41fa-a1ed-371b3e87a717": {
       "name": "Madeon",
       "id": "madeon"
@@ -98,14 +102,6 @@
     "cb9c2a2b-96c2-44d7-bd31-04ef87572b57": {
       "name": "FRIDAYY"
     },
-    "260b6184-8828-48eb-945c-bc4cb6fc34ca": {
-      "name": "Charli xcx",
-      "id": "charli-xcx"
-    },
-    "ab1a3f85-e0ea-470a-af5c-175447ae774c": {
-      "name": "Underscores",
-      "id": "underscores"
-    },
     "d8fd8d9b-473b-4f06-83c8-869b1bb9de89": {
       "name": "Bryson Tiller",
       "id": "bryson-tiller"
@@ -115,6 +111,14 @@
     },
     "7bd66c18-cb33-49aa-9279-140acedbdb49": {
       "name": "Ty Dolla $ign"
+    },
+    "260b6184-8828-48eb-945c-bc4cb6fc34ca": {
+      "name": "Charli xcx",
+      "id": "charli-xcx"
+    },
+    "ab1a3f85-e0ea-470a-af5c-175447ae774c": {
+      "name": "Underscores",
+      "id": "underscores"
     },
     "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74": {
       "name": "Sleeping With Sirens",
@@ -132,12 +136,23 @@
     "cd584ea0-0fc5-412b-8598-0244c4025af6": {
       "name": "Boston Manor"
     },
+    "3f6ee55e-d523-4dd8-a027-7a6af9909ae1": {
+      "name": "The Living Tombstone",
+      "id": "the-living-tombstone"
+    },
+    "769930ba-9724-41a6-9c25-7d55504415bf": {
+      "name": "Mystery Skulls"
+    },
+    "293aa84f-e308-418a-b202-7d9c88479f1e": {
+      "name": "Mega Ran"
+    },
     "fd87acc7-e0a0-4a45-bc2a-d2ab5c10be68": {
       "name": "Fontaines D.C.",
       "id": "fontaines-d-c"
     },
     "b4b5b5a7-feff-47d0-9458-83d0d135a692": {
-      "name": "Hayley Williams"
+      "name": "Hayley Williams",
+      "id": "hayley-williams"
     },
     "547e23af-e455-41dd-baae-a3b58e065d0c": {
       "name": "Damien Dempsey",
@@ -149,16 +164,6 @@
     "7e01053e-e701-4e55-8a29-b8cfdcdee205": {
       "name": "Iceage"
     },
-    "3f6ee55e-d523-4dd8-a027-7a6af9909ae1": {
-      "name": "The Living Tombstone",
-      "id": "the-living-tombstone"
-    },
-    "769930ba-9724-41a6-9c25-7d55504415bf": {
-      "name": "Mystery Skulls"
-    },
-    "293aa84f-e308-418a-b202-7d9c88479f1e": {
-      "name": "Mega Ran"
-    },
     "7eb1ce54-a355-41f9-8d68-e018b096d427": {
       "name": "Harry Styles",
       "id": "harry-styles"
@@ -166,21 +171,6 @@
     "396a9525-0994-4542-b480-c4587feeb476": {
       "name": "Tinashe",
       "id": "tinashe"
-    },
-    "100b8734-f4f0-4536-9960-47f7c59d1b4c": {
-      "name": "Gunna",
-      "id": "gunna"
-    },
-    "f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62": {
-      "name": "T.I."
-    },
-    "9167f739-da47-4495-9d63-9c13b40114ac": {
-      "name": "Summer Walker",
-      "id": "summer-walker"
-    },
-    "f3cb8059-add2-4bf9-a19e-5664588e30ba": {
-      "name": "Belly Gang Kushington",
-      "id": "belly-gang-kushington"
     },
     "a298565e-d43e-46c4-b35c-bfe131258815": {
       "name": "Fousheé"
@@ -200,16 +190,6 @@
     "7c7f9c94-dee8-4903-892b-6cf44652e2de": {
       "name": "Tears for Fears"
     },
-    "d8c85c0e-ad88-47a7-a1df-b70608c2f52f": {
-      "name": "Riley Green",
-      "id": "riley-green"
-    },
-    "2646de59-5529-4134-a6c8-2c76282716d1": {
-      "name": "Muscadine Bloodline"
-    },
-    "50e3dd64-6b87-4b9a-a511-c375ae4ff1ca": {
-      "name": "Randy Houser"
-    },
     "e881b225-42b1-41d9-9d5e-eff55568585b": {
       "name": "Stella Lefty",
       "id": "stella-lefty"
@@ -220,19 +200,28 @@
     "4ae67eb7-c01c-4d71-b995-21b093fcb888": {
       "name": "Wyatt Flores"
     },
+    "9bd720ab-3aec-4ab0-b363-3a465ee65026": {
+      "name": "Annie DiRusso"
+    },
+    "e160f589-dbe6-4b8f-88b5-f528ff4443b4": {
+      "name": "Mannequin Pussy"
+    },
+    "d8c85c0e-ad88-47a7-a1df-b70608c2f52f": {
+      "name": "Riley Green",
+      "id": "riley-green"
+    },
+    "2646de59-5529-4134-a6c8-2c76282716d1": {
+      "name": "Muscadine Bloodline"
+    },
+    "50e3dd64-6b87-4b9a-a511-c375ae4ff1ca": {
+      "name": "Randy Houser"
+    },
     "0ab49580-c84f-44d4-875f-d83760ea2cfe": {
       "name": "Maroon 5"
     },
     "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19": {
       "name": "Post Malone",
       "id": "post-malone"
-    },
-    "5df62a88-cac9-490a-b62c-c7c88f4020f4": {
-      "name": "Doja Cat"
-    },
-    "355cc194-b8db-4af2-8678-c7ad54213f4b": {
-      "name": "Latto",
-      "id": "latto"
     },
     "97b8d224-5660-419c-8dff-4b3bf0c33983": {
       "name": "The Neighbourhood",
@@ -241,12 +230,19 @@
     "da0c8f4f-f4f4-4e91-86ca-e31108bb5706": {
       "name": "Nessa Barrett"
     },
-    "945d3b69-27cd-45fa-b491-52553a63dead": {
-      "name": "Joyce Manor"
+    "36086094-c2a4-49b9-8572-0fbf12fc3409": {
+      "name": "Ashe",
+      "id": "ashe"
     },
-    "3cdf1327-39eb-4ffe-9ce3-20599ac6a468": {
-      "name": "Tigers Jaw",
-      "id": "tigers-jaw"
+    "4ccfc097-7034-4aa7-97c3-b5d4ed52865a": {
+      "name": "Claire Rosinkranz"
+    },
+    "5df62a88-cac9-490a-b62c-c7c88f4020f4": {
+      "name": "Doja Cat"
+    },
+    "355cc194-b8db-4af2-8678-c7ad54213f4b": {
+      "name": "Latto",
+      "id": "latto"
     },
     "71d58182-aa37-4c04-b21a-efe46ea0f221": {
       "name": "Chris Stapleton",
@@ -255,19 +251,26 @@
     "1a14063c-9dca-48d5-98c3-89748c74562b": {
       "name": "Ricky Skaggs"
     },
+    "502cf908-9921-48bc-bf0e-265c881c0156": {
+      "name": "Sombr"
+    },
+    "ca204bac-2768-4d6f-a5e4-8e8f9080817b": {
+      "name": "The Hellp",
+      "id": "the-hellp"
+    },
+    "945d3b69-27cd-45fa-b491-52553a63dead": {
+      "name": "Joyce Manor"
+    },
+    "3cdf1327-39eb-4ffe-9ce3-20599ac6a468": {
+      "name": "Tigers Jaw",
+      "id": "tigers-jaw"
+    },
     "afb680f2-b6eb-4cd7-a70b-a63b25c763d5": {
       "name": "Bruno Mars",
       "id": "bruno-mars"
     },
     "45425c84-9092-4e2c-b732-e1d0280b580a": {
       "name": "Tyla"
-    },
-    "79c9b9a6-4b78-4738-8b81-95b066321ea9": {
-      "name": "Young Nudy"
-    },
-    "b54d1511-887e-4a5c-9f3c-6833a5438b84": {
-      "name": "Fredo Bang",
-      "id": "fredo-bang"
     },
     "fd36f43e-5bd1-488e-b844-0e059250ef78": {
       "name": "glaive"
@@ -303,160 +306,9 @@
     "02452937-d06b-4e9f-966d-8477bae38ddc": {
       "name": "Susannah Joffe",
       "id": "susannah-joffe"
-    },
-    "0638ba22-040f-438d-83a5-9b670c4adaf5": {
-      "name": "Ludacris"
-    },
-    "13bcb2bb-db37-4397-baf5-e0f085be2d64": {
-      "name": "Rick Ross",
-      "id": "rick-ross"
     }
   },
   "cosigns": [
-    {
-      "from": "9ca10859-49e2-44e3-b3d6-04c535207bc2",
-      "to": "5f95440d-7737-4a36-9bcf-c05337f7129b",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 8,
-      "first": "2026-10-22",
-      "last": "2026-11-05",
-      "next": {
-        "tour": "Knocked Loose & Denzel Curry",
-        "date": "2026-10-22",
-        "city": "Kansas City",
-        "url": "https://www.ticketmaster.com/knocked-loose-denzel-curry-kansas-city-missouri-10-22-2026/event/060064BA8E2F5E9A"
-      }
-    },
-    {
-      "from": "6925db17-f35e-42f3-a4eb-84ee6bf5d4b0",
-      "to": "3547f34a-db02-4ab7-b4a0-380e1ef951a9",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 5,
-      "first": "2026-10-22",
-      "last": "2026-10-30",
-      "next": {
-        "tour": "Olivia Rodrigo: The Unraveled Tour",
-        "date": "2026-10-22",
-        "city": "Montreal",
-        "url": "https://www.ticketmaster.ca/olivia-rodrigo-the-unraveled-tour-montreal-quebec-10-22-2026/event/3100649B98C45059"
-      }
-    },
-    {
-      "from": "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1",
-      "to": "cb9c2a2b-96c2-44d7-bd31-04ef87572b57",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 17,
-      "first": "2026-10-22",
-      "last": "2026-11-19",
-      "next": {
-        "tour": "Rod Wave: Don't Look Down Tour",
-        "date": "2026-10-22",
-        "city": "Columbus",
-        "url": "https://www.ticketmaster.com/rod-wave-dont-look-down-tour-columbus-ohio-10-22-2026/event/050064D1D0AE1FA1"
-      }
-    },
-    {
-      "from": "d8fd8d9b-473b-4f06-83c8-869b1bb9de89",
-      "to": "abaa7001-0d80-4e58-be5d-d2d246fd9d87",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 21,
-      "first": "2026-10-22",
-      "last": "2027-01-27",
-      "next": {
-        "tour": "Bryson Tiller Presents: The Neo Trapsoul Tour",
-        "date": "2026-10-22",
-        "city": "Anaheim",
-        "url": "https://www.ticketmaster.com/bryson-tiller-presents-the-neo-trapsoul-anaheim-california-10-22-2026/event/090064B5DC213A81"
-      }
-    },
-    {
-      "from": "d8fd8d9b-473b-4f06-83c8-869b1bb9de89",
-      "to": "7bd66c18-cb33-49aa-9279-140acedbdb49",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 7,
-      "first": "2026-10-22",
-      "last": "2026-11-01",
-      "next": {
-        "tour": "Bryson Tiller Presents: The Neo Trapsoul Tour",
-        "date": "2026-10-22",
-        "city": "Anaheim",
-        "url": "https://www.ticketmaster.com/bryson-tiller-presents-the-neo-trapsoul-anaheim-california-10-22-2026/event/090064B5DC213A81"
-      }
-    },
-    {
-      "from": "100b8734-f4f0-4536-9960-47f7c59d1b4c",
-      "to": "f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-10-22",
-      "last": "2026-10-22",
-      "next": {
-        "tour": "2026 FAMU Homecoming Concert",
-        "date": "2026-10-22",
-        "city": "Tallahassee",
-        "url": "https://www.ticketmaster.com/2026-famu-homecoming-concert-tallahassee-florida-10-22-2026/event/2200651F8B041E9F"
-      }
-    },
-    {
-      "from": "100b8734-f4f0-4536-9960-47f7c59d1b4c",
-      "to": "9167f739-da47-4495-9d63-9c13b40114ac",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-10-22",
-      "last": "2026-10-22",
-      "next": {
-        "tour": "2026 FAMU Homecoming Concert",
-        "date": "2026-10-22",
-        "city": "Tallahassee",
-        "url": "https://www.ticketmaster.com/2026-famu-homecoming-concert-tallahassee-florida-10-22-2026/event/2200651F8B041E9F"
-      }
-    },
-    {
-      "from": "100b8734-f4f0-4536-9960-47f7c59d1b4c",
-      "to": "f3cb8059-add2-4bf9-a19e-5664588e30ba",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-10-22",
-      "last": "2026-10-22",
-      "next": {
-        "tour": "2026 FAMU Homecoming Concert",
-        "date": "2026-10-22",
-        "city": "Tallahassee",
-        "url": "https://www.ticketmaster.com/2026-famu-homecoming-concert-tallahassee-florida-10-22-2026/event/2200651F8B041E9F"
-      }
-    },
-    {
-      "from": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
-      "to": "355cc194-b8db-4af2-8678-c7ad54213f4b",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 19,
-      "first": "2026-10-22",
-      "last": "2026-12-01",
-      "next": {
-        "tour": "Doja Cat - Tour Ma Vie World Tour",
-        "date": "2026-10-22",
-        "city": "Inglewood",
-        "url": "https://www.ticketmaster.com/doja-cat-tour-ma-vie-world-inglewood-california-10-22-2026/event/0900633A1B2389F9"
-      }
-    },
     {
       "from": "e21857d5-3256-4547-afb3-4b6ded592596",
       "to": "3cdb40fe-a63e-4bb9-b40d-17cda5f50979",
@@ -487,6 +339,22 @@
         "date": "2026-10-23",
         "city": "Los Angeles",
         "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70kPI"
+      }
+    },
+    {
+      "from": "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1",
+      "to": "cb9c2a2b-96c2-44d7-bd31-04ef87572b57",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 16,
+      "first": "2026-10-23",
+      "last": "2026-11-19",
+      "next": {
+        "tour": "Rod Wave: Don't Look Down Tour",
+        "date": "2026-10-23",
+        "city": "Pittsburgh",
+        "url": "https://www.ticketmaster.com/rod-wave-dont-look-down-tour-pittsburgh-pennsylvania-10-23-2026/event/160064D1B956C130"
       }
     },
     {
@@ -554,6 +422,38 @@
       }
     },
     {
+      "from": "d8fd8d9b-473b-4f06-83c8-869b1bb9de89",
+      "to": "abaa7001-0d80-4e58-be5d-d2d246fd9d87",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 20,
+      "first": "2026-10-24",
+      "last": "2027-01-27",
+      "next": {
+        "tour": "Bryson Tiller Presents: The Neo Trapsoul Tour",
+        "date": "2026-10-24",
+        "city": "Chula Vista",
+        "url": "https://www.ticketmaster.com/bryson-tiller-presents-the-neo-trapsoul-chula-vista-california-10-24-2026/event/0A0064B6BB979FD2"
+      }
+    },
+    {
+      "from": "d8fd8d9b-473b-4f06-83c8-869b1bb9de89",
+      "to": "7bd66c18-cb33-49aa-9279-140acedbdb49",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 6,
+      "first": "2026-10-24",
+      "last": "2026-11-01",
+      "next": {
+        "tour": "Bryson Tiller Presents: The Neo Trapsoul Tour",
+        "date": "2026-10-24",
+        "city": "Chula Vista",
+        "url": "https://www.ticketmaster.com/bryson-tiller-presents-the-neo-trapsoul-chula-vista-california-10-24-2026/event/0A0064B6BB979FD2"
+      }
+    },
+    {
       "from": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
       "to": "bd0f203c-6d4b-4c44-89d1-63be9c60acc3",
       "types": [
@@ -586,19 +486,51 @@
       }
     },
     {
-      "from": "0638ba22-040f-438d-83a5-9b670c4adaf5",
-      "to": "13bcb2bb-db37-4397-baf5-e0f085be2d64",
+      "from": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
+      "to": "355cc194-b8db-4af2-8678-c7ad54213f4b",
       "types": [
         "upcoming"
       ],
-      "shows": 1,
-      "first": "2026-10-24",
-      "last": "2026-10-24",
+      "shows": 18,
+      "first": "2026-10-25",
+      "last": "2026-12-01",
       "next": {
-        "tour": "The Crown Live in the Ville",
-        "date": "2026-10-24",
-        "city": "Louisville",
-        "url": "https://www.ticketmaster.com/the-crown-live-in-the-ville-louisville-kentucky-10-24-2026/event/160064D0ADDB95A7"
+        "tour": "Doja Cat - Tour Ma Vie World Tour",
+        "date": "2026-10-25",
+        "city": "San Francisco",
+        "url": "https://www.ticketmaster.com/doja-cat-tour-ma-vie-world-san-francisco-california-10-25-2026/event/1C0063390D157FFD"
+      }
+    },
+    {
+      "from": "502cf908-9921-48bc-bf0e-265c881c0156",
+      "to": "ca204bac-2768-4d6f-a5e4-8e8f9080817b",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 3,
+      "first": "2026-10-25",
+      "last": "2026-10-28",
+      "next": {
+        "tour": "SOMBR - You Are The Reason Tour",
+        "date": "2026-10-25",
+        "city": "Orlando",
+        "url": "https://www.ticketmaster.com/sombr-you-are-the-reason-tour-orlando-florida-10-25-2026/event/2200648A8ADC2C92"
+      }
+    },
+    {
+      "from": "6925db17-f35e-42f3-a4eb-84ee6bf5d4b0",
+      "to": "3547f34a-db02-4ab7-b4a0-380e1ef951a9",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 4,
+      "first": "2026-10-26",
+      "last": "2026-10-30",
+      "next": {
+        "tour": "Olivia Rodrigo: The Unraveled Tour",
+        "date": "2026-10-26",
+        "city": "Toronto",
+        "url": "https://www.ticketmaster.ca/olivia-rodrigo-the-unraveled-tour-toronto-ontario-10-26-2026/event/1000649BBDBB94D8"
       }
     },
     {
@@ -634,6 +566,22 @@
       }
     },
     {
+      "from": "9ca10859-49e2-44e3-b3d6-04c535207bc2",
+      "to": "5f95440d-7737-4a36-9bcf-c05337f7129b",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 7,
+      "first": "2026-10-27",
+      "last": "2026-11-05",
+      "next": {
+        "tour": "Knocked Loose w/ Denzel Curry",
+        "date": "2026-10-27",
+        "city": "Mesa",
+        "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70yjO"
+      }
+    },
+    {
       "from": "3f6ee55e-d523-4dd8-a027-7a6af9909ae1",
       "to": "293aa84f-e308-418a-b202-7d9c88479f1e",
       "types": [
@@ -666,6 +614,22 @@
       }
     },
     {
+      "from": "9ca10859-49e2-44e3-b3d6-04c535207bc2",
+      "to": "16f7e748-59b4-4705-959c-9276be0ebf6a",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 5,
+      "first": "2026-10-30",
+      "last": "2026-11-05",
+      "next": {
+        "tour": "Knocked Loose & Denzel Curry",
+        "date": "2026-10-30",
+        "city": "San Diego",
+        "url": "https://www.ticketmaster.com/knocked-loose-denzel-curry-san-diego-california-10-30-2026/event/0A0064B65F291D73"
+      }
+    },
+    {
       "from": "b16c0872-31a7-4db9-8569-0e3146fcecfc",
       "to": "be259f80-096e-4dc1-8933-d60a8cf3bc69",
       "types": [
@@ -679,22 +643,6 @@
         "date": "2026-10-30",
         "city": "Lincoln",
         "url": "https://www.ticketmaster.com/ella-langley-the-dandelion-tour-lincoln-nebraska-10-30-2026/event/060064D1D85A4BA7"
-      }
-    },
-    {
-      "from": "79c9b9a6-4b78-4738-8b81-95b066321ea9",
-      "to": "b54d1511-887e-4a5c-9f3c-6833a5438b84",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-10-31",
-      "last": "2026-10-31",
-      "next": {
-        "tour": "Young Nudy",
-        "date": "2026-10-31",
-        "city": "Denver",
-        "url": "https://www.ticketmaster.com/young-nudy-denver-colorado-10-31-2026/event/1E00651A9A5E7477"
       }
     },
     {
@@ -794,6 +742,22 @@
       }
     },
     {
+      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
+      "to": "9bd720ab-3aec-4ab0-b363-3a465ee65026",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 2,
+      "first": "2026-11-26",
+      "last": "2026-11-26",
+      "next": {
+        "tour": "\"The Hayley Williams Show\" (Numerado) ",
+        "date": "2026-11-26",
+        "city": "Ciudad de México",
+        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-numerado-ciudad-de-mexico-26-11-2026/event/3D0064A6A4695E8E"
+      }
+    },
+    {
       "from": "7eb1ce54-a355-41f9-8d68-e018b096d427",
       "to": "a298565e-d43e-46c4-b35c-bfe131258815",
       "types": [
@@ -823,6 +787,22 @@
         "date": "2027-01-12",
         "city": "Inglewood",
         "url": "https://www.ticketmaster.com/olivia-rodrigo-the-unraveled-tour-inglewood-california-01-12-2027/event/0900649DE7C663B2"
+      }
+    },
+    {
+      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
+      "to": "e160f589-dbe6-4b8f-88b5-f528ff4443b4",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 3,
+      "first": "2027-01-13",
+      "last": "2027-01-17",
+      "next": {
+        "tour": "\"The Hayley Williams Show\"",
+        "date": "2027-01-13",
+        "city": "Ciudad de México",
+        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-ciudad-de-mexico-13-01-2027/event/3D0064BD97725384"
       }
     },
     {
@@ -887,6 +867,22 @@
         "date": "2027-02-13",
         "city": "Burswood",
         "url": "https://www.ticketmaster.com.au/bruno-mars-the-romantic-tour-burswood-13-02-2027/event/25006518EA3F49F3"
+      }
+    },
+    {
+      "from": "36086094-c2a4-49b9-8572-0fbf12fc3409",
+      "to": "4ccfc097-7034-4aa7-97c3-b5d4ed52865a",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 15,
+      "first": "2027-02-19",
+      "last": "2027-03-20",
+      "next": {
+        "tour": "Ashe: The Girl of Your Dreams Tour",
+        "date": "2027-02-19",
+        "city": "Houston",
+        "url": "https://www.ticketmaster.com/ashe-the-girl-of-your-dreams-houston-texas-02-19-2027/event/3A00655561B82582"
       }
     },
     {
@@ -1151,7 +1147,7 @@
       "types": [
         "upcoming"
       ],
-      "shows": 6,
+      "shows": 8,
       "first": "2027-07-16",
       "last": "2027-08-06",
       "next": {
