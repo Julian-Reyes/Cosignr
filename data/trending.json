@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-26T13:06:03.228Z",
- "chartDate": "2026-10-26",
+ "generatedAt": "2026-10-27T12:18:10.941Z",
+ "chartDate": "2026-10-27",
  "rules": {
   "thin": 5,
   "fill": 20,
@@ -19,7 +19,7 @@
    "source": "apple",
    "genre": "hip-hop",
    "apple": {
-    "points": 1417,
+    "points": 1413,
     "songs": 13,
     "albums": 11,
     "best": 5,
@@ -35,7 +35,7 @@
    "score": 100,
    "lastfm": {
     "rank": 6,
-    "listeners": 59573
+    "listeners": 59405
    }
   },
   {
@@ -45,14 +45,14 @@
    "source": "apple",
    "genre": "country",
    "apple": {
-    "points": 861,
+    "points": 848,
     "songs": 11,
     "albums": 3,
-    "best": 9,
+    "best": 8,
     "bestAlbum": 12,
     "top": {
      "kind": "song",
-     "rank": 9,
+     "rank": 8,
      "title": "Been By Now",
      "url": "https://music.apple.com/us/album/been-by-now/6792676858?i=6792676860",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9f/8d/52/9f8d52a0-b6d9-d038-327b-4fe58bedce67/26UMGIM94572.rgb.jpg/100x100bb.jpg"
@@ -60,8 +60,8 @@
    },
    "score": 99,
    "lastfm": {
-    "rank": 528,
-    "listeners": 8284
+    "rank": 541,
+    "listeners": 8185
    }
   },
   {
@@ -71,14 +71,14 @@
    "source": "apple",
    "genre": "hip-hop",
    "apple": {
-    "points": 547,
+    "points": 540,
     "songs": 7,
     "albums": 2,
-    "best": 12,
+    "best": 13,
     "bestAlbum": 33,
     "top": {
      "kind": "song",
-     "rank": 12,
+     "rank": 13,
      "title": "WAIT FOR U (feat. Drake & Tems)",
      "url": "https://music.apple.com/us/album/wait-for-u-feat-drake-tems/1621119097?i=1621119447",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/65/f2/06/65f2067b-a8ea-239c-c219-8e0f0282dcea/196589073693.jpg/100x100bb.jpg"
@@ -87,7 +87,7 @@
    "score": 98,
    "lastfm": {
     "rank": 42,
-    "listeners": 35787
+    "listeners": 35850
    }
   },
   {
@@ -97,11 +97,11 @@
    "source": "apple",
    "genre": "hip-hop",
    "apple": {
-    "points": 524,
+    "points": 518,
     "songs": 8,
     "albums": 1,
     "best": 10,
-    "bestAlbum": 83,
+    "bestAlbum": 82,
     "top": {
      "kind": "song",
      "rank": 10,
@@ -112,34 +112,8 @@
    },
    "score": 97,
    "lastfm": {
-    "rank": 177,
-    "listeners": 17253
-   }
-  },
-  {
-   "name": "Ella Langley",
-   "mbid": "b16c0872-31a7-4db9-8569-0e3146fcecfc",
-   "appleId": "1384373733",
-   "source": "apple",
-   "genre": "country",
-   "apple": {
-    "points": 361,
-    "songs": 4,
-    "albums": 2,
-    "best": 2,
-    "bestAlbum": 25,
-    "top": {
-     "kind": "song",
-     "rank": 2,
-     "title": "Choosin' Texas",
-     "url": "https://music.apple.com/us/album/choosin-texas/1844932149?i=1844932150",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e2/91/4d/e2914d0a-7f1d-f04c-fbf4-c50b38548838/196873638690.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 96,
-   "lastfm": {
-    "rank": 649,
-    "listeners": 7193
+    "rank": 176,
+    "listeners": 17263
    }
   },
   {
@@ -149,23 +123,49 @@
    "source": "apple",
    "genre": "pop",
    "apple": {
-    "points": 354,
+    "points": 360,
     "songs": 4,
     "albums": 3,
     "best": 14,
-    "bestAlbum": 4,
+    "bestAlbum": 3,
     "top": {
      "kind": "album",
-     "rank": 4,
+     "rank": 3,
      "title": "you seem pretty sad for a girl so in love",
      "url": "https://music.apple.com/us/album/you-seem-pretty-sad-for-a-girl-so-in-love/1889992111",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/1b/f9/1d1bf9b1-44c6-9a6c-6ffb-c158488c06ce/26UMGIM39303.rgb.jpg/100x100bb.jpg"
     }
    },
-   "score": 95,
+   "score": 96,
    "lastfm": {
     "rank": 2,
-    "listeners": 62663
+    "listeners": 62371
+   }
+  },
+  {
+   "name": "Ella Langley",
+   "mbid": "b16c0872-31a7-4db9-8569-0e3146fcecfc",
+   "appleId": "1384373733",
+   "source": "apple",
+   "genre": "country",
+   "apple": {
+    "points": 354,
+    "songs": 4,
+    "albums": 2,
+    "best": 3,
+    "bestAlbum": 26,
+    "top": {
+     "kind": "song",
+     "rank": 3,
+     "title": "Choosin' Texas",
+     "url": "https://music.apple.com/us/album/choosin-texas/1844932149?i=1844932150",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e2/91/4d/e2914d0a-7f1d-f04c-fbf4-c50b38548838/196873638690.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 95,
+   "lastfm": {
+    "rank": 657,
+    "listeners": 7118
    }
   },
   {
@@ -175,7 +175,7 @@
    "source": "apple",
    "genre": "country",
    "apple": {
-    "points": 300,
+    "points": 312,
     "songs": 4,
     "albums": 1,
     "best": 4,
@@ -190,8 +190,8 @@
    },
    "score": 93,
    "lastfm": {
-    "rank": 283,
-    "listeners": 13037
+    "rank": 296,
+    "listeners": 12778
    }
   },
   {
@@ -204,11 +204,11 @@
     "points": 276,
     "songs": 4,
     "albums": 2,
-    "best": 31,
-    "bestAlbum": 53,
+    "best": 34,
+    "bestAlbum": 50,
     "top": {
      "kind": "song",
-     "rank": 31,
+     "rank": 34,
      "title": "Snooze",
      "url": "https://music.apple.com/us/album/snooze/1657869377?i=1657869492",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/bd/3b/a9/bd3ba9fb-9609-144f-bcfe-ead67b5f6ab3/196589564931.jpg/100x100bb.jpg"
@@ -216,31 +216,9 @@
    },
    "score": 92,
    "lastfm": {
-    "rank": 45,
-    "listeners": 35615
+    "rank": 44,
+    "listeners": 35683
    }
-  },
-  {
-   "name": "Rod Wave",
-   "mbid": "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1",
-   "appleId": "1140623439",
-   "source": "apple",
-   "genre": "hip-hop",
-   "apple": {
-    "points": 217,
-    "songs": 1,
-    "albums": 4,
-    "best": 58,
-    "bestAlbum": 6,
-    "top": {
-     "kind": "album",
-     "rank": 6,
-     "title": "Don't Look Down",
-     "url": "https://music.apple.com/us/album/dont-look-down/6781873059",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/16/67/4d/16674d50-a339-71bf-0aea-dc93b7dd8570/196874541357.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 91
   },
   {
    "name": "Taylor Swift",
@@ -249,10 +227,10 @@
    "source": "apple",
    "genre": "pop",
    "apple": {
-    "points": 211,
+    "points": 225,
     "songs": 1,
     "albums": 4,
-    "best": 49,
+    "best": 45,
     "bestAlbum": 8,
     "top": {
      "kind": "album",
@@ -262,37 +240,33 @@
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a0/dd/fd/a0ddfd72-ee9e-f046-6466-a5dbefc696fa/26UM1IM21436.rgb.jpg/100x100bb.jpg"
     }
    },
-   "score": 90,
+   "score": 91,
    "lastfm": {
-    "rank": 32,
-    "listeners": 39149
+    "rank": 33,
+    "listeners": 39016
    }
   },
   {
-   "name": "YoungBoy Never Broke Again",
-   "mbid": "127d8614-0876-4408-886c-6f110b047a78",
-   "appleId": "1168822104",
+   "name": "Rod Wave",
+   "mbid": "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1",
+   "appleId": "1140623439",
    "source": "apple",
    "genre": "hip-hop",
    "apple": {
-    "points": 193,
-    "songs": 5,
-    "albums": 0,
-    "best": 29,
-    "bestAlbum": null,
+    "points": 205,
+    "songs": 1,
+    "albums": 4,
+    "best": 68,
+    "bestAlbum": 6,
     "top": {
-     "kind": "song",
-     "rank": 29,
-     "title": "Kacey Talk",
-     "url": "https://music.apple.com/us/album/kacey-talk/1530122403?i=1530123009",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/13/d6/e3/13d6e3ac-7a38-c6c3-6566-e027f3735426/075679802378.jpg/100x100bb.jpg"
+     "kind": "album",
+     "rank": 6,
+     "title": "Don't Look Down",
+     "url": "https://music.apple.com/us/album/dont-look-down/6781873059",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/16/67/4d/16674d50-a339-71bf-0aea-dc93b7dd8570/196874541357.jpg/100x100bb.jpg"
     }
    },
-   "score": 89,
-   "lastfm": {
-    "rank": 227,
-    "listeners": 15212
-   }
+   "score": 90
   },
   {
    "name": "ADÉLA",
@@ -301,7 +275,7 @@
    "source": "apple",
    "genre": "pop",
    "apple": {
-    "points": 191,
+    "points": 192,
     "songs": 2,
     "albums": 1,
     "best": 6,
@@ -314,7 +288,7 @@
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/53/c6/9a/53c69a6a-d1c4-0983-a20c-a67dceae554f/26UMGIM82372.rgb.jpg/100x100bb.jpg"
     }
    },
-   "score": 88
+   "score": 89
   },
   {
    "name": "KAROL G",
@@ -326,20 +300,46 @@
     "points": 189,
     "songs": 1,
     "albums": 1,
-    "best": 3,
-    "bestAlbum": 10,
+    "best": 2,
+    "bestAlbum": 11,
     "top": {
      "kind": "song",
-     "rank": 3,
+     "rank": 2,
      "title": "BbY WOW",
      "url": "https://music.apple.com/us/album/bby-wow/6796864741?i=6796864754",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/100x100bb.jpg"
     }
    },
+   "score": 88,
+   "lastfm": {
+    "rank": 494,
+    "listeners": 8612
+   }
+  },
+  {
+   "name": "YoungBoy Never Broke Again",
+   "mbid": "127d8614-0876-4408-886c-6f110b047a78",
+   "appleId": "1168822104",
+   "source": "apple",
+   "genre": "hip-hop",
+   "apple": {
+    "points": 175,
+    "songs": 5,
+    "albums": 0,
+    "best": 31,
+    "bestAlbum": null,
+    "top": {
+     "kind": "song",
+     "rank": 31,
+     "title": "Kacey Talk",
+     "url": "https://music.apple.com/us/album/kacey-talk/1530122403?i=1530123009",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/13/d6/e3/13d6e3ac-7a38-c6c3-6566-e027f3735426/075679802378.jpg/100x100bb.jpg"
+    }
+   },
    "score": 87,
    "lastfm": {
-    "rank": 490,
-    "listeners": 8670
+    "rank": 228,
+    "listeners": 15111
    }
   },
   {
@@ -349,11 +349,11 @@
    "source": "apple",
    "genre": "pop",
    "apple": {
-    "points": 158,
+    "points": 159,
     "songs": 1,
     "albums": 1,
     "best": 1,
-    "bestAlbum": 43,
+    "bestAlbum": 42,
     "top": {
      "kind": "song",
      "rank": 1,
@@ -364,8 +364,8 @@
    },
    "score": 86,
    "lastfm": {
-    "rank": 79,
-    "listeners": 25648
+    "rank": 77,
+    "listeners": 26241
    }
   },
   {
@@ -375,10 +375,10 @@
    "source": "apple",
    "genre": "rnb",
    "apple": {
-    "points": 152,
+    "points": 151,
     "songs": 1,
     "albums": 1,
-    "best": 41,
+    "best": 42,
     "bestAlbum": 9,
     "top": {
      "kind": "album",
@@ -390,60 +390,8 @@
    },
    "score": 85,
    "lastfm": {
-    "rank": 233,
-    "listeners": 14932
-   }
-  },
-  {
-   "name": "Michael Jackson",
-   "mbid": "f27ec8db-af05-4f36-916e-3d57f91ecf5e",
-   "appleId": "32940",
-   "source": "apple",
-   "genre": "pop",
-   "apple": {
-    "points": 149,
-    "songs": 1,
-    "albums": 1,
-    "best": 11,
-    "bestAlbum": 42,
-    "top": {
-     "kind": "song",
-     "rank": 11,
-     "title": "Thriller 7\" (Special Edit)",
-     "url": "https://music.apple.com/us/album/thriller-7-special-edit/1641780996?i=1641781867",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/73/8c/e1/738ce1db-60bd-eb25-0059-18778c1ca9b3/196589412409.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 84,
-   "lastfm": {
-    "rank": 24,
-    "listeners": 43244
-   }
-  },
-  {
-   "name": "Olivia Dean",
-   "mbid": "15e0d608-0869-429b-898d-3d8db3ecedd5",
-   "appleId": "1487253329",
-   "source": "apple",
-   "genre": "pop",
-   "apple": {
-    "points": 146,
-    "songs": 1,
-    "albums": 1,
-    "best": 35,
-    "bestAlbum": 21,
-    "top": {
-     "kind": "album",
-     "rank": 21,
-     "title": "The Art of Loving",
-     "url": "https://music.apple.com/us/album/the-art-of-loving/1817609404",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/08/e2/21/08e22164-7c0b-1522-818f-e0e74f62dc49/25UMGIM69703.rgb.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 83,
-   "lastfm": {
-    "rank": 310,
-    "listeners": 12388
+    "rank": 230,
+    "listeners": 14953
    }
   },
   {
@@ -453,23 +401,75 @@
    "source": "apple",
    "genre": "indie",
    "apple": {
-    "points": 140,
+    "points": 151,
     "songs": 1,
     "albums": 2,
-    "best": 91,
-    "bestAlbum": 11,
+    "best": 81,
+    "bestAlbum": 10,
     "top": {
      "kind": "album",
-     "rank": 11,
+     "rank": 10,
      "title": "The Great Divide: The Last Of The Bugs",
      "url": "https://music.apple.com/us/album/the-great-divide-the-last-of-the-bugs/1894997820",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f9/aa/69/f9aa6992-40ca-a756-85ca-b27c48f7c720/26UMGIM02802.rgb.jpg/100x100bb.jpg"
     }
    },
+   "score": 84,
+   "lastfm": {
+    "rank": 151,
+    "listeners": 18719
+   }
+  },
+  {
+   "name": "Olivia Dean",
+   "mbid": "15e0d608-0869-429b-898d-3d8db3ecedd5",
+   "appleId": "1487253329",
+   "source": "apple",
+   "genre": "pop",
+   "apple": {
+    "points": 149,
+    "songs": 1,
+    "albums": 1,
+    "best": 33,
+    "bestAlbum": 20,
+    "top": {
+     "kind": "album",
+     "rank": 20,
+     "title": "The Art of Loving",
+     "url": "https://music.apple.com/us/album/the-art-of-loving/1817609404",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/08/e2/21/08e22164-7c0b-1522-818f-e0e74f62dc49/25UMGIM69703.rgb.jpg/100x100bb.jpg"
+    }
+   },
    "score": 82,
    "lastfm": {
-    "rank": 149,
-    "listeners": 18839
+    "rank": 321,
+    "listeners": 12173
+   }
+  },
+  {
+   "name": "Michael Jackson",
+   "mbid": "f27ec8db-af05-4f36-916e-3d57f91ecf5e",
+   "appleId": "32940",
+   "source": "apple",
+   "genre": "pop",
+   "apple": {
+    "points": 144,
+    "songs": 1,
+    "albums": 1,
+    "best": 11,
+    "bestAlbum": 47,
+    "top": {
+     "kind": "song",
+     "rank": 11,
+     "title": "Thriller 7\" (Special Edit)",
+     "url": "https://music.apple.com/us/album/thriller-7-special-edit/1641780996?i=1641781867",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/73/8c/e1/738ce1db-60bd-eb25-0059-18778c1ca9b3/196589412409.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 81,
+   "lastfm": {
+    "rank": 24,
+    "listeners": 43352
    }
   },
   {
@@ -479,14 +479,14 @@
    "source": "apple",
    "genre": "pop",
    "apple": {
-    "points": 116,
+    "points": 124,
     "songs": 1,
     "albums": 1,
-    "best": 52,
-    "bestAlbum": 34,
+    "best": 47,
+    "bestAlbum": 31,
     "top": {
      "kind": "album",
-     "rank": 34,
+     "rank": 31,
      "title": "Visitor (Deluxe)",
      "url": "https://music.apple.com/us/album/visitor-deluxe/6769552402",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f4/e5/61/f4e561f5-3e73-68c7-7ca4-295ac5a063ed/26UMGIM51351.rgb.jpg/100x100bb.jpg"
@@ -495,29 +495,29 @@
    "score": 80
   },
   {
-   "name": "Bad Bunny",
-   "mbid": "89aa5ecb-59ad-46f5-b3eb-2d424e941f19",
-   "appleId": "1126808565",
+   "name": "The Weeknd",
+   "mbid": "c8b03190-306c-4120-bb0b-6f2ebfc06ea9",
+   "appleId": "479756766",
    "source": "apple",
-   "genre": "latin",
+   "genre": "rnb",
    "apple": {
-    "points": 115,
-    "songs": 1,
-    "albums": 2,
-    "best": 73,
-    "bestAlbum": 37,
+    "points": 113,
+    "songs": 2,
+    "albums": 1,
+    "best": 17,
+    "bestAlbum": 99,
     "top": {
-     "kind": "album",
-     "rank": 37,
-     "title": "DeBÍ TiRAR MáS FOToS",
-     "url": "https://music.apple.com/us/album/deb%C3%AD-tirar-m%C3%A1s-fotos/1787022393",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/100x100bb.jpg"
+     "kind": "song",
+     "rank": 17,
+     "title": "Wicked Games",
+     "url": "https://music.apple.com/us/album/wicked-games/1550877895?i=1550878110",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4b/ab/3c/4bab3c0d-ea9a-ad8e-4229-b1e73cad0283/21UMGIM06668.rgb.jpg/100x100bb.jpg"
     }
    },
    "score": 79,
    "lastfm": {
-    "rank": 112,
-    "listeners": 22052
+    "rank": 8,
+    "listeners": 54239
    }
   },
   {
@@ -527,14 +527,14 @@
    "source": "apple",
    "genre": "hip-hop",
    "apple": {
-    "points": 102,
+    "points": 109,
     "songs": 4,
     "albums": 1,
-    "best": 65,
-    "bestAlbum": 79,
+    "best": 63,
+    "bestAlbum": 78,
     "top": {
      "kind": "song",
-     "rank": 65,
+     "rank": 63,
      "title": "Not Like Us",
      "url": "https://music.apple.com/us/album/not-like-us/1781353928?i=1781353929",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/31/3a/3f/313a3fbc-bb8f-80c7-b5a2-e226869a38cd/24UMGIM51924.rgb.jpg/100x100bb.jpg"
@@ -543,33 +543,33 @@
    "score": 78,
    "lastfm": {
     "rank": 7,
-    "listeners": 58559
+    "listeners": 58678
    }
   },
   {
-   "name": "Summer Walker",
-   "mbid": "9167f739-da47-4495-9d63-9c13b40114ac",
-   "appleId": "990402287",
+   "name": "Bad Bunny",
+   "mbid": "89aa5ecb-59ad-46f5-b3eb-2d424e941f19",
+   "appleId": "1126808565",
    "source": "apple",
-   "genre": "rnb",
+   "genre": "latin",
    "apple": {
-    "points": 101,
-    "songs": 2,
-    "albums": 0,
-    "best": 34,
-    "bestAlbum": null,
+    "points": 104,
+    "songs": 1,
+    "albums": 2,
+    "best": 76,
+    "bestAlbum": 40,
     "top": {
-     "kind": "song",
-     "rank": 34,
-     "title": "Girls Need Love",
-     "url": "https://music.apple.com/us/album/girls-need-love/1438765128?i=1438765134",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7c/1e/1a/7c1e1a21-013c-f31d-dc2c-c8118439641d/18UMGIM66021.rgb.jpg/100x100bb.jpg"
+     "kind": "album",
+     "rank": 40,
+     "title": "DeBÍ TiRAR MáS FOToS",
+     "url": "https://music.apple.com/us/album/deb%C3%AD-tirar-m%C3%A1s-fotos/1787022393",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/100x100bb.jpg"
     }
    },
    "score": 77,
    "lastfm": {
-    "rank": 425,
-    "listeners": 9632
+    "rank": 112,
+    "listeners": 21986
    }
   },
   {
@@ -579,14 +579,14 @@
    "source": "apple",
    "genre": "hip-hop",
    "apple": {
-    "points": 101,
+    "points": 104,
     "songs": 1,
     "albums": 1,
-    "best": 81,
-    "bestAlbum": 20,
+    "best": 80,
+    "bestAlbum": 18,
     "top": {
      "kind": "album",
-     "rank": 20,
+     "rank": 18,
      "title": "OCTANE",
      "url": "https://music.apple.com/us/album/octane/1871258329",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e8/e5/c6/e8e5c690-a958-622e-eb62-0dce6059300e/075679599360.jpg/100x100bb.jpg"
@@ -594,35 +594,31 @@
    },
    "score": 76,
    "lastfm": {
-    "rank": 63,
-    "listeners": 30521
+    "rank": 62,
+    "listeners": 30511
    }
   },
   {
-   "name": "Yeat",
-   "mbid": "9e6a6a2f-f696-4cc0-87f1-e4f712e46802",
-   "appleId": "1318094493",
+   "name": "Steve Lacy",
+   "mbid": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+   "appleId": "1210275020",
    "source": "apple",
-   "genre": "hip-hop",
+   "genre": "indie",
    "apple": {
     "points": 98,
-    "songs": 0,
+    "songs": 2,
     "albums": 1,
-    "best": null,
-    "bestAlbum": 3,
+    "best": 86,
+    "bestAlbum": 23,
     "top": {
      "kind": "album",
-     "rank": 3,
-     "title": "Luh Leakyz Vol. 1",
-     "url": "https://music.apple.com/us/album/luh-leakyz-vol-1/6825987374",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/76/a8/aa/76a8aa34-3e82-73e5-fdd7-1844f35d31b6/26UM1IM37849.rgb.jpg/100x100bb.jpg"
+     "rank": 23,
+     "title": "Oh yeah?",
+     "url": "https://music.apple.com/us/album/oh-yeah/6773775032",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1c/b2/46/1cb246db-afae-a599-d377-44a7ea7267fa/196874346976.jpg/100x100bb.jpg"
     }
    },
-   "score": 75,
-   "lastfm": {
-    "rank": 56,
-    "listeners": 31756
-   }
+   "score": 75
   },
   {
    "name": "Paramore",
@@ -631,36 +627,36 @@
    "genre": "rock",
    "lastfm": {
     "rank": 5,
-    "listeners": 60041,
-    "allTime": 5870877,
+    "listeners": 60010,
+    "allTime": 5881361,
     "ratio": 10.2
    },
    "score": 75
   },
   {
-   "name": "The Weeknd",
-   "mbid": "c8b03190-306c-4120-bb0b-6f2ebfc06ea9",
-   "appleId": "479756766",
+   "name": "Yeat",
+   "mbid": "9e6a6a2f-f696-4cc0-87f1-e4f712e46802",
+   "appleId": "1318094493",
    "source": "apple",
-   "genre": "rnb",
+   "genre": "hip-hop",
    "apple": {
-    "points": 96,
-    "songs": 2,
-    "albums": 0,
-    "best": 16,
-    "bestAlbum": null,
+    "points": 97,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 4,
     "top": {
-     "kind": "song",
-     "rank": 16,
-     "title": "Wicked Games",
-     "url": "https://music.apple.com/us/album/wicked-games/1550877895?i=1550878110",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4b/ab/3c/4bab3c0d-ea9a-ad8e-4229-b1e73cad0283/21UMGIM06668.rgb.jpg/100x100bb.jpg"
+     "kind": "album",
+     "rank": 4,
+     "title": "Luh Leakyz Vol. 1",
+     "url": "https://music.apple.com/us/album/luh-leakyz-vol-1/6825987374",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/76/a8/aa/76a8aa34-3e82-73e5-fdd7-1844f35d31b6/26UM1IM37849.rgb.jpg/100x100bb.jpg"
     }
    },
    "score": 74,
    "lastfm": {
-    "rank": 8,
-    "listeners": 54231
+    "rank": 56,
+    "listeners": 32165
    }
   },
   {
@@ -685,22 +681,48 @@
    },
    "score": 73,
    "lastfm": {
-    "rank": 817,
-    "listeners": 5982
+    "rank": 773,
+    "listeners": 6257
    }
   },
   {
-   "name": "Deftones",
-   "mbid": "7527f6c2-d762-4b88-b5e2-9244f1e34c46",
+   "name": "Charli xcx",
+   "mbid": "260b6184-8828-48eb-945c-bc4cb6fc34ca",
    "source": "lastfm",
-   "genre": "rock",
+   "genre": "electronic",
    "lastfm": {
-    "rank": 10,
-    "listeners": 52102,
-    "allTime": 4426162,
-    "ratio": 11.8
+    "rank": 11,
+    "listeners": 50645,
+    "allTime": 3960164,
+    "ratio": 12.8
    },
    "score": 73
+  },
+  {
+   "name": "Summer Walker",
+   "mbid": "9167f739-da47-4495-9d63-9c13b40114ac",
+   "appleId": "990402287",
+   "source": "apple",
+   "genre": "rnb",
+   "apple": {
+    "points": 89,
+    "songs": 2,
+    "albums": 0,
+    "best": 38,
+    "bestAlbum": null,
+    "top": {
+     "kind": "song",
+     "rank": 38,
+     "title": "Girls Need Love",
+     "url": "https://music.apple.com/us/album/girls-need-love/1438765128?i=1438765134",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7c/1e/1a/7c1e1a21-013c-f31d-dc2c-c8118439641d/18UMGIM66021.rgb.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 71,
+   "lastfm": {
+    "rank": 422,
+    "listeners": 9674
+   }
   },
   {
    "name": "Bryson Tiller",
@@ -709,24 +731,37 @@
    "source": "apple",
    "genre": "rnb",
    "apple": {
-    "points": 92,
+    "points": 89,
     "songs": 1,
     "albums": 1,
-    "best": 48,
+    "best": 51,
     "bestAlbum": 62,
     "top": {
      "kind": "song",
-     "rank": 48,
+     "rank": 51,
      "title": "Don't",
      "url": "https://music.apple.com/us/album/dont/1031354875?i=1031354882",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/26/4a/f9/264af9b7-813d-4b08-2822-de8b26c0e188/886445447811.jpg/100x100bb.jpg"
     }
    },
-   "score": 72,
+   "score": 70,
    "lastfm": {
-    "rank": 179,
-    "listeners": 17149
+    "rank": 178,
+    "listeners": 17156
    }
+  },
+  {
+   "name": "Pierce the Veil",
+   "mbid": "8ed919fb-eaee-45a1-ba99-b3ede9ca5f1d",
+   "source": "lastfm",
+   "genre": "rock",
+   "lastfm": {
+    "rank": 34,
+    "listeners": 38826,
+    "allTime": 2254776,
+    "ratio": 17.2
+   },
+   "score": 70
   },
   {
    "name": "NoCap",
@@ -748,27 +783,14 @@
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ae/87/41/ae874195-6c56-cc5a-332b-13e677f4bd66/075679572530.jpg/100x100bb.jpg"
     }
    },
-   "score": 71
+   "score": 69
   },
   {
-   "name": "Charli xcx",
-   "mbid": "260b6184-8828-48eb-945c-bc4cb6fc34ca",
-   "source": "lastfm",
-   "genre": "electronic",
-   "lastfm": {
-    "rank": 11,
-    "listeners": 51022,
-    "allTime": 3952949,
-    "ratio": 12.9
-   },
-   "score": 71
-  },
-  {
-   "name": "Yung Miami",
-   "mbid": "7e987fc0-7606-4637-8eb1-8c9c3e57a65c",
-   "appleId": "1476226954",
+   "name": "Victor Mendivil",
+   "mbid": null,
+   "appleId": "1713474161",
    "source": "apple",
-   "genre": "hip-hop",
+   "genre": "latin",
    "apple": {
     "points": 87,
     "songs": 0,
@@ -778,25 +800,25 @@
     "top": {
      "kind": "album",
      "rank": 14,
-     "title": "Watch Dis!",
-     "url": "https://music.apple.com/us/album/watch-dis/6824744660",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a4/c5/0e/a4c50e95-f1ae-3a4b-c261-09f8c6050899/26UM1IM06145.rgb.jpg/100x100bb.jpg"
+     "title": "No Hay Ángeles Aquí",
+     "url": "https://music.apple.com/us/album/no-hay-%C3%A1ngeles-aqu%C3%AD/6818554554",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a6/d8/31/a6d831af-322c-57e3-a470-5acc23dd84c1/1963625067621_cover.jpg/100x100bb.jpg"
     }
    },
-   "score": 70
+   "score": 68
   },
   {
-   "name": "Pierce the Veil",
-   "mbid": "8ed919fb-eaee-45a1-ba99-b3ede9ca5f1d",
+   "name": "Title Fight",
+   "mbid": "1154d345-8061-4d04-a52a-6214288523ac",
    "source": "lastfm",
    "genre": "rock",
    "lastfm": {
-    "rank": 35,
-    "listeners": 38629,
-    "allTime": 2248413,
-    "ratio": 17.2
+    "rank": 108,
+    "listeners": 22366,
+    "allTime": 1322594,
+    "ratio": 16.9
    },
-   "score": 69
+   "score": 68
   },
   {
    "name": "KPop Demon Hunters Cast",
@@ -818,42 +840,33 @@
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e1/15/42/e1154273-8ecd-5702-e6e6-597f28001681/25UMGIM82363.rgb.jpg/100x100bb.jpg"
     }
    },
-   "score": 68
+   "score": 67
   },
   {
-   "name": "Victor Mendivil",
-   "mbid": null,
-   "appleId": "1713474161",
+   "name": "Ariana Grande",
+   "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+   "appleId": "412778295",
    "source": "apple",
-   "genre": "latin",
+   "genre": "pop",
    "apple": {
-    "points": 85,
+    "points": 84,
     "songs": 0,
     "albums": 1,
     "best": null,
-    "bestAlbum": 16,
+    "bestAlbum": 17,
     "top": {
      "kind": "album",
-     "rank": 16,
-     "title": "No Hay Ángeles Aquí",
-     "url": "https://music.apple.com/us/album/no-hay-%C3%A1ngeles-aqu%C3%AD/6818554554",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a6/d8/31/a6d831af-322c-57e3-a470-5acc23dd84c1/1963625067621_cover.jpg/100x100bb.jpg"
+     "rank": 17,
+     "title": "petal",
+     "url": "https://music.apple.com/us/album/petal/1895420989",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7e/e6/82/7ee682bd-1b17-6adc-be63-b5af1bdff369/26UMGIM51126.rgb.jpg/100x100bb.jpg"
     }
    },
-   "score": 67
-  },
-  {
-   "name": "Title Fight",
-   "mbid": "1154d345-8061-4d04-a52a-6214288523ac",
-   "source": "lastfm",
-   "genre": "rock",
+   "score": 66,
    "lastfm": {
-    "rank": 108,
-    "listeners": 22316,
-    "allTime": 1317929,
-    "ratio": 16.9
-   },
-   "score": 67
+    "rank": 14,
+    "listeners": 47471
+   }
   },
   {
    "name": "SleepTherapy",
@@ -861,28 +874,6 @@
    "appleId": "993038489",
    "source": "apple",
    "genre": null,
-   "apple": {
-    "points": 83,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 18,
-    "top": {
-     "kind": "album",
-     "rank": 18,
-     "title": "Brown Noise: Loops for Relaxation, Deep Sleep, Meditation, And Babies",
-     "url": "https://music.apple.com/us/album/brown-noise-loops-for-relaxation-deep-sleep-meditation/1417709876",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/21/1e/77/211e77f4-beed-c073-526c-c182bbed597f/859727751685_cover.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 66
-  },
-  {
-   "name": "Pooh Shiesty",
-   "mbid": "82cc5b8b-22e8-48e3-9f97-6ab39ac316d6",
-   "appleId": "1456620250",
-   "source": "apple",
-   "genre": "hip-hop",
    "apple": {
     "points": 82,
     "songs": 0,
@@ -892,9 +883,9 @@
     "top": {
      "kind": "album",
      "rank": 19,
-     "title": "All Eyes on Shiest",
-     "url": "https://music.apple.com/us/album/all-eyes-on-shiest/6803703672",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ae/ef/dc/aeefdc76-2321-4b33-2cce-0904572cb757/075679560063.jpg/100x100bb.jpg"
+     "title": "Brown Noise: Loops for Relaxation, Deep Sleep, Meditation, And Babies",
+     "url": "https://music.apple.com/us/album/brown-noise-loops-for-relaxation-deep-sleep-meditation/1417709876",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/21/1e/77/211e77f4-beed-c073-526c-c182bbed597f/859727751685_cover.jpg/100x100bb.jpg"
     }
    },
    "score": 65
@@ -906,62 +897,58 @@
    "genre": "rock",
    "lastfm": {
     "rank": 135,
-    "listeners": 20495,
-    "allTime": 1292909,
-    "ratio": 15.9
+    "listeners": 20541,
+    "allTime": 1296974,
+    "ratio": 15.8
    },
    "score": 65
   },
   {
-   "name": "PARTYNEXTDOOR",
-   "mbid": "f23ef341-33bd-47c1-b83c-846a78581f05",
-   "appleId": "666648192",
+   "name": "Silent Chills",
+   "mbid": null,
+   "appleId": "1493554874",
    "source": "apple",
-   "genre": "rnb",
+   "genre": null,
    "apple": {
     "points": 80,
     "songs": 0,
-    "albums": 2,
-    "best": null,
-    "bestAlbum": 40,
-    "top": {
-     "kind": "album",
-     "rank": 40,
-     "title": "$ome $exy $ongs 4 U",
-     "url": "https://music.apple.com/us/album/%24ome-%24exy-%24ongs-4-u/6814095592",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/45/51/6a/45516a8c-3c64-19cc-2503-d25c05bab4ee/808391285880.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 64,
-   "lastfm": {
-    "rank": 137,
-    "listeners": 20447
-   }
-  },
-  {
-   "name": "Ariana Grande",
-   "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
-   "appleId": "412778295",
-   "source": "apple",
-   "genre": "pop",
-   "apple": {
-    "points": 78,
-    "songs": 0,
     "albums": 1,
     "best": null,
-    "bestAlbum": 23,
+    "bestAlbum": 21,
     "top": {
      "kind": "album",
-     "rank": 23,
-     "title": "petal",
-     "url": "https://music.apple.com/us/album/petal/1895420989",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7e/e6/82/7ee682bd-1b17-6adc-be63-b5af1bdff369/26UMGIM51126.rgb.jpg/100x100bb.jpg"
+     "rank": 21,
+     "title": "Rain Sounds For Sleep",
+     "url": "https://music.apple.com/us/album/rain-sounds-for-sleep/1542331034",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/89/2f/29892f37-c23c-5d72-f6e2-09619149b3b3/cover_4062851942317.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 64
+  },
+  {
+   "name": "Megan Thee Stallion",
+   "mbid": "ee27b2d8-648c-4a9d-a68c-e55066959975",
+   "appleId": "1258989914",
+   "source": "apple",
+   "genre": "hip-hop",
+   "apple": {
+    "points": 79,
+    "songs": 1,
+    "albums": 0,
+    "best": 22,
+    "bestAlbum": null,
+    "top": {
+     "kind": "song",
+     "rank": 22,
+     "title": "Thin Ice",
+     "url": "https://music.apple.com/us/album/thin-ice/6826470400?i=6826470420",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/df/ce/62/dfce62ef-d7d2-f3b3-0ce8-5b125882b308/26UM1IM36432.rgb.jpg/100x100bb.jpg"
     }
    },
    "score": 63,
    "lastfm": {
-    "rank": 14,
-    "listeners": 47479
+    "rank": 126,
+    "listeners": 21063
    }
   },
   {
@@ -970,17 +957,17 @@
    "source": "lastfm",
    "genre": "electronic",
    "lastfm": {
-    "rank": 147,
-    "listeners": 19382,
-    "allTime": 1753457,
-    "ratio": 11.1
+    "rank": 146,
+    "listeners": 19371,
+    "allTime": 1759488,
+    "ratio": 11
    },
    "score": 63
   },
   {
-   "name": "Silent Chills",
+   "name": "Baby Lullaby Academy",
    "mbid": null,
-   "appleId": "1493554874",
+   "appleId": "940778269",
    "source": "apple",
    "genre": null,
    "apple": {
@@ -992,12 +979,73 @@
     "top": {
      "kind": "album",
      "rank": 24,
-     "title": "Rain Sounds For Sleep",
-     "url": "https://music.apple.com/us/album/rain-sounds-for-sleep/1542331034",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/89/2f/29892f37-c23c-5d72-f6e2-09619149b3b3/cover_4062851942317.jpg/100x100bb.jpg"
+     "title": "Baby Lullaby: Relaxing Piano Lullabies and Natural Sleep Aid for Baby Sleep Music",
+     "url": "https://music.apple.com/us/album/baby-lullaby-relaxing-piano-lullabies-and-natural/1065946325",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ab/cb/17/abcb1725-a2e0-c4bc-8666-136f5782635a/859714545211_cover.jpg/100x100bb.jpg"
     }
    },
    "score": 62
+  },
+  {
+   "name": "PARTYNEXTDOOR",
+   "mbid": "f23ef341-33bd-47c1-b83c-846a78581f05",
+   "appleId": "666648192",
+   "source": "apple",
+   "genre": "rnb",
+   "apple": {
+    "points": 77,
+    "songs": 0,
+    "albums": 2,
+    "best": null,
+    "bestAlbum": 41,
+    "top": {
+     "kind": "album",
+     "rank": 41,
+     "title": "$ome $exy $ongs 4 U",
+     "url": "https://music.apple.com/us/album/%24ome-%24exy-%24ongs-4-u/6814095592",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/45/51/6a/45516a8c-3c64-19cc-2503-d25c05bab4ee/808391285880.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 60,
+   "lastfm": {
+    "rank": 137,
+    "listeners": 20348
+   }
+  },
+  {
+   "name": "Che",
+   "mbid": "e10ddbc5-dcae-4bbb-8a32-4c9a7228bfab",
+   "source": "lastfm",
+   "genre": "rock",
+   "lastfm": {
+    "rank": 152,
+    "listeners": 18632,
+    "allTime": 507838,
+    "ratio": 36.7
+   },
+   "score": 60
+  },
+  {
+   "name": "Pooh Shiesty",
+   "mbid": "82cc5b8b-22e8-48e3-9f97-6ab39ac316d6",
+   "appleId": "1456620250",
+   "source": "apple",
+   "genre": "hip-hop",
+   "apple": {
+    "points": 76,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 25,
+    "top": {
+     "kind": "album",
+     "rank": 25,
+     "title": "All Eyes on Shiest",
+     "url": "https://music.apple.com/us/album/all-eyes-on-shiest/6803703672",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ae/ef/dc/aeefdc76-2321-4b33-2cce-0904572cb757/075679560063.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 59
   },
   {
    "name": "Whiskey Myers",
@@ -1006,20 +1054,20 @@
    "source": "apple",
    "genre": "country",
    "apple": {
-    "points": 75,
+    "points": 74,
     "songs": 1,
     "albums": 0,
-    "best": 26,
+    "best": 27,
     "bestAlbum": null,
     "top": {
      "kind": "song",
-     "rank": 26,
+     "rank": 27,
      "title": "Broken Window Serenade",
      "url": "https://music.apple.com/us/album/broken-window-serenade/1813021356?i=1813021660",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/cf/22/d0cf226c-607d-d97c-61d4-26eabde51f1d/886443002371_Cover.jpg/100x100bb.jpg"
     }
    },
-   "score": 61
+   "score": 58
   },
   {
    "name": "Toby Fox",
@@ -1027,89 +1075,10 @@
    "source": "lastfm",
    "genre": "electronic",
    "lastfm": {
-    "rank": 157,
-    "listeners": 18329,
-    "allTime": 1313173,
-    "ratio": 14
-   },
-   "score": 61
-  },
-  {
-   "name": "Baby Lullaby Academy",
-   "mbid": null,
-   "appleId": "940778269",
-   "source": "apple",
-   "genre": null,
-   "apple": {
-    "points": 75,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 26,
-    "top": {
-     "kind": "album",
-     "rank": 26,
-     "title": "Baby Lullaby: Relaxing Piano Lullabies and Natural Sleep Aid for Baby Sleep Music",
-     "url": "https://music.apple.com/us/album/baby-lullaby-relaxing-piano-lullabies-and-natural/1065946325",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ab/cb/17/abcb1725-a2e0-c4bc-8666-136f5782635a/859714545211_cover.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 60
-  },
-  {
-   "name": "LUCKI",
-   "mbid": "9ccaca30-60aa-4890-ae6c-ab55225ee274",
-   "appleId": "589757880",
-   "source": "apple",
-   "genre": "hip-hop",
-   "apple": {
-    "points": 74,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 27,
-    "top": {
-     "kind": "album",
-     "rank": 27,
-     "title": "Last Laugh (archive tape)",
-     "url": "https://music.apple.com/us/album/last-laugh-archive-tape/6821145872",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f2/86/5b/f2865b24-38e4-3dd5-ec09-79237f827052/199316782172_cover.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 59
-  },
-  {
-   "name": "Ninajirachi",
-   "mbid": "6897b46a-9236-4480-9ed7-300f6b85d62f",
-   "source": "lastfm",
-   "genre": "electronic",
-   "lastfm": {
-    "rank": 160,
-    "listeners": 18291,
-    "allTime": 527941,
-    "ratio": 34.6
-   },
-   "score": 59
-  },
-  {
-   "name": "Steve Lacy",
-   "mbid": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
-   "appleId": "1210275020",
-   "source": "apple",
-   "genre": "indie",
-   "apple": {
-    "points": 73,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 28,
-    "top": {
-     "kind": "album",
-     "rank": 28,
-     "title": "Oh yeah?",
-     "url": "https://music.apple.com/us/album/oh-yeah/6773775032",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1c/b2/46/1cb246db-afae-a599-d377-44a7ea7267fa/196874346976.jpg/100x100bb.jpg"
-    }
+    "rank": 158,
+    "listeners": 18362,
+    "allTime": 1316995,
+    "ratio": 13.9
    },
    "score": 58
   },
@@ -1120,14 +1089,14 @@
    "source": "apple",
    "genre": null,
    "apple": {
-    "points": 72,
+    "points": 74,
     "songs": 0,
     "albums": 1,
     "best": null,
-    "bestAlbum": 29,
+    "bestAlbum": 27,
     "top": {
      "kind": "album",
-     "rank": 29,
+     "rank": 27,
      "title": "Damascus Road",
      "url": "https://music.apple.com/us/album/damascus-road/6795596925",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/d1/e9/29d1e939-5e58-6da1-0727-b40c0a7be5cf/26SYMIM33680.rgb.jpg/100x100bb.jpg"
@@ -1136,59 +1105,68 @@
    "score": 57
   },
   {
-   "name": "The Living Tombstone",
-   "mbid": "3f6ee55e-d523-4dd8-a027-7a6af9909ae1",
-   "source": "lastfm",
-   "genre": "electronic",
-   "lastfm": {
-    "rank": 169,
-    "listeners": 17760,
-    "allTime": 1443247,
-    "ratio": 12.3
-   },
-   "score": 57
-  },
-  {
-   "name": "Lin‐Manuel Miranda",
-   "mbid": "925c7673-0e85-410f-b7e4-d9705a7aa619",
-   "appleId": "329027198",
-   "source": "apple",
-   "genre": null,
-   "apple": {
-    "points": 72,
-    "songs": 0,
-    "albums": 2,
-    "best": null,
-    "bestAlbum": 32,
-    "top": {
-     "kind": "album",
-     "rank": 32,
-     "title": "Hamilton: An American Musical (Original Broadway Cast Recording)",
-     "url": "https://music.apple.com/us/album/hamilton-an-american-musical-original-broadway-cast/1025210938",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f3/99/31/f399318c-3f0d-bfd5-7a69-0b78b22a90df/075679921338.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 55
-  },
-  {
-   "name": "Snow Strippers",
-   "mbid": "33243fef-ce1a-4ba7-a81e-ec72e4c5029a",
-   "source": "lastfm",
-   "genre": "electronic",
-   "lastfm": {
-    "rank": 202,
-    "listeners": 16050,
-    "allTime": 1039069,
-    "ratio": 15.4
-   },
-   "score": 55
-  },
-  {
    "name": "Ms. Rachel",
    "mbid": null,
    "appleId": "1733956832",
    "source": "apple",
    "genre": null,
+   "apple": {
+    "points": 73,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 28,
+    "top": {
+     "kind": "album",
+     "rank": 28,
+     "title": "I'm So Happy",
+     "url": "https://music.apple.com/us/album/im-so-happy/6792048044",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0b/88/df/0b88df94-ec02-412b-a6bc-9ebef710142b/820233141529.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 56
+  },
+  {
+   "name": "Ninajirachi",
+   "mbid": "6897b46a-9236-4480-9ed7-300f6b85d62f",
+   "source": "lastfm",
+   "genre": "electronic",
+   "lastfm": {
+    "rank": 160,
+    "listeners": 18249,
+    "allTime": 531731,
+    "ratio": 34.3
+   },
+   "score": 56
+  },
+  {
+   "name": "LUCKI",
+   "mbid": "9ccaca30-60aa-4890-ae6c-ab55225ee274",
+   "appleId": "589757880",
+   "source": "apple",
+   "genre": "hip-hop",
+   "apple": {
+    "points": 72,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 29,
+    "top": {
+     "kind": "album",
+     "rank": 29,
+     "title": "Last Laugh (archive tape)",
+     "url": "https://music.apple.com/us/album/last-laugh-archive-tape/6821145872",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f2/86/5b/f2865b24-38e4-3dd5-ec09-79237f827052/199316782172_cover.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 55
+  },
+  {
+   "name": "Yung Miami",
+   "mbid": "7e987fc0-7606-4637-8eb1-8c9c3e57a65c",
+   "appleId": "1476226954",
+   "source": "apple",
+   "genre": "hip-hop",
    "apple": {
     "points": 71,
     "songs": 0,
@@ -1198,9 +1176,9 @@
     "top": {
      "kind": "album",
      "rank": 30,
-     "title": "I'm So Happy",
-     "url": "https://music.apple.com/us/album/im-so-happy/6792048044",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0b/88/df/0b88df94-ec02-412b-a6bc-9ebef710142b/820233141529.jpg/100x100bb.jpg"
+     "title": "Watch Dis!",
+     "url": "https://music.apple.com/us/album/watch-dis/6824744660",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a4/c5/0e/a4c50e95-f1ae-3a4b-c261-09f8c6050899/26UM1IM06145.rgb.jpg/100x100bb.jpg"
     }
    },
    "score": 54
@@ -1212,14 +1190,14 @@
    "source": "apple",
    "genre": "hip-hop",
    "apple": {
-    "points": 70,
+    "points": 69,
     "songs": 0,
     "albums": 1,
     "best": null,
-    "bestAlbum": 31,
+    "bestAlbum": 32,
     "top": {
      "kind": "album",
-     "rank": 31,
+     "rank": 32,
      "title": "Platinum Heart 2",
      "url": "https://music.apple.com/us/album/platinum-heart-2/6810825508",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e5/ef/76/e5ef76d0-2560-e8dc-9e77-470cd2bb935c/26UM1IM13139.rgb.jpg/100x100bb.jpg"
@@ -1228,36 +1206,36 @@
    "score": 53
   },
   {
-   "name": "Ayesha Erotica",
-   "mbid": "de5d7601-f6fa-4efa-ae3f-7005a2b89a1b",
+   "name": "The Living Tombstone",
+   "mbid": "3f6ee55e-d523-4dd8-a027-7a6af9909ae1",
    "source": "lastfm",
    "genre": "electronic",
    "lastfm": {
-    "rank": 234,
-    "listeners": 14932,
-    "allTime": 1319213,
-    "ratio": 11.3
+    "rank": 168,
+    "listeners": 17821,
+    "allTime": 1449322,
+    "ratio": 12.3
    },
    "score": 53
   },
   {
-   "name": "Bally Baby",
-   "mbid": null,
-   "appleId": "1242484684",
+   "name": "Lin‐Manuel Miranda",
+   "mbid": "925c7673-0e85-410f-b7e4-d9705a7aa619",
+   "appleId": "329027198",
    "source": "apple",
-   "genre": "hip-hop",
+   "genre": null,
    "apple": {
-    "points": 66,
+    "points": 67,
     "songs": 0,
     "albums": 1,
     "best": null,
-    "bestAlbum": 35,
+    "bestAlbum": 34,
     "top": {
      "kind": "album",
-     "rank": 35,
-     "title": "The Last Sipper",
-     "url": "https://music.apple.com/us/album/the-last-sipper/6822129015",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a4/14/3e/a4143e79-2c36-ca2e-b3ea-241f51fd4526/808391408722.jpg/100x100bb.jpg"
+     "rank": 34,
+     "title": "Hamilton: An American Musical (Original Broadway Cast Recording)",
+     "url": "https://music.apple.com/us/album/hamilton-an-american-musical-original-broadway-cast/1025210938",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f3/99/31/f399318c-3f0d-bfd5-7a69-0b78b22a90df/075679921338.jpg/100x100bb.jpg"
     }
    },
    "score": 52
@@ -1269,14 +1247,14 @@
    "source": "apple",
    "genre": "hip-hop",
    "apple": {
-    "points": 65,
+    "points": 66,
     "songs": 0,
     "albums": 1,
     "best": null,
-    "bestAlbum": 36,
+    "bestAlbum": 35,
     "top": {
      "kind": "album",
-     "rank": 36,
+     "rank": 35,
      "title": "S.K.A.T.E.",
      "url": "https://music.apple.com/us/album/s-k-a-t-e/6786552367",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/64/e0/fd/64e0fdb9-9cf4-4e76-7493-cf9403d2dab3/26UMGIM85125.rgb.jpg/100x100bb.jpg"
@@ -1285,78 +1263,78 @@
    "score": 51
   },
   {
-   "name": "Dance Gavin Dance",
-   "mbid": "16456fed-c9f2-4adf-b6ea-97b648c474d2",
+   "name": "Snow Strippers",
+   "mbid": "33243fef-ce1a-4ba7-a81e-ec72e4c5029a",
    "source": "lastfm",
-   "genre": "rock",
+   "genre": "electronic",
    "lastfm": {
-    "rank": 236,
-    "listeners": 14721,
-    "allTime": 872308,
-    "ratio": 16.9
+    "rank": 202,
+    "listeners": 16046,
+    "allTime": 1043522,
+    "ratio": 15.4
    },
    "score": 51
   },
   {
-   "name": "Fatt Smaxk",
-   "mbid": null,
-   "appleId": "1896351038",
+   "name": "Harry Styles",
+   "mbid": "7eb1ce54-a355-41f9-8d68-e018b096d427",
+   "appleId": "471260289",
    "source": "apple",
-   "genre": "hip-hop",
+   "genre": "pop",
    "apple": {
-    "points": 63,
+    "points": 65,
     "songs": 0,
     "albums": 1,
     "best": null,
-    "bestAlbum": 38,
+    "bestAlbum": 36,
     "top": {
      "kind": "album",
-     "rank": 38,
-     "title": "Smaxk Season 3: Banks House",
-     "url": "https://music.apple.com/us/album/smaxk-season-3-banks-house/6801669602",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d9/22/08/d9220887-c67d-4c47-330d-3bcfc8b241d8/075679565495.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 50
-  },
-  {
-   "name": "J. Cole",
-   "mbid": "875203e1-8e58-4b86-8dcb-7190faf411c5",
-   "appleId": "73705833",
-   "source": "apple",
-   "genre": "hip-hop",
-   "apple": {
-    "points": 58,
-    "songs": 1,
-    "albums": 0,
-    "best": 43,
-    "bestAlbum": null,
-    "top": {
-     "kind": "song",
-     "rank": 43,
-     "title": "Power Trip (feat. Miguel)",
-     "url": "https://music.apple.com/us/album/power-trip-feat-miguel/1529668443?i=1529668718",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/7e/aa/3b/7eaa3b96-320f-ca41-885c-abe5d3ca8450/20UMGIM75715.rgb.jpg/100x100bb.jpg"
+     "rank": 36,
+     "title": "Kiss All The Time. Disco, Occasionally.",
+     "url": "https://music.apple.com/us/album/kiss-all-the-time-disco-occasionally/1870984032",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/07/41/6a/07416a78-38b9-2d47-7ce8-8a52a44c510f/196874010112.jpg/100x100bb.jpg"
     }
    },
    "score": 49,
    "lastfm": {
-    "rank": 74,
-    "listeners": 27970
+    "rank": 117,
+    "listeners": 21700
    }
   },
   {
-   "name": "Modern Baseball",
-   "mbid": "e3513b4f-2a13-45f5-8ead-e79b1af0bf68",
-   "source": "lastfm",
-   "genre": "rock",
-   "lastfm": {
-    "rank": 269,
-    "listeners": 13447,
-    "allTime": 991364,
-    "ratio": 13.6
+   "name": "Bally Baby",
+   "mbid": null,
+   "appleId": "1242484684",
+   "source": "apple",
+   "genre": "hip-hop",
+   "apple": {
+    "points": 64,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 37,
+    "top": {
+     "kind": "album",
+     "rank": 37,
+     "title": "The Last Sipper",
+     "url": "https://music.apple.com/us/album/the-last-sipper/6822129015",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a4/14/3e/a4143e79-2c36-ca2e-b3ea-241f51fd4526/808391408722.jpg/100x100bb.jpg"
+    }
    },
-   "score": 49
+   "score": 48
+  },
+  {
+   "name": "Ayesha Erotica",
+   "mbid": "de5d7601-f6fa-4efa-ae3f-7005a2b89a1b",
+   "source": "lastfm",
+   "genre": "electronic",
+   "lastfm": {
+    "rank": 235,
+    "listeners": 14823,
+    "allTime": 1323275,
+    "ratio": 11.2
+   },
+   "score": 48
   },
   {
    "name": "Remi Wolf",
@@ -1365,23 +1343,149 @@
    "source": "apple",
    "genre": "pop",
    "apple": {
-    "points": 57,
+    "points": 62,
     "songs": 0,
     "albums": 1,
     "best": null,
-    "bestAlbum": 44,
+    "bestAlbum": 39,
     "top": {
      "kind": "album",
-     "rank": 44,
+     "rank": 39,
      "title": "Mud",
      "url": "https://music.apple.com/us/album/mud/6800467151",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9e/c6/db/9ec6db05-040b-4e63-c099-42406602a4e7/26UMGIM96852.rgb.jpg/100x100bb.jpg"
     }
    },
-   "score": 48,
+   "score": 47,
    "lastfm": {
-    "rank": 314,
-    "listeners": 12291
+    "rank": 315,
+    "listeners": 12271
+   }
+  },
+  {
+   "name": "J. Cole",
+   "mbid": "875203e1-8e58-4b86-8dcb-7190faf411c5",
+   "appleId": "73705833",
+   "source": "apple",
+   "genre": "hip-hop",
+   "apple": {
+    "points": 60,
+    "songs": 1,
+    "albums": 0,
+    "best": 41,
+    "bestAlbum": null,
+    "top": {
+     "kind": "song",
+     "rank": 41,
+     "title": "Power Trip (feat. Miguel)",
+     "url": "https://music.apple.com/us/album/power-trip-feat-miguel/1529668443?i=1529668718",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/7e/aa/3b/7eaa3b96-320f-ca41-885c-abe5d3ca8450/20UMGIM75715.rgb.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 46,
+   "lastfm": {
+    "rank": 72,
+    "listeners": 28199
+   }
+  },
+  {
+   "name": "Modern Baseball",
+   "mbid": "e3513b4f-2a13-45f5-8ead-e79b1af0bf68",
+   "source": "lastfm",
+   "genre": "rock",
+   "lastfm": {
+    "rank": 270,
+    "listeners": 13386,
+    "allTime": 993628,
+    "ratio": 13.5
+   },
+   "score": 46
+  },
+  {
+   "name": "Fatt Smaxk",
+   "mbid": null,
+   "appleId": "1896351038",
+   "source": "apple",
+   "genre": "hip-hop",
+   "apple": {
+    "points": 55,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 46,
+    "top": {
+     "kind": "album",
+     "rank": 46,
+     "title": "Smaxk Season 3: Banks House",
+     "url": "https://music.apple.com/us/album/smaxk-season-3-banks-house/6801669602",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d9/22/08/d9220887-c67d-4c47-330d-3bcfc8b241d8/075679565495.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 45
+  },
+  {
+   "name": "Tinashe",
+   "mbid": "396a9525-0994-4542-b480-c4587feeb476",
+   "appleId": "464835513",
+   "source": "apple",
+   "genre": "pop",
+   "apple": {
+    "points": 53,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 48,
+    "top": {
+     "kind": "album",
+     "rank": 48,
+     "title": "Popstar",
+     "url": "https://music.apple.com/us/album/popstar/6789739137",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/33/26/5a/33265a39-a36e-9455-716c-0e63a9173b29/075679570758.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 44,
+   "lastfm": {
+    "rank": 74,
+    "listeners": 28098
+   }
+  },
+  {
+   "name": "Loathe",
+   "mbid": "e9ea0fbc-ccc7-4e98-9290-0a41aa848fa2",
+   "source": "lastfm",
+   "genre": "rock",
+   "lastfm": {
+    "rank": 318,
+    "listeners": 12216,
+    "allTime": 943154,
+    "ratio": 13
+   },
+   "score": 44
+  },
+  {
+   "name": "Frank Ocean",
+   "mbid": "e520459c-dff4-491d-a6e4-c97be35e0044",
+   "appleId": "442122051",
+   "source": "apple",
+   "genre": "pop",
+   "apple": {
+    "points": 48,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 53,
+    "top": {
+     "kind": "album",
+     "rank": 53,
+     "title": "Blonde",
+     "url": "https://music.apple.com/us/album/blonde/1146195596",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bb/45/68/bb4568f3-68cd-619d-fbcb-4e179916545d/BlondCover-Final.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 43,
+   "lastfm": {
+    "rank": 16,
+    "listeners": 46493
    }
   },
   {
@@ -1391,141 +1495,6 @@
    "source": "apple",
    "genre": "hip-hop",
    "apple": {
-    "points": 56,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 45,
-    "top": {
-     "kind": "album",
-     "rank": 45,
-     "title": "BIGGER THAN THE DEVIL",
-     "url": "https://music.apple.com/us/album/bigger-than-the-devil/6810900350",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a7/93/43/a793439f-2282-2da7-05c1-85232d50028b/26UM1IM07652.rgb.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 47
-  },
-  {
-   "name": "Superheaven",
-   "mbid": "16f7e748-59b4-4705-959c-9276be0ebf6a",
-   "source": "lastfm",
-   "genre": "rock",
-   "lastfm": {
-    "rank": 308,
-    "listeners": 12494,
-    "allTime": 1060849,
-    "ratio": 11.8
-   },
-   "score": 47
-  },
-  {
-   "name": "Tinashe",
-   "mbid": "396a9525-0994-4542-b480-c4587feeb476",
-   "appleId": "464835513",
-   "source": "apple",
-   "genre": "pop",
-   "apple": {
-    "points": 54,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 47,
-    "top": {
-     "kind": "album",
-     "rank": 47,
-     "title": "Popstar",
-     "url": "https://music.apple.com/us/album/popstar/6789739137",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/33/26/5a/33265a39-a36e-9455-716c-0e63a9173b29/075679570758.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 46,
-   "lastfm": {
-    "rank": 73,
-    "listeners": 28277
-   }
-  },
-  {
-   "name": "Harry Styles",
-   "mbid": "7eb1ce54-a355-41f9-8d68-e018b096d427",
-   "appleId": "471260289",
-   "source": "apple",
-   "genre": "pop",
-   "apple": {
-    "points": 52,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 49,
-    "top": {
-     "kind": "album",
-     "rank": 49,
-     "title": "Kiss All The Time. Disco, Occasionally.",
-     "url": "https://music.apple.com/us/album/kiss-all-the-time-disco-occasionally/1870984032",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/07/41/6a/07416a78-38b9-2d47-7ce8-8a52a44c510f/196874010112.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 45,
-   "lastfm": {
-    "rank": 116,
-    "listeners": 21848
-   }
-  },
-  {
-   "name": "Loathe",
-   "mbid": "e9ea0fbc-ccc7-4e98-9290-0a41aa848fa2",
-   "source": "lastfm",
-   "genre": "rock",
-   "lastfm": {
-    "rank": 322,
-    "listeners": 12131,
-    "allTime": 940329,
-    "ratio": 12.9
-   },
-   "score": 45
-  },
-  {
-   "name": "Babyfxce E",
-   "mbid": "866efe9a-5898-415d-98ae-062d5d0debd3",
-   "appleId": "1573432856",
-   "source": "apple",
-   "genre": "hip-hop",
-   "apple": {
-    "points": 51,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 50,
-    "top": {
-     "kind": "album",
-     "rank": 50,
-     "title": "The X Tape 2",
-     "url": "https://music.apple.com/us/album/the-x-tape-2/6818634785",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/06/14/7f06149f-a9d5-4a2d-5d1a-9047f16168ab/075679553652.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 43
-  },
-  {
-   "name": "Machine Girl",
-   "mbid": "c7df5ec5-380a-40f9-856f-28fb4a33d946",
-   "source": "lastfm",
-   "genre": "rock",
-   "lastfm": {
-    "rank": 336,
-    "listeners": 11604,
-    "allTime": 1091865,
-    "ratio": 10.6
-   },
-   "score": 43
-  },
-  {
-   "name": "LISA",
-   "mbid": "30aeb57f-bb16-47fa-86ca-79fc57b4d12c",
-   "appleId": "1583908668",
-   "source": "apple",
-   "genre": "pop",
-   "apple": {
     "points": 47,
     "songs": 0,
     "albums": 1,
@@ -1534,47 +1503,12 @@
     "top": {
      "kind": "album",
      "rank": 54,
-     "title": "PRESS PLAY",
-     "url": "https://music.apple.com/us/album/press-play/6804002989",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/de/67/1dde6726-f217-b447-46cd-94d5f9621797/196874712696.jpg/100x100bb.jpg"
+     "title": "BIGGER THAN THE DEVIL",
+     "url": "https://music.apple.com/us/album/bigger-than-the-devil/6810900350",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a7/93/43/a793439f-2282-2da7-05c1-85232d50028b/26UM1IM07652.rgb.jpg/100x100bb.jpg"
     }
    },
    "score": 42
-  },
-  {
-   "name": "The Citizens of Halloween",
-   "mbid": null,
-   "appleId": "1656038206",
-   "source": "apple",
-   "genre": null,
-   "apple": {
-    "points": 46,
-    "songs": 1,
-    "albums": 0,
-    "best": 55,
-    "bestAlbum": null,
-    "top": {
-     "kind": "song",
-     "rank": 55,
-     "title": "This Is Halloween",
-     "url": "https://music.apple.com/us/album/this-is-halloween/1440662430?i=1440662595",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/26/5c/37/265c3733-e0a5-5758-6de0-f6a9f2a1ad6d/06PNDIM00838.rgb.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 41
-  },
-  {
-   "name": "Mom Jeans.",
-   "mbid": "65e60a4a-4e52-48b3-ade4-bdfed2c94b3e",
-   "source": "lastfm",
-   "genre": "rock",
-   "lastfm": {
-    "rank": 377,
-    "listeners": 10408,
-    "allTime": 771379,
-    "ratio": 13.5
-   },
-   "score": 41
   },
   {
    "name": "Mac Miller",
@@ -1583,31 +1517,131 @@
    "source": "apple",
    "genre": "hip-hop",
    "apple": {
-    "points": 44,
+    "points": 45,
     "songs": 1,
     "albums": 0,
-    "best": 57,
+    "best": 56,
     "bestAlbum": null,
     "top": {
      "kind": "song",
-     "rank": 57,
+     "rank": 56,
      "title": "Cinderella (feat. Ty Dolla $ign)",
      "url": "https://music.apple.com/us/album/cinderella-feat-ty-dolla-%24ign/1137965822?i=1137966332",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/33/cc/4d/33cc4d85-e92a-b171-1b72-4dc882ce2359/093624918844.jpg/100x100bb.jpg"
     }
    },
-   "score": 40,
+   "score": 41,
    "lastfm": {
-    "rank": 53,
-    "listeners": 32524
+    "rank": 52,
+    "listeners": 32595
    }
   },
   {
-   "name": "Megan Thee Stallion",
-   "mbid": "ee27b2d8-648c-4a9d-a68c-e55066959975",
-   "appleId": "1258989914",
+   "name": "Mom Jeans.",
+   "mbid": "65e60a4a-4e52-48b3-ade4-bdfed2c94b3e",
+   "source": "lastfm",
+   "genre": "rock",
+   "lastfm": {
+    "rank": 381,
+    "listeners": 10390,
+    "allTime": 773421,
+    "ratio": 13.4
+   },
+   "score": 41
+  },
+  {
+   "name": "ILLIT",
+   "mbid": "6b128dd7-e998-4edb-a4f5-400fef190445",
+   "appleId": "1734551937",
+   "source": "apple",
+   "genre": "pop",
+   "apple": {
+    "points": 44,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 57,
+    "top": {
+     "kind": "album",
+     "rank": 57,
+     "title": "BREAK EVEN - EP",
+     "url": "https://music.apple.com/us/album/break-even-ep/6818511623",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b9/40/bf/b940bf84-9f10-15e6-423f-3cdca2bbdd21/823375411949_Cover.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 40,
+   "lastfm": {
+    "rank": 164,
+    "listeners": 17942
+   }
+  },
+  {
+   "name": "Turnstile",
+   "mbid": "351bee54-3ee7-449d-b68e-c94da6798b97",
+   "source": "lastfm",
+   "genre": "rock",
+   "lastfm": {
+    "rank": 389,
+    "listeners": 10246,
+    "allTime": 1012399,
+    "ratio": 10.1
+   },
+   "score": 39
+  },
+  {
+   "name": "Ashe",
+   "mbid": "36086094-c2a4-49b9-8572-0fbf12fc3409",
+   "appleId": "1234718215",
+   "source": "apple",
+   "genre": "pop",
+   "apple": {
+    "points": 43,
+    "songs": 1,
+    "albums": 0,
+    "best": 58,
+    "bestAlbum": null,
+    "top": {
+     "kind": "song",
+     "rank": 58,
+     "title": "Stop The Wedding!",
+     "url": "https://music.apple.com/us/album/stop-the-wedding/6805240956?i=6805240960",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1b/86/c9/1b86c988-03b8-ca21-10a5-0963d09f5bcf/075679561893.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 38,
+   "lastfm": {
+    "rank": 383,
+    "listeners": 10333
+   }
+  },
+  {
+   "name": "Ye",
+   "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051",
+   "appleId": "2715720",
    "source": "apple",
    "genre": "hip-hop",
+   "apple": {
+    "points": 43,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 58,
+    "top": {
+     "kind": "album",
+     "rank": 58,
+     "title": "Graduation",
+     "url": "https://music.apple.com/us/album/graduation/1451901307",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/2f/db/2c/2fdb2c9d-171c-c6dc-57ee-4bae2b4bb11a/07UMGIM12671.rgb.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 37
+  },
+  {
+   "name": "Post Malone",
+   "mbid": "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19",
+   "appleId": "966309175",
+   "source": "apple",
+   "genre": "country",
    "apple": {
     "points": 42,
     "songs": 1,
@@ -1617,55 +1651,29 @@
     "top": {
      "kind": "song",
      "rank": 59,
-     "title": "Thin Ice",
-     "url": "https://music.apple.com/us/album/thin-ice/6826470400?i=6826470420",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/df/ce/62/dfce62ef-d7d2-f3b3-0ce8-5b125882b308/26UM1IM36432.rgb.jpg/100x100bb.jpg"
+     "title": "I Had Some Help (feat. Morgan Wallen)",
+     "url": "https://music.apple.com/us/album/i-had-some-help-feat-morgan-wallen/1744439045?i=1744439049",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e1/b7/09/e1b7098f-d6e1-2b18-fd6f-8390110908eb/24UMGIM50612.rgb.jpg/100x100bb.jpg"
     }
    },
-   "score": 39,
+   "score": 36,
    "lastfm": {
-    "rank": 136,
-    "listeners": 20458
+    "rank": 97,
+    "listeners": 23471
    }
   },
   {
-   "name": "Lemon Demon",
-   "mbid": "6b014cfd-4927-4187-a741-715998e6d785",
+   "name": "KMFDM",
+   "mbid": "45074d7c-5307-44a8-854f-ae072e1622ae",
    "source": "lastfm",
    "genre": "rock",
    "lastfm": {
-    "rank": 378,
-    "listeners": 10400,
-    "allTime": 899896,
-    "ratio": 11.6
+    "rank": 410,
+    "listeners": 9857,
+    "allTime": 865650,
+    "ratio": 11.4
    },
-   "score": 39
-  },
-  {
-   "name": "Frank Ocean",
-   "mbid": "e520459c-dff4-491d-a6e4-c97be35e0044",
-   "appleId": "442122051",
-   "source": "apple",
-   "genre": "pop",
-   "apple": {
-    "points": 42,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 59,
-    "top": {
-     "kind": "album",
-     "rank": 59,
-     "title": "Blonde",
-     "url": "https://music.apple.com/us/album/blonde/1146195596",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bb/45/68/bb4568f3-68cd-619d-fbcb-4e179916545d/BlondCover-Final.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 38,
-   "lastfm": {
-    "rank": 16,
-    "listeners": 46310
-   }
+   "score": 36
   },
   {
    "name": "STELLA LEFTY",
@@ -1687,12 +1695,12 @@
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7c/de/5e/7cde5e7a-612d-9714-d34c-1eb234c85ebb/810129961546.jpg/100x100bb.jpg"
     }
    },
-   "score": 37
+   "score": 35
   },
   {
-   "name": "Ye",
-   "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051",
-   "appleId": "2715720",
+   "name": "Babyfxce E",
+   "mbid": "866efe9a-5898-415d-98ae-062d5d0debd3",
+   "appleId": "1573432856",
    "source": "apple",
    "genre": "hip-hop",
    "apple": {
@@ -1704,25 +1712,25 @@
     "top": {
      "kind": "album",
      "rank": 60,
-     "title": "Graduation",
-     "url": "https://music.apple.com/us/album/graduation/1451901307",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/2f/db/2c/2fdb2c9d-171c-c6dc-57ee-4bae2b4bb11a/07UMGIM12671.rgb.jpg/100x100bb.jpg"
+     "title": "The X Tape 2",
+     "url": "https://music.apple.com/us/album/the-x-tape-2/6818634785",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/06/14/7f06149f-a9d5-4a2d-5d1a-9047f16168ab/075679553652.jpg/100x100bb.jpg"
     }
    },
-   "score": 36
+   "score": 34
   },
   {
-   "name": "yeule",
-   "mbid": "31da7b06-bc30-4a1f-9f4a-c2ac1a84167f",
+   "name": "bassvictim",
+   "mbid": "4de1756c-e988-4f9f-87bf-bae46f56fefe",
    "source": "lastfm",
    "genre": "electronic",
    "lastfm": {
-    "rank": 401,
-    "listeners": 9958,
-    "allTime": 786515,
-    "ratio": 12.7
+    "rank": 453,
+    "listeners": 9263,
+    "allTime": 356677,
+    "ratio": 26
    },
-   "score": 36
+   "score": 34
   },
   {
    "name": "The Killers",
@@ -1744,75 +1752,10 @@
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/42/ef/5b/42ef5b97-a08f-9136-ce8e-176adc8ca28d/18UMGIM00359.rgb.jpg/100x100bb.jpg"
     }
    },
-   "score": 35,
-   "lastfm": {
-    "rank": 83,
-    "listeners": 25281
-   }
-  },
-  {
-   "name": "Post Malone",
-   "mbid": "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19",
-   "appleId": "966309175",
-   "source": "apple",
-   "genre": "country",
-   "apple": {
-    "points": 38,
-    "songs": 1,
-    "albums": 0,
-    "best": 63,
-    "bestAlbum": null,
-    "top": {
-     "kind": "song",
-     "rank": 63,
-     "title": "I Had Some Help (feat. Morgan Wallen)",
-     "url": "https://music.apple.com/us/album/i-had-some-help-feat-morgan-wallen/1744439045?i=1744439049",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e1/b7/09/e1b7098f-d6e1-2b18-fd6f-8390110908eb/24UMGIM50612.rgb.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 34,
-   "lastfm": {
-    "rank": 95,
-    "listeners": 23623
-   }
-  },
-  {
-   "name": "KMFDM",
-   "mbid": "45074d7c-5307-44a8-854f-ae072e1622ae",
-   "source": "lastfm",
-   "genre": "rock",
-   "lastfm": {
-    "rank": 404,
-    "listeners": 9899,
-    "allTime": 862920,
-    "ratio": 11.5
-   },
-   "score": 34
-  },
-  {
-   "name": "Fontaines D.C.",
-   "mbid": "fd87acc7-e0a0-4a45-bc2a-d2ab5c10be68",
-   "appleId": "1341828470",
-   "source": "apple",
-   "genre": "indie",
-   "apple": {
-    "points": 38,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 63,
-    "top": {
-     "kind": "album",
-     "rank": 63,
-     "title": "Dopamine Chamber",
-     "url": "https://music.apple.com/us/album/dopamine-chamber/6792085051",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/10/8c/24108c9c-845b-40f3-6175-9effb95e1d5c/191404167373.png/100x100bb.jpg"
-    }
-   },
    "score": 33,
    "lastfm": {
-    "rank": 139,
-    "listeners": 19888
+    "rank": 82,
+    "listeners": 25184
    }
   },
   {
@@ -1822,14 +1765,14 @@
    "source": "apple",
    "genre": "latin",
    "apple": {
-    "points": 37,
-    "songs": 1,
+    "points": 38,
+    "songs": 0,
     "albums": 1,
-    "best": 100,
-    "bestAlbum": 65,
+    "best": null,
+    "bestAlbum": 63,
     "top": {
      "kind": "album",
-     "rank": 65,
+     "rank": 63,
      "title": "111XPANTIA",
      "url": "https://music.apple.com/us/album/111xpantia/1804142476",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/51/0a/a3/510aa39f-7a41-b53c-70a0-6a0df60645bb/196872995978.jpg/100x100bb.jpg"
@@ -1837,29 +1780,16 @@
    },
    "score": 32,
    "lastfm": {
-    "rank": 873,
-    "listeners": 5599
+    "rank": 880,
+    "listeners": 5566
    }
   },
   {
-   "name": "Hayley Williams",
-   "mbid": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
-   "source": "lastfm",
-   "genre": "rock",
-   "lastfm": {
-    "rank": 431,
-    "listeners": 9516,
-    "allTime": 888940,
-    "ratio": 10.7
-   },
-   "score": 32
-  },
-  {
-   "name": "Latto",
-   "mbid": "355cc194-b8db-4af2-8678-c7ad54213f4b",
-   "appleId": "419799506",
+   "name": "Fontaines D.C.",
+   "mbid": "fd87acc7-e0a0-4a45-bc2a-d2ab5c10be68",
+   "appleId": "1341828470",
    "source": "apple",
-   "genre": "hip-hop",
+   "genre": "indie",
    "apple": {
     "points": 37,
     "songs": 0,
@@ -1869,12 +1799,16 @@
     "top": {
      "kind": "album",
      "rank": 64,
-     "title": "Big Mama",
-     "url": "https://music.apple.com/us/album/big-mama/6774372200",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/78/75/0f/78750f43-51a6-972d-b0e9-127fe0b00d85/196874450932.jpg/100x100bb.jpg"
+     "title": "Dopamine Chamber",
+     "url": "https://music.apple.com/us/album/dopamine-chamber/6792085051",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/10/8c/24108c9c-845b-40f3-6175-9effb95e1d5c/191404167373.png/100x100bb.jpg"
     }
    },
-   "score": 30
+   "score": 31,
+   "lastfm": {
+    "rank": 144,
+    "listeners": 19547
+   }
   },
   {
    "name": "Sunny Day Real Estate",
@@ -1882,41 +1816,115 @@
    "source": "lastfm",
    "genre": "rock",
    "lastfm": {
-    "rank": 458,
-    "listeners": 9184,
-    "allTime": 851436,
+    "rank": 457,
+    "listeners": 9227,
+    "allTime": 853960,
     "ratio": 10.8
+   },
+   "score": 31
+  },
+  {
+   "name": "LISA",
+   "mbid": "30aeb57f-bb16-47fa-86ca-79fc57b4d12c",
+   "appleId": "1583908668",
+   "source": "apple",
+   "genre": "pop",
+   "apple": {
+    "points": 36,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 65,
+    "top": {
+     "kind": "album",
+     "rank": 65,
+     "title": "PRESS PLAY",
+     "url": "https://music.apple.com/us/album/press-play/6804002989",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/de/67/1dde6726-f217-b447-46cd-94d5f9621797/196874712696.jpg/100x100bb.jpg"
+    }
    },
    "score": 30
   },
   {
-   "name": "Danny Elfman",
-   "mbid": "5b24fbab-c58f-4c37-a59d-ab232e2d98c4",
-   "appleId": "486493",
+   "name": "The Citizens of Halloween",
+   "mbid": null,
+   "appleId": "1656038206",
    "source": "apple",
    "genre": null,
    "apple": {
-    "points": 35,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 66,
+    "points": 34,
+    "songs": 1,
+    "albums": 0,
+    "best": 67,
+    "bestAlbum": null,
     "top": {
-     "kind": "album",
-     "rank": 66,
-     "title": "The Nightmare Before Christmas (Special Edition) [Original Motion Picture Soundtrack]",
-     "url": "https://music.apple.com/us/album/the-nightmare-before-christmas-special-edition/1440662430",
+     "kind": "song",
+     "rank": 67,
+     "title": "This Is Halloween",
+     "url": "https://music.apple.com/us/album/this-is-halloween/1440662430?i=1440662595",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/26/5c/37/265c3733-e0a5-5758-6de0-f6a9f2a1ad6d/06PNDIM00838.rgb.jpg/100x100bb.jpg"
     }
    },
    "score": 29
   },
   {
-   "name": "Rihanna",
-   "mbid": "73e5e69d-3554-40d8-8516-00cb38737a1c",
-   "appleId": "63346553",
+   "name": "Sleep Token",
+   "mbid": "775ad383-ac2d-479a-af9d-b561442cb749",
+   "source": "lastfm",
+   "genre": "rock",
+   "lastfm": {
+    "rank": 463,
+    "listeners": 9127,
+    "allTime": 905247,
+    "ratio": 10.1
+   },
+   "score": 29
+  },
+  {
+   "name": "Sabrina Carpenter",
+   "mbid": "1882fe91-cdd9-49c9-9956-8e06a3810bd4",
+   "appleId": "390647681",
    "source": "apple",
    "genre": "pop",
+   "apple": {
+    "points": 34,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 67,
+    "top": {
+     "kind": "album",
+     "rank": 67,
+     "title": "Man’s Best Friend",
+     "url": "https://music.apple.com/us/album/mans-best-friend/1819861154",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cc/bc/ef/ccbcefb5-cf3a-1c55-0173-c37602827c7a/25UMGIM81699.rgb.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 27,
+   "lastfm": {
+    "rank": 60,
+    "listeners": 31143
+   }
+  },
+  {
+   "name": "Black Country, New Road",
+   "mbid": "e9403d9c-329b-4108-a26f-564159d441d9",
+   "source": "lastfm",
+   "genre": "rock",
+   "lastfm": {
+    "rank": 468,
+    "listeners": 8990,
+    "allTime": 849066,
+    "ratio": 10.6
+   },
+   "score": 27
+  },
+  {
+   "name": "Latto",
+   "mbid": "355cc194-b8db-4af2-8678-c7ad54213f4b",
+   "appleId": "419799506",
+   "source": "apple",
+   "genre": "hip-hop",
    "apple": {
     "points": 31,
     "songs": 0,
@@ -1926,58 +1934,45 @@
     "top": {
      "kind": "album",
      "rank": 70,
+     "title": "Big Mama",
+     "url": "https://music.apple.com/us/album/big-mama/6774372200",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/78/75/0f/78750f43-51a6-972d-b0e9-127fe0b00d85/196874450932.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 26
+  },
+  {
+   "name": "Rihanna",
+   "mbid": "73e5e69d-3554-40d8-8516-00cb38737a1c",
+   "appleId": "63346553",
+   "source": "apple",
+   "genre": "pop",
+   "apple": {
+    "points": 30,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 71,
+    "top": {
+     "kind": "album",
+     "rank": 71,
      "title": "ANTI (Deluxe)",
      "url": "https://music.apple.com/us/album/anti-deluxe/1440933869",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/11/e9/60/11e9600c-7f3a-424b-1643-97c69f7e8067/16UMGIM03373.rgb.jpg/100x100bb.jpg"
     }
    },
-   "score": 28,
+   "score": 25,
    "lastfm": {
     "rank": 13,
-    "listeners": 50544
+    "listeners": 50219
    }
   },
   {
-   "name": "Sleep Token",
-   "mbid": "775ad383-ac2d-479a-af9d-b561442cb749",
-   "source": "lastfm",
-   "genre": "rock",
-   "lastfm": {
-    "rank": 465,
-    "listeners": 9085,
-    "allTime": 903472,
-    "ratio": 10.1
-   },
-   "score": 28
-  },
-  {
-   "name": "Chris Stapleton",
-   "mbid": "71d58182-aa37-4c04-b21a-efe46ea0f221",
-   "appleId": "1752134",
+   "name": "Boosie Badazz",
+   "mbid": "8ba17cf6-bec2-4ae4-9820-b1cda47adc08",
+   "appleId": "316099350",
    "source": "apple",
-   "genre": "country",
-   "apple": {
-    "points": 29,
-    "songs": 1,
-    "albums": 0,
-    "best": 72,
-    "bestAlbum": null,
-    "top": {
-     "kind": "song",
-     "rank": 72,
-     "title": "Tennessee Whiskey",
-     "url": "https://music.apple.com/us/album/tennessee-whiskey/1440827477?i=1440827492",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e2/4b/60/e24b6016-8278-bb18-cf5d-d44bf68371da/00602547223838.rgb.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 27
-  },
-  {
-   "name": "Sabrina Carpenter",
-   "mbid": "1882fe91-cdd9-49c9-9956-8e06a3810bd4",
-   "appleId": "390647681",
-   "source": "apple",
-   "genre": "pop",
+   "genre": "hip-hop",
    "apple": {
     "points": 29,
     "songs": 0,
@@ -1987,58 +1982,54 @@
     "top": {
      "kind": "album",
      "rank": 72,
-     "title": "Man’s Best Friend",
-     "url": "https://music.apple.com/us/album/mans-best-friend/1819861154",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cc/bc/ef/ccbcefb5-cf3a-1c55-0173-c37602827c7a/25UMGIM81699.rgb.jpg/100x100bb.jpg"
+     "title": "Back At It",
+     "url": "https://music.apple.com/us/album/back-at-it/6824736637",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/43/01/88/4301882a-4ab0-471c-ff21-ad417e07188b/810207936015_cover.jpg/100x100bb.jpg"
     }
    },
-   "score": 26,
-   "lastfm": {
-    "rank": 60,
-    "listeners": 31152
-   }
+   "score": 24
   },
   {
-   "name": "bassvictim",
-   "mbid": "4de1756c-e988-4f9f-87bf-bae46f56fefe",
+   "name": "Dazey and the Scouts",
+   "mbid": "a7fd3cbf-15cc-4a8a-b59f-587b5784feb2",
    "source": "lastfm",
-   "genre": "electronic",
+   "genre": "rock",
    "lastfm": {
-    "rank": 466,
-    "listeners": 9082,
-    "allTime": 353955,
-    "ratio": 25.7
+    "rank": 492,
+    "listeners": 8654,
+    "allTime": 722092,
+    "ratio": 12
    },
-   "score": 26
+   "score": 24
   },
   {
-   "name": "DDG",
-   "mbid": "6b8275bf-566f-4da0-9472-6e4e3aa5441e",
-   "appleId": "3954994",
+   "name": "The Neighbourhood",
+   "mbid": "97b8d224-5660-419c-8dff-4b3bf0c33983",
+   "appleId": "219350813",
    "source": "apple",
-   "genre": "hip-hop",
+   "genre": "indie",
    "apple": {
     "points": 28,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 73,
+    "songs": 1,
+    "albums": 0,
+    "best": 73,
+    "bestAlbum": null,
     "top": {
-     "kind": "album",
+     "kind": "song",
      "rank": 73,
-     "title": "HIT-A-THON (Deluxe)",
-     "url": "https://music.apple.com/us/album/hit-a-thon-deluxe/6820716322",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/df/83/8f/df838ff4-e294-64c5-24fe-fe075f2560ea/196874840214.jpg/100x100bb.jpg"
+     "title": "Sweater Weather",
+     "url": "https://music.apple.com/us/album/sweater-weather/548656698?i=548656753",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/b9/8c/0f/b98c0f03-d78f-1619-8c7b-0b7f2c4d6ae7/886443575264.jpg/100x100bb.jpg"
     }
    },
-   "score": 25
+   "score": 23
   },
   {
-   "name": "Riley Green",
-   "mbid": "d8c85c0e-ad88-47a7-a1df-b70608c2f52f",
-   "appleId": "662432971",
+   "name": "Danny Elfman",
+   "mbid": "5b24fbab-c58f-4c37-a59d-ab232e2d98c4",
+   "appleId": "486493",
    "source": "apple",
-   "genre": "country",
+   "genre": null,
    "apple": {
     "points": 27,
     "songs": 0,
@@ -2048,25 +2039,25 @@
     "top": {
      "kind": "album",
      "rank": 74,
-     "title": "That's Just Me",
-     "url": "https://music.apple.com/us/album/thats-just-me/6770725355",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/16/cf/71/16cf71b7-bda7-9916-3d11-3b60539ace2c/26BMR0008042.rgb.jpg/100x100bb.jpg"
+     "title": "The Nightmare Before Christmas (Special Edition) [Original Motion Picture Soundtrack]",
+     "url": "https://music.apple.com/us/album/the-nightmare-before-christmas-special-edition/1440662430",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/26/5c/37/265c3733-e0a5-5758-6de0-f6a9f2a1ad6d/06PNDIM00838.rgb.jpg/100x100bb.jpg"
     }
    },
-   "score": 24
+   "score": 22
   },
   {
-   "name": "Black Country, New Road",
-   "mbid": "e9403d9c-329b-4108-a26f-564159d441d9",
+   "name": "Clarion",
+   "mbid": "a502b211-d923-4adc-8bfb-23473cc84523",
    "source": "lastfm",
    "genre": "rock",
    "lastfm": {
-    "rank": 469,
-    "listeners": 9013,
-    "allTime": 847169,
-    "ratio": 10.6
+    "rank": 520,
+    "listeners": 8346,
+    "allTime": 451138,
+    "ratio": 18.5
    },
-   "score": 24
+   "score": 22
   },
   {
    "name": "Lil Durk",
@@ -2075,63 +2066,81 @@
    "source": "apple",
    "genre": "hip-hop",
    "apple": {
-    "points": 26,
+    "points": 25,
     "songs": 0,
     "albums": 1,
     "best": null,
-    "bestAlbum": 75,
+    "bestAlbum": 76,
     "top": {
      "kind": "album",
-     "rank": 75,
+     "rank": 76,
      "title": "7220 (Deluxe)",
      "url": "https://music.apple.com/us/album/7220-deluxe/1631419758",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/53/d6/b9/53d6b9fb-8353-228d-d846-f13171d94a2d/196589267719.jpg/100x100bb.jpg"
     }
    },
-   "score": 23,
+   "score": 21,
    "lastfm": {
-    "rank": 722,
-    "listeners": 6570
+    "rank": 726,
+    "listeners": 6521
    }
   },
   {
-   "name": "Ashe",
-   "mbid": "36086094-c2a4-49b9-8572-0fbf12fc3409",
-   "appleId": "1234718215",
+   "name": "Chris Stapleton",
+   "mbid": "71d58182-aa37-4c04-b21a-efe46ea0f221",
+   "appleId": "1752134",
    "source": "apple",
-   "genre": "pop",
+   "genre": "country",
    "apple": {
-    "points": 25,
+    "points": 23,
     "songs": 1,
     "albums": 0,
-    "best": 76,
+    "best": 78,
     "bestAlbum": null,
     "top": {
      "kind": "song",
-     "rank": 76,
-     "title": "Stop The Wedding!",
-     "url": "https://music.apple.com/us/album/stop-the-wedding/6805240956?i=6805240960",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1b/86/c9/1b86c988-03b8-ca21-10a5-0963d09f5bcf/075679561893.jpg/100x100bb.jpg"
+     "rank": 78,
+     "title": "Tennessee Whiskey",
+     "url": "https://music.apple.com/us/album/tennessee-whiskey/1440827477?i=1440827492",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e2/4b/60/e24b6016-8278-bb18-cf5d-d44bf68371da/00602547223838.rgb.jpg/100x100bb.jpg"
     }
    },
-   "score": 22,
-   "lastfm": {
-    "rank": 389,
-    "listeners": 10258
-   }
+   "score": 20
   },
   {
-   "name": "Hum",
-   "mbid": "04c5ca8a-4afa-4031-aced-6357440dbc25",
+   "name": "Riley Green",
+   "mbid": "d8c85c0e-ad88-47a7-a1df-b70608c2f52f",
+   "appleId": "662432971",
+   "source": "apple",
+   "genre": "country",
+   "apple": {
+    "points": 22,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 79,
+    "top": {
+     "kind": "album",
+     "rank": 79,
+     "title": "That's Just Me",
+     "url": "https://music.apple.com/us/album/thats-just-me/6770725355",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/16/cf/71/16cf71b7-bda7-9916-3d11-3b60539ace2c/26BMR0008042.rgb.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 19
+  },
+  {
+   "name": "Her Words Kill",
+   "mbid": "9663449a-b469-4c85-b1b9-6c0d8c5ccfd1",
    "source": "lastfm",
    "genre": "rock",
    "lastfm": {
-    "rank": 480,
-    "listeners": 8802,
-    "allTime": 524124,
-    "ratio": 16.8
+    "rank": 586,
+    "listeners": 7662,
+    "allTime": 263628,
+    "ratio": 29.1
    },
-   "score": 22
+   "score": 19
   },
   {
    "name": "DJ Khaled",
@@ -2140,149 +2149,57 @@
    "source": "apple",
    "genre": "hip-hop",
    "apple": {
-    "points": 24,
+    "points": 17,
     "songs": 1,
     "albums": 0,
-    "best": 77,
+    "best": 84,
     "bestAlbum": null,
     "top": {
      "kind": "song",
-     "rank": 77,
+     "rank": 84,
      "title": "Wild Thoughts (feat. Rihanna & Bryson Tiller)",
      "url": "https://music.apple.com/us/album/wild-thoughts-feat-rihanna-bryson-tiller/1244230120?i=1244230126",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/03/5d/32/035d32e9-6fdb-8f08-daf0-c2f208128d06/886446550695.jpg/100x100bb.jpg"
     }
    },
-   "score": 21,
+   "score": 18,
    "lastfm": {
-    "rank": 426,
-    "listeners": 9602
+    "rank": 419,
+    "listeners": 9699
    }
   },
   {
-   "name": "The Neighbourhood",
-   "mbid": "97b8d224-5660-419c-8dff-4b3bf0c33983",
-   "appleId": "219350813",
-   "source": "apple",
-   "genre": "indie",
-   "apple": {
-    "points": 22,
-    "songs": 1,
-    "albums": 0,
-    "best": 79,
-    "bestAlbum": null,
-    "top": {
-     "kind": "song",
-     "rank": 79,
-     "title": "Sweater Weather",
-     "url": "https://music.apple.com/us/album/sweater-weather/548656698?i=548656753",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/b9/8c/0f/b98c0f03-d78f-1619-8c7b-0b7f2c4d6ae7/886443575264.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 20
-  },
-  {
-   "name": "Dazey and the Scouts",
-   "mbid": "a7fd3cbf-15cc-4a8a-b59f-587b5784feb2",
+   "name": "Tigers Jaw",
+   "mbid": "3cdf1327-39eb-4ffe-9ce3-20599ac6a468",
    "source": "lastfm",
    "genre": "rock",
    "lastfm": {
-    "rank": 495,
-    "listeners": 8615,
-    "allTime": 719575,
-    "ratio": 12
-   },
-   "score": 20
-  },
-  {
-   "name": "Ray Parker Jr.",
-   "mbid": "af9c073c-f230-4527-8fcd-2338fe1e129e",
-   "appleId": "3867130",
-   "source": "apple",
-   "genre": null,
-   "apple": {
-    "points": 21,
-    "songs": 1,
-    "albums": 0,
-    "best": 80,
-    "bestAlbum": null,
-    "top": {
-     "kind": "song",
-     "rank": 80,
-     "title": "Ghostbusters",
-     "url": "https://music.apple.com/us/album/ghostbusters/1484413132?i=1484413134",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c5/96/63/c596638c-a823-1a5e-dba0-6f1df67ab671/886447946862.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 18
-  },
-  {
-   "name": "Sematary",
-   "mbid": "c1d8cc1e-1e45-4b90-bfd7-f413c599c6ac",
-   "source": "lastfm",
-   "genre": "electronic",
-   "lastfm": {
-    "rank": 558,
-    "listeners": 7969,
-    "allTime": 405395,
-    "ratio": 19.7
-   },
-   "score": 18
-  },
-  {
-   "name": "Belly Gang Kushington",
-   "mbid": "f3cb8059-add2-4bf9-a19e-5664588e30ba",
-   "appleId": "1662748050",
-   "source": "apple",
-   "genre": "hip-hop",
-   "apple": {
-    "points": 18,
-    "songs": 1,
-    "albums": 0,
-    "best": 83,
-    "bestAlbum": null,
-    "top": {
-     "kind": "song",
-     "rank": 83,
-     "title": "WTF GOIN",
-     "url": "https://music.apple.com/us/album/wtf-goin/6779378647?i=6779378648",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/14/d5/7b/14d57b74-7680-e414-2424-f03f1173da3a/820233646390.jpg/100x100bb.jpg"
-    }
+    "rank": 591,
+    "listeners": 7619,
+    "allTime": 526894,
+    "ratio": 14.5
    },
    "score": 17
   },
   {
-   "name": "VEDO",
-   "mbid": null,
-   "appleId": "267769510",
+   "name": "DDG",
+   "mbid": "6b8275bf-566f-4da0-9472-6e4e3aa5441e",
+   "appleId": "3954994",
    "source": "apple",
-   "genre": "rnb",
+   "genre": "hip-hop",
    "apple": {
-    "points": 17,
+    "points": 16,
     "songs": 0,
     "albums": 1,
     "best": null,
-    "bestAlbum": 84,
+    "bestAlbum": 85,
     "top": {
      "kind": "album",
-     "rank": 84,
-     "title": "V",
-     "url": "https://music.apple.com/us/album/v/6818629295",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/60/10/ab/6010abeb-5408-af32-e6c6-7487e1b0d131/67678.jpg/100x100bb.jpg"
+     "rank": 85,
+     "title": "HIT-A-THON (Deluxe)",
+     "url": "https://music.apple.com/us/album/hit-a-thon-deluxe/6820716322",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/df/83/8f/df838ff4-e294-64c5-24fe-fe075f2560ea/196874840214.jpg/100x100bb.jpg"
     }
-   },
-   "score": 16
-  },
-  {
-   "name": "Her Words Kill",
-   "mbid": "9663449a-b469-4c85-b1b9-6c0d8c5ccfd1",
-   "source": "lastfm",
-   "genre": "rock",
-   "lastfm": {
-    "rank": 588,
-    "listeners": 7638,
-    "allTime": 261483,
-    "ratio": 29.2
    },
    "score": 16
   },
@@ -2293,14 +2210,14 @@
    "source": "apple",
    "genre": "latin",
    "apple": {
-    "points": 16,
+    "points": 14,
     "songs": 0,
     "albums": 1,
     "best": null,
-    "bestAlbum": 85,
+    "bestAlbum": 87,
     "top": {
      "kind": "album",
-     "rank": 85,
+     "rank": 87,
      "title": "POR SI MAÑANA NO ESTOY",
      "url": "https://music.apple.com/us/album/por-si-ma%C3%B1ana-no-estoy/1877481995",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/100x100bb.jpg"
@@ -2309,72 +2226,24 @@
    "score": 15
   },
   {
-   "name": "Loe Shimmy",
-   "mbid": null,
-   "appleId": "1506815992",
-   "source": "apple",
-   "genre": "hip-hop",
-   "apple": {
-    "points": 15,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 86,
-    "top": {
-     "kind": "album",
-     "rank": 86,
-     "title": "Pretty Girlz Run The World",
-     "url": "https://music.apple.com/us/album/pretty-girlz-run-the-world/6790948448",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3d/10/50/3d105032-2671-5f3e-7c64-68ef4c8bc6c4/712132082525_cover.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 14
-  },
-  {
-   "name": "The Hellp",
-   "mbid": "ca204bac-2768-4d6f-a5e4-8e8f9080817b",
+   "name": "Oklou",
+   "mbid": "13e2db47-3010-48b8-a8b9-667551f37119",
    "source": "lastfm",
    "genre": "electronic",
    "lastfm": {
-    "rank": 593,
-    "listeners": 7568,
-    "allTime": 469592,
-    "ratio": 16.1
+    "rank": 635,
+    "listeners": 7271,
+    "allTime": 680196,
+    "ratio": 10.7
    },
-   "score": 14
+   "score": 15
   },
   {
-   "name": "My Chemical Romance",
-   "mbid": "c07f0676-9143-4217-8a9f-4c26bd636f13",
-   "appleId": "14748659",
+   "name": "Junior H",
+   "mbid": "af1b83bb-3edc-4443-b771-67a1d235e82b",
+   "appleId": "1442059565",
    "source": "apple",
-   "genre": "indie",
-   "apple": {
-    "points": 13,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 88,
-    "top": {
-     "kind": "album",
-     "rank": 88,
-     "title": "The Black Parade",
-     "url": "https://music.apple.com/us/album/the-black-parade/1156310650",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/56/99/8a/56998a1c-efe7-fdf0-2b1d-e2da88d8df52/093624917724.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 13,
-   "lastfm": {
-    "rank": 28,
-    "listeners": 41982
-   }
-  },
-  {
-   "name": "brakence",
-   "mbid": "e636b15f-00c5-45fd-9c33-845a08c8f92d",
-   "appleId": "1345560251",
-   "source": "apple",
-   "genre": "indie",
+   "genre": "latin",
    "apple": {
     "points": 12,
     "songs": 0,
@@ -2384,29 +2253,38 @@
     "top": {
      "kind": "album",
      "rank": 89,
-     "title": "marroW",
-     "url": "https://music.apple.com/us/album/marrow/6814885746",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/dd/be/bd/ddbebd59-78df-d3b6-bfca-5a743995f016/196874730430.jpg/100x100bb.jpg"
+     "title": "$AD BOYZ 4 LIFE II",
+     "url": "https://music.apple.com/us/album/%24ad-boyz-4-life-ii/1709355600",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d3/13/2c/d3132c40-fb9c-e02e-50d8-cd66c24f4020/5054197834332.jpg/100x100bb.jpg"
     }
    },
-   "score": 12,
-   "lastfm": {
-    "rank": 397,
-    "listeners": 10064
-   }
+   "score": 14
   },
   {
-   "name": "Oklou",
-   "mbid": "13e2db47-3010-48b8-a8b9-667551f37119",
-   "source": "lastfm",
-   "genre": "electronic",
-   "lastfm": {
-    "rank": 641,
-    "listeners": 7226,
-    "allTime": 678269,
-    "ratio": 10.7
+   "name": "Billie Eilish",
+   "mbid": "f4abc0b5-3f7a-4eff-8f78-ac078dbce533",
+   "appleId": "1065981054",
+   "source": "apple",
+   "genre": "indie",
+   "apple": {
+    "points": 11,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 90,
+    "top": {
+     "kind": "album",
+     "rank": 90,
+     "title": "HIT ME HARD AND SOFT",
+     "url": "https://music.apple.com/us/album/hit-me-hard-and-soft/1739659134",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/100x100bb.jpg"
+    }
    },
-   "score": 12
+   "score": 13,
+   "lastfm": {
+    "rank": 48,
+    "listeners": 34393
+   }
   },
   {
    "name": "Bruno Mars",
@@ -2414,6 +2292,71 @@
    "appleId": "278873078",
    "source": "apple",
    "genre": "pop",
+   "apple": {
+    "points": 10,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 91,
+    "top": {
+     "kind": "album",
+     "rank": 91,
+     "title": "The Romantic",
+     "url": "https://music.apple.com/us/album/the-romantic/1866732792",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 12,
+   "lastfm": {
+    "rank": 61,
+    "listeners": 30625
+   }
+  },
+  {
+   "name": "JT Music",
+   "mbid": "835d26ab-15e3-4db2-8422-20602d72c65e",
+   "source": "lastfm",
+   "genre": "electronic",
+   "lastfm": {
+    "rank": 662,
+    "listeners": 7007,
+    "allTime": 589290,
+    "ratio": 11.9
+   },
+   "score": 12
+  },
+  {
+   "name": "Travis Scott",
+   "mbid": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6",
+   "appleId": "549236696",
+   "source": "apple",
+   "genre": "hip-hop",
+   "apple": {
+    "points": 9,
+    "songs": 1,
+    "albums": 0,
+    "best": 92,
+    "bestAlbum": null,
+    "top": {
+     "kind": "song",
+     "rank": 92,
+     "title": "goosebumps",
+     "url": "https://music.apple.com/us/album/goosebumps/1150135681?i=1150135924",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/50/f7/a3/50f7a39d-3bd5-28e9-0264-532f08b5b810/886446074726.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 11,
+   "lastfm": {
+    "rank": 46,
+    "listeners": 35402
+   }
+  },
+  {
+   "name": "Phoebe Bridgers",
+   "mbid": "96855c21-b832-4366-ba12-0d2330c36a86",
+   "appleId": "697833299",
+   "source": "apple",
+   "genre": "indie",
    "apple": {
     "points": 9,
     "songs": 0,
@@ -2423,84 +2366,36 @@
     "top": {
      "kind": "album",
      "rank": 92,
-     "title": "The Romantic",
-     "url": "https://music.apple.com/us/album/the-romantic/1866732792",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/100x100bb.jpg"
+     "title": "Lost Weekend",
+     "url": "https://music.apple.com/us/album/lost-weekend/6781051268",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/aa/9e/a6/aa9ea64a-bbf2-470e-b447-fa407b4645fa/66852.jpg/100x100bb.jpg"
     }
    },
-   "score": 11,
+   "score": 10,
    "lastfm": {
-    "rank": 61,
-    "listeners": 30722
+    "rank": 68,
+    "listeners": 28977
    }
   },
   {
-   "name": "Bobby \"Boris\" Pickett",
-   "mbid": null,
-   "appleId": "1570669469",
-   "source": "apple",
-   "genre": null,
-   "apple": {
-    "points": 8,
-    "songs": 1,
-    "albums": 0,
-    "best": 93,
-    "bestAlbum": null,
-    "top": {
-     "kind": "song",
-     "rank": 93,
-     "title": "Monster Mash",
-     "url": "https://music.apple.com/us/album/monster-mash/82125264?i=82125202",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/bb/8a/6f/bb8a6ff2-a5b6-395c-8a54-5d7954bd9e4b/dj.lnkhwpna.tif/100x100bb.jpg"
-    }
-   },
-   "score": 10
-  },
-  {
-   "name": "JT Music",
-   "mbid": "835d26ab-15e3-4db2-8422-20602d72c65e",
+   "name": "A Heartwell Ending",
+   "mbid": "6eaccab1-e6b0-42f3-87ee-6163d6f662dc",
    "source": "lastfm",
-   "genre": "electronic",
+   "genre": "rock",
    "lastfm": {
-    "rank": 662,
-    "listeners": 7047,
-    "allTime": 586385,
-    "ratio": 12
+    "rank": 686,
+    "listeners": 6844,
+    "allTime": 248112,
+    "ratio": 27.6
    },
    "score": 10
   },
   {
-   "name": "Billie Eilish",
-   "mbid": "f4abc0b5-3f7a-4eff-8f78-ac078dbce533",
-   "appleId": "1065981054",
+   "name": "BTS",
+   "mbid": "0d79fe8e-ba27-4859-bb8c-2f255f346853",
+   "appleId": "883131348",
    "source": "apple",
-   "genre": "indie",
-   "apple": {
-    "points": 8,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 93,
-    "top": {
-     "kind": "album",
-     "rank": 93,
-     "title": "HIT ME HARD AND SOFT",
-     "url": "https://music.apple.com/us/album/hit-me-hard-and-soft/1739659134",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 9,
-   "lastfm": {
-    "rank": 48,
-    "listeners": 34561
-   }
-  },
-  {
-   "name": "Hunxho",
-   "mbid": "59c2a349-e284-4925-9165-ec7f79ca142a",
-   "appleId": "1266800437",
-   "source": "apple",
-   "genre": "hip-hop",
+   "genre": "pop",
    "apple": {
     "points": 7,
     "songs": 0,
@@ -2510,25 +2405,16 @@
     "top": {
      "kind": "album",
      "rank": 94,
-     "title": "I Quit Rap",
-     "url": "https://music.apple.com/us/album/i-quit-rap/6811156679",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/18/a7/9b/18a79b3d-6bc4-d039-88a6-aa5c77d340b0/075679556820.jpg/100x100bb.jpg"
+     "title": "ARIRANG",
+     "url": "https://music.apple.com/us/album/arirang/1868862375",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/100x100bb.jpg"
     }
    },
-   "score": 8
-  },
-  {
-   "name": "Jamie Paige",
-   "mbid": "de2c3324-30c6-45f7-9136-08a5bb66bc2c",
-   "source": "lastfm",
-   "genre": "electronic",
+   "score": 9,
    "lastfm": {
-    "rank": 668,
-    "listeners": 6955,
-    "allTime": 226707,
-    "ratio": 30.7
-   },
-   "score": 8
+    "rank": 263,
+    "listeners": 13902
+   }
   },
   {
    "name": "Kodak Black",
@@ -2550,31 +2436,18 @@
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music19/v4/dc/47/69/dc476925-5b83-ac3a-51fc-72a41aaa6a1d/mzm.rhdremds.jpg/100x100bb.jpg"
     }
    },
-   "score": 7,
+   "score": 8,
    "lastfm": {
-    "rank": 140,
-    "listeners": 19753
+    "rank": 142,
+    "listeners": 19675
    }
   },
   {
-   "name": "goreshit",
-   "mbid": "eb0cf932-29f0-4e42-a866-2440b18dc182",
-   "source": "lastfm",
-   "genre": "electronic",
-   "lastfm": {
-    "rank": 765,
-    "listeners": 6273,
-    "allTime": 442642,
-    "ratio": 14.2
-   },
-   "score": 6
-  },
-  {
-   "name": "BTS",
-   "mbid": "0d79fe8e-ba27-4859-bb8c-2f255f346853",
-   "appleId": "883131348",
+   "name": "VEDO",
+   "mbid": null,
+   "appleId": "267769510",
    "source": "apple",
-   "genre": "pop",
+   "genre": "rnb",
    "apple": {
     "points": 6,
     "songs": 0,
@@ -2584,60 +2457,30 @@
     "top": {
      "kind": "album",
      "rank": 95,
-     "title": "ARIRANG",
-     "url": "https://music.apple.com/us/album/arirang/1868862375",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/100x100bb.jpg"
+     "title": "V",
+     "url": "https://music.apple.com/us/album/v/6818629295",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/60/10/ab/6010abeb-5408-af32-e6c6-7487e1b0d131/67678.jpg/100x100bb.jpg"
     }
    },
-   "score": 5,
-   "lastfm": {
-    "rank": 261,
-    "listeners": 13851
-   }
+   "score": 7
   },
   {
-   "name": "Travis Scott",
-   "mbid": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6",
-   "appleId": "549236696",
-   "source": "apple",
-   "genre": "hip-hop",
-   "apple": {
-    "points": 5,
-    "songs": 1,
-    "albums": 0,
-    "best": 96,
-    "bestAlbum": null,
-    "top": {
-     "kind": "song",
-     "rank": 96,
-     "title": "goosebumps",
-     "url": "https://music.apple.com/us/album/goosebumps/1150135681?i=1150135924",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/50/f7/a3/50f7a39d-3bd5-28e9-0264-532f08b5b810/886446074726.jpg/100x100bb.jpg"
-    }
-   },
-   "score": 4,
-   "lastfm": {
-    "rank": 46,
-    "listeners": 35466
-   }
-  },
-  {
-   "name": "Fcukers",
-   "mbid": "5e23e428-d9f5-4679-bd7c-8254d6f0a437",
+   "name": "Spiritbox",
+   "mbid": "a39ad456-a697-4f32-aa36-c107f654d318",
    "source": "lastfm",
-   "genre": "electronic",
+   "genre": "rock",
    "lastfm": {
-    "rank": 804,
-    "listeners": 6064,
-    "allTime": 426239,
-    "ratio": 14.2
+    "rank": 754,
+    "listeners": 6311,
+    "allTime": 612298,
+    "ratio": 10.3
    },
-   "score": 4
+   "score": 7
   },
   {
-   "name": "FullyChop",
-   "mbid": "93ec9369-b266-41db-bf13-39ebccf09382",
-   "appleId": "1770803301",
+   "name": "Loe Shimmy",
+   "mbid": null,
+   "appleId": "1506815992",
    "source": "apple",
    "genre": "hip-hop",
    "apple": {
@@ -2649,12 +2492,108 @@
     "top": {
      "kind": "album",
      "rank": 96,
-     "title": "99 Overall",
-     "url": "https://music.apple.com/us/album/99-overall/6817561215",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/73/f6/36/73f63674-7d7b-e611-cbbf-7083964803c6/840471816249.png/100x100bb.jpg"
+     "title": "Pretty Girlz Run The World",
+     "url": "https://music.apple.com/us/album/pretty-girlz-run-the-world/6790948448",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3d/10/50/3d105032-2671-5f3e-7c64-68ef4c8bc6c4/712132082525_cover.jpg/100x100bb.jpg"
     }
    },
-   "score": 3
+   "score": 5
+  },
+  {
+   "name": "Lady Radiator",
+   "mbid": "3110faa6-1297-4761-a38c-932e5e7a724a",
+   "source": "lastfm",
+   "genre": "rock",
+   "lastfm": {
+    "rank": 765,
+    "listeners": 6282,
+    "allTime": 170619,
+    "ratio": 36.8
+   },
+   "score": 5
+  },
+  {
+   "name": "Ray Parker Jr.",
+   "mbid": "af9c073c-f230-4527-8fcd-2338fe1e129e",
+   "appleId": "3867130",
+   "source": "apple",
+   "genre": null,
+   "apple": {
+    "points": 4,
+    "songs": 1,
+    "albums": 0,
+    "best": 97,
+    "bestAlbum": null,
+    "top": {
+     "kind": "song",
+     "rank": 97,
+     "title": "Ghostbusters",
+     "url": "https://music.apple.com/us/album/ghostbusters/1484413132?i=1484413134",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c5/96/63/c596638c-a823-1a5e-dba0-6f1df67ab671/886447946862.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 4
+  },
+  {
+   "name": "My Chemical Romance",
+   "mbid": "c07f0676-9143-4217-8a9f-4c26bd636f13",
+   "appleId": "14748659",
+   "source": "apple",
+   "genre": "indie",
+   "apple": {
+    "points": 4,
+    "songs": 0,
+    "albums": 1,
+    "best": null,
+    "bestAlbum": 97,
+    "top": {
+     "kind": "album",
+     "rank": 97,
+     "title": "The Black Parade",
+     "url": "https://music.apple.com/us/album/the-black-parade/1156310650",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/56/99/8a/56998a1c-efe7-fdf0-2b1d-e2da88d8df52/093624917724.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 3,
+   "lastfm": {
+    "rank": 28,
+    "listeners": 42291
+   }
+  },
+  {
+   "name": "Alyssa Grace",
+   "mbid": "80bd07ef-4e48-4e2c-b5ad-e590e3879cf7",
+   "appleId": "1876970625",
+   "source": "apple",
+   "genre": "indie",
+   "apple": {
+    "points": 3,
+    "songs": 1,
+    "albums": 0,
+    "best": 98,
+    "bestAlbum": null,
+    "top": {
+     "kind": "song",
+     "rank": 98,
+     "title": "bloodstream",
+     "url": "https://music.apple.com/us/album/bloodstream/6786948186?i=6786948188",
+     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/42/56/ab/4256ab71-f0a4-e6e9-08e3-9e52274fa5be/054391212313.jpg/100x100bb.jpg"
+    }
+   },
+   "score": 2
+  },
+  {
+   "name": "Fcukers",
+   "mbid": "5e23e428-d9f5-4679-bd7c-8254d6f0a437",
+   "source": "lastfm",
+   "genre": "electronic",
+   "lastfm": {
+    "rank": 811,
+    "listeners": 6032,
+    "allTime": 428699,
+    "ratio": 14.1
+   },
+   "score": 2
   },
   {
    "name": "Chris Brown",
@@ -2663,62 +2602,23 @@
    "source": "apple",
    "genre": "rnb",
    "apple": {
-    "points": 2,
+    "points": 3,
     "songs": 0,
     "albums": 1,
     "best": null,
-    "bestAlbum": 99,
+    "bestAlbum": 98,
     "top": {
      "kind": "album",
-     "rank": 99,
+     "rank": 98,
      "title": "BROWN (The Chocolate Edition)",
      "url": "https://music.apple.com/us/album/brown-the-chocolate-edition/6780611205",
      "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/82/21/fd/8221fd58-b1bc-6469-a619-5091fe45b9c0/196874484470.jpg/100x100bb.jpg"
     }
    },
-   "score": 2,
-   "lastfm": {
-    "rank": 260,
-    "listeners": 13938
-   }
-  },
-  {
-   "name": "Jorge Rivera-Herrans",
-   "mbid": "7c12b436-0fa3-473a-b908-6b7c1c9a5f24",
-   "source": "lastfm",
-   "genre": "electronic",
-   "lastfm": {
-    "rank": 925,
-    "listeners": 5252,
-    "allTime": 375980,
-    "ratio": 14
-   },
-   "score": 2
-  },
-  {
-   "name": "Phoebe Bridgers",
-   "mbid": "96855c21-b832-4366-ba12-0d2330c36a86",
-   "appleId": "697833299",
-   "source": "apple",
-   "genre": "indie",
-   "apple": {
-    "points": 1,
-    "songs": 0,
-    "albums": 1,
-    "best": null,
-    "bestAlbum": 100,
-    "top": {
-     "kind": "album",
-     "rank": 100,
-     "title": "Lost Weekend",
-     "url": "https://music.apple.com/us/album/lost-weekend/6781051268",
-     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/aa/9e/a6/aa9ea64a-bbf2-470e-b447-fa407b4645fa/66852.jpg/100x100bb.jpg"
-    }
-   },
    "score": 1,
    "lastfm": {
-    "rank": 68,
-    "listeners": 29041
+    "rank": 262,
+    "listeners": 13945
    }
   }
  ]
