@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T13:02:32.916Z",
+  "generatedAt": "2026-10-29T07:08:56.081Z",
   "source": "Ticketmaster Discovery API (live listings, rebuilt nightly)",
   "artists": {
     "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
@@ -40,12 +40,23 @@
       "name": "Denzel Curry",
       "id": "denzel-curry"
     },
+    "16f7e748-59b4-4705-959c-9276be0ebf6a": {
+      "name": "Superheaven",
+      "id": "superheaven"
+    },
     "fa1de503-aba7-41fa-a1ed-371b3e87a717": {
       "name": "Madeon",
       "id": "madeon"
     },
     "e4d7cfe5-0bed-46cf-acad-ab9a4dcb7aa6": {
       "name": "Anamanaguchi"
+    },
+    "b16c0872-31a7-4db9-8569-0e3146fcecfc": {
+      "name": "Ella Langley",
+      "id": "ella-langley"
+    },
+    "be259f80-096e-4dc1-8933-d60a8cf3bc69": {
+      "name": "Kameron Marlowe"
     },
     "6925db17-f35e-42f3-a4eb-84ee6bf5d4b0": {
       "name": "Olivia Rodrigo",
@@ -56,13 +67,6 @@
     },
     "2f0c90b1-84d5-47f1-ad75-ad8d30f53f70": {
       "name": "The Last Dinner Party"
-    },
-    "b16c0872-31a7-4db9-8569-0e3146fcecfc": {
-      "name": "Ella Langley",
-      "id": "ella-langley"
-    },
-    "be259f80-096e-4dc1-8933-d60a8cf3bc69": {
-      "name": "Kameron Marlowe"
     },
     "51e90731-08c0-4f60-89b6-5b78e5844de8": {
       "name": "Zach Bryan",
@@ -87,6 +91,13 @@
     },
     "7013c772-2236-42f3-8590-2e2292d2ca5e": {
       "name": "Victony"
+    },
+    "79c9b9a6-4b78-4738-8b81-95b066321ea9": {
+      "name": "Young Nudy",
+      "id": "young-nudy"
+    },
+    "b54d1511-887e-4a5c-9f3c-6833a5438b84": {
+      "name": "Fredo Bang"
     },
     "d8fd8d9b-473b-4f06-83c8-869b1bb9de89": {
       "name": "Bryson Tiller",
@@ -113,13 +124,6 @@
     },
     "cd584ea0-0fc5-412b-8598-0244c4025af6": {
       "name": "Boston Manor"
-    },
-    "3f6ee55e-d523-4dd8-a027-7a6af9909ae1": {
-      "name": "The Living Tombstone",
-      "id": "the-living-tombstone"
-    },
-    "293aa84f-e308-418a-b202-7d9c88479f1e": {
-      "name": "Mega Ran"
     },
     "7eb1ce54-a355-41f9-8d68-e018b096d427": {
       "name": "Harry Styles",
@@ -164,16 +168,33 @@
     "4ae67eb7-c01c-4d71-b995-21b093fcb888": {
       "name": "Wyatt Flores"
     },
+    "b4b5b5a7-feff-47d0-9458-83d0d135a692": {
+      "name": "Hayley Williams",
+      "id": "hayley-williams"
+    },
+    "9bd720ab-3aec-4ab0-b363-3a465ee65026": {
+      "name": "Annie DiRusso"
+    },
+    "e160f589-dbe6-4b8f-88b5-f528ff4443b4": {
+      "name": "Mannequin Pussy"
+    },
     "fd87acc7-e0a0-4a45-bc2a-d2ab5c10be68": {
       "name": "Fontaines D.C.",
       "id": "fontaines-d-c"
     },
-    "b4b5b5a7-feff-47d0-9458-83d0d135a692": {
-      "name": "Hayley Williams"
-    },
     "547e23af-e455-41dd-baae-a3b58e065d0c": {
       "name": "Damien Dempsey",
       "id": "damien-dempsey"
+    },
+    "d8c85c0e-ad88-47a7-a1df-b70608c2f52f": {
+      "name": "Riley Green",
+      "id": "riley-green"
+    },
+    "2646de59-5529-4134-a6c8-2c76282716d1": {
+      "name": "Muscadine Bloodline"
+    },
+    "50e3dd64-6b87-4b9a-a511-c375ae4ff1ca": {
+      "name": "Randy Houser"
     },
     "9df0c0ec-619e-447d-a155-23e19d9c84ce": {
       "name": "Viagra Boys"
@@ -195,22 +216,12 @@
     "da0c8f4f-f4f4-4e91-86ca-e31108bb5706": {
       "name": "Nessa Barrett"
     },
-    "d8c85c0e-ad88-47a7-a1df-b70608c2f52f": {
-      "name": "Riley Green",
-      "id": "riley-green"
+    "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6": {
+      "name": "Koe Wetzel",
+      "id": "koe-wetzel"
     },
-    "2646de59-5529-4134-a6c8-2c76282716d1": {
-      "name": "Muscadine Bloodline"
-    },
-    "50e3dd64-6b87-4b9a-a511-c375ae4ff1ca": {
-      "name": "Randy Houser"
-    },
-    "945d3b69-27cd-45fa-b491-52553a63dead": {
-      "name": "Joyce Manor"
-    },
-    "3cdf1327-39eb-4ffe-9ce3-20599ac6a468": {
-      "name": "Tigers Jaw",
-      "id": "tigers-jaw"
+    "ba67b7da-cca7-4c3f-ba19-05349f0f7d97": {
+      "name": "Parker McCollum"
     },
     "afb680f2-b6eb-4cd7-a70b-a63b25c763d5": {
       "name": "Bruno Mars",
@@ -218,23 +229,6 @@
     },
     "45425c84-9092-4e2c-b732-e1d0280b580a": {
       "name": "Tyla"
-    },
-    "c07f0676-9143-4217-8a9f-4c26bd636f13": {
-      "name": "My Chemical Romance",
-      "id": "my-chemical-romance"
-    },
-    "8262d8e4-9137-4bb3-a787-3caabbbc13e9": {
-      "name": "The Used"
-    },
-    "244afcb7-fa9a-49b1-9aa6-0149512d1c52": {
-      "name": "THRICE"
-    },
-    "fd36f43e-5bd1-488e-b844-0e059250ef78": {
-      "name": "glaive"
-    },
-    "c9e3089c-a7bc-4df5-80f9-9161eaa74a02": {
-      "name": "Tiffany Day",
-      "id": "tiffany-day"
     },
     "8264722b-df00-467a-858e-5c97cda169c9": {
       "name": "Joji",
@@ -272,158 +266,14 @@
       "types": [
         "upcoming"
       ],
-      "shows": 7,
-      "first": "2026-10-27",
+      "shows": 6,
+      "first": "2026-10-29",
       "last": "2026-11-05",
       "next": {
         "tour": "Knocked Loose w/ Denzel Curry",
-        "date": "2026-10-27",
-        "city": "Mesa",
-        "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70yjO"
-      }
-    },
-    {
-      "from": "6925db17-f35e-42f3-a4eb-84ee6bf5d4b0",
-      "to": "3547f34a-db02-4ab7-b4a0-380e1ef951a9",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 3,
-      "first": "2026-10-27",
-      "last": "2026-10-30",
-      "next": {
-        "tour": "Olivia Rodrigo: The Unraveled Tour",
-        "date": "2026-10-27",
-        "city": "Toronto",
-        "url": "https://www.ticketmaster.ca/olivia-rodrigo-the-unraveled-tour-toronto-ontario-10-27-2026/event/1000649D0E060D66"
-      }
-    },
-    {
-      "from": "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1",
-      "to": "cb9c2a2b-96c2-44d7-bd31-04ef87572b57",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 14,
-      "first": "2026-10-27",
-      "last": "2026-11-19",
-      "next": {
-        "tour": "Rod Wave: Don't Look Down Tour",
-        "date": "2026-10-27",
-        "city": "Brooklyn",
-        "url": "https://www.ticketmaster.com/rod-wave-dont-look-down-tour-brooklyn-new-york-10-27-2026/event/300064D00FB17794"
-      }
-    },
-    {
-      "from": "d8fd8d9b-473b-4f06-83c8-869b1bb9de89",
-      "to": "abaa7001-0d80-4e58-be5d-d2d246fd9d87",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 18,
-      "first": "2026-10-27",
-      "last": "2027-01-27",
-      "next": {
-        "tour": "Bryson Tiller Presents: The Neo Trapsoul Tour",
-        "date": "2026-10-27",
-        "city": "Concord",
-        "url": "https://www.ticketmaster.com/bryson-tiller-presents-the-neo-trapsoul-concord-california-10-27-2026/event/1C0064BA3E939112"
-      }
-    },
-    {
-      "from": "d8fd8d9b-473b-4f06-83c8-869b1bb9de89",
-      "to": "7bd66c18-cb33-49aa-9279-140acedbdb49",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 4,
-      "first": "2026-10-27",
-      "last": "2026-11-01",
-      "next": {
-        "tour": "Bryson Tiller Presents: The Neo Trapsoul Tour",
-        "date": "2026-10-27",
-        "city": "Concord",
-        "url": "https://www.ticketmaster.com/bryson-tiller-presents-the-neo-trapsoul-concord-california-10-27-2026/event/1C0064BA3E939112"
-      }
-    },
-    {
-      "from": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
-      "to": "bd0f203c-6d4b-4c44-89d1-63be9c60acc3",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 12,
-      "first": "2026-10-27",
-      "last": "2026-11-12",
-      "next": {
-        "tour": "Sleeping with Sirens w/ Rain City Drive",
-        "date": "2026-10-27",
-        "city": "Pittsburgh",
-        "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7P_Ae"
-      }
-    },
-    {
-      "from": "3f6ee55e-d523-4dd8-a027-7a6af9909ae1",
-      "to": "293aa84f-e308-418a-b202-7d9c88479f1e",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-10-27",
-      "last": "2026-10-27",
-      "next": {
-        "tour": "The Living Tombstone - The Multiplayer Tour",
-        "date": "2026-10-27",
-        "city": "Pittsburgh",
-        "url": "https://www.ticketmaster.com/the-living-tombstone-the-multiplayer-tour-pittsburgh-pennsylvania-10-27-2026/event/1600646BE692E364"
-      }
-    },
-    {
-      "from": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
-      "to": "355cc194-b8db-4af2-8678-c7ad54213f4b",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 17,
-      "first": "2026-10-27",
-      "last": "2026-12-01",
-      "next": {
-        "tour": "Doja Cat - Tour Ma Vie World Tour",
-        "date": "2026-10-27",
-        "city": "San Diego",
-        "url": "https://www.ticketmaster.com/doja-cat-tour-ma-vie-world-san-diego-california-10-27-2026/event/0A00633B10646A91"
-      }
-    },
-    {
-      "from": "e21857d5-3256-4547-afb3-4b6ded592596",
-      "to": "3cdb40fe-a63e-4bb9-b40d-17cda5f50979",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 3,
-      "first": "2026-10-28",
-      "last": "2026-10-31",
-      "next": {
-        "tour": "LIVE 105 Presents: Gorillaz - The Mountain Tour",
-        "date": "2026-10-28",
-        "city": "Oakland",
-        "url": "https://www.ticketmaster.com/live-105-presents-gorillaz-the-mountain-oakland-california-10-28-2026/event/1C00645AEBF3C46B"
-      }
-    },
-    {
-      "from": "fd36f43e-5bd1-488e-b844-0e059250ef78",
-      "to": "c9e3089c-a7bc-4df5-80f9-9161eaa74a02",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-10-28",
-      "last": "2026-10-28",
-      "next": {
-        "tour": "GLAIVE - GOD SAVE THE THREE TOUR",
-        "date": "2026-10-28",
-        "city": "Nashville",
-        "url": "https://www.ticketmaster.com/glaive-god-save-the-three-tour-nashville-tennessee-10-28-2026/event/1B0064A4C6410AA3"
+        "date": "2026-10-29",
+        "city": "Los Angeles",
+        "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70yjs"
       }
     },
     {
@@ -443,19 +293,115 @@
       }
     },
     {
+      "from": "6925db17-f35e-42f3-a4eb-84ee6bf5d4b0",
+      "to": "3547f34a-db02-4ab7-b4a0-380e1ef951a9",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 2,
+      "first": "2026-10-29",
+      "last": "2026-10-30",
+      "next": {
+        "tour": "Olivia Rodrigo: The Unraveled Tour",
+        "date": "2026-10-29",
+        "city": "Columbus",
+        "url": "https://www.ticketmaster.com/olivia-rodrigo-the-unraveled-tour-columbus-ohio-10-29-2026/event/0500649DFF8CFA1C"
+      }
+    },
+    {
       "from": "a0723a3c-4135-438e-85c5-012712144ede",
       "to": "7013c772-2236-42f3-8590-2e2292d2ca5e",
       "types": [
         "upcoming"
       ],
-      "shows": 8,
+      "shows": 9,
       "first": "2026-10-29",
-      "last": "2026-11-12",
+      "last": "2026-11-16",
       "next": {
         "tour": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
         "date": "2026-10-29",
         "city": "Munich",
         "url": "https://www.ticketmaster.de/event/don-toliver-nitrous-octane-world-tour-leg-2-tickets/344905628?language=en-us"
+      }
+    },
+    {
+      "from": "d8fd8d9b-473b-4f06-83c8-869b1bb9de89",
+      "to": "abaa7001-0d80-4e58-be5d-d2d246fd9d87",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 17,
+      "first": "2026-10-29",
+      "last": "2027-01-27",
+      "next": {
+        "tour": "Bryson Tiller Presents: The Neo Trapsoul Tour",
+        "date": "2026-10-29",
+        "city": "Portland",
+        "url": "https://www.ticketmaster.com/bryson-tiller-presents-the-neo-trapsoul-portland-oregon-10-29-2026/event/0F0064B5A05FA0E0"
+      }
+    },
+    {
+      "from": "d8fd8d9b-473b-4f06-83c8-869b1bb9de89",
+      "to": "7bd66c18-cb33-49aa-9279-140acedbdb49",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 3,
+      "first": "2026-10-29",
+      "last": "2026-11-01",
+      "next": {
+        "tour": "Bryson Tiller Presents: The Neo Trapsoul Tour",
+        "date": "2026-10-29",
+        "city": "Portland",
+        "url": "https://www.ticketmaster.com/bryson-tiller-presents-the-neo-trapsoul-portland-oregon-10-29-2026/event/0F0064B5A05FA0E0"
+      }
+    },
+    {
+      "from": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
+      "to": "355cc194-b8db-4af2-8678-c7ad54213f4b",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 16,
+      "first": "2026-10-29",
+      "last": "2026-12-01",
+      "next": {
+        "tour": "Doja Cat - Tour Ma Vie World Tour",
+        "date": "2026-10-29",
+        "city": "Phoenix",
+        "url": "https://www.ticketmaster.com/doja-cat-tour-ma-vie-world-phoenix-arizona-10-29-2026/event/1900633A9B863640"
+      }
+    },
+    {
+      "from": "e21857d5-3256-4547-afb3-4b6ded592596",
+      "to": "3cdb40fe-a63e-4bb9-b40d-17cda5f50979",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 2,
+      "first": "2026-10-30",
+      "last": "2026-10-31",
+      "next": {
+        "tour": "Gorillaz - The Mountain Tour",
+        "date": "2026-10-30",
+        "city": "Portland",
+        "url": "https://www.ticketmaster.com/gorillaz-the-mountain-tour-portland-oregon-10-30-2026/event/0F00645AB26BB216"
+      }
+    },
+    {
+      "from": "9ca10859-49e2-44e3-b3d6-04c535207bc2",
+      "to": "16f7e748-59b4-4705-959c-9276be0ebf6a",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 5,
+      "first": "2026-10-30",
+      "last": "2026-11-05",
+      "next": {
+        "tour": "Knocked Loose & Denzel Curry",
+        "date": "2026-10-30",
+        "city": "San Diego",
+        "url": "https://www.ticketmaster.com/knocked-loose-denzel-curry-san-diego-california-10-30-2026/event/0A0064B65F291D73"
       }
     },
     {
@@ -475,24 +421,40 @@
       }
     },
     {
-      "from": "c07f0676-9143-4217-8a9f-4c26bd636f13",
-      "to": "8262d8e4-9137-4bb3-a787-3caabbbc13e9",
+      "from": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
+      "to": "bd0f203c-6d4b-4c44-89d1-63be9c60acc3",
       "types": [
         "upcoming"
       ],
-      "shows": 1,
+      "shows": 10,
       "first": "2026-10-30",
-      "last": "2026-10-30",
+      "last": "2026-11-12",
       "next": {
-        "tour": "My Chemical Romance with Special Guest The Used",
+        "tour": "Sleeping With Sirens: An Ending In Itself Tour",
         "date": "2026-10-30",
-        "city": "Hollywood",
-        "url": "https://www.ticketmaster.com/my-chemical-romance-with-special-guest-hollywood-california-10-30-2026/event/0B006332CBE5399E"
+        "city": "Montreal",
+        "url": "https://www.ticketmaster.ca/sleeping-with-sirens-an-ending-in-montreal-quebec-10-30-2026/event/310064C8A7E64124"
       }
     },
     {
-      "from": "c07f0676-9143-4217-8a9f-4c26bd636f13",
-      "to": "244afcb7-fa9a-49b1-9aa6-0149512d1c52",
+      "from": "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1",
+      "to": "cb9c2a2b-96c2-44d7-bd31-04ef87572b57",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 12,
+      "first": "2026-10-31",
+      "last": "2026-11-19",
+      "next": {
+        "tour": "Rod Wave: Don't Look Down Tour",
+        "date": "2026-10-31",
+        "city": "Chicago",
+        "url": "https://www.ticketmaster.com/rod-wave-dont-look-down-tour-chicago-illinois-10-31-2026/event/040064D0DB24B9E5"
+      }
+    },
+    {
+      "from": "79c9b9a6-4b78-4738-8b81-95b066321ea9",
+      "to": "b54d1511-887e-4a5c-9f3c-6833a5438b84",
       "types": [
         "upcoming"
       ],
@@ -500,10 +462,10 @@
       "first": "2026-10-31",
       "last": "2026-10-31",
       "next": {
-        "tour": "My Chemical Romance with Special Guest Thrice",
+        "tour": "Young Nudy",
         "date": "2026-10-31",
-        "city": "Hollywood",
-        "url": "https://www.ticketmaster.com/my-chemical-romance-with-special-guest-hollywood-california-10-31-2026/event/0B006332CBE839B4"
+        "city": "Denver",
+        "url": "https://www.ticketmaster.com/young-nudy-denver-colorado-10-31-2026/event/1E00651A9A5E7477"
       }
     },
     {
@@ -603,6 +565,22 @@
       }
     },
     {
+      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
+      "to": "9bd720ab-3aec-4ab0-b363-3a465ee65026",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 2,
+      "first": "2026-11-26",
+      "last": "2026-11-26",
+      "next": {
+        "tour": "\"The Hayley Williams Show\" (Numerado) ",
+        "date": "2026-11-26",
+        "city": "Ciudad de México",
+        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-numerado-ciudad-de-mexico-26-11-2026/event/3D0064A6A4695E8E"
+      }
+    },
+    {
       "from": "7eb1ce54-a355-41f9-8d68-e018b096d427",
       "to": "a298565e-d43e-46c4-b35c-bfe131258815",
       "types": [
@@ -616,6 +594,38 @@
         "date": "2026-11-27",
         "city": "Docklands",
         "url": "https://www.ticketmaster.com.au/harry-styles-together-together-docklands-27-11-2026/event/25006436CFC6E40D"
+      }
+    },
+    {
+      "from": "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6",
+      "to": "ba67b7da-cca7-4c3f-ba19-05349f0f7d97",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 5,
+      "first": "2026-12-02",
+      "last": "2026-12-10",
+      "next": {
+        "tour": "Koe Wetzel and Parker McCollum (17 and Under Admitted with Parent or Guardian Only)",
+        "date": "2026-12-02",
+        "city": "Helotes",
+        "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAebQp"
+      }
+    },
+    {
+      "from": "ba67b7da-cca7-4c3f-ba19-05349f0f7d97",
+      "to": "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2026-12-03",
+      "last": "2026-12-03",
+      "next": {
+        "tour": "Naughty or Nice Tour",
+        "date": "2026-12-03",
+        "city": "Houston",
+        "url": "https://www.ticketmaster.com/naughty-or-nice-tour-houston-texas-12-03-2026/event/3A00653EB610ECA1"
       }
     },
     {
@@ -635,19 +645,19 @@
       }
     },
     {
-      "from": "945d3b69-27cd-45fa-b491-52553a63dead",
-      "to": "3cdf1327-39eb-4ffe-9ce3-20599ac6a468",
+      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
+      "to": "e160f589-dbe6-4b8f-88b5-f528ff4443b4",
       "types": [
         "upcoming"
       ],
-      "shows": 1,
-      "first": "2027-01-23",
-      "last": "2027-01-23",
+      "shows": 3,
+      "first": "2027-01-13",
+      "last": "2027-01-17",
       "next": {
-        "tour": "Joyce Manor",
-        "date": "2027-01-23",
-        "city": "Inglewood",
-        "url": "https://www.ticketmaster.com/joyce-manor-inglewood-california-01-23-2027/event/090064F8E444D2E7"
+        "tour": "\"The Hayley Williams Show\"",
+        "date": "2027-01-13",
+        "city": "Ciudad de México",
+        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-ciudad-de-mexico-13-01-2027/event/3D0064BD97725384"
       }
     },
     {
@@ -704,7 +714,7 @@
       "types": [
         "upcoming"
       ],
-      "shows": 15,
+      "shows": 16,
       "first": "2027-02-19",
       "last": "2027-03-20",
       "next": {
