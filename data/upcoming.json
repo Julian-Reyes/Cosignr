@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T06:58:32.220Z",
+  "generatedAt": "2026-11-04T06:59:27.840Z",
   "source": "Ticketmaster Discovery API (live listings, rebuilt nightly)",
   "artists": {
     "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
@@ -33,10 +33,6 @@
       "name": "Denzel Curry",
       "id": "denzel-curry"
     },
-    "16f7e748-59b4-4705-959c-9276be0ebf6a": {
-      "name": "Superheaven",
-      "id": "superheaven"
-    },
     "fa1de503-aba7-41fa-a1ed-371b3e87a717": {
       "name": "Madeon",
       "id": "madeon"
@@ -68,13 +64,6 @@
     "cb9c2a2b-96c2-44d7-bd31-04ef87572b57": {
       "name": "FRIDAYY"
     },
-    "20543896-ec2c-48c4-b6b2-507c6cbe9918": {
-      "name": "Bailey Zimmerman"
-    },
-    "d25f6294-686a-4569-b1b9-fe64bfef2519": {
-      "name": "BigXthaPlug",
-      "id": "bigxthaplug"
-    },
     "a0723a3c-4135-438e-85c5-012712144ede": {
       "name": "Don Toliver",
       "id": "don-toliver"
@@ -82,12 +71,26 @@
     "7013c772-2236-42f3-8590-2e2292d2ca5e": {
       "name": "Victony"
     },
+    "20543896-ec2c-48c4-b6b2-507c6cbe9918": {
+      "name": "Bailey Zimmerman"
+    },
+    "d25f6294-686a-4569-b1b9-fe64bfef2519": {
+      "name": "BigXthaPlug",
+      "id": "bigxthaplug"
+    },
     "494e8d09-f85b-4543-892f-a5096aed1cd4": {
       "name": "Mariah Carey",
       "id": "mariah-carey"
     },
     "fbd30319-269f-408a-9999-7a303c1bc69f": {
       "name": "DJ Suss One"
+    },
+    "d8fd8d9b-473b-4f06-83c8-869b1bb9de89": {
+      "name": "Bryson Tiller",
+      "id": "bryson-tiller"
+    },
+    "abaa7001-0d80-4e58-be5d-d2d246fd9d87": {
+      "name": "Majid Jordan"
     },
     "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74": {
       "name": "Sleeping With Sirens",
@@ -105,22 +108,25 @@
     "cd584ea0-0fc5-412b-8598-0244c4025af6": {
       "name": "Boston Manor"
     },
-    "d8fd8d9b-473b-4f06-83c8-869b1bb9de89": {
-      "name": "Bryson Tiller",
-      "id": "bryson-tiller"
+    "fd87acc7-e0a0-4a45-bc2a-d2ab5c10be68": {
+      "name": "Fontaines D.C.",
+      "id": "fontaines-d-c"
     },
-    "abaa7001-0d80-4e58-be5d-d2d246fd9d87": {
-      "name": "Majid Jordan"
+    "b4b5b5a7-feff-47d0-9458-83d0d135a692": {
+      "name": "Hayley Williams"
     },
-    "7dc8f5bd-9d0b-4087-9f73-dc164950bbd8": {
-      "name": "Queens of the Stone Age",
-      "id": "queens-of-the-stone-age"
+    "547e23af-e455-41dd-baae-a3b58e065d0c": {
+      "name": "Damien Dempsey",
+      "id": "damien-dempsey"
     },
-    "84dc4f23-c0b8-4fe1-bbca-a3993ddc8fc2": {
-      "name": "Primus"
+    "3cdb40fe-a63e-4bb9-b40d-17cda5f50979": {
+      "name": "Little Simz"
     },
-    "b6b2bb8d-54a9-491f-9607-7b546023b433": {
-      "name": "Pixies"
+    "9df0c0ec-619e-447d-a155-23e19d9c84ce": {
+      "name": "Viagra Boys"
+    },
+    "7e01053e-e701-4e55-8a29-b8cfdcdee205": {
+      "name": "Iceage"
     },
     "7eb1ce54-a355-41f9-8d68-e018b096d427": {
       "name": "Harry Styles",
@@ -148,27 +154,6 @@
     "7c7f9c94-dee8-4903-892b-6cf44652e2de": {
       "name": "Tears for Fears"
     },
-    "fd87acc7-e0a0-4a45-bc2a-d2ab5c10be68": {
-      "name": "Fontaines D.C.",
-      "id": "fontaines-d-c"
-    },
-    "b4b5b5a7-feff-47d0-9458-83d0d135a692": {
-      "name": "Hayley Williams",
-      "id": "hayley-williams"
-    },
-    "547e23af-e455-41dd-baae-a3b58e065d0c": {
-      "name": "Damien Dempsey",
-      "id": "damien-dempsey"
-    },
-    "3cdb40fe-a63e-4bb9-b40d-17cda5f50979": {
-      "name": "Little Simz"
-    },
-    "9df0c0ec-619e-447d-a155-23e19d9c84ce": {
-      "name": "Viagra Boys"
-    },
-    "7e01053e-e701-4e55-8a29-b8cfdcdee205": {
-      "name": "Iceage"
-    },
     "afb6cc6d-a060-4f5e-bc3a-00d4b6832e41": {
       "name": "Remi Wolf",
       "id": "remi-wolf"
@@ -177,12 +162,15 @@
       "name": "Emma Ogier",
       "id": "emma-ogier"
     },
-    "bc710bcf-8815-42cf-bad2-3f1d12246aeb": {
-      "name": "Nickelback",
-      "id": "nickelback"
+    "7dc8f5bd-9d0b-4087-9f73-dc164950bbd8": {
+      "name": "Queens of the Stone Age",
+      "id": "queens-of-the-stone-age"
     },
-    "38fd7691-0543-409c-997f-7f15c10394a4": {
-      "name": "Don Broco"
+    "84dc4f23-c0b8-4fe1-bbca-a3993ddc8fc2": {
+      "name": "Primus"
+    },
+    "b6b2bb8d-54a9-491f-9607-7b546023b433": {
+      "name": "Pixies"
     },
     "e881b225-42b1-41d9-9d5e-eff55568585b": {
       "name": "Stella Lefty",
@@ -201,16 +189,8 @@
     "addb00fd-733c-4223-8fdf-f78be2488acd": {
       "name": "Alesso"
     },
-    "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6": {
-      "name": "Koe Wetzel",
-      "id": "koe-wetzel"
-    },
-    "ba67b7da-cca7-4c3f-ba19-05349f0f7d97": {
-      "name": "Parker McCollum"
-    },
     "f7441bc7-d7de-4813-a2fc-31a4033d396d": {
-      "name": "Gracie Abrams",
-      "id": "gracie-abrams"
+      "name": "Gracie Abrams"
     },
     "36086094-c2a4-49b9-8572-0fbf12fc3409": {
       "name": "Ashe",
@@ -226,6 +206,13 @@
       "name": "Latto",
       "id": "latto"
     },
+    "bc710bcf-8815-42cf-bad2-3f1d12246aeb": {
+      "name": "Nickelback",
+      "id": "nickelback"
+    },
+    "38fd7691-0543-409c-997f-7f15c10394a4": {
+      "name": "Don Broco"
+    },
     "d8c85c0e-ad88-47a7-a1df-b70608c2f52f": {
       "name": "Riley Green",
       "id": "riley-green"
@@ -236,12 +223,6 @@
     "50e3dd64-6b87-4b9a-a511-c375ae4ff1ca": {
       "name": "Randy Houser"
     },
-    "9bd720ab-3aec-4ab0-b363-3a465ee65026": {
-      "name": "Annie DiRusso"
-    },
-    "e160f589-dbe6-4b8f-88b5-f528ff4443b4": {
-      "name": "Mannequin Pussy"
-    },
     "97b8d224-5660-419c-8dff-4b3bf0c33983": {
       "name": "The Neighbourhood",
       "id": "the-neighbourhood"
@@ -249,26 +230,26 @@
     "da0c8f4f-f4f4-4e91-86ca-e31108bb5706": {
       "name": "Nessa Barrett"
     },
-    "bb2b7bbf-75e5-43f8-8a9f-7769ae7d832a": {
-      "name": "Rachel Chinouriri"
+    "945d3b69-27cd-45fa-b491-52553a63dead": {
+      "name": "Joyce Manor"
     },
-    "736c8ea9-b5c3-4c5f-8782-28e633f0c084": {
-      "name": "Holly Humberstone"
+    "3cdf1327-39eb-4ffe-9ce3-20599ac6a468": {
+      "name": "Tigers Jaw",
+      "id": "tigers-jaw"
     },
-    "5f606b3d-fab7-4d39-bcdb-f5d42edae945": {
-      "name": "Del Water Gap"
+    "afb680f2-b6eb-4cd7-a70b-a63b25c763d5": {
+      "name": "Bruno Mars",
+      "id": "bruno-mars"
     },
-    "0ef0f607-8d6b-40f3-8180-fa4ced129da1": {
-      "name": "Charlotte Lawrence"
+    "45425c84-9092-4e2c-b732-e1d0280b580a": {
+      "name": "Tyla"
     },
-    "29507643-0c6b-444b-8511-53cb1c042403": {
-      "name": "Jensen McRae"
+    "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6": {
+      "name": "Koe Wetzel",
+      "id": "koe-wetzel"
     },
-    "5db88fae-df24-490e-971a-1b3fe8d373ea": {
-      "name": "The Japanese House"
-    },
-    "279ae894-037e-4058-a21a-e44dc8a8ca7d": {
-      "name": "Samia"
+    "ba67b7da-cca7-4c3f-ba19-05349f0f7d97": {
+      "name": "Parker McCollum"
     },
     "8264722b-df00-467a-858e-5c97cda169c9": {
       "name": "Joji",
@@ -277,19 +258,19 @@
     "741a6c80-2d6e-4522-9de4-e070798a2d30": {
       "name": "Tommy Richman"
     },
-    "a2d140d8-ae17-4d72-b680-b89c77f1ed52": {
-      "name": "This Is Lorelei"
-    },
-    "9cfabb8c-24a3-498d-b383-bb5324cfe30f": {
-      "name": "Sidney Gish",
-      "id": "sidney-gish"
-    },
     "38ed4923-005f-4ba0-baf7-749269dfea29": {
       "name": "Dexter and The Moonrocks",
       "id": "dexter-and-the-moonrocks"
     },
     "11b34f7b-42d0-4d16-a96f-f47a517cca7d": {
       "name": "Return to Dust"
+    },
+    "a2d140d8-ae17-4d72-b680-b89c77f1ed52": {
+      "name": "This Is Lorelei"
+    },
+    "9cfabb8c-24a3-498d-b383-bb5324cfe30f": {
+      "name": "Sidney Gish",
+      "id": "sidney-gish"
     },
     "c9ed3f0c-0f54-45a7-8255-92fb8fcd7c48": {
       "name": "Harrison Whitford"
@@ -300,83 +281,19 @@
   },
   "cosigns": [
     {
-      "from": "9ca10859-49e2-44e3-b3d6-04c535207bc2",
-      "to": "5f95440d-7737-4a36-9bcf-c05337f7129b",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 2,
-      "first": "2026-11-03",
-      "last": "2026-11-05",
-      "next": {
-        "tour": "Knocked Loose & Denzel Curry",
-        "date": "2026-11-03",
-        "city": "Denver",
-        "url": "https://www.ticketmaster.com/knocked-loose-denzel-curry-denver-colorado-11-03-2026/event/1E0064BA9BF48DE0"
-      }
-    },
-    {
-      "from": "9ca10859-49e2-44e3-b3d6-04c535207bc2",
-      "to": "16f7e748-59b4-4705-959c-9276be0ebf6a",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 2,
-      "first": "2026-11-03",
-      "last": "2026-11-05",
-      "next": {
-        "tour": "Knocked Loose & Denzel Curry",
-        "date": "2026-11-03",
-        "city": "Denver",
-        "url": "https://www.ticketmaster.com/knocked-loose-denzel-curry-denver-colorado-11-03-2026/event/1E0064BA9BF48DE0"
-      }
-    },
-    {
-      "from": "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1",
-      "to": "cb9c2a2b-96c2-44d7-bd31-04ef87572b57",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 10,
-      "first": "2026-11-03",
-      "last": "2026-11-19",
-      "next": {
-        "tour": "Rod Wave: Don't Look Down Tour",
-        "date": "2026-11-03",
-        "city": "Charlotte",
-        "url": "https://www.ticketmaster.com/rod-wave-dont-look-down-tour-charlotte-north-carolina-11-03-2026/event/2D0064D19265BC9A"
-      }
-    },
-    {
-      "from": "a0723a3c-4135-438e-85c5-012712144ede",
-      "to": "7013c772-2236-42f3-8590-2e2292d2ca5e",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 9,
-      "first": "2026-11-03",
-      "last": "2026-11-24",
-      "next": {
-        "tour": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
-        "date": "2026-11-03",
-        "city": "Łódź ",
-        "url": "https://www.ticketmaster.pl/event/don-toliver-nitrous-octane-world-tour-leg-2-tickets/705039280?language=en-us"
-      }
-    },
-    {
       "from": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
       "to": "bd0f203c-6d4b-4c44-89d1-63be9c60acc3",
       "types": [
         "upcoming"
       ],
-      "shows": 7,
-      "first": "2026-11-03",
+      "shows": 6,
+      "first": "2026-11-04",
       "last": "2026-11-12",
       "next": {
-        "tour": "Sleeping With Sirens: An Ending In Itself Tour",
-        "date": "2026-11-03",
-        "city": "Boston",
-        "url": "https://www.ticketmaster.com/sleeping-with-sirens-an-ending-in-boston-massachusetts-11-03-2026/event/010064CBBA017666"
+        "tour": "Sleeping with Sirens w/ Rain City Drive",
+        "date": "2026-11-04",
+        "city": "Sayreville",
+        "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7P_A7"
       }
     },
     {
@@ -385,14 +302,46 @@
       "types": [
         "upcoming"
       ],
-      "shows": 15,
-      "first": "2026-11-03",
+      "shows": 14,
+      "first": "2026-11-04",
       "last": "2026-12-01",
       "next": {
         "tour": "Doja Cat - Tour Ma Vie World Tour",
-        "date": "2026-11-03",
+        "date": "2026-11-04",
+        "city": "Dallas",
+        "url": "https://www.ticketmaster.com/doja-cat-tour-ma-vie-world-dallas-texas-11-04-2026/event/0C00633A5DE60F3B"
+      }
+    },
+    {
+      "from": "9ca10859-49e2-44e3-b3d6-04c535207bc2",
+      "to": "5f95440d-7737-4a36-9bcf-c05337f7129b",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2026-11-05",
+      "last": "2026-11-05",
+      "next": {
+        "tour": "Knocked Loose & Denzel Curry",
+        "date": "2026-11-05",
         "city": "Austin",
-        "url": "https://www.ticketmaster.com/doja-cat-tour-ma-vie-world-austin-texas-11-03-2026/event/3A00633ACFDC7883"
+        "url": "https://www.ticketmaster.com/knocked-loose-denzel-curry-austin-texas-11-05-2026/event/3A0064B6A531ADA0"
+      }
+    },
+    {
+      "from": "a0723a3c-4135-438e-85c5-012712144ede",
+      "to": "7013c772-2236-42f3-8590-2e2292d2ca5e",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 8,
+      "first": "2026-11-05",
+      "last": "2026-11-24",
+      "next": {
+        "tour": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
+        "date": "2026-11-05",
+        "city": "Amsterdam",
+        "url": "https://www.ticketmaster.nl/event/don-toliver-nitrous-octane-world-tour-leg-2-tickets/1834876452?language=en-us"
       }
     },
     {
@@ -409,6 +358,22 @@
         "date": "2026-11-06",
         "city": "Raleigh",
         "url": "https://www.ticketmaster.com/madeon-presents-victory-live-raleigh-north-carolina-11-06-2026/event/2D0064A5A31C2EA7"
+      }
+    },
+    {
+      "from": "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1",
+      "to": "cb9c2a2b-96c2-44d7-bd31-04ef87572b57",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 9,
+      "first": "2026-11-06",
+      "last": "2026-11-19",
+      "next": {
+        "tour": "Rod Wave: Don't Look Down Tour",
+        "date": "2026-11-06",
+        "city": "Columbia",
+        "url": "https://www.ticketmaster.com/rod-wave-dont-look-down-tour-columbia-south-carolina-11-06-2026/event/2D0064D0DAD9D273"
       }
     },
     {
@@ -572,22 +537,6 @@
       }
     },
     {
-      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
-      "to": "9bd720ab-3aec-4ab0-b363-3a465ee65026",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 2,
-      "first": "2026-11-26",
-      "last": "2026-11-26",
-      "next": {
-        "tour": "\"The Hayley Williams Show\" (Numerado) ",
-        "date": "2026-11-26",
-        "city": "Ciudad de México",
-        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-numerado-ciudad-de-mexico-26-11-2026/event/3D0064A6A4695E8E"
-      }
-    },
-    {
       "from": "494e8d09-f85b-4543-892f-a5096aed1cd4",
       "to": "fbd30319-269f-408a-9999-7a303c1bc69f",
       "types": [
@@ -652,22 +601,6 @@
       }
     },
     {
-      "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
-      "to": "bb2b7bbf-75e5-43f8-8a9f-7769ae7d832a",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 7,
-      "first": "2026-12-02",
-      "last": "2026-12-14",
-      "next": {
-        "tour": "Gracie Abrams: The Look at My Life Tour presented by Capital One",
-        "date": "2026-12-02",
-        "city": "Denver",
-        "url": "https://www.ticketmaster.com/gracie-abrams-the-look-at-my-denver-colorado-12-02-2026/event/1E0064B2E736C3FD"
-      }
-    },
-    {
       "from": "ba67b7da-cca7-4c3f-ba19-05349f0f7d97",
       "to": "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6",
       "types": [
@@ -697,22 +630,6 @@
         "date": "2026-12-08",
         "city": "Adelaide",
         "url": "https://www.ticketmaster.com.au/queens-of-the-stone-age-adelaide-08-12-2026/event/250064E9A45253E9"
-      }
-    },
-    {
-      "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
-      "to": "736c8ea9-b5c3-4c5f-8782-28e633f0c084",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 3,
-      "first": "2026-12-18",
-      "last": "2026-12-20",
-      "next": {
-        "tour": "Gracie Abrams: The Look at My Life Tour presented by Capital One",
-        "date": "2026-12-18",
-        "city": "Inglewood",
-        "url": "https://www.ticketmaster.com/gracie-abrams-the-look-at-my-inglewood-california-12-18-2026/event/090064BBE484EE0D"
       }
     },
     {
@@ -748,51 +665,19 @@
       }
     },
     {
-      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
-      "to": "e160f589-dbe6-4b8f-88b5-f528ff4443b4",
+      "from": "945d3b69-27cd-45fa-b491-52553a63dead",
+      "to": "3cdf1327-39eb-4ffe-9ce3-20599ac6a468",
       "types": [
         "upcoming"
       ],
-      "shows": 3,
-      "first": "2027-01-13",
-      "last": "2027-01-17",
+      "shows": 1,
+      "first": "2027-01-23",
+      "last": "2027-01-23",
       "next": {
-        "tour": "\"The Hayley Williams Show\"",
-        "date": "2027-01-13",
-        "city": "Ciudad de México",
-        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-ciudad-de-mexico-13-01-2027/event/3D0064BD97725384"
-      }
-    },
-    {
-      "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
-      "to": "5f606b3d-fab7-4d39-bcdb-f5d42edae945",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 5,
-      "first": "2027-01-26",
-      "last": "2027-02-01",
-      "next": {
-        "tour": "Gracie Abrams: The Look at My Life Tour presented by Capital One",
-        "date": "2027-01-26",
-        "city": "Seattle",
-        "url": "https://www.ticketmaster.com/gracie-abrams-the-look-at-my-seattle-washington-01-26-2027/event/0F0064AEAA9AA408"
-      }
-    },
-    {
-      "from": "bc710bcf-8815-42cf-bad2-3f1d12246aeb",
-      "to": "38fd7691-0543-409c-997f-7f15c10394a4",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 66,
-      "first": "2027-02-06",
-      "last": "2027-07-13",
-      "next": {
-        "tour": "Nickelback: Everything Under The Sun Tour",
-        "date": "2027-02-06",
-        "city": "Pittsburgh",
-        "url": "https://www.ticketmaster.com/nickelback-everything-under-the-sun-tour-pittsburgh-pennsylvania-02-06-2027/event/16006545A37251D0"
+        "tour": "Joyce Manor",
+        "date": "2027-01-23",
+        "city": "Inglewood",
+        "url": "https://www.ticketmaster.com/joyce-manor-inglewood-california-01-23-2027/event/090064F8E444D2E7"
       }
     },
     {
@@ -812,6 +697,22 @@
       }
     },
     {
+      "from": "bc710bcf-8815-42cf-bad2-3f1d12246aeb",
+      "to": "38fd7691-0543-409c-997f-7f15c10394a4",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 66,
+      "first": "2027-02-06",
+      "last": "2027-07-13",
+      "next": {
+        "tour": "Nickelback: Everything Under The Sun Tour",
+        "date": "2027-02-06",
+        "city": "Pittsburgh",
+        "url": "https://www.ticketmaster.com/nickelback-everything-under-the-sun-tour-pittsburgh-pennsylvania-02-06-2027/event/16006545A37251D0"
+      }
+    },
+    {
       "from": "38ed4923-005f-4ba0-baf7-749269dfea29",
       "to": "11b34f7b-42d0-4d16-a96f-f47a517cca7d",
       "types": [
@@ -828,22 +729,6 @@
       }
     },
     {
-      "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
-      "to": "0ef0f607-8d6b-40f3-8180-fa4ced129da1",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 4,
-      "first": "2027-02-11",
-      "last": "2027-02-15",
-      "next": {
-        "tour": "Gracie Abrams: The Look at My Life Tour presented by Capital One",
-        "date": "2027-02-11",
-        "city": "Chicago",
-        "url": "https://www.ticketmaster.com/gracie-abrams-the-look-at-my-chicago-illinois-02-11-2027/event/040064970383E8B6"
-      }
-    },
-    {
       "from": "d89de379-665d-425c-b2e9-41b95d1edb36",
       "to": "af063224-5624-46d9-a2cd-d0374b55382e",
       "types": [
@@ -857,6 +742,22 @@
         "date": "2027-02-12",
         "city": "Brisbane",
         "url": "https://www.ticketmaster.com.au/silverstein-story-of-the-year-camp-brisbane-12-02-2027/event/13006547DF5CB31A"
+      }
+    },
+    {
+      "from": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
+      "to": "45425c84-9092-4e2c-b732-e1d0280b580a",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 15,
+      "first": "2027-02-13",
+      "last": "2027-03-16",
+      "next": {
+        "tour": "Bruno Mars - The Romantic Tour",
+        "date": "2027-02-13",
+        "city": "Burswood",
+        "url": "https://www.ticketmaster.com.au/bruno-mars-the-romantic-tour-burswood-13-02-2027/event/25006518EA3F49F3"
       }
     },
     {
@@ -905,38 +806,6 @@
         "date": "2027-03-02",
         "city": "Bristol",
         "url": "https://www.ticketmaster.co.uk/sleeping-with-sirens-an-ending-in-bristol-02-03-2027/event/350064C206BFE21C"
-      }
-    },
-    {
-      "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
-      "to": "29507643-0c6b-444b-8511-53cb1c042403",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 2,
-      "first": "2027-03-12",
-      "last": "2027-03-13",
-      "next": {
-        "tour": "Gracie Abrams: The Look at My Life Tour presented by Capital One",
-        "date": "2027-03-12",
-        "city": "Philadelphia",
-        "url": "https://www.ticketmaster.com/gracie-abrams-the-look-at-my-philadelphia-pennsylvania-03-12-2027/event/300064B5AF355E3B"
-      }
-    },
-    {
-      "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
-      "to": "5db88fae-df24-490e-971a-1b3fe8d373ea",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 4,
-      "first": "2027-03-16",
-      "last": "2027-03-20",
-      "next": {
-        "tour": "Gracie Abrams: The Look at My Life Tour presented by Capital One",
-        "date": "2027-03-16",
-        "city": "Brooklyn",
-        "url": "https://www.ticketmaster.com/gracie-abrams-the-look-at-my-brooklyn-new-york-03-16-2027/event/300064ACE4E97EDD"
       }
     },
     {
@@ -1017,22 +886,6 @@
         "date": "2027-04-03",
         "city": "Brisbane",
         "url": "https://www.ticketmaster.com.au/an-ending-in-itself-tour-sleeping-brisbane-03-04-2027/event/13006539A57A9E14"
-      }
-    },
-    {
-      "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
-      "to": "279ae894-037e-4058-a21a-e44dc8a8ca7d",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 13,
-      "first": "2027-04-15",
-      "last": "2027-05-04",
-      "next": {
-        "tour": "Gracie Abrams: The Look at My Life Tour",
-        "date": "2027-04-15",
-        "city": "Merksem (Antwerpen)",
-        "url": "https://www.ticketmaster.be/event/gracie-abrams-the-look-at-my-life-tour-tickets/656488658"
       }
     },
     {
