@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T07:00:30.865Z",
+  "generatedAt": "2026-11-06T06:56:52.631Z",
   "source": "Ticketmaster Discovery API (live listings, rebuilt nightly)",
   "artists": {
     "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
@@ -25,17 +25,6 @@
     "1c294418-722f-45a3-a24d-910f9b6f1502": {
       "name": "Dillon Francis",
       "id": "dillon-francis"
-    },
-    "9ca10859-49e2-44e3-b3d6-04c535207bc2": {
-      "name": "Knocked Loose"
-    },
-    "5f95440d-7737-4a36-9bcf-c05337f7129b": {
-      "name": "Denzel Curry",
-      "id": "denzel-curry"
-    },
-    "16f7e748-59b4-4705-959c-9276be0ebf6a": {
-      "name": "Superheaven",
-      "id": "superheaven"
     },
     "fa1de503-aba7-41fa-a1ed-371b3e87a717": {
       "name": "Madeon",
@@ -82,6 +71,16 @@
       "name": "BigXthaPlug",
       "id": "bigxthaplug"
     },
+    "e881b225-42b1-41d9-9d5e-eff55568585b": {
+      "name": "Stella Lefty",
+      "id": "stella-lefty"
+    },
+    "91b449dd-746e-4fd3-b38d-b1dac80e655e": {
+      "name": "Grace Enger"
+    },
+    "4ae67eb7-c01c-4d71-b995-21b093fcb888": {
+      "name": "Wyatt Flores"
+    },
     "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74": {
       "name": "Sleeping With Sirens",
       "id": "sleeping-with-sirens"
@@ -117,8 +116,7 @@
       "id": "fontaines-d-c"
     },
     "b4b5b5a7-feff-47d0-9458-83d0d135a692": {
-      "name": "Hayley Williams",
-      "id": "hayley-williams"
+      "name": "Hayley Williams"
     },
     "547e23af-e455-41dd-baae-a3b58e065d0c": {
       "name": "Damien Dempsey",
@@ -159,16 +157,6 @@
     "7c7f9c94-dee8-4903-892b-6cf44652e2de": {
       "name": "Tears for Fears"
     },
-    "e881b225-42b1-41d9-9d5e-eff55568585b": {
-      "name": "Stella Lefty",
-      "id": "stella-lefty"
-    },
-    "91b449dd-746e-4fd3-b38d-b1dac80e655e": {
-      "name": "Grace Enger"
-    },
-    "4ae67eb7-c01c-4d71-b995-21b093fcb888": {
-      "name": "Wyatt Flores"
-    },
     "afb6cc6d-a060-4f5e-bc3a-00d4b6832e41": {
       "name": "Remi Wolf",
       "id": "remi-wolf"
@@ -206,6 +194,13 @@
     "279ae894-037e-4058-a21a-e44dc8a8ca7d": {
       "name": "Samia"
     },
+    "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6": {
+      "name": "Koe Wetzel",
+      "id": "koe-wetzel"
+    },
+    "ba67b7da-cca7-4c3f-ba19-05349f0f7d97": {
+      "name": "Parker McCollum"
+    },
     "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19": {
       "name": "Post Malone",
       "id": "post-malone"
@@ -213,25 +208,8 @@
     "addb00fd-733c-4223-8fdf-f78be2488acd": {
       "name": "Alesso"
     },
-    "7dc8f5bd-9d0b-4087-9f73-dc164950bbd8": {
-      "name": "Queens of the Stone Age",
-      "id": "queens-of-the-stone-age"
-    },
-    "84dc4f23-c0b8-4fe1-bbca-a3993ddc8fc2": {
-      "name": "Primus"
-    },
-    "b6b2bb8d-54a9-491f-9607-7b546023b433": {
-      "name": "Pixies"
-    },
     "4ccfc097-7034-4aa7-97c3-b5d4ed52865a": {
       "name": "Claire Rosinkranz"
-    },
-    "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6": {
-      "name": "Koe Wetzel",
-      "id": "koe-wetzel"
-    },
-    "ba67b7da-cca7-4c3f-ba19-05349f0f7d97": {
-      "name": "Parker McCollum"
     },
     "5df62a88-cac9-490a-b62c-c7c88f4020f4": {
       "name": "Doja Cat"
@@ -250,11 +228,32 @@
     "50e3dd64-6b87-4b9a-a511-c375ae4ff1ca": {
       "name": "Randy Houser"
     },
-    "9bd720ab-3aec-4ab0-b363-3a465ee65026": {
-      "name": "Annie DiRusso"
+    "7dc8f5bd-9d0b-4087-9f73-dc164950bbd8": {
+      "name": "Queens of the Stone Age",
+      "id": "queens-of-the-stone-age"
     },
-    "e160f589-dbe6-4b8f-88b5-f528ff4443b4": {
-      "name": "Mannequin Pussy"
+    "84dc4f23-c0b8-4fe1-bbca-a3993ddc8fc2": {
+      "name": "Primus"
+    },
+    "b6b2bb8d-54a9-491f-9607-7b546023b433": {
+      "name": "Pixies"
+    },
+    "faabeed5-3dd0-4be5-aec5-e6486e68db2f": {
+      "name": "Cody Johnson",
+      "id": "cody-johnson"
+    },
+    "199affdb-93c0-4a9d-a4d0-26dc4fa01806": {
+      "name": "Carly Pearce"
+    },
+    "1edead6d-6c01-4ad4-9cce-c334bf7edf23": {
+      "name": "Tracy Byrd"
+    },
+    "945d3b69-27cd-45fa-b491-52553a63dead": {
+      "name": "Joyce Manor"
+    },
+    "3cdf1327-39eb-4ffe-9ce3-20599ac6a468": {
+      "name": "Tigers Jaw",
+      "id": "tigers-jaw"
     },
     "97b8d224-5660-419c-8dff-4b3bf0c33983": {
       "name": "The Neighbourhood",
@@ -262,13 +261,6 @@
     },
     "da0c8f4f-f4f4-4e91-86ca-e31108bb5706": {
       "name": "Nessa Barrett"
-    },
-    "bc710bcf-8815-42cf-bad2-3f1d12246aeb": {
-      "name": "Nickelback",
-      "id": "nickelback"
-    },
-    "38fd7691-0543-409c-997f-7f15c10394a4": {
-      "name": "Don Broco"
     },
     "afb680f2-b6eb-4cd7-a70b-a63b25c763d5": {
       "name": "Bruno Mars",
@@ -307,54 +299,6 @@
   },
   "cosigns": [
     {
-      "from": "9ca10859-49e2-44e3-b3d6-04c535207bc2",
-      "to": "5f95440d-7737-4a36-9bcf-c05337f7129b",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-11-05",
-      "last": "2026-11-05",
-      "next": {
-        "tour": "Knocked Loose & Denzel Curry",
-        "date": "2026-11-05",
-        "city": "Austin",
-        "url": "https://www.ticketmaster.com/knocked-loose-denzel-curry-austin-texas-11-05-2026/event/3A0064B6A531ADA0"
-      }
-    },
-    {
-      "from": "9ca10859-49e2-44e3-b3d6-04c535207bc2",
-      "to": "16f7e748-59b4-4705-959c-9276be0ebf6a",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-11-05",
-      "last": "2026-11-05",
-      "next": {
-        "tour": "Knocked Loose & Denzel Curry",
-        "date": "2026-11-05",
-        "city": "Austin",
-        "url": "https://www.ticketmaster.com/knocked-loose-denzel-curry-austin-texas-11-05-2026/event/3A0064B6A531ADA0"
-      }
-    },
-    {
-      "from": "a0723a3c-4135-438e-85c5-012712144ede",
-      "to": "7013c772-2236-42f3-8590-2e2292d2ca5e",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 8,
-      "first": "2026-11-05",
-      "last": "2026-11-24",
-      "next": {
-        "tour": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
-        "date": "2026-11-05",
-        "city": "Amsterdam",
-        "url": "https://www.ticketmaster.nl/event/don-toliver-nitrous-octane-world-tour-leg-2-tickets/1834876452?language=en-us"
-      }
-    },
-    {
       "from": "fa1de503-aba7-41fa-a1ed-371b3e87a717",
       "to": "e4d7cfe5-0bed-46cf-acad-ab9a4dcb7aa6",
       "types": [
@@ -387,19 +331,19 @@
       }
     },
     {
-      "from": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
-      "to": "bd0f203c-6d4b-4c44-89d1-63be9c60acc3",
+      "from": "a0723a3c-4135-438e-85c5-012712144ede",
+      "to": "7013c772-2236-42f3-8590-2e2292d2ca5e",
       "types": [
         "upcoming"
       ],
-      "shows": 5,
+      "shows": 7,
       "first": "2026-11-06",
-      "last": "2026-11-12",
+      "last": "2026-11-24",
       "next": {
-        "tour": "Sleeping With Sirens: An Ending In Itself Tour",
+        "tour": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
         "date": "2026-11-06",
-        "city": "Philadelphia",
-        "url": "https://www.ticketmaster.com/sleeping-with-sirens-an-ending-in-philadelphia-pennsylvania-11-06-2026/event/020064CB97B5A882"
+        "city": "Hamburg",
+        "url": "https://www.ticketmaster.de/event/don-toliver-nitrous-octane-world-tour-leg-2-tickets/1947567245?language=en-us"
       }
     },
     {
@@ -416,6 +360,22 @@
         "date": "2026-11-06",
         "city": "Dallas",
         "url": "https://www.ticketmaster.com/stella-lefty-lefty-live-dallas-texas-11-06-2026/event/0C0064AF96246D74"
+      }
+    },
+    {
+      "from": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
+      "to": "bd0f203c-6d4b-4c44-89d1-63be9c60acc3",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 5,
+      "first": "2026-11-06",
+      "last": "2026-11-12",
+      "next": {
+        "tour": "Sleeping With Sirens: An Ending In Itself Tour",
+        "date": "2026-11-06",
+        "city": "Philadelphia",
+        "url": "https://www.ticketmaster.com/sleeping-with-sirens-an-ending-in-philadelphia-pennsylvania-11-06-2026/event/020064CB97B5A882"
       }
     },
     {
@@ -579,22 +539,6 @@
       }
     },
     {
-      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
-      "to": "9bd720ab-3aec-4ab0-b363-3a465ee65026",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 2,
-      "first": "2026-11-26",
-      "last": "2026-11-26",
-      "next": {
-        "tour": "\"The Hayley Williams Show\" (Numerado) ",
-        "date": "2026-11-26",
-        "city": "Ciudad de México",
-        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-numerado-ciudad-de-mexico-26-11-2026/event/3D0064A6A4695E8E"
-      }
-    },
-    {
       "from": "494e8d09-f85b-4543-892f-a5096aed1cd4",
       "to": "fbd30319-269f-408a-9999-7a303c1bc69f",
       "types": [
@@ -755,19 +699,19 @@
       }
     },
     {
-      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
-      "to": "e160f589-dbe6-4b8f-88b5-f528ff4443b4",
+      "from": "945d3b69-27cd-45fa-b491-52553a63dead",
+      "to": "3cdf1327-39eb-4ffe-9ce3-20599ac6a468",
       "types": [
         "upcoming"
       ],
-      "shows": 3,
-      "first": "2027-01-13",
-      "last": "2027-01-17",
+      "shows": 1,
+      "first": "2027-01-23",
+      "last": "2027-01-23",
       "next": {
-        "tour": "\"The Hayley Williams Show\"",
-        "date": "2027-01-13",
-        "city": "Ciudad de México",
-        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-ciudad-de-mexico-13-01-2027/event/3D0064BD97725384"
+        "tour": "Joyce Manor",
+        "date": "2027-01-23",
+        "city": "Inglewood",
+        "url": "https://www.ticketmaster.com/joyce-manor-inglewood-california-01-23-2027/event/090064F8E444D2E7"
       }
     },
     {
@@ -800,22 +744,6 @@
         "date": "2027-02-06",
         "city": "Austin",
         "url": "https://www.ticketmaster.com/gracie-abrams-the-look-at-my-austin-texas-02-06-2027/event/3A00655DA08671F8"
-      }
-    },
-    {
-      "from": "bc710bcf-8815-42cf-bad2-3f1d12246aeb",
-      "to": "38fd7691-0543-409c-997f-7f15c10394a4",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 66,
-      "first": "2027-02-06",
-      "last": "2027-07-13",
-      "next": {
-        "tour": "Nickelback: Everything Under The Sun Tour",
-        "date": "2027-02-06",
-        "city": "Pittsburgh",
-        "url": "https://www.ticketmaster.com/nickelback-everything-under-the-sun-tour-pittsburgh-pennsylvania-02-06-2027/event/16006545A37251D0"
       }
     },
     {
@@ -896,6 +824,38 @@
         "date": "2027-02-16",
         "city": "Atlanta",
         "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA7woI"
+      }
+    },
+    {
+      "from": "faabeed5-3dd0-4be5-aec5-e6486e68db2f",
+      "to": "199affdb-93c0-4a9d-a4d0-26dc4fa01806",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2027-02-19",
+      "last": "2027-02-19",
+      "next": {
+        "tour": "Cody Johnson",
+        "date": "2027-02-19",
+        "city": "Austin",
+        "url": "https://www.ticketmaster.com/cody-johnson-austin-texas-02-19-2027/event/3A006554B3FBC02A"
+      }
+    },
+    {
+      "from": "faabeed5-3dd0-4be5-aec5-e6486e68db2f",
+      "to": "1edead6d-6c01-4ad4-9cce-c334bf7edf23",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2027-02-20",
+      "last": "2027-02-20",
+      "next": {
+        "tour": "Cody Johnson",
+        "date": "2027-02-20",
+        "city": "Austin",
+        "url": "https://www.ticketmaster.com/cody-johnson-austin-texas-02-20-2027/event/3A006551E27088BC"
       }
     },
     {
