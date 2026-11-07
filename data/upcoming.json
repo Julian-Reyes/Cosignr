@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T06:56:52.631Z",
+  "generatedAt": "2026-11-07T06:55:32.043Z",
   "source": "Ticketmaster Discovery API (live listings, rebuilt nightly)",
   "artists": {
     "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
@@ -71,15 +71,26 @@
       "name": "BigXthaPlug",
       "id": "bigxthaplug"
     },
-    "e881b225-42b1-41d9-9d5e-eff55568585b": {
-      "name": "Stella Lefty",
-      "id": "stella-lefty"
+    "6ffb8ea9-2370-44d8-b678-e9237bbd347b": {
+      "name": "Kings of Leon",
+      "id": "kings-of-leon"
     },
-    "91b449dd-746e-4fd3-b38d-b1dac80e655e": {
-      "name": "Grace Enger"
+    "8cf32b06-c5a3-4804-a967-376f88d12aad": {
+      "name": "Ocean Alley"
     },
-    "4ae67eb7-c01c-4d71-b995-21b093fcb888": {
-      "name": "Wyatt Flores"
+    "07b6020a-c539-4d68-aeef-f159f3befc76": {
+      "name": "Band of Horses"
+    },
+    "38ed4923-005f-4ba0-baf7-749269dfea29": {
+      "name": "Dexter and The Moonrocks",
+      "id": "dexter-and-the-moonrocks"
+    },
+    "be7c80ee-1b03-4088-b20b-5915c7c5ad45": {
+      "name": "Sam Barber",
+      "id": "sam-barber"
+    },
+    "a87d28db-cf33-4cb6-9140-c4e0fe391368": {
+      "name": "Josiah and the Bonnevilles"
     },
     "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74": {
       "name": "Sleeping With Sirens",
@@ -97,26 +108,23 @@
     "cd584ea0-0fc5-412b-8598-0244c4025af6": {
       "name": "Boston Manor"
     },
-    "d8fd8d9b-473b-4f06-83c8-869b1bb9de89": {
-      "name": "Bryson Tiller",
-      "id": "bryson-tiller"
+    "e881b225-42b1-41d9-9d5e-eff55568585b": {
+      "name": "Stella Lefty",
+      "id": "stella-lefty"
     },
-    "abaa7001-0d80-4e58-be5d-d2d246fd9d87": {
-      "name": "Majid Jordan"
+    "91b449dd-746e-4fd3-b38d-b1dac80e655e": {
+      "name": "Grace Enger"
     },
-    "494e8d09-f85b-4543-892f-a5096aed1cd4": {
-      "name": "Mariah Carey",
-      "id": "mariah-carey"
-    },
-    "fbd30319-269f-408a-9999-7a303c1bc69f": {
-      "name": "DJ Suss One"
+    "4ae67eb7-c01c-4d71-b995-21b093fcb888": {
+      "name": "Wyatt Flores"
     },
     "fd87acc7-e0a0-4a45-bc2a-d2ab5c10be68": {
       "name": "Fontaines D.C.",
       "id": "fontaines-d-c"
     },
     "b4b5b5a7-feff-47d0-9458-83d0d135a692": {
-      "name": "Hayley Williams"
+      "name": "Hayley Williams",
+      "id": "hayley-williams"
     },
     "547e23af-e455-41dd-baae-a3b58e065d0c": {
       "name": "Damien Dempsey",
@@ -130,6 +138,21 @@
     },
     "7e01053e-e701-4e55-8a29-b8cfdcdee205": {
       "name": "Iceage"
+    },
+    "afb6cc6d-a060-4f5e-bc3a-00d4b6832e41": {
+      "name": "Remi Wolf",
+      "id": "remi-wolf"
+    },
+    "2cd302f3-d66a-421e-b6b8-2a8c2ca511c4": {
+      "name": "Emma Ogier",
+      "id": "emma-ogier"
+    },
+    "494e8d09-f85b-4543-892f-a5096aed1cd4": {
+      "name": "Mariah Carey",
+      "id": "mariah-carey"
+    },
+    "fbd30319-269f-408a-9999-7a303c1bc69f": {
+      "name": "DJ Suss One"
     },
     "7eb1ce54-a355-41f9-8d68-e018b096d427": {
       "name": "Harry Styles",
@@ -156,14 +179,6 @@
     },
     "7c7f9c94-dee8-4903-892b-6cf44652e2de": {
       "name": "Tears for Fears"
-    },
-    "afb6cc6d-a060-4f5e-bc3a-00d4b6832e41": {
-      "name": "Remi Wolf",
-      "id": "remi-wolf"
-    },
-    "2cd302f3-d66a-421e-b6b8-2a8c2ca511c4": {
-      "name": "Emma Ogier",
-      "id": "emma-ogier"
     },
     "f7441bc7-d7de-4813-a2fc-31a4033d396d": {
       "name": "Gracie Abrams",
@@ -194,19 +209,19 @@
     "279ae894-037e-4058-a21a-e44dc8a8ca7d": {
       "name": "Samia"
     },
+    "d8fd8d9b-473b-4f06-83c8-869b1bb9de89": {
+      "name": "Bryson Tiller",
+      "id": "bryson-tiller"
+    },
+    "abaa7001-0d80-4e58-be5d-d2d246fd9d87": {
+      "name": "Majid Jordan"
+    },
     "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6": {
       "name": "Koe Wetzel",
       "id": "koe-wetzel"
     },
     "ba67b7da-cca7-4c3f-ba19-05349f0f7d97": {
       "name": "Parker McCollum"
-    },
-    "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19": {
-      "name": "Post Malone",
-      "id": "post-malone"
-    },
-    "addb00fd-733c-4223-8fdf-f78be2488acd": {
-      "name": "Alesso"
     },
     "4ccfc097-7034-4aa7-97c3-b5d4ed52865a": {
       "name": "Claire Rosinkranz"
@@ -218,25 +233,18 @@
       "name": "Latto",
       "id": "latto"
     },
-    "d8c85c0e-ad88-47a7-a1df-b70608c2f52f": {
-      "name": "Riley Green",
-      "id": "riley-green"
+    "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19": {
+      "name": "Post Malone",
+      "id": "post-malone"
     },
-    "2646de59-5529-4134-a6c8-2c76282716d1": {
-      "name": "Muscadine Bloodline"
+    "addb00fd-733c-4223-8fdf-f78be2488acd": {
+      "name": "Alesso"
     },
-    "50e3dd64-6b87-4b9a-a511-c375ae4ff1ca": {
-      "name": "Randy Houser"
+    "9bd720ab-3aec-4ab0-b363-3a465ee65026": {
+      "name": "Annie DiRusso"
     },
-    "7dc8f5bd-9d0b-4087-9f73-dc164950bbd8": {
-      "name": "Queens of the Stone Age",
-      "id": "queens-of-the-stone-age"
-    },
-    "84dc4f23-c0b8-4fe1-bbca-a3993ddc8fc2": {
-      "name": "Primus"
-    },
-    "b6b2bb8d-54a9-491f-9607-7b546023b433": {
-      "name": "Pixies"
+    "e160f589-dbe6-4b8f-88b5-f528ff4443b4": {
+      "name": "Mannequin Pussy"
     },
     "faabeed5-3dd0-4be5-aec5-e6486e68db2f": {
       "name": "Cody Johnson",
@@ -248,26 +256,22 @@
     "1edead6d-6c01-4ad4-9cce-c334bf7edf23": {
       "name": "Tracy Byrd"
     },
-    "945d3b69-27cd-45fa-b491-52553a63dead": {
-      "name": "Joyce Manor"
+    "d8c85c0e-ad88-47a7-a1df-b70608c2f52f": {
+      "name": "Riley Green",
+      "id": "riley-green"
     },
-    "3cdf1327-39eb-4ffe-9ce3-20599ac6a468": {
-      "name": "Tigers Jaw",
-      "id": "tigers-jaw"
+    "2646de59-5529-4134-a6c8-2c76282716d1": {
+      "name": "Muscadine Bloodline"
     },
-    "97b8d224-5660-419c-8dff-4b3bf0c33983": {
-      "name": "The Neighbourhood",
-      "id": "the-neighbourhood"
+    "50e3dd64-6b87-4b9a-a511-c375ae4ff1ca": {
+      "name": "Randy Houser"
     },
-    "da0c8f4f-f4f4-4e91-86ca-e31108bb5706": {
-      "name": "Nessa Barrett"
+    "18f56081-ccd7-4e07-981a-558c20951ccd": {
+      "name": "Jessie Reyez",
+      "id": "jessie-reyez"
     },
-    "afb680f2-b6eb-4cd7-a70b-a63b25c763d5": {
-      "name": "Bruno Mars",
-      "id": "bruno-mars"
-    },
-    "45425c84-9092-4e2c-b732-e1d0280b580a": {
-      "name": "Tyla"
+    "51346a9b-0849-40e7-9748-097843368057": {
+      "name": "SonReal"
     },
     "8264722b-df00-467a-858e-5c97cda169c9": {
       "name": "Joji",
@@ -275,10 +279,6 @@
     },
     "741a6c80-2d6e-4522-9de4-e070798a2d30": {
       "name": "Tommy Richman"
-    },
-    "38ed4923-005f-4ba0-baf7-749269dfea29": {
-      "name": "Dexter and The Moonrocks",
-      "id": "dexter-and-the-moonrocks"
     },
     "11b34f7b-42d0-4d16-a96f-f47a517cca7d": {
       "name": "Return to Dust"
@@ -304,94 +304,14 @@
       "types": [
         "upcoming"
       ],
-      "shows": 4,
-      "first": "2026-11-06",
+      "shows": 3,
+      "first": "2026-11-07",
       "last": "2026-11-19",
       "next": {
         "tour": "Madeon presents Victory Live",
-        "date": "2026-11-06",
-        "city": "Raleigh",
-        "url": "https://www.ticketmaster.com/madeon-presents-victory-live-raleigh-north-carolina-11-06-2026/event/2D0064A5A31C2EA7"
-      }
-    },
-    {
-      "from": "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1",
-      "to": "cb9c2a2b-96c2-44d7-bd31-04ef87572b57",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 9,
-      "first": "2026-11-06",
-      "last": "2026-11-19",
-      "next": {
-        "tour": "Rod Wave: Don't Look Down Tour",
-        "date": "2026-11-06",
-        "city": "Columbia",
-        "url": "https://www.ticketmaster.com/rod-wave-dont-look-down-tour-columbia-south-carolina-11-06-2026/event/2D0064D0DAD9D273"
-      }
-    },
-    {
-      "from": "a0723a3c-4135-438e-85c5-012712144ede",
-      "to": "7013c772-2236-42f3-8590-2e2292d2ca5e",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 7,
-      "first": "2026-11-06",
-      "last": "2026-11-24",
-      "next": {
-        "tour": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
-        "date": "2026-11-06",
-        "city": "Hamburg",
-        "url": "https://www.ticketmaster.de/event/don-toliver-nitrous-octane-world-tour-leg-2-tickets/1947567245?language=en-us"
-      }
-    },
-    {
-      "from": "e881b225-42b1-41d9-9d5e-eff55568585b",
-      "to": "91b449dd-746e-4fd3-b38d-b1dac80e655e",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 4,
-      "first": "2026-11-06",
-      "last": "2026-11-19",
-      "next": {
-        "tour": "Stella Lefty: Lefty Live",
-        "date": "2026-11-06",
-        "city": "Dallas",
-        "url": "https://www.ticketmaster.com/stella-lefty-lefty-live-dallas-texas-11-06-2026/event/0C0064AF96246D74"
-      }
-    },
-    {
-      "from": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
-      "to": "bd0f203c-6d4b-4c44-89d1-63be9c60acc3",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 5,
-      "first": "2026-11-06",
-      "last": "2026-11-12",
-      "next": {
-        "tour": "Sleeping With Sirens: An Ending In Itself Tour",
-        "date": "2026-11-06",
-        "city": "Philadelphia",
-        "url": "https://www.ticketmaster.com/sleeping-with-sirens-an-ending-in-philadelphia-pennsylvania-11-06-2026/event/020064CB97B5A882"
-      }
-    },
-    {
-      "from": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
-      "to": "355cc194-b8db-4af2-8678-c7ad54213f4b",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 13,
-      "first": "2026-11-06",
-      "last": "2026-12-01",
-      "next": {
-        "tour": "Doja Cat - Tour Ma Vie World Tour",
-        "date": "2026-11-06",
-        "city": "San Antonio",
-        "url": "https://www.ticketmaster.com/doja-cat-tour-ma-vie-world-san-antonio-texas-11-06-2026/event/3A006338F42E6A55"
+        "date": "2026-11-07",
+        "city": "Washington",
+        "url": "https://www.ticketmaster.com/madeon-presents-victory-live-washington-district-of-columbia-11-07-2026/event/150064A7A35BA151"
       }
     },
     {
@@ -411,19 +331,83 @@
       }
     },
     {
-      "from": "97b8d224-5660-419c-8dff-4b3bf0c33983",
-      "to": "da0c8f4f-f4f4-4e91-86ca-e31108bb5706",
+      "from": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
+      "to": "bd0f203c-6d4b-4c44-89d1-63be9c60acc3",
       "types": [
         "upcoming"
       ],
-      "shows": 13,
-      "first": "2026-11-10",
-      "last": "2026-12-05",
+      "shows": 4,
+      "first": "2026-11-07",
+      "last": "2026-11-12",
       "next": {
-        "tour": "The Neighbourhood: THE WOURLD TOUR",
-        "date": "2026-11-10",
-        "city": "Atlanta",
-        "url": "https://www.ticketmaster.com/the-neighbourhood-the-wourld-tour-atlanta-georgia-11-10-2026/event/0E006444A7A0612C"
+        "tour": "Sleeping With Sirens: An Ending In Itself Tour",
+        "date": "2026-11-07",
+        "city": "New York",
+        "url": "https://www.ticketmaster.com/sleeping-with-sirens-an-ending-in-new-york-new-york-11-07-2026/event/000064CAA762E1A9"
+      }
+    },
+    {
+      "from": "e881b225-42b1-41d9-9d5e-eff55568585b",
+      "to": "91b449dd-746e-4fd3-b38d-b1dac80e655e",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 3,
+      "first": "2026-11-07",
+      "last": "2026-11-19",
+      "next": {
+        "tour": "Stella Lefty: Lefty Live",
+        "date": "2026-11-07",
+        "city": "Houston",
+        "url": "https://www.ticketmaster.com/stella-lefty-lefty-live-houston-texas-11-07-2026/event/3A0064AE6E7934D6"
+      }
+    },
+    {
+      "from": "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1",
+      "to": "cb9c2a2b-96c2-44d7-bd31-04ef87572b57",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 8,
+      "first": "2026-11-09",
+      "last": "2026-11-19",
+      "next": {
+        "tour": "Rod Wave: Don't Look Down Tour",
+        "date": "2026-11-09",
+        "city": "Orlando",
+        "url": "https://www.ticketmaster.com/rod-wave-dont-look-down-tour-orlando-florida-11-09-2026/event/220064D1D802540F"
+      }
+    },
+    {
+      "from": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
+      "to": "355cc194-b8db-4af2-8678-c7ad54213f4b",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 12,
+      "first": "2026-11-11",
+      "last": "2026-12-01",
+      "next": {
+        "tour": "Doja Cat - Tour Ma Vie World Tour",
+        "date": "2026-11-11",
+        "city": "Miami",
+        "url": "https://www.ticketmaster.com/doja-cat-tour-ma-vie-world-miami-florida-11-11-2026/event/0D006339140D4C8B"
+      }
+    },
+    {
+      "from": "a0723a3c-4135-438e-85c5-012712144ede",
+      "to": "7013c772-2236-42f3-8590-2e2292d2ca5e",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 6,
+      "first": "2026-11-12",
+      "last": "2026-11-24",
+      "next": {
+        "tour": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
+        "date": "2026-11-12",
+        "city": "Düsseldorf",
+        "url": "https://www.ticketmaster.de/event/don-toliver-nitrous-octane-world-tour-leg-2-tickets/1836611139?language=en-us"
       }
     },
     {
@@ -456,6 +440,22 @@
         "date": "2026-11-15",
         "city": "Houston",
         "url": "https://www.ticketmaster.com/emma-ogier-houston-texas-11-15-2026/event/3A00653ECB0C4A5C"
+      }
+    },
+    {
+      "from": "18f56081-ccd7-4e07-981a-558c20951ccd",
+      "to": "51346a9b-0849-40e7-9748-097843368057",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2026-11-16",
+      "last": "2026-11-16",
+      "next": {
+        "tour": "Jessie Reyez: A Little Vengeance Tour",
+        "date": "2026-11-16",
+        "city": "Chicago",
+        "url": "https://www.ticketmaster.com/jessie-reyez-a-little-vengeance-tour-chicago-illinois-11-16-2026/event/04006515B0D11331"
       }
     },
     {
@@ -539,6 +539,22 @@
       }
     },
     {
+      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
+      "to": "9bd720ab-3aec-4ab0-b363-3a465ee65026",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 2,
+      "first": "2026-11-26",
+      "last": "2026-11-26",
+      "next": {
+        "tour": "\"The Hayley Williams Show\" (Numerado) ",
+        "date": "2026-11-26",
+        "city": "Ciudad de México",
+        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-numerado-ciudad-de-mexico-26-11-2026/event/3D0064A6A4695E8E"
+      }
+    },
+    {
       "from": "494e8d09-f85b-4543-892f-a5096aed1cd4",
       "to": "fbd30319-269f-408a-9999-7a303c1bc69f",
       "types": [
@@ -619,6 +635,22 @@
       }
     },
     {
+      "from": "be7c80ee-1b03-4088-b20b-5915c7c5ad45",
+      "to": "a87d28db-cf33-4cb6-9140-c4e0fe391368",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 5,
+      "first": "2026-12-03",
+      "last": "2027-04-14",
+      "next": {
+        "tour": "Sam Barber - The American Route Tour",
+        "date": "2026-12-03",
+        "city": "Saint Louis",
+        "url": "https://www.ticketmaster.com/sam-barber-the-american-route-tour-saint-louis-missouri-12-03-2026/event/06006477AAD1ABC1"
+      }
+    },
+    {
       "from": "ba67b7da-cca7-4c3f-ba19-05349f0f7d97",
       "to": "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6",
       "types": [
@@ -632,22 +664,6 @@
         "date": "2026-12-03",
         "city": "Houston",
         "url": "https://www.ticketmaster.com/naughty-or-nice-tour-houston-texas-12-03-2026/event/3A00653EB610ECA1"
-      }
-    },
-    {
-      "from": "7dc8f5bd-9d0b-4087-9f73-dc164950bbd8",
-      "to": "84dc4f23-c0b8-4fe1-bbca-a3993ddc8fc2",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 3,
-      "first": "2026-12-08",
-      "last": "2026-12-20",
-      "next": {
-        "tour": "Queens of the Stone Age",
-        "date": "2026-12-08",
-        "city": "Adelaide",
-        "url": "https://www.ticketmaster.com.au/queens-of-the-stone-age-adelaide-08-12-2026/event/250064E9A45253E9"
       }
     },
     {
@@ -699,19 +715,19 @@
       }
     },
     {
-      "from": "945d3b69-27cd-45fa-b491-52553a63dead",
-      "to": "3cdf1327-39eb-4ffe-9ce3-20599ac6a468",
+      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
+      "to": "e160f589-dbe6-4b8f-88b5-f528ff4443b4",
       "types": [
         "upcoming"
       ],
-      "shows": 1,
-      "first": "2027-01-23",
-      "last": "2027-01-23",
+      "shows": 3,
+      "first": "2027-01-13",
+      "last": "2027-01-17",
       "next": {
-        "tour": "Joyce Manor",
-        "date": "2027-01-23",
-        "city": "Inglewood",
-        "url": "https://www.ticketmaster.com/joyce-manor-inglewood-california-01-23-2027/event/090064F8E444D2E7"
+        "tour": "\"The Hayley Williams Show\"",
+        "date": "2027-01-13",
+        "city": "Ciudad de México",
+        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-ciudad-de-mexico-13-01-2027/event/3D0064BD97725384"
       }
     },
     {
@@ -795,22 +811,6 @@
       }
     },
     {
-      "from": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
-      "to": "45425c84-9092-4e2c-b732-e1d0280b580a",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 15,
-      "first": "2027-02-13",
-      "last": "2027-03-16",
-      "next": {
-        "tour": "Bruno Mars - The Romantic Tour",
-        "date": "2027-02-13",
-        "city": "Burswood",
-        "url": "https://www.ticketmaster.com.au/bruno-mars-the-romantic-tour-burswood-13-02-2027/event/25006518EA3F49F3"
-      }
-    },
-    {
       "from": "36086094-c2a4-49b9-8572-0fbf12fc3409",
       "to": "4ccfc097-7034-4aa7-97c3-b5d4ed52865a",
       "types": [
@@ -872,6 +872,22 @@
         "date": "2027-02-23",
         "city": "Washington",
         "url": "https://www.ticketmaster.com/remi-wolf-the-mud-tour-washington-district-of-columbia-02-23-2027/event/15006547A9CD67C5"
+      }
+    },
+    {
+      "from": "6ffb8ea9-2370-44d8-b678-e9237bbd347b",
+      "to": "8cf32b06-c5a3-4804-a967-376f88d12aad",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 4,
+      "first": "2027-02-24",
+      "last": "2027-03-05",
+      "next": {
+        "tour": "Kings of Leon - Live at the Domain",
+        "date": "2027-02-24",
+        "city": "Auckland",
+        "url": "https://www.ticketmaster.co.nz/kings-of-leon-live-at-the-auckland-24-02-2027/event/240065509C812E04"
       }
     },
     {
@@ -1067,22 +1083,6 @@
       }
     },
     {
-      "from": "7dc8f5bd-9d0b-4087-9f73-dc164950bbd8",
-      "to": "b6b2bb8d-54a9-491f-9607-7b546023b433",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 18,
-      "first": "2027-05-01",
-      "last": "2027-05-24",
-      "next": {
-        "tour": "Queens of The Stone Age - PERFECTH WORLD TOUR",
-        "date": "2027-05-01",
-        "city": "San Diego",
-        "url": "https://www.ticketmaster.com/queens-of-the-stone-age-perfecth-san-diego-california-05-01-2027/event/0A006553A1965D05"
-      }
-    },
-    {
       "from": "7eb1ce54-a355-41f9-8d68-e018b096d427",
       "to": "a6e613d6-ff65-4972-beff-303a1b10ab05",
       "types": [
@@ -1096,6 +1096,38 @@
         "date": "2027-05-07",
         "city": "Toronto",
         "url": "https://www.ticketmaster.ca/harry-styles-together-together-toronto-ontario-05-07-2027/event/10006529D6B422E4"
+      }
+    },
+    {
+      "from": "6ffb8ea9-2370-44d8-b678-e9237bbd347b",
+      "to": "07b6020a-c539-4d68-aeef-f159f3befc76",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 18,
+      "first": "2027-05-08",
+      "last": "2027-10-08",
+      "next": {
+        "tour": "Kings of Leon",
+        "date": "2027-05-08",
+        "city": "Bristow",
+        "url": "https://www.ticketmaster.com/kings-of-leon-bristow-virginia-05-08-2027/event/150065659D794D8B"
+      }
+    },
+    {
+      "from": "6ffb8ea9-2370-44d8-b678-e9237bbd347b",
+      "to": "38ed4923-005f-4ba0-baf7-749269dfea29",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 12,
+      "first": "2027-05-23",
+      "last": "2027-10-15",
+      "next": {
+        "tour": "Kings of Leon",
+        "date": "2027-05-23",
+        "city": "Clarkston",
+        "url": "https://www.ticketmaster.com/kings-of-leon-clarkston-michigan-05-23-2027/event/08006565C8654EA3"
       }
     },
     {
