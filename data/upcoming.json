@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T06:52:29.594Z",
+  "generatedAt": "2026-11-12T06:58:46.901Z",
   "source": "Ticketmaster Discovery API (live listings, rebuilt nightly)",
   "artists": {
     "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
@@ -99,15 +99,15 @@
     "4ccfc097-7034-4aa7-97c3-b5d4ed52865a": {
       "name": "Claire Rosinkranz"
     },
-    "be7c80ee-1b03-4088-b20b-5915c7c5ad45": {
-      "name": "Sam Barber",
-      "id": "sam-barber"
+    "494e8d09-f85b-4543-892f-a5096aed1cd4": {
+      "name": "Mariah Carey",
+      "id": "mariah-carey"
     },
-    "a87d28db-cf33-4cb6-9140-c4e0fe391368": {
-      "name": "Josiah and the Bonnevilles"
+    "fbd30319-269f-408a-9999-7a303c1bc69f": {
+      "name": "DJ Suss One"
     },
-    "c3012f96-f4eb-418a-8a02-3febccf95091": {
-      "name": "Dylan Gossett"
+    "dfa715ac-b536-44df-af43-570d3ea3edec": {
+      "name": "Sugababes"
     },
     "e881b225-42b1-41d9-9d5e-eff55568585b": {
       "name": "Stella Lefty",
@@ -135,15 +135,15 @@
     "cd584ea0-0fc5-412b-8598-0244c4025af6": {
       "name": "Boston Manor"
     },
-    "494e8d09-f85b-4543-892f-a5096aed1cd4": {
-      "name": "Mariah Carey",
-      "id": "mariah-carey"
+    "be7c80ee-1b03-4088-b20b-5915c7c5ad45": {
+      "name": "Sam Barber",
+      "id": "sam-barber"
     },
-    "fbd30319-269f-408a-9999-7a303c1bc69f": {
-      "name": "DJ Suss One"
+    "a87d28db-cf33-4cb6-9140-c4e0fe391368": {
+      "name": "Josiah and the Bonnevilles"
     },
-    "dfa715ac-b536-44df-af43-570d3ea3edec": {
-      "name": "Sugababes"
+    "c3012f96-f4eb-418a-8a02-3febccf95091": {
+      "name": "Dylan Gossett"
     },
     "afb6cc6d-a060-4f5e-bc3a-00d4b6832e41": {
       "name": "Remi Wolf",
@@ -158,8 +158,7 @@
       "id": "fontaines-d-c"
     },
     "b4b5b5a7-feff-47d0-9458-83d0d135a692": {
-      "name": "Hayley Williams",
-      "id": "hayley-williams"
+      "name": "Hayley Williams"
     },
     "547e23af-e455-41dd-baae-a3b58e065d0c": {
       "name": "Damien Dempsey",
@@ -173,6 +172,13 @@
     },
     "7e01053e-e701-4e55-8a29-b8cfdcdee205": {
       "name": "Iceage"
+    },
+    "d8fd8d9b-473b-4f06-83c8-869b1bb9de89": {
+      "name": "Bryson Tiller",
+      "id": "bryson-tiller"
+    },
+    "abaa7001-0d80-4e58-be5d-d2d246fd9d87": {
+      "name": "Majid Jordan"
     },
     "7eb1ce54-a355-41f9-8d68-e018b096d427": {
       "name": "Harry Styles",
@@ -200,12 +206,29 @@
     "7c7f9c94-dee8-4903-892b-6cf44652e2de": {
       "name": "Tears for Fears"
     },
-    "d8fd8d9b-473b-4f06-83c8-869b1bb9de89": {
-      "name": "Bryson Tiller",
-      "id": "bryson-tiller"
+    "faabeed5-3dd0-4be5-aec5-e6486e68db2f": {
+      "name": "Cody Johnson",
+      "id": "cody-johnson"
     },
-    "abaa7001-0d80-4e58-be5d-d2d246fd9d87": {
-      "name": "Majid Jordan"
+    "199affdb-93c0-4a9d-a4d0-26dc4fa01806": {
+      "name": "Carly Pearce"
+    },
+    "1edead6d-6c01-4ad4-9cce-c334bf7edf23": {
+      "name": "Tracy Byrd"
+    },
+    "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19": {
+      "name": "Post Malone",
+      "id": "post-malone"
+    },
+    "addb00fd-733c-4223-8fdf-f78be2488acd": {
+      "name": "Alesso"
+    },
+    "5df62a88-cac9-490a-b62c-c7c88f4020f4": {
+      "name": "Doja Cat"
+    },
+    "355cc194-b8db-4af2-8678-c7ad54213f4b": {
+      "name": "Latto",
+      "id": "latto"
     },
     "bb2b7bbf-75e5-43f8-8a9f-7769ae7d832a": {
       "name": "Rachel Chinouriri"
@@ -228,42 +251,19 @@
     "279ae894-037e-4058-a21a-e44dc8a8ca7d": {
       "name": "Samia"
     },
-    "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19": {
-      "name": "Post Malone",
-      "id": "post-malone"
-    },
-    "addb00fd-733c-4223-8fdf-f78be2488acd": {
-      "name": "Alesso"
-    },
-    "faabeed5-3dd0-4be5-aec5-e6486e68db2f": {
-      "name": "Cody Johnson",
-      "id": "cody-johnson"
-    },
-    "199affdb-93c0-4a9d-a4d0-26dc4fa01806": {
-      "name": "Carly Pearce"
-    },
-    "1edead6d-6c01-4ad4-9cce-c334bf7edf23": {
-      "name": "Tracy Byrd"
-    },
-    "5df62a88-cac9-490a-b62c-c7c88f4020f4": {
-      "name": "Doja Cat"
-    },
-    "355cc194-b8db-4af2-8678-c7ad54213f4b": {
-      "name": "Latto",
-      "id": "latto"
-    },
-    "9bd720ab-3aec-4ab0-b363-3a465ee65026": {
-      "name": "Annie DiRusso"
-    },
-    "e160f589-dbe6-4b8f-88b5-f528ff4443b4": {
-      "name": "Mannequin Pussy"
-    },
     "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6": {
       "name": "Koe Wetzel",
       "id": "koe-wetzel"
     },
     "ba67b7da-cca7-4c3f-ba19-05349f0f7d97": {
       "name": "Parker McCollum"
+    },
+    "945d3b69-27cd-45fa-b491-52553a63dead": {
+      "name": "Joyce Manor"
+    },
+    "3cdf1327-39eb-4ffe-9ce3-20599ac6a468": {
+      "name": "Tigers Jaw",
+      "id": "tigers-jaw"
     },
     "d8c85c0e-ad88-47a7-a1df-b70608c2f52f": {
       "name": "Riley Green",
@@ -275,22 +275,22 @@
     "50e3dd64-6b87-4b9a-a511-c375ae4ff1ca": {
       "name": "Randy Houser"
     },
-    "18f56081-ccd7-4e07-981a-558c20951ccd": {
-      "name": "Jessie Reyez",
-      "id": "jessie-reyez"
+    "9abcc01c-dcf1-4d74-bc55-d81922157956": {
+      "name": "George Clanton"
     },
-    "51346a9b-0849-40e7-9748-097843368057": {
-      "name": "SonReal"
+    "4163b62b-c043-4eb0-8af2-0e7e1362afa6": {
+      "name": "ESPRIT 空想",
+      "id": "esprit"
+    },
+    "8264722b-df00-467a-858e-5c97cda169c9": {
+      "name": "Joji",
+      "id": "joji"
+    },
+    "741a6c80-2d6e-4522-9de4-e070798a2d30": {
+      "name": "Tommy Richman"
     },
     "11b34f7b-42d0-4d16-a96f-f47a517cca7d": {
       "name": "Return to Dust"
-    },
-    "a2d140d8-ae17-4d72-b680-b89c77f1ed52": {
-      "name": "This Is Lorelei"
-    },
-    "9cfabb8c-24a3-498d-b383-bb5324cfe30f": {
-      "name": "Sidney Gish",
-      "id": "sidney-gish"
     },
     "ee0b11de-0c8a-4267-9886-198f4579e1db": {
       "name": "Lizzy McAlpine",
@@ -298,6 +298,13 @@
     },
     "40c857d5-6ab0-41f4-aa1d-7614a79a0686": {
       "name": "Post Animal"
+    },
+    "a2d140d8-ae17-4d72-b680-b89c77f1ed52": {
+      "name": "This Is Lorelei"
+    },
+    "9cfabb8c-24a3-498d-b383-bb5324cfe30f": {
+      "name": "Sidney Gish",
+      "id": "sidney-gish"
     },
     "c9ed3f0c-0f54-45a7-8255-92fb8fcd7c48": {
       "name": "Harrison Whitford"
@@ -307,38 +314,6 @@
     }
   },
   "cosigns": [
-    {
-      "from": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
-      "to": "bd0f203c-6d4b-4c44-89d1-63be9c60acc3",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 2,
-      "first": "2026-11-11",
-      "last": "2026-11-12",
-      "next": {
-        "tour": "Sleeping With Sirens: An Ending In Itself Tour",
-        "date": "2026-11-11",
-        "city": "Charlotte",
-        "url": "https://www.ticketmaster.com/sleeping-with-sirens-an-ending-in-charlotte-north-carolina-11-11-2026/event/2D0064CA8DE39EB5"
-      }
-    },
-    {
-      "from": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
-      "to": "355cc194-b8db-4af2-8678-c7ad54213f4b",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 12,
-      "first": "2026-11-11",
-      "last": "2026-12-01",
-      "next": {
-        "tour": "Doja Cat - Tour Ma Vie World Tour",
-        "date": "2026-11-11",
-        "city": "Miami",
-        "url": "https://www.ticketmaster.com/doja-cat-tour-ma-vie-world-miami-florida-11-11-2026/event/0D006339140D4C8B"
-      }
-    },
     {
       "from": "a0723a3c-4135-438e-85c5-012712144ede",
       "to": "7013c772-2236-42f3-8590-2e2292d2ca5e",
@@ -353,6 +328,22 @@
         "date": "2026-11-12",
         "city": "Düsseldorf",
         "url": "https://www.ticketmaster.de/event/don-toliver-nitrous-octane-world-tour-leg-2-tickets/1836611139?language=en-us"
+      }
+    },
+    {
+      "from": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
+      "to": "bd0f203c-6d4b-4c44-89d1-63be9c60acc3",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2026-11-12",
+      "last": "2026-11-12",
+      "next": {
+        "tour": "Sleeping with Sirens w/ Rain City Drive",
+        "date": "2026-11-12",
+        "city": "Atlanta",
+        "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7P_AA"
       }
     },
     {
@@ -385,6 +376,22 @@
         "date": "2026-11-13",
         "city": "Boston",
         "url": "https://www.ticketmaster.com/madeon-presents-victory-live-18-boston-massachusetts-11-13-2026/event/010064A5B98A7722"
+      }
+    },
+    {
+      "from": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
+      "to": "355cc194-b8db-4af2-8678-c7ad54213f4b",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 11,
+      "first": "2026-11-13",
+      "last": "2026-12-01",
+      "next": {
+        "tour": "Doja Cat - Tour Ma Vie World Tour",
+        "date": "2026-11-13",
+        "city": "Tampa",
+        "url": "https://www.ticketmaster.com/doja-cat-tour-ma-vie-world-tampa-florida-11-13-2026/event/0D00633AEE974980"
       }
     },
     {
@@ -436,22 +443,6 @@
       }
     },
     {
-      "from": "18f56081-ccd7-4e07-981a-558c20951ccd",
-      "to": "51346a9b-0849-40e7-9748-097843368057",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-11-16",
-      "last": "2026-11-16",
-      "next": {
-        "tour": "Jessie Reyez: A Little Vengeance Tour",
-        "date": "2026-11-16",
-        "city": "Chicago",
-        "url": "https://www.ticketmaster.com/jessie-reyez-a-little-vengeance-tour-chicago-illinois-11-16-2026/event/04006515B0D11331"
-      }
-    },
-    {
       "from": "d89de379-665d-425c-b2e9-41b95d1edb36",
       "to": "2e8ca124-e38a-4dab-93dd-c9f3d415902b",
       "types": [
@@ -500,6 +491,22 @@
       }
     },
     {
+      "from": "8264722b-df00-467a-858e-5c97cda169c9",
+      "to": "741a6c80-2d6e-4522-9de4-e070798a2d30",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2026-11-19",
+      "last": "2026-11-19",
+      "next": {
+        "tour": "JOJI: SOLARIS",
+        "date": "2026-11-19",
+        "city": "Auckland",
+        "url": "https://www.ticketmaster.co.nz/joji-solaris-auckland-19-11-2026/event/24006457C4C62E71"
+      }
+    },
+    {
       "from": "4ae67eb7-c01c-4d71-b995-21b093fcb888",
       "to": "e881b225-42b1-41d9-9d5e-eff55568585b",
       "types": [
@@ -513,22 +520,6 @@
         "date": "2026-11-21",
         "city": "Nashville",
         "url": "https://www.ticketmaster.com/wyatt-flores-nashville-tennessee-11-21-2026/event/1B00646CA2A3BDC1"
-      }
-    },
-    {
-      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
-      "to": "9bd720ab-3aec-4ab0-b363-3a465ee65026",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 2,
-      "first": "2026-11-26",
-      "last": "2026-11-26",
-      "next": {
-        "tour": "\"The Hayley Williams Show\" (Numerado) ",
-        "date": "2026-11-26",
-        "city": "Ciudad de México",
-        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-numerado-ciudad-de-mexico-26-11-2026/event/3D0064A6A4695E8E"
       }
     },
     {
@@ -692,19 +683,19 @@
       }
     },
     {
-      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
-      "to": "e160f589-dbe6-4b8f-88b5-f528ff4443b4",
+      "from": "945d3b69-27cd-45fa-b491-52553a63dead",
+      "to": "3cdf1327-39eb-4ffe-9ce3-20599ac6a468",
       "types": [
         "upcoming"
       ],
-      "shows": 3,
-      "first": "2027-01-13",
-      "last": "2027-01-17",
+      "shows": 1,
+      "first": "2027-01-23",
+      "last": "2027-01-23",
       "next": {
-        "tour": "\"The Hayley Williams Show\"",
-        "date": "2027-01-13",
-        "city": "Ciudad de México",
-        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-ciudad-de-mexico-13-01-2027/event/3D0064BD97725384"
+        "tour": "Joyce Manor",
+        "date": "2027-01-23",
+        "city": "Inglewood",
+        "url": "https://www.ticketmaster.com/joyce-manor-inglewood-california-01-23-2027/event/090064F8E444D2E7"
       }
     },
     {
@@ -721,6 +712,22 @@
         "date": "2027-01-26",
         "city": "Seattle",
         "url": "https://www.ticketmaster.com/gracie-abrams-the-look-at-my-seattle-washington-01-26-2027/event/0F0064AEAA9AA408"
+      }
+    },
+    {
+      "from": "9abcc01c-dcf1-4d74-bc55-d81922157956",
+      "to": "4163b62b-c043-4eb0-8af2-0e7e1362afa6",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2027-01-30",
+      "last": "2027-01-30",
+      "next": {
+        "tour": "George Clanton meets ESPRIT",
+        "date": "2027-01-30",
+        "city": "Los Angeles",
+        "url": "https://www.ticketmaster.com/george-clanton-meets-esprit-los-angeles-california-01-30-2027/event/090065441DB66657"
       }
     },
     {
