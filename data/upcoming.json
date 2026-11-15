@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T06:58:46.901Z",
+  "generatedAt": "2026-11-15T07:45:20.897Z",
   "source": "Ticketmaster Discovery API (live listings, rebuilt nightly)",
   "artists": {
     "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
@@ -29,19 +29,32 @@
     "af063224-5624-46d9-a2cd-d0374b55382e": {
       "name": "Point North"
     },
-    "31445b1e-96f3-4c7f-84ec-dd02e647e690": {
-      "name": "DJ Snake"
-    },
-    "1c294418-722f-45a3-a24d-910f9b6f1502": {
-      "name": "Dillon Francis",
-      "id": "dillon-francis"
-    },
     "fa1de503-aba7-41fa-a1ed-371b3e87a717": {
       "name": "Madeon",
       "id": "madeon"
     },
     "e4d7cfe5-0bed-46cf-acad-ab9a4dcb7aa6": {
       "name": "Anamanaguchi"
+    },
+    "2077273e-eaa1-4f49-903c-f286ededecb9": {
+      "name": "Morgan Wallen",
+      "id": "morgan-wallen"
+    },
+    "f4fe9be1-8e34-47c8-bf16-33d1a94a235b": {
+      "name": "HARDY"
+    },
+    "365247e5-db90-4d0e-bf2c-ca18b54fcab9": {
+      "name": "Cole Swindell"
+    },
+    "e881b225-42b1-41d9-9d5e-eff55568585b": {
+      "name": "Stella Lefty",
+      "id": "stella-lefty"
+    },
+    "f30118c5-f783-4969-8427-f3c096378267": {
+      "name": "Brooks & Dunn"
+    },
+    "bca8bfc0-9d5b-449b-b713-914596f88d56": {
+      "name": "Thomas Rhett"
     },
     "6925db17-f35e-42f3-a4eb-84ee6bf5d4b0": {
       "name": "Olivia Rodrigo",
@@ -60,6 +73,27 @@
     "61a04f15-0929-4bb6-bd4e-dabdf8e19f68": {
       "name": "Ryan Bingham"
     },
+    "a0723a3c-4135-438e-85c5-012712144ede": {
+      "name": "Don Toliver",
+      "id": "don-toliver"
+    },
+    "7013c772-2236-42f3-8590-2e2292d2ca5e": {
+      "name": "Victony"
+    },
+    "a2a3f910-b188-43e7-81d0-f1ac2a2f3e12": {
+      "name": "Noah Kahan",
+      "id": "noah-kahan"
+    },
+    "5c61efe6-3cdf-4160-b43c-9274944369e6": {
+      "name": "Gregory Alan Isakov"
+    },
+    "afb6cc6d-a060-4f5e-bc3a-00d4b6832e41": {
+      "name": "Remi Wolf",
+      "id": "remi-wolf"
+    },
+    "6f38418e-4695-4e20-a792-431929e95ee5": {
+      "name": "Tiny Habits"
+    },
     "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1": {
       "name": "Rod Wave",
       "id": "rod-wave"
@@ -67,12 +101,45 @@
     "cb9c2a2b-96c2-44d7-bd31-04ef87572b57": {
       "name": "FRIDAYY"
     },
-    "a0723a3c-4135-438e-85c5-012712144ede": {
-      "name": "Don Toliver",
-      "id": "don-toliver"
+    "494e8d09-f85b-4543-892f-a5096aed1cd4": {
+      "name": "Mariah Carey",
+      "id": "mariah-carey"
     },
-    "7013c772-2236-42f3-8590-2e2292d2ca5e": {
-      "name": "Victony"
+    "fbd30319-269f-408a-9999-7a303c1bc69f": {
+      "name": "DJ Suss One"
+    },
+    "dfa715ac-b536-44df-af43-570d3ea3edec": {
+      "name": "Sugababes"
+    },
+    "f7441bc7-d7de-4813-a2fc-31a4033d396d": {
+      "name": "Gracie Abrams"
+    },
+    "36086094-c2a4-49b9-8572-0fbf12fc3409": {
+      "name": "Ashe",
+      "id": "ashe"
+    },
+    "4ccfc097-7034-4aa7-97c3-b5d4ed52865a": {
+      "name": "Claire Rosinkranz"
+    },
+    "a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432": {
+      "name": "U2",
+      "id": "u2"
+    },
+    "3547f34a-db02-4ab7-b4a0-380e1ef951a9": {
+      "name": "Wolf Alice"
+    },
+    "91b449dd-746e-4fd3-b38d-b1dac80e655e": {
+      "name": "Grace Enger"
+    },
+    "4ae67eb7-c01c-4d71-b995-21b093fcb888": {
+      "name": "Wyatt Flores"
+    },
+    "96855c21-b832-4366-ba12-0d2330c36a86": {
+      "name": "Phoebe Bridgers",
+      "id": "phoebe-bridgers"
+    },
+    "75a7274d-e9f1-4569-be5e-f590ab9ddb64": {
+      "name": "Christian Lee Hutson"
     },
     "6ffb8ea9-2370-44d8-b678-e9237bbd347b": {
       "name": "Kings of Leon",
@@ -88,43 +155,9 @@
       "name": "Dexter and The Moonrocks",
       "id": "dexter-and-the-moonrocks"
     },
-    "f7441bc7-d7de-4813-a2fc-31a4033d396d": {
-      "name": "Gracie Abrams",
-      "id": "gracie-abrams"
-    },
-    "36086094-c2a4-49b9-8572-0fbf12fc3409": {
-      "name": "Ashe",
-      "id": "ashe"
-    },
-    "4ccfc097-7034-4aa7-97c3-b5d4ed52865a": {
-      "name": "Claire Rosinkranz"
-    },
-    "494e8d09-f85b-4543-892f-a5096aed1cd4": {
-      "name": "Mariah Carey",
-      "id": "mariah-carey"
-    },
-    "fbd30319-269f-408a-9999-7a303c1bc69f": {
-      "name": "DJ Suss One"
-    },
-    "dfa715ac-b536-44df-af43-570d3ea3edec": {
-      "name": "Sugababes"
-    },
-    "e881b225-42b1-41d9-9d5e-eff55568585b": {
-      "name": "Stella Lefty",
-      "id": "stella-lefty"
-    },
-    "91b449dd-746e-4fd3-b38d-b1dac80e655e": {
-      "name": "Grace Enger"
-    },
-    "4ae67eb7-c01c-4d71-b995-21b093fcb888": {
-      "name": "Wyatt Flores"
-    },
     "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74": {
       "name": "Sleeping With Sirens",
       "id": "sleeping-with-sirens"
-    },
-    "bd0f203c-6d4b-4c44-89d1-63be9c60acc3": {
-      "name": "Rain City Drive"
     },
     "2b1e0708-7317-4b09-b6a2-6dc6cb9c0479": {
       "name": "Arm's Length"
@@ -135,30 +168,24 @@
     "cd584ea0-0fc5-412b-8598-0244c4025af6": {
       "name": "Boston Manor"
     },
-    "be7c80ee-1b03-4088-b20b-5915c7c5ad45": {
-      "name": "Sam Barber",
-      "id": "sam-barber"
-    },
-    "a87d28db-cf33-4cb6-9140-c4e0fe391368": {
-      "name": "Josiah and the Bonnevilles"
-    },
-    "c3012f96-f4eb-418a-8a02-3febccf95091": {
-      "name": "Dylan Gossett"
-    },
-    "afb6cc6d-a060-4f5e-bc3a-00d4b6832e41": {
-      "name": "Remi Wolf",
-      "id": "remi-wolf"
-    },
     "2cd302f3-d66a-421e-b6b8-2a8c2ca511c4": {
       "name": "Emma Ogier",
       "id": "emma-ogier"
+    },
+    "d8fd8d9b-473b-4f06-83c8-869b1bb9de89": {
+      "name": "Bryson Tiller",
+      "id": "bryson-tiller"
+    },
+    "abaa7001-0d80-4e58-be5d-d2d246fd9d87": {
+      "name": "Majid Jordan"
     },
     "fd87acc7-e0a0-4a45-bc2a-d2ab5c10be68": {
       "name": "Fontaines D.C.",
       "id": "fontaines-d-c"
     },
     "b4b5b5a7-feff-47d0-9458-83d0d135a692": {
-      "name": "Hayley Williams"
+      "name": "Hayley Williams",
+      "id": "hayley-williams"
     },
     "547e23af-e455-41dd-baae-a3b58e065d0c": {
       "name": "Damien Dempsey",
@@ -172,39 +199,6 @@
     },
     "7e01053e-e701-4e55-8a29-b8cfdcdee205": {
       "name": "Iceage"
-    },
-    "d8fd8d9b-473b-4f06-83c8-869b1bb9de89": {
-      "name": "Bryson Tiller",
-      "id": "bryson-tiller"
-    },
-    "abaa7001-0d80-4e58-be5d-d2d246fd9d87": {
-      "name": "Majid Jordan"
-    },
-    "7eb1ce54-a355-41f9-8d68-e018b096d427": {
-      "name": "Harry Styles",
-      "id": "harry-styles"
-    },
-    "a298565e-d43e-46c4-b35c-bfe131258815": {
-      "name": "Fousheé"
-    },
-    "396a9525-0994-4542-b480-c4587feeb476": {
-      "name": "Tinashe",
-      "id": "tinashe"
-    },
-    "d23dc845-caac-4758-8b52-0f6e42a3c5c3": {
-      "name": "Kylie Minogue"
-    },
-    "a6e613d6-ff65-4972-beff-303a1b10ab05": {
-      "name": "Lainey Wilson"
-    },
-    "a670e05a-cea8-4b37-bce9-d82daf1a0fa4": {
-      "name": "Feist"
-    },
-    "dff72d7d-751c-4b59-8aaa-7c61136191a3": {
-      "name": "Baby Rose"
-    },
-    "7c7f9c94-dee8-4903-892b-6cf44652e2de": {
-      "name": "Tears for Fears"
     },
     "faabeed5-3dd0-4be5-aec5-e6486e68db2f": {
       "name": "Cody Johnson",
@@ -223,6 +217,16 @@
     "addb00fd-733c-4223-8fdf-f78be2488acd": {
       "name": "Alesso"
     },
+    "be7c80ee-1b03-4088-b20b-5915c7c5ad45": {
+      "name": "Sam Barber",
+      "id": "sam-barber"
+    },
+    "a87d28db-cf33-4cb6-9140-c4e0fe391368": {
+      "name": "Josiah and the Bonnevilles"
+    },
+    "c3012f96-f4eb-418a-8a02-3febccf95091": {
+      "name": "Dylan Gossett"
+    },
     "5df62a88-cac9-490a-b62c-c7c88f4020f4": {
       "name": "Doja Cat"
     },
@@ -230,26 +234,36 @@
       "name": "Latto",
       "id": "latto"
     },
-    "bb2b7bbf-75e5-43f8-8a9f-7769ae7d832a": {
-      "name": "Rachel Chinouriri"
+    "7eb1ce54-a355-41f9-8d68-e018b096d427": {
+      "name": "Harry Styles",
+      "id": "harry-styles"
     },
-    "736c8ea9-b5c3-4c5f-8782-28e633f0c084": {
-      "name": "Holly Humberstone"
+    "a298565e-d43e-46c4-b35c-bfe131258815": {
+      "name": "Fousheé"
     },
-    "5f606b3d-fab7-4d39-bcdb-f5d42edae945": {
-      "name": "Del Water Gap"
+    "396a9525-0994-4542-b480-c4587feeb476": {
+      "name": "Tinashe"
     },
-    "0ef0f607-8d6b-40f3-8180-fa4ced129da1": {
-      "name": "Charlotte Lawrence"
+    "d23dc845-caac-4758-8b52-0f6e42a3c5c3": {
+      "name": "Kylie Minogue"
     },
-    "29507643-0c6b-444b-8511-53cb1c042403": {
-      "name": "Jensen McRae"
+    "a6e613d6-ff65-4972-beff-303a1b10ab05": {
+      "name": "Lainey Wilson"
     },
-    "5db88fae-df24-490e-971a-1b3fe8d373ea": {
-      "name": "The Japanese House"
+    "a670e05a-cea8-4b37-bce9-d82daf1a0fa4": {
+      "name": "Feist"
     },
-    "279ae894-037e-4058-a21a-e44dc8a8ca7d": {
-      "name": "Samia"
+    "dff72d7d-751c-4b59-8aaa-7c61136191a3": {
+      "name": "Baby Rose"
+    },
+    "7c7f9c94-dee8-4903-892b-6cf44652e2de": {
+      "name": "Tears for Fears"
+    },
+    "9bd720ab-3aec-4ab0-b363-3a465ee65026": {
+      "name": "Annie DiRusso"
+    },
+    "e160f589-dbe6-4b8f-88b5-f528ff4443b4": {
+      "name": "Mannequin Pussy"
     },
     "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6": {
       "name": "Koe Wetzel",
@@ -257,37 +271,6 @@
     },
     "ba67b7da-cca7-4c3f-ba19-05349f0f7d97": {
       "name": "Parker McCollum"
-    },
-    "945d3b69-27cd-45fa-b491-52553a63dead": {
-      "name": "Joyce Manor"
-    },
-    "3cdf1327-39eb-4ffe-9ce3-20599ac6a468": {
-      "name": "Tigers Jaw",
-      "id": "tigers-jaw"
-    },
-    "d8c85c0e-ad88-47a7-a1df-b70608c2f52f": {
-      "name": "Riley Green",
-      "id": "riley-green"
-    },
-    "2646de59-5529-4134-a6c8-2c76282716d1": {
-      "name": "Muscadine Bloodline"
-    },
-    "50e3dd64-6b87-4b9a-a511-c375ae4ff1ca": {
-      "name": "Randy Houser"
-    },
-    "9abcc01c-dcf1-4d74-bc55-d81922157956": {
-      "name": "George Clanton"
-    },
-    "4163b62b-c043-4eb0-8af2-0e7e1362afa6": {
-      "name": "ESPRIT 空想",
-      "id": "esprit"
-    },
-    "8264722b-df00-467a-858e-5c97cda169c9": {
-      "name": "Joji",
-      "id": "joji"
-    },
-    "741a6c80-2d6e-4522-9de4-e070798a2d30": {
-      "name": "Tommy Richman"
     },
     "11b34f7b-42d0-4d16-a96f-f47a517cca7d": {
       "name": "Return to Dust"
@@ -315,99 +298,19 @@
   },
   "cosigns": [
     {
-      "from": "a0723a3c-4135-438e-85c5-012712144ede",
-      "to": "7013c772-2236-42f3-8590-2e2292d2ca5e",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 6,
-      "first": "2026-11-12",
-      "last": "2026-11-24",
-      "next": {
-        "tour": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
-        "date": "2026-11-12",
-        "city": "Düsseldorf",
-        "url": "https://www.ticketmaster.de/event/don-toliver-nitrous-octane-world-tour-leg-2-tickets/1836611139?language=en-us"
-      }
-    },
-    {
-      "from": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
-      "to": "bd0f203c-6d4b-4c44-89d1-63be9c60acc3",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-11-12",
-      "last": "2026-11-12",
-      "next": {
-        "tour": "Sleeping with Sirens w/ Rain City Drive",
-        "date": "2026-11-12",
-        "city": "Atlanta",
-        "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7P_AA"
-      }
-    },
-    {
-      "from": "31445b1e-96f3-4c7f-84ec-dd02e647e690",
-      "to": "1c294418-722f-45a3-a24d-910f9b6f1502",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-11-13",
-      "last": "2026-11-13",
-      "next": {
-        "tour": "DJ Snake",
-        "date": "2026-11-13",
-        "city": "Laval",
-        "url": "https://www.ticketmaster.ca/dj-snake-laval-quebec-11-13-2026/event/310064A7BA8BB54F"
-      }
-    },
-    {
-      "from": "fa1de503-aba7-41fa-a1ed-371b3e87a717",
-      "to": "e4d7cfe5-0bed-46cf-acad-ab9a4dcb7aa6",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 2,
-      "first": "2026-11-13",
-      "last": "2026-11-19",
-      "next": {
-        "tour": "Madeon presents Victory Live ( 18+ )",
-        "date": "2026-11-13",
-        "city": "Boston",
-        "url": "https://www.ticketmaster.com/madeon-presents-victory-live-18-boston-massachusetts-11-13-2026/event/010064A5B98A7722"
-      }
-    },
-    {
-      "from": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
-      "to": "355cc194-b8db-4af2-8678-c7ad54213f4b",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 11,
-      "first": "2026-11-13",
-      "last": "2026-12-01",
-      "next": {
-        "tour": "Doja Cat - Tour Ma Vie World Tour",
-        "date": "2026-11-13",
-        "city": "Tampa",
-        "url": "https://www.ticketmaster.com/doja-cat-tour-ma-vie-world-tampa-florida-11-13-2026/event/0D00633AEE974980"
-      }
-    },
-    {
       "from": "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1",
       "to": "cb9c2a2b-96c2-44d7-bd31-04ef87572b57",
       "types": [
         "upcoming"
       ],
-      "shows": 6,
-      "first": "2026-11-14",
+      "shows": 4,
+      "first": "2026-11-15",
       "last": "2026-11-19",
       "next": {
         "tour": "Rod Wave: Don't Look Down Tour",
-        "date": "2026-11-14",
+        "date": "2026-11-15",
         "city": "Sunrise",
-        "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PPag"
+        "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZfq4"
       }
     },
     {
@@ -424,6 +327,22 @@
         "date": "2026-11-15",
         "city": "Houston",
         "url": "https://www.ticketmaster.com/emma-ogier-houston-texas-11-15-2026/event/3A00653ECB0C4A5C"
+      }
+    },
+    {
+      "from": "a0723a3c-4135-438e-85c5-012712144ede",
+      "to": "7013c772-2236-42f3-8590-2e2292d2ca5e",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 5,
+      "first": "2026-11-16",
+      "last": "2026-11-24",
+      "next": {
+        "tour": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
+        "date": "2026-11-16",
+        "city": "Dublin",
+        "url": "https://www.ticketmaster.ie/don-toliver-nitrous-octane-world-tour-dublin-16-11-2026/event/180064CB7CB7BA33"
       }
     },
     {
@@ -475,6 +394,22 @@
       }
     },
     {
+      "from": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
+      "to": "355cc194-b8db-4af2-8678-c7ad54213f4b",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 9,
+      "first": "2026-11-17",
+      "last": "2026-12-01",
+      "next": {
+        "tour": "Doja Cat - Tour Ma Vie World Tour",
+        "date": "2026-11-17",
+        "city": "Atlanta",
+        "url": "https://www.ticketmaster.com/doja-cat-tour-ma-vie-world-atlanta-georgia-11-17-2026/event/0E00633AC24B633B"
+      }
+    },
+    {
       "from": "6b82c839-ea15-4d3b-96f1-d1be924e9cb7",
       "to": "2cd302f3-d66a-421e-b6b8-2a8c2ca511c4",
       "types": [
@@ -491,8 +426,8 @@
       }
     },
     {
-      "from": "8264722b-df00-467a-858e-5c97cda169c9",
-      "to": "741a6c80-2d6e-4522-9de4-e070798a2d30",
+      "from": "fa1de503-aba7-41fa-a1ed-371b3e87a717",
+      "to": "e4d7cfe5-0bed-46cf-acad-ab9a4dcb7aa6",
       "types": [
         "upcoming"
       ],
@@ -500,10 +435,10 @@
       "first": "2026-11-19",
       "last": "2026-11-19",
       "next": {
-        "tour": "JOJI: SOLARIS",
+        "tour": "Madeon presents Victory Live",
         "date": "2026-11-19",
-        "city": "Auckland",
-        "url": "https://www.ticketmaster.co.nz/joji-solaris-auckland-19-11-2026/event/24006457C4C62E71"
+        "city": "Toronto",
+        "url": "https://www.ticketmaster.ca/madeon-presents-victory-live-toronto-ontario-11-19-2026/event/100064A6F255B83C"
       }
     },
     {
@@ -520,6 +455,22 @@
         "date": "2026-11-21",
         "city": "Nashville",
         "url": "https://www.ticketmaster.com/wyatt-flores-nashville-tennessee-11-21-2026/event/1B00646CA2A3BDC1"
+      }
+    },
+    {
+      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
+      "to": "9bd720ab-3aec-4ab0-b363-3a465ee65026",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 2,
+      "first": "2026-11-26",
+      "last": "2026-11-26",
+      "next": {
+        "tour": "\"The Hayley Williams Show\" (Numerado) ",
+        "date": "2026-11-26",
+        "city": "Ciudad de México",
+        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-numerado-ciudad-de-mexico-26-11-2026/event/3D0064A6A4695E8E"
       }
     },
     {
@@ -571,22 +522,6 @@
       }
     },
     {
-      "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
-      "to": "bb2b7bbf-75e5-43f8-8a9f-7769ae7d832a",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 7,
-      "first": "2026-12-02",
-      "last": "2026-12-14",
-      "next": {
-        "tour": "Gracie Abrams: The Look at My Life Tour presented by Capital One",
-        "date": "2026-12-02",
-        "city": "Denver",
-        "url": "https://www.ticketmaster.com/gracie-abrams-the-look-at-my-denver-colorado-12-02-2026/event/1E0064B2E736C3FD"
-      }
-    },
-    {
       "from": "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6",
       "to": "ba67b7da-cca7-4c3f-ba19-05349f0f7d97",
       "types": [
@@ -635,22 +570,6 @@
       }
     },
     {
-      "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
-      "to": "736c8ea9-b5c3-4c5f-8782-28e633f0c084",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 3,
-      "first": "2026-12-18",
-      "last": "2026-12-20",
-      "next": {
-        "tour": "Gracie Abrams: The Look at My Life Tour presented by Capital One",
-        "date": "2026-12-18",
-        "city": "Inglewood",
-        "url": "https://www.ticketmaster.com/gracie-abrams-the-look-at-my-inglewood-california-12-18-2026/event/090064BBE484EE0D"
-      }
-    },
-    {
       "from": "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19",
       "to": "addb00fd-733c-4223-8fdf-f78be2488acd",
       "types": [
@@ -683,51 +602,19 @@
       }
     },
     {
-      "from": "945d3b69-27cd-45fa-b491-52553a63dead",
-      "to": "3cdf1327-39eb-4ffe-9ce3-20599ac6a468",
+      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
+      "to": "e160f589-dbe6-4b8f-88b5-f528ff4443b4",
       "types": [
         "upcoming"
       ],
-      "shows": 1,
-      "first": "2027-01-23",
-      "last": "2027-01-23",
+      "shows": 3,
+      "first": "2027-01-13",
+      "last": "2027-01-17",
       "next": {
-        "tour": "Joyce Manor",
-        "date": "2027-01-23",
-        "city": "Inglewood",
-        "url": "https://www.ticketmaster.com/joyce-manor-inglewood-california-01-23-2027/event/090064F8E444D2E7"
-      }
-    },
-    {
-      "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
-      "to": "5f606b3d-fab7-4d39-bcdb-f5d42edae945",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 5,
-      "first": "2027-01-26",
-      "last": "2027-02-01",
-      "next": {
-        "tour": "Gracie Abrams: The Look at My Life Tour presented by Capital One",
-        "date": "2027-01-26",
-        "city": "Seattle",
-        "url": "https://www.ticketmaster.com/gracie-abrams-the-look-at-my-seattle-washington-01-26-2027/event/0F0064AEAA9AA408"
-      }
-    },
-    {
-      "from": "9abcc01c-dcf1-4d74-bc55-d81922157956",
-      "to": "4163b62b-c043-4eb0-8af2-0e7e1362afa6",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2027-01-30",
-      "last": "2027-01-30",
-      "next": {
-        "tour": "George Clanton meets ESPRIT",
-        "date": "2027-01-30",
-        "city": "Los Angeles",
-        "url": "https://www.ticketmaster.com/george-clanton-meets-esprit-los-angeles-california-01-30-2027/event/090065441DB66657"
+        "tour": "\"The Hayley Williams Show\"",
+        "date": "2027-01-13",
+        "city": "Ciudad de México",
+        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-ciudad-de-mexico-13-01-2027/event/3D0064BD97725384"
       }
     },
     {
@@ -760,22 +647,6 @@
         "date": "2027-02-09",
         "city": "Calgary",
         "url": "https://www.ticketmaster.ca/dexter-and-the-moonrocks-friends-that-calgary-alberta-02-09-2027/event/11006523D960BCEF"
-      }
-    },
-    {
-      "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
-      "to": "0ef0f607-8d6b-40f3-8180-fa4ced129da1",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 4,
-      "first": "2027-02-11",
-      "last": "2027-02-15",
-      "next": {
-        "tour": "Gracie Abrams: The Look at My Life Tour presented by Capital One",
-        "date": "2027-02-11",
-        "city": "Chicago",
-        "url": "https://www.ticketmaster.com/gracie-abrams-the-look-at-my-chicago-illinois-02-11-2027/event/040064970383E8B6"
       }
     },
     {
@@ -816,9 +687,9 @@
       "types": [
         "upcoming"
       ],
-      "shows": 1,
+      "shows": 4,
       "first": "2027-02-19",
-      "last": "2027-02-19",
+      "last": "2027-04-03",
       "next": {
         "tour": "Cody Johnson",
         "date": "2027-02-19",
@@ -891,22 +762,6 @@
       }
     },
     {
-      "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
-      "to": "29507643-0c6b-444b-8511-53cb1c042403",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 2,
-      "first": "2027-03-12",
-      "last": "2027-03-13",
-      "next": {
-        "tour": "Gracie Abrams: The Look at My Life Tour presented by Capital One",
-        "date": "2027-03-12",
-        "city": "Philadelphia",
-        "url": "https://www.ticketmaster.com/gracie-abrams-the-look-at-my-philadelphia-pennsylvania-03-12-2027/event/300064B5AF355E3B"
-      }
-    },
-    {
       "from": "4449ccf6-c948-4d33-aa97-b6ad98ce4b5b",
       "to": "2eada8f8-056a-4093-bbc2-004909ce743b",
       "types": [
@@ -936,22 +791,6 @@
         "date": "2027-03-14",
         "city": "Brisbane",
         "url": "https://www.ticketmaster.com.au/all-the-feelings-tour-with-metric-brisbane-14-03-2027/event/13006569896E3A9E"
-      }
-    },
-    {
-      "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
-      "to": "5db88fae-df24-490e-971a-1b3fe8d373ea",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 4,
-      "first": "2027-03-16",
-      "last": "2027-03-20",
-      "next": {
-        "tour": "Gracie Abrams: The Look at My Life Tour presented by Capital One",
-        "date": "2027-03-16",
-        "city": "Brooklyn",
-        "url": "https://www.ticketmaster.com/gracie-abrams-the-look-at-my-brooklyn-new-york-03-16-2027/event/300064ACE4E97EDD"
       }
     },
     {
@@ -987,22 +826,6 @@
       }
     },
     {
-      "from": "d8c85c0e-ad88-47a7-a1df-b70608c2f52f",
-      "to": "2646de59-5529-4134-a6c8-2c76282716d1",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 22,
-      "first": "2027-04-02",
-      "last": "2027-07-31",
-      "next": {
-        "tour": "Riley Green: That's Just Me Tour",
-        "date": "2027-04-02",
-        "city": "Seattle",
-        "url": "https://www.ticketmaster.com/riley-green-thats-just-me-tour-seattle-washington-04-02-2027/event/0F00653091695C25"
-      }
-    },
-    {
       "from": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
       "to": "e2e9df76-a950-4b8b-b3d1-981624470657",
       "types": [
@@ -1035,19 +858,19 @@
       }
     },
     {
-      "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
-      "to": "279ae894-037e-4058-a21a-e44dc8a8ca7d",
+      "from": "96855c21-b832-4366-ba12-0d2330c36a86",
+      "to": "75a7274d-e9f1-4569-be5e-f590ab9ddb64",
       "types": [
         "upcoming"
       ],
-      "shows": 13,
-      "first": "2027-04-15",
-      "last": "2027-05-04",
+      "shows": 5,
+      "first": "2027-04-22",
+      "last": "2027-05-13",
       "next": {
-        "tour": "Gracie Abrams: The Look at My Life Tour",
-        "date": "2027-04-15",
-        "city": "Merksem (Antwerpen)",
-        "url": "https://www.ticketmaster.be/event/gracie-abrams-the-look-at-my-life-tour-tickets/656488658"
+        "tour": "Phoebe Bridgers: The Lost Tour",
+        "date": "2027-04-22",
+        "city": "Tampa",
+        "url": "https://www.ticketmaster.com/phoebe-bridgers-the-lost-tour-tampa-florida-04-22-2027/event/0D00656A91BF4933"
       }
     },
     {
@@ -1067,6 +890,22 @@
       }
     },
     {
+      "from": "a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432",
+      "to": "3547f34a-db02-4ab7-b4a0-380e1ef951a9",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 21,
+      "first": "2027-04-26",
+      "last": "2027-07-01",
+      "next": {
+        "tour": "U2: The Greatest Show On Earth World Tour",
+        "date": "2027-04-26",
+        "city": "Stockholm",
+        "url": "https://www.ticketmaster.se/event/u2-the-greatest-show-on-earth-world-tour-tickets/1852040169?language=en-us"
+      }
+    },
+    {
       "from": "51e90731-08c0-4f60-89b6-5b78e5844de8",
       "to": "c3649208-0ebe-449b-b1d7-4bd6c560f109",
       "types": [
@@ -1083,19 +922,19 @@
       }
     },
     {
-      "from": "d8c85c0e-ad88-47a7-a1df-b70608c2f52f",
-      "to": "50e3dd64-6b87-4b9a-a511-c375ae4ff1ca",
+      "from": "a2a3f910-b188-43e7-81d0-f1ac2a2f3e12",
+      "to": "5c61efe6-3cdf-4160-b43c-9274944369e6",
       "types": [
         "upcoming"
       ],
-      "shows": 9,
-      "first": "2027-04-29",
-      "last": "2027-05-22",
+      "shows": 4,
+      "first": "2027-05-06",
+      "last": "2027-05-21",
       "next": {
-        "tour": "Riley Green: That's Just Me Tour",
-        "date": "2027-04-29",
-        "city": "Raleigh",
-        "url": "https://www.ticketmaster.com/riley-green-thats-just-me-tour-raleigh-north-carolina-04-29-2027/event/2D006530A13ED53D"
+        "tour": "Noah Kahan: The Last Of The Bugs World Tour",
+        "date": "2027-05-06",
+        "city": "Charlotte",
+        "url": "https://www.ticketmaster.com/noah-kahan-the-last-of-the-charlotte-north-carolina-05-06-2027/event/2D00655BD235D7A9"
       }
     },
     {
@@ -1136,7 +975,7 @@
       "types": [
         "upcoming"
       ],
-      "shows": 12,
+      "shows": 13,
       "first": "2027-05-23",
       "last": "2027-10-15",
       "next": {
@@ -1160,6 +999,102 @@
         "date": "2027-05-28",
         "city": "Manchester",
         "url": "https://www.ticketmaster.co.uk/tame-impala-deadbeat-euuk-tour-2027-manchester-28-05-2027/event/37006515B7C2A40D"
+      }
+    },
+    {
+      "from": "a2a3f910-b188-43e7-81d0-f1ac2a2f3e12",
+      "to": "afb6cc6d-a060-4f5e-bc3a-00d4b6832e41",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 7,
+      "first": "2027-06-05",
+      "last": "2027-06-19",
+      "next": {
+        "tour": "Noah Kahan: The Last Of The Bugs World Tour",
+        "date": "2027-06-05",
+        "city": "Columbus",
+        "url": "https://www.ticketmaster.com/noah-kahan-the-last-of-the-columbus-ohio-06-05-2027/event/0500655CFC19DBA0"
+      }
+    },
+    {
+      "from": "a2a3f910-b188-43e7-81d0-f1ac2a2f3e12",
+      "to": "6f38418e-4695-4e20-a792-431929e95ee5",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 7,
+      "first": "2027-06-05",
+      "last": "2027-06-19",
+      "next": {
+        "tour": "Noah Kahan: The Last Of The Bugs World Tour",
+        "date": "2027-06-05",
+        "city": "Columbus",
+        "url": "https://www.ticketmaster.com/noah-kahan-the-last-of-the-columbus-ohio-06-05-2027/event/0500655CFC19DBA0"
+      }
+    },
+    {
+      "from": "2077273e-eaa1-4f49-903c-f286ededecb9",
+      "to": "f4fe9be1-8e34-47c8-bf16-33d1a94a235b",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2027-06-11",
+      "last": "2027-06-11",
+      "next": {
+        "tour": "Morgan Wallen: THE LAST TIME I CHECKED TOUR 2027",
+        "date": "2027-06-11",
+        "city": "Tampa",
+        "url": "https://www.ticketmaster.com/morgan-wallen-the-last-time-i-tampa-florida-06-11-2027/event/0D00656914023091"
+      }
+    },
+    {
+      "from": "2077273e-eaa1-4f49-903c-f286ededecb9",
+      "to": "365247e5-db90-4d0e-bf2c-ca18b54fcab9",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 6,
+      "first": "2027-06-11",
+      "last": "2027-08-07",
+      "next": {
+        "tour": "Morgan Wallen: THE LAST TIME I CHECKED TOUR 2027",
+        "date": "2027-06-11",
+        "city": "Tampa",
+        "url": "https://www.ticketmaster.com/morgan-wallen-the-last-time-i-tampa-florida-06-11-2027/event/0D00656914023091"
+      }
+    },
+    {
+      "from": "2077273e-eaa1-4f49-903c-f286ededecb9",
+      "to": "e881b225-42b1-41d9-9d5e-eff55568585b",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 6,
+      "first": "2027-06-11",
+      "last": "2027-08-07",
+      "next": {
+        "tour": "Morgan Wallen: THE LAST TIME I CHECKED TOUR 2027",
+        "date": "2027-06-11",
+        "city": "Tampa",
+        "url": "https://www.ticketmaster.com/morgan-wallen-the-last-time-i-tampa-florida-06-11-2027/event/0D00656914023091"
+      }
+    },
+    {
+      "from": "2077273e-eaa1-4f49-903c-f286ededecb9",
+      "to": "f30118c5-f783-4969-8427-f3c096378267",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 3,
+      "first": "2027-06-12",
+      "last": "2027-08-07",
+      "next": {
+        "tour": "Morgan Wallen: THE LAST TIME I CHECKED TOUR 2027",
+        "date": "2027-06-12",
+        "city": "Tampa",
+        "url": "https://www.ticketmaster.com/morgan-wallen-the-last-time-i-tampa-florida-06-12-2027/event/0D00656AD703433C"
       }
     },
     {
@@ -1227,22 +1162,6 @@
       }
     },
     {
-      "from": "be7c80ee-1b03-4088-b20b-5915c7c5ad45",
-      "to": "c3012f96-f4eb-418a-8a02-3febccf95091",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 3,
-      "first": "2027-06-29",
-      "last": "2027-07-01",
-      "next": {
-        "tour": "Sam Barber and Dylan Gossett - with support from The Jack Wharff Band",
-        "date": "2027-06-29",
-        "city": "Hamburg",
-        "url": "https://www.ticketmaster.de/event/sam-barber-and-dylan-gossett-with-support-from-the-jack-wharff-band-tickets/182412328?language=en-us"
-      }
-    },
-    {
       "from": "fd87acc7-e0a0-4a45-bc2a-d2ab5c10be68",
       "to": "3cdb40fe-a63e-4bb9-b40d-17cda5f50979",
       "types": [
@@ -1275,6 +1194,22 @@
       }
     },
     {
+      "from": "be7c80ee-1b03-4088-b20b-5915c7c5ad45",
+      "to": "c3012f96-f4eb-418a-8a02-3febccf95091",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 3,
+      "first": "2027-06-29",
+      "last": "2027-07-01",
+      "next": {
+        "tour": "Sam Barber and Dylan Gossett - with support from The Jack Wharff Band",
+        "date": "2027-06-29",
+        "city": "Hamburg",
+        "url": "https://www.ticketmaster.de/event/sam-barber-and-dylan-gossett-with-support-from-the-jack-wharff-band-tickets/182412328?language=en-us"
+      }
+    },
+    {
       "from": "51e90731-08c0-4f60-89b6-5b78e5844de8",
       "to": "61a04f15-0929-4bb6-bd4e-dabdf8e19f68",
       "types": [
@@ -1288,6 +1223,22 @@
         "date": "2027-07-16",
         "city": "Las Vegas",
         "url": "https://www.ticketmaster.com/zach-bryan-las-vegas-nevada-07-16-2027/event/1700654C987B8307"
+      }
+    },
+    {
+      "from": "2077273e-eaa1-4f49-903c-f286ededecb9",
+      "to": "bca8bfc0-9d5b-449b-b713-914596f88d56",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 2,
+      "first": "2027-07-23",
+      "last": "2027-08-06",
+      "next": {
+        "tour": "Morgan Wallen: THE LAST TIME I CHECKED TOUR 2027",
+        "date": "2027-07-23",
+        "city": "Orchard Park",
+        "url": "https://www.ticketmaster.com/morgan-wallen-the-last-time-i-orchard-park-new-york-07-23-2027/event/0300656989390C6E"
       }
     },
     {
