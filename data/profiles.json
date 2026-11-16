@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T07:45:20.943Z",
+  "generatedAt": "2026-11-16T07:31:46.923Z",
   "source": "MusicBrainz (https://musicbrainz.org), CC0",
   "artists": {
     "travis-scott": {
@@ -557,7 +557,8 @@
       ],
       "youtube": [
         "UC5MujsH-hrVWHBBfSSmv18A",
-        "UCDYfiBTEPexujA5wDWvxUnA"
+        "UCDYfiBTEPexujA5wDWvxUnA",
+        "UCkmCGbrGa7yNrRl_NHrOaTw"
       ]
     },
     "eyedress": {
@@ -1028,22 +1029,6 @@
         "UC-y8ci7xfsu4L3zkSuHae0A"
       ]
     },
-    "lil-baby": {
-      "type": "Person",
-      "hometown": {
-        "text": "Atlanta, GA",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/26e0e534-19ea-4645-bfb3-1aa4e83a4046"
-      },
-      "genre": "Hip Hop",
-      "apple": [
-        "1276656483"
-      ],
-      "youtube": [
-        "UCVS88tG_NYgxF6Udnx2815Q"
-      ]
-    },
     "morgan-wallen": {
       "type": "Person",
       "hometown": {
@@ -1061,21 +1046,20 @@
         "UCzIyoPv6j1MAZpDHKLGP_eA"
       ]
     },
-    "ella-langley": {
+    "lil-baby": {
       "type": "Person",
       "hometown": {
-        "text": "Montgomery County, AL",
+        "text": "Atlanta, GA",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/ea6c33bb-3e4d-4789-bf06-5ca7f52dc3f2"
+        "area": "https://musicbrainz.org/area/26e0e534-19ea-4645-bfb3-1aa4e83a4046"
       },
-      "genre": "Country",
+      "genre": "Hip Hop",
       "apple": [
-        "1384373733"
+        "1276656483"
       ],
       "youtube": [
-        "UCo80hok0dbQapOH6dJl9Hqw",
-        "UCecnyZYofHiBVDJpx1XNYOQ"
+        "UCVS88tG_NYgxF6Udnx2815Q"
       ]
     },
     "olivia-rodrigo": {
@@ -1093,6 +1077,23 @@
       "youtube": [
         "UCy3zgWom-5AGypGX_FVTKpg",
         "UCE5XNpliPM-SmyFEp61tL_g"
+      ]
+    },
+    "ella-langley": {
+      "type": "Person",
+      "hometown": {
+        "text": "Montgomery County, AL",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/ea6c33bb-3e4d-4789-bf06-5ca7f52dc3f2"
+      },
+      "genre": "Country",
+      "apple": [
+        "1384373733"
+      ],
+      "youtube": [
+        "UCo80hok0dbQapOH6dJl9Hqw",
+        "UCecnyZYofHiBVDJpx1XNYOQ"
       ]
     },
     "sza": {
@@ -1130,23 +1131,6 @@
         "UCT3cEUoL1X0_BxN6q7LVH1w"
       ]
     },
-    "zach-bryan": {
-      "type": "Person",
-      "hometown": {
-        "text": "Okinawa, Japan",
-        "country": "JP",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/ff6ef0b9-0b41-4697-bd55-8619ad4a196c"
-      },
-      "genre": "Country",
-      "apple": [
-        "1436413980"
-      ],
-      "youtube": [
-        "UCwK3C8Vgphad4PweezfUBAQ",
-        "UC8MtL8JEv9VHEU_ICCNplPA"
-      ]
-    },
     "don-toliver": {
       "type": "Person",
       "hometown": {
@@ -1162,6 +1146,23 @@
       "youtube": [
         "UCgT01FILdWB9BsXBXKjpQ7A",
         "UCSzWQmDsKG37iKN2vw1G-2Q"
+      ]
+    },
+    "zach-bryan": {
+      "type": "Person",
+      "hometown": {
+        "text": "Okinawa, Japan",
+        "country": "JP",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/ff6ef0b9-0b41-4697-bd55-8619ad4a196c"
+      },
+      "genre": "Country",
+      "apple": [
+        "1436413980"
+      ],
+      "youtube": [
+        "UCwK3C8Vgphad4PweezfUBAQ",
+        "UC8MtL8JEv9VHEU_ICCNplPA"
       ]
     },
     "karol-g": {
@@ -1182,22 +1183,6 @@
         "UC7n3gWRN0vQzgiOKc51aZ4w"
       ]
     },
-    "belly-gang-kushington": {
-      "type": "Person",
-      "hometown": {
-        "text": "Atlanta, GA",
-        "country": "US",
-        "kind": "area",
-        "area": "https://musicbrainz.org/area/26e0e534-19ea-4645-bfb3-1aa4e83a4046"
-      },
-      "genre": "Southern Hip Hop",
-      "apple": [
-        "1662748050"
-      ],
-      "youtube": [
-        "UCxw78-TUwaA2xqQkmjVHGLw"
-      ]
-    },
     "noah-kahan": {
       "type": "Person",
       "hometown": {
@@ -1214,20 +1199,20 @@
         "UCXY5pi3MbsaP1WEgClmglsA"
       ]
     },
-    "adela": {
+    "belly-gang-kushington": {
       "type": "Person",
       "hometown": {
-        "text": "Bratislava, Slovakia",
-        "country": "SK",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/ed091849-62dd-4d10-9d40-50594afb1b15"
+        "text": "Atlanta, GA",
+        "country": "US",
+        "kind": "area",
+        "area": "https://musicbrainz.org/area/26e0e534-19ea-4645-bfb3-1aa4e83a4046"
       },
-      "genre": "Pop",
+      "genre": "Southern Hip Hop",
       "apple": [
-        "1765924916"
+        "1662748050"
       ],
       "youtube": [
-        "UC8l-1aRnL7mYR-TG_RmZw7w"
+        "UCxw78-TUwaA2xqQkmjVHGLw"
       ]
     },
     "rod-wave": {
@@ -1247,22 +1232,6 @@
         "UChWPNW87QHcXAsw2mzlsYNw"
       ]
     },
-    "jhene-aiko": {
-      "type": "Person",
-      "hometown": {
-        "text": "Los Angeles, CA",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/1f40c6e1-47ba-4e35-996f-fe6ee5840e62"
-      },
-      "genre": "Contemporary R&B",
-      "apple": [
-        "198431322"
-      ],
-      "youtube": [
-        "UCcHl3bzvpMh74okqhV5UPOw"
-      ]
-    },
     "youngboy-never-broke-again": {
       "type": "Person",
       "hometown": {
@@ -1277,6 +1246,38 @@
       ],
       "youtube": [
         "UClW4jraMKz6Qj69lJf-tODA"
+      ]
+    },
+    "adela": {
+      "type": "Person",
+      "hometown": {
+        "text": "Bratislava, Slovakia",
+        "country": "SK",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/ed091849-62dd-4d10-9d40-50594afb1b15"
+      },
+      "genre": "Pop",
+      "apple": [
+        "1765924916"
+      ],
+      "youtube": [
+        "UC8l-1aRnL7mYR-TG_RmZw7w"
+      ]
+    },
+    "jhene-aiko": {
+      "type": "Person",
+      "hometown": {
+        "text": "Los Angeles, CA",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/1f40c6e1-47ba-4e35-996f-fe6ee5840e62"
+      },
+      "genre": "Contemporary R&B",
+      "apple": [
+        "198431322"
+      ],
+      "youtube": [
+        "UCcHl3bzvpMh74okqhV5UPOw"
       ]
     },
     "taylor-swift": {
@@ -1330,6 +1331,58 @@
         "UCmBA_wu8xGg1OfOkfW13Q0Q"
       ]
     },
+    "mariah-carey": {
+      "type": "Person",
+      "hometown": {
+        "text": "Huntington, NY",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/c9c39cb4-c978-4a00-97ed-9f8831dab11d"
+      },
+      "genre": "Pop",
+      "apple": [
+        "91853"
+      ],
+      "youtube": [
+        "UClS0wn3LPs9jdX_yt2g1k8w",
+        "UCurpiDXSkcUbgdMwHNZkrCg",
+        "UCKRnq8aBOCanYlffje7HyvA"
+      ]
+    },
+    "summer-walker": {
+      "type": "Person",
+      "hometown": {
+        "text": "Atlanta, GA",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/26e0e534-19ea-4645-bfb3-1aa4e83a4046"
+      },
+      "genre": "Soul",
+      "apple": [
+        "990402287"
+      ],
+      "youtube": [
+        "UC4NBMVsQp6QvIjzUeaqX3ZA",
+        "UCSpNS4dJ8wIScwMqatIdiQw"
+      ]
+    },
+    "sienna-spiro": {
+      "type": "Person",
+      "hometown": {
+        "text": "London, UK",
+        "country": "GB",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
+      },
+      "genre": "Pop Soul",
+      "apple": [
+        "1745678083"
+      ],
+      "youtube": [
+        "UCd5sMkyvImc50eLIpwy3UaQ",
+        "UCf5GUgSQC4CU8idz_OH8jqQ"
+      ]
+    },
     "offset": {
       "type": "Person",
       "hometown": {
@@ -1362,38 +1415,6 @@
       "youtube": [
         "UCJPyo4ENRsY1zPwHRGA1iXg"
       ]
-    },
-    "mariah-carey": {
-      "type": "Person",
-      "hometown": {
-        "text": "Huntington, NY",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/c9c39cb4-c978-4a00-97ed-9f8831dab11d"
-      },
-      "genre": "Pop",
-      "apple": [
-        "91853"
-      ],
-      "youtube": [
-        "UClS0wn3LPs9jdX_yt2g1k8w",
-        "UCurpiDXSkcUbgdMwHNZkrCg",
-        "UCKRnq8aBOCanYlffje7HyvA"
-      ]
-    },
-    "westside-gunn": {
-      "type": "Person",
-      "hometown": {
-        "text": "Buffalo, NY",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/7e5e7fd7-c1eb-4cb8-87e2-fb1c0eda9e48"
-      },
-      "genre": "East Coast Hip Hop",
-      "apple": [
-        "829760702"
-      ],
-      "youtube": []
     },
     "paramore": {
       "type": "Group",
@@ -1446,23 +1467,19 @@
         "UCXQtyZ6gWbOYR5B8Sc2sr3g"
       ]
     },
-    "snoh-aalegra": {
+    "westside-gunn": {
       "type": "Person",
       "hometown": {
-        "text": "Uppsala, Sweden",
-        "country": "SE",
+        "text": "Buffalo, NY",
+        "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/4955495c-004d-4c7f-ba17-d9df26388cd0"
+        "area": "https://musicbrainz.org/area/7e5e7fd7-c1eb-4cb8-87e2-fb1c0eda9e48"
       },
-      "genre": "Alternative R&B",
+      "genre": "East Coast Hip Hop",
       "apple": [
-        "891968156"
+        "829760702"
       ],
-      "youtube": [
-        "UC8cW5MHsFc5S3A2_X9bDfRQ",
-        "UC-30WnrKJbIedeH_ephNPCw",
-        "UChVibCOlzk9GwJZfbYJOY8A"
-      ]
+      "youtube": []
     },
     "ashe": {
       "type": "Person",
@@ -1498,38 +1515,40 @@
         "UCI4YNnmHjXFaaKvfdmpWvJQ"
       ]
     },
-    "sienna-spiro": {
+    "snoh-aalegra": {
       "type": "Person",
       "hometown": {
-        "text": "London, UK",
-        "country": "GB",
+        "text": "Uppsala, Sweden",
+        "country": "SE",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
+        "area": "https://musicbrainz.org/area/4955495c-004d-4c7f-ba17-d9df26388cd0"
       },
-      "genre": "Pop Soul",
+      "genre": "Alternative R&B",
       "apple": [
-        "1745678083"
+        "891968156"
       ],
       "youtube": [
-        "UCd5sMkyvImc50eLIpwy3UaQ",
-        "UCf5GUgSQC4CU8idz_OH8jqQ"
+        "UC8cW5MHsFc5S3A2_X9bDfRQ",
+        "UC-30WnrKJbIedeH_ephNPCw",
+        "UChVibCOlzk9GwJZfbYJOY8A"
       ]
     },
-    "u2": {
-      "type": "Group",
+    "kelly-clarkson": {
+      "type": "Person",
       "hometown": {
-        "text": "Dublin, Ireland",
-        "country": "IE",
+        "text": "Fort Worth, TX",
+        "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/462e7952-4fa9-43cd-bc24-2c5c9cd5dd47"
+        "area": "https://musicbrainz.org/area/ae96202a-e993-45de-adfe-a8c6b66a781d"
       },
-      "genre": "Alternative Rock",
+      "genre": "Pop",
       "apple": [
-        "78500"
+        "316265"
       ],
       "youtube": [
-        "UC4gPNusMDwx2Xm-YI35AkCA",
-        "UCqIQRxCUGi7hyJisyzv9zYQ"
+        "UC6QdZ-5j9t_836_xJPAaRSw",
+        "UCoRUmyNL8KEYftmxRA2n3SQ",
+        "UCpXP9-cHlJCMapSYCSZThbw"
       ]
     },
     "mitski": {
@@ -1549,22 +1568,19 @@
         "UCqqY2nAz23oGDMNdiDzKdsA"
       ]
     },
-    "tv-girl": {
-      "type": "Group",
+    "bobby-helms": {
+      "type": "Person",
       "hometown": {
-        "text": "San Diego, CA",
+        "text": "Helmsburg, IN",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/82f3a697-ba65-404d-a1ed-360147af7d10"
+        "area": "https://musicbrainz.org/area/25311b2d-59f7-4f3d-93d5-ab20f6a0c219"
       },
-      "genre": "Electronic",
+      "genre": "Christmas Music",
       "apple": [
-        "468460706"
+        "1579400"
       ],
-      "youtube": [
-        "UCakexY9Khc2vKLgrf29svzQ",
-        "UCDSlLh6JoiawDyU6DVc2VFg"
-      ]
+      "youtube": []
     },
     "kpop-demon-hunters-cast": {
       "type": "Group",
@@ -1582,21 +1598,21 @@
         "UCuCy0Nk0SoKPyioObCZwgSw"
       ]
     },
-    "summer-walker": {
-      "type": "Person",
+    "tv-girl": {
+      "type": "Group",
       "hometown": {
-        "text": "Atlanta, GA",
+        "text": "San Diego, CA",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/26e0e534-19ea-4645-bfb3-1aa4e83a4046"
+        "area": "https://musicbrainz.org/area/82f3a697-ba65-404d-a1ed-360147af7d10"
       },
-      "genre": "Soul",
+      "genre": "Electronic",
       "apple": [
-        "990402287"
+        "468460706"
       ],
       "youtube": [
-        "UC4NBMVsQp6QvIjzUeaqX3ZA",
-        "UCSpNS4dJ8wIScwMqatIdiQw"
+        "UCakexY9Khc2vKLgrf29svzQ",
+        "UCDSlLh6JoiawDyU6DVc2VFg"
       ]
     },
     "clairo": {
@@ -1615,22 +1631,21 @@
         "UCa-iCk5rSuWnAb_VT9Hzs3w"
       ]
     },
-    "kelly-clarkson": {
-      "type": "Person",
+    "u2": {
+      "type": "Group",
       "hometown": {
-        "text": "Fort Worth, TX",
-        "country": "US",
+        "text": "Dublin, Ireland",
+        "country": "IE",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/ae96202a-e993-45de-adfe-a8c6b66a781d"
+        "area": "https://musicbrainz.org/area/462e7952-4fa9-43cd-bc24-2c5c9cd5dd47"
       },
-      "genre": "Pop",
+      "genre": "Alternative Rock",
       "apple": [
-        "316265"
+        "78500"
       ],
       "youtube": [
-        "UC6QdZ-5j9t_836_xJPAaRSw",
-        "UCoRUmyNL8KEYftmxRA2n3SQ",
-        "UCpXP9-cHlJCMapSYCSZThbw"
+        "UC4gPNusMDwx2Xm-YI35AkCA",
+        "UCqIQRxCUGi7hyJisyzv9zYQ"
       ]
     },
     "beabadoobee": {
@@ -1716,6 +1731,23 @@
         "UChmZkdugBmAP_zpyzayv6VQ"
       ]
     },
+    "lin-manuel-miranda": {
+      "type": "Person",
+      "hometown": {
+        "text": "Manhattan, NY",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/261962ea-d8c2-4eaf-a80c-f14376ffadb0"
+      },
+      "genre": "Musical",
+      "apple": [
+        "329027198"
+      ],
+      "youtube": [
+        "UChwAKuNBC2Bc0G26tlZBI4w",
+        "UCAFIersvPYEQzT7XPRWUj8g"
+      ]
+    },
     "mac-demarco": {
       "type": "Person",
       "hometown": {
@@ -1730,93 +1762,6 @@
       ],
       "youtube": [
         "UCqnMk5GA1spXDiHYFcPN-eA"
-      ]
-    },
-    "stella-lefty": {
-      "type": "Person",
-      "hometown": {
-        "text": "Winnetka, IL",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/cf42e6fb-c513-4fcf-b956-7a3680fe3b71"
-      },
-      "genre": "Indie Pop",
-      "apple": [
-        "1641742186"
-      ],
-      "youtube": [
-        "UCJ6xgoGldjpinfNH5febxZA"
-      ]
-    },
-    "alex-g": {
-      "type": "Person",
-      "hometown": null,
-      "genre": null,
-      "apple": [],
-      "youtube": []
-    },
-    "bobby-helms": {
-      "type": "Person",
-      "hometown": {
-        "text": "Helmsburg, IN",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/25311b2d-59f7-4f3d-93d5-ab20f6a0c219"
-      },
-      "genre": "Christmas Music",
-      "apple": [
-        "1579400"
-      ],
-      "youtube": []
-    },
-    "panchiko": {
-      "type": "Group",
-      "hometown": {
-        "text": "Nottingham, UK",
-        "country": "GB",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/f988aff4-5221-4b36-9174-befec694f906"
-      },
-      "genre": "Indie Rock",
-      "apple": [
-        "1500025754"
-      ],
-      "youtube": [
-        "UCcbca_MnFMLrBXGYiRh1aNQ"
-      ]
-    },
-    "jack-harlow": {
-      "type": "Person",
-      "hometown": {
-        "text": "Louisville, KY",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/b21e4552-050d-4c0c-ac5a-031108eb0c47"
-      },
-      "genre": "Hip Hop",
-      "apple": [
-        "1047679432"
-      ],
-      "youtube": [
-        "UC6vZl7Qj7JglLDmN_7Or-ZQ",
-        "UCKIOM0Wi1qNV8HFLArK-uYQ"
-      ]
-    },
-    "phoebe-bridgers": {
-      "type": "Person",
-      "hometown": {
-        "text": "Pasadena, CA",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/56e1c305-859d-4fbb-8a7c-6e45e1b8ebf1"
-      },
-      "genre": "Singer-Songwriter",
-      "apple": [
-        "697833299"
-      ],
-      "youtube": [
-        "UCh4PO1W9tVmHujIPZnfK8TQ",
-        "UCprIJgC2-qqSHNVztFjRFmw"
       ]
     },
     "ariana-grande": {
@@ -1838,90 +1783,36 @@
         "UC8LGdwL1UOSq1bhohwYo3Sg"
       ]
     },
-    "cocteau-twins": {
+    "panchiko": {
       "type": "Group",
       "hometown": {
-        "text": "Grangemouth, UK",
+        "text": "Nottingham, UK",
         "country": "GB",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/8a8ebc78-be45-44ee-a9bc-258bb449233c"
+        "area": "https://musicbrainz.org/area/f988aff4-5221-4b36-9174-befec694f906"
       },
-      "genre": "Dream Pop",
+      "genre": "Indie Rock",
       "apple": [
-        "3029779"
+        "1500025754"
       ],
       "youtube": [
-        "UCle3lHYlHgugefCCr78N1Gw",
-        "UCXmBg9Kz7RJ8MUGz-vtXR2w"
+        "UCcbca_MnFMLrBXGYiRh1aNQ"
       ]
     },
-    "lin-manuel-miranda": {
+    "stella-lefty": {
       "type": "Person",
       "hometown": {
-        "text": "Manhattan, NY",
+        "text": "Winnetka, IL",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/261962ea-d8c2-4eaf-a80c-f14376ffadb0"
+        "area": "https://musicbrainz.org/area/cf42e6fb-c513-4fcf-b956-7a3680fe3b71"
       },
-      "genre": "Musical",
+      "genre": "Indie Pop",
       "apple": [
-        "329027198"
+        "1641742186"
       ],
       "youtube": [
-        "UChwAKuNBC2Bc0G26tlZBI4w",
-        "UCAFIersvPYEQzT7XPRWUj8g"
-      ]
-    },
-    "boa": {
-      "type": "Group",
-      "hometown": {
-        "text": "London, UK",
-        "country": "GB",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
-      },
-      "genre": "Alternative Rock",
-      "apple": [
-        "554438250"
-      ],
-      "youtube": [
-        "UC83m_vdNzeFU6iUcsMAwe8Q",
-        "UCaenWyZ-AH1CHWUsTYxgDgg"
-      ]
-    },
-    "benny-the-butcher": {
-      "type": "Person",
-      "hometown": {
-        "text": "Buffalo, NY",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/7e5e7fd7-c1eb-4cb8-87e2-fb1c0eda9e48"
-      },
-      "genre": "Hip Hop",
-      "apple": [
-        "1281676587",
-        "1520487867"
-      ],
-      "youtube": [
-        "UCstRc91UZ1kHXy4lLAD4HRw",
-        "UCzdpwFZKrV6qII4UKZQG9ZA"
-      ]
-    },
-    "slowdive": {
-      "type": "Group",
-      "hometown": {
-        "text": "Reading, UK",
-        "country": "GB",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/9f11c5cc-b4b5-4589-8476-bc863930caa7"
-      },
-      "genre": "Shoegaze",
-      "apple": [
-        "528315"
-      ],
-      "youtube": [
-        "UCRtImc_wHGDEoBrBMmNcZHg",
-        "UC2o9vA6xBUQE6Tmk86oYQig"
+        "UCJ6xgoGldjpinfNH5febxZA"
       ]
     },
     "steve-lacy": {
@@ -1942,22 +1833,72 @@
         "UCju-DqP7JNtCnMWFXhLgPHQ"
       ]
     },
-    "kings-of-leon": {
+    "cocteau-twins": {
       "type": "Group",
       "hometown": {
-        "text": "Nashville, TN",
+        "text": "Grangemouth, UK",
+        "country": "GB",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/8a8ebc78-be45-44ee-a9bc-258bb449233c"
+      },
+      "genre": "Dream Pop",
+      "apple": [
+        "3029779"
+      ],
+      "youtube": [
+        "UCle3lHYlHgugefCCr78N1Gw",
+        "UCXmBg9Kz7RJ8MUGz-vtXR2w"
+      ]
+    },
+    "bryson-tiller": {
+      "type": "Person",
+      "hometown": {
+        "text": "Louisville, KY",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/e68879f9-bd95-41ff-96ba-c082ff37cc74"
+        "area": "https://musicbrainz.org/area/b21e4552-050d-4c0c-ac5a-031108eb0c47"
+      },
+      "genre": "Contemporary R&B",
+      "apple": [
+        "642591128"
+      ],
+      "youtube": [
+        "UCCnPBkdur_5DHdsLI2pQ1qw",
+        "UC7O6XpyxQ9AUoKE-S-ixq5Q"
+      ]
+    },
+    "boa": {
+      "type": "Group",
+      "hometown": {
+        "text": "London, UK",
+        "country": "GB",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
       },
       "genre": "Alternative Rock",
       "apple": [
-        "1883403"
+        "554438250"
       ],
       "youtube": [
-        "UC09rjW-THj6e3WgMKSc5Bvg",
-        "UCfJein8E4rcYZSUCc8UqyMA",
-        "UCHqD2OBWbcWGmCve99uw47A"
+        "UC83m_vdNzeFU6iUcsMAwe8Q",
+        "UCaenWyZ-AH1CHWUsTYxgDgg"
+      ]
+    },
+    "jack-harlow": {
+      "type": "Person",
+      "hometown": {
+        "text": "Louisville, KY",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/b21e4552-050d-4c0c-ac5a-031108eb0c47"
+      },
+      "genre": "Hip Hop",
+      "apple": [
+        "1047679432"
+      ],
+      "youtube": [
+        "UC6vZl7Qj7JglLDmN_7Or-ZQ",
+        "UCKIOM0Wi1qNV8HFLArK-uYQ"
       ]
     },
     "title-fight": {
@@ -1974,21 +1915,20 @@
       ],
       "youtube": []
     },
-    "pooh-shiesty": {
-      "type": "Person",
+    "whiskey-myers": {
+      "type": "Group",
       "hometown": {
-        "text": "Memphis, TN",
+        "text": "Palestine, TX",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/c2d96f61-75a4-4375-aed5-6aacb0b6326a"
+        "area": "https://musicbrainz.org/area/3f5e93e9-98bb-4c44-b9bf-684845f48a4f"
       },
-      "genre": "Gangsta Rap",
+      "genre": "Southern Rock",
       "apple": [
-        "1456620250"
+        "282264074"
       ],
       "youtube": [
-        "UCHP-7P6ChK4-jiFoz62RcUg",
-        "UCTBIIbIs83IBsy4E1BQxYBw"
+        "UCmXowOTCAsI37IahflB80Mw"
       ]
     },
     "big-thief": {
@@ -2033,20 +1973,21 @@
         "UCkP07NVH4ur70nk-qk5vi9Q"
       ]
     },
-    "whiskey-myers": {
-      "type": "Group",
+    "pooh-shiesty": {
+      "type": "Person",
       "hometown": {
-        "text": "Palestine, TX",
+        "text": "Memphis, TN",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/3f5e93e9-98bb-4c44-b9bf-684845f48a4f"
+        "area": "https://musicbrainz.org/area/c2d96f61-75a4-4375-aed5-6aacb0b6326a"
       },
-      "genre": "Southern Rock",
+      "genre": "Gangsta Rap",
       "apple": [
-        "282264074"
+        "1456620250"
       ],
       "youtube": [
-        "UCmXowOTCAsI37IahflB80Mw"
+        "UCHP-7P6ChK4-jiFoz62RcUg",
+        "UCTBIIbIs83IBsy4E1BQxYBw"
       ]
     },
     "faye-webster": {
@@ -2065,37 +2006,40 @@
         "UCH57KByX2zRMnfyIEbMKnpA"
       ]
     },
-    "remi-wolf": {
-      "type": "Person",
+    "kings-of-leon": {
+      "type": "Group",
       "hometown": {
-        "text": "Palo Alto, CA",
+        "text": "Nashville, TN",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/865e1aac-afed-44d2-8164-b71468328fcd"
+        "area": "https://musicbrainz.org/area/e68879f9-bd95-41ff-96ba-c082ff37cc74"
       },
-      "genre": "Alternative Pop",
+      "genre": "Alternative Rock",
       "apple": [
-        "1223869670"
+        "1883403"
       ],
       "youtube": [
-        "UC5jtIev24b3CWoUkCj1CIsg"
+        "UC09rjW-THj6e3WgMKSc5Bvg",
+        "UCfJein8E4rcYZSUCc8UqyMA",
+        "UCHqD2OBWbcWGmCve99uw47A"
       ]
     },
-    "partynextdoor": {
-      "type": "Person",
+    "chevelle": {
+      "type": "Group",
       "hometown": {
-        "text": "Mississauga, Canada",
-        "country": "CA",
+        "text": "Grayslake, IL",
+        "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/23b82a5a-5a5e-4b62-ab84-5222a8e443cd"
+        "area": "https://musicbrainz.org/area/64be49f1-e006-437f-b5a6-4ca5db1df9e4"
       },
-      "genre": "Contemporary R&B",
+      "genre": "Alternative Metal",
       "apple": [
-        "666648192"
+        "519486"
       ],
       "youtube": [
-        "UCz9f4llEeQyb5F2_p9CirYw",
-        "UCV8G0JqlvVKkHxNyeog8Ftg"
+        "UCHzSN1e7DqRkwi8DVlr1tkw",
+        "UCTi7MZD2HjG9J8DBl6qXvNA",
+        "UCkf1qXnPr1vhLPgCG86oppw"
       ]
     },
     "toby-fox": {
@@ -2116,6 +2060,23 @@
         "UCntaczLM_lWH85oZp6rRX1w"
       ]
     },
+    "partynextdoor": {
+      "type": "Person",
+      "hometown": {
+        "text": "Mississauga, Canada",
+        "country": "CA",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/23b82a5a-5a5e-4b62-ab84-5222a8e443cd"
+      },
+      "genre": "Contemporary R&B",
+      "apple": [
+        "666648192"
+      ],
+      "youtube": [
+        "UCz9f4llEeQyb5F2_p9CirYw",
+        "UCV8G0JqlvVKkHxNyeog8Ftg"
+      ]
+    },
     "katseye": {
       "type": "Group",
       "hometown": {
@@ -2132,6 +2093,20 @@
         "UCA61H4fWOMHikLcUFKyQUog",
         "UCX9kfYB9t0tnd6DYUC2iuKg"
       ]
+    },
+    "the-ronettes": {
+      "type": "Group",
+      "hometown": {
+        "text": "Washington Heights, NY",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/646a8715-ce3a-4162-bb82-789071ec5498"
+      },
+      "genre": "Pop",
+      "apple": [
+        "16326351"
+      ],
+      "youtube": []
     },
     "the-living-tombstone": {
       "type": "Group",
@@ -2150,20 +2125,6 @@
         "UC5EH9egdct4dmAo3AHwzPBA"
       ]
     },
-    "rylo-rodriguez": {
-      "type": "Person",
-      "hometown": {
-        "text": "Mobile, AL",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/39d41edd-5b4e-496e-a080-077283989dd0"
-      },
-      "genre": "Hip Hop",
-      "apple": [
-        "1315498588"
-      ],
-      "youtube": []
-    },
     "adrianne-lenker": {
       "type": "Person",
       "hometown": {
@@ -2178,6 +2139,22 @@
       ],
       "youtube": [
         "UCiKxQx4KdX-s903aZMDj7Hg"
+      ]
+    },
+    "remi-wolf": {
+      "type": "Person",
+      "hometown": {
+        "text": "Palo Alto, CA",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/865e1aac-afed-44d2-8164-b71468328fcd"
+      },
+      "genre": "Alternative Pop",
+      "apple": [
+        "1223869670"
+      ],
+      "youtube": [
+        "UC5jtIev24b3CWoUkCj1CIsg"
       ]
     },
     "tiffany-day": {
@@ -2196,6 +2173,23 @@
         "UCrnrw9LKaE4Y4d2ErsFHoiA"
       ]
     },
+    "wham": {
+      "type": "Group",
+      "hometown": {
+        "text": "Bushey, UK",
+        "country": "GB",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/c12df653-af51-40db-bb40-4a23bccbf4aa"
+      },
+      "genre": "Pop",
+      "apple": [
+        "548421"
+      ],
+      "youtube": [
+        "UCpVKXA1YEpLtD_keJogkCwg",
+        "UCT41vlFeZ_asAUCY7BOiJVQ"
+      ]
+    },
     "snow-strippers": {
       "type": "Group",
       "hometown": {
@@ -2210,38 +2204,22 @@
         "UCwZi8_BHr7eI1FEX4Kq6Zqw"
       ]
     },
-    "bryson-tiller": {
+    "benny-the-butcher": {
       "type": "Person",
       "hometown": {
-        "text": "Louisville, KY",
+        "text": "Buffalo, NY",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/b21e4552-050d-4c0c-ac5a-031108eb0c47"
+        "area": "https://musicbrainz.org/area/7e5e7fd7-c1eb-4cb8-87e2-fb1c0eda9e48"
       },
-      "genre": "Contemporary R&B",
+      "genre": "Hip Hop",
       "apple": [
-        "642591128"
+        "1281676587",
+        "1520487867"
       ],
       "youtube": [
-        "UCCnPBkdur_5DHdsLI2pQ1qw",
-        "UC7O6XpyxQ9AUoKE-S-ixq5Q"
-      ]
-    },
-    "2hollis": {
-      "type": "Person",
-      "hometown": {
-        "text": "Chicago, IL",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/29a709d8-0320-493e-8d0c-f2c386662b7f"
-      },
-      "genre": "Cloud Rap",
-      "apple": [
-        "1535847112"
-      ],
-      "youtube": [
-        "UCFSjUwWd_1ro9p9ZlTr7Z4A",
-        "UCFxRmb0RVC0k63DbIXSmRIQ"
+        "UCstRc91UZ1kHXy4lLAD4HRw",
+        "UCzdpwFZKrV6qII4UKZQG9ZA"
       ]
     },
     "fontaines-d-c": {
@@ -2261,17 +2239,17 @@
         "UC0nEcTGDKDsdF4KcCh3-NUQ"
       ]
     },
-    "cody-johnson": {
+    "rylo-rodriguez": {
       "type": "Person",
       "hometown": {
-        "text": "United States",
+        "text": "Mobile, AL",
         "country": "US",
-        "kind": "area",
-        "area": "https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98"
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/39d41edd-5b4e-496e-a080-077283989dd0"
       },
-      "genre": "Country",
+      "genre": "Hip Hop",
       "apple": [
-        "331459657"
+        "1315498588"
       ],
       "youtube": []
     },
@@ -2290,52 +2268,6 @@
       "youtube": [
         "UC6Rl1uJ-KEC8VJ94l1QYvBg",
         "UC97xosBrQZ7jdWVFInndIDg"
-      ]
-    },
-    "julia-wolf": {
-      "type": "Person",
-      "hometown": {
-        "text": "Germany",
-        "country": "DE",
-        "kind": "area",
-        "area": "https://musicbrainz.org/area/85752fda-13c4-31a3-bee5-0e5cb1f51dad"
-      },
-      "genre": null,
-      "apple": [],
-      "youtube": []
-    },
-    "anderson-paak": {
-      "type": "Person",
-      "hometown": {
-        "text": "Oxnard, CA",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/57dcc070-ab3b-4391-8f8d-e4445041efcf"
-      },
-      "genre": "R&B",
-      "apple": [
-        "855484536"
-      ],
-      "youtube": [
-        "UCVMSK1i_uksa4FrXZZqGYvw",
-        "UCLdqZBVvWa174TnYyLC-IAg"
-      ]
-    },
-    "dance-gavin-dance": {
-      "type": "Group",
-      "hometown": {
-        "text": "Sacramento, CA",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/21879fba-fe4e-4dbc-99e8-cad9142e5618"
-      },
-      "genre": "Swancore",
-      "apple": [
-        "204782507"
-      ],
-      "youtube": [
-        "UCkmEoZbpH7jPCe1_Ym4XJdQ",
-        "UCm3F5ZIYJ4CcDCmtgGhOFXQ"
       ]
     },
     "ayesha-erotica": {
@@ -2374,30 +2306,6 @@
         "UCJWJd67r42sByfpOe6S__zw"
       ]
     },
-    "dean-blunt": {
-      "type": "Person",
-      "hometown": null,
-      "genre": null,
-      "apple": [],
-      "youtube": []
-    },
-    "post-malone": {
-      "type": "Person",
-      "hometown": {
-        "text": "Syracuse, NY",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/1fee56fe-5b76-4a50-bc63-37ee51d3300f"
-      },
-      "genre": "Hip Hop",
-      "apple": [
-        "966309175"
-      ],
-      "youtube": [
-        "UCeLHszkByNZtPKcaVXOCOQQ",
-        "UCyD3XWRK9ko-izf2nBSFitw"
-      ]
-    },
     "modern-baseball": {
       "type": "Group",
       "hometown": {
@@ -2414,37 +2322,19 @@
         "UCJqIgdx_-6AZgKvMGx4gNRw"
       ]
     },
-    "sam-barber": {
+    "cody-johnson": {
       "type": "Person",
       "hometown": {
-        "text": "Frohna, MO",
+        "text": "United States",
         "country": "US",
         "kind": "area",
-        "area": "https://musicbrainz.org/area/b83d4cc8-2ead-4208-8ec7-3417ef808e5f"
+        "area": "https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98"
       },
       "genre": "Country",
       "apple": [
-        "1584802114"
+        "331459657"
       ],
-      "youtube": [
-        "UCXGyjXaR3HG-Q5DJher20-g"
-      ]
-    },
-    "latto": {
-      "type": "Person",
-      "hometown": {
-        "text": "Columbus, OH",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/18187bcb-18e6-4075-903e-fb976db17a55"
-      },
-      "genre": "Pop Rap",
-      "apple": [
-        "419799506"
-      ],
-      "youtube": [
-        "UCRQ6wJbGwbF9Wmvp5HfT7Pg"
-      ]
+      "youtube": []
     },
     "superheaven": {
       "type": "Group",
@@ -2461,6 +2351,118 @@
       "youtube": [
         "UC-0ZI1IYz0z2mM7P_Kwwq-A",
         "UCO_D-USTTOQuhWRea2-kneQ"
+      ]
+    },
+    "2hollis": {
+      "type": "Person",
+      "hometown": {
+        "text": "Chicago, IL",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/29a709d8-0320-493e-8d0c-f2c386662b7f"
+      },
+      "genre": "Cloud Rap",
+      "apple": [
+        "1535847112"
+      ],
+      "youtube": [
+        "UCFSjUwWd_1ro9p9ZlTr7Z4A",
+        "UCFxRmb0RVC0k63DbIXSmRIQ"
+      ]
+    },
+    "loathe": {
+      "type": "Group",
+      "hometown": {
+        "text": "Malta",
+        "country": "MT",
+        "kind": "area",
+        "area": "https://musicbrainz.org/area/050c94f7-1413-3a34-bb90-4a94f3bb2084"
+      },
+      "genre": "Death Metal",
+      "apple": [],
+      "youtube": []
+    },
+    "frank-ocean": {
+      "type": "Person",
+      "hometown": {
+        "text": "Long Beach, CA",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/e183ffae-1d35-4c78-b552-957535e40af1"
+      },
+      "genre": "Contemporary R&B",
+      "apple": [
+        "442122051"
+      ],
+      "youtube": [
+        "UCf9wumweDPswxIrex0TaZuw",
+        "UCqf-kTp9ERV5T1rPayno7LA"
+      ]
+    },
+    "kero-kero-bonito": {
+      "type": "Group",
+      "hometown": {
+        "text": "Bromley, UK",
+        "country": "GB",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/71d7ce55-816c-4e64-8dbf-e2289a696354"
+      },
+      "genre": "Electropop",
+      "apple": [
+        "631279261"
+      ],
+      "youtube": [
+        "UC87PQkY3dDS-FastDm97emA"
+      ]
+    },
+    "anderson-paak": {
+      "type": "Person",
+      "hometown": {
+        "text": "Oxnard, CA",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/57dcc070-ab3b-4391-8f8d-e4445041efcf"
+      },
+      "genre": "R&B",
+      "apple": [
+        "855484536"
+      ],
+      "youtube": [
+        "UCVMSK1i_uksa4FrXZZqGYvw",
+        "UCLdqZBVvWa174TnYyLC-IAg"
+      ]
+    },
+    "harry-styles": {
+      "type": "Person",
+      "hometown": {
+        "text": "Redditch, UK",
+        "country": "GB",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/1dc5377f-ddc3-4ee9-8cf1-07896f96cb63"
+      },
+      "genre": "Pop",
+      "apple": [
+        "471260289"
+      ],
+      "youtube": [
+        "UCbOCbp5gXL8jigIBZLqMPrw",
+        "UCZFWPqqPkFlNwIxcpsLOwew"
+      ]
+    },
+    "black-box-recorder": {
+      "type": "Group",
+      "hometown": {
+        "text": "London, UK",
+        "country": "GB",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
+      },
+      "genre": "Indie Pop",
+      "apple": [
+        "5653018"
+      ],
+      "youtube": [
+        "UC2ZtPLxxDqtPrsaoPp6mgzw"
       ]
     },
     "the-killers": {
@@ -2481,179 +2483,20 @@
         "UCneQ7UWyu9USLDgMya6T7IA"
       ]
     },
-    "loathe": {
+    "the-long-faces": {
       "type": "Group",
       "hometown": {
-        "text": "Malta",
-        "country": "MT",
-        "kind": "area",
-        "area": "https://musicbrainz.org/area/050c94f7-1413-3a34-bb90-4a94f3bb2084"
-      },
-      "genre": "Death Metal",
-      "apple": [],
-      "youtube": []
-    },
-    "kodak-black": {
-      "type": "Person",
-      "hometown": {
-        "text": "Pompano Beach, FL",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/c765fd5c-0e17-4f4f-bd2d-675472f1f8a0"
-      },
-      "genre": "Hip Hop",
-      "apple": [
-        "953921140"
-      ],
-      "youtube": [
-        "UChEYVadfkMCfrKUi6qr3I1Q"
-      ]
-    },
-    "machine-girl": {
-      "type": "Group",
-      "hometown": {
-        "text": "Long Island, NY",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/0dd9f772-7cd1-402f-8627-5121eed4f8ad"
-      },
-      "genre": "Breakcore",
-      "apple": [
-        "295258685"
-      ],
-      "youtube": [
-        "UCqA-bpFdLWzugMIeK26UjnQ"
-      ]
-    },
-    "harry-styles": {
-      "type": "Person",
-      "hometown": {
-        "text": "Redditch, UK",
+        "text": "Canterbury, UK",
         "country": "GB",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/1dc5377f-ddc3-4ee9-8cf1-07896f96cb63"
+        "area": "https://musicbrainz.org/area/36ed2e86-4e30-49eb-8acb-96004ef98fa3"
       },
-      "genre": "Pop",
+      "genre": "Alternative Rock",
       "apple": [
-        "471260289"
+        "1320654051"
       ],
       "youtube": [
-        "UCbOCbp5gXL8jigIBZLqMPrw",
-        "UCZFWPqqPkFlNwIxcpsLOwew"
-      ]
-    },
-    "kero-kero-bonito": {
-      "type": "Group",
-      "hometown": {
-        "text": "Bromley, UK",
-        "country": "GB",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/71d7ce55-816c-4e64-8dbf-e2289a696354"
-      },
-      "genre": "Electropop",
-      "apple": [
-        "631279261"
-      ],
-      "youtube": [
-        "UC87PQkY3dDS-FastDm97emA"
-      ]
-    },
-    "young-nudy": {
-      "type": "Person",
-      "hometown": {
-        "text": "Atlanta, GA",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/26e0e534-19ea-4645-bfb3-1aa4e83a4046"
-      },
-      "genre": "Trap",
-      "apple": [
-        "898005271"
-      ],
-      "youtube": [
-        "UCQUsq24C0yX_ezzQYj2IjXw"
-      ]
-    },
-    "black-box-recorder": {
-      "type": "Group",
-      "hometown": {
-        "text": "London, UK",
-        "country": "GB",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
-      },
-      "genre": "Indie Pop",
-      "apple": [
-        "5653018"
-      ],
-      "youtube": [
-        "UC2ZtPLxxDqtPrsaoPp6mgzw"
-      ]
-    },
-    "frank-ocean": {
-      "type": "Person",
-      "hometown": {
-        "text": "Long Beach, CA",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/e183ffae-1d35-4c78-b552-957535e40af1"
-      },
-      "genre": "Contemporary R&B",
-      "apple": [
-        "442122051"
-      ],
-      "youtube": [
-        "UCf9wumweDPswxIrex0TaZuw",
-        "UCqf-kTp9ERV5T1rPayno7LA"
-      ]
-    },
-    "lemon-demon": {
-      "type": "Group",
-      "hometown": {
-        "text": "United States",
-        "country": "US",
-        "kind": "area",
-        "area": "https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98"
-      },
-      "genre": "Synth-Pop",
-      "apple": [
-        "338861083"
-      ],
-      "youtube": []
-    },
-    "yeule": {
-      "type": "Person",
-      "hometown": {
-        "text": "Singapore",
-        "country": "SG",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/aa344640-fd57-3960-afb4-84d0d3b69d3d"
-      },
-      "genre": "Glitch Pop",
-      "apple": [
-        "1145023145"
-      ],
-      "youtube": [
-        "UCAAAQDyYsbuJbixvl1Z0k0w",
-        "UCKGcBrot8PmOqpjCTRFd6LA",
-        "UCINnTJcNT6MQaU-jYNoXhbA"
-      ]
-    },
-    "chris-stapleton": {
-      "type": "Person",
-      "hometown": {
-        "text": "Lexington, KY",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/4551ede8-589a-4776-8120-bf43e53c927b"
-      },
-      "genre": "Country",
-      "apple": [
-        "1752134"
-      ],
-      "youtube": [
-        "UC_uPAFZghRvM1W89Rt-opZw",
-        "UCsdXkstc8jFC3zpMYdEz_zA"
+        "UCATzVJ3w7ZEeMA4BhvQqDwQ"
       ]
     },
     "kmfdm": {
@@ -2673,6 +2516,135 @@
         "UCZ2V545mkkJIeQxtCfi47NQ"
       ]
     },
+    "latto": {
+      "type": "Person",
+      "hometown": {
+        "text": "Columbus, OH",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/18187bcb-18e6-4075-903e-fb976db17a55"
+      },
+      "genre": "Pop Rap",
+      "apple": [
+        "419799506"
+      ],
+      "youtube": [
+        "UCRQ6wJbGwbF9Wmvp5HfT7Pg"
+      ]
+    },
+    "kodak-black": {
+      "type": "Person",
+      "hometown": {
+        "text": "Pompano Beach, FL",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/c765fd5c-0e17-4f4f-bd2d-675472f1f8a0"
+      },
+      "genre": "Hip Hop",
+      "apple": [
+        "953921140"
+      ],
+      "youtube": [
+        "UChEYVadfkMCfrKUi6qr3I1Q"
+      ]
+    },
+    "bassvictim": {
+      "type": "Group",
+      "hometown": {
+        "text": "London, UK",
+        "country": "GB",
+        "kind": "area",
+        "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
+      },
+      "genre": "Electroclash",
+      "apple": [
+        "1704163385"
+      ],
+      "youtube": []
+    },
+    "vince-guaraldi-trio": {
+      "type": "Group",
+      "hometown": {
+        "text": "United States",
+        "country": "US",
+        "kind": "area",
+        "area": "https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98"
+      },
+      "genre": "Jazz",
+      "apple": [
+        "2084011"
+      ],
+      "youtube": [
+        "UCFaTETW2oF6BX7TigIi0KYQ",
+        "UC_DRP-u7c3iOwytg4-ddifw"
+      ]
+    },
+    "mom-jeans": {
+      "type": "Group",
+      "hometown": {
+        "text": "Berkeley, CA",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/f9719692-c39a-4d9c-bf8c-dd4035b09534"
+      },
+      "genre": "Emo",
+      "apple": [
+        "1126562395"
+      ],
+      "youtube": [
+        "UCLWPfP0J0bBv7P3Yd3pp7ew"
+      ]
+    },
+    "post-malone": {
+      "type": "Person",
+      "hometown": {
+        "text": "Syracuse, NY",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/1fee56fe-5b76-4a50-bc63-37ee51d3300f"
+      },
+      "genre": "Hip Hop",
+      "apple": [
+        "966309175"
+      ],
+      "youtube": [
+        "UCeLHszkByNZtPKcaVXOCOQQ",
+        "UCyD3XWRK9ko-izf2nBSFitw"
+      ]
+    },
+    "rochelle-jordan": {
+      "type": "Person",
+      "hometown": {
+        "text": "London, UK",
+        "country": "GB",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
+      },
+      "genre": "Alternative R&B",
+      "apple": [
+        "537708607"
+      ],
+      "youtube": [
+        "UCXakobulUTUvU0qTzTHIM2A"
+      ]
+    },
+    "chris-stapleton": {
+      "type": "Person",
+      "hometown": {
+        "text": "Lexington, KY",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/4551ede8-589a-4776-8120-bf43e53c927b"
+      },
+      "genre": "Country",
+      "apple": [
+        "1752134"
+      ],
+      "youtube": [
+        "UC_uPAFZghRvM1W89Rt-opZw",
+        "UCsdXkstc8jFC3zpMYdEz_zA"
+      ]
+    },
     "fuerza-regida": {
       "type": "Group",
       "hometown": {
@@ -2690,49 +2662,52 @@
         "UC3UBC2hxTTTfI2g6BOcyhPg"
       ]
     },
-    "the-long-faces": {
+    "hum": {
       "type": "Group",
       "hometown": {
-        "text": "Canterbury, UK",
-        "country": "GB",
+        "text": "Champaign, IL",
+        "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/36ed2e86-4e30-49eb-8acb-96004ef98fa3"
+        "area": "https://musicbrainz.org/area/14e7a419-ac00-4569-a2e9-c74f9ed47ff2"
       },
       "genre": "Alternative Rock",
       "apple": [
-        "1320654051"
-      ],
-      "youtube": [
-        "UCATzVJ3w7ZEeMA4BhvQqDwQ"
-      ]
-    },
-    "the-ronettes": {
-      "type": "Group",
-      "hometown": {
-        "text": "Washington Heights, NY",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/646a8715-ce3a-4162-bb82-789071ec5498"
-      },
-      "genre": "Pop",
-      "apple": [
-        "16326351"
+        "509823"
       ],
       "youtube": []
     },
-    "bassvictim": {
+    "sam-barber": {
+      "type": "Person",
+      "hometown": {
+        "text": "Frohna, MO",
+        "country": "US",
+        "kind": "area",
+        "area": "https://musicbrainz.org/area/b83d4cc8-2ead-4208-8ec7-3417ef808e5f"
+      },
+      "genre": "Country",
+      "apple": [
+        "1584802114"
+      ],
+      "youtube": [
+        "UCXGyjXaR3HG-Q5DJher20-g"
+      ]
+    },
+    "sleep-token": {
       "type": "Group",
       "hometown": {
         "text": "London, UK",
         "country": "GB",
-        "kind": "area",
+        "kind": "begin-area",
         "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
       },
-      "genre": "Electroclash",
+      "genre": "Progressive Metal",
       "apple": [
-        "1704163385"
+        "1153723033"
       ],
-      "youtube": []
+      "youtube": [
+        "UC-FsT1b7rc-mKVOjikjw5jg",
+        "UCjS9WiKfJgltFPDecfIHtDg"
+      ]
     },
     "dj-khaled": {
       "type": "Person",
@@ -2752,66 +2727,17 @@
         "UC0Kgvj5t_c9EMWpEDWJuR1Q"
       ]
     },
-    "mom-jeans": {
+    "sunny-day-real-estate": {
       "type": "Group",
       "hometown": {
-        "text": "Berkeley, CA",
+        "text": "Seattle, WA",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/f9719692-c39a-4d9c-bf8c-dd4035b09534"
+        "area": "https://musicbrainz.org/area/10adc6b5-63bf-4b4e-993e-ed83b05c22fc"
       },
       "genre": "Emo",
       "apple": [
-        "1126562395"
-      ],
-      "youtube": [
-        "UCLWPfP0J0bBv7P3Yd3pp7ew"
-      ]
-    },
-    "ella-mai": {
-      "type": "Person",
-      "hometown": {
-        "text": "London, UK",
-        "country": "GB",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
-      },
-      "genre": "Pop",
-      "apple": [
-        "1160482144"
-      ],
-      "youtube": [
-        "UCy1qd93CcOTvOrQ-QM8_pyQ"
-      ]
-    },
-    "wham": {
-      "type": "Group",
-      "hometown": {
-        "text": "Bushey, UK",
-        "country": "GB",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/c12df653-af51-40db-bb40-4a23bccbf4aa"
-      },
-      "genre": "Pop",
-      "apple": [
-        "548421"
-      ],
-      "youtube": [
-        "UCpVKXA1YEpLtD_keJogkCwg",
-        "UCT41vlFeZ_asAUCY7BOiJVQ"
-      ]
-    },
-    "hum": {
-      "type": "Group",
-      "hometown": {
-        "text": "Champaign, IL",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/14e7a419-ac00-4569-a2e9-c74f9ed47ff2"
-      },
-      "genre": "Alternative Rock",
-      "apple": [
-        "509823"
+        "3248555"
       ],
       "youtube": []
     },
@@ -2832,21 +2758,32 @@
         "UCOtQCJMkhhR5p71J4fkyRQg"
       ]
     },
-    "hayley-williams": {
-      "type": "Person",
+    "dazey-and-the-scouts": {
+      "type": "Group",
       "hometown": {
-        "text": "Meridian, MS",
+        "text": "Boston, MA",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/8d3ec130-a7d5-44de-b52c-ad2a316d7d31"
+        "area": "https://musicbrainz.org/area/e331bfdf-b908-429c-a79b-710cf9c06abb"
       },
-      "genre": "Alternative Rock",
+      "genre": "Punk",
+      "apple": [],
+      "youtube": []
+    },
+    "black-country-new-road": {
+      "type": "Group",
+      "hometown": {
+        "text": "Cambridge, UK",
+        "country": "GB",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/11ba7f4f-3fb9-4b4b-a72f-ab1cd9c37d99"
+      },
+      "genre": "Post-Rock",
       "apple": [
-        "256673270"
+        "1449884900"
       ],
       "youtube": [
-        "UCoGbSChtzhQ4r1toYPmeiSA",
-        "UCjHhpxFgQlAoNX3t7hjAplA"
+        "UCWN_Fs7lSjB3T81g-Tw3ZHA"
       ]
     },
     "lil-durk": {
@@ -2866,96 +2803,106 @@
         "UCaxOQZrF5llUMp-JjesUz1A"
       ]
     },
-    "sleep-token": {
+    "a-heartwell-ending": {
       "type": "Group",
       "hometown": {
-        "text": "London, UK",
-        "country": "GB",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
-      },
-      "genre": "Progressive Metal",
-      "apple": [
-        "1153723033"
-      ],
-      "youtube": [
-        "UC-FsT1b7rc-mKVOjikjw5jg",
-        "UCjS9WiKfJgltFPDecfIHtDg"
-      ]
-    },
-    "michael-jackson": {
-      "type": "Person",
-      "hometown": {
-        "text": "Gary, IN",
+        "text": "Long Beach, CA",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/34357067-8f7f-4c7a-8d5e-99b6e60f7891"
+        "area": "https://musicbrainz.org/area/e183ffae-1d35-4c78-b552-957535e40af1"
       },
-      "genre": "Pop",
+      "genre": null,
       "apple": [
-        "32940"
-      ],
-      "youtube": [
-        "UC5OrDvL9DscpcAstz7JnQGA",
-        "UCoIOOL7QKuBhQHVKL8y7BEQ"
-      ]
-    },
-    "est-gee": {
-      "type": "Person",
-      "hometown": {
-        "text": "Louisville, KY",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/b21e4552-050d-4c0c-ac5a-031108eb0c47"
-      },
-      "genre": "Hip Hop",
-      "apple": [
-        "1387365020"
-      ],
-      "youtube": [
-        "UCz_QWRP1UzcV10sfML8Gbxw"
-      ]
-    },
-    "sunny-day-real-estate": {
-      "type": "Group",
-      "hometown": {
-        "text": "Seattle, WA",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/10adc6b5-63bf-4b4e-993e-ed83b05c22fc"
-      },
-      "genre": "Emo",
-      "apple": [
-        "3248555"
+        "168815027"
       ],
       "youtube": []
     },
-    "koe-wetzel": {
+    "young-nudy": {
       "type": "Person",
       "hometown": {
-        "text": "Pittsburg, TX",
+        "text": "Atlanta, GA",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/20f7bf06-129f-4aa9-a6be-a34656692b43"
+        "area": "https://musicbrainz.org/area/26e0e534-19ea-4645-bfb3-1aa4e83a4046"
       },
-      "genre": "Country",
+      "genre": "Trap",
       "apple": [
-        "1139953953"
+        "898005271"
       ],
       "youtube": [
-        "UC3z-jLV-EGKmBPTZ9hKZGBQ"
+        "UCQUsq24C0yX_ezzQYj2IjXw"
       ]
     },
-    "dazey-and-the-scouts": {
-      "type": "Group",
+    "mac-miller": {
+      "type": "Person",
       "hometown": {
-        "text": "Boston, MA",
+        "text": "Pittsburgh, PA",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/e331bfdf-b908-429c-a79b-710cf9c06abb"
+        "area": "https://musicbrainz.org/area/787abc26-28ce-44f8-a2d1-82d86b5d28a8"
       },
-      "genre": "Punk",
+      "genre": "Hip Hop",
+      "apple": [
+        "419944559"
+      ],
+      "youtube": [
+        "UC3SEvBYhullC-aaEmbEQflg"
+      ]
+    },
+    "the-hellp": {
+      "type": "Group",
+      "hometown": {
+        "text": "Durango, CO",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/740f008c-2810-426e-81e2-3ada58e0122e"
+      },
+      "genre": "Electroclash",
+      "apple": [
+        "1143680187"
+      ],
+      "youtube": [
+        "UC5PUh3epnGcjBpDjfIdzcjw",
+        "UCk_MIURrCTTBoXoMFJsOQQw",
+        "UCKZnP6eiq4ViJexUgEK1IzQ"
+      ]
+    },
+    "clarion": {
+      "type": null,
+      "hometown": null,
+      "genre": null,
       "apple": [],
+      "youtube": []
+    },
+    "nat-king-cole": {
+      "type": "Person",
+      "hometown": {
+        "text": "Montgomery, AL",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/2054b43f-446c-45fd-b53e-f8bf23656dd1"
+      },
+      "genre": "Jazz",
+      "apple": [
+        "42616562"
+      ],
+      "youtube": [
+        "UCD6Zqo7lr1j2EdF2WdG-pAQ",
+        "UCirPLQsYtHWBmalEbX1LcAA"
+      ]
+    },
+    "her-words-kill": {
+      "type": "Group",
+      "hometown": {
+        "text": "City of St Albans, UK",
+        "country": "GB",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/d107417f-3659-4b21-92cf-b840af98c506"
+      },
+      "genre": "Emo",
+      "apple": [
+        "1662153614"
+      ],
       "youtube": []
     },
     "chris-brown": {
@@ -2975,46 +2922,6 @@
         "UCm1dsgJNnhaLkY3uAdqN4mA"
       ]
     },
-    "jamie-paige": {
-      "type": "Person",
-      "hometown": {
-        "text": "Houston, TX",
-        "country": "US",
-        "kind": "area",
-        "area": "https://musicbrainz.org/area/c920948b-83e3-40b7-8fe9-9ab5abaac55b"
-      },
-      "genre": "Pop",
-      "apple": [
-        "1119933457"
-      ],
-      "youtube": [
-        "UCDsaRDKTCsGBJMUKx-KtukA",
-        "UCtF4pm3ATF9WKDka0CaiL9g"
-      ]
-    },
-    "sematary": {
-      "type": "Group",
-      "hometown": null,
-      "genre": null,
-      "apple": [],
-      "youtube": []
-    },
-    "mac-miller": {
-      "type": "Person",
-      "hometown": {
-        "text": "Pittsburgh, PA",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/787abc26-28ce-44f8-a2d1-82d86b5d28a8"
-      },
-      "genre": "Hip Hop",
-      "apple": [
-        "419944559"
-      ],
-      "youtube": [
-        "UC3SEvBYhullC-aaEmbEQflg"
-      ]
-    },
     "oklou": {
       "type": "Person",
       "hometown": {
@@ -3032,38 +2939,133 @@
         "UCnMXElXr66dmFHgZGcjTBSg"
       ]
     },
-    "yeat": {
+    "phoebe-bridgers": {
       "type": "Person",
       "hometown": {
-        "text": "Irvine, CA",
+        "text": "Pasadena, CA",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/7c325565-0181-4525-8f61-d7d7f2c3ed36"
+        "area": "https://musicbrainz.org/area/56e1c305-859d-4fbb-8a7c-6e45e1b8ebf1"
       },
-      "genre": "Cloud Rap",
+      "genre": "Singer-Songwriter",
       "apple": [
-        "1318094493"
+        "697833299"
       ],
       "youtube": [
-        "UCV4UK9LNNLViFP4qZA_Wmfw",
-        "UCXvxWMFHlTAXlhpwkQ4Y2Hw"
+        "UCh4PO1W9tVmHujIPZnfK8TQ",
+        "UCprIJgC2-qqSHNVztFjRFmw"
       ]
     },
-    "jt-music": {
-      "type": "Group",
+    "michael-jackson": {
+      "type": "Person",
       "hometown": {
-        "text": "United States",
+        "text": "Gary, IN",
         "country": "US",
-        "kind": "area",
-        "area": "https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98"
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/34357067-8f7f-4c7a-8d5e-99b6e60f7891"
       },
-      "genre": "Electronic",
+      "genre": "Pop",
       "apple": [
-        "302108325",
-        "1315142385"
+        "32940"
       ],
       "youtube": [
-        "UCzTdZz7z2sPRGCImodwOw0g"
+        "UC5OrDvL9DscpcAstz7JnQGA",
+        "UCoIOOL7QKuBhQHVKL8y7BEQ"
+      ]
+    },
+    "nova-charisma": {
+      "type": "Group",
+      "hometown": {
+        "text": "London, UK",
+        "country": "GB",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
+      },
+      "genre": "Post-Hardcore",
+      "apple": [
+        "1475303576"
+      ],
+      "youtube": [
+        "UCslTHYVuFoPZzggcZNSz5rA"
+      ]
+    },
+    "est-gee": {
+      "type": "Person",
+      "hometown": {
+        "text": "Louisville, KY",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/b21e4552-050d-4c0c-ac5a-031108eb0c47"
+      },
+      "genre": "Hip Hop",
+      "apple": [
+        "1387365020"
+      ],
+      "youtube": [
+        "UCz_QWRP1UzcV10sfML8Gbxw"
+      ]
+    },
+    "tigers-jaw": {
+      "type": "Group",
+      "hometown": {
+        "text": "Scranton, PA",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/65ceae54-78eb-4063-979c-328ca8906d46"
+      },
+      "genre": "Emo",
+      "apple": [
+        "266702551"
+      ],
+      "youtube": [
+        "UC5LogF3cSx64B4Bf3HE2TJg"
+      ]
+    },
+    "andy-williams": {
+      "type": "Person",
+      "hometown": {
+        "text": "Wall Lake, IA",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/3c063d15-07a4-450e-8d48-4d6bab791d88"
+      },
+      "genre": "Easy Listening",
+      "apple": [
+        "466691",
+        "420721662"
+      ],
+      "youtube": [
+        "UCFhZg4_QmTTNs5ohg-8RENQ"
+      ]
+    },
+    "lady-radiator": {
+      "type": "Group",
+      "hometown": {
+        "text": "Union City, NJ",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/1fd5fdb7-60a6-4ff8-977a-ce4f1747efed"
+      },
+      "genre": "Experimental",
+      "apple": [
+        "270761882"
+      ],
+      "youtube": []
+    },
+    "ella-mai": {
+      "type": "Person",
+      "hometown": {
+        "text": "London, UK",
+        "country": "GB",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
+      },
+      "genre": "Pop",
+      "apple": [
+        "1160482144"
+      ],
+      "youtube": [
+        "UCy1qd93CcOTvOrQ-QM8_pyQ"
       ]
     },
     "sabrina-carpenter": {
@@ -3083,36 +3085,21 @@
         "UCz51ZodJbYUNfkdPHOjJKKw"
       ]
     },
-    "goreshit": {
-      "type": "Person",
+    "jt-music": {
+      "type": "Group",
       "hometown": {
-        "text": "England, UK",
-        "country": "GB",
-        "kind": "area",
-        "area": "https://musicbrainz.org/area/9d5dd675-3cf4-4296-9e39-67865ebee758"
-      },
-      "genre": "Breakcore",
-      "apple": [
-        "1428680412"
-      ],
-      "youtube": [
-        "UC8C72ez-J02sRjjNOM1YVwA"
-      ]
-    },
-    "loe-shimmy": {
-      "type": "Person",
-      "hometown": {
-        "text": "Pompano Beach, FL",
+        "text": "United States",
         "country": "US",
         "kind": "area",
-        "area": "https://musicbrainz.org/area/c765fd5c-0e17-4f4f-bd2d-675472f1f8a0"
+        "area": "https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98"
       },
-      "genre": "Southern Hip Hop",
+      "genre": "Electronic",
       "apple": [
-        "1506815992"
+        "302108325",
+        "1315142385"
       ],
       "youtube": [
-        "UCdJxCPV1dXiQTveGZEKd5lQ"
+        "UCzTdZz7z2sPRGCImodwOw0g"
       ]
     },
     "fcukers": {
@@ -3132,37 +3119,100 @@
         "UCdKVIBxvgZRKg-GMiCaFlsA"
       ]
     },
-    "vince-guaraldi-trio": {
-      "type": "Group",
-      "hometown": {
-        "text": "United States",
-        "country": "US",
-        "kind": "area",
-        "area": "https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98"
-      },
-      "genre": "Jazz",
-      "apple": [
-        "2084011"
-      ],
-      "youtube": [
-        "UCFaTETW2oF6BX7TigIi0KYQ",
-        "UC_DRP-u7c3iOwytg4-ddifw"
-      ]
-    },
-    "jorge-rivera-herrans": {
+    "dean-martin": {
       "type": "Person",
       "hometown": {
-        "text": "Dorado, Puerto Rico",
-        "country": "PR",
+        "text": "Steubenville, OH",
+        "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/f88818c9-5413-475d-9555-5182f8bf9eec"
+        "area": "https://musicbrainz.org/area/2d81b8df-8a69-47e8-8c38-2b968c3c4077"
       },
-      "genre": "Musical",
+      "genre": "Pop",
       "apple": [
-        "1660193130"
+        "266028"
       ],
       "youtube": [
-        "UCvayv7u6HrpENlleXekJ2fg"
+        "UC_mPFw8OyrxpIlo9TH325Wg",
+        "UCWbQ2D5aaB4tpqIE4TzTAAA"
+      ]
+    },
+    "sophia-stel": {
+      "type": "Person",
+      "hometown": {
+        "text": "Victoria, Canada",
+        "country": "CA",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/c5446ccc-24aa-4110-8130-38c97b5d83da"
+      },
+      "genre": "Alternative Pop",
+      "apple": [
+        "1473708664"
+      ],
+      "youtube": [
+        "UC4RXvt3m-Vs9AElIyNZxpHg",
+        "UCXa_-H6ywZY7JSbwxizU2oQ"
+      ]
+    },
+    "loe-shimmy": {
+      "type": "Person",
+      "hometown": {
+        "text": "Pompano Beach, FL",
+        "country": "US",
+        "kind": "area",
+        "area": "https://musicbrainz.org/area/c765fd5c-0e17-4f4f-bd2d-675472f1f8a0"
+      },
+      "genre": "Southern Hip Hop",
+      "apple": [
+        "1506815992"
+      ],
+      "youtube": [
+        "UCdJxCPV1dXiQTveGZEKd5lQ"
+      ]
+    },
+    "esprit": {
+      "type": "Person",
+      "hometown": {
+        "text": "Brooklyn, NY",
+        "country": "US",
+        "kind": "area",
+        "area": "https://musicbrainz.org/area/a71b0d32-7752-49e9-8594-2247ad6ac12c"
+      },
+      "genre": "Vaporwave",
+      "apple": [],
+      "youtube": [
+        "UCTnOMwK_qVoI6SLBt_wNLBA"
+      ]
+    },
+    "21-savage": {
+      "type": "Person",
+      "hometown": {
+        "text": "Plaistow, UK",
+        "country": "GB",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/45b501e3-0c55-4f24-9fde-a822a9c92350"
+      },
+      "genre": "Trap",
+      "apple": [
+        "894820464"
+      ],
+      "youtube": [
+        "UCOjEHmBKwdS7joWpW0VrXkg"
+      ]
+    },
+    "wale": {
+      "type": "Person",
+      "hometown": {
+        "text": "Washington, D.C., DC",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/af59135f-38b5-4ea4-b4e2-dd28c5f0bad7"
+      },
+      "genre": "Hip Hop",
+      "apple": [
+        "129335935"
+      ],
+      "youtube": [
+        "UCN5dSZVxZtDULZ-ogtbEh4Q"
       ]
     },
     "miranda-lambert": {
@@ -3184,22 +3234,6 @@
         "UCGFTsgFIv10i0u--5rl8C9A"
       ]
     },
-    "luke-bryan": {
-      "type": "Person",
-      "hometown": {
-        "text": "Leesburg, GA",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/7a8d2ded-055d-4c14-935e-3f539c015596"
-      },
-      "genre": "Country",
-      "apple": [
-        "20131064"
-      ],
-      "youtube": [
-        "UCntGDhwr_YA88wVr0WpOMEA"
-      ]
-    },
     "underscores": {
       "type": "Person",
       "hometown": {
@@ -3217,19 +3251,21 @@
         "UCUdMQSZu3e12dk_DREEz80w"
       ]
     },
-    "malcolm-todd": {
+    "ken-carson": {
       "type": "Person",
       "hometown": {
-        "text": "Los Angeles, CA",
+        "text": "Atlanta, GA",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/1f40c6e1-47ba-4e35-996f-fe6ee5840e62"
+        "area": "https://musicbrainz.org/area/26e0e534-19ea-4645-bfb3-1aa4e83a4046"
       },
-      "genre": "R&B",
+      "genre": "Hip Hop",
       "apple": [
-        "1624326848"
+        "1434801023"
       ],
-      "youtube": []
+      "youtube": [
+        "UCtjO8cix9XxwOcAv6nww-TQ"
+      ]
     },
     "slayyyter": {
       "type": "Person",
@@ -3247,6 +3283,37 @@
         "UCxIfElfQhJzf6pxub2ISGLw",
         "UCVS2PEYqVgjAyTgUHx-1xdg",
         "UCZS5izgKepYPhTHx726xMNw"
+      ]
+    },
+    "malcolm-todd": {
+      "type": "Person",
+      "hometown": {
+        "text": "Los Angeles, CA",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/1f40c6e1-47ba-4e35-996f-fe6ee5840e62"
+      },
+      "genre": "R&B",
+      "apple": [
+        "1624326848"
+      ],
+      "youtube": []
+    },
+    "yeat": {
+      "type": "Person",
+      "hometown": {
+        "text": "Irvine, CA",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/7c325565-0181-4525-8f61-d7d7f2c3ed36"
+      },
+      "genre": "Cloud Rap",
+      "apple": [
+        "1318094493"
+      ],
+      "youtube": [
+        "UCV4UK9LNNLViFP4qZA_Wmfw",
+        "UCXvxWMFHlTAXlhpwkQ4Y2Hw"
       ]
     },
     "elton-john": {
@@ -3329,20 +3396,6 @@
         "UCs-QBT4qkj_YiQw1ZntDO3g"
       ]
     },
-    "f3miii": {
-      "type": "Person",
-      "hometown": {
-        "text": "Dublin, Ireland",
-        "country": "IE",
-        "kind": "area",
-        "area": "https://musicbrainz.org/area/462e7952-4fa9-43cd-bc24-2c5c9cd5dd47"
-      },
-      "genre": "Alternative R&B",
-      "apple": [
-        "1506627251"
-      ],
-      "youtube": []
-    },
     "lucy-bedroque": {
       "type": "Person",
       "hometown": {
@@ -3361,21 +3414,19 @@
         "UCR887qBoGNDa-AuCUeAb0yw"
       ]
     },
-    "dexter-and-the-moonrocks": {
-      "type": "Group",
+    "f3miii": {
+      "type": "Person",
       "hometown": {
-        "text": "Abilene, TX",
-        "country": "US",
+        "text": "Dublin, Ireland",
+        "country": "IE",
         "kind": "area",
-        "area": "https://musicbrainz.org/area/d9d1ef49-4d1c-4ab3-8bb0-041e29126fe5"
+        "area": "https://musicbrainz.org/area/462e7952-4fa9-43cd-bc24-2c5c9cd5dd47"
       },
-      "genre": "Country Rock",
+      "genre": "Alternative R&B",
       "apple": [
-        "1581657500"
+        "1506627251"
       ],
-      "youtube": [
-        "UCzU19IyeQ6IL03r8GNU3jeQ"
-      ]
+      "youtube": []
     },
     "cameron-winter": {
       "type": "Person",
@@ -3414,19 +3465,21 @@
         "UCyLjTgYrVIFO2_VSAEO43tA"
       ]
     },
-    "rosa-walton": {
-      "type": "Person",
+    "dexter-and-the-moonrocks": {
+      "type": "Group",
       "hometown": {
-        "text": "Norwich, UK",
-        "country": "GB",
+        "text": "Abilene, TX",
+        "country": "US",
         "kind": "area",
-        "area": "https://musicbrainz.org/area/279c5d9a-0165-493e-bed5-fc691be6a4e4"
+        "area": "https://musicbrainz.org/area/d9d1ef49-4d1c-4ab3-8bb0-041e29126fe5"
       },
-      "genre": null,
+      "genre": "Country Rock",
       "apple": [
-        "1098722439"
+        "1581657500"
       ],
-      "youtube": []
+      "youtube": [
+        "UCzU19IyeQ6IL03r8GNU3jeQ"
+      ]
     },
     "gigi-perez": {
       "type": "Person",
@@ -3445,33 +3498,17 @@
         "UCobE63bvA-2tK_HZ2LbP8cQ"
       ]
     },
-    "ken-carson": {
+    "rosa-walton": {
       "type": "Person",
       "hometown": {
-        "text": "Atlanta, GA",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/26e0e534-19ea-4645-bfb3-1aa4e83a4046"
+        "text": "Norwich, UK",
+        "country": "GB",
+        "kind": "area",
+        "area": "https://musicbrainz.org/area/279c5d9a-0165-493e-bed5-fc691be6a4e4"
       },
-      "genre": "Hip Hop",
+      "genre": null,
       "apple": [
-        "1434801023"
-      ],
-      "youtube": [
-        "UCtjO8cix9XxwOcAv6nww-TQ"
-      ]
-    },
-    "bleood": {
-      "type": "Person",
-      "hometown": {
-        "text": "Florida, FL",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/d2918f1a-c51e-4a4a-ad7f-cdd88877b25f"
-      },
-      "genre": "Rage",
-      "apple": [
-        "1744999836"
+        "1098722439"
       ],
       "youtube": []
     },
@@ -3481,6 +3518,23 @@
       "genre": null,
       "apple": [],
       "youtube": []
+    },
+    "john-mayer": {
+      "type": "Person",
+      "hometown": {
+        "text": "Bridgeport, CT",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/bfbcf45d-5c3b-4331-bfcb-6341209cd5ec"
+      },
+      "genre": "Blues Rock",
+      "apple": [
+        "472054"
+      ],
+      "youtube": [
+        "UC9KhB07HSEtWISy_LFWwHzw",
+        "UCi1mYtUWs0JRkPl6bNVRL_Q"
+      ]
     },
     "matt-martians": {
       "type": "Person",
@@ -3513,36 +3567,21 @@
         "UCAhXV3QdU5bYTNLSk3LcVBg"
       ]
     },
-    "aespa": {
+    "xg": {
       "type": "Group",
       "hometown": {
-        "text": "Seoul, South Korea",
-        "country": "KR",
+        "text": "Tokyo, Japan",
+        "country": "JP",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/aa03e165-4c73-4959-91c0-a99f9fa8ecab"
+        "area": "https://musicbrainz.org/area/8dc97297-ac95-4d33-82bc-e07fab26fb5f"
       },
-      "genre": "K-Pop",
+      "genre": "Pop Rap",
       "apple": [
-        "1540251304"
+        "1609409493"
       ],
       "youtube": [
-        "UC9GtSLeksfK4yuJ_g1lgQbg"
-      ]
-    },
-    "nova-charisma": {
-      "type": "Group",
-      "hometown": {
-        "text": "London, UK",
-        "country": "GB",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/f03d09b3-39dc-4083-afd6-159e3f0d462f"
-      },
-      "genre": "Post-Hardcore",
-      "apple": [
-        "1475303576"
-      ],
-      "youtube": [
-        "UCslTHYVuFoPZzggcZNSz5rA"
+        "UC12HMtO5MYph9dCZZ7yygng",
+        "UCafINmoeAbZbK5M4dtQzBww"
       ]
     },
     "destroy-lonely": {
@@ -3559,23 +3598,6 @@
       ],
       "youtube": [
         "UCylvCifeaY7gi1zjhRfpcMg"
-      ]
-    },
-    "john-mayer": {
-      "type": "Person",
-      "hometown": {
-        "text": "Bridgeport, CT",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/bfbcf45d-5c3b-4331-bfcb-6341209cd5ec"
-      },
-      "genre": "Blues Rock",
-      "apple": [
-        "472054"
-      ],
-      "youtube": [
-        "UC9KhB07HSEtWISy_LFWwHzw",
-        "UCi1mYtUWs0JRkPl6bNVRL_Q"
       ]
     },
     "rosalia": {
@@ -3612,50 +3634,6 @@
         "UCuW8oZH4asLgvJ9FstClVzQ"
       ]
     },
-    "lizzy-mcalpine": {
-      "type": "Person",
-      "hometown": {
-        "text": "Philadelphia, PA",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/0eeb01c2-6e31-46ad-96b8-319749f731d2"
-      },
-      "genre": "Folk Pop",
-      "apple": [
-        "1350245112"
-      ],
-      "youtube": [
-        "UCn-fhn3NbPzOeM39yv4k5hw"
-      ]
-    },
-    "sidney-gish": {
-      "type": "Person",
-      "hometown": {
-        "text": "Randolph, NJ",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/b3606178-eae9-4d32-9b58-20e9b7c19c24"
-      },
-      "genre": "Bedroom Pop",
-      "apple": [],
-      "youtube": [
-        "UCDsG2dq2H5Nk8E9v2YoJlsA"
-      ]
-    },
-    "buckshot": {
-      "type": "Person",
-      "hometown": {
-        "text": "Ireland",
-        "country": "IE",
-        "kind": "area",
-        "area": "https://musicbrainz.org/area/390b05d4-11ec-3bce-a343-703a366b34a5"
-      },
-      "genre": "Cloud Rap",
-      "apple": [
-        "1453098392"
-      ],
-      "youtube": []
-    },
     "ethel-cain": {
       "type": "Person",
       "hometown": {
@@ -3671,6 +3649,22 @@
       "youtube": [
         "UCdRxl_zUkt98NQtGaVvdqBQ",
         "UCBbh9rRZc-Qm4Dk5CJFbFng"
+      ]
+    },
+    "aespa": {
+      "type": "Group",
+      "hometown": {
+        "text": "Seoul, South Korea",
+        "country": "KR",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/aa03e165-4c73-4959-91c0-a99f9fa8ecab"
+      },
+      "genre": "K-Pop",
+      "apple": [
+        "1540251304"
+      ],
+      "youtube": [
+        "UC9GtSLeksfK4yuJ_g1lgQbg"
       ]
     },
     "newjeans": {
@@ -3690,6 +3684,36 @@
         "UCxOqS3cYg4FaHbobICo7nFQ"
       ]
     },
+    "lizzy-mcalpine": {
+      "type": "Person",
+      "hometown": {
+        "text": "Philadelphia, PA",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/0eeb01c2-6e31-46ad-96b8-319749f731d2"
+      },
+      "genre": "Folk Pop",
+      "apple": [
+        "1350245112"
+      ],
+      "youtube": [
+        "UCn-fhn3NbPzOeM39yv4k5hw"
+      ]
+    },
+    "buckshot": {
+      "type": "Person",
+      "hometown": {
+        "text": "Ireland",
+        "country": "IE",
+        "kind": "area",
+        "area": "https://musicbrainz.org/area/390b05d4-11ec-3bce-a343-703a366b34a5"
+      },
+      "genre": "Cloud Rap",
+      "apple": [
+        "1453098392"
+      ],
+      "youtube": []
+    },
     "esdeekid": {
       "type": "Person",
       "hometown": {
@@ -3704,6 +3728,20 @@
       ],
       "youtube": [
         "UC8jLPGsRRCTaK-PAWIfCrpg"
+      ]
+    },
+    "sidney-gish": {
+      "type": "Person",
+      "hometown": {
+        "text": "Randolph, NJ",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/b3606178-eae9-4d32-9b58-20e9b7c19c24"
+      },
+      "genre": "Bedroom Pop",
+      "apple": [],
+      "youtube": [
+        "UCDsG2dq2H5Nk8E9v2YoJlsA"
       ]
     },
     "hearts2hearts": {
@@ -3755,23 +3793,6 @@
       "apple": [],
       "youtube": []
     },
-    "xg": {
-      "type": "Group",
-      "hometown": {
-        "text": "Tokyo, Japan",
-        "country": "JP",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/8dc97297-ac95-4d33-82bc-e07fab26fb5f"
-      },
-      "genre": "Pop Rap",
-      "apple": [
-        "1609409493"
-      ],
-      "youtube": [
-        "UC12HMtO5MYph9dCZZ7yygng",
-        "UCafINmoeAbZbK5M4dtQzBww"
-      ]
-    },
     "susannah-joffe": {
       "type": "Person",
       "hometown": {
@@ -3818,38 +3839,31 @@
         "UC8mGqncochBsQU0k2kF2fTQ"
       ]
     },
-    "emma-ogier": {
-      "type": null,
-      "hometown": null,
-      "genre": null,
+    "bleood": {
+      "type": "Person",
+      "hometown": {
+        "text": "Florida, FL",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/d2918f1a-c51e-4a4a-ad7f-cdd88877b25f"
+      },
+      "genre": "Rage",
       "apple": [
-        "1571801234"
+        "1744999836"
       ],
       "youtube": []
     },
-    "dominic-fike": {
+    "yung-miami": {
       "type": "Person",
       "hometown": {
-        "text": "Naples, FL",
+        "text": "Miami, FL",
         "country": "US",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/514fceff-0ad8-4a87-9721-d2dd4fc07a07"
+        "area": "https://musicbrainz.org/area/4a9aeb42-3763-4234-8fb8-1167ac1dfdfe"
       },
-      "genre": "Alternative Pop",
+      "genre": "Hip Hop",
       "apple": [
-        "1104179033"
-      ],
-      "youtube": [
-        "UCcwcJT8pVnq5MIDuNfca38Q",
-        "UCsWqHrJvOU_uukQCU92VEvw"
-      ]
-    },
-    "tezzus": {
-      "type": "Person",
-      "hometown": null,
-      "genre": null,
-      "apple": [
-        "1378027228"
+        "1476226954"
       ],
       "youtube": []
     },
@@ -3869,20 +3883,6 @@
         "UCuwdplPbuTFZj_64d03tSBA"
       ]
     },
-    "yung-miami": {
-      "type": "Person",
-      "hometown": {
-        "text": "Miami, FL",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/4a9aeb42-3763-4234-8fb8-1167ac1dfdfe"
-      },
-      "genre": "Hip Hop",
-      "apple": [
-        "1476226954"
-      ],
-      "youtube": []
-    },
     "lucki": {
       "type": "Person",
       "hometown": {
@@ -3898,6 +3898,61 @@
       "youtube": [
         "UCnWiTG19_2QzYuxW5M94d0A"
       ]
+    },
+    "ball-greezy": {
+      "type": "Person",
+      "hometown": {
+        "text": "United States",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98"
+      },
+      "genre": null,
+      "apple": [
+        "322831147"
+      ],
+      "youtube": []
+    },
+    "rick-ross": {
+      "type": "Person",
+      "hometown": {
+        "text": "Clarksdale, MS",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/82a4e867-19e7-4968-9031-10aaf1c6895b"
+      },
+      "genre": "Hip Hop",
+      "apple": [
+        "4022281"
+      ],
+      "youtube": [
+        "UCdLf5_x-4eic2Hw-uovjdKA",
+        "UCHO1BdBZw927UtUGhxYOGwA",
+        "UCj-z4t1XEtDH36yS6ZUUpYg"
+      ]
+    },
+    "emma-ogier": {
+      "type": null,
+      "hometown": null,
+      "genre": null,
+      "apple": [
+        "1571801234"
+      ],
+      "youtube": []
+    },
+    "cotillon": {
+      "type": "Person",
+      "hometown": {
+        "text": "Los Angeles, CA",
+        "country": "US",
+        "kind": "area",
+        "area": "https://musicbrainz.org/area/1f40c6e1-47ba-4e35-996f-fe6ee5840e62"
+      },
+      "genre": "Psychedelic Pop",
+      "apple": [
+        "624030291"
+      ],
+      "youtube": []
     },
     "mez": {
       "type": "Person",
@@ -3926,6 +3981,77 @@
       "youtube": [
         "UC-QfBKLrg-2D-2QDGwl6JfA"
       ]
+    },
+    "stove-god-cooks": {
+      "type": "Person",
+      "hometown": {
+        "text": "Syracuse, NY",
+        "country": "US",
+        "kind": "area",
+        "area": "https://musicbrainz.org/area/1fee56fe-5b76-4a50-bc63-37ee51d3300f"
+      },
+      "genre": "Drumless Hip Hop",
+      "apple": [],
+      "youtube": []
+    },
+    "joey-badass": {
+      "type": "Person",
+      "hometown": {
+        "text": "Flatbush, NY",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/49a18344-3e78-4bdd-a32e-030ecd89bee1"
+      },
+      "genre": "Boom Bap",
+      "apple": [
+        "577261450"
+      ],
+      "youtube": [
+        "UCGlFGuSXx33Ql9aGFf7ZdkQ"
+      ]
+    },
+    "iamchino": {
+      "type": "Person",
+      "hometown": {
+        "text": "United States",
+        "country": "US",
+        "kind": "area",
+        "area": "https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98"
+      },
+      "genre": "Cumbia",
+      "apple": [
+        "1086805603"
+      ],
+      "youtube": [
+        "UCadtcqSP0SwA5KVyaJdkiRA"
+      ]
+    },
+    "pitbull": {
+      "type": "Person",
+      "hometown": {
+        "text": "Miami, FL",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/4a9aeb42-3763-4234-8fb8-1167ac1dfdfe"
+      },
+      "genre": "Dance-Pop",
+      "apple": [
+        "27044968"
+      ],
+      "youtube": [
+        "UCv8nzwVPQDRjkPCkEsOdEwA",
+        "UCVWA4btXTFru9qM06FceSag",
+        "UC03jIQv4WXBSHdr1DlCLYDw"
+      ]
+    },
+    "tezzus": {
+      "type": "Person",
+      "hometown": null,
+      "genre": null,
+      "apple": [
+        "1378027228"
+      ],
+      "youtube": []
     },
     "femtanyl": {
       "type": "Group",
@@ -4001,39 +4127,6 @@
         "UCx9lUERUUMaQ5uCeKkAX6wA"
       ]
     },
-    "harry-fraud": {
-      "type": "Person",
-      "hometown": {
-        "text": "New York, NY",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/74e50e58-5deb-4b99-93a2-decbb365c07f"
-      },
-      "genre": "East Coast Hip Hop",
-      "apple": [
-        "450805135"
-      ],
-      "youtube": [
-        "UCX9YJKp67gnc_QP0jRnLfWA",
-        "UCnpGhuf5Noet0IodMUd3ALA"
-      ]
-    },
-    "currensy": {
-      "type": "Person",
-      "hometown": {
-        "text": "New Orleans, LA",
-        "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/3c5a0506-d852-4e96-8d1e-d8126328f3be"
-      },
-      "genre": "Hip Hop",
-      "apple": [
-        "5914039"
-      ],
-      "youtube": [
-        "UCvtbERBK9tNbU2SzFCxeEVg"
-      ]
-    },
     "murdagang-pb": {
       "type": "Person",
       "hometown": {
@@ -4045,6 +4138,22 @@
       "genre": null,
       "apple": [],
       "youtube": []
+    },
+    "hideyoshi": {
+      "type": null,
+      "hometown": {
+        "text": "Tokyo, Japan",
+        "country": "JP",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/8dc97297-ac95-4d33-82bc-e07fab26fb5f"
+      },
+      "genre": "J-Pop",
+      "apple": [
+        "1376954055"
+      ],
+      "youtube": [
+        "UCQvAo-BW7FbpQ99OyFrXq_A"
+      ]
     },
     "smokedope2016": {
       "type": "Person",
@@ -4063,18 +4172,16 @@
         "UCtVew4NpMDiwkMFha8AiV8A"
       ]
     },
-    "lelo": {
+    "montana-700": {
       "type": "Person",
       "hometown": {
-        "text": "Oak Park, MI",
+        "text": "Dallas, TX",
         "country": "US",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/e9139b0a-8b7f-4605-bf8f-c276ff0062d0"
+        "kind": "area",
+        "area": "https://musicbrainz.org/area/e96f1c0d-721b-470d-a9c4-0aa2d89cf9e7"
       },
       "genre": "Hip Hop",
-      "apple": [
-        "1443736146"
-      ],
+      "apple": [],
       "youtube": []
     },
     "venturing": {
@@ -4096,9 +4203,35 @@
         "UC_tTc7KR0qI_otjcGgWN1eA"
       ]
     },
+    "rosama": {
+      "type": "Person",
+      "hometown": {
+        "text": "Texas, TX",
+        "country": "US",
+        "kind": "area",
+        "area": "https://musicbrainz.org/area/f934c8da-e40e-4056-8f8c-212e68fdcaec"
+      },
+      "genre": "Hip Hop",
+      "apple": [],
+      "youtube": [
+        "UChDjR43fQimRaaWRH1FOv2Q"
+      ]
+    },
     "iconic-savvy": {
       "type": "Person",
       "hometown": null,
+      "genre": null,
+      "apple": [],
+      "youtube": []
+    },
+    "eric-kupper": {
+      "type": "Person",
+      "hometown": {
+        "text": "United States",
+        "country": "US",
+        "kind": "area",
+        "area": "https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98"
+      },
       "genre": null,
       "apple": [],
       "youtube": []
@@ -4119,22 +4252,6 @@
         "UCZOMSOTRZJmSwCWxmnJFxKg"
       ]
     },
-    "james-tonic": {
-      "type": "Person",
-      "hometown": {
-        "text": "Montréal, Canada",
-        "country": "CA",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/c3cc624e-b963-49cf-ad0b-e318cb341963"
-      },
-      "genre": "Alternative Hip Hop",
-      "apple": [
-        "1741650771"
-      ],
-      "youtube": [
-        "UCmtv_Ag10wSbfRbFxLgTGxw"
-      ]
-    },
     "kiiikiii": {
       "type": "Group",
       "hometown": {
@@ -4151,6 +4268,20 @@
         "UCaHwGJXFb28TekZMf7iFg5Q"
       ]
     },
+    "lelo": {
+      "type": "Person",
+      "hometown": {
+        "text": "Oak Park, MI",
+        "country": "US",
+        "kind": "begin-area",
+        "area": "https://musicbrainz.org/area/e9139b0a-8b7f-4605-bf8f-c276ff0062d0"
+      },
+      "genre": "Hip Hop",
+      "apple": [
+        "1443736146"
+      ],
+      "youtube": []
+    },
     "damien-dempsey": {
       "type": "Person",
       "hometown": {
@@ -4165,112 +4296,22 @@
       ],
       "youtube": []
     },
-    "petite-meller": {
+    "ez-mil": {
       "type": "Person",
       "hometown": {
-        "text": "Paris, France",
-        "country": "FR",
+        "text": "Olongapo City, Philippines",
+        "country": "PH",
         "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/dc10c22b-e510-4006-8b7f-fecb4f36436e"
-      },
-      "genre": null,
-      "apple": [
-        "718238708"
-      ],
-      "youtube": []
-    },
-    "amanda-reifer": {
-      "type": "Person",
-      "hometown": {
-        "text": "Barbados",
-        "country": "BB",
-        "kind": "area",
-        "area": "https://musicbrainz.org/area/e5d8d205-81d3-3cd3-8956-d5aaa0c0173f"
-      },
-      "genre": null,
-      "apple": [],
-      "youtube": []
-    },
-    "dj-bandz": {
-      "type": null,
-      "hometown": null,
-      "genre": null,
-      "apple": [],
-      "youtube": []
-    },
-    "rosama": {
-      "type": "Person",
-      "hometown": {
-        "text": "Texas, TX",
-        "country": "US",
-        "kind": "area",
-        "area": "https://musicbrainz.org/area/f934c8da-e40e-4056-8f8c-212e68fdcaec"
+        "area": "https://musicbrainz.org/area/4c81ad6c-e3fd-48f4-8bd7-681d3397d123"
       },
       "genre": "Hip Hop",
-      "apple": [],
-      "youtube": [
-        "UChDjR43fQimRaaWRH1FOv2Q"
-      ]
-    },
-    "nmixx": {
-      "type": "Group",
-      "hometown": {
-        "text": "Seoul, South Korea",
-        "country": "KR",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/aa03e165-4c73-4959-91c0-a99f9fa8ecab"
-      },
-      "genre": "K-Pop",
       "apple": [
-        "1600411676"
+        "1424439211"
       ],
       "youtube": [
-        "UCnUAyD4t2LkvW68YrDh7fDg",
-        "UC_Cx288SDUD9liYn7CiJLAA",
-        "UCcSs_ahfAdcXif9ytpARdfQ"
+        "UCi0702OkDEHmFRKBwKyXPpA",
+        "UCK9XXrD7pOIM3N5W_i0E-Iw"
       ]
-    },
-    "yves": {
-      "type": "Person",
-      "hometown": {
-        "text": "Busan, South Korea",
-        "country": "KR",
-        "kind": "begin-area",
-        "area": "https://musicbrainz.org/area/c8a88ba5-5d4e-4cbf-b8ab-dd0e6d99a940"
-      },
-      "genre": "K-Pop",
-      "apple": [
-        "1587146428"
-      ],
-      "youtube": [
-        "UCMuK2QPg9oFJ1-veMCw3Irg"
-      ]
-    },
-    "control-freak": {
-      "type": "Person",
-      "hometown": {
-        "text": "New York, NY",
-        "country": "US",
-        "kind": "area",
-        "area": "https://musicbrainz.org/area/74e50e58-5deb-4b99-93a2-decbb365c07f"
-      },
-      "genre": "Dubstep",
-      "apple": [
-        "53615786"
-      ],
-      "youtube": [
-        "UCsnpGx49YuvebVVntP__-QQ",
-        "UCVBf3Aa9UXU_fS0ObsBKaXA"
-      ]
-    },
-    "ayo-sk3tch": {
-      "type": "Person",
-      "hometown": null,
-      "genre": null,
-      "apple": [
-        "1372500473"
-      ],
-      "youtube": []
     }
   }
 }

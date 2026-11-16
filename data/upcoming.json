@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T07:45:20.897Z",
+  "generatedAt": "2026-11-16T07:31:46.872Z",
   "source": "Ticketmaster Discovery API (live listings, rebuilt nightly)",
   "artists": {
     "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
@@ -63,6 +63,13 @@
     "2f0c90b1-84d5-47f1-ad75-ad8d30f53f70": {
       "name": "The Last Dinner Party"
     },
+    "a0723a3c-4135-438e-85c5-012712144ede": {
+      "name": "Don Toliver",
+      "id": "don-toliver"
+    },
+    "7013c772-2236-42f3-8590-2e2292d2ca5e": {
+      "name": "Victony"
+    },
     "51e90731-08c0-4f60-89b6-5b78e5844de8": {
       "name": "Zach Bryan",
       "id": "zach-bryan"
@@ -72,13 +79,6 @@
     },
     "61a04f15-0929-4bb6-bd4e-dabdf8e19f68": {
       "name": "Ryan Bingham"
-    },
-    "a0723a3c-4135-438e-85c5-012712144ede": {
-      "name": "Don Toliver",
-      "id": "don-toliver"
-    },
-    "7013c772-2236-42f3-8590-2e2292d2ca5e": {
-      "name": "Victony"
     },
     "a2a3f910-b188-43e7-81d0-f1ac2a2f3e12": {
       "name": "Noah Kahan",
@@ -134,12 +134,25 @@
     "4ae67eb7-c01c-4d71-b995-21b093fcb888": {
       "name": "Wyatt Flores"
     },
-    "96855c21-b832-4366-ba12-0d2330c36a86": {
-      "name": "Phoebe Bridgers",
-      "id": "phoebe-bridgers"
+    "d8fd8d9b-473b-4f06-83c8-869b1bb9de89": {
+      "name": "Bryson Tiller",
+      "id": "bryson-tiller"
     },
-    "75a7274d-e9f1-4569-be5e-f590ab9ddb64": {
-      "name": "Christian Lee Hutson"
+    "abaa7001-0d80-4e58-be5d-d2d246fd9d87": {
+      "name": "Majid Jordan"
+    },
+    "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74": {
+      "name": "Sleeping With Sirens",
+      "id": "sleeping-with-sirens"
+    },
+    "2b1e0708-7317-4b09-b6a2-6dc6cb9c0479": {
+      "name": "Arm's Length"
+    },
+    "e2e9df76-a950-4b8b-b3d1-981624470657": {
+      "name": "State Champs"
+    },
+    "cd584ea0-0fc5-412b-8598-0244c4025af6": {
+      "name": "Boston Manor"
     },
     "6ffb8ea9-2370-44d8-b678-e9237bbd347b": {
       "name": "Kings of Leon",
@@ -155,37 +168,16 @@
       "name": "Dexter and The Moonrocks",
       "id": "dexter-and-the-moonrocks"
     },
-    "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74": {
-      "name": "Sleeping With Sirens",
-      "id": "sleeping-with-sirens"
-    },
-    "2b1e0708-7317-4b09-b6a2-6dc6cb9c0479": {
-      "name": "Arm's Length"
-    },
-    "e2e9df76-a950-4b8b-b3d1-981624470657": {
-      "name": "State Champs"
-    },
-    "cd584ea0-0fc5-412b-8598-0244c4025af6": {
-      "name": "Boston Manor"
-    },
     "2cd302f3-d66a-421e-b6b8-2a8c2ca511c4": {
       "name": "Emma Ogier",
       "id": "emma-ogier"
-    },
-    "d8fd8d9b-473b-4f06-83c8-869b1bb9de89": {
-      "name": "Bryson Tiller",
-      "id": "bryson-tiller"
-    },
-    "abaa7001-0d80-4e58-be5d-d2d246fd9d87": {
-      "name": "Majid Jordan"
     },
     "fd87acc7-e0a0-4a45-bc2a-d2ab5c10be68": {
       "name": "Fontaines D.C.",
       "id": "fontaines-d-c"
     },
     "b4b5b5a7-feff-47d0-9458-83d0d135a692": {
-      "name": "Hayley Williams",
-      "id": "hayley-williams"
+      "name": "Hayley Williams"
     },
     "547e23af-e455-41dd-baae-a3b58e065d0c": {
       "name": "Damien Dempsey",
@@ -209,30 +201,6 @@
     },
     "1edead6d-6c01-4ad4-9cce-c334bf7edf23": {
       "name": "Tracy Byrd"
-    },
-    "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19": {
-      "name": "Post Malone",
-      "id": "post-malone"
-    },
-    "addb00fd-733c-4223-8fdf-f78be2488acd": {
-      "name": "Alesso"
-    },
-    "be7c80ee-1b03-4088-b20b-5915c7c5ad45": {
-      "name": "Sam Barber",
-      "id": "sam-barber"
-    },
-    "a87d28db-cf33-4cb6-9140-c4e0fe391368": {
-      "name": "Josiah and the Bonnevilles"
-    },
-    "c3012f96-f4eb-418a-8a02-3febccf95091": {
-      "name": "Dylan Gossett"
-    },
-    "5df62a88-cac9-490a-b62c-c7c88f4020f4": {
-      "name": "Doja Cat"
-    },
-    "355cc194-b8db-4af2-8678-c7ad54213f4b": {
-      "name": "Latto",
-      "id": "latto"
     },
     "7eb1ce54-a355-41f9-8d68-e018b096d427": {
       "name": "Harry Styles",
@@ -259,18 +227,50 @@
     "7c7f9c94-dee8-4903-892b-6cf44652e2de": {
       "name": "Tears for Fears"
     },
-    "9bd720ab-3aec-4ab0-b363-3a465ee65026": {
-      "name": "Annie DiRusso"
+    "5df62a88-cac9-490a-b62c-c7c88f4020f4": {
+      "name": "Doja Cat"
     },
-    "e160f589-dbe6-4b8f-88b5-f528ff4443b4": {
-      "name": "Mannequin Pussy"
+    "355cc194-b8db-4af2-8678-c7ad54213f4b": {
+      "name": "Latto",
+      "id": "latto"
     },
-    "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6": {
-      "name": "Koe Wetzel",
-      "id": "koe-wetzel"
+    "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19": {
+      "name": "Post Malone",
+      "id": "post-malone"
     },
-    "ba67b7da-cca7-4c3f-ba19-05349f0f7d97": {
-      "name": "Parker McCollum"
+    "addb00fd-733c-4223-8fdf-f78be2488acd": {
+      "name": "Alesso"
+    },
+    "be7c80ee-1b03-4088-b20b-5915c7c5ad45": {
+      "name": "Sam Barber",
+      "id": "sam-barber"
+    },
+    "a87d28db-cf33-4cb6-9140-c4e0fe391368": {
+      "name": "Josiah and the Bonnevilles"
+    },
+    "c3012f96-f4eb-418a-8a02-3febccf95091": {
+      "name": "Dylan Gossett"
+    },
+    "96855c21-b832-4366-ba12-0d2330c36a86": {
+      "name": "Phoebe Bridgers",
+      "id": "phoebe-bridgers"
+    },
+    "75a7274d-e9f1-4569-be5e-f590ab9ddb64": {
+      "name": "Christian Lee Hutson"
+    },
+    "945d3b69-27cd-45fa-b491-52553a63dead": {
+      "name": "Joyce Manor"
+    },
+    "3cdf1327-39eb-4ffe-9ce3-20599ac6a468": {
+      "name": "Tigers Jaw",
+      "id": "tigers-jaw"
+    },
+    "9abcc01c-dcf1-4d74-bc55-d81922157956": {
+      "name": "George Clanton"
+    },
+    "4163b62b-c043-4eb0-8af2-0e7e1362afa6": {
+      "name": "ESPRIT 空想",
+      "id": "esprit"
     },
     "11b34f7b-42d0-4d16-a96f-f47a517cca7d": {
       "name": "Return to Dust"
@@ -289,46 +289,18 @@
       "name": "Sidney Gish",
       "id": "sidney-gish"
     },
-    "c9ed3f0c-0f54-45a7-8255-92fb8fcd7c48": {
-      "name": "Harrison Whitford"
-    },
     "6b82c839-ea15-4d3b-96f1-d1be924e9cb7": {
       "name": "Hamilton Leithauser"
+    },
+    "d262ea27-3ffe-40f7-b922-85c42d625e67": {
+      "name": "Pitbull",
+      "id": "pitbull"
+    },
+    "a95384b1-6aec-468c-ae0d-8c6daf87c4c2": {
+      "name": "Lil Jon"
     }
   },
   "cosigns": [
-    {
-      "from": "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1",
-      "to": "cb9c2a2b-96c2-44d7-bd31-04ef87572b57",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 4,
-      "first": "2026-11-15",
-      "last": "2026-11-19",
-      "next": {
-        "tour": "Rod Wave: Don't Look Down Tour",
-        "date": "2026-11-15",
-        "city": "Sunrise",
-        "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZfq4"
-      }
-    },
-    {
-      "from": "2cd302f3-d66a-421e-b6b8-2a8c2ca511c4",
-      "to": "c9ed3f0c-0f54-45a7-8255-92fb8fcd7c48",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-11-15",
-      "last": "2026-11-15",
-      "next": {
-        "tour": "Emma Ogier",
-        "date": "2026-11-15",
-        "city": "Houston",
-        "url": "https://www.ticketmaster.com/emma-ogier-houston-texas-11-15-2026/event/3A00653ECB0C4A5C"
-      }
-    },
     {
       "from": "a0723a3c-4135-438e-85c5-012712144ede",
       "to": "7013c772-2236-42f3-8590-2e2292d2ca5e",
@@ -359,6 +331,22 @@
         "date": "2026-11-16",
         "city": "New York",
         "url": "https://www.ticketmaster.com/stella-lefty-new-york-new-york-11-16-2026/event/000064AECC0B67EF"
+      }
+    },
+    {
+      "from": "d262ea27-3ffe-40f7-b922-85c42d625e67",
+      "to": "a95384b1-6aec-468c-ae0d-8c6daf87c4c2",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 8,
+      "first": "2026-11-16",
+      "last": "2026-12-08",
+      "next": {
+        "tour": "Pitbull - I'm Back!",
+        "date": "2026-11-16",
+        "city": "Dortmund",
+        "url": "https://www.ticketmaster.de/event/pitbull-im-back-tickets/1060783160?language=en-us"
       }
     },
     {
@@ -410,6 +398,22 @@
       }
     },
     {
+      "from": "cb3d3e49-bf08-4cdb-bfa8-4dc7c458cea1",
+      "to": "cb9c2a2b-96c2-44d7-bd31-04ef87572b57",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 2,
+      "first": "2026-11-18",
+      "last": "2026-11-19",
+      "next": {
+        "tour": "Rod Wave: Don't Look Down Tour",
+        "date": "2026-11-18",
+        "city": "Atlanta",
+        "url": "https://www.ticketmaster.com/rod-wave-dont-look-down-tour-atlanta-georgia-11-18-2026/event/0E0064D01EE7C7F2"
+      }
+    },
+    {
       "from": "6b82c839-ea15-4d3b-96f1-d1be924e9cb7",
       "to": "2cd302f3-d66a-421e-b6b8-2a8c2ca511c4",
       "types": [
@@ -455,22 +459,6 @@
         "date": "2026-11-21",
         "city": "Nashville",
         "url": "https://www.ticketmaster.com/wyatt-flores-nashville-tennessee-11-21-2026/event/1B00646CA2A3BDC1"
-      }
-    },
-    {
-      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
-      "to": "9bd720ab-3aec-4ab0-b363-3a465ee65026",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 2,
-      "first": "2026-11-26",
-      "last": "2026-11-26",
-      "next": {
-        "tour": "\"The Hayley Williams Show\" (Numerado) ",
-        "date": "2026-11-26",
-        "city": "Ciudad de México",
-        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-numerado-ciudad-de-mexico-26-11-2026/event/3D0064A6A4695E8E"
       }
     },
     {
@@ -522,22 +510,6 @@
       }
     },
     {
-      "from": "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6",
-      "to": "ba67b7da-cca7-4c3f-ba19-05349f0f7d97",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 5,
-      "first": "2026-12-02",
-      "last": "2026-12-10",
-      "next": {
-        "tour": "Koe Wetzel and Parker McCollum (17 and Under Admitted with Parent or Guardian Only)",
-        "date": "2026-12-02",
-        "city": "Helotes",
-        "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAebQp"
-      }
-    },
-    {
       "from": "be7c80ee-1b03-4088-b20b-5915c7c5ad45",
       "to": "a87d28db-cf33-4cb6-9140-c4e0fe391368",
       "types": [
@@ -551,22 +523,6 @@
         "date": "2026-12-03",
         "city": "Saint Louis",
         "url": "https://www.ticketmaster.com/sam-barber-the-american-route-tour-saint-louis-missouri-12-03-2026/event/06006477AAD1ABC1"
-      }
-    },
-    {
-      "from": "ba67b7da-cca7-4c3f-ba19-05349f0f7d97",
-      "to": "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-12-03",
-      "last": "2026-12-03",
-      "next": {
-        "tour": "Naughty or Nice Tour",
-        "date": "2026-12-03",
-        "city": "Houston",
-        "url": "https://www.ticketmaster.com/naughty-or-nice-tour-houston-texas-12-03-2026/event/3A00653EB610ECA1"
       }
     },
     {
@@ -602,19 +558,35 @@
       }
     },
     {
-      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
-      "to": "e160f589-dbe6-4b8f-88b5-f528ff4443b4",
+      "from": "945d3b69-27cd-45fa-b491-52553a63dead",
+      "to": "3cdf1327-39eb-4ffe-9ce3-20599ac6a468",
       "types": [
         "upcoming"
       ],
-      "shows": 3,
-      "first": "2027-01-13",
-      "last": "2027-01-17",
+      "shows": 1,
+      "first": "2027-01-23",
+      "last": "2027-01-23",
       "next": {
-        "tour": "\"The Hayley Williams Show\"",
-        "date": "2027-01-13",
-        "city": "Ciudad de México",
-        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-ciudad-de-mexico-13-01-2027/event/3D0064BD97725384"
+        "tour": "Joyce Manor",
+        "date": "2027-01-23",
+        "city": "Inglewood",
+        "url": "https://www.ticketmaster.com/joyce-manor-inglewood-california-01-23-2027/event/090064F8E444D2E7"
+      }
+    },
+    {
+      "from": "9abcc01c-dcf1-4d74-bc55-d81922157956",
+      "to": "4163b62b-c043-4eb0-8af2-0e7e1362afa6",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2027-01-30",
+      "last": "2027-01-30",
+      "next": {
+        "tour": "George Clanton meets ESPRIT",
+        "date": "2027-01-30",
+        "city": "Los Angeles",
+        "url": "https://www.ticketmaster.com/george-clanton-meets-esprit-los-angeles-california-01-30-2027/event/090065441DB66657"
       }
     },
     {
