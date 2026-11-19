@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T07:03:22.278Z",
+  "generatedAt": "2026-11-19T07:51:36.196Z",
   "rule": "Top 5 cosigners of each roster artist, plus everyone in data/trending.json and data/rising.json (light pages)",
   "artists": [
     {
@@ -140,6 +140,7 @@
         "lastfm": "Justice"
       },
       "extended": true,
+      "trending": true,
       "cosignerOf": [
         "tame-impala"
       ]
@@ -191,7 +192,7 @@
         "lastfm": "Metric"
       },
       "caveats": {
-        "deezer": "Deezer page has 623 fans vs 3,028,013 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 623 fans vs 3,028,588 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "cosignerOf": [
@@ -279,7 +280,7 @@
         "lastfm": "Skrillex"
       },
       "caveats": {
-        "deezer": "Deezer page has 2 fans vs 3,085,105 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 2 fans vs 3,085,420 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "cosignerOf": [
@@ -386,7 +387,7 @@
         "lastfm": "Eyedress"
       },
       "caveats": {
-        "deezer": "Deezer page has 71 fans vs 2,378,550 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 71 fans vs 2,379,298 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "cosignerOf": [
@@ -527,7 +528,7 @@
         "lastfm": "JID"
       },
       "caveats": {
-        "deezer": "Deezer page has 3,681 fans vs 1,451,896 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 3,682 fans vs 1,452,147 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "cosignerOf": [
@@ -804,7 +805,7 @@
         "lastfm": "Totally Enormous Extinct Dinosaurs"
       },
       "caveats": {
-        "deezer": "Deezer page has 6 fans vs 457,757 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 6 fans vs 457,759 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "cosignerOf": [
@@ -876,7 +877,7 @@
         "lastfm": "Morgan Wallen"
       },
       "caveats": {
-        "deezer": "Deezer page has 1,153 fans vs 1,057,115 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 1,153 fans vs 1,057,484 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "trending": true,
@@ -948,19 +949,20 @@
       "cosignerOf": []
     },
     {
-      "id": "olivia-dean",
-      "name": "Olivia Dean",
+      "id": "noah-kahan",
+      "name": "Noah Kahan",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "15e0d608-0869-429b-898d-3d8db3ecedd5",
-        "wikidata": "Q108106738",
-        "spotify": "00x1fYSGhdqScXBRpSj3DW",
-        "deezer": "75659582",
-        "lastfm": "Olivia Dean"
+        "musicbrainz": "a2a3f910-b188-43e7-81d0-f1ac2a2f3e12",
+        "wikidata": "Q53832755",
+        "spotify": "2RQXRUsr4IW1f3mKyKsy4B",
+        "deezer": "11819131",
+        "lastfm": "Noah Kahan"
       },
       "extended": true,
       "trending": true,
+      "rising": true,
       "cosignerOf": []
     },
     {
@@ -980,20 +982,19 @@
       "cosignerOf": []
     },
     {
-      "id": "noah-kahan",
-      "name": "Noah Kahan",
+      "id": "olivia-dean",
+      "name": "Olivia Dean",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "a2a3f910-b188-43e7-81d0-f1ac2a2f3e12",
-        "wikidata": "Q53832755",
-        "spotify": "2RQXRUsr4IW1f3mKyKsy4B",
-        "deezer": "11819131",
-        "lastfm": "Noah Kahan"
+        "musicbrainz": "15e0d608-0869-429b-898d-3d8db3ecedd5",
+        "wikidata": "Q108106738",
+        "spotify": "00x1fYSGhdqScXBRpSj3DW",
+        "deezer": "75659582",
+        "lastfm": "Olivia Dean"
       },
       "extended": true,
       "trending": true,
-      "rising": true,
       "cosignerOf": []
     },
     {
@@ -1045,23 +1046,6 @@
       "cosignerOf": []
     },
     {
-      "id": "belly-gang-kushington",
-      "name": "Belly Gang Kushington",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "f3cb8059-add2-4bf9-a19e-5664588e30ba",
-        "wikidata": null,
-        "spotify": "7oHPIc7BYAIUhYFF6hSggI",
-        "deezer": "196349247",
-        "lastfm": "Belly Gang Kushington"
-      },
-      "extended": true,
-      "trending": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
       "id": "rod-wave",
       "name": "Rod Wave",
       "genre": null,
@@ -1072,6 +1056,22 @@
         "spotify": "45TgXXqMDdF8BkjA83OM7z",
         "deezer": "12919475",
         "lastfm": "Rod Wave"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "jhene-aiko",
+      "name": "Jhené Aiko",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "ceb3f5b7-9f1a-430f-afbe-976fdcf30482",
+        "wikidata": "Q15929781",
+        "spotify": "5ZS223C6JyBfXasXxrRqOk",
+        "deezer": "3841221",
+        "lastfm": "Jhené Aiko"
       },
       "extended": true,
       "trending": true,
@@ -1095,6 +1095,23 @@
       "cosignerOf": []
     },
     {
+      "id": "belly-gang-kushington",
+      "name": "Belly Gang Kushington",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "f3cb8059-add2-4bf9-a19e-5664588e30ba",
+        "wikidata": null,
+        "spotify": "7oHPIc7BYAIUhYFF6hSggI",
+        "deezer": "196349247",
+        "lastfm": "Belly Gang Kushington"
+      },
+      "extended": true,
+      "trending": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
       "id": "tate-mcrae",
       "name": "Tate McRae",
       "genre": null,
@@ -1111,22 +1128,6 @@
       "cosignerOf": []
     },
     {
-      "id": "jhene-aiko",
-      "name": "Jhené Aiko",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "ceb3f5b7-9f1a-430f-afbe-976fdcf30482",
-        "wikidata": "Q15929781",
-        "spotify": "5ZS223C6JyBfXasXxrRqOk",
-        "deezer": "3841221",
-        "lastfm": "Jhené Aiko"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
       "id": "youngboy-never-broke-again",
       "name": "YoungBoy Never Broke Again",
       "genre": null,
@@ -1137,6 +1138,38 @@
         "spotify": "7wlFDEWiM5OoIAt8RSli8b",
         "deezer": "11279454",
         "lastfm": "YoungBoy Never Broke Again"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "steve-lacy",
+      "name": "Steve Lacy",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
+        "wikidata": "Q56733980",
+        "spotify": "57vWImR43h4CaDao012Ofp",
+        "deezer": "65574",
+        "lastfm": "Steve Lacy"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "mariah-carey",
+      "name": "Mariah Carey",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "494e8d09-f85b-4543-892f-a5096aed1cd4",
+        "wikidata": "Q41076",
+        "spotify": "4iHNK0tOyZPYnBU7nGAgpQ",
+        "deezer": "65",
+        "lastfm": "Mariah Carey"
       },
       "extended": true,
       "trending": true,
@@ -1160,22 +1193,6 @@
       "cosignerOf": []
     },
     {
-      "id": "mariah-carey",
-      "name": "Mariah Carey",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "494e8d09-f85b-4543-892f-a5096aed1cd4",
-        "wikidata": "Q41076",
-        "spotify": "4iHNK0tOyZPYnBU7nGAgpQ",
-        "deezer": "65",
-        "lastfm": "Mariah Carey"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
       "id": "offset",
       "name": "Offset",
       "genre": null,
@@ -1186,22 +1203,6 @@
         "spotify": "4DdkRBBYG6Yk9Ka8tdJ9BW",
         "deezer": "68334",
         "lastfm": "Offset"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "babyface-ray",
-      "name": "Babyface Ray",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "d82481ab-4f2e-4fd7-af2f-9dbaa38704da",
-        "wikidata": "Q115098502",
-        "spotify": "3zZ88AwlTwfCJkowsFCvLA",
-        "deezer": "7973524",
-        "lastfm": "Babyface Ray"
       },
       "extended": true,
       "trending": true,
@@ -1240,54 +1241,6 @@
       "cosignerOf": []
     },
     {
-      "id": "westside-gunn",
-      "name": "Westside Gunn",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "9f42ba3d-3cfc-499c-ba16-7226f56b622f",
-        "wikidata": "Q27733794",
-        "spotify": "0ABk515kENDyATUdpCKVfW",
-        "deezer": "8323782",
-        "lastfm": "Westside Gunn"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "deftones",
-      "name": "Deftones",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "7527f6c2-d762-4b88-b5e2-9244f1e34c46",
-        "wikidata": "Q485039",
-        "spotify": "6Ghvu1VvMGScGpOUJBAHNH",
-        "deezer": "535",
-        "lastfm": "Deftones"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "steve-lacy",
-      "name": "Steve Lacy",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "b29020d6-5dbf-4c99-b16f-c009f8a712ff",
-        "wikidata": "Q56733980",
-        "spotify": "57vWImR43h4CaDao012Ofp",
-        "deezer": "65574",
-        "lastfm": "Steve Lacy"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
       "id": "ashe",
       "name": "Ashe",
       "genre": null,
@@ -1298,6 +1251,22 @@
         "spotify": "6P5NO5hzJbuOqSdyPB7SJM",
         "deezer": "1267252",
         "lastfm": "Ashe"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "babyface-ray",
+      "name": "Babyface Ray",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "d82481ab-4f2e-4fd7-af2f-9dbaa38704da",
+        "wikidata": "Q115098502",
+        "spotify": "3zZ88AwlTwfCJkowsFCvLA",
+        "deezer": "7973524",
+        "lastfm": "Babyface Ray"
       },
       "extended": true,
       "trending": true,
@@ -1320,6 +1289,22 @@
       "cosignerOf": []
     },
     {
+      "id": "westside-gunn",
+      "name": "Westside Gunn",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "9f42ba3d-3cfc-499c-ba16-7226f56b622f",
+        "wikidata": "Q27733794",
+        "spotify": "0ABk515kENDyATUdpCKVfW",
+        "deezer": "8323782",
+        "lastfm": "Westside Gunn"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
       "id": "snoh-aalegra",
       "name": "Snoh Aalegra",
       "genre": null,
@@ -1330,38 +1315,6 @@
         "spotify": "1A9o3Ljt67pFZ89YtPPL5X",
         "deezer": "6068162",
         "lastfm": "Snoh Aalegra"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "ariana-grande",
-      "name": "Ariana Grande",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
-        "wikidata": "Q151892",
-        "spotify": "66CXWjxzNUsdJxJ2JdwvnR",
-        "deezer": "1562681",
-        "lastfm": "Ariana Grande"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "mitski",
-      "name": "Mitski",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "fa58cf24-0e44-421d-8519-8bf461dcfaa5",
-        "wikidata": "Q23761694",
-        "spotify": "2uYWxilOVlUdk4oV9DvwqK",
-        "deezer": "6630050",
-        "lastfm": "Mitski"
       },
       "extended": true,
       "trending": true,
@@ -1400,70 +1353,6 @@
       "cosignerOf": []
     },
     {
-      "id": "sleepy-hallow",
-      "name": "Sleepy Hallow",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "13108baf-5129-47b5-a174-5f720012155a",
-        "wikidata": "Q98740205",
-        "spotify": "6EPlBSH2RSiettczlz7ihV",
-        "deezer": "14800995",
-        "lastfm": "Sleepy Hallow"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "beabadoobee",
-      "name": "beabadoobee",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "88d17133-abbc-42db-9526-4e2c1db60336",
-        "wikidata": "Q66817366",
-        "spotify": "35l9BRT7MXmM8bv2WDQiyB",
-        "deezer": "13499081",
-        "lastfm": "beabadoobee"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "summer-walker",
-      "name": "Summer Walker",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "9167f739-da47-4495-9d63-9c13b40114ac",
-        "wikidata": "Q61959478",
-        "spotify": "57LYzLEk2LcFghVwuWbcuS",
-        "deezer": "14482665",
-        "lastfm": "Summer Walker"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "clairo",
-      "name": "Clairo",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "d786f59b-1836-4ddb-8393-ab753edbe984",
-        "wikidata": "Q52433533",
-        "spotify": "3l0CmX0FuQjFxr8SK7Vqag",
-        "deezer": "11573699",
-        "lastfm": "Clairo"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
       "id": "kpop-demon-hunters-cast",
       "name": "KPop Demon Hunters Cast",
       "genre": null,
@@ -1496,16 +1385,48 @@
       "cosignerOf": []
     },
     {
-      "id": "the-marias",
-      "name": "The Marías",
+      "id": "sleepy-hallow",
+      "name": "Sleepy Hallow",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "7a3970c9-ecd8-4eee-a267-4d8c77d97ff3",
-        "wikidata": "Q85807852",
-        "spotify": "2sSGPbdZJkaSE2AbcGOACx",
-        "deezer": "12607183",
-        "lastfm": "The Marías"
+        "musicbrainz": "13108baf-5129-47b5-a174-5f720012155a",
+        "wikidata": "Q98740205",
+        "spotify": "6EPlBSH2RSiettczlz7ihV",
+        "deezer": "14800995",
+        "lastfm": "Sleepy Hallow"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "title-fight",
+      "name": "Title Fight",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "1154d345-8061-4d04-a52a-6214288523ac",
+        "wikidata": "Q1664881",
+        "spotify": "2CnhqfjUG0qzsru0SMuhrk",
+        "deezer": "389540",
+        "lastfm": "Title Fight"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "ariana-grande",
+      "name": "Ariana Grande",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+        "wikidata": "Q151892",
+        "spotify": "66CXWjxzNUsdJxJ2JdwvnR",
+        "deezer": "1562681",
+        "lastfm": "Ariana Grande"
       },
       "extended": true,
       "trending": true,
@@ -1524,39 +1445,23 @@
         "lastfm": "Kelly Clarkson"
       },
       "caveats": {
-        "deezer": "Deezer page has 69 fans vs 4,657,215 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 69 fans vs 4,658,058 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "trending": true,
       "cosignerOf": []
     },
     {
-      "id": "mac-demarco",
-      "name": "Mac DeMarco",
+      "id": "sleeping-with-sirens",
+      "name": "Sleeping With Sirens",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "f2492c31-54a8-4347-a1fc-f81f72873bbf",
-        "wikidata": "Q14517",
-        "spotify": "3Sz7ZnJQBIHsXLUSo0OQtM",
-        "deezer": "1619572",
-        "lastfm": "Mac DeMarco"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "panchiko",
-      "name": "Panchiko",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "8f64d6ea-3f6c-408c-b2e0-e5334b28dae9",
-        "wikidata": "Q85352042",
-        "spotify": "4KEHIUSoWCcqrk8AddTE1O",
-        "deezer": "86640422",
-        "lastfm": "Panchiko"
+        "musicbrainz": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
+        "wikidata": "Q1972270",
+        "spotify": "3N8Hy6xQnQv1F1XCiyGQqA",
+        "deezer": "389588",
+        "lastfm": "Sleeping With Sirens"
       },
       "extended": true,
       "trending": true,
@@ -1575,104 +1480,7 @@
         "lastfm": "SleepTherapy"
       },
       "caveats": {
-        "deezer": "Deezer page has 694 fans vs 87,935 Last.fm listeners: probably a duplicate page, so it's left out of the score."
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "alex-g",
-      "name": "Alex G",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "7545a8ca-a3c9-490f-93f9-68886dcddff1",
-        "wikidata": null,
-        "spotify": null,
-        "deezer": null,
-        "lastfm": "Alex G"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "stella-lefty",
-      "name": "STELLA LEFTY",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "e881b225-42b1-41d9-9d5e-eff55568585b",
-        "wikidata": "Q139917009",
-        "spotify": "6hp2uD84OrQ3u3ukmTjLz2",
-        "deezer": "181157207",
-        "lastfm": "Stella Lefty"
-      },
-      "extended": true,
-      "trending": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "cocteau-twins",
-      "name": "Cocteau Twins",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "000fc734-b7e1-4a01-92d1-f544261b43f5",
-        "wikidata": "Q588820",
-        "spotify": "5Wabl1lPdNOeIn0SQ5A1mp",
-        "deezer": "1041",
-        "lastfm": "Cocteau Twins"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "wiz-khalifa",
-      "name": "Wiz Khalifa",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "f5dfa020-ad69-41cd-b3d4-fd7af0414e94",
-        "wikidata": "Q117139",
-        "spotify": "137W8MRPWKqSmrBGDBFSop",
-        "deezer": "74804",
-        "lastfm": "Wiz Khalifa"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "u2",
-      "name": "U2",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432",
-        "wikidata": "Q396",
-        "spotify": "51Blml2LZPmy7TTiAg47vQ",
-        "deezer": "163",
-        "lastfm": "U2"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "boa",
-      "name": "bôa",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "ca1dcba2-792c-4550-abf2-7b45396e81ca",
-        "wikidata": "Q285481",
-        "spotify": "5jTtGLk1mGFMY5lQOvJYUj",
-        "deezer": "74211202",
-        "lastfm": "bôa"
+        "deezer": "Deezer page has 694 fans vs 87,944 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "trending": true,
@@ -1696,164 +1504,20 @@
       "cosignerOf": []
     },
     {
-      "id": "title-fight",
-      "name": "Title Fight",
+      "id": "stella-lefty",
+      "name": "STELLA LEFTY",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "1154d345-8061-4d04-a52a-6214288523ac",
-        "wikidata": "Q1664881",
-        "spotify": "2CnhqfjUG0qzsru0SMuhrk",
-        "deezer": "389540",
-        "lastfm": "Title Fight"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "bobby-helms",
-      "name": "Bobby Helms",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "502b3244-0f7d-470c-99e9-b17fe6bcaabf",
-        "wikidata": "Q888554",
-        "spotify": "38EmEgXkgK51MT2tPY0EoC",
-        "deezer": "16032",
-        "lastfm": "Bobby Helms"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "big-thief",
-      "name": "Big Thief",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "9f81247f-7f57-42f3-a8ba-75bef554e591",
-        "wikidata": "Q28228836",
-        "spotify": "5QdyldG4Fl4TPiOIeMNpBZ",
-        "deezer": "9829340",
-        "lastfm": "Big Thief"
+        "musicbrainz": "e881b225-42b1-41d9-9d5e-eff55568585b",
+        "wikidata": "Q139917009",
+        "spotify": "6hp2uD84OrQ3u3ukmTjLz2",
+        "deezer": "181157207",
+        "lastfm": "Stella Lefty"
       },
       "extended": true,
       "trending": true,
       "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "lin-manuel-miranda",
-      "name": "Lin‐Manuel Miranda",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "925c7673-0e85-410f-b7e4-d9705a7aa619",
-        "wikidata": "Q1646482",
-        "spotify": "4aXXDj9aZnlshx7mzj3W1N",
-        "deezer": "1545788",
-        "lastfm": "Lin‐Manuel Miranda"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "faye-webster",
-      "name": "Faye Webster",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "ce4a1c08-6912-423f-bf6c-97ce69f5e89f",
-        "wikidata": "Q64010780",
-        "spotify": "5szilpXHcwOqnyKLqGco5j",
-        "deezer": "5613564",
-        "lastfm": "Faye Webster"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "jack-harlow",
-      "name": "Jack Harlow",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "134cb0bc-06fa-42f7-8078-b0c858349975",
-        "wikidata": "Q59727812",
-        "spotify": "2LIk90788K0zvyj2JJVwkJ",
-        "deezer": "9093938",
-        "lastfm": "Jack Harlow"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "sleeping-with-sirens",
-      "name": "Sleeping With Sirens",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
-        "wikidata": "Q1972270",
-        "spotify": "3N8Hy6xQnQv1F1XCiyGQqA",
-        "deezer": "389588",
-        "lastfm": "Sleeping With Sirens"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "chevelle",
-      "name": "Chevelle",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "8456e9f7-debf-4579-a86c-33a325a35d2d",
-        "wikidata": "Q1070944",
-        "spotify": "56dO9zeHKuU5Gvfc2kxHNw",
-        "deezer": "1328",
-        "lastfm": "Chevelle"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "whiskey-myers",
-      "name": "Whiskey Myers",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "921e6603-320c-4dde-8611-3049332d2b61",
-        "wikidata": "Q7993887",
-        "spotify": "26opZSJcXshCmCwxgZQmBc",
-        "deezer": "468976",
-        "lastfm": "Whiskey Myers"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "pooh-shiesty",
-      "name": "Pooh Shiesty",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "82cc5b8b-22e8-48e3-9f97-6ab39ac316d6",
-        "wikidata": "Q105105274",
-        "spotify": "5F1aAS1duwlzExnPs3l2Xe",
-        "deezer": "61799192",
-        "lastfm": "Pooh Shiesty"
-      },
-      "extended": true,
-      "trending": true,
       "cosignerOf": []
     },
     {
@@ -1873,16 +1537,16 @@
       "cosignerOf": []
     },
     {
-      "id": "kings-of-leon",
-      "name": "Kings of Leon",
+      "id": "wiz-khalifa",
+      "name": "Wiz Khalifa",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "6ffb8ea9-2370-44d8-b678-e9237bbd347b",
-        "wikidata": "Q192486",
-        "spotify": "2qk9voo8llSGYcZ6xrBzKx",
-        "deezer": "385",
-        "lastfm": "Kings of Leon"
+        "musicbrainz": "f5dfa020-ad69-41cd-b3d4-fd7af0414e94",
+        "wikidata": "Q117139",
+        "spotify": "137W8MRPWKqSmrBGDBFSop",
+        "deezer": "74804",
+        "lastfm": "Wiz Khalifa"
       },
       "extended": true,
       "trending": true,
@@ -1906,6 +1570,22 @@
       "cosignerOf": []
     },
     {
+      "id": "summer-walker",
+      "name": "Summer Walker",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "9167f739-da47-4495-9d63-9c13b40114ac",
+        "wikidata": "Q61959478",
+        "spotify": "57LYzLEk2LcFghVwuWbcuS",
+        "deezer": "14482665",
+        "lastfm": "Summer Walker"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
       "id": "the-living-tombstone",
       "name": "The Living Tombstone",
       "genre": null,
@@ -1922,87 +1602,32 @@
       "cosignerOf": []
     },
     {
-      "id": "partynextdoor",
-      "name": "PARTYNEXTDOOR",
+      "id": "lin-manuel-miranda",
+      "name": "Lin‐Manuel Miranda",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "f23ef341-33bd-47c1-b83c-846a78581f05",
-        "wikidata": "Q15929398",
-        "spotify": "2HPaUgqeutzr3jx5a9WyDV",
-        "deezer": "4925172",
-        "lastfm": "PARTYNEXTDOOR"
+        "musicbrainz": "925c7673-0e85-410f-b7e4-d9705a7aa619",
+        "wikidata": "Q1646482",
+        "spotify": "4aXXDj9aZnlshx7mzj3W1N",
+        "deezer": "1545788",
+        "lastfm": "Lin‐Manuel Miranda"
       },
       "extended": true,
       "trending": true,
       "cosignerOf": []
     },
     {
-      "id": "adrianne-lenker",
-      "name": "Adrianne Lenker",
+      "id": "u2",
+      "name": "U2",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "763cb144-afdb-471e-bd86-d4f5b9b58641",
-        "wikidata": "Q64875564",
-        "spotify": "4aKWmkWAKviFlyvHYPTNQY",
-        "deezer": "1278345",
-        "lastfm": "Adrianne Lenker"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "bryson-tiller",
-      "name": "Bryson Tiller",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "d8fd8d9b-473b-4f06-83c8-869b1bb9de89",
-        "wikidata": "Q21066641",
-        "spotify": "2EMAnMvWE2eb56ToJVfCWs",
-        "deezer": "341718001",
-        "lastfm": "Bryson Tiller"
-      },
-      "caveats": {
-        "deezer": "Deezer page has 12 fans vs 1,819,586 Last.fm listeners: probably a duplicate page, so it's left out of the score."
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "tiffany-day",
-      "name": "Tiffany Day",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "c9e3089c-a7bc-4df5-80f9-9161eaa74a02",
-        "wikidata": "Q139037843",
-        "spotify": "5D5Qbe1lf3aMnLsPSzXItu",
-        "deezer": "14582191",
-        "lastfm": "Tiffany Day"
-      },
-      "caveats": {
-        "deezer": "Deezer page has 3,443 fans vs 534,508 Last.fm listeners: probably a duplicate page, so it's left out of the score."
-      },
-      "extended": true,
-      "trending": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "phoebe-bridgers",
-      "name": "Phoebe Bridgers",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "96855c21-b832-4366-ba12-0d2330c36a86",
-        "wikidata": "Q24883319",
-        "spotify": "1r1uxoy19fzMxunt3ONAkG",
-        "deezer": "1058631",
-        "lastfm": "Phoebe Bridgers"
+        "musicbrainz": "a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432",
+        "wikidata": "Q396",
+        "spotify": "51Blml2LZPmy7TTiAg47vQ",
+        "deezer": "163",
+        "lastfm": "U2"
       },
       "extended": true,
       "trending": true,
@@ -2021,11 +1646,27 @@
         "lastfm": "Snow Strippers"
       },
       "caveats": {
-        "deezer": "Deezer page has 10,212 fans vs 1,055,180 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 10,219 fans vs 1,055,754 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "trending": true,
       "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "jack-harlow",
+      "name": "Jack Harlow",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "134cb0bc-06fa-42f7-8078-b0c858349975",
+        "wikidata": "Q59727812",
+        "spotify": "2LIk90788K0zvyj2JJVwkJ",
+        "deezer": "9093938",
+        "lastfm": "Jack Harlow"
+      },
+      "extended": true,
+      "trending": true,
       "cosignerOf": []
     },
     {
@@ -2046,129 +1687,48 @@
       "cosignerOf": []
     },
     {
-      "id": "rylo-rodriguez",
-      "name": "Rylo Rodriguez",
+      "id": "pooh-shiesty",
+      "name": "Pooh Shiesty",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "1c4b484c-746c-48b8-88b2-40f09e15159d",
-        "wikidata": "Q107709831",
-        "spotify": "0gg11prPP6OqtUvBcKnPpq",
-        "deezer": "13585687",
-        "lastfm": "Rylo Rodriguez"
-      },
-      "extended": true,
-      "trending": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "car-seat-headrest",
-      "name": "Car Seat Headrest",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "0fabbc1d-8d94-4a61-bd1d-1099ad1e4559",
-        "wikidata": "Q22080761",
-        "spotify": "5PbpKlxQE0Ktl5lcNABoFf",
-        "deezer": "7020467",
-        "lastfm": "Car Seat Headrest"
+        "musicbrainz": "82cc5b8b-22e8-48e3-9f97-6ab39ac316d6",
+        "wikidata": "Q105105274",
+        "spotify": "5F1aAS1duwlzExnPs3l2Xe",
+        "deezer": "61799192",
+        "lastfm": "Pooh Shiesty"
       },
       "extended": true,
       "trending": true,
       "cosignerOf": []
     },
     {
-      "id": "benny-the-butcher",
-      "name": "Benny the Butcher",
+      "id": "dance-gavin-dance",
+      "name": "Dance Gavin Dance",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "8ffb6b8e-3933-4f93-b315-8f5293b1b350",
-        "wikidata": "Q66584231",
-        "spotify": "5Matrg5du62bXwer29cU5T",
-        "deezer": "13431867",
-        "lastfm": "Benny the Butcher"
+        "musicbrainz": "16456fed-c9f2-4adf-b6ea-97b648c474d2",
+        "wikidata": "Q3013333",
+        "spotify": "6guC9FqvlVboSKTI77NG2k",
+        "deezer": "72709",
+        "lastfm": "Dance Gavin Dance"
       },
       "extended": true,
       "trending": true,
       "cosignerOf": []
     },
     {
-      "id": "julia-wolf",
-      "name": "Julia Wolf",
+      "id": "whiskey-myers",
+      "name": "Whiskey Myers",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "b89456e0-cf8d-4a29-baed-4b2d1fe3ef6a",
-        "wikidata": null,
-        "spotify": null,
-        "deezer": null,
-        "lastfm": "Julia Wolf"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "harry-styles",
-      "name": "Harry Styles",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "7eb1ce54-a355-41f9-8d68-e018b096d427",
-        "wikidata": "Q3626966",
-        "spotify": "6KImCVD70vtIoJWnq6nGn3",
-        "deezer": "5313805",
-        "lastfm": "Harry Styles"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "cody-johnson",
-      "name": "Cody Johnson",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "faabeed5-3dd0-4be5-aec5-e6486e68db2f",
-        "wikidata": "Q17916913",
-        "spotify": "6zLBxLdl60ekBLpawtT63I",
-        "deezer": "883421",
-        "lastfm": "Cody Johnson"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "frank-ocean",
-      "name": "Frank Ocean",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "e520459c-dff4-491d-a6e4-c97be35e0044",
-        "wikidata": "Q357645",
-        "spotify": "2h93pZq0e7k5yf4dywlkpM",
-        "deezer": "1350335",
-        "lastfm": "Frank Ocean"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "ayesha-erotica",
-      "name": "Ayesha Erotica",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "de5d7601-f6fa-4efa-ae3f-7005a2b89a1b",
-        "wikidata": "Q123092357",
-        "spotify": "7M5pDtJpCdnftEQZtczYco",
-        "deezer": "11143826",
-        "lastfm": "Ayesha Erotica"
+        "musicbrainz": "921e6603-320c-4dde-8611-3049332d2b61",
+        "wikidata": "Q7993887",
+        "spotify": "26opZSJcXshCmCwxgZQmBc",
+        "deezer": "468976",
+        "lastfm": "Whiskey Myers"
       },
       "extended": true,
       "trending": true,
@@ -2191,16 +1751,32 @@
       "cosignerOf": []
     },
     {
-      "id": "dean-blunt",
-      "name": "Dean Blunt",
+      "id": "ayesha-erotica",
+      "name": "Ayesha Erotica",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "a279f977-9f70-4e06-b86c-0a438810eefb",
-        "wikidata": null,
-        "spotify": null,
-        "deezer": null,
-        "lastfm": "Dean Blunt"
+        "musicbrainz": "de5d7601-f6fa-4efa-ae3f-7005a2b89a1b",
+        "wikidata": "Q123092357",
+        "spotify": "7M5pDtJpCdnftEQZtczYco",
+        "deezer": "11143826",
+        "lastfm": "Ayesha Erotica"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "bobby-helms",
+      "name": "Bobby Helms",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "502b3244-0f7d-470c-99e9-b17fe6bcaabf",
+        "wikidata": "Q888554",
+        "spotify": "38EmEgXkgK51MT2tPY0EoC",
+        "deezer": "16032",
+        "lastfm": "Bobby Helms"
       },
       "extended": true,
       "trending": true,
@@ -2223,48 +1799,32 @@
       "cosignerOf": []
     },
     {
-      "id": "post-malone",
-      "name": "Post Malone",
+      "id": "partynextdoor",
+      "name": "PARTYNEXTDOOR",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19",
-        "wikidata": "Q21621919",
-        "spotify": "246dkjvS1zLTtiykXe5h60",
-        "deezer": "7543848",
-        "lastfm": "Post Malone"
+        "musicbrainz": "f23ef341-33bd-47c1-b83c-846a78581f05",
+        "wikidata": "Q15929398",
+        "spotify": "2HPaUgqeutzr3jx5a9WyDV",
+        "deezer": "4925172",
+        "lastfm": "PARTYNEXTDOOR"
       },
       "extended": true,
       "trending": true,
       "cosignerOf": []
     },
     {
-      "id": "superheaven",
-      "name": "Superheaven",
+      "id": "kings-of-leon",
+      "name": "Kings of Leon",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "16f7e748-59b4-4705-959c-9276be0ebf6a",
-        "wikidata": "Q19881990",
-        "spotify": "1IHjrY7ygKbmLVoUV1VcXc",
-        "deezer": "6139052",
-        "lastfm": "Superheaven"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "michael-buble",
-      "name": "Michael Bublé",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "611700cf-27f0-4dc9-ae80-c513a767853e",
-        "wikidata": "Q153694",
-        "spotify": "1GxkXlMwML1oSg5eLPiAz3",
-        "deezer": "1478",
-        "lastfm": "Michael Bublé"
+        "musicbrainz": "6ffb8ea9-2370-44d8-b678-e9237bbd347b",
+        "wikidata": "Q192486",
+        "spotify": "2qk9voo8llSGYcZ6xrBzKx",
+        "deezer": "385",
+        "lastfm": "Kings of Leon"
       },
       "extended": true,
       "trending": true,
@@ -2287,6 +1847,302 @@
       "cosignerOf": []
     },
     {
+      "id": "bryson-tiller",
+      "name": "Bryson Tiller",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "d8fd8d9b-473b-4f06-83c8-869b1bb9de89",
+        "wikidata": "Q21066641",
+        "spotify": "2EMAnMvWE2eb56ToJVfCWs",
+        "deezer": "341718001",
+        "lastfm": "Bryson Tiller"
+      },
+      "caveats": {
+        "deezer": "Deezer page has 12 fans vs 1,819,983 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "machine-girl",
+      "name": "Machine Girl",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "c7df5ec5-380a-40f9-856f-28fb4a33d946",
+        "wikidata": "Q105038535",
+        "spotify": "17Vw9uuOYB7XYjPt0LNFN0",
+        "deezer": "151688",
+        "lastfm": "Machine Girl"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "rylo-rodriguez",
+      "name": "Rylo Rodriguez",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "1c4b484c-746c-48b8-88b2-40f09e15159d",
+        "wikidata": "Q107709831",
+        "spotify": "0gg11prPP6OqtUvBcKnPpq",
+        "deezer": "13585687",
+        "lastfm": "Rylo Rodriguez"
+      },
+      "extended": true,
+      "trending": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "yeule",
+      "name": "yeule",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "31da7b06-bc30-4a1f-9f4a-c2ac1a84167f",
+        "wikidata": "Q85816703",
+        "spotify": "1WZarnZpWEv7dDtjAETt4X",
+        "deezer": "10877874",
+        "lastfm": "yeule"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "phoebe-bridgers",
+      "name": "Phoebe Bridgers",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "96855c21-b832-4366-ba12-0d2330c36a86",
+        "wikidata": "Q24883319",
+        "spotify": "1r1uxoy19fzMxunt3ONAkG",
+        "deezer": "1058631",
+        "lastfm": "Phoebe Bridgers"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "kero-kero-bonito",
+      "name": "Kero Kero Bonito",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "5e284bdc-3774-41dc-b5e2-b125d0349acf",
+        "wikidata": "Q19370850",
+        "spotify": "6OqhFYFJDnBBHas02HopPT",
+        "deezer": "4673985",
+        "lastfm": "Kero Kero Bonito"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "cody-johnson",
+      "name": "Cody Johnson",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "faabeed5-3dd0-4be5-aec5-e6486e68db2f",
+        "wikidata": "Q17916913",
+        "spotify": "6zLBxLdl60ekBLpawtT63I",
+        "deezer": "883421",
+        "lastfm": "Cody Johnson"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "lemon-demon",
+      "name": "Lemon Demon",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "6b014cfd-4927-4187-a741-715998e6d785",
+        "wikidata": "Q19830585",
+        "spotify": "4llAOeA6kEF4ytaB2fsmcW",
+        "deezer": "4579",
+        "lastfm": "Lemon Demon"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "harry-styles",
+      "name": "Harry Styles",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "7eb1ce54-a355-41f9-8d68-e018b096d427",
+        "wikidata": "Q3626966",
+        "spotify": "6KImCVD70vtIoJWnq6nGn3",
+        "deezer": "5313805",
+        "lastfm": "Harry Styles"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "kmfdm",
+      "name": "KMFDM",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "45074d7c-5307-44a8-854f-ae072e1622ae",
+        "wikidata": "Q1351424",
+        "spotify": "3V4IvzRQYP5mzuVtkcHgVa",
+        "deezer": "2109",
+        "lastfm": "KMFDM"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "frank-ocean",
+      "name": "Frank Ocean",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "e520459c-dff4-491d-a6e4-c97be35e0044",
+        "wikidata": "Q357645",
+        "spotify": "2h93pZq0e7k5yf4dywlkpM",
+        "deezer": "1350335",
+        "lastfm": "Frank Ocean"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "benny-the-butcher",
+      "name": "Benny the Butcher",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "8ffb6b8e-3933-4f93-b315-8f5293b1b350",
+        "wikidata": "Q66584231",
+        "spotify": "5Matrg5du62bXwer29cU5T",
+        "deezer": "13431867",
+        "lastfm": "Benny the Butcher"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "bassvictim",
+      "name": "bassvictim",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "4de1756c-e988-4f9f-87bf-bae46f56fefe",
+        "wikidata": "Q138058344",
+        "spotify": "7f8ydynRRnrJBqWxevKLcM",
+        "deezer": "247998312",
+        "lastfm": "bassvictim"
+      },
+      "caveats": {
+        "deezer": "Deezer page has 2,906 fans vs 364,405 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+      },
+      "extended": true,
+      "trending": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "post-malone",
+      "name": "Post Malone",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19",
+        "wikidata": "Q21621919",
+        "spotify": "246dkjvS1zLTtiykXe5h60",
+        "deezer": "7543848",
+        "lastfm": "Post Malone"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "mom-jeans",
+      "name": "Mom Jeans.",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "65e60a4a-4e52-48b3-ade4-bdfed2c94b3e",
+        "wikidata": "Q48799368",
+        "spotify": "6PsktPFR0UZptKdSqmlS5h",
+        "deezer": "13336375",
+        "lastfm": "Mom Jeans."
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "anderson-paak",
+      "name": "Anderson .Paak",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "d02dd67e-f655-4600-bc47-f789f59e7367",
+        "wikidata": "Q20810369",
+        "spotify": "3jK9MiCrA42lLAdMGUZpwa",
+        "deezer": "6474027",
+        "lastfm": "Anderson .Paak"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "michael-buble",
+      "name": "Michael Bublé",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "611700cf-27f0-4dc9-ae80-c513a767853e",
+        "wikidata": "Q153694",
+        "spotify": "1GxkXlMwML1oSg5eLPiAz3",
+        "deezer": "1478",
+        "lastfm": "Michael Bublé"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "daine",
+      "name": "daine",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "071188f7-fa27-4df5-8704-5e6a55644f7e",
+        "wikidata": null,
+        "spotify": "4lyCoxLN0aW7nJy5rec0tG",
+        "deezer": "6947857",
+        "lastfm": "daine"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
       "id": "kodak-black",
       "name": "Kodak Black",
       "genre": null,
@@ -2303,16 +2159,32 @@
       "cosignerOf": []
     },
     {
-      "id": "black-box-recorder",
-      "name": "Black Box Recorder",
+      "id": "tinashe",
+      "name": "Tinashe",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "49302df8-9e4f-42ed-8a9c-5d6f8d6cb83c",
-        "wikidata": "Q442456",
-        "spotify": "6Hd3xhv1sj3rlojjvGLkGR",
-        "deezer": "1916",
-        "lastfm": "Black Box Recorder"
+        "musicbrainz": "396a9525-0994-4542-b480-c4587feeb476",
+        "wikidata": "Q434745",
+        "spotify": "0NIIxcxNHmOoyBx03SfTCD",
+        "deezer": "345052",
+        "lastfm": "Tinashe"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "sleep-token",
+      "name": "Sleep Token",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "775ad383-ac2d-479a-af9d-b561442cb749",
+        "wikidata": "Q96405837",
+        "spotify": "2n2RSaZqBuUUukhbLlpnE6",
+        "deezer": "11025166",
+        "lastfm": "Sleep Token"
       },
       "extended": true,
       "trending": true,
@@ -2336,100 +2208,32 @@
       "cosignerOf": []
     },
     {
-      "id": "anderson-paak",
-      "name": "Anderson .Paak",
+      "id": "hayley-williams",
+      "name": "Hayley Williams",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "d02dd67e-f655-4600-bc47-f789f59e7367",
-        "wikidata": "Q20810369",
-        "spotify": "3jK9MiCrA42lLAdMGUZpwa",
-        "deezer": "6474027",
-        "lastfm": "Anderson .Paak"
+        "musicbrainz": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
+        "wikidata": "Q201562",
+        "spotify": "6Rx1JKzBrSzoKQtmbVmBnM",
+        "deezer": "281737",
+        "lastfm": "Hayley Williams"
       },
       "extended": true,
       "trending": true,
       "cosignerOf": []
     },
     {
-      "id": "kero-kero-bonito",
-      "name": "Kero Kero Bonito",
+      "id": "jamie-paige",
+      "name": "Jamie Paige",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "5e284bdc-3774-41dc-b5e2-b125d0349acf",
-        "wikidata": "Q19370850",
-        "spotify": "6OqhFYFJDnBBHas02HopPT",
-        "deezer": "4673985",
-        "lastfm": "Kero Kero Bonito"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "the-killers",
-      "name": "The Killers",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "95e1ead9-4d31-4808-a7ac-32c3614c116b",
-        "wikidata": "Q220730",
-        "spotify": "0C0XlULifJtAgn6ZNCW2eu",
-        "deezer": "897",
-        "lastfm": "The Killers"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "the-long-faces",
-      "name": "The Long Faces",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "18dab8ad-3d93-46aa-b153-2f22772ea5bc",
-        "wikidata": null,
-        "spotify": "1DhiWyne1hHwVHTti49o40",
-        "deezer": "13682985",
-        "lastfm": "The Long Faces"
-      },
-      "caveats": {
-        "deezer": "Deezer page has 3,791 fans vs 562,741 Last.fm listeners: probably a duplicate page, so it's left out of the score."
-      },
-      "extended": true,
-      "trending": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "tomorrow-x-together",
-      "name": "TOMORROW X TOGETHER",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "9d027d72-790e-40ec-bbb7-61aa613457de",
-        "wikidata": "Q60550265",
-        "spotify": "0ghlgldX5Dd6720Q3qFyQB",
-        "deezer": "60552072",
-        "lastfm": "TOMORROW X TOGETHER"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "kmfdm",
-      "name": "KMFDM",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "45074d7c-5307-44a8-854f-ae072e1622ae",
-        "wikidata": "Q1351424",
-        "spotify": "3V4IvzRQYP5mzuVtkcHgVa",
-        "deezer": "2109",
-        "lastfm": "KMFDM"
+        "musicbrainz": "de2c3324-30c6-45f7-9136-08a5bb66bc2c",
+        "wikidata": "Q133729069",
+        "spotify": "790JtoMXsEVQqzkerV3xuf",
+        "deezer": "14340979",
+        "lastfm": "Jamie Paige"
       },
       "extended": true,
       "trending": true,
@@ -2452,164 +2256,16 @@
       "cosignerOf": []
     },
     {
-      "id": "bassvictim",
-      "name": "bassvictim",
+      "id": "the-killers",
+      "name": "The Killers",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "4de1756c-e988-4f9f-87bf-bae46f56fefe",
-        "wikidata": "Q138058344",
-        "spotify": "7f8ydynRRnrJBqWxevKLcM",
-        "deezer": "247998312",
-        "lastfm": "bassvictim"
-      },
-      "caveats": {
-        "deezer": "Deezer page has 2,899 fans vs 364,002 Last.fm listeners: probably a duplicate page, so it's left out of the score."
-      },
-      "extended": true,
-      "trending": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "chris-stapleton",
-      "name": "Chris Stapleton",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "71d58182-aa37-4c04-b21a-efe46ea0f221",
-        "wikidata": "Q5108148",
-        "spotify": "4YLtscXsxbVgi031ovDDdh",
-        "deezer": "343290",
-        "lastfm": "Chris Stapleton"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "mom-jeans",
-      "name": "Mom Jeans.",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "65e60a4a-4e52-48b3-ade4-bdfed2c94b3e",
-        "wikidata": "Q48799368",
-        "spotify": "6PsktPFR0UZptKdSqmlS5h",
-        "deezer": "13336375",
-        "lastfm": "Mom Jeans."
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "chris-brown",
-      "name": "Chris Brown",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "c234fa42-e6a6-443e-937e-2f4b073538a3",
-        "wikidata": "Q155700",
-        "spotify": "7bXgB6jMjp9ATFy66eO08Z",
-        "deezer": "102",
-        "lastfm": "Chris Brown"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "rochelle-jordan",
-      "name": "Rochelle Jordan",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "0e0d5912-4026-47ef-be1c-c876c7108dd2",
-        "wikidata": "Q111372038",
-        "spotify": "3MM3uKNdJbvefUael12dl3",
-        "deezer": "6240880",
-        "lastfm": "Rochelle Jordan"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "mac-miller",
-      "name": "Mac Miller",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "a0e8a1b1-5f8f-475a-a253-17415c17d0ff",
-        "wikidata": "Q324726",
-        "spotify": "4LLpKhyESsyAXpc4laK94U",
-        "deezer": "632926",
-        "lastfm": "Mac Miller"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "hum",
-      "name": "Hum",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "04c5ca8a-4afa-4031-aced-6357440dbc25",
-        "wikidata": "Q2839847",
-        "spotify": "6sM2JCBjZprP7JLMTZZSxX",
-        "deezer": "10736",
-        "lastfm": "Hum"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "dj-khaled",
-      "name": "DJ Khaled",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "081a2d60-9791-4e05-a075-f1890355eeee",
-        "wikidata": "Q80805",
-        "spotify": "0QHgL1lAIqAw0HtD7YldmP",
-        "deezer": "5828",
-        "lastfm": "DJ Khaled"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "sleep-token",
-      "name": "Sleep Token",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "775ad383-ac2d-479a-af9d-b561442cb749",
-        "wikidata": "Q96405837",
-        "spotify": "2n2RSaZqBuUUukhbLlpnE6",
-        "deezer": "11025166",
-        "lastfm": "Sleep Token"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "tinashe",
-      "name": "Tinashe",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "396a9525-0994-4542-b480-c4587feeb476",
-        "wikidata": "Q434745",
-        "spotify": "0NIIxcxNHmOoyBx03SfTCD",
-        "deezer": "345052",
-        "lastfm": "Tinashe"
+        "musicbrainz": "95e1ead9-4d31-4808-a7ac-32c3614c116b",
+        "wikidata": "Q220730",
+        "spotify": "0C0XlULifJtAgn6ZNCW2eu",
+        "deezer": "897",
+        "lastfm": "The Killers"
       },
       "extended": true,
       "trending": true,
@@ -2633,32 +2289,35 @@
       "cosignerOf": []
     },
     {
-      "id": "lil-durk",
-      "name": "Lil Durk",
+      "id": "vince-guaraldi-trio",
+      "name": "Vince Guaraldi Trio",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "c9cd225b-4883-428e-82c2-73e0b6282fb6",
-        "wikidata": "Q2899818",
-        "spotify": "3hcs9uc56yIGFCSy9leWe7",
-        "deezer": "3977201",
-        "lastfm": "Lil Durk"
+        "musicbrainz": "744b52c8-509b-4451-abfd-a17d18d4bd1d",
+        "wikidata": null,
+        "spotify": "4ytkhMSAnrDP8XzRNlw9FS",
+        "deezer": "7471",
+        "lastfm": "Vince Guaraldi Trio"
+      },
+      "caveats": {
+        "deezer": "Deezer page has 11,945 fans vs 1,287,010 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "trending": true,
       "cosignerOf": []
     },
     {
-      "id": "jeezy",
-      "name": "Jeezy",
+      "id": "mac-miller",
+      "name": "Mac Miller",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "dcad99e7-3c3e-4c78-bf8a-68203e17da48",
-        "wikidata": "Q342447",
-        "spotify": "4yBK75WVCQXej1p04GWqxH",
-        "deezer": "1338623",
-        "lastfm": "Jeezy"
+        "musicbrainz": "a0e8a1b1-5f8f-475a-a253-17415c17d0ff",
+        "wikidata": "Q324726",
+        "spotify": "4LLpKhyESsyAXpc4laK94U",
+        "deezer": "632926",
+        "lastfm": "Mac Miller"
       },
       "extended": true,
       "trending": true,
@@ -2681,16 +2340,16 @@
       "cosignerOf": []
     },
     {
-      "id": "fuerza-regida",
-      "name": "Fuerza Regida",
+      "id": "gracie-abrams",
+      "name": "Gracie Abrams",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "e665ce26-6ce9-4c42-8f6a-7a361a0ba328",
-        "wikidata": "Q118466501",
-        "spotify": "0ys2OFYzWYB5hRDLCsBqxt",
-        "deezer": "13916083",
-        "lastfm": "Fuerza Regida"
+        "musicbrainz": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
+        "wikidata": "Q106301562",
+        "spotify": "4tuJ0bMpJh08umKkEXKUI5",
+        "deezer": "64874492",
+        "lastfm": "Gracie Abrams"
       },
       "extended": true,
       "trending": true,
@@ -2713,67 +2372,35 @@
       "cosignerOf": []
     },
     {
-      "id": "the-ronettes",
-      "name": "The Ronettes",
+      "id": "chris-stapleton",
+      "name": "Chris Stapleton",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "393e5448-896f-43e9-b80b-4ee58e1e71a4",
-        "wikidata": "Q530886",
-        "spotify": "7CyeXFnOrfC1N6z4naIpgo",
-        "deezer": "2334",
-        "lastfm": "The Ronettes"
+        "musicbrainz": "71d58182-aa37-4c04-b21a-efe46ea0f221",
+        "wikidata": "Q5108148",
+        "spotify": "4YLtscXsxbVgi031ovDDdh",
+        "deezer": "343290",
+        "lastfm": "Chris Stapleton"
       },
       "extended": true,
       "trending": true,
       "cosignerOf": []
     },
     {
-      "id": "a-heartwell-ending",
-      "name": "A Heartwell Ending",
+      "id": "latto",
+      "name": "Latto",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "6eaccab1-e6b0-42f3-87ee-6163d6f662dc",
-        "wikidata": null,
-        "spotify": "0F7x26QGWIimVu4XnOiXkA",
-        "deezer": null,
-        "lastfm": "A Heartwell Ending"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "vince-guaraldi-trio",
-      "name": "Vince Guaraldi Trio",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "744b52c8-509b-4451-abfd-a17d18d4bd1d",
-        "wikidata": null,
-        "spotify": "4ytkhMSAnrDP8XzRNlw9FS",
-        "deezer": "7471",
-        "lastfm": "Vince Guaraldi Trio"
+        "musicbrainz": "355cc194-b8db-4af2-8678-c7ad54213f4b",
+        "wikidata": "Q65029930",
+        "spotify": "3MdXrJWsbVzdn6fe5JYkSQ",
+        "deezer": "223069705",
+        "lastfm": "Latto"
       },
       "caveats": {
-        "deezer": "Deezer page has 11,943 fans vs 1,286,715 Last.fm listeners: probably a duplicate page, so it's left out of the score."
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "wham",
-      "name": "Wham!",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "d570bb31-b9ca-45a4-a2d9-11b186d9c159",
-        "wikidata": "Q744087",
-        "spotify": "5lpH0xAS4fVfLkACg9DAuM",
-        "deezer": "216",
-        "lastfm": "Wham!"
+        "deezer": "Deezer page has 22 fans vs 1,000,429 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "trending": true,
@@ -2792,23 +2419,87 @@
         "lastfm": "The Hellp"
       },
       "caveats": {
-        "deezer": "Deezer page has 2,726 fans vs 482,096 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 2,728 fans vs 482,570 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "trending": true,
       "cosignerOf": []
     },
     {
-      "id": "clarion",
-      "name": "Clarion",
+      "id": "dj-khaled",
+      "name": "DJ Khaled",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "a502b211-d923-4adc-8bfb-23473cc84523",
+        "musicbrainz": "081a2d60-9791-4e05-a075-f1890355eeee",
+        "wikidata": "Q80805",
+        "spotify": "0QHgL1lAIqAw0HtD7YldmP",
+        "deezer": "5828",
+        "lastfm": "DJ Khaled"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "jeezy",
+      "name": "Jeezy",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "dcad99e7-3c3e-4c78-bf8a-68203e17da48",
+        "wikidata": "Q342447",
+        "spotify": "4yBK75WVCQXej1p04GWqxH",
+        "deezer": "1338623",
+        "lastfm": "Jeezy"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "sematary",
+      "name": "Sematary",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "c1d8cc1e-1e45-4b90-bfd7-f413c599c6ac",
         "wikidata": null,
-        "spotify": null,
+        "spotify": "0P6CvnBukEvYeovbgXOIkG",
         "deezer": null,
-        "lastfm": "Clarion"
+        "lastfm": "Sematary"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "fuerza-regida",
+      "name": "Fuerza Regida",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "e665ce26-6ce9-4c42-8f6a-7a361a0ba328",
+        "wikidata": "Q118466501",
+        "spotify": "0ys2OFYzWYB5hRDLCsBqxt",
+        "deezer": "13916083",
+        "lastfm": "Fuerza Regida"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "chris-brown",
+      "name": "Chris Brown",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "c234fa42-e6a6-443e-937e-2f4b073538a3",
+        "wikidata": "Q155700",
+        "spotify": "7bXgB6jMjp9ATFy66eO08Z",
+        "deezer": "102",
+        "lastfm": "Chris Brown"
       },
       "extended": true,
       "trending": true,
@@ -2831,38 +2522,39 @@
       "cosignerOf": []
     },
     {
-      "id": "gracie-abrams",
-      "name": "Gracie Abrams",
+      "id": "lil-durk",
+      "name": "Lil Durk",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
-        "wikidata": "Q106301562",
-        "spotify": "4tuJ0bMpJh08umKkEXKUI5",
-        "deezer": "64874492",
-        "lastfm": "Gracie Abrams"
+        "musicbrainz": "c9cd225b-4883-428e-82c2-73e0b6282fb6",
+        "wikidata": "Q2899818",
+        "spotify": "3hcs9uc56yIGFCSy9leWe7",
+        "deezer": "3977201",
+        "lastfm": "Lil Durk"
       },
       "extended": true,
       "trending": true,
       "cosignerOf": []
     },
     {
-      "id": "latto",
-      "name": "Latto",
+      "id": "nova-charisma",
+      "name": "Nova Charisma",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "355cc194-b8db-4af2-8678-c7ad54213f4b",
-        "wikidata": "Q65029930",
-        "spotify": "3MdXrJWsbVzdn6fe5JYkSQ",
-        "deezer": "223069705",
-        "lastfm": "Latto"
+        "musicbrainz": "b1fb0426-e853-4cdd-b0c3-46764a452114",
+        "wikidata": null,
+        "spotify": "38eA1ThaS4uXfJjh8N8OaX",
+        "deezer": "71000492",
+        "lastfm": "Nova Charisma"
       },
       "caveats": {
-        "deezer": "Deezer page has 22 fans vs 1,000,234 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 572 fans vs 110,172 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "trending": true,
+      "rising": true,
       "cosignerOf": []
     },
     {
@@ -2878,55 +2570,7 @@
         "lastfm": "Her Words Kill"
       },
       "caveats": {
-        "deezer": "Deezer page has 1,550 fans vs 270,112 Last.fm listeners: probably a duplicate page, so it's left out of the score."
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "jt-music",
-      "name": "JT Music",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "835d26ab-15e3-4db2-8422-20602d72c65e",
-        "wikidata": "Q53121102",
-        "spotify": "5qvrAlKjc0Sqrqz6v2wBGk",
-        "deezer": "11641995",
-        "lastfm": "JT Music"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "koe-wetzel",
-      "name": "Koe Wetzel",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6",
-        "wikidata": "Q107434048",
-        "spotify": "1Tie3AZgLQZqYEp8Fv4zOZ",
-        "deezer": "10796312",
-        "lastfm": "Koe Wetzel"
-      },
-      "extended": true,
-      "trending": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "fcukers",
-      "name": "Fcukers",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "5e23e428-d9f5-4679-bd7c-8254d6f0a437",
-        "wikidata": "Q130223625",
-        "spotify": "3UtzOHYm3lQALkKzVD4wyO",
-        "deezer": "207442797",
-        "lastfm": "Fcukers"
+        "deezer": "Deezer page has 1,552 fans vs 270,376 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "trending": true,
@@ -2949,32 +2593,128 @@
       "cosignerOf": []
     },
     {
-      "id": "bruno-mars",
-      "name": "Bruno Mars",
+      "id": "goreshit",
+      "name": "goreshit",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
-        "wikidata": "Q1450",
-        "spotify": "0du5cEVh5yTK9QJze8zA0C",
-        "deezer": "429675",
-        "lastfm": "Bruno Mars"
+        "musicbrainz": "eb0cf932-29f0-4e42-a866-2440b18dc182",
+        "wikidata": "Q113361759",
+        "spotify": "2UyOnfaE8nWXKPwYQyp2La",
+        "deezer": "50223522",
+        "lastfm": "goreshit"
       },
       "extended": true,
       "trending": true,
       "cosignerOf": []
     },
     {
-      "id": "sophia-stel",
-      "name": "Sophia Stel",
+      "id": "koe-wetzel",
+      "name": "Koe Wetzel",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "e137e810-ed64-4d74-b2c8-9e24cff43dd3",
-        "wikidata": null,
-        "spotify": "18w9tq3c2x11niEFNYqeex",
-        "deezer": "70082492",
-        "lastfm": "Sophia Stel"
+        "musicbrainz": "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6",
+        "wikidata": "Q107434048",
+        "spotify": "1Tie3AZgLQZqYEp8Fv4zOZ",
+        "deezer": "10796312",
+        "lastfm": "Koe Wetzel"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "sabrina-carpenter",
+      "name": "Sabrina Carpenter",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "1882fe91-cdd9-49c9-9956-8e06a3810bd4",
+        "wikidata": "Q7396400",
+        "spotify": "74KM79TiuVKeVCqs8QtB0B",
+        "deezer": "1176900",
+        "lastfm": "Sabrina Carpenter"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "jt-music",
+      "name": "JT Music",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "835d26ab-15e3-4db2-8422-20602d72c65e",
+        "wikidata": "Q53121102",
+        "spotify": "5qvrAlKjc0Sqrqz6v2wBGk",
+        "deezer": "11641995",
+        "lastfm": "JT Music"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "wham",
+      "name": "Wham!",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "d570bb31-b9ca-45a4-a2d9-11b186d9c159",
+        "wikidata": "Q744087",
+        "spotify": "5lpH0xAS4fVfLkACg9DAuM",
+        "deezer": "216",
+        "lastfm": "Wham!"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "tomorrow-x-together",
+      "name": "TOMORROW X TOGETHER",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "9d027d72-790e-40ec-bbb7-61aa613457de",
+        "wikidata": "Q60550265",
+        "spotify": "0ghlgldX5Dd6720Q3qFyQB",
+        "deezer": "60552072",
+        "lastfm": "TOMORROW X TOGETHER"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "fcukers",
+      "name": "Fcukers",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "5e23e428-d9f5-4679-bd7c-8254d6f0a437",
+        "wikidata": "Q130223625",
+        "spotify": "3UtzOHYm3lQALkKzVD4wyO",
+        "deezer": "207442797",
+        "lastfm": "Fcukers"
+      },
+      "extended": true,
+      "trending": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "the-ronettes",
+      "name": "The Ronettes",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "393e5448-896f-43e9-b80b-4ee58e1e71a4",
+        "wikidata": "Q530886",
+        "spotify": "7CyeXFnOrfC1N6z4naIpgo",
+        "deezer": "2334",
+        "lastfm": "The Ronettes"
       },
       "extended": true,
       "trending": true,
@@ -3008,22 +2748,7 @@
         "lastfm": "Wale"
       },
       "caveats": {
-        "deezer": "Deezer page has 11 fans vs 2,375,633 Last.fm listeners: probably a duplicate page, so it's left out of the score."
-      },
-      "extended": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "miranda-lambert",
-      "name": "Miranda Lambert",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "4eca1aa0-c79f-481b-af8a-4a2d6c41aa5c",
-        "wikidata": "Q231233",
-        "spotify": "66lH4jAE7pqPlOlzUKbwA0",
-        "deezer": "5057",
-        "lastfm": "Miranda Lambert"
+        "deezer": "Deezer page has 11 fans vs 2,376,023 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "cosignerOf": []
@@ -3104,71 +2829,29 @@
         "lastfm": "Emperor X"
       },
       "caveats": {
-        "deezer": "Deezer page has 543 fans vs 146,048 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 545 fans vs 146,810 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "rising": true,
       "cosignerOf": []
     },
     {
-      "id": "yeat",
-      "name": "Yeat",
+      "id": "the-long-faces",
+      "name": "The Long Faces",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "9e6a6a2f-f696-4cc0-87f1-e4f712e46802",
-        "wikidata": "Q108761978",
-        "spotify": "3qiHUAX7zY4Qnjx8TNUzVx",
-        "deezer": "13639985",
-        "lastfm": "Yeat"
+        "musicbrainz": "18dab8ad-3d93-46aa-b153-2f22772ea5bc",
+        "wikidata": null,
+        "spotify": "1DhiWyne1hHwVHTti49o40",
+        "deezer": "13682985",
+        "lastfm": "The Long Faces"
+      },
+      "caveats": {
+        "deezer": "Deezer page has 3,801 fans vs 563,520 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "elton-john",
-      "name": "Elton John",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "b83bc61f-8451-4a5d-8b8e-7e9ed295e822",
-        "wikidata": "Q2808",
-        "spotify": "3PhoLpVuITZKcymswpck5b",
-        "deezer": "413",
-        "lastfm": "Elton John"
-      },
-      "extended": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "kid-cudi",
-      "name": "Kid Cudi",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "e0e1db18-f7ba-4dee-95ff-7ae8cf545460",
-        "wikidata": "Q299138",
-        "spotify": "0fA0VVWsXO9YnASrzqfmYu",
-        "deezer": "158706",
-        "lastfm": "Kid Cudi"
-      },
-      "extended": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "joji",
-      "name": "Joji",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "8264722b-df00-467a-858e-5c97cda169c9",
-        "wikidata": "Q23826617",
-        "spotify": "3yJnBqAoRUNeDabdYoiYWD",
-        "deezer": "5078097",
-        "lastfm": "Joji"
-      },
-      "extended": true,
       "cosignerOf": []
     },
     {
@@ -3219,6 +2902,25 @@
       "cosignerOf": []
     },
     {
+      "id": "tiffany-day",
+      "name": "Tiffany Day",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "c9e3089c-a7bc-4df5-80f9-9161eaa74a02",
+        "wikidata": "Q139037843",
+        "spotify": "5D5Qbe1lf3aMnLsPSzXItu",
+        "deezer": "14582191",
+        "lastfm": "Tiffany Day"
+      },
+      "caveats": {
+        "deezer": "Deezer page has 3,444 fans vs 535,082 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+      },
+      "extended": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
       "id": "lucy-bedroque",
       "name": "Lucy Bedroque",
       "genre": null,
@@ -3231,7 +2933,7 @@
         "lastfm": "Lucy Bedroque"
       },
       "caveats": {
-        "deezer": "Deezer page has 3,909 fans vs 428,145 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 3,915 fans vs 428,564 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "rising": true,
@@ -3282,7 +2984,23 @@
         "lastfm": "F3miii"
       },
       "caveats": {
-        "deezer": "Deezer page has 1,646 fans vs 623,131 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 1,649 fans vs 623,722 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+      },
+      "extended": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "yeat",
+      "name": "Yeat",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "9e6a6a2f-f696-4cc0-87f1-e4f712e46802",
+        "wikidata": "Q108761978",
+        "spotify": "3qiHUAX7zY4Qnjx8TNUzVx",
+        "deezer": "13639985",
+        "lastfm": "Yeat"
       },
       "extended": true,
       "rising": true,
@@ -3301,42 +3019,7 @@
         "lastfm": "Gigi Perez"
       },
       "caveats": {
-        "deezer": "Deezer page has 38 fans vs 1,613,129 Last.fm listeners: probably a duplicate page, so it's left out of the score."
-      },
-      "extended": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "rosa-walton",
-      "name": "Rosa Walton",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "9a6273b2-72fa-47a4-a48b-073d6cbe037d",
-        "wikidata": "Q114510811",
-        "spotify": "1X0HaTcdkHW7LviblBiEeq",
-        "deezer": "10195088",
-        "lastfm": "Rosa Walton"
-      },
-      "caveats": {
-        "deezer": "Deezer page has 2,027 fans vs 598,632 Last.fm listeners: probably a duplicate page, so it's left out of the score."
-      },
-      "extended": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "dexter-and-the-moonrocks",
-      "name": "Dexter and The Moonrocks",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "38ed4923-005f-4ba0-baf7-749269dfea29",
-        "wikidata": null,
-        "spotify": "72sOBVpZpUwHq7i0vb26lT",
-        "deezer": "142657252",
-        "lastfm": "Dexter and The Moonrocks"
+        "deezer": "Deezer page has 38 fans vs 1,613,875 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "rising": true,
@@ -3359,6 +3042,25 @@
       "cosignerOf": []
     },
     {
+      "id": "rosa-walton",
+      "name": "Rosa Walton",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "9a6273b2-72fa-47a4-a48b-073d6cbe037d",
+        "wikidata": "Q114510811",
+        "spotify": "1X0HaTcdkHW7LviblBiEeq",
+        "deezer": "10195088",
+        "lastfm": "Rosa Walton"
+      },
+      "caveats": {
+        "deezer": "Deezer page has 2,028 fans vs 599,176 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+      },
+      "extended": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
       "id": "geese",
       "name": "Geese",
       "genre": null,
@@ -3375,37 +3077,19 @@
       "cosignerOf": []
     },
     {
-      "id": "nova-charisma",
-      "name": "Nova Charisma",
+      "id": "dexter-and-the-moonrocks",
+      "name": "Dexter and The Moonrocks",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "b1fb0426-e853-4cdd-b0c3-46764a452114",
+        "musicbrainz": "38ed4923-005f-4ba0-baf7-749269dfea29",
         "wikidata": null,
-        "spotify": "38eA1ThaS4uXfJjh8N8OaX",
-        "deezer": "71000492",
-        "lastfm": "Nova Charisma"
-      },
-      "caveats": {
-        "deezer": "Deezer page has 571 fans vs 109,279 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "spotify": "72sOBVpZpUwHq7i0vb26lT",
+        "deezer": "142657252",
+        "lastfm": "Dexter and The Moonrocks"
       },
       "extended": true,
       "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "john-mayer",
-      "name": "John Mayer",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "144ef525-85e9-40c3-8335-02c32d0861f3",
-        "wikidata": "Q215215",
-        "spotify": "0hEurMDQu99nJRq8pTxO14",
-        "deezer": "598",
-        "lastfm": "John Mayer"
-      },
-      "extended": true,
       "cosignerOf": []
     },
     {
@@ -3421,39 +3105,7 @@
         "lastfm": "Matt Martians"
       },
       "caveats": {
-        "deezer": "Deezer page has 2,504 fans vs 433,285 Last.fm listeners: probably a duplicate page, so it's left out of the score."
-      },
-      "extended": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "destroy-lonely",
-      "name": "Destroy Lonely",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "987d3d86-0d7a-4292-ae96-a8d59e456436",
-        "wikidata": "Q113510276",
-        "spotify": "1HPW4jeRjXBFRoUnSvBzoD",
-        "deezer": "14063641",
-        "lastfm": "Destroy Lonely"
-      },
-      "extended": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "aespa",
-      "name": "aespa",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "b51c672b-85e0-48fe-8648-470a2422229f",
-        "wikidata": "Q100877982",
-        "spotify": "6YVMFz59CuY7ngCxTxjpxE",
-        "deezer": "113547672",
-        "lastfm": "aespa"
+        "deezer": "Deezer page has 2,507 fans vs 433,579 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "rising": true,
@@ -3491,6 +3143,22 @@
       "cosignerOf": []
     },
     {
+      "id": "big-thief",
+      "name": "Big Thief",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "9f81247f-7f57-42f3-a8ba-75bef554e591",
+        "wikidata": "Q28228836",
+        "spotify": "5QdyldG4Fl4TPiOIeMNpBZ",
+        "deezer": "9829340",
+        "lastfm": "Big Thief"
+      },
+      "extended": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
       "id": "ethel-cain",
       "name": "Ethel Cain",
       "genre": null,
@@ -3501,6 +3169,22 @@
         "spotify": "0avMDS4HyoCEP6RqZJWpY2",
         "deezer": "70590892",
         "lastfm": "Ethel Cain"
+      },
+      "extended": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "destroy-lonely",
+      "name": "Destroy Lonely",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "987d3d86-0d7a-4292-ae96-a8d59e456436",
+        "wikidata": "Q113510276",
+        "spotify": "1HPW4jeRjXBFRoUnSvBzoD",
+        "deezer": "14063641",
+        "lastfm": "Destroy Lonely"
       },
       "extended": true,
       "rising": true,
@@ -3523,6 +3207,22 @@
       "cosignerOf": []
     },
     {
+      "id": "aespa",
+      "name": "aespa",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "b51c672b-85e0-48fe-8648-470a2422229f",
+        "wikidata": "Q100877982",
+        "spotify": "6YVMFz59CuY7ngCxTxjpxE",
+        "deezer": "113547672",
+        "lastfm": "aespa"
+      },
+      "extended": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
       "id": "lizzy-mcalpine",
       "name": "Lizzy McAlpine",
       "genre": null,
@@ -3533,22 +3233,6 @@
         "spotify": "1GmsPCcpKgF9OhlNXjOsbS",
         "deezer": "14157839",
         "lastfm": "Lizzy McAlpine"
-      },
-      "extended": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "buckshot",
-      "name": "Buckshot",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "7e1216c3-4ccc-48c7-9e18-19f089dbf13b",
-        "wikidata": "Q126926039",
-        "spotify": "0HPG2EIdGCP6gjXW0KzrJq",
-        "deezer": null,
-        "lastfm": "Buckshot"
       },
       "extended": true,
       "rising": true,
@@ -3567,7 +3251,23 @@
         "lastfm": "Sidney Gish"
       },
       "caveats": {
-        "deezer": "Deezer page has 3,708 fans vs 632,466 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 3,712 fans vs 632,837 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+      },
+      "extended": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "buckshot",
+      "name": "Buckshot",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "7e1216c3-4ccc-48c7-9e18-19f089dbf13b",
+        "wikidata": "Q126926039",
+        "spotify": "0HPG2EIdGCP6gjXW0KzrJq",
+        "deezer": null,
+        "lastfm": "Buckshot"
       },
       "extended": true,
       "rising": true,
@@ -3622,16 +3322,35 @@
       "cosignerOf": []
     },
     {
-      "id": "luvcat",
-      "name": "Luvcat",
+      "id": "rusino",
+      "name": "rusino",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "fdda77a2-1c94-4d0c-ad87-6d7e74a0c091",
+        "musicbrainz": "5b73d3b8-0600-4255-b88f-3aa6039e037d",
         "wikidata": null,
-        "spotify": "2IprcYDAYTYzCl4AJH3AuT",
-        "deezer": "264916052",
-        "lastfm": "Luvcat"
+        "spotify": "5gwVYKw4Bhbk1rGz37O3fy",
+        "deezer": null,
+        "lastfm": "rusino"
+      },
+      "extended": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "susannah-joffe",
+      "name": "Susannah Joffe",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "02452937-d06b-4e9f-966d-8477bae38ddc",
+        "wikidata": null,
+        "spotify": "3JGxLjd5coSPknSlbYyNLw",
+        "deezer": "51237172",
+        "lastfm": "Susannah Joffe"
+      },
+      "caveats": {
+        "deezer": "Deezer page has 1,885 fans vs 573,357 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "rising": true,
@@ -3654,35 +3373,16 @@
       "cosignerOf": []
     },
     {
-      "id": "susannah-joffe",
-      "name": "Susannah Joffe",
+      "id": "luvcat",
+      "name": "Luvcat",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "02452937-d06b-4e9f-966d-8477bae38ddc",
+        "musicbrainz": "fdda77a2-1c94-4d0c-ad87-6d7e74a0c091",
         "wikidata": null,
-        "spotify": "3JGxLjd5coSPknSlbYyNLw",
-        "deezer": "51237172",
-        "lastfm": "Susannah Joffe"
-      },
-      "caveats": {
-        "deezer": "Deezer page has 1,882 fans vs 572,918 Last.fm listeners: probably a duplicate page, so it's left out of the score."
-      },
-      "extended": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "rusino",
-      "name": "rusino",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "5b73d3b8-0600-4255-b88f-3aa6039e037d",
-        "wikidata": null,
-        "spotify": "5gwVYKw4Bhbk1rGz37O3fy",
-        "deezer": null,
-        "lastfm": "rusino"
+        "spotify": "2IprcYDAYTYzCl4AJH3AuT",
+        "deezer": "264916052",
+        "lastfm": "Luvcat"
       },
       "extended": true,
       "rising": true,
@@ -3717,10 +3417,57 @@
         "lastfm": "Madds Buckley"
       },
       "caveats": {
-        "deezer": "Deezer page has 4,539 fans vs 511,585 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 4,544 fans vs 511,908 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "proderics",
+      "name": "proderics",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "735f6247-67a0-49bf-8d67-e4cd4d07f1bb",
+        "wikidata": null,
+        "spotify": "3VsmiWWtAHSrkgF2forgVI",
+        "deezer": "258677062",
+        "lastfm": "proderics"
+      },
+      "extended": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "tezzus",
+      "name": "Tezzus",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "1753124e-e4be-4dba-9741-5e50e4dc351f",
+        "wikidata": null,
+        "spotify": "3YQEnGNd8ooVyyhjnuwQIm",
+        "deezer": "14244529",
+        "lastfm": "Tezzus"
+      },
+      "extended": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "young-thug",
+      "name": "Young Thug",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "800760de-bdf8-43a2-8fe0-44a2401a5515",
+        "wikidata": "Q15637814",
+        "spotify": "50co4Is1HCEo8bhOyUWKpn",
+        "deezer": "1590752",
+        "lastfm": "Young Thug"
+      },
+      "extended": true,
       "cosignerOf": []
     },
     {
@@ -3772,21 +3519,6 @@
       "cosignerOf": []
     },
     {
-      "id": "young-thug",
-      "name": "Young Thug",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "800760de-bdf8-43a2-8fe0-44a2401a5515",
-        "wikidata": "Q15637814",
-        "spotify": "50co4Is1HCEo8bhOyUWKpn",
-        "deezer": "1590752",
-        "lastfm": "Young Thug"
-      },
-      "extended": true,
-      "cosignerOf": []
-    },
-    {
       "id": "lucki",
       "name": "LUCKI",
       "genre": null,
@@ -3797,6 +3529,68 @@
         "spotify": "5tQMB0cuNXdCtzovGt55uD",
         "deezer": "10548057",
         "lastfm": "Lucki"
+      },
+      "extended": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "cotillon",
+      "name": "Cotillon",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "712288a9-3baf-4daa-88e0-842e25982f4c",
+        "wikidata": null,
+        "spotify": "0yeQiKm1Prh60QcQuDCoUK",
+        "deezer": "4837346",
+        "lastfm": "Cotillon"
+      },
+      "extended": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "panchiko",
+      "name": "Panchiko",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "8f64d6ea-3f6c-408c-b2e0-e5334b28dae9",
+        "wikidata": "Q85352042",
+        "spotify": "4KEHIUSoWCcqrk8AddTE1O",
+        "deezer": "86640422",
+        "lastfm": "Panchiko"
+      },
+      "extended": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "ball-greezy",
+      "name": "Ball Greezy",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "259dee1b-1213-4774-863d-f78223214806",
+        "wikidata": null,
+        "spotify": "2CxtLXJMW2AbYPyQShuDT1",
+        "deezer": null,
+        "lastfm": "Ball Greezy"
+      },
+      "extended": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "rick-ross",
+      "name": "Rick Ross",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "13bcb2bb-db37-4397-baf5-e0f085be2d64",
+        "wikidata": "Q297831",
+        "spotify": "1sBkRIssrMs1AbVkOJbc7a",
+        "deezer": "9112",
+        "lastfm": "Rick Ross"
       },
       "extended": true,
       "cosignerOf": []
@@ -3865,22 +3659,6 @@
       "cosignerOf": []
     },
     {
-      "id": "tezzus",
-      "name": "Tezzus",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "1753124e-e4be-4dba-9741-5e50e4dc351f",
-        "wikidata": null,
-        "spotify": "3YQEnGNd8ooVyyhjnuwQIm",
-        "deezer": "14244529",
-        "lastfm": "Tezzus"
-      },
-      "extended": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
       "id": "femtanyl",
       "name": "femtanyl",
       "genre": null,
@@ -3940,7 +3718,7 @@
         "lastfm": "Pfg"
       },
       "caveats": {
-        "deezer": "Deezer page has 72 fans vs 11,072 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 73 fans vs 11,113 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "rising": true,
@@ -3963,40 +3741,6 @@
       "cosignerOf": []
     },
     {
-      "id": "conway-the-machine",
-      "name": "Conway the Machine",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "a633ebb5-b81a-400f-b5df-0e625ea81fe9",
-        "wikidata": "Q32836087",
-        "spotify": "67gqUXxHedeUGDTxwBzdjS",
-        "deezer": "1300694",
-        "lastfm": "Conway"
-      },
-      "extended": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "the-game",
-      "name": "The Game",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "07cc14fb-4784-4a25-804b-2686ed5ef52c",
-        "wikidata": "Q189936",
-        "spotify": "0NbfKEOTQCcwd6o7wSDOHI",
-        "deezer": "189218",
-        "lastfm": "The Game"
-      },
-      "caveats": {
-        "deezer": "Deezer page has 17,398 fans vs 3,207,353 Last.fm listeners: probably a duplicate page, so it's left out of the score."
-      },
-      "extended": true,
-      "cosignerOf": []
-    },
-    {
       "id": "murdagang-pb",
       "name": "MurdaGang PB",
       "genre": null,
@@ -4007,22 +3751,6 @@
         "spotify": "5vdwkO2Let6z32D2Oa9MEr",
         "deezer": null,
         "lastfm": "MurdaGang PB"
-      },
-      "extended": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "hideyoshi",
-      "name": "Hideyoshi",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "57717b63-abe7-44cc-a9c4-4ff213f4a49a",
-        "wikidata": "Q117488040",
-        "spotify": "6CYau5txsDk6Flq7NmlUG7",
-        "deezer": null,
-        "lastfm": "Hideyoshi"
       },
       "extended": true,
       "rising": true,
@@ -4041,26 +3769,7 @@
         "lastfm": "smokedope2016"
       },
       "caveats": {
-        "deezer": "Deezer page has 2,626 fans vs 353,210 Last.fm listeners: probably a duplicate page, so it's left out of the score."
-      },
-      "extended": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "venturing",
-      "name": "venturing",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "72f75074-0607-4a5b-bf9a-0b861e9c8681",
-        "wikidata": "Q115920342",
-        "spotify": "2rLGlNI6htigNxx172qxLu",
-        "deezer": "185146767",
-        "lastfm": "venturing"
-      },
-      "caveats": {
-        "deezer": "Deezer page has 834 fans vs 187,634 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "deezer": "Deezer page has 2,636 fans vs 353,417 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "rising": true,
@@ -4083,32 +3792,35 @@
       "cosignerOf": []
     },
     {
-      "id": "iconic-savvy",
-      "name": "Iconic Savvy",
+      "id": "montana-700",
+      "name": "Montana 700",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "73b41db5-bc46-4c95-b189-9e7c532014ec",
+        "musicbrainz": "0c1c3edc-384a-4774-ad13-1aa767fcf68a",
         "wikidata": null,
-        "spotify": "2rs4EKIuoLOqrH89wLZ2mC",
-        "deezer": null,
-        "lastfm": "Iconic Savvy"
+        "spotify": "0KpToBdtK9KP6TZPFK2zbw",
+        "deezer": "166934227",
+        "lastfm": "Montana 700"
       },
       "extended": true,
       "rising": true,
       "cosignerOf": []
     },
     {
-      "id": "damien-dempsey",
-      "name": "Damien Dempsey",
+      "id": "venturing",
+      "name": "venturing",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "547e23af-e455-41dd-baae-a3b58e065d0c",
-        "wikidata": "Q5212415",
-        "spotify": "0bmF1w9eyJrY4CHyjpTQOW",
-        "deezer": null,
-        "lastfm": "Damien Dempsey"
+        "musicbrainz": "72f75074-0607-4a5b-bf9a-0b861e9c8681",
+        "wikidata": "Q115920342",
+        "spotify": "2rLGlNI6htigNxx172qxLu",
+        "deezer": "185146767",
+        "lastfm": "venturing"
+      },
+      "caveats": {
+        "deezer": "Deezer page has 836 fans vs 187,833 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "rising": true,
@@ -4131,19 +3843,16 @@
       "cosignerOf": []
     },
     {
-      "id": "lelo",
-      "name": "Lelo",
+      "id": "iconic-savvy",
+      "name": "Iconic Savvy",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "2f18a4c9-1d22-48f7-aba2-fc755c38a514",
+        "musicbrainz": "73b41db5-bc46-4c95-b189-9e7c532014ec",
         "wikidata": null,
-        "spotify": "6RcgNRwyY9YNTXd9luk8JW",
-        "deezer": "789405",
-        "lastfm": "Lelo"
-      },
-      "caveats": {
-        "deezer": "Deezer page has 2,391 fans vs 374,429 Last.fm listeners: probably a duplicate page, so it's left out of the score."
+        "spotify": "2rs4EKIuoLOqrH89wLZ2mC",
+        "deezer": null,
+        "lastfm": "Iconic Savvy"
       },
       "extended": true,
       "rising": true,
@@ -4166,67 +3875,51 @@
       "cosignerOf": []
     },
     {
-      "id": "jacknife-lee",
-      "name": "Jacknife Lee",
+      "id": "t-bone-burnett",
+      "name": "T‐Bone Burnett",
       "genre": null,
       "hometown": null,
       "ids": {
-        "musicbrainz": "f209a93f-6169-4e31-91b7-b24d6468ee8b",
-        "wikidata": "Q679333",
-        "spotify": "1fixTBy0r22vTuK2sQNAqY",
-        "deezer": "80726",
-        "lastfm": "Jacknife Lee"
+        "musicbrainz": "b821dd8c-4583-4385-9293-6f1015b74ef9",
+        "wikidata": "Q1225141",
+        "spotify": "4zMX9gWf1DKhvsYHUCbBF7",
+        "deezer": "166974",
+        "lastfm": "T-Bone Burnett"
+      },
+      "extended": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "damien-dempsey",
+      "name": "Damien Dempsey",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "547e23af-e455-41dd-baae-a3b58e065d0c",
+        "wikidata": "Q5212415",
+        "spotify": "0bmF1w9eyJrY4CHyjpTQOW",
+        "deezer": null,
+        "lastfm": "Damien Dempsey"
+      },
+      "extended": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "lelo",
+      "name": "Lelo",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "2f18a4c9-1d22-48f7-aba2-fc755c38a514",
+        "wikidata": null,
+        "spotify": "6RcgNRwyY9YNTXd9luk8JW",
+        "deezer": "789405",
+        "lastfm": "Lelo"
       },
       "caveats": {
-        "deezer": "Deezer page has 252 fans vs 47,869 Last.fm listeners: probably a duplicate page, so it's left out of the score."
-      },
-      "extended": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "ez-mil",
-      "name": "Ez Mil",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "380548d8-ae12-4c99-8976-13127ec73800",
-        "wikidata": "Q111633193",
-        "spotify": "1IQ4CjwKkdARjL5KtYiMt4",
-        "deezer": "49913072",
-        "lastfm": "Ez Mil"
-      },
-      "extended": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "dj-bandz",
-      "name": "DJ Bandz",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "5df8f26f-6566-4206-9162-d66e00eeecbe",
-        "wikidata": null,
-        "spotify": null,
-        "deezer": null,
-        "lastfm": "DJ Bandz"
-      },
-      "extended": true,
-      "rising": true,
-      "cosignerOf": []
-    },
-    {
-      "id": "fridayy",
-      "name": "FRIDAYY",
-      "genre": null,
-      "hometown": null,
-      "ids": {
-        "musicbrainz": "cb9c2a2b-96c2-44d7-bd31-04ef87572b57",
-        "wikidata": "Q115120677",
-        "spotify": "7sP4SQ0WY6jfps1I19Ot7i",
-        "deezer": "64607052",
-        "lastfm": "Fridayy"
+        "deezer": "Deezer page has 2,395 fans vs 374,593 Last.fm listeners: probably a duplicate page, so it's left out of the score."
       },
       "extended": true,
       "rising": true,
@@ -4246,6 +3939,37 @@
       },
       "extended": true,
       "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "harry-fraud",
+      "name": "Harry Fraud",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "6c7bea28-c146-4c1d-bda3-bbbb0e18e76b",
+        "wikidata": "Q14905835",
+        "spotify": "37ASGd4rWpHjuVonnYAN6S",
+        "deezer": "4633013",
+        "lastfm": "Harry Fraud"
+      },
+      "extended": true,
+      "rising": true,
+      "cosignerOf": []
+    },
+    {
+      "id": "currensy",
+      "name": "Curren$y",
+      "genre": null,
+      "hometown": null,
+      "ids": {
+        "musicbrainz": "4ce1c576-305a-4b82-82fa-5e5359056219",
+        "wikidata": "Q1144846",
+        "spotify": "6X8WdFjrNhXATMDSs26aCc",
+        "deezer": "402158",
+        "lastfm": "Curren$y"
+      },
+      "extended": true,
       "cosignerOf": []
     }
   ]
