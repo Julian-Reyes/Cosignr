@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T07:26:00.853Z",
+  "generatedAt": "2026-11-24T07:34:20.409Z",
   "source": "Ticketmaster Discovery API (live listings, rebuilt nightly)",
   "artists": {
     "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
@@ -108,12 +108,26 @@
     "4ccfc097-7034-4aa7-97c3-b5d4ed52865a": {
       "name": "Claire Rosinkranz"
     },
-    "2cd302f3-d66a-421e-b6b8-2a8c2ca511c4": {
-      "name": "Emma Ogier",
-      "id": "emma-ogier"
+    "bb2b7bbf-75e5-43f8-8a9f-7769ae7d832a": {
+      "name": "Rachel Chinouriri"
     },
-    "4ae67eb7-c01c-4d71-b995-21b093fcb888": {
-      "name": "Wyatt Flores"
+    "736c8ea9-b5c3-4c5f-8782-28e633f0c084": {
+      "name": "Holly Humberstone"
+    },
+    "5f606b3d-fab7-4d39-bcdb-f5d42edae945": {
+      "name": "Del Water Gap"
+    },
+    "0ef0f607-8d6b-40f3-8180-fa4ced129da1": {
+      "name": "Charlotte Lawrence"
+    },
+    "29507643-0c6b-444b-8511-53cb1c042403": {
+      "name": "Jensen McRae"
+    },
+    "5db88fae-df24-490e-971a-1b3fe8d373ea": {
+      "name": "The Japanese House"
+    },
+    "279ae894-037e-4058-a21a-e44dc8a8ca7d": {
+      "name": "Samia"
     },
     "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74": {
       "name": "Sleeping With Sirens",
@@ -128,19 +142,24 @@
     "cd584ea0-0fc5-412b-8598-0244c4025af6": {
       "name": "Boston Manor"
     },
-    "96855c21-b832-4366-ba12-0d2330c36a86": {
-      "name": "Phoebe Bridgers",
-      "id": "phoebe-bridgers"
+    "2cd302f3-d66a-421e-b6b8-2a8c2ca511c4": {
+      "name": "Emma Ogier",
+      "id": "emma-ogier"
     },
-    "75a7274d-e9f1-4569-be5e-f590ab9ddb64": {
-      "name": "Christian Lee Hutson"
+    "a633ebb5-b81a-400f-b5df-0e625ea81fe9": {
+      "name": "Conway the Machine",
+      "id": "conway-the-machine"
+    },
+    "f2bd8da9-1dc9-4278-b099-8b092224bf7d": {
+      "name": "Shortee Blitz"
     },
     "fd87acc7-e0a0-4a45-bc2a-d2ab5c10be68": {
       "name": "Fontaines D.C.",
       "id": "fontaines-d-c"
     },
     "b4b5b5a7-feff-47d0-9458-83d0d135a692": {
-      "name": "Hayley Williams"
+      "name": "Hayley Williams",
+      "id": "hayley-williams"
     },
     "547e23af-e455-41dd-baae-a3b58e065d0c": {
       "name": "Damien Dempsey",
@@ -161,6 +180,44 @@
     },
     "abaa7001-0d80-4e58-be5d-d2d246fd9d87": {
       "name": "Majid Jordan"
+    },
+    "9bd720ab-3aec-4ab0-b363-3a465ee65026": {
+      "name": "Annie DiRusso"
+    },
+    "e160f589-dbe6-4b8f-88b5-f528ff4443b4": {
+      "name": "Mannequin Pussy"
+    },
+    "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19": {
+      "name": "Post Malone",
+      "id": "post-malone"
+    },
+    "addb00fd-733c-4223-8fdf-f78be2488acd": {
+      "name": "Alesso"
+    },
+    "7eb1ce54-a355-41f9-8d68-e018b096d427": {
+      "name": "Harry Styles",
+      "id": "harry-styles"
+    },
+    "a298565e-d43e-46c4-b35c-bfe131258815": {
+      "name": "Fousheé"
+    },
+    "396a9525-0994-4542-b480-c4587feeb476": {
+      "name": "Tinashe"
+    },
+    "d23dc845-caac-4758-8b52-0f6e42a3c5c3": {
+      "name": "Kylie Minogue"
+    },
+    "a6e613d6-ff65-4972-beff-303a1b10ab05": {
+      "name": "Lainey Wilson"
+    },
+    "a670e05a-cea8-4b37-bce9-d82daf1a0fa4": {
+      "name": "Feist"
+    },
+    "dff72d7d-751c-4b59-8aaa-7c61136191a3": {
+      "name": "Baby Rose"
+    },
+    "7c7f9c94-dee8-4903-892b-6cf44652e2de": {
+      "name": "Tears for Fears"
     },
     "a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432": {
       "name": "U2",
@@ -196,67 +253,6 @@
       "name": "Dexter and The Moonrocks",
       "id": "dexter-and-the-moonrocks"
     },
-    "7eb1ce54-a355-41f9-8d68-e018b096d427": {
-      "name": "Harry Styles",
-      "id": "harry-styles"
-    },
-    "a298565e-d43e-46c4-b35c-bfe131258815": {
-      "name": "Fousheé"
-    },
-    "396a9525-0994-4542-b480-c4587feeb476": {
-      "name": "Tinashe",
-      "id": "tinashe"
-    },
-    "d23dc845-caac-4758-8b52-0f6e42a3c5c3": {
-      "name": "Kylie Minogue"
-    },
-    "a6e613d6-ff65-4972-beff-303a1b10ab05": {
-      "name": "Lainey Wilson"
-    },
-    "a670e05a-cea8-4b37-bce9-d82daf1a0fa4": {
-      "name": "Feist"
-    },
-    "dff72d7d-751c-4b59-8aaa-7c61136191a3": {
-      "name": "Baby Rose"
-    },
-    "7c7f9c94-dee8-4903-892b-6cf44652e2de": {
-      "name": "Tears for Fears"
-    },
-    "bb2b7bbf-75e5-43f8-8a9f-7769ae7d832a": {
-      "name": "Rachel Chinouriri"
-    },
-    "736c8ea9-b5c3-4c5f-8782-28e633f0c084": {
-      "name": "Holly Humberstone"
-    },
-    "5f606b3d-fab7-4d39-bcdb-f5d42edae945": {
-      "name": "Del Water Gap"
-    },
-    "0ef0f607-8d6b-40f3-8180-fa4ced129da1": {
-      "name": "Charlotte Lawrence"
-    },
-    "29507643-0c6b-444b-8511-53cb1c042403": {
-      "name": "Jensen McRae"
-    },
-    "5db88fae-df24-490e-971a-1b3fe8d373ea": {
-      "name": "The Japanese House"
-    },
-    "279ae894-037e-4058-a21a-e44dc8a8ca7d": {
-      "name": "Samia"
-    },
-    "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19": {
-      "name": "Post Malone",
-      "id": "post-malone"
-    },
-    "addb00fd-733c-4223-8fdf-f78be2488acd": {
-      "name": "Alesso"
-    },
-    "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6": {
-      "name": "Koe Wetzel",
-      "id": "koe-wetzel"
-    },
-    "ba67b7da-cca7-4c3f-ba19-05349f0f7d97": {
-      "name": "Parker McCollum"
-    },
     "5df62a88-cac9-490a-b62c-c7c88f4020f4": {
       "name": "Doja Cat"
     },
@@ -264,25 +260,8 @@
       "name": "Latto",
       "id": "latto"
     },
-    "be7c80ee-1b03-4088-b20b-5915c7c5ad45": {
-      "name": "Sam Barber",
-      "id": "sam-barber"
-    },
-    "a87d28db-cf33-4cb6-9140-c4e0fe391368": {
-      "name": "Josiah and the Bonnevilles"
-    },
-    "c3012f96-f4eb-418a-8a02-3febccf95091": {
-      "name": "Dylan Gossett"
-    },
     "11b34f7b-42d0-4d16-a96f-f47a517cca7d": {
       "name": "Return to Dust"
-    },
-    "ee0b11de-0c8a-4267-9886-198f4579e1db": {
-      "name": "Lizzy McAlpine",
-      "id": "lizzy-mcalpine"
-    },
-    "40c857d5-6ab0-41f4-aa1d-7614a79a0686": {
-      "name": "Post Animal"
     },
     "a2d140d8-ae17-4d72-b680-b89c77f1ed52": {
       "name": "This Is Lorelei"
@@ -291,15 +270,12 @@
       "name": "Sidney Gish",
       "id": "sidney-gish"
     },
-    "6b82c839-ea15-4d3b-96f1-d1be924e9cb7": {
-      "name": "Hamilton Leithauser"
+    "ee0b11de-0c8a-4267-9886-198f4579e1db": {
+      "name": "Lizzy McAlpine",
+      "id": "lizzy-mcalpine"
     },
-    "ac9a487a-d9d2-4f27-bb23-0f4686488345": {
-      "name": "Lil Wayne"
-    },
-    "dff0d392-4cd5-4052-9fbb-f485df3891e5": {
-      "name": "2 Chainz",
-      "id": "2-chainz"
+    "40c857d5-6ab0-41f4-aa1d-7614a79a0686": {
+      "name": "Post Animal"
     }
   },
   "cosigns": [
@@ -309,14 +285,14 @@
       "types": [
         "upcoming"
       ],
-      "shows": 13,
-      "first": "2026-11-20",
+      "shows": 12,
+      "first": "2026-11-24",
       "last": "2027-01-27",
       "next": {
         "tour": "Bryson Tiller Presents: The Neo Trapsoul Tour",
-        "date": "2026-11-20",
-        "city": "København S",
-        "url": "https://www.ticketmaster.dk/event/bryson-tiller-presents-the-neo-trapsoul-tour-tickets/165191097?language=en-us"
+        "date": "2026-11-24",
+        "city": "Amsterdam",
+        "url": "https://www.ticketmaster.nl/event/bryson-tiller-presents-the-neo-trapsoul-tour-tickets/81238953?language=en-us"
       }
     },
     {
@@ -325,78 +301,30 @@
       "types": [
         "upcoming"
       ],
-      "shows": 7,
-      "first": "2026-11-20",
+      "shows": 4,
+      "first": "2026-11-25",
       "last": "2026-12-01",
       "next": {
         "tour": "Doja Cat - Tour Ma Vie World Tour",
-        "date": "2026-11-20",
-        "city": "Baltimore",
-        "url": "https://www.ticketmaster.com/doja-cat-tour-ma-vie-world-baltimore-maryland-11-20-2026/event/1500633A88BC22BE"
+        "date": "2026-11-25",
+        "city": "Toronto",
+        "url": "https://www.ticketmaster.ca/doja-cat-tour-ma-vie-world-toronto-ontario-11-25-2026/event/100063398CD0266D"
       }
     },
     {
-      "from": "6b82c839-ea15-4d3b-96f1-d1be924e9cb7",
-      "to": "2cd302f3-d66a-421e-b6b8-2a8c2ca511c4",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-11-20",
-      "last": "2026-11-20",
-      "next": {
-        "tour": "Hamilton Leithauser + Rostam",
-        "date": "2026-11-20",
-        "city": "Los Angeles",
-        "url": "https://www.ticketmaster.com/hamilton-leithauser-rostam-los-angeles-california-11-20-2026/event/09006528E016CEAE"
-      }
-    },
-    {
-      "from": "4ae67eb7-c01c-4d71-b995-21b093fcb888",
-      "to": "e881b225-42b1-41d9-9d5e-eff55568585b",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-11-21",
-      "last": "2026-11-21",
-      "next": {
-        "tour": "Wyatt Flores",
-        "date": "2026-11-21",
-        "city": "Nashville",
-        "url": "https://www.ticketmaster.com/wyatt-flores-nashville-tennessee-11-21-2026/event/1B00646CA2A3BDC1"
-      }
-    },
-    {
-      "from": "d89de379-665d-425c-b2e9-41b95d1edb36",
-      "to": "2e8ca124-e38a-4dab-93dd-c9f3d415902b",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 4,
-      "first": "2026-11-22",
-      "last": "2026-12-13",
-      "next": {
-        "tour": "Silverstein & Story Of The Year: CAMP SCREAMO TOUR",
-        "date": "2026-11-22",
-        "city": "Los Angeles",
-        "url": "https://www.ticketmaster.com/silverstein-story-of-the-year-camp-los-angeles-california-11-22-2026/event/090064F89F486E4F"
-      }
-    },
-    {
-      "from": "a0723a3c-4135-438e-85c5-012712144ede",
-      "to": "7013c772-2236-42f3-8590-2e2292d2ca5e",
+      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
+      "to": "9bd720ab-3aec-4ab0-b363-3a465ee65026",
       "types": [
         "upcoming"
       ],
       "shows": 2,
-      "first": "2026-11-23",
-      "last": "2026-11-24",
+      "first": "2026-11-26",
+      "last": "2026-11-26",
       "next": {
-        "tour": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
-        "date": "2026-11-23",
-        "city": "London",
-        "url": "https://www.ticketmaster.co.uk/don-toliver-nitrous-octane-world-tour-london-23-11-2026/event/350064CBE4DFEAB6"
+        "tour": "\"The Hayley Williams Show\" (Numerado) ",
+        "date": "2026-11-26",
+        "city": "Ciudad de México",
+        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-numerado-ciudad-de-mexico-26-11-2026/event/3D0064A6A4695E8E"
       }
     },
     {
@@ -432,6 +360,38 @@
       }
     },
     {
+      "from": "a633ebb5-b81a-400f-b5df-0e625ea81fe9",
+      "to": "f2bd8da9-1dc9-4278-b099-8b092224bf7d",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 1,
+      "first": "2026-11-28",
+      "last": "2026-11-28",
+      "next": {
+        "tour": "CONWAY THE MACHINE + FRIENDS",
+        "date": "2026-11-28",
+        "city": "London",
+        "url": "https://www.ticketmaster.co.uk/conway-the-machine-friends-london-28-11-2026/event/3E006537F44D5607"
+      }
+    },
+    {
+      "from": "d89de379-665d-425c-b2e9-41b95d1edb36",
+      "to": "2e8ca124-e38a-4dab-93dd-c9f3d415902b",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 3,
+      "first": "2026-11-29",
+      "last": "2026-12-13",
+      "next": {
+        "tour": "Silverstein & Story Of The Year: CAMP SCREAMO TOUR",
+        "date": "2026-11-29",
+        "city": "St Petersburg",
+        "url": "https://www.ticketmaster.com/silverstein-story-of-the-year-camp-st-petersburg-florida-11-29-2026/event/0D0064F7CFC69172"
+      }
+    },
+    {
       "from": "355cc194-b8db-4af2-8678-c7ad54213f4b",
       "to": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
       "types": [
@@ -464,67 +424,19 @@
       }
     },
     {
-      "from": "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6",
-      "to": "ba67b7da-cca7-4c3f-ba19-05349f0f7d97",
+      "from": "a0723a3c-4135-438e-85c5-012712144ede",
+      "to": "7013c772-2236-42f3-8590-2e2292d2ca5e",
       "types": [
         "upcoming"
       ],
-      "shows": 5,
-      "first": "2026-12-02",
-      "last": "2026-12-10",
+      "shows": 2,
+      "first": "2026-12-14",
+      "last": "2026-12-15",
       "next": {
-        "tour": "Koe Wetzel and Parker McCollum (17 and Under Admitted with Parent or Guardian Only)",
-        "date": "2026-12-02",
-        "city": "Helotes",
-        "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAebQp"
-      }
-    },
-    {
-      "from": "ba67b7da-cca7-4c3f-ba19-05349f0f7d97",
-      "to": "cf59723d-febb-4481-9b9b-3cb2c7f2a7e6",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2026-12-03",
-      "last": "2026-12-03",
-      "next": {
-        "tour": "Naughty or Nice Tour",
-        "date": "2026-12-03",
-        "city": "Houston",
-        "url": "https://www.ticketmaster.com/naughty-or-nice-tour-houston-texas-12-03-2026/event/3A00653EB610ECA1"
-      }
-    },
-    {
-      "from": "be7c80ee-1b03-4088-b20b-5915c7c5ad45",
-      "to": "a87d28db-cf33-4cb6-9140-c4e0fe391368",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 5,
-      "first": "2026-12-03",
-      "last": "2027-04-14",
-      "next": {
-        "tour": "Sam Barber - The American Route Tour",
-        "date": "2026-12-03",
-        "city": "Saint Louis",
-        "url": "https://www.ticketmaster.com/sam-barber-the-american-route-tour-saint-louis-missouri-12-03-2026/event/06006477AAD1ABC1"
-      }
-    },
-    {
-      "from": "ac9a487a-d9d2-4f27-bb23-0f4686488345",
-      "to": "dff0d392-4cd5-4052-9fbb-f485df3891e5",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 3,
-      "first": "2026-12-04",
-      "last": "2027-02-26",
-      "next": {
-        "tour": "LIL WAYNE: 20 YEARS OF CARTER CLASSICS",
-        "date": "2026-12-04",
-        "city": "Lexington",
-        "url": "https://www.ticketmaster.com/lil-wayne-20-years-of-carter-lexington-kentucky-12-04-2026/event/1600646C2F9154F2"
+        "tour": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
+        "date": "2026-12-14",
+        "city": "London",
+        "url": "https://www.ticketmaster.co.uk/don-toliver-nitrous-octane-world-tour-london-14-12-2026/event/370064D7B853971B"
       }
     },
     {
@@ -573,6 +485,22 @@
         "date": "2027-01-12",
         "city": "Inglewood",
         "url": "https://www.ticketmaster.com/olivia-rodrigo-the-unraveled-tour-inglewood-california-01-12-2027/event/0900649DE7C663B2"
+      }
+    },
+    {
+      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
+      "to": "e160f589-dbe6-4b8f-88b5-f528ff4443b4",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 3,
+      "first": "2027-01-13",
+      "last": "2027-01-17",
+      "next": {
+        "tour": "\"The Hayley Williams Show\"",
+        "date": "2027-01-13",
+        "city": "Ciudad de México",
+        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-ciudad-de-mexico-13-01-2027/event/3D0064BD97725384"
       }
     },
     {
@@ -773,7 +701,7 @@
       "types": [
         "upcoming"
       ],
-      "shows": 3,
+      "shows": 4,
       "first": "2027-03-14",
       "last": "2027-04-17",
       "next": {
@@ -789,7 +717,7 @@
       "types": [
         "upcoming"
       ],
-      "shows": 3,
+      "shows": 4,
       "first": "2027-03-14",
       "last": "2027-04-17",
       "next": {
@@ -893,22 +821,6 @@
         "date": "2027-04-15",
         "city": "Merksem (Antwerpen)",
         "url": "https://www.ticketmaster.be/event/gracie-abrams-the-look-at-my-life-tour-tickets/656488658"
-      }
-    },
-    {
-      "from": "96855c21-b832-4366-ba12-0d2330c36a86",
-      "to": "75a7274d-e9f1-4569-be5e-f590ab9ddb64",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 5,
-      "first": "2027-04-22",
-      "last": "2027-05-13",
-      "next": {
-        "tour": "Phoebe Bridgers: The Lost Tour",
-        "date": "2027-04-22",
-        "city": "Tampa",
-        "url": "https://www.ticketmaster.com/phoebe-bridgers-the-lost-tour-tampa-florida-04-22-2027/event/0D00656A91BF4933"
       }
     },
     {
@@ -1248,28 +1160,12 @@
       }
     },
     {
-      "from": "be7c80ee-1b03-4088-b20b-5915c7c5ad45",
-      "to": "c3012f96-f4eb-418a-8a02-3febccf95091",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 3,
-      "first": "2027-06-29",
-      "last": "2027-07-01",
-      "next": {
-        "tour": "Sam Barber and Dylan Gossett - with support from The Jack Wharff Band",
-        "date": "2027-06-29",
-        "city": "Hamburg",
-        "url": "https://www.ticketmaster.de/event/sam-barber-and-dylan-gossett-with-support-from-the-jack-wharff-band-tickets/182412328?language=en-us"
-      }
-    },
-    {
       "from": "a2a3f910-b188-43e7-81d0-f1ac2a2f3e12",
       "to": "36086094-c2a4-49b9-8572-0fbf12fc3409",
       "types": [
         "upcoming"
       ],
-      "shows": 4,
+      "shows": 6,
       "first": "2027-07-02",
       "last": "2027-07-24",
       "next": {
