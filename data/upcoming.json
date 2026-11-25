@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T07:34:20.409Z",
+  "generatedAt": "2026-11-25T07:30:13.643Z",
   "source": "Ticketmaster Discovery API (live listings, rebuilt nightly)",
   "artists": {
     "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
@@ -105,9 +105,6 @@
       "name": "Gracie Abrams",
       "id": "gracie-abrams"
     },
-    "4ccfc097-7034-4aa7-97c3-b5d4ed52865a": {
-      "name": "Claire Rosinkranz"
-    },
     "bb2b7bbf-75e5-43f8-8a9f-7769ae7d832a": {
       "name": "Rachel Chinouriri"
     },
@@ -128,6 +125,9 @@
     },
     "279ae894-037e-4058-a21a-e44dc8a8ca7d": {
       "name": "Samia"
+    },
+    "4ccfc097-7034-4aa7-97c3-b5d4ed52865a": {
+      "name": "Claire Rosinkranz"
     },
     "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74": {
       "name": "Sleeping With Sirens",
@@ -158,8 +158,7 @@
       "id": "fontaines-d-c"
     },
     "b4b5b5a7-feff-47d0-9458-83d0d135a692": {
-      "name": "Hayley Williams",
-      "id": "hayley-williams"
+      "name": "Hayley Williams"
     },
     "547e23af-e455-41dd-baae-a3b58e065d0c": {
       "name": "Damien Dempsey",
@@ -180,12 +179,6 @@
     },
     "abaa7001-0d80-4e58-be5d-d2d246fd9d87": {
       "name": "Majid Jordan"
-    },
-    "9bd720ab-3aec-4ab0-b363-3a465ee65026": {
-      "name": "Annie DiRusso"
-    },
-    "e160f589-dbe6-4b8f-88b5-f528ff4443b4": {
-      "name": "Mannequin Pussy"
     },
     "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19": {
       "name": "Post Malone",
@@ -226,6 +219,12 @@
     "3547f34a-db02-4ab7-b4a0-380e1ef951a9": {
       "name": "Wolf Alice"
     },
+    "c28bcdb2-6e32-4b15-a9b0-77a4d88c6c74": {
+      "name": "Stephen Wilson Jr."
+    },
+    "87b9b3b8-ab93-426c-a200-4012d667a626": {
+      "name": "The War On Drugs"
+    },
     "faabeed5-3dd0-4be5-aec5-e6486e68db2f": {
       "name": "Cody Johnson",
       "id": "cody-johnson"
@@ -238,6 +237,13 @@
     },
     "50e3dd64-6b87-4b9a-a511-c375ae4ff1ca": {
       "name": "Randy Houser"
+    },
+    "5df62a88-cac9-490a-b62c-c7c88f4020f4": {
+      "name": "Doja Cat"
+    },
+    "355cc194-b8db-4af2-8678-c7ad54213f4b": {
+      "name": "Latto",
+      "id": "latto"
     },
     "6ffb8ea9-2370-44d8-b678-e9237bbd347b": {
       "name": "Kings of Leon",
@@ -253,12 +259,12 @@
       "name": "Dexter and The Moonrocks",
       "id": "dexter-and-the-moonrocks"
     },
-    "5df62a88-cac9-490a-b62c-c7c88f4020f4": {
-      "name": "Doja Cat"
+    "3f1ed758-50e4-401f-8dc6-e0066e546e7c": {
+      "name": "Frost Children",
+      "id": "frost-children"
     },
-    "355cc194-b8db-4af2-8678-c7ad54213f4b": {
-      "name": "Latto",
-      "id": "latto"
+    "53d6e055-9d34-4026-a411-389e9f6c77f0": {
+      "name": "Kuru"
     },
     "11b34f7b-42d0-4d16-a96f-f47a517cca7d": {
       "name": "Return to Dust"
@@ -285,14 +291,14 @@
       "types": [
         "upcoming"
       ],
-      "shows": 12,
-      "first": "2026-11-24",
+      "shows": 11,
+      "first": "2026-11-25",
       "last": "2027-01-27",
       "next": {
         "tour": "Bryson Tiller Presents: The Neo Trapsoul Tour",
-        "date": "2026-11-24",
-        "city": "Amsterdam",
-        "url": "https://www.ticketmaster.nl/event/bryson-tiller-presents-the-neo-trapsoul-tour-tickets/81238953?language=en-us"
+        "date": "2026-11-25",
+        "city": "Berlin",
+        "url": "https://www.ticketmaster.de/event/bryson-tiller-presents-the-neo-trapsoul-tour-tickets/383163474?language=en-us"
       }
     },
     {
@@ -309,22 +315,6 @@
         "date": "2026-11-25",
         "city": "Toronto",
         "url": "https://www.ticketmaster.ca/doja-cat-tour-ma-vie-world-toronto-ontario-11-25-2026/event/100063398CD0266D"
-      }
-    },
-    {
-      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
-      "to": "9bd720ab-3aec-4ab0-b363-3a465ee65026",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 2,
-      "first": "2026-11-26",
-      "last": "2026-11-26",
-      "next": {
-        "tour": "\"The Hayley Williams Show\" (Numerado) ",
-        "date": "2026-11-26",
-        "city": "Ciudad de México",
-        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-numerado-ciudad-de-mexico-26-11-2026/event/3D0064A6A4695E8E"
       }
     },
     {
@@ -424,6 +414,22 @@
       }
     },
     {
+      "from": "3f1ed758-50e4-401f-8dc6-e0066e546e7c",
+      "to": "53d6e055-9d34-4026-a411-389e9f6c77f0",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 2,
+      "first": "2026-12-02",
+      "last": "2026-12-08",
+      "next": {
+        "tour": "Frost Children",
+        "date": "2026-12-02",
+        "city": "Salt Lake City",
+        "url": "https://www.ticketmaster.com/frost-children-salt-lake-city-utah-12-02-2026/event/1E00650D0768A397"
+      }
+    },
+    {
       "from": "a0723a3c-4135-438e-85c5-012712144ede",
       "to": "7013c772-2236-42f3-8590-2e2292d2ca5e",
       "types": [
@@ -485,22 +491,6 @@
         "date": "2027-01-12",
         "city": "Inglewood",
         "url": "https://www.ticketmaster.com/olivia-rodrigo-the-unraveled-tour-inglewood-california-01-12-2027/event/0900649DE7C663B2"
-      }
-    },
-    {
-      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
-      "to": "e160f589-dbe6-4b8f-88b5-f528ff4443b4",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 3,
-      "first": "2027-01-13",
-      "last": "2027-01-17",
-      "next": {
-        "tour": "\"The Hayley Williams Show\"",
-        "date": "2027-01-13",
-        "city": "Ciudad de México",
-        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-ciudad-de-mexico-13-01-2027/event/3D0064BD97725384"
       }
     },
     {
@@ -1224,6 +1214,22 @@
       }
     },
     {
+      "from": "a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432",
+      "to": "c28bcdb2-6e32-4b15-a9b0-77a4d88c6c74",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 8,
+      "first": "2027-08-13",
+      "last": "2027-09-14",
+      "next": {
+        "tour": "U2: The Greatest Show on Earth World Tour",
+        "date": "2027-08-13",
+        "city": "Miami",
+        "url": "https://www.ticketmaster.com/u2-the-greatest-show-on-earth-miami-florida-08-13-2027/event/0D0065716A581A54"
+      }
+    },
+    {
       "from": "7eb1ce54-a355-41f9-8d68-e018b096d427",
       "to": "dff72d7d-751c-4b59-8aaa-7c61136191a3",
       "types": [
@@ -1269,6 +1275,22 @@
         "date": "2027-09-24",
         "city": "Columbus",
         "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAepk6"
+      }
+    },
+    {
+      "from": "a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432",
+      "to": "87b9b3b8-ab93-426c-a200-4012d667a626",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 5,
+      "first": "2027-10-01",
+      "last": "2027-10-18",
+      "next": {
+        "tour": "U2: The Greatest Show on Earth World Tour",
+        "date": "2027-10-01",
+        "city": "Inglewood",
+        "url": "https://www.ticketmaster.com/u2-the-greatest-show-on-earth-inglewood-california-10-01-2027/event/0A006573FEDD5364"
       }
     }
   ]
