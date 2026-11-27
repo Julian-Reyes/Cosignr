@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T07:30:13.643Z",
+  "generatedAt": "2026-11-27T07:42:36.659Z",
   "source": "Ticketmaster Discovery API (live listings, rebuilt nightly)",
   "artists": {
     "63aa26c3-d59b-4da4-84ac-716b54f1ef4d": {
@@ -84,13 +84,6 @@
     "61a04f15-0929-4bb6-bd4e-dabdf8e19f68": {
       "name": "Ryan Bingham"
     },
-    "a0723a3c-4135-438e-85c5-012712144ede": {
-      "name": "Don Toliver",
-      "id": "don-toliver"
-    },
-    "7013c772-2236-42f3-8590-2e2292d2ca5e": {
-      "name": "Victony"
-    },
     "494e8d09-f85b-4543-892f-a5096aed1cd4": {
       "name": "Mariah Carey",
       "id": "mariah-carey"
@@ -101,9 +94,32 @@
     "dfa715ac-b536-44df-af43-570d3ea3edec": {
       "name": "Sugababes"
     },
+    "a0723a3c-4135-438e-85c5-012712144ede": {
+      "name": "Don Toliver",
+      "id": "don-toliver"
+    },
+    "7013c772-2236-42f3-8590-2e2292d2ca5e": {
+      "name": "Victony"
+    },
+    "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74": {
+      "name": "Sleeping With Sirens",
+      "id": "sleeping-with-sirens"
+    },
+    "2b1e0708-7317-4b09-b6a2-6dc6cb9c0479": {
+      "name": "Arm's Length"
+    },
+    "e2e9df76-a950-4b8b-b3d1-981624470657": {
+      "name": "State Champs"
+    },
+    "cd584ea0-0fc5-412b-8598-0244c4025af6": {
+      "name": "Boston Manor"
+    },
     "f7441bc7-d7de-4813-a2fc-31a4033d396d": {
       "name": "Gracie Abrams",
       "id": "gracie-abrams"
+    },
+    "4ccfc097-7034-4aa7-97c3-b5d4ed52865a": {
+      "name": "Claire Rosinkranz"
     },
     "bb2b7bbf-75e5-43f8-8a9f-7769ae7d832a": {
       "name": "Rachel Chinouriri"
@@ -126,39 +142,13 @@
     "279ae894-037e-4058-a21a-e44dc8a8ca7d": {
       "name": "Samia"
     },
-    "4ccfc097-7034-4aa7-97c3-b5d4ed52865a": {
-      "name": "Claire Rosinkranz"
-    },
-    "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74": {
-      "name": "Sleeping With Sirens",
-      "id": "sleeping-with-sirens"
-    },
-    "2b1e0708-7317-4b09-b6a2-6dc6cb9c0479": {
-      "name": "Arm's Length"
-    },
-    "e2e9df76-a950-4b8b-b3d1-981624470657": {
-      "name": "State Champs"
-    },
-    "cd584ea0-0fc5-412b-8598-0244c4025af6": {
-      "name": "Boston Manor"
-    },
-    "2cd302f3-d66a-421e-b6b8-2a8c2ca511c4": {
-      "name": "Emma Ogier",
-      "id": "emma-ogier"
-    },
-    "a633ebb5-b81a-400f-b5df-0e625ea81fe9": {
-      "name": "Conway the Machine",
-      "id": "conway-the-machine"
-    },
-    "f2bd8da9-1dc9-4278-b099-8b092224bf7d": {
-      "name": "Shortee Blitz"
-    },
     "fd87acc7-e0a0-4a45-bc2a-d2ab5c10be68": {
       "name": "Fontaines D.C.",
       "id": "fontaines-d-c"
     },
     "b4b5b5a7-feff-47d0-9458-83d0d135a692": {
-      "name": "Hayley Williams"
+      "name": "Hayley Williams",
+      "id": "hayley-williams"
     },
     "547e23af-e455-41dd-baae-a3b58e065d0c": {
       "name": "Damien Dempsey",
@@ -173,12 +163,19 @@
     "7e01053e-e701-4e55-8a29-b8cfdcdee205": {
       "name": "Iceage"
     },
-    "d8fd8d9b-473b-4f06-83c8-869b1bb9de89": {
-      "name": "Bryson Tiller",
-      "id": "bryson-tiller"
+    "2cd302f3-d66a-421e-b6b8-2a8c2ca511c4": {
+      "name": "Emma Ogier",
+      "id": "emma-ogier"
     },
-    "abaa7001-0d80-4e58-be5d-d2d246fd9d87": {
-      "name": "Majid Jordan"
+    "609a2ea3-f446-4e31-8eef-9f7591afb55a": {
+      "name": "Alex Warren",
+      "id": "alex-warren"
+    },
+    "cea9a5c5-d1ac-4b6f-aa46-b31c370894b3": {
+      "name": "Bebe Stockwell"
+    },
+    "6aed0a74-92a7-47e6-97d1-7b6a72afec4b": {
+      "name": "Faouzia"
     },
     "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19": {
       "name": "Post Malone",
@@ -186,6 +183,23 @@
     },
     "addb00fd-733c-4223-8fdf-f78be2488acd": {
       "name": "Alesso"
+    },
+    "e160f589-dbe6-4b8f-88b5-f528ff4443b4": {
+      "name": "Mannequin Pussy"
+    },
+    "d8fd8d9b-473b-4f06-83c8-869b1bb9de89": {
+      "name": "Bryson Tiller",
+      "id": "bryson-tiller"
+    },
+    "abaa7001-0d80-4e58-be5d-d2d246fd9d87": {
+      "name": "Majid Jordan"
+    },
+    "5df62a88-cac9-490a-b62c-c7c88f4020f4": {
+      "name": "Doja Cat"
+    },
+    "355cc194-b8db-4af2-8678-c7ad54213f4b": {
+      "name": "Latto",
+      "id": "latto"
     },
     "7eb1ce54-a355-41f9-8d68-e018b096d427": {
       "name": "Harry Styles",
@@ -212,6 +226,13 @@
     "7c7f9c94-dee8-4903-892b-6cf44652e2de": {
       "name": "Tears for Fears"
     },
+    "a633ebb5-b81a-400f-b5df-0e625ea81fe9": {
+      "name": "Conway the Machine",
+      "id": "conway-the-machine"
+    },
+    "f2bd8da9-1dc9-4278-b099-8b092224bf7d": {
+      "name": "Shortee Blitz"
+    },
     "a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432": {
       "name": "U2",
       "id": "u2"
@@ -225,40 +246,6 @@
     "87b9b3b8-ab93-426c-a200-4012d667a626": {
       "name": "The War On Drugs"
     },
-    "faabeed5-3dd0-4be5-aec5-e6486e68db2f": {
-      "name": "Cody Johnson",
-      "id": "cody-johnson"
-    },
-    "199affdb-93c0-4a9d-a4d0-26dc4fa01806": {
-      "name": "Carly Pearce"
-    },
-    "1edead6d-6c01-4ad4-9cce-c334bf7edf23": {
-      "name": "Tracy Byrd"
-    },
-    "50e3dd64-6b87-4b9a-a511-c375ae4ff1ca": {
-      "name": "Randy Houser"
-    },
-    "5df62a88-cac9-490a-b62c-c7c88f4020f4": {
-      "name": "Doja Cat"
-    },
-    "355cc194-b8db-4af2-8678-c7ad54213f4b": {
-      "name": "Latto",
-      "id": "latto"
-    },
-    "6ffb8ea9-2370-44d8-b678-e9237bbd347b": {
-      "name": "Kings of Leon",
-      "id": "kings-of-leon"
-    },
-    "8cf32b06-c5a3-4804-a967-376f88d12aad": {
-      "name": "Ocean Alley"
-    },
-    "07b6020a-c539-4d68-aeef-f159f3befc76": {
-      "name": "Band of Horses"
-    },
-    "38ed4923-005f-4ba0-baf7-749269dfea29": {
-      "name": "Dexter and The Moonrocks",
-      "id": "dexter-and-the-moonrocks"
-    },
     "3f1ed758-50e4-401f-8dc6-e0066e546e7c": {
       "name": "Frost Children",
       "id": "frost-children"
@@ -266,8 +253,22 @@
     "53d6e055-9d34-4026-a411-389e9f6c77f0": {
       "name": "Kuru"
     },
+    "38ed4923-005f-4ba0-baf7-749269dfea29": {
+      "name": "Dexter and The Moonrocks",
+      "id": "dexter-and-the-moonrocks"
+    },
     "11b34f7b-42d0-4d16-a96f-f47a517cca7d": {
       "name": "Return to Dust"
+    },
+    "6ffb8ea9-2370-44d8-b678-e9237bbd347b": {
+      "name": "Kings of Leon",
+      "id": "kings-of-leon"
+    },
+    "07b6020a-c539-4d68-aeef-f159f3befc76": {
+      "name": "Band of Horses"
+    },
+    "8cf32b06-c5a3-4804-a967-376f88d12aad": {
+      "name": "Ocean Alley"
     },
     "a2d140d8-ae17-4d72-b680-b89c77f1ed52": {
       "name": "This Is Lorelei"
@@ -286,38 +287,6 @@
   },
   "cosigns": [
     {
-      "from": "d8fd8d9b-473b-4f06-83c8-869b1bb9de89",
-      "to": "abaa7001-0d80-4e58-be5d-d2d246fd9d87",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 11,
-      "first": "2026-11-25",
-      "last": "2027-01-27",
-      "next": {
-        "tour": "Bryson Tiller Presents: The Neo Trapsoul Tour",
-        "date": "2026-11-25",
-        "city": "Berlin",
-        "url": "https://www.ticketmaster.de/event/bryson-tiller-presents-the-neo-trapsoul-tour-tickets/383163474?language=en-us"
-      }
-    },
-    {
-      "from": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
-      "to": "355cc194-b8db-4af2-8678-c7ad54213f4b",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 4,
-      "first": "2026-11-25",
-      "last": "2026-12-01",
-      "next": {
-        "tour": "Doja Cat - Tour Ma Vie World Tour",
-        "date": "2026-11-25",
-        "city": "Toronto",
-        "url": "https://www.ticketmaster.ca/doja-cat-tour-ma-vie-world-toronto-ontario-11-25-2026/event/100063398CD0266D"
-      }
-    },
-    {
       "from": "494e8d09-f85b-4543-892f-a5096aed1cd4",
       "to": "fbd30319-269f-408a-9999-7a303c1bc69f",
       "types": [
@@ -334,6 +303,22 @@
       }
     },
     {
+      "from": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
+      "to": "355cc194-b8db-4af2-8678-c7ad54213f4b",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 3,
+      "first": "2026-11-27",
+      "last": "2026-12-01",
+      "next": {
+        "tour": "Doja Cat - Tour Ma Vie World Tour",
+        "date": "2026-11-27",
+        "city": "Montreal",
+        "url": "https://www.ticketmaster.ca/doja-cat-tour-ma-vie-world-montreal-quebec-11-27-2026/event/31006339B7D269BF"
+      }
+    },
+    {
       "from": "7eb1ce54-a355-41f9-8d68-e018b096d427",
       "to": "a298565e-d43e-46c4-b35c-bfe131258815",
       "types": [
@@ -347,6 +332,22 @@
         "date": "2026-11-27",
         "city": "Docklands",
         "url": "https://www.ticketmaster.com.au/harry-styles-together-together-docklands-27-11-2026/event/25006436CFC6E40D"
+      }
+    },
+    {
+      "from": "d8fd8d9b-473b-4f06-83c8-869b1bb9de89",
+      "to": "abaa7001-0d80-4e58-be5d-d2d246fd9d87",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 9,
+      "first": "2026-11-28",
+      "last": "2027-01-27",
+      "next": {
+        "tour": "Bryson Tiller Presents: The Neo Trapsoul Tour",
+        "date": "2026-11-28",
+        "city": "Forest (Brussels)",
+        "url": "https://www.ticketmaster.be/event/bryson-tiller-presents-the-neo-trapsoul-tour-tickets/687264787"
       }
     },
     {
@@ -494,6 +495,22 @@
       }
     },
     {
+      "from": "b4b5b5a7-feff-47d0-9458-83d0d135a692",
+      "to": "e160f589-dbe6-4b8f-88b5-f528ff4443b4",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 3,
+      "first": "2027-01-13",
+      "last": "2027-01-17",
+      "next": {
+        "tour": "\"The Hayley Williams Show\"",
+        "date": "2027-01-13",
+        "city": "Ciudad de México",
+        "url": "https://www.ticketmaster.com.mx/the-hayley-williams-show-ciudad-de-mexico-13-01-2027/event/3D0064BD97725384"
+      }
+    },
+    {
       "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
       "to": "5f606b3d-fab7-4d39-bcdb-f5d42edae945",
       "types": [
@@ -587,38 +604,6 @@
         "date": "2027-02-16",
         "city": "Atlanta",
         "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA7woI"
-      }
-    },
-    {
-      "from": "faabeed5-3dd0-4be5-aec5-e6486e68db2f",
-      "to": "199affdb-93c0-4a9d-a4d0-26dc4fa01806",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 5,
-      "first": "2027-02-19",
-      "last": "2027-05-01",
-      "next": {
-        "tour": "Cody Johnson",
-        "date": "2027-02-19",
-        "city": "Austin",
-        "url": "https://www.ticketmaster.com/cody-johnson-austin-texas-02-19-2027/event/3A006554B3FBC02A"
-      }
-    },
-    {
-      "from": "faabeed5-3dd0-4be5-aec5-e6486e68db2f",
-      "to": "1edead6d-6c01-4ad4-9cce-c334bf7edf23",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2027-02-20",
-      "last": "2027-02-20",
-      "next": {
-        "tour": "Cody Johnson",
-        "date": "2027-02-20",
-        "city": "Austin",
-        "url": "https://www.ticketmaster.com/cody-johnson-austin-texas-02-20-2027/event/3A006551E27088BC"
       }
     },
     {
@@ -798,6 +783,22 @@
       }
     },
     {
+      "from": "609a2ea3-f446-4e31-8eef-9f7591afb55a",
+      "to": "cea9a5c5-d1ac-4b6f-aa46-b31c370894b3",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 15,
+      "first": "2027-04-05",
+      "last": "2027-04-28",
+      "next": {
+        "tour": "Alex Warren - Finding (More) Family On The Road",
+        "date": "2027-04-05",
+        "city": "Oklahoma City",
+        "url": "https://www.ticketmaster.com/alex-warren-finding-more-family-on-oklahoma-city-oklahoma-04-05-2027/event/0C00656B99576487"
+      }
+    },
+    {
       "from": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
       "to": "279ae894-037e-4058-a21a-e44dc8a8ca7d",
       "types": [
@@ -859,6 +860,22 @@
         "date": "2027-04-28",
         "city": "Minneapolis",
         "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA7Kad"
+      }
+    },
+    {
+      "from": "609a2ea3-f446-4e31-8eef-9f7591afb55a",
+      "to": "6aed0a74-92a7-47e6-97d1-7b6a72afec4b",
+      "types": [
+        "upcoming"
+      ],
+      "shows": 11,
+      "first": "2027-04-30",
+      "last": "2027-05-16",
+      "next": {
+        "tour": "Alex Warren - Finding (More) Family On The Road",
+        "date": "2027-04-30",
+        "city": "Hamilton",
+        "url": "https://www.ticketmaster.ca/alex-warren-finding-more-family-on-hamilton-ontario-04-30-2027/event/1000656A0D6544BA"
       }
     },
     {
@@ -939,22 +956,6 @@
         "date": "2027-05-28",
         "city": "Manchester",
         "url": "https://www.ticketmaster.co.uk/tame-impala-deadbeat-euuk-tour-2027-manchester-28-05-2027/event/37006515B7C2A40D"
-      }
-    },
-    {
-      "from": "faabeed5-3dd0-4be5-aec5-e6486e68db2f",
-      "to": "50e3dd64-6b87-4b9a-a511-c375ae4ff1ca",
-      "types": [
-        "upcoming"
-      ],
-      "shows": 1,
-      "first": "2027-05-29",
-      "last": "2027-05-29",
-      "next": {
-        "tour": "Cody Johnson & Friends",
-        "date": "2027-05-29",
-        "city": "Gilford",
-        "url": "https://www.ticketmaster.com/cody-johnson-friends-gilford-new-hampshire-05-29-2027/event/0100656CE2EE305D"
       }
     },
     {
